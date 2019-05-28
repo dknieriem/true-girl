@@ -1,0 +1,157 @@
+<h3 class="tvd-title">
+	<#= title #>
+</h3>
+<div class="tvd-v-spacer"></div>
+<div class="tvd-card tvd-white">
+	<div class="tvd-card-content">
+		<div class="tvd-v-spacer vs-2"></div>
+		<div class="tvd-row">
+			<div class="tvd-col tvd-s3">
+				<div class="tvd-input-field">
+					<select autocomplete="off" id="tho-chart-interval" class="tvd-select2">
+						<option selected value="day"><?php echo __( 'Daily', THO_TRANSLATE_DOMAIN ); ?></option>
+						<option value="week"><?php echo __( 'Weekly', THO_TRANSLATE_DOMAIN ); ?></option>
+						<option value="month"><?php echo __( 'Monthly', THO_TRANSLATE_DOMAIN ); ?></option>
+					</select>
+					<label for="tho-chart-interval-select"><?php echo __( 'Graph interval', THO_TRANSLATE_DOMAIN ); ?>:</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="tvd-relative tvd-row">
+			<div class="tvd-col tvd-s12">
+				<div id="tho-test-chart"></div>
+
+				<div class="tho-chart-overlay" style="display: none">
+					<div class="tvd-card tvd-small tvd-white tvd-valign-wrapper">
+						<div class="tvd-card-content tvd-valign tvd-center-align">
+							<h3><?php echo __( 'No Test Data (Yet)', THO_TRANSLATE_DOMAIN ); ?></h3>
+							<p>
+								<?php echo __( 'Here you will see a graph of engagement data as the test progresses.<br/> Currently there is no data to display.', THO_TRANSLATE_DOMAIN ); ?>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tvd-v-spacer vs-3"></div>
+	</div>
+</div>
+<table class="tvd-collection tvd-with-header tvd-slim-table">
+	<thead>
+	<tr class="tvd-collection-header">
+		<td style="width:25%">
+			<div class="tvd-truncate-on-small tvd-no-message" title="<?php echo __( 'Headline', THO_TRANSLATE_DOMAIN ); ?>">
+				<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Headline', THO_TRANSLATE_DOMAIN ); ?></h5>
+			</div>
+		</td>
+		<td style="width:10%">
+			<div class="tvd-truncate-on-small tvd-no-message tvd-center-align" title="<?php echo __( 'Content views', THO_TRANSLATE_DOMAIN ); ?>">
+				<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Content views', THO_TRANSLATE_DOMAIN ); ?></h5>
+			</div>
+		</td>
+		<td style="width:10%">
+			<div class="tvd-truncate-on-small tvd-no-message tvd-center-align" title="<?php echo __( 'Engagements', THO_TRANSLATE_DOMAIN ); ?>">
+				<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Engagements', THO_TRANSLATE_DOMAIN ); ?></h5>
+			</div>
+		</td>
+		<td style="width:10%">
+			<div class="tvd-truncate-on-small tvd-no-message tvd-center-align" title="<?php echo __( 'Engagement rate', THO_TRANSLATE_DOMAIN ); ?>">
+				<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Engagement rate', THO_TRANSLATE_DOMAIN ); ?></h5>
+			</div>
+		</td>
+		<td style="width:21%">
+			<div class="tvd-truncate-on-small tvd-no-message tvd-center-align" title="<?php echo __( 'Chart', THO_TRANSLATE_DOMAIN ); ?>">
+				<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Chart', THO_TRANSLATE_DOMAIN ); ?></h5>
+			</div>
+		</td>
+		<td style="width:12%">
+			<div class="tvd-truncate-on-small tvd-no-message tvd-center-align" title="<?php echo __( 'Percentage improvement', THO_TRANSLATE_DOMAIN ); ?>">
+				<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Percentage improvement', THO_TRANSLATE_DOMAIN ); ?></h5>
+			</div>
+		</td>
+		<td style="width:12%">
+			<div class="tvd-truncate-on-small tvd-no-message tvd-center-align" title="<?php echo __( 'Chance to beat original', THO_TRANSLATE_DOMAIN ); ?>">
+				<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Chance to beat original', THO_TRANSLATE_DOMAIN ); ?></h5>
+			</div>
+		</td>
+	</tr>
+	</thead>
+	<tbody class="tho-test-variations">
+
+	</tbody>
+	<# if(stopped_variations > 0){ #>
+		<tbody class="tho-test-stopped-variations">
+
+		</tbody>
+		<# } #>
+</table>
+<# if(status != ThriveHead.const.test_status_completed) { #>
+	<div class="tvd-right">
+		<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tho-stop-test" href="javascript:void(0)"
+		   title="<?php echo __( 'Stop test and choose winner', THO_TRANSLATE_DOMAIN ) ?>"><?php echo __( 'Stop test and choose winner', THO_TRANSLATE_DOMAIN ) ?></a>
+	</div>
+	<# } #>
+		<# if( completed_tests > 0 ) { #>
+
+			<div class="tvd-v-spacer vs-2"></div>
+
+			<div id="tho-completed-tests">
+				<h4 title="<?php echo __( 'Click to expand', THO_TRANSLATE_DOMAIN ) ?>" class="tvd-pointer tho-toggle-display collapsed tvd-inline-block" data-target="#tho-completed-test-list">
+					<?php echo __( 'Completed tests', THO_TRANSLATE_DOMAIN ) ?> <span id="tho-completed-tests-count">(<#= completed_tests #>)</span>
+				</h4>
+				<ul class="tvd-collection tvd-with-header" id="tho-completed-test-list" style="display: none;">
+					<li class="tvd-row tvd-collection-header">
+						<div class="tvd-col tvd-s3">
+							<div class="tvd-truncate-on-small tvd-no-message" title="<?php echo __( 'Winning title', THO_TRANSLATE_DOMAIN ); ?>">
+								<h5 class="tvd-truncate-on-small-el">
+									<?php echo __( 'Winning title', THO_TRANSLATE_DOMAIN ); ?>
+								</h5>
+							</div>
+						</div>
+						<div class="tvd-col tvd-s2">
+							<div class="tvd-truncate-on-small tvd-no-message tvd-center-align" title="<?php echo __( 'Start date', THO_TRANSLATE_DOMAIN ); ?>">
+								<h5 class="tvd-truncate-on-small-el">
+									<?php echo __( 'Start date', THO_TRANSLATE_DOMAIN ); ?>
+								</h5>
+							</div>
+						</div>
+						<div class="tvd-col tvd-s2">
+							<div class="tvd-truncate-on-small tvd-no-message tvd-center-align" title="<?php echo __( 'End date', THO_TRANSLATE_DOMAIN ); ?>">
+								<h5 class="tvd-truncate-on-small-el">
+									<?php echo __( 'End date', THO_TRANSLATE_DOMAIN ); ?>
+								</h5>
+							</div>
+						</div>
+						<div class="tvd-col tvd-s2">
+							<div class="tvd-truncate-on-small tvd-no-message tvd-center-align" title="<?php echo __( 'Content views', THO_TRANSLATE_DOMAIN ); ?>">
+								<h5 class="tvd-truncate-on-small-el">
+									<?php echo __( 'Content views', THO_TRANSLATE_DOMAIN ); ?>
+								</h5>
+							</div>
+						</div>
+						<div class="tvd-col tvd-s2">
+							<div class="tvd-truncate-on-small tvd-no-message tvd-center-align" title="<?php echo __( 'Engagements', THO_TRANSLATE_DOMAIN ); ?>">
+								<h5 class="tvd-truncate-on-small-el">
+									<?php echo __( 'Engagements', THO_TRANSLATE_DOMAIN ); ?>
+								</h5>
+							</div>
+						</div>
+						<div class="tvd-col tvd-s1">&nbsp;</div>
+					</li>
+				</ul>
+			</div>
+			<div class="tvd-v-spacer vs-2"></div>
+			<# } #>
+
+				<div class="tvd-row tvd-collapse">
+					<div class="tvd-col tvd-s6">
+						<a class="tvd-btn-flat tvd-btn-flat-primary tvd-btn-flat-dark tvd-waves-effect" href="#dashboard">
+							&laquo; <?php echo __( 'Back to tests dashboard', THO_TRANSLATE_DOMAIN ) ?>
+						</a>
+					</div>
+				</div>
+
+
+

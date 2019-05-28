@@ -1,0 +1,52 @@
+/*
+Standard stuff
+*/
+
+.bit-track-artist-header {
+    display: none !important;
+}
+
+.bbit-shortcode_wrapper table, 
+.bbit-shortcode_wrapper td, 
+.bbit-shortcode_wrapper th, 
+.bbit-shortcode_wrapper tbody {
+    border: none;
+}
+
+// Always the same margin bottom
+.bbit-shortcode_wrapper table {
+    margin-bottom: 0px;
+}
+.bbit-shortcode_wrapper {
+    margin-bottom: 20px;
+}
+
+.bit-events-narrow td {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.bbit-shortcode_wrapper {
+    font-weight: bold;
+}
+
+.bit-rsvp {
+    text-shadow: none;
+}
+
+.bit-events-narrow {
+    margin-top: 0px;
+}
+
+.bit-header {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.bit-track-artist-header {
+    border: none !important;
+}

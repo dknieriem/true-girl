@@ -1,0 +1,30 @@
+.tvd-card {
+  &.tvo-medium {
+    position: relative;
+    &:hover {
+      @include tvd-z-depth-2;
+    }
+    .tvd-card-content {
+      padding: 8px;
+    }
+    .tvd-card-image {
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      max-height: 140px;
+      overflow: hidden;
+    }
+    .tvd-card-action {
+      background-color: inherit;
+      padding: 8px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  @media only screen and (min-width: 741px) {
+    &.tvo-medium {
+      height: 200px;
+    }
+  }
+}

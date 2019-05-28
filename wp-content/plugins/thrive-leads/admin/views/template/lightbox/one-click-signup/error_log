@@ -1,0 +1,5 @@
+[18-Aug-2017 09:58:40] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/lightbox/one-click-signup/search-content.phtml on line 4
+[18-Aug-2017 09:58:40] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/lightbox/one-click-signup/connection-settings.phtml on line 3
+[18-Aug-2017 09:58:40] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/lightbox/one-click-signup/add-one-click-signup.phtml on line 3
+[18-Aug-2017 09:58:40] PHP Fatal error:  Call to undefined function  tve_get_timezone_string() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/lightbox/one-click-signup/redirect-settings.phtml on line 2
+[18-Aug-2017 09:58:40] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/lightbox/one-click-signup/delete-one-click-signup.phtml on line 2

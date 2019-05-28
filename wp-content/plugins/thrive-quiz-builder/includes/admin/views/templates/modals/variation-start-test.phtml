@@ -1,0 +1,105 @@
+<div class="tvd-modal-content">
+	<div class="tvd-modal-title">
+		<h3>
+			<?php echo __( 'Start New A/B Test', Thrive_Quiz_Builder::T ) ?>
+			<a href="<?php echo Thrive_Quiz_Builder::VIDEO_A_B_TEST; ?>" class="wistia-popover[height=450,playerColor=2bb914,width=800]"><span style="margin-top: -5px;" class="tvd-icon-play tqb-purple-icon"></span></a>
+		</h3>
+	</div>
+	<div class="tvd-row tvd-collapse">
+		<div class="tvd-col tvd-s12">
+			<div class="tvd-input-field">
+				<input type="text" class="tvd-validate test_title" value="" name="test_title" data-field="test_title" id="test_title">
+				<label for="test_title"
+				       data-error="<?php echo __( 'Test title is required', Thrive_Quiz_Builder::T ) ?>"><?php echo __( 'Title', Thrive_Quiz_Builder::T ) ?></label>
+			</div>
+		</div>
+	</div>
+	<div class="tvd-row tvd-collapse">
+		<div class="tvd-col tvd-s12">
+			<div class="tvd-input-field">
+				<textarea name="test_notes" tabindex="2" id="test_notes" class="tvd-materialize-textarea"></textarea>
+				<label for="test_notes"><?php echo __( 'Test Notes', Thrive_Quiz_Builder::T ) ?></label>
+			</div>
+		</div>
+	</div>
+	<# if( model.get( 'is_results' ) ){ #>
+		<div id="tqb-choose-conversion-goal">
+			<div class="tvd-row">
+				<div class="tvd-col tvd-s4">
+					<div class="tqb-conversion-goal-text"><?php echo __( 'Choose conversion goal: ', Thrive_Quiz_Builder::T ) ?></div>
+				</div>
+				<div class="tvd-col tvd-s3">
+					<div class="tqb-conversion-goal-optin-choice">
+						<input name="conversion_goal" type="radio" id="tqb-optin" class="tvd-validate" data-field="tqb-conversion_goal" value="<?php echo Thrive_Quiz_Builder::CONVERSION_GOAL_OPTIN ?>">
+						<label for="tqb-optin" data-error="<?php echo __( 'You need a conversion goal for your test.', Thrive_Quiz_Builder::T ) ?>" ><?php echo __( 'Opt-Ins', Thrive_Quiz_Builder::T ) ?></label>
+					</div>
+				</div>
+				<div class="tvd-col tvd-s3">
+					<div class="tqb-conversion-goal-social-share-choice">
+						<input name="conversion_goal" type="radio" data-field="conversion_goal" id="tqb-social-share" value="<?php echo Thrive_Quiz_Builder::CONVERSION_GOAL_SOCIAL ?>">
+						<label for="tqb-social-share" data-error="<?php echo __( 'You need a conversion goal for your test.', Thrive_Quiz_Builder::T ) ?>" ><?php echo __( 'Social Shares', Thrive_Quiz_Builder::T ) ?></label>
+					</div>
+				</div>
+			</div>
+		</div>
+	<# } #>
+
+		<div id="tqb-winner-test-settings">
+			<h5 class="tqb-toggle-dropdown tvd-pointer">
+				<span class="tvd-icon-expanded"></span>
+				<?php echo __( 'Automatic Winner Settings', Thrive_Quiz_Builder::T ) ?>
+			</h5>
+
+			<div style="display: none" id="tqb-winner-test-container">
+				<p>
+					<?php echo __( 'Here you can set the conditions by which a form will be considered the winner. When a form is considered the winner, the remaining forms will be archived and all traffic will be sent to the winner', Thrive_Quiz_Builder::T ) ?>
+				</p>
+				<p>
+					<input id="tqb-enable-test-settings" type="checkbox" name="auto_win_enabled" tabindex="4"/>
+					<label for="tqb-enable-test-settings"><?php echo __( 'Enabled', Thrive_Quiz_Builder::T ) ?></label>
+				</p>
+				<div class="tqb-winner-settings-input" style="display: none">
+					<div class="tvd-v-spacer vs-2"></div>
+					<div class="tvd-row">
+						<div class="tvd-col tvd-s4">
+							<div class="tvd-input-field">
+								<input type="text" name="auto_win_min_conversions" class="auto_win_min_conversions" data-field="auto_win_min_conversions"
+								       tabindex="5" value="100" id="auto_win_min_conversions">
+								<label for="auto_win_min_conversions"
+								       class="tvd-active"><?php echo __( 'Minimum conversions', Thrive_Quiz_Builder::T ) ?></label>
+							</div>
+						</div>
+						<div class="tvd-col tvd-s4">
+							<div class="tvd-input-field">
+								<input type="text" name="auto_win_min_duration" class="auto_win_min_duration" data-field="auto_win_min_duration" tabindex="6"
+								       value="14" id="auto_win_min_duration"/>
+								<label for="auto_win_min_duration"
+								       class="tvd-active"><?php echo __( 'Minimum duration (days)', Thrive_Quiz_Builder::T ) ?></label>
+							</div>
+						</div>
+						<div class="tvd-col tvd-s4">
+							<div class="tvd-input-field">
+								<input type="text" name="auto_win_chance_original" class="auto_win_chance_original" data-field="auto_win_chance_original"
+								       tabindex="7" value="95" id="auto_win_chance_original"/>
+								<label for="auto_win_chance_original"
+								       class="tvd-active"><?php echo __( 'Chance to beat original (%)', Thrive_Quiz_Builder::T ) ?></label>
+							</div>
+						</div>
+					</div>
+					<?php include dirname( __FILE__ ) . '/variation-winner-test-notice.phtml' ?>
+				</div>
+			</div>
+		</div>
+</div>
+<div class="tvd-modal-footer">
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s12 tvd-m6">
+			<a class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-dark tvd-modal-close tvd-waves-effect" tabindex="9"
+			   href="javascript:void(0)"><?php echo __( 'Cancel', Thrive_Quiz_Builder::T ) ?></a>
+		</div>
+		<div class="tvd-col tvd-s12 tvd-m6">
+			<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tqb-start-variation-test tvd-modal-submit tvd-right" tabindex="8"
+			   href="javascript:void(0)"><?php echo __( 'Start Test', Thrive_Quiz_Builder::T ) ?></a>
+		</div>
+	</div>
+</div>

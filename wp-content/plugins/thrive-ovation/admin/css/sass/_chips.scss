@@ -1,0 +1,31 @@
+.tvd-chip {
+  background: $chip-bg;
+  font-size: .875rem;
+  .tvd-icon-close2 {
+    color: $chip-close-color;
+    font-weight: 700;
+    #wpbody & {
+      color: $chip-close-color;
+    }
+  }
+}
+
+.tvo-edit-testimonial-tags-container {
+  .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background: $chip-bg-dark;
+    border: 1px solid $chip-border-dark;
+  }
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background: $chip-bg;
+  font-size: .875rem;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: $chip-close-color;
+  float: right;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-left: 5px;
+}

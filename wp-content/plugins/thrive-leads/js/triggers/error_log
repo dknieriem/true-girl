@@ -1,0 +1,16 @@
+[18-Aug-2017 10:54:34 America/Chicago] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/js/triggers/time.js.php:5
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/js/triggers/time.js.php on line 5
+[18-Aug-2017 10:54:34 America/Chicago] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/js/triggers/scroll_element.js.php:26
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/js/triggers/scroll_element.js.php on line 26
+[18-Aug-2017 10:54:34 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function wp_is_mobile() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/js/triggers/exit_intent.js.php:6
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/js/triggers/exit_intent.js.php on line 6
+[18-Aug-2017 10:54:34 America/Chicago] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/js/triggers/scroll_percent.js.php:4
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/js/triggers/scroll_percent.js.php on line 4

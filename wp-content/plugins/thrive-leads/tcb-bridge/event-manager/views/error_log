@@ -1,0 +1,12 @@
+[18-Aug-2017 10:57:05 America/Chicago] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb-bridge/event-manager/views/state-settings.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb-bridge/event-manager/views/state-settings.php on line 2
+[18-Aug-2017 10:57:05 America/Chicago] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb-bridge/event-manager/views/lightbox-settings.php:3
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb-bridge/event-manager/views/lightbox-settings.php on line 3
+[18-Aug-2017 10:57:05 America/Chicago] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb-bridge/event-manager/views/state-lightbox-settings.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb-bridge/event-manager/views/state-lightbox-settings.php on line 2

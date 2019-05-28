@@ -1,0 +1,41 @@
+/*
+Light theme
+*/
+
+.bbit-widget-light .bandsintown-logo-wrapper {
+    background: #2f959f;
+}
+
+.bbit-widget-light .bandsintown-logo-link {
+    color: white !important;
+}
+
+.bbit-widget-light {
+    background: #fff;
+    color: #000;
+}
+
+.bbit-widget-light .bit-events-narrow td {
+    border-top-color: #e5e5e5 !important;
+    border-bottom-color: #e5e5e5 !important;
+}
+
+.bbit-widget-light .bit-header-narrow {
+    background: #f4f4f4; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f4f4f4 0%, #e5e5e5 50%, #cccccc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f4f4), color-stop(50%,#e5e5e5), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f4f4f4 0%,#e5e5e5 50%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f4f4f4 0%,#e5e5e5 50%,#cccccc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f4f4f4 0%,#e5e5e5 50%,#cccccc 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f4f4f4 0%,#e5e5e5 50%,#cccccc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+
+.bbit-widget-light .bit-header-narrow {
+    border-top-color: #e5e5e5 !important;
+    border-bottom-color: #e5e5e5 !important;
+}
+
+.bbit-widget-light a {
+    color: #2f959f;
+}

@@ -1,0 +1,401 @@
+.tve_flt {
+  .tqb-template-style-1 {
+    .tqb-result-template-1,
+    .tqb-result-template-2,
+    .tqb-result-template-3 {
+      max-width: 1000px;
+      margin: 0 auto;;
+      background-color: #22313f;
+
+      h1, h2, h3, h4, h5, h6 {
+        padding: 50px 0;
+        font-family: Maitree, sans-serif;
+        font-weight: 400;
+        color: #fff;
+        text-transform: none;
+      }
+
+      h1 {
+        font-size: 60px;
+      }
+
+      h2 {
+        color: #f7ca65;
+        font-size: 47px;
+      }
+
+      h3 {
+        font-size: 35px;
+      }
+
+      h4 {
+        color: #f7ca65;
+        font-size: 34px;
+      }
+
+      h5 {
+        font-size: 30px;
+      }
+
+      h6 {
+        font-size: 25px;
+      }
+
+      a {
+        text-decoration: underline;
+        color: #89c5e1;
+        font-size: 18px;
+        box-shadow: none;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      ol {
+        list-style: none;
+        margin: 0;
+        li {
+          counter-increment: item;
+          font-family: Maitree, sans-serif;
+          font-size: 19px;
+          font-weight: 500;
+          color: #fff;
+          &:before {
+            content: counter(item) ".";
+            margin-right: 10px;
+            color: #f7ca65;
+            display: inline-block;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  .tqb-result-template-1 {
+
+    p {
+      font-size: 19px;
+      color: #fefefe;
+      font-family: Maitree, sans-serif;
+      font-weight: 100;
+      margin: 0;
+      padding: 0;
+    }
+
+    p.tve_tqb_result {
+      font-family: Maitree, sans-serif;
+      font-weight: 600;
+      color: #22313f;
+      font-size: 60px;
+      line-height: 60px;
+      margin: 20px 0;
+    }
+
+    .thrv_contentbox_shortcode {
+
+      &.tqb_content_box {
+
+        .tve_cb {
+          background-color: #f7ca65;
+        }
+      }
+    }
+
+    .thrv_social_custom {
+      margin-top: 22px;
+      text-align: center;
+
+      .tve_social_custom {
+        .tve_s_item {
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .tqb-result-template-2 {
+
+    p {
+      font-size: 19px;
+      color: #fefefe;
+      font-family: Maitree, sans-serif;
+      font-weight: 100;
+      margin: 0;
+      padding: 0;
+    }
+
+    p.tve_tqb_result {
+      font-family: Maitree, sans-serif;
+      font-weight: 600;
+      color: #22313f;
+      font-size: 60px;
+      line-height: 60px;
+      margin: 20px 0;
+    }
+
+    .thrv_contentbox_shortcode {
+      margin: 0;
+      padding: 0;
+
+      &.tqb_content_box {
+
+        .tve_cb {
+          margin-top: 20px;
+          background-color: #f7ca65;
+        }
+      }
+
+      &.tqb_content_box_light {
+
+        .tve_cb {
+          background-color: #131d27;
+        }
+      }
+    }
+
+    .thrv_lead_generation {
+      max-width: 530px;
+      margin: 0 auto;
+
+      .tve_lead_generated_inputs_container {
+
+        .tve_lg_input_container {
+
+          input[type='text'],
+          input[type='email'] {
+            border-radius: 3px;
+            border: 1px solid #fff;
+            padding: 14px;
+            font-size: 18px;
+            font-family: Maitree, sans-serif;
+            font-weight: 300;
+            text-align: center;
+            margin: 0 0 13px 0;
+            background-color: #131d27;
+            color: #fff !important;
+            height: 100%;
+
+            &:hover,
+            &:focus {
+              border: 1px solid #f7ca65;
+              &::-webkit-input-placeholder {
+                color: #f7ca65;
+              }
+            }
+
+            &::-webkit-input-placeholder {
+              color: #fff;
+            }
+          }
+        }
+
+        .tve_submit_container {
+          button {
+            background-color: #f7ca65;
+            padding: 24px;
+            font-weight: 700;
+            font-size: 22px;
+            text-transform: none;
+            color: #22313f;
+            font-family: Maitree, sans-serif;
+            text-shadow: none;
+            border-radius: 3px;
+            border: 1px solid #f7ca65;
+
+            &:focus, &:hover {
+              outline: none;
+              background-color: transparent;
+              color: #f7ca65;
+            }
+          }
+        }
+      }
+      &.tve_blue {
+        .tve_submit_container {
+          button {
+            border: 1px solid #78dadd;
+            background-color: #78dadd;
+            color: #22313f;
+            &:focus, &:hover {
+              background-color: transparent;
+              color: #78dadd;
+            }
+          }
+        }
+      }
+
+      &.tve_orange {
+        .tve_submit_container {
+          button {
+            border: 1px solid #f7ca65;
+            background-color: #f7ca65;
+            color: #22313f;
+            &:focus, &:hover {
+              background-color: transparent;
+              color: #f7ca65;
+            }
+          }
+        }
+      }
+
+      &.tve_purple {
+        .tve_submit_container {
+          button {
+            border: 1px solid #ad90dd;
+            background-color: #ad90dd;
+            color: #22313f;
+            &:focus, &:hover {
+              background-color: transparent;
+              color: #ad90dd;
+            }
+          }
+        }
+      }
+
+      &.tve_red {
+        .tve_submit_container {
+          button {
+            border: 1px solid #f57170;
+            background-color: #f57170;
+            color: #22313f;
+            &:focus, &:hover {
+              background-color: transparent;
+              color: #f57170;
+            }
+          }
+        }
+      }
+
+      &.tve_white {
+        .tve_submit_container {
+          button {
+            border: 1px solid #d1dee4;
+            background-color: #d1dee4;
+            color: #22313f;
+            &:focus, &:hover {
+              background-color: transparent;
+              color: #d1dee4;
+            }
+          }
+        }
+      }
+
+      &.tve_black {
+        .tve_submit_container {
+          button {
+            border: 1px solid #06090c;
+            background-color: #06090c;
+            color: #d1dee4;
+            &:focus, &:hover {
+              background-color: transparent;
+              color: #06090c;
+            }
+          }
+        }
+      }
+
+      &.tve_green {
+        .tve_submit_container {
+          button {
+            border: 1px solid #10ddc2;
+            background-color: #10ddc2;
+            color: #22313f;
+            &:focus, &:hover {
+              background-color: transparent;
+              color: #10ddc2;
+            }
+          }
+        }
+      }
+
+      &.tve_teal {
+        .tve_submit_container {
+          button {
+            border: 1px solid #b4dff3;
+            background-color: #b4dff3;
+            color: #22313f;
+            &:focus, &:hover {
+              background-color: transparent;
+              color: #b4dff3;
+            }
+          }
+        }
+      }
+    }
+
+    h3 {
+      color: #f7ca65;
+      font-weight: 400;
+      font-size: 34px;
+      font-family: Maitree, sans-serif;
+    }
+  }
+
+  .tqb-result-template-3 {
+
+    .tqb-social-share-badge-container {
+      margin: 0 40px 40px 40px;
+
+      &.tve_centerBtn {
+
+        .tve_social_items {
+          text-align: center;
+        }
+      }
+
+      .tve_social_items {
+        text-align: center;
+      }
+
+      img {
+        border: 2px solid #eac163;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width:320px) and (max-width: 768px) {
+  .tve_flt {
+    .tqb-template-style-1 {
+      .tqb-result-template-1,
+      .tqb-result-template-2,
+      .tqb-result-template-3 {
+        .tve_cb {
+          .tve_cb_cnt {
+            padding: 0;
+          }
+        }
+        h2 {
+          font-size: 27px !important;
+        }
+        .thrv_contentbox_shortcode {
+          .tve_tqb_result {
+            margin-bottom: 0;
+          }
+          h3 {
+            padding-top: 20px;
+            margin-top: 0;
+            font-size: 22px !important;
+          }
+        }
+        .thrv_lead_generation {
+          padding: 0 15px;
+          max-width: 90%;
+          .tve_lead_generated_inputs_container {
+            .tve_submit_container {
+              button {
+                font-size: 14px;
+                padding: 24px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

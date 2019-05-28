@@ -1,0 +1,77 @@
+@import "../../mixins";
+
+@import "//fonts.googleapis.com/css?family=Roboto:300,400,700,300i,700i";
+
+$template-name: set5;
+
+$font-family: 'Roboto', sans-serif;
+
+$color-pallete: (
+        'black': (#333333, #333333),
+        'blue': (#347fc3, #347fc3),
+        'green': (#58a04c, #58a04c),
+        'orange': (#f97a1d, #f97a1d),
+        'purple': (#ae509e, #ae509e),
+        'red': (#de4041, #de4041),
+        'teal': (#1c978a, #1c978a),
+        'white': (#ffffff, #333333)
+);
+
+$grid-item-padding-side: 30px;
+$grid-item-padding-vertical: 30px;
+$grid-item-padding: $grid-item-padding-vertical $grid-item-padding-side;
+$grid-item-padding-large: ($grid-item-padding-side*1.5) ($grid-item-padding-side *2);
+
+$image-size: 280px;
+$image-size-small: 210px;
+$image-border-radius: 0;
+
+$title-size-large: 22px;
+$title-size-small: 22px;
+$quotes-size: 100px;
+$quotes-size-large: 135px;
+$font-size: 18px;
+$name-size: 15px;
+$job-size: 15px;
+
+$title-line-height-large: 1.364em;
+$title-line-height-small: 1.364em;
+$quotes-line-height: 80px;
+$font-line-height: 1.667em;
+$name-line-height: 1.6em;
+$job-line-height: 1.6em;
+
+$title-weight-large: 500;
+$title-weight-small: 500;
+$quotes-weight: 700;
+$font-weight: 300;
+$name-weight: 700;
+$job-weight: 300;
+
+$title-color-large: #fff;
+$title-color-small: #fff;
+$quotes-color: rgba(#fff, .2);
+$font-color: #fff;
+$name-color-light: #fff;
+$job-color-light: #666666;
+$name-color-dark: #333;
+$job-color-dark: #666666;
+
+$title-small-margin-bottom: 15px;
+$title-large-margin-bottom: 0;
+$font-margin-bottom: 20px;
+$quote-margin-bottom: -20px;
+$quote-margin-large: 30px;
+$image-margin-bottom: 20px;
+$info-margin-bottom: 40px;
+
+$different-variation: true;
+$different-variation-name: (
+        'white': (#333, rgba(#000, .2))
+);
+
+$testimonial-info-bg: #fff;
+$testimonial-info-border: #e3e2e2;
+
+$image-border-color: #fff;
+$image-shadow-color: #e5e5e5;

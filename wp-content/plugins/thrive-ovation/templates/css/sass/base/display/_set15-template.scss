@@ -1,0 +1,71 @@
+@import "../../config/display/set15-template";
+
+.tvo-testimonials-display.tvo-#{$template-name}-template {
+  @include box-sizing;
+  font-family: $font-family;
+  .tvo-testimonial-display-item {
+    border-radius: $item-border-radius;
+    h4, p {
+      font-family: $font-family;
+    }
+    p {
+      color: $font-color;
+      font-size: $font-size;
+      font-weight: $font-weight;
+      line-height: $font-line-height;
+      margin-bottom: $font-margin-bottom;
+    }
+  }
+  .tvo-testimonial-image-cover {
+    @include box-sizing;
+  }
+  .tvo-testimonial-quote {
+    display: none;
+  }
+  .tvo-testimonial-line {
+    fill: none;
+    stroke-width: 2;
+  }
+  //.tvo-testimonial-content {
+  //  word-break: break-all;
+  //}
+}
+
+@each $name, $color in $color-pallete {
+  .tvo-#{$template-name}-template.tve_#{$name} {
+    h4 {
+      color: $color;
+    }
+    .tvo-testimonial-line {
+      stroke: $color;
+    }
+    .tvo-testimonial-name {
+      color: $color;
+    }
+    .thrlider-navItem {
+      &.thrlider-active {
+        .thrlider-navItem-inner {
+          border-color: $color;
+        }
+      }
+      &:hover {
+        .thrlider-navItem-inner {
+          border-color: $color;
+        }
+      }
+    }
+  }
+}
+
+@each $name, $color in $different-variation-name {
+  .tvo-testimonials-display.tvo-#{$template-name}-template.tve_#{$name} {
+    .tvo-testimonial-display-item {
+      p {
+        color: nth($color, 1);
+      }
+    }
+    .tvo-testimonial-name {
+      color: nth($color, 2);
+    }
+  }
+}

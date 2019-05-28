@@ -1,0 +1,74 @@
+@import "../../mixins";
+
+@import "//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700";
+
+$template-name: set4;
+
+$font-family: 'Open Sans', sans-serif;
+
+$color-pallete: (
+        'black': (#3f3f3f, #3f3f3f),
+        'blue': (#2f4a9f, #304a9f),
+        'green': (#27ae60, #27ae60),
+        'orange': (#f77207, #f77207),
+        'purple': (#803daa, #7f3ca9),
+        'red': (#c0392b, #c0392b),
+        'teal': (#16a085, #16a085),
+        'white': (#f4f7f9, #000000)
+);
+
+$grid-item-padding-side: 20px;
+$grid-item-padding-vertical: 30px;
+$single-item-padding: 60px 80px;
+$grid-item-padding: $grid-item-padding-vertical $grid-item-padding-side;
+
+$image-size: 110px;
+$image-border-radius: 100px;
+
+$title-size-large: 21px;
+$title-size-small: 21px;
+$quotes-size: 48px;
+$font-size: 18px;
+$name-size: 18px;
+$job-size: 18px;
+
+$title-line-height-large: 1.333em;
+$title-line-height-small: 1.333em;
+$quotes-line-height: 36px;
+$font-line-height: 1.667em;
+$name-line-height: 1.444em;
+$job-line-height: 1.444em;
+
+$title-weight-large: 600;
+$title-weight-small: 600;
+$quotes-weight: 700;
+$font-weight: 300;
+$name-weight: 600;
+$job-weight: 300;
+
+$title-color-large: #fff;
+$title-color-small: #fff;
+$quotes-color: #fff;
+$font-color: #fff;
+$name-color-light: #fff;
+$job-color-light: #666666;
+$name-color-dark: #333;
+$job-color-dark: #666666;
+
+$title-small-margin-bottom: 30px;
+$title-large-margin-bottom: 30px;
+$font-margin-bottom: 20px;
+$quote-margin-bottom: 40px;
+$image-margin-bottom: 20px;
+$info-margin-bottom: 40px;
+
+$different-variation: true;
+$different-variation-name: (
+        'white': (#666, #333)
+);
+
+$testimonial-info-bg: #fff;
+$testimonial-info-border: #e3e2e2;
+
+$image-border-color: transparent;
+$image-shadow-color: #e5e5e5;

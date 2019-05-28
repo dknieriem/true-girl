@@ -1,0 +1,8 @@
+[18-Aug-2017 10:54:34 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor/elements/menus.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor/elements/menus.php on line 2
+[18-Aug-2017 10:54:34 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor/elements/advanced.php:1
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor/elements/advanced.php on line 1

@@ -1,0 +1,29 @@
+<td style="width: 40%;">
+	<a href="<#= test.get('link') #>" target="_blank" class="tvd-text-gray">
+		<#= test.get('title')==""?"&nbsp;":test.get('title') #>
+	</a>
+</td>
+<td class="tvd-center-align">
+	<#= test.get('start_date') #>
+</td>
+<td class="tvd-center-align">
+	<#= test.get('post_type') #>
+</td>
+<td class="tvd-center-align">
+	<#= test.get('views') #>
+</td>
+<td class="tvd-center-align">
+	<#= test.get('engagements') #>
+</td>
+<td class="tvd-center-align">
+	<#= test.get('engagement_rate') #>
+</td>
+<td>
+	<a href="<?php echo admin_url( 'admin.php?page=tho_admin_dashboard' ); ?>#test/<#= test.get('id') #>"
+	   data-id="<#= test.get('ID') #>"
+	   title="<?php echo __( 'View test', THO_TRANSLATE_DOMAIN ) ?>"
+	   class="tvd-btn-icon tvd-btn-icon-blue tvd-right tho-small-btn">
+		<span class="tho-icon-link"></span>
+		<span class="tvd-on-large-and-down"><?php echo __( 'View test', THO_TRANSLATE_DOMAIN ) ?></span>
+	</a>
+</td>

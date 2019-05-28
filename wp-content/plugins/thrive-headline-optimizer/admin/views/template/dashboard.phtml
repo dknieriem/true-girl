@@ -1,0 +1,186 @@
+<div class="tho-container">
+
+	<h3 class="tvd-title"><?php echo __( "Today's Summary", THO_TRANSLATE_DOMAIN ); ?></h3>
+	<div class="tvd-row tvd-collapse tvd-summary-row">
+		<div class="tvd-col tvd-s12 tvd-m4">
+			<div class="tvd-card tvd-white tvd-medium-xsmall">
+				<div class="tvd-card-content tho-stats-views">
+					<div class="tho-stats-icon">
+						<span class="tvd-icon-eye"></span>
+					</div>
+					<p class="tvd-stats">
+						<#= views #>
+							<span><?php echo __( 'Views', THO_TRANSLATE_DOMAIN ); ?></span>
+					</p>
+				</div>
+				<div class="tvd-card-action">
+					<a class="tvd-btn-flat tho-btn-flat-darkblue tvd-waves-effect" href="#reporting">
+						<?php echo __( 'View more', THO_TRANSLATE_DOMAIN ); ?>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s12 tvd-m4">
+			<div class="tvd-card tvd-white tvd-medium-xsmall">
+				<div class="tvd-card-content tho-stats-engagements">
+					<div class="tho-stats-icon">
+						<span class="tho-icon-hand"></span>
+					</div>
+					<p class="tvd-stats">
+						<#= engagements #>
+							<span><?php echo __( 'Engagements', THO_TRANSLATE_DOMAIN ); ?></span>
+					</p>
+				</div>
+				<div class="tvd-card-action">
+					<a class="tvd-btn-flat tho-btn-flat-lightblue tvd-waves-effect" href="#reporting">
+						<?php echo __( 'View more', THO_TRANSLATE_DOMAIN ) ?>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s12 tvd-m4">
+			<div class="tvd-card tvd-white tvd-medium-xsmall">
+				<div class="tvd-card-content tho-stats-rate">
+					<div class="tho-stats-icon">
+						<span class="tho-icon-chart"></span>
+					</div>
+					<p class="tvd-stats">
+						<#= engagement_rate #>
+							<span><?php echo __( 'Engagement Rate', THO_TRANSLATE_DOMAIN ); ?></span>
+					</p>
+				</div>
+				<div class="tvd-card-action">
+					<a class="tvd-btn-flat tho-btn-flat-green tvd-waves-effect" href="#reporting">
+						<?php echo __( 'View more', THO_TRANSLATE_DOMAIN ); ?>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="no-form-overlay">
+			<div class="tvd-card tvd-white">
+				<div class="tvd-card-content tvd-center-align">
+					<p><?php echo __( 'In this area, a daily snapshot will be displayed. Stats will be gathered automatically as soon as you create and publish at least one form using the options below.', THO_TRANSLATE_DOMAIN ); ?></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="tvd-row">
+		<h3 class="tvd-left tvd-title tvd-margin-right">
+			<?php echo __( 'Content With Currently Active Tests', THO_TRANSLATE_DOMAIN ); ?>
+		</h3>
+		<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-left"
+		   href="<?php echo admin_url( 'admin.php?page=tho_admin_dashboard' ); ?>#createTest/selectPosts"
+		   title="<?php echo __( 'Add New' ) ?>">
+			<?php echo __( 'Add new', THO_TRANSLATE_DOMAIN ); ?>
+		</a>
+	</div>
+	<table class="tvd-collection tho-simple-table">
+		<thead>
+		<tr>
+			<td style="width: 40%;">
+				<div class="tvd-input-field tvd-prefix tvd-input-field-limit">
+					<i class="tvd-icon-search"></i>
+					<input type="text" class="tho-running-search-input tvd-no-margin"
+					       placeholder="<?php echo __( "Find test by title...", THO_TRANSLATE_DOMAIN ); ?>"
+					       value=""/>
+				</div>
+			</td>
+			<td class="tvd-center-align">
+				<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Date started', THO_TRANSLATE_DOMAIN ); ?>">
+					<h5 class="tho-vertical-align tvd-truncate-on-small-el"><?php echo __( 'Date started', THO_TRANSLATE_DOMAIN ); ?></h5>
+				</div>
+			</td>
+			<td class="tvd-center-align">
+				<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Content type', THO_TRANSLATE_DOMAIN ); ?>">
+					<h5 class="tho-vertical-align tvd-truncate-on-small-el"><?php echo __( 'Content type', THO_TRANSLATE_DOMAIN ); ?></h5>
+				</div>
+			</td>
+			<td class="tvd-center-align">
+				<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Views', THO_TRANSLATE_DOMAIN ); ?>">
+					<h5 class="tho-vertical-align tvd-truncate-on-small-el">
+						<?php echo __( 'Views', THO_TRANSLATE_DOMAIN ); ?>
+					</h5>
+				</div>
+			</td>
+			<td class="tvd-center-align">
+				<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Engagements', THO_TRANSLATE_DOMAIN ); ?>">
+					<h5 class="tho-vertical-align tvd-truncate-on-small-el"><?php echo __( 'Engagements', THO_TRANSLATE_DOMAIN ); ?></h5>
+				</div>
+			</td>
+			<td class="tvd-center-align">
+				<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Engagement rate', THO_TRANSLATE_DOMAIN ); ?>">
+					<h5 class="tho-vertical-align tvd-truncate-on-small-el">
+						<?php echo __( 'Engagement rate', THO_TRANSLATE_DOMAIN ); ?>
+					</h5>
+				</div>
+			</td>
+			<td>
+				&nbsp;
+			</td>
+		</tr>
+		</thead>
+		<tbody id="tho-running-test-list"></tbody>
+	</table>
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s6 tvd-offset-s6 tho-top-pagination"></div>
+	</div>
+	<div class="tvd-v-spacer"></div>
+	<div class="tvd-row">
+		<h3 class="tvd-title">
+			<?php echo __( 'Content With Completed Tests', THO_TRANSLATE_DOMAIN ); ?>
+		</h3>
+	</div>
+	<table class="tvd-collection tho-simple-table">
+		<thead>
+		<tr>
+			<td style="width: 40%">
+				<div class="tvd-input-field tvd-prefix tvd-input-field-limit">
+					<i class="tvd-icon-search"></i>
+					<input type="text" class="tho-completed-search-input tvd-no-margin"
+					       placeholder="<?php echo __( "Find test by title...", THO_TRANSLATE_DOMAIN ); ?>"
+					       value=""/>
+				</div>
+			</td>
+			<td class="tvd-center-align">
+				<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Content type', THO_TRANSLATE_DOMAIN ); ?>">
+					<h5 class="tho-vertical-align tvd-truncate-on-small-el"><?php echo __( 'Content type', THO_TRANSLATE_DOMAIN ); ?></h5>
+				</div>
+			</td>
+			<td>
+				&nbsp;
+			</td>
+		</tr>
+		</thead>
+		<tbody id="tho-completed-test-list"></tbody>
+	</table>
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s6 tvd-offset-s6 tho-bottom-pagination"></div>
+	</div>
+</div>
+
+<div id="tho-delete-tests-modal" class="tvd-modal tvd-red">
+	<div class="tvd-modal-content">
+		<a href="javascript:void(0)" class="tvd-modal-action tvd-modal-close tvd-modal-close-x">
+			<i class="tvd-icon-close2"></i>
+		</a>
+		<h3 class="tvd-modal-title tvd-center-align">
+			<?php echo __( 'Are you sure you want to remove all test data related to ', THO_TRANSLATE_DOMAIN ); ?>
+			"<span class="tho-delete-content-title"></span>"
+		</h3>
+	</div>
+	<div class="tvd-modal-footer">
+		<div class="tvd-row">
+			<div class="tvd-col tvd-s12 tvd-m6">
+				<a href="javascript:void(0)" class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-light tvd-waves-effect tvd-modal-close">
+					<?php echo __( "NO, DON'T DELETE", THO_TRANSLATE_DOMAIN ); ?>
+				</a>
+			</div>
+			<div class="tvd-col tvd-s12 tvd-m6">
+				<a href="javascript:void(0)" class="tvd-waves-effect tvd-modal-close tho-detele-tests-action tvd-btn-flat tvd-btn-flat-primary tvd-btn-flat-light tvd-right">
+					<?php echo __( 'YES, DELETE ALL', THO_TRANSLATE_DOMAIN ); ?>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,50 @@
+<div class="tvo-col tvo-s2">
+	<div class="tvo-row tvo-collapse tvo-no-mb">
+		<div class="tvo-col tvo-s2">
+			<div class="tve_lightbox_input_holder">
+				<input type="checkbox" class="tvo-testimonial-item" value="<#= this.model.get('id') #>"
+				       id="tvo-testimonial-item-<#= this.model.get('id') #>"
+				<#= this.model.get('checked')? 'checked':'' #> >
+					<label for="tvo-testimonial-item-<#= this.model.get('id') #>"></label>
+			</div>
+		</div>
+		<div class="tvo-col tvo-s10 tvo-center-align">
+			<div class="tvo-testimonial-image" style="background-image: url('<#= this.model.get('picture_url') #>')">
+				<img src="<#= this.model.get('picture_url') #>" height="60" width="60" style="visibility: hidden;">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="tvo-col tvo-s3">
+	<#= this.model.get('name') #>&nbsp;
+</div>
+<div class="tvo-col tvo-s4">
+	<div>
+		<div class="tvo-testimonial-content-summary">
+			<#= this.model.get('summary')#>&nbsp;
+		</div>
+		<div class="tvo-testimonial-content-full tvd-hide">
+			<#= this.model.get('content')#>&nbsp;
+		</div>
+	</div>
+</div>
+<div class="tvo-col tvo-s3">
+		<#
+			var tags = this.model.get('tagNames');
+			if (tags.length > 0) {
+			for (var i in tags ) {
+			#>
+			<span>
+						<#= tags[i] #>
+					</span>
+			<#
+				}
+				} else {
+				#>
+				<span>
+					<?php echo __( 'No tags', TVO_TRANSLATE_DOMAIN ); ?>
+				</span>
+				<#
+					}
+					#>
+</div>

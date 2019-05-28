@@ -1,0 +1,3 @@
+[18-Aug-2017 10:49:24 America/Chicago] PHP Fatal error:  Class 'IXR_Client' not found in /home3/secretk1/public_html/staging/wp-includes/IXR/class-IXR-clientmulticall.php on line 8
+[18-Aug-2017 10:49:24 America/Chicago] PHP Fatal error:  Class 'IXR_Server' not found in /home3/secretk1/public_html/staging/wp-includes/IXR/class-IXR-introspectionserver.php on line 9
+[25-Jul-2018 15:52:24 America/Chicago] PHP Fatal error:  Class 'IXR_Server' not found in /home3/secretk1/public_html/staging/wp-includes/IXR/class-IXR-introspectionserver.php on line 9

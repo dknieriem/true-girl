@@ -1,0 +1,79 @@
+.tvo-shortcode-item {
+  input[type="text"] {
+    margin: 0;
+  }
+  .tvo-inline-edit {
+    max-width: 85%;
+  }
+}
+
+#wpbody {
+  .tvo-shortcode-title {
+    line-height: 1.3rem;
+    margin: .3rem 0 .4rem;
+    max-width: 85%;
+  }
+}
+
+.tvo-choose-shortcode {
+  background: $shortcode-box-bg;
+  color: $shortcode-box-color;
+  height: 110px;
+  line-height: 110px;
+  font-weight: 500;
+  text-align: center;
+  #wpbody & {
+    a {
+      color: $shortcode-box-color;
+      width: 100%;
+      display: inline-block;
+    }
+  }
+}
+
+.tvo-shortcode-item {
+}
+
+.tvo-hover-shortcode {
+  .tvo-hover-shortcode-text {
+    font-weight: 700;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    transition: all .2s ease-in-out;
+    transition-delay: .05s;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 13%;
+    #wpbody & {
+      color: #fff;
+    }
+  }
+  &:after {
+    background: rgba(#000, .4);
+    content: '';
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all .3s ease-in-out;
+    transform: translate3d(0, 50%, 0);
+  }
+  &:hover {
+    .tvo-hover-shortcode-text {
+      opacity: 1;
+      top: 50%;
+    }
+    &:after {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}

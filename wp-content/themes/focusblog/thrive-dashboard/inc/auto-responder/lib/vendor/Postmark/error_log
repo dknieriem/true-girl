@@ -1,0 +1,2 @@
+[18-Aug-2017 10:58:56 America/Chicago] PHP Fatal error:  Class 'Thrive_Dash_Api_Postmark_ClientBase' not found in /home3/secretk1/public_html/staging/wp-content/themes/focusblog/thrive-dashboard/inc/auto-responder/lib/vendor/Postmark/AdminClient.php on line 8
+[18-Aug-2017 10:58:57 America/Chicago] PHP Fatal error:  Class 'Thrive_Dash_Api_Postmark_CaseInsensitiveArray' not found in /home3/secretk1/public_html/staging/wp-content/themes/focusblog/thrive-dashboard/inc/auto-responder/lib/vendor/Postmark/DynamicResponseModel.php on line 23

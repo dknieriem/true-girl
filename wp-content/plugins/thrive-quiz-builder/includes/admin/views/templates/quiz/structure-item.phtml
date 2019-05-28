@@ -1,0 +1,57 @@
+<div class="tvd-row tvd-no-margin tvd-valign-wrapper">
+	<div class="tvd-col tvd-s12 tvd-m9 tvd-valign tqb-structure-item-card">
+		<div class="tqb-structure-item-card-actions">
+			<# if ( ! item.get( 'has_running_test' ) ) { #>
+				<# if(item.get('type') === 'splash'){ #>
+					<a href="<?php echo Thrive_Quiz_Builder::VIDEO_PAGE_SPLASH; ?>" style="padding: 5px;" class='wistia-popover[height=450,playerColor=2bb914,width=800]'><span class='tvd-icon-play tqb-purple-icon'></span></a>
+				<# } #>
+				<# if(item.get('type') === 'optin'){ #>
+					<a href="<?php echo Thrive_Quiz_Builder::VIDEO_PAGE_OPTIN; ?>" style="padding: 5px;" class='wistia-popover[height=450,playerColor=2bb914,width=800]'><span class='tvd-icon-play tqb-purple-icon'></span></a>
+				<# } #>
+				<# if(item.get('type') === 'results'){ #>
+					<a href="<?php echo Thrive_Quiz_Builder::VIDEO_PAGE_RESULTS; ?>" style="padding: 5px;" class='wistia-popover[height=450,playerColor=2bb914,width=800]'><span class='tvd-icon-play tqb-purple-icon'></span></a>
+				<# } #>
+				<# if ( ! item.get( 'mandatory' ) ) { #>
+					<span class="tvd-icon-trash-o tvd-pointer tvd-inline-block tvd-right tqb-structure-item-card-delete"></span>
+				<# } #>
+			<# } #>
+			<# 	if ( item.get('type') === 'qna' && item.get( 'question_number' ) === 0 ) { #>
+				<a href="<#= tge_url #>">
+					<div class="tvd-tooltip-visible tvd-fixed-bottom tvd-normalize tqb-wizard-tooltip">
+						<span><?php echo __( 'Step 3/4: Define questions and answers.', Thrive_Quiz_Builder::T ) ?></span>
+					</div>
+				</a>
+			<# } #>
+			<# if(item.get( 'question_number' ) > 0  &&  item.get('type') === 'results' && item.get('viewed') == false){ #>
+				<a href="javascript:void(0);" class="tqb-add-form">
+					<div class="tvd-tooltip-visible tvd-fixed-bottom tvd-normalize tqb-wizard-tooltip">
+						<span><?php echo __( 'Step 4/4: Create a result page.', Thrive_Quiz_Builder::T ) ?></span>
+					</div>
+				</a>
+			<# } #>
+		</div>
+		<# if( item.get( 'type' ) === 'qna' ) { #>
+			<p class="tqb-questions-number"><#= item.get( 'question_number' )? item.get( 'question_number' ): 0 #></p>
+			<p class="tqb-questions-info"><?php echo __( 'Questions', Thrive_Quiz_Builder::T ) ?></p>
+		<# } else { #>
+			<div class="tqb-structure-item-icon"></div>
+			<h3 class="tvd-card-title tvd-truncate"><#= item.get('name') #></h3>
+		<# } #>
+		<div class="tqb-edit-button-overlay">
+			<# if ( ! item.get( 'has_running_test' ) ) { #>
+				<# if(item.get('type') === 'qna'  ) { #>
+					<a href="<#= tge_url #>" class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-purple tvd-btn-small"><?php echo __( 'Manage', Thrive_Quiz_Builder::T ) ?></a>
+				<#} else {#>
+					<a href="javascript:void(0);" class="tqb-add-form tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-purple tvd-btn-small"><?php echo __( 'Manage', Thrive_Quiz_Builder::T ) ?></a>
+				<# } #>
+			<# } else { #>
+				<a class="tqb-view-test tvd-btn-icon tvd-btn-icon-purple" href="javascript:void(0)">
+					<span class="tvd-icon-view"></span><span class="tvd-on-large-and-down"><?php echo __( 'View Test', Thrive_Quiz_Builder::T ) ?></span>
+				</a>
+			<# } #>
+		</div>
+	</div>
+	<div class="tvd-col tvd-s12 tvd-m3 tvd-valign tqb-structure-item-separator" <#= item.get('last')? 'style="display: none;"':'' #> >
+		<span class="tvd-icon-chevron-right2"></span>
+	</div>
+</div>

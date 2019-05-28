@@ -1,0 +1,2 @@
+[18-Aug-2017 10:54:25 America/Chicago] PHP Fatal error:  Class 'Requests_Exception' not found in /home3/secretk1/public_html/staging/wp-includes/Requests/Exception/HTTP.php on line 13
+[18-Aug-2017 10:54:25 America/Chicago] PHP Fatal error:  Class 'Requests_Exception' not found in /home3/secretk1/public_html/staging/wp-includes/Requests/Exception/Transport.php on line 3

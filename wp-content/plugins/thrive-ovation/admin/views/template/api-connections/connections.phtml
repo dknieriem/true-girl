@@ -1,0 +1,56 @@
+<ul class="tvd-collection asset-connection-list-item tvo-test-connection-<#= connection #> <# if(connection == active) {#> tvo-table-selected <# }#>">
+	<li class="tvd-collection-item tve-form-wrapper">
+		<div class="tvd-row tvd-collapse">
+			<div class="tvd-col tvd-s3">
+				<div class="tvd-vertical-align">
+					<img class="tve-asset-connection-img" width="31" height="31" src="<?php echo tvo_plugin_url( 'thrive-dashboard/inc/auto-responder/views/images/' ); ?><#= connection #>_small.jpg">
+					<strong class="tvo-connection-name tvd-capitalize"><?php echo __( '<#= connection #>', TVO_TRANSLATE_DOMAIN ); ?></strong>
+				</div>
+			</div>
+			<div class="tvd-col tvd-s4">
+				<div class="tvd-row">
+					<div class="tvd-col tvd-l4">
+						<div class="tvd-switch tvd-vertical-align">
+							<label class="<# if(connection == active) {#> tvd-switch-disabled <# }#>">
+								<input type="checkbox" data="<#= connection #>"
+								<# if(connection == active) {#> checked="checked"
+									<# }#>
+										value="1" class="tvo-connection-setting-change" autocomplete="off">
+										<span class="tvd-lever"></span>
+							</label>
+						</div>
+					</div>
+					<div class="tvd-col tvd-l8">
+						<strong class="tvd-vertical-align">
+							<?php echo __( 'Connected,', TVO_TRANSLATE_DOMAIN ); ?>
+							<# if(connection == active) {#><?php echo __( 'active', TVO_TRANSLATE_DOMAIN ); ?>
+								<# } else {#> <?php echo __( 'inactive', TVO_TRANSLATE_DOMAIN ); ?>
+									<# } #>
+						</strong>
+					</div>
+				</div>
+			</div>
+			<div class="tvd-col tvd-s2">
+		        <span class="tvo-connection-test-<#= connection #> tvd-vertical-align">
+		            <span class="tvd-icon-exchange tvd-text-gray"></span>
+		            <a id="tve-asset-group-test" class="tve-asset-group-test tvd-underline" data="<#= connection #>"
+		               title="Test connection"
+		               href="javascript:void(0)">
+			            <?php echo __( 'Test connection', TVO_TRANSLATE_DOMAIN ); ?>
+		            </a>
+		        </span>
+			</div>
+			<div class="tvd-col tvd-s3">
+				<div class="tvd-vertical-align">
+					<span class="tve-asset-group-test-result tvd-left"></span>
+					<a href="javascript:void(0)" id="tvo-delivery-<#= connection #>-edit"
+					   class="tvo-connection-edit tvo-connection-edit-<#= connection #> tvd-right">
+						<span class="tvd-icon-pencil"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<span class="tvo-test-response"></span>
+	</li>
+</ul>
+

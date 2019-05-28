@@ -1,0 +1,49 @@
+@import "../../../grid";
+@import "../../../base/display/default-template";
+
+.tvo-#{$template-name}-template {
+  &.tvo-testimonials-display-single {
+    .tvo-testimonial-display-item {
+      margin-bottom: $grid-item-padding-vertical;
+      padding: $grid-item-padding-small;
+      h4 {
+        font-size: $title-size-large;
+        font-weight: $title-weight-large;
+        line-height: $title-line-height-large;
+        margin-bottom: $title-large-margin-bottom;
+        margin-top: 0;
+      }
+    }
+    .tvo-testimonial-image-cover {
+      height: $image-size;
+      margin-bottom: $image-margin-bottom;
+      width: $image-size;
+    }
+    .tvo-testimonial-image {
+      height: $image-size;
+      width: $image-size;
+    }
+    .tvo-image-wrapper {
+      margin-top: $grid-item-padding-vertical;
+      min-width: $image-size;
+    }
+    .tvo-testimonial-content {
+      -webkit-flex: 1;
+      flex: 1;
+      padding: 0 $grid-item-padding-side;
+    }
+  }
+}
+
+@media screen and (max-width: 774px) {
+  .tvo-default-template.tvo-testimonials-display-single .tvo-image-wrapper {
+    min-width: 100%;
+  }
+  .tvo-default-template.tvo-testimonials-display-single {
+    .tvo-image-wrapper, .tvo-testimonial-content {
+      -webkit-flex-basis: 100%;
+      flex-basis: 100%;
+    }
+  }
+}
+

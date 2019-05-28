@@ -1,0 +1,77 @@
+@import "../../mixins";
+
+@import "//fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,600,600i";
+
+$template-name: set17;
+
+$font-family: 'Josefin Sans', sans-serif;
+
+$color-pallete: (
+        'black': (#424242, #282828),
+        'blue': (#59abe3, #418ec3),
+        'green': (#1ba39c, #118983),
+        'orange': (#eb974e, #d07d35),
+        'purple': (#869dc9, #6b83b0),
+        'red': (#ef5350, #d94442),
+        'teal': (#1aadb5, #179fa6),
+        'white': (#ffffff, #ecf0f1)
+);
+
+$grid-item-padding-side: 30px;
+$grid-item-padding-vertical: 20px;
+$grid-item-padding: $grid-item-padding-vertical $grid-item-padding-side;
+$item-border-radius: 0;
+$grid-item-margin-top: 0;
+$item-shadow: none;
+
+$image-size: 190px;
+$image-border-radius: 100px;
+$image-size-small: 50px;
+
+$title-size-large: 25px;
+$title-size-small: 19px;
+$quotes-size: 80px;
+$font-size: 20px;
+$name-size: 26px;
+$job-size: 19px;
+
+$title-line-height-large: 1.458em;
+$title-line-height-small: 1.7em;
+$quotes-line-height: 36px;
+$font-line-height: 2em;
+$name-line-height: 1.154em;
+$job-line-height: 1.579em;
+
+$title-weight-large: 400;
+$title-weight-small: 500;
+$quotes-weight: 700;
+$font-weight: 300;
+$name-weight: 600;
+$job-weight: 400;
+
+$title-color-large: #fff;
+$title-color-small: #333;
+$quotes-color: #fff;
+$font-color: #fff;
+$name-color-light: #fff;
+$job-color-light: #666666;
+$name-color-dark: #2d2d2d;
+$job-color-dark: #424242;
+
+$title-small-margin-bottom: 20px;
+$font-margin-bottom: 20px;
+$quote-margin-bottom: 10px;
+$image-margin-bottom: 20px;
+$info-margin-bottom: 40px;
+
+$different-variation: false;
+$different-variation-name: (
+        'white': (#fff, #ecf0f1, #272727)
+);
+
+$testimonial-info-bg: #fff;
+$testimonial-info-border: #d6d6d6;
+$info-border: rgba(#828282, .25);
+
+$image-border-color: #fff;
+$image-shadow-color: #e5e5e5;

@@ -1,0 +1,134 @@
+$font-mdi: 'tvo-icons';
+$mdi-prefix: 'tvo-';
+$icons-font-path: "font/" !default;
+@font-face {
+  font-family: "#{$font-mdi}";
+  src: url("#{$icons-font-path}#{$font-mdi}.eot?#iefix") format("embedded-opentype"),
+  url("#{$icons-font-path}#{$font-mdi}.woff") format("woff"),
+  url("#{$icons-font-path}#{$font-mdi}.ttf") format("truetype"),
+  url("#{$icons-font-path}#{$font-mdi}.svg##{$font-mdi}") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="tvo-icon"], [class*=" tvo-icon"] {
+  speak: none;
+  display: inline-block;
+  font-family: "tvo-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  &:before {
+    color: inherit;
+    display: inline-block;
+    speak: none;
+    text-decoration: inherit;
+  }
+}
+
+.tvo-icon-crosshairs:before {
+  content: '\f05b';
+}
+
+.tvo-icon-television:before {
+  content: '\e901';
+}
+
+.tvo-icon-chevron-left:before {
+  content: '\f053';
+}
+
+.tvo-icon-chevron-right:before {
+  content: '\f054';
+}
+
+.tvo-icon-check-square:before {
+  content: '\f046';
+}
+
+.tvo-icon-user:before {
+  content: '\f007';
+}
+
+.tvo-icon-email:before {
+  content: '\f003';
+}
+
+.tvo-icon-link:before {
+  content: '\f08e';
+}
+
+.tvo-icon-tags:before {
+  content: '\f02c';
+}
+
+.tvo-icon-home:before {
+  content: '\f015';
+}
+
+.tvo-log-icon {
+  &:before {
+    font-family: "tvo-icons";
+  }
+  &.tvo-log-source-capture-form {
+    &:before {
+      content: '\f298';
+    }
+  }
+  &.tvo-log-source-wordpress-comments {
+    &:before {
+      content: '\f19a';
+    }
+  }
+  &.tvo-log-source-import-social-media {
+    &:before {
+      content: '\e900';
+    }
+  }
+  &.tvo-log-content-changed-by-staff {
+    &:before {
+      content: '\f040';
+    }
+  }
+  &.tvo-log-email-sent-to-author {
+    &:before {
+      content: '\f003';
+    }
+  }
+  &.tvo-log-changed-status {
+    &:before {
+      content: '\f017';
+    }
+  }
+  &.tvo-log-changed-picture {
+    &:before {
+      content: '\f1c5';
+    }
+  }
+  &.tvo-log-email-confirmed {
+    &:before {
+      content: '\f00c';
+    }
+  }
+  &.tvo-log-source-tvo-ovation {
+    &:before {
+      content: '\e902';
+    }
+  }
+  &.tvo-log-copy {
+    &:before {
+      content: '\e92c';
+      font-family: "tvd-icons";
+    }
+  }
+}
+
+.tvo-small-icon {
+  font-size: 15px;
+}
+

@@ -1,0 +1,258 @@
+.tve_flt {
+  .tqb-template-style-3 {
+    .tqb-splash-template-1 {
+
+      .tve_btn {
+
+        &.tve_btn3 {
+          border-radius: 5px;
+          -webkit-box-shadow: 0 2px 0 0 rgba(60, 70, 93, 1);
+          -moz-box-shadow: 0 2px 0 0 rgba(60, 70, 93, 1);
+          box-shadow: 0 2px 0 0 rgba(60, 70, 93, 1);
+        }
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        padding: 85px 0 50px;
+        margin: 0;
+        font-family: Cabin, sans-serif;
+        font-weight: 400;
+        color: #fff;
+        text-transform: none;
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+
+      h2 {
+        font-size: 44px;
+      }
+
+      h3 {
+        font-size: 36px;
+      }
+
+      h4 {
+        font-size: 30px;
+      }
+
+      h5 {
+        font-size: 24px;
+      }
+
+      h6 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 17px;
+        font-family: Open Sans, sans-serif;
+        font-weight: 500;
+        margin: 0;
+        color: #fff;
+      }
+
+      a {
+        text-decoration: underline;
+        color: #16b15b;
+        font-size: 17px;
+        box-shadow: none;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      ol {
+        list-style: none;
+        margin: 0;
+        li {
+          counter-increment: item;
+          font-family: Open Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          color: #fff;
+          &:before {
+            content: counter(item) ".";
+            margin-right: 10px;
+            color: #fff;
+            display: inline-block;
+            font-weight: 500;
+          }
+        }
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        li {
+          font-family: Open Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          color: #fff;
+          &:before {
+            content: url("../img/tqb-ul-style-4.png");
+            margin-right: 10px;
+            color: #fff;
+            display: inline-block;
+            font-weight: 500;
+            position: relative;
+            top: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tqb-template-style-3 {
+
+  .tqb-splash-template-1 {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-image: url('../img/template-img-4-1.jpg');
+    padding: 5px;
+    border-radius: 10px;
+
+    #tqb-thrv-label {
+      padding: 25px 25px 20px;
+    }
+
+    .thrv_button_shortcode {
+      margin: 0 auto;
+    }
+
+    .tve_btn {
+      margin: 50px 0 100px;
+      background-color: #16b15b;
+
+      .tve_btnLink {
+        font-size: 28px;
+        font-family: Cabin, sans-serif;
+        font-weight: 400;
+        padding: 20px 60px;
+        border-bottom: none;
+        color: #fff;
+        .tve_btn_txt {
+          text-shadow: none;
+        }
+      }
+
+      &:hover, &:active, &:focus {
+        border-radius: 5px;
+        background-color: #32ba6f;
+      }
+
+      &.tve_btn5 {
+        .tve_btn_txt {
+          padding: 0;
+        }
+      }
+
+      &.tve_btn6 {
+        .tve_btn_txt {
+          padding: 0;
+        }
+      }
+
+      &.tve_btn7 {
+        margin-bottom: 0;
+      }
+
+      &.tve_btn8 {
+        margin-bottom: 0;
+      }
+
+      &.tve_blue {
+        background-color: #1989ca;
+        border-radius: 5px;
+
+        &:hover, &:focus, &:active {
+          background-color: #3597d0;
+        }
+      }
+
+      &.tve_green {
+        background-color: #16b15b;
+        border-radius: 5px;
+
+        &:hover, &:focus, &:active {
+          background-color: #32ba6f;
+        }
+      }
+
+      &.tve_red {
+        background-color: #e64783;
+        border-radius: 5px;
+
+        &:hover, &:focus, &:active {
+          background-color: #e95d92;
+        }
+      }
+
+      &.tve_teal {
+        background-color: #37b3b7;
+        border-radius: 5px;
+
+        &:hover, &:focus, &:active {
+          background-color: #4fbcc0;
+        }
+      }
+
+      &.tve_orange {
+        background-color: #ff9933;
+        border-radius: 5px;
+
+        &:hover, &:focus, &:active {
+          background-color: #ffa54c;
+        }
+      }
+
+      &.tve_black {
+        background-color: #18233f;
+        border-radius: 5px;
+
+        &:hover, &:focus, &:active {
+          background-color: #212c47;
+        }
+      }
+
+      &.tve_purple {
+        border-radius: 5px;
+        background-color: #8470bf;
+        &:hover, &:focus, &:active {
+          background-color: #9381c7;
+        }
+      }
+
+      &.tve_white {
+        background-color: #16b15b;
+        border-radius: 5px;
+        span {
+          color: #fff;
+        }
+
+        &:hover, &:focus, &:active {
+          background-color: #32ba6f;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:320px) and (max-width: 768px) {
+  .tve_flt {
+    .tqb-template-style-3 {
+      .tqb-splash-template-1 {
+        .tve_btn {
+          &.tve_normalBtn {
+            width: 100%;
+          }
+          .tve_btnLink {
+            padding: 20px 10px;
+          }
+        }
+      }
+    }
+  }
+}

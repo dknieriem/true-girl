@@ -1,0 +1,76 @@
+[18-Aug-2017 10:49:28 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home3/secretk1/public_html/staging/wp-includes/theme-compat/embed.php:13
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/theme-compat/embed.php on line 13
+[18-Aug-2017 10:49:28 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function _deprecated_file() in /home3/secretk1/public_html/staging/wp-includes/theme-compat/comments.php:10
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/theme-compat/comments.php on line 10
+[18-Aug-2017 10:49:28 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function _e() in /home3/secretk1/public_html/staging/wp-includes/theme-compat/embed-404.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/theme-compat/embed-404.php on line 14
+[18-Aug-2017 10:49:28 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function _deprecated_file() in /home3/secretk1/public_html/staging/wp-includes/theme-compat/footer.php:9
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/theme-compat/footer.php on line 9
+[18-Aug-2017 10:49:28 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function _deprecated_file() in /home3/secretk1/public_html/staging/wp-includes/theme-compat/header.php:9
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/theme-compat/header.php on line 9
+[18-Aug-2017 10:49:28 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function _deprecated_file() in /home3/secretk1/public_html/staging/wp-includes/theme-compat/sidebar.php:9
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/theme-compat/sidebar.php on line 9
+[18-Aug-2017 10:49:28 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function language_attributes() in /home3/secretk1/public_html/staging/wp-includes/theme-compat/header-embed.php:19
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/theme-compat/header-embed.php on line 19
+[18-Aug-2017 10:49:28 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function do_action() in /home3/secretk1/public_html/staging/wp-includes/theme-compat/footer-embed.php:18
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/theme-compat/footer-embed.php on line 18
+[18-Aug-2017 10:49:28 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function post_class() in /home3/secretk1/public_html/staging/wp-includes/theme-compat/embed-content.php:13
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/theme-compat/embed-content.php on line 13
+[11-Feb-2018 07:36:19 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function post_class() in /home3/secretk1/public_html/staging/wp-includes/theme-compat/embed-content.php:13
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/theme-compat/embed-content.php on line 13
+[25-Jul-2018 16:23:33 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function _deprecated_file() in /home3/secretk1/public_html/staging/wp-includes/theme-compat/sidebar.php:9
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/theme-compat/sidebar.php on line 9
+[25-Jul-2018 16:23:35 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function _e() in /home3/secretk1/public_html/staging/wp-includes/theme-compat/embed-404.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/theme-compat/embed-404.php on line 14
+[25-Jul-2018 16:23:38 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function post_class() in /home3/secretk1/public_html/staging/wp-includes/theme-compat/embed-content.php:13
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/theme-compat/embed-content.php on line 13
+[25-Jul-2018 16:23:40 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home3/secretk1/public_html/staging/wp-includes/theme-compat/embed.php:13
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/theme-compat/embed.php on line 13
+[25-Jul-2018 16:23:40 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function _deprecated_file() in /home3/secretk1/public_html/staging/wp-includes/theme-compat/header.php:9
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/theme-compat/header.php on line 9
+[25-Jul-2018 16:23:41 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function _deprecated_file() in /home3/secretk1/public_html/staging/wp-includes/theme-compat/footer.php:9
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/theme-compat/footer.php on line 9
+[25-Jul-2018 16:23:41 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function do_action() in /home3/secretk1/public_html/staging/wp-includes/theme-compat/footer-embed.php:18
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/theme-compat/footer-embed.php on line 18
+[25-Jul-2018 16:23:52 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function language_attributes() in /home3/secretk1/public_html/staging/wp-includes/theme-compat/header-embed.php:19
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/theme-compat/header-embed.php on line 19
+[25-Jul-2018 16:39:39 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function _deprecated_file() in /home3/secretk1/public_html/staging/wp-includes/theme-compat/comments.php:10
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/theme-compat/comments.php on line 10

@@ -1,0 +1,52 @@
+.tvo-checkbox-container {
+  @media only screen and(max-width: 1500px) {
+    margin-bottom: 1rem;
+  }
+  input[type="checkbox"] {
+    + label {
+      background: $checkbox-box-background-normal;
+      border: 1px solid $checkbox-box-border-normal;
+      border-radius: 2px;
+      height: $checkbox-box-height;
+      line-height: $checkbox-line-height;
+      transition: background .25s, border .25s;
+      padding-right: 1rem;
+      padding-left: 40px;
+      text-transform: capitalize;
+      width: 100%;
+      &:before {
+        left: 14px;
+        top: 10px;
+      }
+      &:after {
+        background: $checbkox-box-color;
+        border: 1px solid $checkbox-box-border-normal;
+        left: 12px;
+        top: 50%;
+        transform: translate3d(0, -50%, 0);
+      }
+    }
+    &:checked {
+      + label {
+        background: $checkbox-box-background;
+        &:after {
+          background: $checkbox-box-smallbox-bg;
+          border: 1px solid transparent;
+        }
+      }
+    }
+  }
+}
+
+.tvd-switch label input[type=checkbox]:checked + .tvd-lever {
+  background-color: $base-teal;
+}
+.tvd-switch label input[type=checkbox]:checked + .tvd-lever:after {
+  background-color: $lever-bg-color;
+}
+input[type=checkbox]:checked:not(:disabled) ~ .tvd-lever:active:after {
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4), 0 0 0 15px transparentize($base-teal, .9);
+}
+.tvo-testimonial-item-checkbox {
+  margin-top: -11px;
+}

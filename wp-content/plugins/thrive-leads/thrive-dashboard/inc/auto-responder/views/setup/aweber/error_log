@@ -1,0 +1,4 @@
+[18-Aug-2017 10:58:52 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/views/setup/aweber/tags.php:6
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/views/setup/aweber/tags.php on line 6

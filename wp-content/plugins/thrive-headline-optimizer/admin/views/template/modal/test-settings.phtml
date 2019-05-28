@@ -1,0 +1,56 @@
+<div class="tvd-modal-content">
+	<p><?php echo __('Here you can set the conditions by which a form will be considered the winner. When a form is considered the winner, the remaining forms will be archived and all traffic will be sent to the winner', THO_TRANSLATE_DOMAIN) ?></p>
+	<div id="tho-winner-test-settings">
+		<div id="tho-winner-test-container">
+			<p>
+				<input id="tho-enable-test-settings" tabindex="1" type="checkbox"
+				<#= enable_automatic_winner == 1 ? 'checked="checked"' : '' #> name="enable_automatic_winner"/>
+					<label for="tho-enable-test-settings"><?php echo __('Enabled', THO_TRANSLATE_DOMAIN) ?></label>
+			</p>
+			<div class="tho-winner-settings-input" style="<# if (enable_automatic_winner != 1) { #>display: none<# } #>">
+				<div class="tvd-v-spacer vs-2"></div>
+				<div class="tvd-row">
+					<div class="tvd-col tvd-s4">
+						<div class="tvd-input-field">
+							<input type="text" class="tho-frequency tho-setting-input-number-non-zero" value="<#= minimum_engagements #>" tabindex="2" id="minimum_engagements"/>
+							<label for="minimum_engagements" data-error="<?php echo __( "Invalid input", THO_TRANSLATE_DOMAIN ); ?>" class="tvd-active"><?php echo __('Minimum engagements', THO_TRANSLATE_DOMAIN) ?></label>
+						</div>
+					</div>
+					<div class="tvd-col tvd-s4">
+						<div class="tvd-input-field">
+							<input type="text" class="tho-frequency tho-setting-input-number-non-zero" value="<#= minimum_duration #>" tabindex="3" id="minimum_duration"/>
+							<label for="minimum_duration" data-error="<?php echo __( "Invalid input", THO_TRANSLATE_DOMAIN ); ?>" class="tvd-active"><?php echo __('Minimum duration (days)', THO_TRANSLATE_DOMAIN) ?></label>
+						</div>
+					</div>
+					<div class="tvd-col tvd-s4">
+						<div class="tvd-input-field">
+							<input type="text" class="tho-setting-input-number-non-zero" value="<#= chance_to_beat_original #>" tabindex="4" maxlength="4" id="chance_to_beat_original"/>
+							<label for="chance_to_beat_original" data-error="<?php echo __( "Invalid input", THO_TRANSLATE_DOMAIN ); ?>" class="tvd-active"><?php echo __('Chance to beat original (%)', THO_TRANSLATE_DOMAIN) ?></label>
+						</div>
+					</div>
+				</div>
+				<div class="tvd-row">
+					<div class="tvd-col tvd-s12">
+						<div class="notice-warning notice tho_engagements_notice tvd-hide">
+							<p><?php echo __( 'Note: the lower you set the engagements number, the more likely it is that a test will end prematurely, without finding the true winning variation.', THO_TRANSLATE_DOMAIN ); ?></p>
+						</div>
+						<div class="notice-warning notice tho_duration_notice tvd-hide">
+							<p><?php echo __( 'The shorter the test duration, the less reliable the results. We recommend running tests for at least one full week (duration = 7).', THO_TRANSLATE_DOMAIN ); ?></p>
+						</div>
+						<div class="notice-warning notice tho_beat_original_notice tvd-hide">
+							<p><?php echo __( 'Note: the lower you set this number, the more likely false positives become. We recommend choosing a value of above 90%.', THO_TRANSLATE_DOMAIN ); ?></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="tvd-modal-footer">
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s12">
+			<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tho-save-test-settings tvd-modal-submit tvd-right" tabindex="8"
+			   href="javascript:void(0)"><?php echo __('Save settings', THO_TRANSLATE_DOMAIN) ?></a>
+		</div>
+	</div>
+</div>

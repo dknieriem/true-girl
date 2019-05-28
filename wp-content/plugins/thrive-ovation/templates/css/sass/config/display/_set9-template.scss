@@ -1,0 +1,86 @@
+@import "../../mixins";
+
+@import "//fonts.googleapis.com/css?family=Roboto:300,400,500,700";
+
+$template-name: set9;
+
+$font-family: 'Roboto', sans-serif;
+
+$color-pallete: (
+        'black': #232323,
+        'blue': #336699,
+        'green': #22a928,
+        'orange': #ff6600,
+        'purple': #c33492,
+        'red': #d72e3d,
+        'teal': #16a085,
+        'white': #ffffff
+);
+
+$grid-item-padding-side: 25px;
+$grid-item-padding-vertical: 30px;
+$grid-item-padding: $grid-item-padding-vertical $grid-item-padding-side;
+$grid-item-padding-small: ($grid-item-padding-vertical /2) $grid-item-padding-side ($grid-item-padding-vertical*2);
+
+$image-size: 130px;
+$image-border-radius: 100px;
+$image-border-size: 0;
+
+$title-size-large: 24px;
+$title-size-small: 20px;
+$quotes-size: 150px;
+$font-size: 20px;
+$name-size: 18px;
+$job-size: 16px;
+
+$title-line-height-large: 1.167em;
+$title-line-height-small: 1.4em;
+$quotes-line-height: 120px;
+$font-line-height: 1.8em;
+$name-line-height: 22px;
+$job-line-height: 22px;
+
+$title-weight-large: 500;
+$title-weight-small: 600;
+$quotes-weight: 700;
+$font-weight: 300;
+$name-weight: 700;
+$job-weight: 300;
+
+$title-color-large: #333;
+$title-color-small: #fff;
+$quotes-color: #fff;
+$font-color: #666;
+$name-color-light: #fff;
+$job-color-light: #fff;
+$name-color-dark: #333333;
+$job-color-dark: #999999;
+
+$title-small-margin-bottom: 20px;
+$title-large-margin-bottom: 20px;
+$font-margin-bottom: 20px;
+$quote-margin-bottom: 35px;
+$image-margin-bottom: 25px;
+
+$different-variation: true;
+$different-variation-name: (
+        'white': #fff
+);
+
+$testimonial-info-bg: transparent;
+$testimonial-info-border: none;
+
+$quotes-radius: 100%;
+
+
+$slider-spacing: 40px;
+$navigation-icon: 'tvo-default-t-icons';
+$navigation-icon-prev: '\f104';
+$navigation-icon-next: '\f105';
+$navigation-icon-size: 72px;
+$navigation-icon-color: #d9d9d9;
+$navigation-icon-color-hover: #c4c6c7;
+$bullet-size: 220px;
+$bullet-bg: #e1dfdf;
+$bullet-bg-hover: #adaeaf;
+$bullet-border-radius: 50px;

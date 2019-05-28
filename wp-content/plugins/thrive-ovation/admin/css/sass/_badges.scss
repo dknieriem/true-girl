@@ -1,0 +1,11 @@
+.tvo-checkbox-container {
+  .tvd-badge {
+    @include transform(translateY(-50%));
+    border-radius: 2px;
+    line-height: 1.2rem;
+    min-width: 5px;
+    left: auto;
+    right: 6px;
+    top: 50%;
+  }
+}

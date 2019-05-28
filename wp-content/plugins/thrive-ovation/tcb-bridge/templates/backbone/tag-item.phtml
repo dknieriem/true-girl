@@ -1,0 +1,6 @@
+<div class="tvo-f-tag-list">
+	<input type="checkbox" class="tvo-tag-item" value="<#= this.model.get('id') #>" id="tvo-tag-item-<#= this.model.get('id') #>" <#= this.model.get('checked')? 'checked':'' #>>
+	<label title="<#= this.model.get('name') #>" for="tvo-tag-item-<#= this.model.get('id') #>">
+		<#= this.model.get('name') #>
+	</label>
+</div>

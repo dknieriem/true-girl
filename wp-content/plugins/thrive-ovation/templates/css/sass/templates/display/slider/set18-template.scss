@@ -1,0 +1,151 @@
+@import "../../../base/display/set18-template";
+@import "../../../slider";
+@import "../../../grid";
+
+@font-face {
+  font-family: '#{$navigation-icon}';
+  src: url('../../fonts/set18-template/tvo-set18-t-icons.eot?62scwa');
+  src: url('../../fonts/set18-template/tvo-set18-t-icons.eot?#iefix62scwa') format('embedded-opentype'),
+  url('../../fonts/set18-template/tvo-set18-t-icons.woff?62scwa') format('woff'),
+  url('../../fonts/set18-template/tvo-set18-t-icons.ttf?62scwa') format('truetype'),
+  url('../../fonts/set18-template/tvo-set18-t-icons.svg?62scwa#tlp-icon-authorfocused') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tvo-#{$template-name}-template {
+  &.tvo-testimonials-display-slider {
+    @include tvo-relative;
+    .tvo-testimonial-display-item {
+      padding: $grid-item-padding-small;
+      h4 {
+        color: $title-color-large;
+        font-size: $title-size-large;
+        font-weight: $title-weight-large;
+        line-height: $title-line-height-large;
+        margin-bottom: $title-large-margin-bottom;
+        margin-top: 0;
+      }
+      .thrlider-prev, .thrlider-next {
+        width: 13px;
+        &:before {
+          content: '';
+          display: none;
+        }
+        .thrlider-navItem-inner-circle {
+          border-radius: 100%;
+          border: 1px solid #fff;
+          content: '';
+          display: block;
+          height: 13px;
+          width: 13px;
+        }
+      }
+      .thrlider-prev {
+        transform: translate(-50%, -50%);
+        top: 0;
+        left: 50%;
+      }
+      .thrlider-next {
+        transform: translate(-50%, 50%);
+        top: auto;
+        left: 50%;
+        right: auto;
+        bottom: 0;
+      }
+    }
+    .tvo-item-grid {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .tvo-testimonial-image-cover {
+      box-shadow: 0 4px 18px 0 rgba(#000, .25);
+      height: 100%;
+      max-width: 100%;
+      width: $image-size;
+    }
+    .tvo-testimonial-image {
+      max-width: 100%;
+      width: $image-size;
+    }
+    .tvo-image-wrapper {
+      border-radius: $image-border-radius;
+      border: 2px solid $image-border-color;
+      box-sizing: border-box;
+      height: 40%;
+      margin-top: -($slider-spacing - 10px);
+      max-width: 40%;
+      padding: 25px;
+      &:before {
+        border-radius: 100%;
+        border: 1px solid #fff;
+        background: #fff;
+        content: '';
+        display: block;
+        height: 13px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(50%, -50%);
+        width: 13px;
+      }
+    }
+    .tvo-testimonial-info {
+      margin-bottom: $info-margin-bottom;
+    }
+    .tvo-testimonial-content {
+      box-sizing: border-box;
+      -webkit-flex: 1;
+      flex: 1;
+      min-width: 60%;
+      padding: $grid-item-padding-side $grid-item-padding-vertical;
+    }
+    .thrlider-nav-wrapper {
+      margin: 0 auto;
+    }
+    .thrlider-navItem {
+      border-radius: $bullet-border-radius;
+      background: $bullet-bg;
+      height: $bullet-size;
+      margin: 0 5px;
+      width: $bullet-size;
+      &:hover {
+        background: $bullet-bg-hover;
+      }
+    }
+    .thrlider-prev, .thrlider-next {
+      margin: auto;
+      position: absolute;
+      top: ($slider-spacing + 10px);
+    }
+    .thrlider-prev {
+      left: 10px;
+    }
+    .thrlider-next {
+      right: 10px;
+    }
+    [id*='thrlider'] {
+      padding-top: $slider-spacing;
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .tvo-set18-template.tvo-testimonials-display-slider .tvo-image-wrapper {
+    max-width: 80%;
+  }
+  .tvo-set18-template.tvo-testimonials-display-slider .tvo-testimonial-image-cover {
+    width: 150px;
+  }
+  .tvo-set18-template.tvo-testimonials-display-slider .tvo-testimonial-image {
+    width: 150px;
+  }
+  .tvo-set18-template.tvo-testimonials-display-slider .tvo-testimonial-content {
+    -webkit-flex-basis: 100%;
+    flex-basis: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+

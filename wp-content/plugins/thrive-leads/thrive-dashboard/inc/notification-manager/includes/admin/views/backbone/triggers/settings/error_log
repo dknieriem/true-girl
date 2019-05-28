@@ -1,0 +1,2 @@
+[18-Aug-2017 09:59:12] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/notification-manager/includes/admin/views/backbone/triggers/settings/email-sign-up.phtml on line 1
+[18-Aug-2017 09:59:12] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/notification-manager/includes/admin/views/backbone/triggers/settings/split-test-ends.phtml on line 1

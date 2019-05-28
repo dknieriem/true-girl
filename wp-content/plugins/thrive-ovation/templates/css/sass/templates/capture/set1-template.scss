@@ -1,0 +1,24 @@
+@import "../../base/capture/set1-template";
+
+.tvo_testimonial_form.tvo-#{$template-name}-template {
+  .tvo-form-field {
+    .tvo-form-input, .tvo-form-textarea {
+      border: 0;
+      color:$input-color-focus;
+      background-color: lightgrey;
+      &:hover, &:focus {
+        color:$input-color-focus;
+        border: 0;
+        background-color: lightgrey;
+      }
+    }
+    .tvo-form-button {
+      @include center-align;
+      font-family: $font-family2;
+    }
+  }
+}
+
+.tvo_required_error {
+  border: 1px solid red !important;
+}

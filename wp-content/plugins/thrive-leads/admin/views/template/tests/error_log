@@ -1,0 +1,7 @@
+[18-Aug-2017 09:58:12] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/tests/item.phtml on line 28
+[18-Aug-2017 09:58:12] PHP Fatal error:  Call to undefined function  menu_page_url() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/tests/view.phtml on line 7
+[18-Aug-2017 09:58:12] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/tests/totals.phtml on line 14
+[18-Aug-2017 09:58:12] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/tests/options.phtml on line 3
+[18-Aug-2017 09:58:12] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/tests/stopped-item.phtml on line 27
+[18-Aug-2017 09:58:13] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/tests/active-test-item.phtml on line 25
+[18-Aug-2017 09:58:13] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/tests/completed-test-item.phtml on line 35

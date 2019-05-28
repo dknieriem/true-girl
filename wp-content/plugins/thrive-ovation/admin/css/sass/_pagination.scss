@@ -1,0 +1,31 @@
+.tvo-icon-pagination {
+  color: $pagination-default;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+#pages {
+  a[value] {
+    .tvo-icon-pagination {
+      &:hover {
+        color: $pagination-hover;
+      }
+    }
+  }
+}
+
+.tvo-paginatin-select {
+  //margin-top: 15px;
+  margin-right: 25px;
+
+}
+
+.tvo-pagination-select {
+  margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+  top: 4px;
+  input.tvd-select-dropdown {
+    margin: 0;
+  }
+}

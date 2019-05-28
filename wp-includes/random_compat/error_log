@@ -1,0 +1,13 @@
+[18-Aug-2017 10:49:28 America/Chicago] PHP Fatal error:  Cannot redeclare random_int() in /home3/secretk1/public_html/staging/wp-includes/random_compat/random_int.php on line 191
+[18-Aug-2017 10:49:28 America/Chicago] PHP Fatal error:  Cannot redeclare random_bytes() in /home3/secretk1/public_html/staging/wp-includes/random_compat/random_bytes_mcrypt.php on line 76
+[18-Aug-2017 10:49:28 America/Chicago] PHP Fatal error:  Cannot redeclare random_bytes() in /home3/secretk1/public_html/staging/wp-includes/random_compat/random_bytes_openssl.php on line 83
+[18-Aug-2017 10:49:28 America/Chicago] PHP Fatal error:  Cannot redeclare random_bytes() in /home3/secretk1/public_html/staging/wp-includes/random_compat/random_bytes_com_dotnet.php on line 81
+[18-Aug-2017 10:49:28 America/Chicago] PHP Fatal error:  Cannot redeclare random_bytes() in /home3/secretk1/public_html/staging/wp-includes/random_compat/random_bytes_libsodium.php on line 86
+[18-Aug-2017 10:49:28 America/Chicago] PHP Fatal error:  Cannot redeclare random_bytes() in /home3/secretk1/public_html/staging/wp-includes/random_compat/random_bytes_dev_urandom.php on line 148
+[18-Aug-2017 10:49:28 America/Chicago] PHP Fatal error:  Cannot redeclare random_bytes() in /home3/secretk1/public_html/staging/wp-includes/random_compat/random_bytes_libsodium_legacy.php on line 86
+[25-Jul-2018 15:19:54 America/Chicago] PHP Fatal error:  Cannot redeclare random_bytes() in /home3/secretk1/public_html/staging/wp-includes/random_compat/random_bytes_com_dotnet.php on line 81
+[25-Jul-2018 15:20:02 America/Chicago] PHP Fatal error:  Cannot redeclare random_bytes() in /home3/secretk1/public_html/staging/wp-includes/random_compat/random_bytes_libsodium.php on line 86
+[25-Jul-2018 15:20:18 America/Chicago] PHP Fatal error:  Cannot redeclare random_bytes() in /home3/secretk1/public_html/staging/wp-includes/random_compat/random_bytes_openssl.php on line 83
+[25-Jul-2018 15:47:57 America/Chicago] PHP Fatal error:  Cannot redeclare random_bytes() in /home3/secretk1/public_html/staging/wp-includes/random_compat/random_bytes_libsodium_legacy.php on line 86
+[25-Jul-2018 15:52:30 America/Chicago] PHP Fatal error:  Cannot redeclare random_bytes() in /home3/secretk1/public_html/staging/wp-includes/random_compat/random_bytes_dev_urandom.php on line 148
+[25-Jul-2018 16:08:36 America/Chicago] PHP Fatal error:  Cannot redeclare random_int() in /home3/secretk1/public_html/staging/wp-includes/random_compat/random_int.php on line 191

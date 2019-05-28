@@ -1,0 +1,12 @@
+[18-Aug-2017 10:57:16 America/Chicago] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/font-import-manager/views/main.php:5
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/font-import-manager/views/main.php on line 5
+[18-Aug-2017 10:57:16 America/Chicago] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/font-import-manager/views/messages.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/font-import-manager/views/messages.php on line 2
+[18-Aug-2017 10:57:16 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/font-import-manager/views/form.php:5
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/font-import-manager/views/form.php on line 5

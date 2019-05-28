@@ -1,0 +1,31 @@
+<div class="tqb-header">
+	<nav id="tqb-nav">
+		<div class="tvd-left">
+			<a href="<?php echo admin_url( 'admin.php?page=tqb_admin_dashboard' ) ?>" title="<?php echo __( 'Thrive Quiz Builder Home', Thrive_Quiz_Builder::T ) ?>">
+				<img src="<?php echo tqb()->plugin_url( 'assets/images/thrive-logo.png' ); ?>"/>
+				<p><span>Thrive</span> Quiz Builder</p>
+			</a>
+		</div>
+		<ul class="tvd-right">
+			<li>
+				<a href="#reports">
+					<i class="tqd-icons-graph"></i>
+					<?php echo __( 'Reports', Thrive_Quiz_Builder::T ) ?>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)" class="tqb-toggle-settings">
+					<i class="tvd-icon-settings"></i>
+					<?php echo __( 'Settings', Thrive_Quiz_Builder::T ) ?>
+				</a>
+			</li>
+			<li>
+				<a id="tvd-share-modal" class="tvd-modal-trigger" href="#tvd-modal1"
+				   data-overlay_class="tvd-white-bg" data-opacity=".95">
+					<span class="tvd-icon-heart"></span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+<?php include TVE_DASH_PATH . '/templates/share.phtml'; ?>

@@ -1,0 +1,172 @@
+table#bandsintown_events,
+table.bandsintown_events {
+	border: 0;
+	border-collapse: collapse;
+	font-family: Helvetica,Arial,Sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	width: 100%;
+	text-align: left;
+	width: 100%;
+}
+
+table#bandsintown_events td.date,
+table.bandsintown_events td.date {
+	width: 10%;
+}
+
+table#bandsintown_events td.tickets,
+table.bandsintown_events td.tickets {
+	width: 15%;
+}
+
+table#bandsintown_events td.location,
+table.bandsintown_events td.location {
+	width: 20%;
+}
+
+table#bandsintown_events td.artist,
+table.bandsintown_events td.artist {
+	width: 30%;
+}
+
+table#bandsintown_events tr td a,
+table.bandsintown_events tr td a {
+	color: #019193;
+	display: block;
+	font-weight: bold;
+}
+
+table#bandsintown_events a:hover,
+table.bandsintown_events a:hover {
+	color:#E5015A;
+}
+
+table#bandsintown_events th,
+table.bandsintown_events th {
+	vertical-align: bottom;
+	padding: 4px 8px 12px;
+	font-weight: bold;
+	text-align: left;
+	background: #202020 url("bg_headline_long.gif") -30px bottom no-repeat;
+	color: #fff;
+}
+
+table#bandsintown_events tr td,
+table.bandsintown_events tr td { font-weight: bold; }
+
+table#bandsintown_events tr.hover td,
+table#bandsintown_events tr.hover td {
+	background: #f1f1f1;
+
+}
+
+table#bandsintown_events th.first,
+table.bandsintown_events th.first {
+	background: #202020 url("bg_headline_long.gif") 0px bottom no-repeat;
+}
+
+table#bandsintown_events td,
+table.bandsintown_events td {
+	vertical-align: middle;
+	background: #fff;
+	padding: 4px 8px;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+table#bandsintown_events td.tickets em,
+table.bandsintown_events td.tickets em {
+	font-weight: normal;
+	color: #888;
+}
+	
+table#bandsintown_widget_list td a.btn-buytix,
+table#bandsintown_events td a.btn-buytix,
+table.bandsintown_widget_list td a.btn-buytix,
+table.bandsintown_events td a.btn-buytix,
+a.btn-buytix {
+	background:transparent url("btn_buytix.gif") no-repeat scroll 0 0 !important;
+	color:#4F4F4F !important;
+	display:block !important;
+	font-size:12px !important;
+	font-weight:bold !important;
+	height:21px !important;
+	padding:3px 0 0 !important;
+	text-align:center !important;
+	text-shadow:0 1px #FFFFFF !important;
+	width:58px !important;
+	text-decoration: none !important;
+	cursor:pointer !important;
+}
+
+table#bandsintown_events td a.btn-buytix:hover,
+table#bandsintown_widget_list td a.btn-buytix:hover,
+a.btn-buytix:hover {
+	color:#E5015A !important;
+	text-shadow:0 1px #FFFFFF !important;
+}
+
+/* widget */
+h3#bandsintown_header {
+	padding: 4px 8px 12px;
+	font-family: Arial,Sans-serif;
+	font-weight: bold;
+	text-align: left;
+	background: #202020 url("bg_headline_long.gif") 0 bottom no-repeat;
+	color: #fff;
+}
+
+#bandsintown_widget_list,
+.bandsintown_widget_list {
+	border-collapse: collapse;
+	margin: 0;
+	border: 0;
+}
+
+#bandsintown_widget_list td,
+#bandsintown_widget_list td a,
+.bandsintown_widget_list td,
+.bandsintown_widget_list td a,
+p.bandsintown_widget_no_shows {
+	color: #969795;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial,sans-serif;
+}
+
+#bandsintown_widget_list td,
+.bandsintown_widget_list td {
+	padding: 4px 8px;
+	border-bottom: 1px solid #E8E9E8;
+}
+
+#bandsintown_widget_list tr td strong a,
+.bandsintown_widget_list tr td strong a {
+	font-size: 14px;
+	color: #202020;
+}
+
+#bandsintown_widget_list tr td.tickets a.btn-buytix,
+.bandsintown_widget_list tr td.tickets a.btn-buytix {
+	color:#4F4F4F !important;
+	padding: 5px 0 0 1px !important;
+}
+
+#bandsintown_widget_list td a:hover,
+#bandsintown_widget_list tr td.tickets a.btn-buytix:hover,
+.bandsintown_widget_list td a:hover,
+.bandsintown_widget_list tr td.tickets a.btn-buytix:hover {
+	color:#E5015A !important;
+	text-shadow:0 1px #FFFFFF !important;
+}
+
+a.bandsintown_widget_more {
+	display: block;
+	padding: 4px 0;
+	font-weight: bold;
+	font-size: 11px;
+	font-family: Arial,sans-serif;
+	color: #019193;
+}

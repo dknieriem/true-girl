@@ -1,0 +1,27 @@
+<?php
+ob_start();
+?>
+<div class="tie-element" style="top: 70px; left: 132px; position: absolute; width: auto; right: auto; height: auto; bottom: auto;">
+	<div style="position: relative;" class="tie-editable"><p style="font-family: Raleway; color: rgb(255, 255, 255);" data-mce-style="font-family: Raleway; color: #ffffff;"><span
+					style="font-size: 88px;" data-mce-style="font-size: 88px;">Your Title Text</span></p></div>
+</div>
+<div class="tie-element" style="top: 239px; left: 141px; position: absolute; width: auto; right: auto; height: auto; bottom: auto;">
+	<div style="position: relative;" class="tie-editable"><p style="font-family: Raleway; color: rgb(37, 117, 39);" data-mce-style="font-family: Raleway; color: #257527;"><span
+					style="font-size: 57px;" data-mce-style="font-size: 57px;">Score: %result%</span></p></div>
+</div>
+<div class="tie-element" style="top: 377px; left: 162px; position: absolute; width: auto; right: auto; height: auto; bottom: auto;">
+	<div style="position: relative;" class="tie-editable"><p><span style="font-size: 24px; color: rgb(253, 253, 253); font-family: Roboto;"
+																   data-mce-style="font-size: 24px; color: #fdfdfd; font-family: Roboto;">A short description of the quiz.&nbsp;</span>
+		</p>
+		<p><span style="font-size: 24px; color: rgb(253, 253, 253); font-family: Roboto;" data-mce-style="font-size: 24px; color: #fdfdfd; font-family: Roboto;">You can tell people about the skills which are tested,</span>
+		</p>
+		<p><span style="font-size: 24px; color: rgb(253, 253, 253); font-family: Roboto;" data-mce-style="font-size: 24px; color: #fdfdfd; font-family: Roboto;">or other key aspects that will convince them to give</span>
+		</p>
+		<p><span style="font-size: 24px; color: rgb(253, 253, 253); font-family: Roboto;" data-mce-style="font-size: 24px; color: #fdfdfd; font-family: Roboto;">it a try.</span>
+		</p></div>
+</div>
+<?php
+$content = ob_get_contents();
+ob_clean();
+return $content;
+?>

@@ -1,0 +1,74 @@
+<div class="tvd-modal-content">
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s12">
+			<h3 class="tvd-modal-title"><?php echo __( 'Configure Landing Page', TVO_TRANSLATE_DOMAIN ); ?></h3>
+		</div>
+	</div>
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s6">
+			<p>
+				<?php echo __( 'If the user approves the testimonial', TVO_TRANSLATE_DOMAIN ); ?>
+			</p>
+		</div>
+		<div class="tvd-col tvd-s6">
+			<div class="tvd-input-field">
+				<select data-action="tvo_user_approves" class="tvo-change-landing-setting tvd-validate" id="approve"
+				        data-placeholder="- <?php echo __( 'Select an option', TVO_TRANSLATE_DOMAIN ); ?> -">
+					<option value=""></option>
+					<option value="tvo_existing_content"><?php echo __( 'Display Existing Content on this site', TVO_TRANSLATE_DOMAIN ); ?></option>
+					<option value="tvo_custom_url"><?php echo __( 'Display Custom URL', TVO_TRANSLATE_DOMAIN ); ?></option>
+				</select>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-offset-s6 tvo_user_approves tvo_existing_content tvd-hide">
+			<div class="tvd-input-field">
+				<input class="tvu-leads-posts tvu-leads-autocomplete ui-autocomplete-loading" id="tvu-leads-posts" type="text" />
+				<label for="tvu-leads-posts"><?php echo __( 'Search...', TVO_TRANSLATE_DOMAIN ) ?></label>
+				<select id="approve_post_id" class="tvo_user_approves_tvo_existing_content tvd-browser-default" style="display: none;"></select>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-offset-s6 tvo_user_approves tvo_custom_url tvd-hide">
+			<div class="tvd-input-field">
+				<input type="text" class="tvd-validate tvo_user_approves_tvo_custom_url" id="approve_url" value=""/>
+				<label for="approve_url"><?php echo __( 'Insert URL', TVO_TRANSLATE_DOMAIN ); ?></label>
+			</div>
+		</div>
+	</div>
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s6">
+			<p>
+				<?php echo __( 'If the user doesn\'t approve the testimonial', TVO_TRANSLATE_DOMAIN ); ?>
+			</p>
+		</div>
+		<div class="tvd-col tvd-s6">
+			<select data-action="tvo_user_not_approves" class="tvo-change-landing-setting tvd-validate" id="not_approve"
+			        data-placeholder="- <?php echo __( 'Select an option', TVO_TRANSLATE_DOMAIN ); ?> -">
+				<option value=""></option>
+				<option value="tvo_existing_content"><?php echo __( 'Display Existing Content on this site', TVO_TRANSLATE_DOMAIN ); ?></option>
+				<option value="tvo_custom_url"><?php echo __( 'Display Custom URL', TVO_TRANSLATE_DOMAIN ); ?></option>
+			</select>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-offset-s6 tvo_user_not_approves tvo_existing_content tvo_user_not_approves_tvo_existing_content tvd-hide">
+			<div class="tvd-input-field">
+				<input class="tvu-leads-posts-not tvu-not-leads-autocomplete ui-autocomplete-loading" id="tvu-leads-posts-not" type="text" />
+				<label for="tvu-leads-posts-not"><?php echo __( 'Search...', TVO_TRANSLATE_DOMAIN ) ?></label>
+				<select id="not_approve_post_id" style="display:none;" class="tvo_user_not_approves_tvo_existing_content tvd-browser-default"></select>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-offset-s6 tvo_user_not_approves tvo_custom_url tvd-hide">
+			<div class="tvd-input-field">
+				<input type="text" class="tvd-validate tvo_user_not_approves_tvo_custom_url" id="not_approve_url" value=""/>
+				<label for="not_approve_url"><?php echo __( 'Insert URL', TVO_TRANSLATE_DOMAIN ); ?></label>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="tvd-modal-footer">
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s12">
+			<a class="tvo-save-landing-page-settings tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-right"
+			   href="javascript:void(0);"><?php echo __( 'Save and continue', TVO_TRANSLATE_DOMAIN ); ?></a>
+			</a>
+		</div>
+	</div>
+</div>

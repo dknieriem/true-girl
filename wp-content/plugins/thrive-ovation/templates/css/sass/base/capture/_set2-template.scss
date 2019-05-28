@@ -1,0 +1,33 @@
+@import "bourbon";
+@import "../../grid";
+@import "../../config/capture/_set2-template";
+@import "../../form";
+
+@each $name, $color in $color-pallete {
+  .tvo_testimonial_form.tve_#{$name}.tvo-#{$template-name}-template {
+    .tvo-form-button {
+      border: 2px solid $color;
+      color: $color;
+      &:hover {
+        background: $color;
+      }
+      &:active {
+        background: $color;
+      }
+    }
+  }
+}
+
+@each $name, $color in $different-variation-name {
+  .tvo_testimonial_form.tvo-#{$template-name}-template.tve_#{$name} {
+    .tvo-form-field {
+      .tvo-form-button {
+        color: nth($color, 1);
+        &:hover {
+          color: nth($color, 2);
+        }
+      }
+    }
+  }
+}
+

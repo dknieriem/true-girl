@@ -1,0 +1,4 @@
+[18-Aug-2017 10:54:49 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/inc/translations.php:9
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/inc/translations.php on line 9

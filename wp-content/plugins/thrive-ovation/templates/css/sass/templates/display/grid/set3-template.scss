@@ -1,0 +1,27 @@
+@import "../../../grid";
+@import "../../../base/display/set3-template";
+
+.tvo-#{$template-name}-template {
+  &.tvo-testimonials-display-grid {
+    .tvo-testimonial-display-item {
+      @include full-height;
+      @include center-text;
+      @include box-sizing;
+      @include display-flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      padding: $grid-item-padding;
+      h4 {
+        color: $title-color-small;
+        font-size: $title-size-small;
+        font-weight: $title-weight-small;
+        line-height: $title-line-height-small;
+        margin-bottom: $title-small-margin-bottom;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,4 @@
+[18-Aug-2017 10:53:38 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_option() in /home3/secretk1/public_html/staging/wp-content/plugins/mailchimp/views/css/frontend.php:16
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/mailchimp/views/css/frontend.php on line 16

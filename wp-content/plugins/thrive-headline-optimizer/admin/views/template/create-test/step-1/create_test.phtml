@@ -1,0 +1,148 @@
+<div class="tho-container">
+	<h3 class="tvd-title">
+		<?php echo __( 'Create New Headline Test', THO_TRANSLATE_DOMAIN ); ?>
+	</h3>
+	<div class="tvd-v-spacer"></div>
+	<div class="tvd-row tvd-collapse">
+		<div class="tvd-col tvd-s12">
+			<?php $post_types = tho_get_post_types();
+			foreach ( $post_types as $key => $post_type ) : ?>
+				<div class="tvd-inline-block tvd-checkbox-container">
+					<input <?php if ( $key === 'post' ): ?>checked<?php endif; ?> id="tho-post-type-<?php echo $key ?>"
+					       name="tho-post-type-checkbox[]" class="tho-post-type-checkbox" type="checkbox"
+					       value="<?php echo $key ?>"/>
+					<label for="tho-post-type-<?php echo $key ?>"><?php echo $post_type; ?></label>
+				</div>
+			<?php endforeach ?>
+		</div>
+	</div>
+	<div class="tvd-card tvd-white">
+		<div class="tvd-card-content tvd-no-padding-bottom">
+			<div class="tvd-row tvd-collapse">
+				<div class="tvd-col tvd-s6">
+					<div class="tho-combo-right">
+						<div class="tvd-row tvd-collapse">
+							<div class="tvd-col tvd-ms12 tvd-m6">
+								<h4>
+									<?php echo __( 'Choose content to test', THO_TRANSLATE_DOMAIN ); ?>
+								</h4>
+							</div>
+							<div class="tvd-col tvd-ms12 tvd-m6">
+								<div class="tvd-input-field tvd-prefix">
+									<i class="tvd-icon-search"></i>
+									<input type="text" class="tho-search-input tvd-no-margin"
+									       placeholder="<?php echo __( "Quick search...", THO_TRANSLATE_DOMAIN ); ?>"
+									       value=""/>
+								</div>
+							</div>
+						</div>
+						<div class="tvd-v-spacer"></div>
+						<div class="tho-overflowing-container">
+							<div class="tho-overflowing-box tho-no-top-blur">
+								<span class="tho-no-search-res" style="display: none;"><?php echo __( 'There is not content to be displayed.', THO_TRANSLATE_DOMAIN ); ?></span>
+								<div id="tho-post-list"></div>
+							</div>
+						</div>
+
+						<div class="tvd-row tvd-collapse">
+							<div class="tvd-col tvd-s6">
+								<a href="javascript:void(0);"
+								   class="tvd-waves-effect tht-add-all-posts tvd-waves-light tvd-btn-flat tvd-btn-flat-teal tvd-btn-small">
+									<span class="tvd-icon-plus tvd-icon-xsmall"></span>
+									<?php echo __( "Add all", THO_TRANSLATE_DOMAIN ); ?>
+								</a>
+							</div>
+							<div class="tvd-col tvd-s6">
+								<div class="tvd-left-col-pagination"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tvd-col tvd-s6">
+					<div class="tho-combo-left">
+						<div class="tvd-row tvd-collapse">
+							<div class="tvd-col tvd-ms12 tvd-m6">
+								<h4>
+									<?php echo __( 'List of content to be tested', THO_TRANSLATE_DOMAIN ); ?>
+								</h4>
+							</div>
+							<div class="tvd-col tvd-ms12 tvd-m6">
+								<div class="tvd-input-field tvd-prefix">
+									<i class="tvd-icon-search"></i>
+									<input type="text" class="tho-search-sel-input tvd-no-margin"
+									       placeholder="<?php echo __( "Quick search...", THO_TRANSLATE_DOMAIN ); ?>"
+									       value=""/>
+								</div>
+							</div>
+						</div>
+						<div class="tvd-v-spacer"></div>
+						<div class="tho-overflowing-container">
+							<span class="tho-no-selected-posts tho-combo-notification">
+								<?php echo __( "You have no content selected at the moment. Please add content from the left column in order to start a test.", THO_TRANSLATE_DOMAIN ); ?>
+							</span>
+							<div class="tho-overflowing-box tho-no-top-blur">
+								<div id="tho-selected-post-list"></div>
+							</div>
+						</div>
+						<div class="tvd-row tvd-collapse">
+							<div class="tvd-col tvd-s6">
+								<a style="display: none;" href="javascript:void(0);"
+								   class="tvd-waves-effect tht-remove-all-posts tvd-waves-light tvd-btn-flat tvd-btn-flat-red tvd-btn-small">
+									<span class="tvd-icon-minus tvd-icon-xsmall"></span>
+									<?php echo __( "Remove all", THO_TRANSLATE_DOMAIN ); ?>
+								</a>
+							</div>
+							<div class="tvd-col tvd-s6">
+								<div class="tvd-right-col-pagination"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tvd-col tvd-s12">
+		<div class="tvd-col tvd-s12">
+			<a href="#dashboard" class="tvd-btn-flat tvd-btn-flat-primary tvd-btn-flat-dark tvd-waves-effect">
+				&laquo; <?php echo __( "Back to tests", THO_TRANSLATE_DOMAIN ); ?>
+			</a>
+
+			<a style="display: none;" href="javascript:void(0);"
+			   class="tvd-waves-effect tht-step1-continue tvd-waves-light tvd-btn tvd-btn-green tvd-right">
+				<?php echo __( "Save and continue", THO_TRANSLATE_DOMAIN ); ?>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div id="tho-add-remove-all" class="tvd-modal">
+	<div class="tvd-modal-content">
+		<a href="javascript:void(0)" class="tvd-modal-action tvd-modal-close tvd-modal-close-x">
+			<i class="tvd-icon-close2"></i>
+		</a>
+		<h3 class="tvd-modal-title tvd-center-align">
+			<?php echo __( 'Are you sure you want to ', THO_TRANSLATE_DOMAIN ); ?>
+			<span class="tho-add-remove-all-text"></span>
+			<?php echo __( ' all content to be tested?', THO_TRANSLATE_DOMAIN ); ?>
+		</h3>
+	</div>
+	<div class="tvd-modal-footer">
+		<div class="tvd-row">
+			<div class="tvd-col tvd-s12 tvd-m6">
+				<a href="javascript:void(0)"
+				   class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-light tvd-waves-effect tvd-modal-close">
+					<?php echo __( "NO, DON'T", THO_TRANSLATE_DOMAIN ); ?>
+					<span class="tho-add-remove-all-text"></span>
+				</a>
+			</div>
+			<div class="tvd-col tvd-s12 tvd-m6">
+				<a href="javascript:void(0)"
+				   class="tvd-waves-effect tvd-modal-close tho-add-remove-posts tvd-btn-flat tvd-btn-flat-primary tvd-btn-flat-light tvd-right">
+					<?php echo __( 'YES, ', THO_TRANSLATE_DOMAIN ); ?>
+					<span class="tho-add-remove-all-text"></span>
+					<?php echo __( 'ALL', THO_TRANSLATE_DOMAIN ); ?>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,24 @@
+<# if( collection.length > 0 ) {#>
+	<div class="tvd-v-spacer"></div>
+	<table class="tvd-collection tvd-with-header tvd-slim-table">
+		<thead>
+		<tr class="tvd-collection-header">
+			<td>&nbsp;</td>
+			<td><?php echo __( 'Page Impressions', Thrive_Quiz_Builder::T ); ?></td>
+			<# if( model.get('post_type') === ThriveQuizB.data.quiz_structure_item_types.splash.key ){ #>
+				<td><?php echo __( 'Conversions', Thrive_Quiz_Builder::T ); ?></td>
+				<td><?php echo __( 'Conversion Rate', Thrive_Quiz_Builder::T ); ?></td>
+			<# }else{ #>
+				<td><?php echo __( 'Opt-Ins', Thrive_Quiz_Builder::T ); ?></td>
+				<td><?php echo __( 'Opt-In Conversion Rate', Thrive_Quiz_Builder::T ); ?></td>
+			<# } #>
+			<# if( model.get('post_type') === ThriveQuizB.data.quiz_structure_item_types.results.key ){ #>
+				<td><?php echo __( 'Social Shares', Thrive_Quiz_Builder::T ); ?></td>
+				<td><?php echo __( 'Social Sharing Conversion Rate', Thrive_Quiz_Builder::T ); ?></td>
+			<# } #>
+			<td>&nbsp;</td>
+		</tr>
+		</thead>
+		<tbody id="tqb-page-variations-item"></tbody>
+	</table>
+<# } #>

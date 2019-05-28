@@ -1,0 +1,63 @@
+[18-Aug-2017 10:49:22 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.tag.id3v1.php on line 18
+[18-Aug-2017 10:49:23 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'getid3_lib' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio.ogg.php:17
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio.ogg.php on line 17
+[18-Aug-2017 10:49:23 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio.mp3.php on line 25
+[18-Aug-2017 10:49:23 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.tag.lyrics3.php on line 18
+[18-Aug-2017 10:49:23 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'getid3_lib' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.tag.id3v2.php:17
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/ID3/module.tag.id3v2.php on line 17
+[18-Aug-2017 10:49:23 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'getid3_lib' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio-video.asf.php:17
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio-video.asf.php on line 17
+[18-Aug-2017 10:49:23 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio-video.flv.php on line 76
+[18-Aug-2017 10:49:23 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio.ac3.php on line 18
+[18-Aug-2017 10:49:23 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio.dts.php on line 21
+[18-Aug-2017 10:49:23 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'getid3_lib' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio.flac.php:18
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio.flac.php on line 18
+[18-Aug-2017 10:49:23 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.tag.apetag.php on line 17
+[18-Aug-2017 10:49:23 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio-video.matroska.php on line 216
+[18-Aug-2017 10:49:23 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'getid3_lib' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio-video.riff.php:26
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio-video.riff.php on line 26
+[18-Aug-2017 10:49:23 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'getid3_lib' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio-video.quicktime.php:18
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio-video.quicktime.php on line 18
+[25-Jul-2018 15:19:42 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.tag.id3v1.php on line 18
+[25-Jul-2018 15:19:47 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'getid3_lib' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio.ogg.php:17
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio.ogg.php on line 17
+[25-Jul-2018 15:19:49 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.tag.apetag.php on line 17
+[25-Jul-2018 15:21:24 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'getid3_lib' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio.flac.php:18
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio.flac.php on line 18
+[25-Jul-2018 15:49:09 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio-video.matroska.php on line 216
+[25-Jul-2018 15:49:10 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio.mp3.php on line 25
+[25-Jul-2018 15:49:11 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio.ac3.php on line 18
+[25-Jul-2018 15:51:31 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'getid3_lib' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.tag.id3v2.php:17
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/ID3/module.tag.id3v2.php on line 17
+[25-Jul-2018 15:53:19 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'getid3_lib' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio-video.riff.php:26
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio-video.riff.php on line 26
+[25-Jul-2018 15:53:46 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'getid3_lib' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio-video.asf.php:17
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio-video.asf.php on line 17
+[25-Jul-2018 15:54:02 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.tag.lyrics3.php on line 18
+[25-Jul-2018 15:57:43 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'getid3_lib' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio-video.quicktime.php:18
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio-video.quicktime.php on line 18
+[25-Jul-2018 16:04:21 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home3/secretk1/public_html/staging/wp-includes/ID3/module.audio.dts.php on line 21

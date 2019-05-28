@@ -1,0 +1,172 @@
+<div class="tvd-modal-content">
+	<h3 class="tvd-modal-title"><?php echo __( 'Customer approval email template', TVO_TRANSLATE_DOMAIN ); ?></h3>
+	<div class="tvd-v-spacer"></div>
+	<div class="tvo-config-email-content">
+		<div class="tvd-input-field">
+			<input type="text" name="tvo-email-subject" class="tvo-email-subject" id="tvo-email-subject"
+			       value="<?php echo htmlspecialchars( tvo_get_email_template_subject() ); ?>"/>
+			<label for="tvo-email-subject"><?php echo __( 'Email Subject', TVO_TRANSLATE_DOMAIN ); ?></label>
+		</div>
+		<span class="tvo-fake-label"><?php echo __( 'Email Message', TVO_TRANSLATE_DOMAIN ); ?></span>
+		<?php wp_editor( tvo_get_email_template(), 'tvo-email-template', array(
+			'quicktags'     => false,
+			'media_buttons' => false,
+			'editor_height' => '250px',
+		) ) ?>
+		<div class="tvd-v-spacer"></div>
+		<h4 class="tvo-modal-sub-title tvd-pointer collapsed tl-toggle-tab-display" data-target="#tve-shortcode-list">
+			<?php echo __( 'Available short codes', TVO_TRANSLATE_DOMAIN ); ?>
+		</h4>
+		<div class="tvd-relative">
+			<ul class="tvd-collection tvd-not-visible" id="tve-shortcode-list">
+				<li class="tvd-collection-item">
+					<div class="tvd-row tvo-copy-input-content">
+						<div class="tvd-col tvd-s3">
+							<div class="tvd-input-field tvd-margin-top-small">
+								<input class="tvo-email-shortcode-input tvo-copy tvd-no-margin" type="text" name="tvo_shortcode_input[name]" readonly="readonly"
+								       value="[tvo_full_name]">
+							</div>
+						</div>
+						<div class="tvd-col tvd-s3">
+							<span class="tvo-copy-container">
+		                        <a class="tve-copy-to-clipboard tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-btn-small  tvd-margin-top-small"
+		                           href="javascript:void(0)">
+			                        <span class="tvo-copy-text"><?php echo __( 'Copy', TVO_TRANSLATE_DOMAIN ) ?></span>
+		                        </a>
+		                    </span>
+						</div>
+						<div class="tvd-col tvd-s6">
+							<div class="tve-align-stupid-text">
+								<span
+									class="tvo-copy-shortcode-text"><?php echo __( 'The full name of the customer who submitted the testimonial', TVO_TRANSLATE_DOMAIN ) ?></span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="tvd-collection-item">
+					<div class="tvd-row tvo-copy-input-content">
+						<div class="tvd-col tvd-s3">
+							<div class="tvd-input-field tvd-margin-top-small">
+								<input class="tvo-email-shortcode-input tvo-copy tvd-no-margin" type="text" name="tvo_shortcode_input[text]" readonly="readonly"
+								       value="[tvo_testimonial_text]">
+							</div>
+						</div>
+						<div class="tvd-col tvd-s3">
+							<span class="tvo-copy-container">
+		                        <a class="tve-copy-to-clipboard tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-btn-small  tvd-margin-top-small"
+		                           href="javascript:void(0)">
+			                        <span class="tvo-copy-text"><?php echo __( 'Copy', TVO_TRANSLATE_DOMAIN ) ?></span>
+		                        </a>
+		                    </span>
+						</div>
+						<div class="tvd-col tvd-s6">
+							<div class="tve-align-stupid-text">
+								<span class="tvo-copy-shortcode-text"><?php echo __( 'The testimonial content submitted by<br/> the user', TVO_TRANSLATE_DOMAIN ) ?></span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="tvd-collection-item">
+					<div class="tvd-row tvo-copy-input-content">
+						<div class="tvd-col tvd-s3">
+							<div class="tvd-input-field tvd-margin-top-small">
+								<input class="tvo-email-shortcode-input tvo-copy" type="text" name="tvo_shortcode_input[buttons]" readonly="readonly"
+								       value='[tvo_approval_buttons yes="Yes, I approve" no="No, I don&apos;t approve"]'>
+							</div>
+						</div>
+						<div class="tvd-col tvd-s3">
+							<span class="tvo-copy-container">
+		                        <a class="tve-copy-to-clipboard tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-btn-small  tvd-margin-top-small"
+		                           href="javascript:void(0)">
+			                        <span class="tvo-copy-text"><?php echo __( 'Copy', TVO_TRANSLATE_DOMAIN ) ?></span>
+		                        </a>
+		                    </span>
+						</div>
+						<div class="tvd-col tvd-s6">
+							<div class="tve-align-stupid-text">
+								<span class="tvo-copy-shortcode-text tvd-inline-block" style="padding-top: 12px;"><?php echo __( 'Yes/No approval buttons', TVO_TRANSLATE_DOMAIN ) ?></span>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="tvo-preview-email-content" style="display:none;">
+		<div class="tvo-preview-email-subject">
+			<h4>
+				<?php
+				$subject = tvo_get_email_template_subject();
+				echo tvo_process_approval_email_subject( $subject );
+				?>
+			</h4>
+		</div>
+		<div class="tvd-card tvd-gray tvo-preview-email-text">
+			<?php
+			$content = tvo_get_email_template();
+			echo tvo_process_approval_email_content( $content );
+			?>
+		</div>
+		<div class="tvd-v-spacer"></div>
+		<div class="tvd-row tvd-collapse">
+			<div class="tvd-col tvd-s5">
+				<div class="tvd-input-field">
+					<input type="text" class="tvo-email-test" id="tvo-email-test" name="email-test" value="">
+					<label for="tvo-email-test" data-error="<?php echo __( 'Please fill in a valid email address', TVO_TRANSLATE_DOMAIN ) ?>"
+					       class="tvd-active">
+						<?php echo __( 'Send test email to', TVO_TRANSLATE_DOMAIN ) ?>
+					</label>
+				</div>
+			</div>
+			<div class="tvd-col tvd-s5">
+				<a href="javascript:void(0)" class="tvo-test-approval-email tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue">
+					<?php echo __( 'SEND TEST', TVO_TRANSLATE_DOMAIN ) ?>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="tvd-modal-footer">
+	<div class="tvo-settings-footer-buttons">
+		<div class="tvd-row tvo-config-email-content">
+			<div class="tvd-col tvd-s6">
+				<a href="javascript:void(0)" class="tvd-btn-flat tvd-btn-flat-primary tvd-btn-flat-dark tvd-waves-effect tvo-preview-email">
+					<?php echo __( 'Preview email', TVO_TRANSLATE_DOMAIN ); ?>
+				</a>
+			</div>
+			<div class="tvd-col tvd-s6">
+				<a class="tvo-save-email-template tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-right"
+				   href="javascript:void(0);"><?php echo __( 'Save email template', TVO_TRANSLATE_DOMAIN ); ?></a>
+				</a>
+			</div>
+		</div>
+		<div class="tvd-row tvo-preview-email-content" style="display:none;">
+			<div class="tvd-col tvd-s12">
+				<a class="tvo-back-to-email-template tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-right"
+				   href="javascript:void(0);"><?php echo __( 'Back to email template', TVO_TRANSLATE_DOMAIN ); ?></a>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="tvo-preview-footer-buttons" style="display:none;">
+		<div class="tvd-row tvo-config-email-content">
+			<div class="tvd-col tvd-s12">
+				<a href="javascript:void(0)" class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-right tvo-preview-email">
+					<?php echo __( 'Preview email', TVO_TRANSLATE_DOMAIN ); ?>
+				</a>
+			</div>
+		</div>
+		<div class="tvd-row tvo-preview-email-content" style="display:none;">
+			<div class="tvd-col tvd-s6">
+				<a href="javascript:void(0)" class="tvd-btn-flat tvd-btn-flat-primary tvd-btn-flat-dark tvd-waves-effect tvo-back-to-email-template">
+					<?php echo __( 'Edit email', TVO_TRANSLATE_DOMAIN ); ?>
+				</a>
+			</div>
+			<div class="tvd-col tvd-s6">
+				<a class="tvo-send-email tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-right"
+				   href="javascript:void(0);"><?php echo __( 'Send email', TVO_TRANSLATE_DOMAIN ); ?></a>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

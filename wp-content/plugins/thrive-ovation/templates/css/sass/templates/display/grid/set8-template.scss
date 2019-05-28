@@ -1,0 +1,75 @@
+@import "../../../grid";
+@import "../../../base/display/set8-template";
+
+.tvo-#{$template-name}-template {
+  &.tvo-testimonials-display-grid {
+    .tvo-item-col {
+      min-width: 440px;
+    }
+    .tvo-testimonial-display-item {
+      @include center-text;
+      h4 {
+        @include transform-uppercase;
+        @include center-text;
+        display: inline-block;
+        font-size: $title-size-small;
+        font-weight: $title-weight-small;
+        line-height: $title-line-height-small;
+        margin-bottom: $title-small-margin-bottom;
+        margin-top: 0;
+        text-align: left;
+      }
+    }
+    .tvo-testimonial-quote {
+      @include tvo-relative;
+      padding-left: 60px;
+      padding-bottom: 10px;
+      text-align: left;
+      &.tvo-testimonial-quote-small {
+        padding-left: 35px;
+        &:before {
+          font-size: $quotes-size /2;
+          top: 5px;
+        }
+      }
+      &:before {
+        @include up-quotes-arial;
+        font-size: $quotes-size;
+        font-weight: $quotes-weight;
+        line-height: $quotes-line-height;
+        position: absolute;
+        left: 0;
+        top: 15px;
+      }
+    }
+    .tvo-testimonial-content {
+      margin-top: $grid-item-padding-vertical * 2;
+    }
+    .tvo-testimonial-info {
+      @include center-text;
+      border-top: 1px solid $info-border;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .tvo-set8-template.tvo-testimonials-display-grid {
+    .tvo-testimonial-quote {
+      padding-left: 0;
+      h4 {
+        display: block;
+        text-align: center;
+      }
+    }
+    .tvo-item-col {
+      min-width: 10px;
+    }
+    .tvo-testimonial-quote {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+

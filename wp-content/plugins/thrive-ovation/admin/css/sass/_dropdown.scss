@@ -1,0 +1,52 @@
+.tvo-new-dropdown {
+  position: relative;
+  .tvo-new-dropdown-content {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.22);
+    background: #fff;
+    border-radius: 3px;
+    display: none;
+    position: absolute;
+    left: 0;
+    padding: 15px;
+    width: 230px;
+    z-index: 1002;
+  }
+  input[type="text"] {
+    font-style: italic;
+  }
+  .tvd-icon-collapsed {
+    display: none;
+  }
+  .tvd-icon-expanded, .tvd-icon-collapsed {
+    color: $gray11;
+  }
+  &.tvd-active {
+    .tvd-icon-expanded {
+      display: none;
+    }
+    .tvd-icon-collapsed {
+      display: inline;
+    }
+  }
+}
+
+.tvo-tags-filter-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-height: 180px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+input[type="checkbox"]:not(:checked).tvo-multiple-tags-particular + label {
+  &:before {
+    border-bottom: 3px solid $checkbox-particular-color;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    transform: none;
+    top: 9px;
+    left: 4px;
+    width: 10px;
+  }
+}

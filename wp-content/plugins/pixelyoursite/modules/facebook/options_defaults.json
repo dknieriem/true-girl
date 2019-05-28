@@ -1,0 +1,34 @@
+{
+  "enabled": true,
+  "pixel_id": "",
+  "advanced_matching_enabled": false,
+  "remove_metadata": false,
+
+  "general_event_enabled": true,
+  "search_event_enabled": true,
+  "comment_event_enabled": true,
+  "download_event_enabled": true,
+  "form_event_enabled": true,
+
+  "woo_variable_as_simple": false,
+  "woo_content_id": "product_id",
+  "woo_content_id_prefix": "",
+  "woo_content_id_suffix": "",
+  "woo_content_id_logic": "default",
+  "woo_purchase_enabled": true,
+  "woo_initiate_checkout_enabled": true,
+  "woo_remove_from_cart_enabled": true,
+  "woo_add_to_cart_enabled": true,
+  "woo_view_content_enabled": true,
+  "woo_view_category_enabled": true,
+
+  "edd_content_id": "download_id",
+  "edd_content_id_prefix": "",
+  "edd_content_id_suffix": "",
+  "edd_purchase_enabled": true,
+  "edd_initiate_checkout_enabled": true,
+  "edd_remove_from_cart_enabled": true,
+  "edd_add_to_cart_enabled": true,
+  "edd_view_content_enabled": true,
+  "edd_view_category_enabled": true
+}

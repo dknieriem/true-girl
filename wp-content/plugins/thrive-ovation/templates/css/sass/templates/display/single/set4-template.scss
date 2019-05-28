@@ -1,0 +1,102 @@
+@import "../../../grid";
+@import "../../../base/display/set4-template";
+
+.tvo-#{$template-name}-template {
+  &.tvo-testimonials-display-single {
+    .tvo-testimonial-display-item {
+      @include full-height;
+      @include box-sizing;
+      @include display-flex;
+      margin-bottom: $grid-item-padding-vertical;
+      h4 {
+        color: $title-color-large;
+        font-size: $title-size-large;
+        font-weight: $title-weight-large;
+        line-height: $title-line-height-large;
+        margin-bottom: $title-large-margin-bottom;
+        margin-top: 0;
+      }
+    }
+    .tvo-testimonial-quote {
+      position: absolute;
+      top: 55px;
+      left: 30px;
+    }
+    .tvo-testimonial-info {
+      min-width: $image-size;
+      padding: $grid-item-padding-vertical 0;
+      width: 25%;
+      &:before {
+        background: inherit;
+        border-color: inherit;
+        border-width: 1px 1px 0 0;
+        border-style: solid;
+        content: '';
+        display: block;
+        height: 20px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -11px;
+        transform: rotate(45deg);
+        width: 20px;
+      }
+    }
+    .tvo-testimonial-content {
+      -webkit-flex: 1;
+      flex: 1;
+      padding: $single-item-padding;
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .tvo-set4-template.tvo-testimonials-display-single .tvo-testimonial-quote {
+    left: 40px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .tvo-set4-template.tvo-testimonials-display-single .tvo-testimonial-display-item {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  .tvo-set4-template.tvo-testimonials-display-single .tvo-testimonial-quote {
+    left: 10px;
+  }
+  .tvo-set4-template.tvo-testimonials-display-single .tvo-testimonial-info {
+    min-width: 100%;
+    &:before, &:after {
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      height: 0;
+      top: auto;
+      left: 0;
+      right: 0;
+      width: 0;
+    }
+    &:before {
+      border-top: 20px solid $testimonial-info-border;
+      background: transparent;
+      bottom: -21px;
+      transform: none;
+    }
+    &:after {
+      border-top: 20px solid #fff;
+      bottom: -20px;
+      content: '';
+      margin: auto;
+      position: absolute;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tvo-set4-template.tvo-testimonials-display-single .tvo-testimonial-quote {
+    &:before {
+      display: none;
+    }
+  }
+}
+

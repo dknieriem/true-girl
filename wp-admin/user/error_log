@@ -1,0 +1,8 @@
+[25-Nov-2017 18:36:26 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home3/secretk1/public_html/staging/wp-admin/user/menu.php:10
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-admin/user/menu.php on line 10
+[25-Nov-2017 18:39:01 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home3/secretk1/public_html/staging/wp-admin/user/menu.php:10
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-admin/user/menu.php on line 10

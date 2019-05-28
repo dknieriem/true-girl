@@ -1,0 +1,45 @@
+<div class="tvd-row">
+	<div class="tvd-col tvd-s12">
+		<h3 class="tvd-title"><?php echo __( 'Import Testimonials from Social Media', TVO_TRANSLATE_DOMAIN ); ?></h3>
+	</div>
+</div>
+
+<div class="tvd-row tvd-no-mb">
+	<div class="tvd-col tvd-s12">
+		<div class="tvd-card tvd-card-white">
+			<div class="tvd-card-content">
+				<p class="tvd-large-text tvd-normal"><?php echo __( 'Paste Facebook Comment / Tweet URL', TVO_TRANSLATE_DOMAIN ); ?></p>
+				<div class="tvd-v-spacer vs-half"></div>
+				<div class="tvd-row tvd-collapse tvd-no-mb">
+					<div class="tvd-col tvd-s6">
+						<div class="tvd-input-field">
+							<input type="text" class="tvd-validate tvo-url" data-key="social-url" name="tvo-url" id="tvo-url" value=""/>
+							<label for="tvo-url" data-error="<?php echo __( 'Invalid input', TVO_TRANSLATE_DOMAIN ); ?>"
+							       data-success=""><?php echo __( 'Facebook Comment / Tweet URL', TVO_TRANSLATE_DOMAIN ); ?></label>
+						</div>
+					</div>
+					<div class="tvd-col tvd-s6">
+						<a href="javascript:void(0);" class="tvd-waves-light tvd-btn tvd-btn-blue tvo-import"><?php echo __( 'Import', TVO_TRANSLATE_DOMAIN ); ?></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="tvd-row tvd-hide tvo-testimonial-area">
+	<div class="tvd-col tvd-s12">
+		<div class="tvd-card tvd-card-white">
+			<div class="tvd-card-content">
+				<?php include TVO_ADMIN_PATH . '/views/template/testimonials/social-import.phtml'; ?>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="tvd-row">
+	<div class="tvd-col tvd-s6">
+		<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-gray" href="#testimonials"><?php echo __( 'Back to Dashboard', TVO_TRANSLATE_DOMAIN ); ?></a>
+	</div>
+	<div class="tvd-col tvd-6 tvd-hide tvo-testimonial-area tvd-right">
+		<a href="javascript:void(0);" class="tvd-waves-light tvd-btn tvd-btn-green tvo-save-testimonial"><?php echo __( 'Save testimonial', TVO_TRANSLATE_DOMAIN ); ?></a>
+	</div>
+</div>

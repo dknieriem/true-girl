@@ -1,0 +1,34 @@
+<td>
+	<strong><span style="color: <#= variation.color #>"><#= variation.variation_title #></span></strong>
+	<# if (variation.is_control == 1) { #>
+		<span class="tvd-text-grayish">
+			(<?php echo __( 'control', THO_TRANSLATE_DOMAIN ); ?>)
+		</span>
+		<# }  #>
+</td>
+<td class="tvd-center-align">
+	<#= variation.views #>
+</td>
+<td class="tvd-center-align">
+	<#= variation.engagements #>
+</td>
+<td class="tvd-center-align">
+	<#= isNaN(variation.engagement_rate)?variation.engagement_rate:variation.engagement_rate+'%' #>
+</td>
+<td>
+	<div class="candlestick-chart-holder" id="tho-stopped-candle-stick-chart-<#= variation.index #>"></div>
+</td>
+<td class="tvd-center-align">
+	<# if (variation.is_control == 1) { #>
+		<?php echo __( 'N / A', THO_TRANSLATE_DOMAIN ); ?>
+		<# } else { #>
+			<#= variation.percentage_improvement #>
+				<# }  #>
+</td>
+<td class="tvd-center-align">
+	<# if (variation.is_control == 1) { #>
+		<?php echo __( 'N / A', THO_TRANSLATE_DOMAIN ); ?>
+		<# } else { #>
+			<#= variation.beat_original #>
+				<# }  #>
+</td>

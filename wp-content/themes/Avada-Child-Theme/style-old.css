@@ -1,0 +1,672 @@
+/*
+Theme Name: Avada Child
+Description: Child theme for Avada theme
+Author: ThemeFusion
+Author URI: https://theme-fusion.com
+Template: Avada
+Version: 1.0.0
+Text Domain:  Avada
+*/
+
+.fusion-secondary-header {
+	background-image:url(assets/socialbar-02.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:top right;
+}
+
+.fusion-social-links-header {
+	margin-top:8px;
+	margin-right:93px;
+	margin-bottom:52px;
+}
+
+.fusion-logo {
+	margin-left:-58px !important;
+	margin-bottom:-20px !important;
+	margin-top:-20px !important;
+}
+
+.fusion-caret {
+	margin-left:3px;
+}
+
+.fusion-main-menu {
+	margin-top:-20px;
+	margin-right:20px;
+}
+
+.skg-home-sections01 {
+	background-color:#ee3d97;
+	background-image:url(assets/section-border02-01.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position: top center;
+	padding-top:6% !important;
+	padding-bottom:4% !important;
+}
+
+.skg-home-connectingpoints {
+	background-image:url(assets/connecting-point-bg02-03.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:top left;
+	padding-top:37px !important;
+	padding-bottom:55px !important;
+}
+
+.skg-home-twocolumn {
+	background-image:url(assets/2col-bg02-01.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	padding-top:6% !important;
+	padding-bottom:6% !important;
+}
+
+.skg-home-videos {
+	background-image:url(assets/videobg02-01.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	padding-top:43px !important;
+	padding-bottom:75px !important;
+}
+
+.skg-home-viewallvideos img {
+	margin-bottom:30px;
+}
+
+.skg-home-testimonials {
+	background-image:url(assets/saying02-01.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	padding-top:15% !important;
+	padding-bottom:15% !important;
+	background-position:top center;
+}
+
+.skg-home-signup {
+	background-image:url(assets/signupbg02-01.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	padding-top:2% !important;
+	padding-bottom:1% !important;
+	background-position:top center;
+}
+
+.skg-signupcta {
+	background-image:url(assets/signupcta02-01.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:top center;
+}
+
+.skg-footersignup {
+	display:block;
+	width:50%;
+	margin:35% auto 0% auto;
+}
+
+.fusion-footer {
+	background-image:url(assets/footerbg02-02.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:top center;
+}
+
+.fusion-footer-widget-area {
+	background:none !important;
+	padding-top:210px !important;
+	padding-bottom:65px !important;
+}
+
+
+.recent-posts-content a {
+	color:#ffffff;
+}
+
+.saying-quote h3 {
+	color:#ee3d97 !important;
+	font-size:24px !important;
+}
+
+.skg-social-searchicon {
+	display:block;
+	width:75px;
+	float:left;
+	margin-right:10px;
+}
+
+.skg-social-searchform {
+	display:block;
+	float:left;
+	margin-top:20px;
+}
+
+.skg-connecticon {
+	display:block;
+	width:75px;
+	float:right;
+	margin-left:10px;
+}
+
+.skg-connecttext {
+	display:block;
+	/*float:right;*/
+	color:#ffffff;
+	/*margin-top:18px;*/
+}
+
+.fusion-social-networks .fusion-social-network-icon {
+	margin: 0 3px 3px 3px;
+}
+
+.fusion-social-networks {
+	overflow:visible;
+}
+
+.skg-menu-home {
+	background-image:url(assets/nav-icon-home-new_05.png);
+	background-repeat:no-repeat;
+	background-position:bottom left;
+	height:100px;
+}
+
+.skg-menu-home a {
+	margin-right:7px;
+}
+
+.skg-menu-home a span, .skg-menu-about a span, .skg-menu-events a span, .skg-menu-blog a span, .skg-menu-store a span, .skg-menu-contact a span, .skg-menu-donate a span {
+	display:block;
+	margin-top:-15px;
+	float:left;
+}
+
+.skg-menu-about {
+	background-image:url(assets/nav-icon-about-new_05.png);
+	background-repeat:no-repeat;
+	background-position:bottom left;
+	height:100px;
+}
+
+.skg-menu-about a {
+	margin-left:4px;
+	margin-right:6px;
+}
+
+.skg-menu-events {
+	background-image:url(assets/nav-icon-events-new_05.png);
+	background-repeat:no-repeat;
+	background-position:bottom left;
+	height:100px;
+}
+
+.skg-menu-events a {
+	margin-left:4px;
+	margin-right:7px;
+}
+
+.skg-menu-blog {
+	background-image:url(assets/nav-icon-blog-new_05.png);
+	background-repeat:no-repeat;
+	background-position:bottom left;
+	height:100px;
+}
+
+.skg-menu-blog a {
+	margin-left:0px;
+}
+
+.skg-menu-store {
+	background-image:url(assets/nav-icon-shop-new_05.png);
+	background-repeat:no-repeat;
+	background-position:bottom left;
+	height:100px;
+}
+
+.skg-menu-store a {
+	margin-left:0px;
+}
+
+.skg-menu-contact {
+	background-image:url(assets/nav-icon-media-new_05.png);
+	background-repeat:no-repeat;
+	background-position:bottom left;
+	height:100px;
+}
+
+.skg-menu-contact a {
+	margin-left:0px;
+}
+
+.skg-menu-donate {
+	background-image:url(assets/nav-icon-donate-new_05.png);
+	background-repeat:no-repeat;
+	background-position:bottom left;
+	height:100px;
+}
+
+.skg-menu-donate a {
+	margin-left:0px;
+}
+
+.avada-skin-rev {
+	border:none !important;
+}
+
+#skg-homepage-recentposts, #skg-homepage-recentvideos, #skg-homepage-recentvideos2 {
+	margin-bottom:0px;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+#skg-homepage-recentposts .recent-posts-content {
+	padding:5px 20px 5px 20px;
+	min-height:100px;
+}
+
+#skg-homepage-recentvideos .recent-posts-content {
+	padding:5px 20px 5px 20px;
+
+}
+
+#skg-homepage-recentvideos2 .recent-posts-content {
+	padding:5px 20px 5px 20px;
+	border-top:solid 1px #e7e7e7;
+}
+
+#skg-homepage-recentvideos2 .recent-posts-content h4 {
+	font-size:18px !important;
+	margin:3px 0 3px 0;
+}
+
+#skg-videovault .recent-posts-content h4 {
+	margin:5px 0 15px 0;
+}
+
+.skg-morevideos a {
+	display:inline-block;
+	padding:5px;
+	background-color:#34c1da;
+	font-size:18px;
+	color:#ffffff;
+	width:150px;
+	margin-left:25px;
+	text-align:center;
+	position:relative;
+	top:-5px;
+}
+
+.fusion-widget-area .widget_nav_menu li {
+	border:none;
+	padding:0px 10px 0px 12px;
+	text-transform:uppercase;
+	text-decoration:underline;
+}
+
+.fusion-body .fusion-footer-widget-area-center .fusion-columns .fusion-column {
+}
+
+.footerbtn a {
+	font-family: 'Crushed';
+	font-size:20px;
+	font-style:normal;
+	display:block;
+	border:1px solid #ffffff;
+	padding:5px;
+	margin-top:40px;
+}
+
+.footerbtn a:hover {
+	color:#ffffff !important;
+}
+
+.promo-enter {
+	width:100% !important;
+}
+
+.promo_submit input {
+	display:block;
+	width:100%;
+	background:none;
+	font-family: 'Crushed';
+	font-size:20px;
+	line-height:30px;
+	font-style:normal;
+	border:1px solid #ffffff;
+	padding:5px;
+}
+
+.promo_submit input a {
+	color:#ffffff;
+}
+
+.fusion-footer-widget-column {
+	margin-bottom:0px;
+}
+
+#Ultimate_promo_submit {
+	margin-top:37px !important;
+	color:#ffffff;
+}
+
+.error {
+	background-color:#CC0000 !important;
+}	
+
+#wrapper .fusion-widget-area .current-menu-item > a, #wrapper .fusion-widget-area .current_page_item > a, #wrapper .fusion-widget-area a:hover {
+	color:#000000 !important;
+}
+
+#wdi_feed_0 .wdi_pagination {
+	display:none;
+}
+
+#wdi_feed_0 .wdi_feed_container, #wdi_feed_0 .wdi_feed_wrapper {
+	background:none !important;
+	border:none !important;
+	text-align:center !important;
+}
+
+#wdi_feed_0 .wdi_photo_wrap_inner {
+	border:none !important;
+}
+
+/* FOOTER COPYRIGHT SECTION  */
+
+.fusion-footer-copyright-area > .fusion-row, .fusion-footer-widget-area > .fusion-row {
+	padding:0px !important;
+}
+
+#skg-copyright {
+	display:block;
+	width:100%;
+}
+
+.skg-footer-search {
+	display:block;
+	width:33%;
+	float:left;
+}
+
+.skg-footer-copyright {
+	display:block;
+	width:33%;
+	float:left;
+	font-family: 'Crushed';
+	font-size:18px;
+	color:#ffffff;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+.skg-footer-connect {
+	display:block;
+	width:33%;
+	float:left;
+}
+
+.searchform .search-table .search-button input[type="submit"] {
+	background-color:#d3007e;
+}
+
+.skg-footer-questions {
+	font-family: 'Crushed';
+	font-size:20px;
+	color:#ffffff;
+}
+
+.sidebar .widget h4 {
+	font-size:24px !important;
+}
+
+.fusion-footer-widget-area ul {
+	text-align:left;
+}
+
+#wdi_feed_0 .wdi_feed_item {
+	width:40% !important;
+}
+
+#wrapper #main .fusion-post-content > h2.entry-title a {
+	color:#d3007e;
+}
+
+.post-content h4 {
+	text-transform:uppercase;
+	font-weight:800 !important;
+}
+
+.skg-footersignup input[type="email"] {
+	height:60px;
+	text-align: center;
+    font-size: 18px;
+    background-color: #fbe6f2;
+}
+
+.skg-footersignup input[type=submit] {
+	height:70px;
+	width:100%;
+	background-color:#d3007e;
+	border: dashed #ffffff;
+    font-size: 54px;
+    color: #ffffff;
+    text-transform: uppercase;
+	font-family: 'Crushed';
+}
+
+.mc_merge_var {
+	margin-top:10px;
+	margin-bottom:0px !important;
+}
+
+#mc_signup_submit {
+	margin-top:10px !important;
+	width:100% !important;
+	background-color:#702e8f;
+	border:none;
+	color:#ffffff;
+	padding:5px;
+}
+
+body .fusion-content-widget-area .button {
+	margin-left:0px !important;
+}
+
+.fbe_col_location h4 {
+	margin-top:3px !important;
+}
+
+.fusion-main-menu .sub-menu {
+	top:100px;
+}
+
+.fusion-main-menu .sub-menu {
+	border-top-color:#ec008c !important;
+}
+
+.fusion-main-menu .sub-menu li a {
+	padding-top:20px !important;
+	padding-bottom:20px !important;
+	font-family:'Crushed' !important;
+}
+
+.featured-4-posts .entry-title a {
+	color:#ffffff;
+}
+
+.featured-4-posts .entry-title a:hover {
+	color:#7a3a98 !important;
+}
+
+.fusion-date-and-formats {
+	display:none;
+}
+
+.fusion-blog-layout-medium .fusion-post-slideshow, .fusion-blog-layout-medium-alternate .fusion-post-slideshow {
+	width:400px;
+}
+
+#wrapper #main .fusion-post-content > h2.entry-title {
+	font-size:22px !important;
+}
+
+.fbe_list_date {
+	background-color:#702c91 !important;
+}
+
+.post {
+	border:solid 1px #DCDCDC;
+	padding:15px;
+}
+
+@media only screen and (min-width: 1366px) {	
+
+.fusion-social-links-header {
+	margin-right:5%;
+}
+
+}
+
+@media only screen and (max-width: 1100px) {
+	
+.fusion-main-menu > ul > li {
+	padding-right:15px !important;	
+}
+
+}
+
+@media only screen and (max-width: 1023px) {
+	
+.fusion-social-links-header {
+	margin-right:100px;
+}
+
+.fusion-logo {
+	float:none !important;
+	width:400px !important;
+	margin:-20px auto 0px !important;
+}
+
+.fusion-main-menu {
+	float:none !important;
+	width:568px !important;
+	margin:0px auto !important;
+}
+
+.fusion-main-menu li {
+	margin-bottom:25px !important;
+}
+
+.fusion-main-menu .sub-menu li {
+	margin-bottom:0px !important;
+}
+
+.skg-rollover-about a, .skg-rollover-events a, .skg-rollover-books a {
+	margin:0 auto;
+}
+
+#main {
+	padding-left:20px;
+	padding-right:20px;
+}
+
+
+}
+
+@media only screen and (max-width: 800px) {
+	
+	.fusion-social-links-header {
+		text-align:right !important;
+		margin-bottom:60px;
+		margin-top:7px;
+		margin-right:185px;
+	}
+	
+	.fusion-header {
+		background-color:#ec008c !important;
+	}
+	
+	.fusion-mobile-menu-design-classic.fusion-header-v3 .fusion-logo {
+		margin:0px auto 0px auto !important;
+	}
+	
+	.fusion-mobile-menu-design-classic.fusion-header-v3 .fusion-header {
+		padding-top:0px !important;
+	}
+	
+	.fusion-logo {
+		width:100% !important;
+	}
+	
+	.skg-home-sections01 {
+		background-image:url(assets/home-bg-boxes.jpg);
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+	
+	.skg-home-connectingpoints {
+		background-color:#ee3d97 !important;
+		background-image:none;
+	}
+	
+	.skg-home-twocolumn {
+		background-image:url(assets/home-bg-dots.jpg);
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+	
+	.skg-home-videos {
+		background-color:#ee3d97 !important;
+		background-image:none;
+	}
+	
+	.fusion-footer {
+		background-color:#ee3d97 !important;
+		background-image:none;
+	}
+	
+	.fusion-footer-widget-area {
+		padding-top:65px !important;
+	}
+	
+	.skg-footer-search {
+		width:100%;
+	}
+	
+	.skg-footer-copyright {
+		width:100%;
+		margin-top:18px;
+	}
+	
+	.skg-footer-connect {
+		width:100%;
+	}
+	
+	.skg-social-searchicon {
+		display:none;
+	}
+	
+	.skg-social-searchform {
+		float:none;
+	}
+	
+	.skg-connecticon {
+		display:none;
+	}
+	
+	.skg-connecttext {
+		float:none;
+	}
+	
+	.skg-recent-mobile {
+		display:none;
+	}
+
+}
+
+@media only screen and (max-width: 476px) {
+	#main {
+	    padding-left: 0px !important;
+	    padding-right: 0px !important;
+	}
+}

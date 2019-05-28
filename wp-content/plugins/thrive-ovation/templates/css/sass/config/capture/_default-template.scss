@@ -1,0 +1,115 @@
+@import "../../mixins";
+@import "//fonts.googleapis.com/css?family=Open+Sans:400,400i,600";
+
+$template-name: 'default';
+
+$font-family: 'Open Sans', sans-serif;
+
+$color-pallete: (
+        'black': (#393939, #161616, #494949, #282828),
+        'blue': (#5ca9df, #4892c5, #62b4ed, #4f9ed5),
+        'green': (#5cdf7b, #48c55d, #62ed72, #4fd565),
+        'orange': (#f98a6c, #fa734f, #f6987e, #f98262),
+        'purple': (#bc5cdf, #a348c5, #c762ec, #b14ed6),
+        'red': (#df5c5c, #c54848, #ed6262, #d54f4f),
+        'teal': (#5cdfc8, #48c5af, #61ecd3, #4ed2bb),
+        'white': (#f7f7f7, #e5e5e5, #ffffff, #ededed)
+);
+
+$different-variation-name: (
+        'white': #161616
+);
+
+/*input styles*/
+$input-background: #fff;
+$input-has-border: true;
+$input-border-color: #dae3e4;
+$input-border: 1px solid $input-border-color;
+$input-has-border-radius: true;
+$input-border-radius: 2px;
+$input-has-box-shadow: false;
+$input-box-shadow: none;
+$input-color: #868686;
+$input-font-size: 16px;
+$input-font-style: italic;
+$input-font-weight: 400;
+$input-line-height: 28px;
+$input-padding: 10px 12px;
+$input-transform: false;
+$input-text-transform: uppercase;
+
+//hover
+$input-background-hover: #fff;
+$input-different-hover-border: true;
+$input-border-color-hover: #ccd3d4;
+$input-border-hover: 1px solid $input-border-color-hover;
+$input-different-color-hover: true;
+$input-color-hover: #868686;
+
+//focus
+$input-background-focus: #fff;
+$input-different-focus-border: true;
+$input-border-color-focus: #c4d9e8;
+$input-border-focus: 1px solid $input-border-color-focus;
+$input-different-color-focus: true;
+$input-color-focus: #868686;
+$input-different-box-shdaow-focus: true;
+$input-box-shadow-focus: 0 0 3px 0 rgba(#000, .1);
+
+/*textarea styles*/
+$textarea-background: #fff;
+$textarea-has-border: true;
+$textarea-border-color: #dae3e4;
+$textarea-border: 1px solid $textarea-border-color;
+$textarea-has-border-radius: true;
+$textarea-border-radius: 2px;
+$textarea-has-box-shadow: false;
+$textarea-box-shadow: none;
+$textarea-color: #868686;
+$textarea-font-size: 16px;
+$textarea-font-style: italic;
+$textarea-font-weight: 400;
+$textarea-line-height: 28px;
+$textarea-padding: 10px 12px;
+$textarea-min-height: 100px;
+
+//hover
+$textarea-background-hover: #fff;
+$textarea-different-hover-border: true;
+$textarea-border-color-hover: #ccd3d4;
+$textarea-border-hover: 1px solid $textarea-border-color-hover;
+$textarea-different-color-hover: true;
+$textarea-color-hover: #868686;
+
+//focus
+$textarea-background-focus: #fff;
+$textarea-different-focus-border: true;
+$textarea-border-color-focus: #c4d9e8;
+$textarea-border-focus: 1px solid $textarea-border-color-focus;
+$textarea-different-color-focus: true;
+$textarea-color-focus: #868686;
+$textarea-different-box-shdaow-focus: true;
+$textarea-box-shadow-focus: 0 0 3px 0 rgba(#000, .1);
+
+/*button styles*/
+$button-has-border: false;
+$button-has-border-radius: true;
+$button-border-radius: 3px;
+$button-color: #fff;
+$button-font-size: 14px;
+$button-font-weight: 600;
+$button-font-style: normal;
+$button-line-height: 28px;
+$button-padding: 6px 30px;
+$button-text-transform: none;
+
+/*success message*/
+$success-message-color: #555555;
+$success-message-font-size: 40px;
+$success-message-font-weight: 700;
+$success-message-font-family: $font-family;
+$success-message-font-style: normal;
+$success-message-line-height: 1em;
+$success-message-margin-bottom: 25px;
+$success-message-margin-top: 25px;
+$success-message-alignment: center;

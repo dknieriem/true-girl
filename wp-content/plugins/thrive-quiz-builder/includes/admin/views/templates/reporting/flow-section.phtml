@@ -1,0 +1,89 @@
+<# var conversions = item.get('data')[ThriveQuizB.event_types.conversion]? item.get('data')[ThriveQuizB.event_types.conversion]: 0,
+	impressions = item.get('data')[ThriveQuizB.event_types.impression]? item.get('data')[ThriveQuizB.event_types.impression]: 0,
+	skip_optin = item.get('data')[ThriveQuizB.event_types.skip_optin]? item.get('data')[ThriveQuizB.event_types.skip_optin]: 0;
+	total = item.get('total')? item.get('total'): 0;
+#>
+<div class="tqb-flow-section-title tvd-col tvd-l2 tvd-m2">
+	<# if(item.get('type')=='splash') { #>
+		<p><?php echo __( 'Splash Page', Thrive_Quiz_Builder::T ) ?></p>
+	<# } #>
+	<# if(item.get('type')=='qna') { #>
+		<p><?php echo __( 'Quiz Questions', Thrive_Quiz_Builder::T ) ?></p>
+	<# } #>
+	<# if(item.get('type')=='optin') { #>
+		<p><?php echo __( 'Opt-In-Gate', Thrive_Quiz_Builder::T ) ?></p>
+		<# if(item.get('subscribers')) { #>
+			<p class="tqb-subscribers-info">
+				<#= item.get('subscribers') #> <?php echo __( 'Subscribers', Thrive_Quiz_Builder::T ) ?>
+			</p>
+		<# } #>
+	<# } #>
+	<# if(item.get('type')=='results') { #>
+		<p><?php echo __( 'Results Page', Thrive_Quiz_Builder::T ) ?></p>
+		<div>
+			<# if(item.get('subscribers')) { #>
+				<span class="tqb-subscribers-info">
+					<#= item.get('subscribers') #> <?php echo __( 'Subscribers', Thrive_Quiz_Builder::T ) ?>
+				</span>
+			<# } #>
+
+			<# if(item.get('social_shares')) { #>
+				<span class="tqb-social-shares">
+					<#= item.get('social_shares') #> <?php echo __( 'Shares', Thrive_Quiz_Builder::T ) ?>
+				</span>
+			<# } #>
+		</div>
+	<# } #>
+</div>
+<# if( impressions ) { #>
+<div class="tqb-bar-holder tvd-col tvd-l8 tvd-m8">
+
+	<div class="tqb-drop-off-bar" style="width: <#= total ? ( impressions * 100 / total ).toFixed(2): 0  #>%">
+
+		<div class="tqb-move-on-bar" style="width:<#= impressions ? ( ( conversions ) * 100 / impressions ).toFixed(2) : (0).toFixed(2) #>%">
+			<div class="tqb-bar-spacing"></div>
+			<# if( skip_optin ) { #>
+				<div class="tqb-skipped-bar" style="width: <#= ( skip_optin * 100 / impressions ).toFixed(2) #>%"><div class="tqb-skipped-spacing"></div></div>
+			<# } #>
+		</div>
+
+		<div class="tqb-progress-number-left"><#= conversions #> </div>
+		<div class="tqb-progress-number-right"><#= impressions - conversions #> </div>
+		<# if( impressions ) { #>
+			<div class="tqb-bar-arrow">
+				<span><#= ( conversions * 100 / impressions ).toFixed(2) #>%</span>
+			</div>
+		<# } #>
+	</div>
+	<p class="tqb-flow-section-info" id="tqb-total-number">
+		<#= impressions #>
+		<span><?php echo __( 'visitors', Thrive_Quiz_Builder::T ) ?></span>
+	</p>
+
+</div>
+
+
+<div class="tqb-flow-section-info tvd-col tvd-l2 tvd-m2">
+
+	<img src="../wp-content/plugins/thrive-quiz-builder/assets/css/admin/images/arrows.png" alt="arrows" class="tqb-reports-arrows">
+	<div class="tqb-dropped-off-container">
+		<span>
+			<#= impressions? ( ( impressions - conversions ) * 100 / impressions ).toFixed(2) : 0 #>%
+		</span>
+
+		<span>
+			<?php echo __( 'Dropped Off', Thrive_Quiz_Builder::T ) ?>
+		</span>
+		<# if(item.get('type')=='optin') { #>
+			<p class="tqb-dropped-off-visitors">
+				<#= skip_optin #></#> <?php echo __( 'skipped this step', Thrive_Quiz_Builder::T ) ?>
+			</p>
+		<# } #>
+	</div>
+
+</div>
+<# } else { #>
+	<div class="tvd-col tvd-l10 tvd-m12 tqb-no-data-reports">
+		<p><?php echo __( 'No data', Thrive_Quiz_Builder::T ) ?></p>
+	</div>
+<# } #>

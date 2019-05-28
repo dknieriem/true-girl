@@ -1,0 +1,87 @@
+@import "../../../no-image";
+@import "../../../base/display/set2-template";
+
+.tvo-#{$template-name}-template {
+  text-align: center;
+  font-weight: 100;
+  .custom-set2 {
+    h4 {
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    padding: 40px;
+    position: relative;
+    .tvo-testimonial-content {
+      font-style: italic;
+    }
+    .tvo-testimonial-quote {
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      border: 1px solid;
+      border-radius: 50%;
+      background-color: #fff;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 70px;
+      bottom: -35px;
+      &:before {
+        position: absolute;
+        top: -20px;
+        left: 10px;
+      }
+    }
+  }
+  .tvo-testimonial-info {
+    margin: 50px 0;
+    .tvo-testimonial-name {
+      font-weight: 700;
+    }
+    .tvo-testimonial-role {
+      color: #747474 !important;
+    }
+  }
+}
+
+$color-pallete: (
+  'black': (#3d3d3d, #cccccc, #000000, #d1d1d1, #666666),
+  'blue': (#50c6f2, #d6e0f5, #2a6981, #92b1bb, #266378),
+  'green': (#30dea3, #e1e8d0, #197557, #8cb7a8, #196f52),
+  'orange': (#f6ce2c, #f1e8d8, #816d17, #bdb38b, #266378),
+  'purple': (#c3aaed, #ebdced, #675b7f, #afaabb, #605577),
+  'red': (#fd7b71, #f1d0d0, #87413b, #bf9d9c, #803c39),
+  'teal': (#49d0d0, #d0ebec, #286d6e, #91b3b4, #246869),
+  'white': (#f4f4f4, #d9d9d9, #939393, #8e8e8e, #1e1e1e)
+);
+
+@each $name, $color in $color-pallete {
+  .tvo-#{$template-name}-template.tve_#{$name} {
+    .custom-set2, .tvo-testimonial-quote {
+      border: 2px solid nth($color, 2) !important;
+      .tvo-testimonial-content p, h4 {
+        color: #3d3d3d;
+      }
+    }
+    .tvo-testimonial-quote:after, .tvo-testimonial-quote:before {
+      color: nth($color, 2);
+    }
+    .tvo-testimonial-info span:first-child {
+      color: nth($color, 1);
+    }
+  }
+}
+
+$different-variation-name: (
+  'white': (#333, rgba(#000, .2))
+);
+
+@each $name, $color in $different-variation-name {
+  .tvo-testimonials-display.tvo-#{$template-name}-template.tve_#{$name} {
+    .tvo-testimonial-display-item {
+      p {
+        color: nth($color, 1) !important;
+      }
+    }
+  }
+}

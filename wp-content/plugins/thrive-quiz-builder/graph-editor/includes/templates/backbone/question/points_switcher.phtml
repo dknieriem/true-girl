@@ -1,0 +1,12 @@
+<div class="tvd-col tvd-s12">
+	<div class="tvd-switch tvd-right">
+		<label for="tge-toggle-points" style="padding-right: 20px"><?php echo __( 'Weighted answers' ) ?></label>
+		<label>
+			<?php echo __( 'Off', Thrive_Graph_Editor::T ) ?>
+			<input id="tge-toggle-points" type="checkbox"
+			<#= item.get('display_weight') ? 'checked' : '' #>>
+				<span class="tvd-lever"></span>
+				<?php echo __( 'On', Thrive_Graph_Editor::T ) ?>
+		</label>
+	</div>
+</div>

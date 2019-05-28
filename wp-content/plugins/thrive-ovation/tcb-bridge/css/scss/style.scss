@@ -1,0 +1,639 @@
+@import "bourbon";
+@import "editor_to";
+@import url('//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,600');
+
+.tvo-menu-onpage {
+  background: #eaeaea;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px 0 rgba(#000, .2), 1px 0 0 0 #fafafa inset, 0 1px 0 0 #fafafa inset;
+  border-radius: 2px;
+  font-family: 'Source Sans Pro', sans-serif;
+  height: 46px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10001;
+}
+
+.tvo-menu-onpage-container {
+  margin: 7px auto;
+  max-width: 1080px;
+}
+
+.tvo_menu_item {
+  background: #fff !important;
+  border-radius: 2px !important;
+  border: 1px solid #ccc !important;
+  color: #626262;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  height: 30px !important;
+  line-height: 28px;
+  padding: 0 5px;
+}
+
+.tvd-modal {
+  max-width: 960px !important;
+}
+
+.tvo-modal-close {
+  float: right;
+}
+
+.tvo_save_changes {
+  background: #2ecc71 !important;
+  border: 1px solid #22b25f !important;
+  color: #fff;
+  float: right;
+}
+
+#tvo-form-settings, #tvo-testimonial-templates, #tvo-display-testimonials {
+  font-family: 'Source Sans Pro', sans-serif;
+  max-height: 90%;
+  top: 5% !important;
+  .tvd-modal-content {
+    box-sizing: border-box;
+    padding: 30px;
+  }
+  .tvd-modal-close {
+    background: #ccc;
+    border-radius: 30px;
+    color: #fff;
+    height: 22px;
+    line-height: 20px;
+    font-size: 14px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    text-align: center;
+    width: 22px;
+    z-index: 300000001;
+  }
+  //sorry for this :(
+  @media only screen and (min-width: 1080px) {
+    min-width: 1360px !important;
+  }
+}
+
+.tvo-frontend-modal {
+  h4 {
+    color: #333;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+  }
+  h5 {
+    color: #333;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  .tve_lightbox_line {
+    border: 0;
+    background: #e8e8e8;
+    display: block;
+    height: 2px;
+    margin: 20px -30px;
+    padding: 0;
+  }
+  table {
+    border: 0;
+    border-collapse: separate;
+    width: 100%;
+    thead {
+      th {
+        border: 0;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #dae8c9;
+        color: #333;
+        font-weight: 600;
+        padding: 20px;
+        &:first-child {
+          border-top-left-radius: 5px;
+          border-left: 1px solid #ccc;
+        }
+        &:last-child {
+          border-top-right-radius: 5px;
+          border-right: 1px solid #ccc;
+        }
+      }
+    }
+    tfoot {
+      td {
+        border: 0;
+        background: #f7f7f7;
+        border-bottom: 1px solid #cccccc;
+        color: #666666;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 20px;
+        &:first-child {
+          border-bottom-left-radius: 5px;
+          border-left: 1px solid #cccccc;
+        }
+        &:last-child {
+          border-bottom-right-radius: 5px;
+          border-right: 1px solid #cccccc;
+        }
+      }
+    }
+    thead + tbody {
+      tr {
+        &:first-child {
+          td {
+            border-top: 0;
+          }
+        }
+      }
+    }
+    tbody {
+      tr.tve_first_row {
+        td {
+          &:first-child {
+            &:after {
+              left: 0;
+            }
+          }
+          &:last-child {
+            &:after {
+              right: 0;
+            }
+          }
+        }
+      }
+      tr {
+        &:first-child {
+          td {
+            border-top: 1px solid #cccccc;
+          }
+        }
+        &:last-child {
+          td {
+            border-bottom: 1px solid #ccc;
+            &:after {
+              display: none;
+            }
+          }
+        }
+        td {
+          border: 0;
+          background: #fff;
+          color: #333;
+          font-weight: 400;
+          font-size: 16px;
+          padding: 20px;
+          position: relative;
+          &:first-child {
+            border-left: 1px solid #ccc;
+            &:after {
+              left: 20px;
+            }
+          }
+          &:last-child {
+            border-right: 1px solid #ccc;
+            &:after {
+              right: 20px;
+            }
+          }
+          &:after {
+            background: #ccc;
+            content: '';
+            display: block;
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+  .tve_lightbox_input, .tve_lightbox_textarea {
+    box-shadow: 0 2px 7px 0 rgba(#000, .1) inset;
+    border: 1px solid #ccc;
+    background: #fff;
+    box-sizing: border-box;
+    color: #333;
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+    &::-webkit-input-placeholder {
+      color: #333;
+    }
+    &:hover {
+      box-shadow: none;
+      border: 1px solid rgba(#6e9d43, .35);
+      background: #f3f1f1;
+    }
+    &:active, &:focus {
+      box-shadow: none;
+      border: 1px solid #6e9d43;
+      background: #fff;
+    }
+    &[readonly] {
+      border: 1px solid #ccc;
+    }
+  }
+  .tve_lightbox_input {
+    line-height: 40px;
+    padding: 0 10px;
+  }
+  .tve_lightbox_input_holder {
+    display: inline-block;
+    position: relative;
+    padding: 5px 20px 5px 0;
+    &.tve_lightbox_no_label {
+      padding-right: 0;
+    }
+    input[type="checkbox"] {
+      &:not(:checked),
+      &:checked {
+        position: absolute;
+        visibility: hidden;
+        + label {
+          cursor: pointer;
+          font-size: 16px;
+          line-height: 20px;
+          position: relative;
+          padding-left: 35px;
+          &:before {
+            background-color: #fff;
+            border: 1px solid #cccccc;
+            content: '';
+            height: 17px;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 17px;
+          }
+          &:after {
+            content: "\02713";
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 21px;
+            position: absolute;
+            top: 0;
+            left: 4px;
+          }
+        }
+      }
+      &:not(:checked) + label:after {
+        opacity: 0;
+      }
+      &:checked + label:after {
+        color: #686868;
+      }
+      &:checked + label:after {
+        opacity: 1;
+      }
+    }
+  }
+  .tve_lightbox_select_holder {
+    box-shadow: 0 2px 7px 0 rgba(#000, .1) inset, 0 0 0 1px #ccc;
+    background: #fff;
+    min-width: 200px;
+    position: relative;
+    margin-bottom: 10px;
+    &:after {
+      background: #f5f5f5;
+      border-left: 1px solid #ccc;
+      color: #333333;
+      content: "\025BE";
+      font-size: 20px;
+      height: 40px;
+      line-height: 40px;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      text-align: center;
+      width: 40px;
+    }
+    select {
+      background-color: transparent;
+      border: 0;
+      color: #666;
+      cursor: pointer;
+      display: inline-block;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      height: 40px;
+      margin: 0;
+      text-indent: 10px;
+      outline: none;
+      width: 100%;
+      &.tve_ctrl_error {
+        outline: 1px dotted red;
+      }
+      option {
+        background: #fff;
+        font-size: 15px;
+        font-weight: 400;
+      }
+    }
+  }
+  .tve_editor_button {
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 40px;
+    padding: 0 20px;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .tve_editor_button_small {
+    line-height: 18px;
+    padding: 5px;
+  }
+  .tve_editor_button_default {
+    color: #666;
+    &:hover {
+      color: #666;
+    }
+  }
+  .tve_editor_button_success {
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+  .tve_editor_button_cancel {
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+  .tve_button_margin {
+    margin-left: 6px;
+  }
+  $button-colors: 'default' #fff #e5e5e5 #fff #c9c9c9 #dedede,
+  'success' #669933 #5c892e rgba(#fff, .3) #4e7528 #649532,
+  'cancel' #c92f2f #b52a2a rgba(#fff, .3) #720808 #c32e2e;
+
+  @each $button in $button-colors {
+    .tve_editor_button_#{nth($button, 1)} {
+      @include linear-gradient(nth($button, 2), nth($button, 3));
+      box-shadow: 0 1px 0 0 nth($button, 4) inset;
+      border: 1px solid nth($button, 5);
+      &:hover {
+        @include linear-gradient(nth($button, 3), nth($button, 2));
+      }
+      &:active {
+        background: nth($button, 6);
+      }
+    }
+  }
+  .tve_left {
+    float: left;
+  }
+  .tve_right {
+    float: right;
+  }
+  .tve_overflow_y {
+    max-height: 623px;
+    margin-bottom: 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 2px;
+  }
+  .tve_grid_cell, .tve_cloud_tpl_item {
+    margin-right: 2%;
+    @media only screen and (min-width: 1080px) {
+      width: 18%;
+    }
+    @media only screen and (max-width: 1080px) and (min-width: 774px) {
+      width: 30%;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+    @media only screen and (max-width: 774px) and (min-width: 720px) {
+      width: 47%;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+    @media only screen and (max-width: 720px) {
+      margin-right: 0;
+      width: 100%;
+    }
+    @media only screen and (max-width: 380px) {
+    }
+  }
+  .tve_landing_pages.tve_grid {
+    margin: 0;
+    .tve_grid_cell {
+      box-shadow: 0 0 4px 0 rgba(#000, .38);
+      box-sizing: border-box;
+      cursor: pointer;
+      float: left;
+      font-size: 15px;
+      margin-bottom: 25px;
+      position: relative;
+      padding: 6px 6px 3em;
+      > img {
+        display: block;
+        width: 100%;
+      }
+      .tve_cell_caption_holder {
+        color: #333;
+        display: table;
+        height: 3em;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        line-height: 1.1em;
+        font-size: 15px;
+        text-align: center;
+        .tve_cell_caption {
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+      > .tve_cell_check {
+        border-radius: 50%;
+        background: #a5c08b;
+        color: #fff;
+        display: none;
+        height: 26px;
+        line-height: 26px;
+        position: absolute;
+        right: -13px;
+        bottom: -13px;
+        width: 26px;
+      }
+      &.tve_cell_selected, &:hover {
+        box-shadow: 0 0 0 2px #a5c08b inset;
+      }
+      &.tve_cell_selected {
+        .tve_cell_check {
+          display: block;
+        }
+      }
+    }
+  }
+  .tve_cloud_tpl_item {
+    float: left;
+    margin-bottom: 20px;
+    .tve_grid_cell {
+      display: block;
+      float: none !important;
+      margin-bottom: 10px !important;
+      width: 100%;
+    }
+  }
+  .tve_cell_check {
+    text-align: center;
+  }
+  .tve_scT {
+    margin: 0;
+  }
+  .tve_scT {
+    > ul {
+      list-style-type: none;
+      margin: 0 !important;
+      padding: 0 !important;
+      li {
+        box-sizing: border-box;
+        border-left: 0;
+        border-top: 1px solid #d5d5d5;
+        border-right: 1px solid #d5d5d5;
+        border-radius: 0;
+        background: #f8f8f8;
+        color: #333;
+        display: block;
+        float: left;
+        font-size: 18px;
+        margin: 0 !important;
+        padding: 15px 30px;
+        position: relative;
+        text-transform: none;
+        width: auto !important;
+        z-index: 2;
+        &:first-child {
+          border-left: 1px solid #dbdbdb;
+        }
+        &:hover {
+          cursor: pointer;
+          padding-bottom: 15px !important;
+        }
+        &.tve_tS {
+          background: #fff;
+          margin-bottom: 0 !important;
+          padding-bottom: 15px !important;
+          &:before {
+            background: #80a758;
+            content: '';
+            display: block;
+            height: 2px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+          }
+          span {
+            color: #333333 !important;
+          }
+        }
+      }
+    }
+    .tve_scTC {
+      box-sizing: border-box;
+      background: #fff;
+      border: 1px solid #d5d5d5;
+      border-radius: 0;
+      padding: 30px 30px 31px;
+      z-index: 2;
+      width: 100%;
+    }
+  }
+}
+
+.tve_clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.tvo_toggle_fields_box {
+  .tvo_config_field {
+    margin: 0 5px;
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+  }
+}
+
+.tvo-showhide-fields {
+  line-height: 29px;
+  vertical-align: middle;
+  label {
+    display: inline-block;
+  }
+}
+
+.tvo-menu-relative {
+  position: relative;
+  .tvo_icon_box {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.tvo-menu-inline-block {
+  display: inline-block;
+}
+
+.tvo_toggle_fields_box {
+  border-radius: 2px;
+  box-shadow: 0 4px 11px -9px #000;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 10px 20px;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  min-width: 130px;
+  z-index: 10000;
+  &.tvo_fields_box {
+    min-width: 140px;
+  }
+  .tvo_template_colors {
+    margin-bottom: 0;
+    width: 130px;
+  }
+  ul {
+    margin: 0;
+  }
+}
+
+.tvo-testimonial-list-title {
+  font-size: 16px;
+  line-height: 1.5em;
+  height: 1.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
+}

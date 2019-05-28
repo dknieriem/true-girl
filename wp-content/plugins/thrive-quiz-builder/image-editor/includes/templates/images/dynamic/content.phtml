@@ -1,0 +1,32 @@
+<?php
+ob_start();
+?>
+<div class="tie-element" style="top: 51px; left: 99px; position: absolute; width: auto; right: auto; height: auto; bottom: auto;">
+    <div style="position: relative;" class="tie-editable"><p style="color: rgb(255, 255, 255); font-size: 89px; font-family: &quot;Permanent Marker&quot;;"
+                                                             data-mce-style="color: #ffffff; font-size: 89px; font-family: 'Permanent Marker';"><span style="font-size: 79px;"
+                                                                                                                                                      data-mce-style="font-size: 79px;">Your Title Text</span>
+        </p></div>
+</div>
+
+
+<div class="tie-element" style="top: 200px; left: 99px; position: absolute; width: auto; right: auto; height: auto; bottom: auto;">
+    <div style="position: relative;" class="tie-editable"><p style="font-family: &quot;Permanent Marker&quot;; color: rgb(170, 235, 85);"
+                                                             data-mce-style="font-family: 'Permanent Marker'; color: #aaeb55;"><span style="font-size: 86px;"
+                                                                                                                                     data-mce-style="font-size: 86px;">%result%</span>
+        </p></div>
+</div>
+<div class="tie-element" style="top: 362px; left: 98px; position: absolute; width: auto; right: auto; height: auto; bottom: auto;">
+    <div style="position: relative;" class="tie-editable"><p style="color: rgb(255, 255, 255); font-family: Lato;" data-mce-style="color: #ffffff; font-family: Lato;"><span
+                    style="font-size: 28px;" data-mce-style="font-size: 28px;">A short description of the quiz.&nbsp;</span></p>
+        <p data-mce-style="color: #ffffff; font-family: Lato;" style="color: rgb(255, 255, 255); font-family: Lato;"><span style="font-size: 28px;"
+                                                                                                                           data-mce-style="font-size: 28px;">You can tell people about the skills which are tested, or other key</span>
+        </p>
+        <p data-mce-style="color: #ffffff; font-family: Lato;" style="color: rgb(255, 255, 255); font-family: Lato;"><span style="font-size: 28px;"
+                                                                                                                           data-mce-style="font-size: 28px;">aspects that will convince them to give it a try.</span>
+        </p></div>
+</div>
+<?php
+$content = ob_get_contents();
+ob_clean();
+return $content;
+?>

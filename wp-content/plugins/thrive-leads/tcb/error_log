@@ -1,0 +1,8 @@
+[18-Aug-2017 10:45:25 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_dir_path() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb/plugin-core.php:6
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb/plugin-core.php on line 6
+[18-Aug-2017 10:45:25 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_option() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb/tve_settings.php:34
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb/tve_settings.php on line 34

@@ -1,0 +1,242 @@
+.tvo-card-content {
+  padding: 20px 10px;
+}
+
+.tvo-fake-dropdown-btn {
+  border-bottom: 1px solid $input-border-color;
+  color: $off-black;
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 2rem;
+  line-height: 2rem;
+  position: relative;
+  outline: none;
+  width: 100%;
+  #wpbody & {
+    color: $off-black;
+  }
+  &.tvd-active {
+    &:after {
+      border-color: transparent transparent #000 transparent;
+      border-width: 0 4px 5px 4px;
+    }
+  }
+  &:after {
+    border-color: #000 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    content: '';
+    height: 0;
+    right: 0;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+  }
+}
+
+.tvo-fake-dropdown-content {
+  margin-top: 7px;
+  z-index: 1001;
+  li {
+    padding: 6px;
+  }
+}
+
+.tvo-gray-box {
+  background: #f2f4f2;
+  border: 1px solid #f2f4f2;
+  border-radius: 2px;
+  padding: 15px 0;
+  &.tvd-row {
+    margin-bottom: 10px;
+  }
+  &.tvo-highlight-row {
+    background: #ecfcec;
+    border: 1px solid #cfe7cf;
+  }
+}
+
+.tvd-card .tvd-col .tvd-btn-flat {
+  &.tvo-add-new-tag {
+    padding: 0 5px;
+  }
+}
+
+.tvo-status-select {
+  &.tvo-testimonial-status-0 {
+    + .select2-container {
+      background: $highlight-g;
+    }
+  }
+  &.tvo-testimonial-status-1 {
+    + .select2-container {
+      background: $highlight-o;
+    }
+  }
+  &.tvo-testimonial-status-2 {
+    + .select2-container {
+      // background: $highlight-r;
+      background: $highlight-gr;
+    }
+  }
+  &.tvo-testimonial-status-3 {
+    + .select2-container {
+      background: $highlight-r;
+    }
+  }
+  + .select2-container {
+    border-radius: 2px;
+    background: transparent;
+    min-width: 170px;
+    transition: background .3s ease-in-out;
+    .select2-selection--single {
+      border-bottom: 0;
+    }
+    .select2-selection__rendered {
+      color: $status-select-text-color;
+      padding-left: 7px;
+    }
+    &.select2-container--open {
+      .select2-selection__arrow {
+        b {
+          border-bottom-color: $status-select-text-color;
+        }
+      }
+    }
+    .select2-selection__arrow {
+      b {
+        border-top-color: $status-select-text-color;
+      }
+    }
+  }
+}
+
+.tve-asset-delivery-conection {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.22);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 3px;
+  display: block;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+  width: 100px;
+  &.tvo-api-selected {
+    pointer-events: none;
+    cursor: default;
+    border: 2px solid #4bb35e;
+    &:before {
+      background: #4bb35e;
+      border-top-left-radius: 3px;
+      content: '\e602';
+      color: #fff;
+      display: block;
+      font-family: 'tvd-icons';
+      font-size: 14px;
+      line-height: 22px;
+      height: 20px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 20px;
+    }
+  }
+  &#tvo-delivery-mandrill {
+    background-image: url('../../thrive-dashboard/inc/auto-responder/views/images/mandrill_small.jpg');
+  }
+  &#tvo-delivery-postmark {
+    background-image: url('../../thrive-dashboard/inc/auto-responder/views/images/postmark_small.jpg');
+  }
+  &#tvo-delivery-mailgun {
+    background-image: url('../../thrive-dashboard/inc/auto-responder/views/images/mailgun_small.jpg');
+  }
+  &#tvo-delivery-awsses {
+    background-image: url('../../thrive-dashboard/inc/auto-responder/views/images/awsses_small.jpg');
+  }
+  &#tvo-delivery-sendinblueemail {
+    background-image: url('../../thrive-dashboard/inc/auto-responder/views/images/sendinblueemail_small.jpg');
+  }
+  &#tvo-delivery-sparkpost {
+    background-image: url('../../thrive-dashboard/inc/auto-responder/views/images/sparkpost_small.jpg');
+  }
+  &#tvo-delivery-sendgridemail {
+    background-image: url('../../thrive-dashboard/inc/auto-responder/views/images/sendgridemail_small.jpg');
+  }
+  &#tvo-delivery-mailrelayemail {
+    background-image: url('../../thrive-dashboard/inc/auto-responder/views/images/mailrelayemail_small.jpg');
+  }
+  &#tvo-delivery-campaignmonitoremail {
+    background-image: url('../../thrive-dashboard/inc/auto-responder/views/images/campaignmonitoremail_small.jpg');
+  }
+  &:hover {
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.24);
+  }
+}
+
+.tvo-asset-connected {
+  color: #908f8f;
+  display: block;
+  margin-top: -8px;
+}
+
+.tvo-delivery-step1 {
+  .tvo-connection-name {
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    min-height: 4rem;
+    &.tvo-connected-message {
+      margin-top: 5px;
+    }
+  }
+  .tvd-col {
+    min-height: 175px;
+  }
+}
+
+.tvo-delivery-connection {
+  .tvd-input-field {
+    margin-bottom: 1rem;
+  }
+}
+
+.tvo-break-word {
+  word-wrap: break-word;
+}
+
+.tvo-dummy-image {
+  visibility: hidden;
+}
+
+.tve_lightbox_content {
+  .tvo-testimonial-image {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.tvo-profile-picture {
+  display: block;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#tvo-testimonials-list .tvd-btn-icon-only {
+  margin-right: 0.8em;
+}
+
+.tvo-select2-filter-tag .select2-container .select2-selection--multiple .select2-selection__rendered {
+  overflow: visible;
+}
+
+.tvo-select2-filter-tag .select2-container--default .select2-search--inline .select2-search__field{
+  padding-bottom: 14px;
+  width: 180px!important; //fix for select2 placeholder from TO dashboard tag filter
+}

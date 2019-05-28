@@ -1,0 +1,13 @@
+@import "../../base/capture/default-template";
+
+.tvo_testimonial_form.tvo-#{$template-name}-template {
+  .tvo-form-field {
+    .tvo-form-button {
+      @include center-align;
+    }
+  }
+}
+
+.tvo_required_error {
+  border: 1px solid red !important;
+}

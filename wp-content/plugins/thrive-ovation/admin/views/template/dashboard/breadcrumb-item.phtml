@@ -1,0 +1,11 @@
+<# if(url=='') { #>
+	<span class="tve-breadcrumb-item">
+<# } else { #>
+	<a href="<#=url#>" class="tve-breadcrumb-item">
+<# } #>
+		<#=title#>
+<# if(url=='') { #>
+	</span>
+<# } else { #>
+	</a>
+<# } #>

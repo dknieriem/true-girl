@@ -1,0 +1,10 @@
+<div class="tqb-dotted-holder tvd-pointer tvd-tooltipped"
+	 <# if(item.get('type') == 'optin'){ #>
+		 data-tooltip="<?php echo __( 'Optional: Create a page that will help you to gather visitors emails', Thrive_Quiz_Builder::T ); ?>"
+	 <# }else{ #>
+		 data-tooltip="<?php echo __( 'Optional: Create a page that will get people to start the quiz', Thrive_Quiz_Builder::T ); ?>"
+	 <# } #>
+	 data-position="top">
+	<i class="tqb-new-page-icon"></i>
+	<span class="tvd-inline-block tqb-structure-item-button"><#= item.get('name') #></span>
+</div>

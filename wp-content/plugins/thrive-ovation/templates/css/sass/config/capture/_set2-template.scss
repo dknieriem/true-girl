@@ -1,0 +1,117 @@
+@import "../../mixins";
+@import "//fonts.googleapis.com/css?family=Raleway:300,400,700";
+
+$template-name: 'set2';
+
+$font-family: 'Raleway', sans-serif;
+
+$color-pallete: (
+        'black': #000000,
+        'blue': #3ea3e6,
+        'green': #66c66f,
+        'orange': #f3833f,
+        'purple': #b166c6,
+        'red': #e44d4d,
+        'teal': #66c6c2,
+        'white': #ffffff
+);
+
+$different-variation-name: (
+        'white': (#fffefe, #000000)
+);
+
+/*input styles*/
+$input-background: #dfdfdf;
+$input-has-border: true;
+$input-border-color: #dfdfdf;
+$input-border: 1px solid $input-border-color;
+$input-has-border-radius: true;
+$input-border-radius: 0;
+$input-has-box-shadow: false;
+$input-box-shadow: none;
+$input-color: #141414;
+$input-font-size: 14px;
+$input-font-style: normal;
+$input-font-weight: 400;
+$input-line-height: 24px;
+$input-padding: 17px 12px;
+$input-transform: false;
+$input-text-transform: uppercase;
+
+//hover
+$input-background-hover: #ededed;
+$input-different-hover-border: true;
+$input-border-color-hover: #ededed;
+$input-border-hover: 1px solid $input-border-color-hover;
+$input-different-color-hover: false;
+$input-color-hover: #868686;
+
+//focus
+$input-background-focus: #ededed;
+$input-different-focus-border: true;
+$input-border-color-focus: #e1e1e1;
+$input-border-focus: 1px solid $input-border-color-focus;
+$input-different-color-focus: false;
+$input-color-focus: #868686;
+$input-different-box-shdaow-focus: false;
+$input-box-shadow-focus: 0 0 3px 0 rgba(#000, .1);
+
+/*textarea styles*/
+$textarea-background: #dfdfdf;
+$textarea-has-border: true;
+$textarea-border-color: #dfdfdf;
+$textarea-border: 1px solid $textarea-border-color;
+$textarea-has-border-radius: true;
+$textarea-border-radius: 0;
+$textarea-has-box-shadow: false;
+$textarea-box-shadow: none;
+$textarea-color: #141414;
+$textarea-font-size: 14px;
+$textarea-font-style: normal;
+$textarea-font-weight: 400;
+$textarea-line-height: 24px;
+$textarea-padding: 17px 12px;
+$textarea-min-height: 100px;
+
+//hover
+$textarea-background-hover: #ededed;
+$textarea-different-hover-border: true;
+$textarea-border-color-hover: #ededed;
+$textarea-border-hover: 1px solid $textarea-border-color-hover;
+$textarea-different-color-hover: false;
+$textarea-color-hover: #868686;
+
+//focus
+$textarea-background-focus: #ededed;
+$textarea-different-focus-border: true;
+$textarea-border-color-focus: #ededed;
+$textarea-border-focus: 1px solid $textarea-border-color-focus;
+$textarea-different-color-focus: false;
+$textarea-color-focus: #868686;
+$textarea-different-box-shdaow-focus: false;
+$textarea-box-shadow-focus: 0 0 3px 0 rgba(#000, .1);
+
+/*button styles*/
+$button-has-border: false;
+$button-has-border-radius: false;
+$button-border-radius: 3px;
+$button-color: #fff;
+$button-font-size: 14px;
+$button-font-weight: 700;
+$button-font-style: normal;
+$button-line-height: 28px;
+$button-padding: 14px 30px;
+$button-text-transform: none;
+
+$navigation-icon: 'tvo-set18-t-icons';
+
+/*success message*/
+$success-message-color: #141414;
+$success-message-font-size: 42px;
+$success-message-font-weight: 700;
+$success-message-font-family: $font-family;
+$success-message-font-style: normal;
+$success-message-line-height: 1em;
+$success-message-margin-bottom: 0;
+$success-message-margin-top: 0;
+$success-message-alignment: center;

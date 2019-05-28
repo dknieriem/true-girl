@@ -1,0 +1,86 @@
+<h3 class="tvd-modal-title">
+	<?php echo __( 'Create New Testimonial', TVO_TRANSLATE_DOMAIN ); ?>
+</h3>
+<div class="tvd-v-spacer"></div>
+<div class="tvd-row tvd-collapse tvd-no-mb">
+	<div class="tvo-testimonial-author-image tvd-col tvd-s2 tvd-center-align">
+		<div class="tvd-v-spacer"></div>
+		<img width="110" src="<#= ThriveOvation.testimonial_image_placeholder #>" class="tvo-rounded-img tvo-upload-testimonial-image tvd-pointer">
+		<br>
+		<a href="javascript:void(0)" class="tvo-upload-testimonial-image tvd-small-text"
+		   id="tvo-upload-testimonial-image"><?php echo __( 'Upload picture', TVO_TRANSLATE_DOMAIN ); ?></a>
+		<div class="tvo-image-uploaded" style="display:none;">
+			<p class="tvo-change-picture-expl"><?php echo __( 'Click the picture to update', TVO_TRANSLATE_DOMAIN ); ?></p>
+			<a href="javascript:void(0)" class="tvd-small-text" data-default="<#= ThriveOvation.testimonial_image_placeholder #>"
+			   id="tvo-remove-testimonial-image"><?php echo __( 'Remove picture', TVO_TRANSLATE_DOMAIN ); ?></a>
+		</div>
+		<input type="hidden" name="tvo-is-placeholder" value="1"/>
+	</div>
+	<div class="tvo-testimonial-data tvd-col tvd-s10" data-id="">
+		<div class="tvd-v-spacer"></div>
+		<div class="tvd-row">
+			<div class="tvd-col tvd-s12">
+				<div class="tvd-input-field tvo-title">
+					<input type="text" id="tvo-title" class="tvo-testimonial-input tvd-validate" value=""/>
+					<label for="tvo-title" data-error="<?php echo __( 'Please fill in the title field', TVO_TRANSLATE_DOMAIN ); ?>">
+						<?php echo __( 'Title', TVO_TRANSLATE_DOMAIN ); ?>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-row">
+			<div class="tvd-col tvd-s6">
+				<div class="tvd-input-field tvo-author-name">
+					<input type="text" id="tvo-author-name" class="tvo-testimonial-input tvd-validate" value=""/>
+					<label for="tvo-author-name" data-error="<?php echo __( 'Please fill in the name field', TVO_TRANSLATE_DOMAIN ); ?>">
+						<?php echo __( 'Full Name', TVO_TRANSLATE_DOMAIN ); ?>
+					</label>
+				</div>
+			</div>
+			<div class="tvd-col tvd-s6">
+				<div class="tvd-input-field tvo-author-email">
+					<input type="text" id="tvo-author-email" class="tvo-testimonial-input tvd-validate" value=""/>
+					<label
+						for="tvo-author-email"
+						data-error-twitter="<?php echo __( 'Please fill in a Twitter handle', TVO_TRANSLATE_DOMAIN ); ?>"
+						data-content-twitter="<?php echo __( 'Twitter handle', TVO_TRANSLATE_DOMAIN ); ?>"
+						data-error="<?php echo __( 'Please fill in a valid email address', TVO_TRANSLATE_DOMAIN ); ?>">
+						<?php echo __( 'Email Address', TVO_TRANSLATE_DOMAIN ); ?></label>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-row">
+			<div class="tvd-col tvd-s6">
+				<div class="tvd-input-field tvo-author-ocupation">
+					<input type="text" id="tvo-author-role" class="tvo-testimonial-input tvd-validate" value=""/>
+					<label for="tvo-author-role" data-error="<?php echo __( 'Please fill in the occupation field', TVO_TRANSLATE_DOMAIN ); ?>">
+						<?php echo __( 'Role/Occupation', TVO_TRANSLATE_DOMAIN ); ?>
+					</label>
+				</div>
+			</div>
+			<div class="tvd-col tvd-s6">
+				<div class="tvd-input-field tvo-author-website">
+					<input type="text" id="tvo-author-website" class="tvo-testimonial-input tvd-validate" value=""/>
+					<label for="tvo-author-website" data-error="<?php echo __( 'Please fill in a valid website URL', TVO_TRANSLATE_DOMAIN ); ?>"><?php echo __( 'Website URL', TVO_TRANSLATE_DOMAIN ); ?></label>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-row tvo-testimonial-tags">
+			<div class="tvd-col tvd-s12">
+				<h4 class="tvd-no-margin">
+					<?php echo __( 'Tags', TVO_TRANSLATE_DOMAIN ); ?>
+				</h4>
+				<div class="tvo-testimonial-add-tags tvo-edit-testimonial-tags-container">
+					<select id="tvo-author-new-tag-modal" class="tvo-add-tag-autocomplete"></select>
+				</div>
+				<div class="tvo-testimonial-existing-tags"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="tvo-testimonial-content">
+	<?php wp_editor( '', 'tvo-testimonial-content-tinymce', array(
+		'quicktags'     => false,
+		'media_buttons' => false,
+	) ) ?>
+</div>

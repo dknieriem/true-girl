@@ -1,0 +1,67 @@
+<div class="tvd-card tvd-white tvo-medium">
+	<div class="tvd-card-image <# if (shortcode.get('thumbnail') != '') { #> tvo-hover-shortcode <# } #>" style="background-image: url('<#= shortcode.get('thumbnail') #>');background-size:cover;">
+		<# if (shortcode.get('thumbnail') != '') { #>
+			<img src="<#= shortcode.get('thumbnail') #>" alt="">
+			<a target="_blank" href="<#= shortcode.get('url') #>" class="tvo-hover-shortcode-text">
+				<?php echo __( 'PREVIEW & EDIT', TVO_TRANSLATE_DOMAIN ) ?>
+			</a>
+			<# } else { #>
+				<div class="tvo-choose-shortcode">
+					<a target="_blank" href="<#= shortcode.get('url') #>">
+						<?php echo __( 'CHOSE TEMPLATE', TVO_TRANSLATE_DOMAIN ) ?>
+					</a>
+				</div>
+				<# } #>
+	</div>
+	<div class="tvd-card-action">
+		<div class="tvd-row tvd-no-mb">
+			<div class="tvd-col tvd-s12">
+				<h4 class="tvd-truncate tvo-shortcode-title">
+					<#= shortcode.get('name') #>
+				</h4>
+				<a class="tvd-card-options tvd-dropdown-button tvd-btn-floating"
+				   data-constrainwidth="false" data-beloworigin="true" data-alignment="right"
+				   data-activates="dropdown-card-<#= shortcode.get('id') #>" href="javascript:void(0)" data-hover="false">
+					<i class="tvd-icon-more_vert"></i>
+				</a>
+				<ul id="dropdown-card-<#= shortcode.get('id') #>" class="tvd-dropdown-content">
+					<li>
+						<a href="javascript:void(0)" class="tvo-edit-shortcode-title tvd-normalize">
+							<i class="tvd-icon-pencil"></i>
+							<?php echo __( 'Edit title', TVO_TRANSLATE_DOMAIN ) ?>
+						</a>
+					</li>
+					<li>
+						<a class="delete tvo-shortcode-icon-delete tvd-normalize" href="javascript:void(0)">
+							<i class="tvd-icon-trash-o"></i>
+							<?php echo __( 'Delete Shortcode', TVO_TRANSLATE_DOMAIN ) ?>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="tvd-v-spacer vs-half"></div>
+		<div class="tvd-row tvo-copy-input-content tvd-no-mb">
+			<# if (shortcode.get('thumbnail') != '') { #>
+				<div class="tvd-col tvd-s8">
+					<input class="tvo-email-shortcode-input tvo-copy" type="text"
+					       name="tvo_shortcode_input[text]" readonly="readonly"
+					       value="[tvo_shortcode id=<#= shortcode.get('id') #>]">
+				</div>
+				<div class="tvd-col tvd-s4">
+					<span class="tvo-copy-container">
+						<a class="tve-copy-to-clipboard tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-btn-small tvd-right" href="javascript:void(0)">
+		                    <span class="tvo-copy-text"><?php echo __( 'Copy', TVO_TRANSLATE_DOMAIN ) ?></span>
+						</a>
+					</span>
+				</div>
+				<# } else { #>
+					<div class="tvd-col tvd-s12 tvd-center-align">
+						<a target="_blank" class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-btn-small" href="<#= shortcode.get('url') #>">
+							<span class="tvo-copy-text"><?php echo __( 'Edit', TVO_TRANSLATE_DOMAIN ) ?></span>
+						</a>
+					</div>
+					<# } #>
+		</div>
+	</div>
+</div>

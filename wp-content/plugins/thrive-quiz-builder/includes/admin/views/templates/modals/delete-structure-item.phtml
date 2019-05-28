@@ -1,0 +1,28 @@
+<div id="tqb-delete-structure-card-modal-<#= model.get('type') #>" class="tqb-delete-structure-card-modal">
+    <div class="tvd-modal-content">
+        <h3 class="tvd-modal-title">
+			<?php echo __( 'Delete ', Thrive_Quiz_Builder::T ); ?>
+            <#= model.get('name') #>
+        </h3>
+        <p>
+            <span class="tqb-has-placeholder"><?php echo __( 'Warning! You are about to delete the %s of your quiz!', Thrive_Quiz_Builder::T ) ?></span><br/>
+			<?php echo __( 'This will delete all forms and statistics and cannot be reversed.', Thrive_Quiz_Builder::T ) ?>
+        </p>
+    </div>
+    <div class="tvd-modal-footer">
+        <div class="tvd-row">
+            <div class="tvd-col tvd-s12 tvd-m6">
+                <a href="javascript:void(0)"
+                   class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-dark tvd-waves-effect tvd-modal-close">
+					<?php echo __( 'NO, DON\'T DELETE', Thrive_Quiz_Builder::T ); ?>
+                </a>
+            </div>
+            <div class="tvd-col tvd-s12 tvd-m6">
+                <a href="javascript:void(0)"
+                   class="tvd-btn tvd-btn-red tvd-waves-light tvd-right tvd-modal-submit">
+					<?php echo __( 'YES, DELETE', Thrive_Quiz_Builder::T ); ?>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

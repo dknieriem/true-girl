@@ -1,0 +1,54 @@
+<div class="tvd-v-spacer"></div>
+<div class="tvd-row">
+	<div class="tvd-col tvd-s12">
+		<div class="tqb-edit-title-align">
+			<h3 class="tqb-quiz-title">
+				<#= model.get('tqb_page_name') #>
+					&nbsp;&nbsp;
+				<a href="javascript:void(0);"
+				   class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-purple tvd-btn-small tqb-add-new-form"><?php echo __( 'Add A/B Test Variation', Thrive_Quiz_Builder::T ) ?></a>
+			</h3>
+		</div>
+	</div>
+</div>
+<div class="tvd-row">
+	<div class="tvd-col tvd-s12">
+		<#= model.get('tqb_page_description') #>
+	</div>
+</div>
+<div id="tqb-page-variations-list"></div>
+<# if ( model.get('variations').length ) { #>
+	<# if ( model.get('variations').length > 1 ) { #>
+		<a style="" class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tqb-start-variation-test tvd-right" href="javascript:void(0)"
+		   title="<?php echo __( 'Start A/B Test', Thrive_Quiz_Builder::T ) ?>">
+			<?php echo __( 'Start A/B Test', Thrive_Quiz_Builder::T ) ?>
+		</a>
+	<# } #>
+<# } else { #>
+	<p class="show-no-groups">
+		<?php echo __( "You don't have any active variations", Thrive_Quiz_Builder::T ) ?> -
+		<a href="javascript:void(0)" class="tqb-add-new-form">
+			<?php echo __( 'click here to create one', Thrive_Quiz_Builder::T ) ?>
+		</a>
+	</p>
+<# } #>
+<div class="tvd-v-spacer"></div>
+<?php include dirname( dirname( __FILE__ ) ) . '/tests/completed-tests.phtml' ?>
+<div class="tvd-v-spacer"></div>
+<div id="tqb-archived-forms" style="display: none">
+	<h4 title="<?php echo __( 'Click to expand', Thrive_Quiz_Builder::T ) ?>"
+	    class="tvd-pointer tqb-toggle-display collapsed tvd-inline-block" data-target="#tqb-archived-page-variations-list">
+		<?php echo __( 'Archived Forms', Thrive_Quiz_Builder::T ) ?>
+		(<span id="tqb-archived-forms-counter"><#= model.get( 'archived_variations' ).length #></span>)
+	</h4>
+	<div id="tqb-archived-page-variations-list" style="display: none"></div>
+</div>
+
+<div class="tvd-v-spacer vs-2"></div>
+<div class="tvd-row">
+	<div class="tvd-col tvd-s6">
+		<a href="#dashboard/quiz/<#= model.get('post_parent') #>" class="tvd-btn-flat tvd-btn-flat-primary tvd-btn-flat-dark tvd-waves-effect">
+			&laquo; <?php echo __( 'Back to Dashboard', Thrive_Quiz_Builder::T ) ?>
+		</a>
+	</div>
+</div>

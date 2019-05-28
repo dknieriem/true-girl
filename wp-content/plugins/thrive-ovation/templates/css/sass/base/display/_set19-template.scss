@@ -1,0 +1,101 @@
+@import "../../config/display/set19-template";
+
+.tvo-testimonials-display.tvo-#{$template-name}-template {
+  @include box-sizing;
+  font-family: $font-family;
+  .tvo-testimonial-display-item {
+    @include box-sizing;
+    h4, p {
+      font-family: $font-family;
+    }
+    p {
+      color: $font-color;
+      font-size: $font-size;
+      font-weight: $font-weight;
+      line-height: $font-line-height;
+      margin-bottom: $font-margin-bottom;
+    }
+  }
+  .tvo-testimonial-image-cover {
+    @include center-align;
+    border-radius: $image-border-radius;
+    border-width: $image-border-size;
+    border-style: solid;
+    margin-bottom: $image-margin-bottom;
+  }
+  .tvo-testimonial-quote {
+    color: $quotes-color;
+    float: left;
+    height: 30px;
+    position: relative;
+    width: $quotes-size*.8;
+    &:before {
+      @include up-quotes;
+      @include center-align;
+      font-size: $quotes-size;
+      font-weight: $quotes-weight;
+      line-height: $quotes-line-height;
+    }
+  }
+  .tvo-testimonial-info {
+    @include center-text;
+  }
+  .tvo-testimonial-name {
+    display: block;
+    font-size: $name-size;
+    font-weight: $name-weight;
+    line-height: $name-line-height;
+  }
+  .tvo-testimonial-role {
+    font-size: $job-size;
+    font-weight: $job-weight;
+    line-height: $job-line-height;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+  //.tvo-testimonial-content {
+  //  word-break: break-all;
+  //}
+}
+
+@each $name, $color in $color-pallete {
+  .tvo-#{$template-name}-template.tve_#{$name} {
+    h4 {
+      color: $color;
+    }
+    .tvo-testimonial-quote {
+      color: $color;
+    }
+    .tvo-image-wrapper {
+      &:before {
+        border-top: 10px solid $color;
+      }
+    }
+    .tvo-testimonial-image-cover {
+      border-color: $color;
+    }
+    .tvo-testimonial-name, .tvo-testimonial-role {
+      color: $color;
+    }
+    .thrlider-next, .thrlider-prev {
+      &:hover {
+        color: $color;
+      }
+    }
+  }
+}
+
+@each $name, $color in $different-variation-name {
+  .tvo-testimonials-display.tvo-#{$template-name}-template.tve_-#{$name} {
+    .tvo-testimonial-display-item {
+      h4, p {
+        color: $color;
+      }
+    }
+    .tvo-testimonial-name, .tvo-testimonial-role {
+      color: $color;
+    }
+  }
+}

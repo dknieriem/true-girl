@@ -1,0 +1,90 @@
+@import "../../config/display/set12-template";
+
+.tvo-testimonials-display.tvo-#{$template-name}-template {
+  @include box-sizing;
+  font-family: $font-family;
+  .tvo-testimonial-display-item {
+    @include full-height;
+    @include box-sizing;
+    border-radius: $item-border-radius;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    font-family: $font-family;
+    padding: $grid-item-padding;
+    h4, p {
+      font-family: $font-family;
+    }
+    p {
+      color: $font-color;
+      font-size: $font-size;
+      font-weight: $font-weight;
+      font-style: italic;
+      line-height: $font-line-height;
+      margin-bottom: $font-margin-bottom;
+    }
+  }
+  .tvo-testimonial-name {
+    color: $name-color-dark;
+    font-size: $name-size;
+    font-weight: $name-weight;
+    line-height: $name-line-height;
+  }
+  .tvo-testimonial-role {
+    font-size: $job-size;
+    font-weight: $job-weight;
+    line-height: $job-line-height;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+  .tvo-testimonial-image-cover {
+    @include box-sizing;
+    @include center-align;
+    border-radius: $image-border-radius;
+    border: 10px solid $image-border-color;
+  }
+  .tvo-testimonial-content {
+    @include tvo-relative;
+    //word-break: break-all;
+  }
+  .tvo-testimonial-info {
+    svg {
+      fill: none;
+      stroke: #aaa;
+      stroke-width: 1;
+    }
+  }
+}
+
+@each $name, $color in $color-pallete {
+  .tvo-#{$template-name}-template.tve_#{$name} {
+    .tvo-testimonial-quote {
+      color: $color;
+    }
+    .tvo-testimonial-name {
+      color: $color;
+    }
+  }
+}
+
+@each $name, $color in $different-variation-name {
+  .tvo-testimonials-display.tvo-#{$template-name}-template.tve_#{$name} {
+    .tvo-testimonial-display-item {
+      p, h4 {
+        color: nth($color, 1);
+      }
+    }
+    .tvo-testimonial-name {
+      color: nth($color, 1);
+    }
+    .tvo-testimonial-role {
+      color: nth($color, 2);
+    }
+    .tvo-testimonial-info {
+      svg {
+        stroke: #fff;
+      }
+    }
+  }
+}

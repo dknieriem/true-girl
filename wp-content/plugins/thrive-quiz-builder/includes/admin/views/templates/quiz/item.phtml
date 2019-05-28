@@ -1,0 +1,87 @@
+<div class="tvd-card tvd-white tvd-large tvd-slim-card tqd-card">
+	<div class="tqb-purple-line"></div>
+	<div class="tqb-quiz-controls tqb-quiz-actions">
+		<div class="left">
+			<a data-id="<#= item.get('ID') #>" class="tqb-move-quiz tqb-drag-card tqb-icon-gray tvd-tooltipped" data-position="top"
+			   data-tooltip="<?php echo __( 'Drag & Drop the card in order to change the quiz order.', Thrive_Quiz_Builder::T ) ?>">
+				<i class="tqd-icons-move"></i>
+			</a>
+<!--			<a data-id="<#= item.get('ID') #>" class="tqb-icon-gray tqb-btn-icon-small tvd-tooltipped" data-position="top"-->
+<!--			   data-tooltip="--><?php //echo __( 'Duplicate quiz', Thrive_Quiz_Builder::T ) ?><!--">-->
+<!--				<i class="tqd-icons-clone"></i>-->
+<!--			</a>-->
+			<a data-id="<#= item.get('ID') #>" class="tqb-delete-quiz tqb-icon-gray tqb-btn-icon-small tvd-tooltipped" data-position="top"
+			   data-tooltip="<?php echo __( 'Delete quiz', Thrive_Quiz_Builder::T ) ?>">
+				<i class="tqd-icons-trash"></i>
+			</a>
+		</div>
+		<div class="right">
+			<a data-id="<#= item.get('ID') #>" class="tqb-copy-shortcode tqb-icon-gray tqb-btn-icon-small tvd-tooltipped" data-position="top"
+			   data-tooltip="<?php echo __( 'Shortcode', Thrive_Quiz_Builder::T ) ?>">
+				<i class="tqd-icons-code"></i>
+			</a>
+		</div>
+	</div>
+	<div class="tvd-card-content">
+		<div class="tqb-title-holder">
+			<# if( ( ! item.get('validation').valid ) || item.get('validation').notice ){ #>
+				<div class="tqb-error-message">
+					<span class="tqb-quiz-status-attention <#= item.get('validation').valid ? 'tqb-quiz-status-notice': '' #>">!</span>
+					<div class="tvd-tooltip-visible tvd-normalize ">
+						<# for(var error in item.get('validation').error ) { #>
+							<span><#= item.get('validation').error[error] #></span>
+						<# } #>
+					</div>
+				</div>
+				<# } #>
+					<h3 class="tvd-card-title tvd-truncate">
+						<#= item.get('post_title') #>
+					</h3>
+					<span class="tvd-icon-pencil tvd-pointer tqb-edit-quiz-title"></span>
+
+					<span class="tqb-card-subtitle">
+						<# var quiz_type_vars = item.getQuizTypeText( item.get('type') );
+						if (item.get('type')){ #>
+							<#= quiz_type_vars.label #> <?php echo __( 'quiz', Thrive_Quiz_Builder::T ) ?>
+						<# }else{ #>
+							<#= quiz_type_vars.label #>
+						<# } #>
+					</span>
+		</div>
+		<div class="tqb-quiz-status">
+			<div class="tqb-attendees">
+				<div class="tqb-bar-holder">
+					<div class="tqb-complete-bar"></div>
+					<div class="tqb-progress-bar">
+						<# if(item.get('users_started')>0){ #>
+								<div class="tqb-finished" <#= 'style="width:'+(item.get('completed_count')*100/item.get('users_started'))+'%;"' #>></div>
+						<# }else{ #>
+							<div class="tqb-finished-no-data"></div>
+						<# } #>
+				</div>
+				<span class="tqb-progress-number top"><#= item.get('users_started')? item.get('users_started'):0 #> <?php echo __( 'Started', Thrive_Quiz_Builder::T ) ?></span>
+				<span class="tqb-progress-number bot"><#= item.get('completed_count')? item.get('completed_count'):0 #> <?php echo __( 'Finished', Thrive_Quiz_Builder::T ) ?></span>
+				<!-- <div class="tqb-circle-image" id="<% type.of.quiz %>"></div>-->
+				<div class="tqb-circle-image" id="<#= item.get('type') #>"></div>
+			</div>
+		</div>
+	</div>
+	<div class="tqb-subscribers-holder">
+		<div class="tqb-subscribers">
+			<!-- The number of new subscribers/social shares will be transformed into a percentage and will be attributed to the width of the bar -->
+			<div class="tqb-subscribers-bar top" <#= 'style="width:'+(Number(item.get('users_started'))? (item.get('subscribers')*100/item.get('users_started')):0)+'%;"' #> ></div>
+			<div class="tqb-subscribers-bar bot" <#= 'style="width:'+(Number(item.get('users_started'))? (item.get('social_shares')*100/item.get('users_started')):0)+'%;"' #> ></div>
+			<!-- <span class="tqb-subscribers-number top"><%= obj.subscribers %> New Subscribers</span> -->
+			<span class="tqb-subscribers-number top"><#= item.get('subscribers')? item.get('subscribers'):0 #> <?php echo __( 'Subscribers', Thrive_Quiz_Builder::T ) ?></span>
+			<!-- <span class="tqb-subscribers-number top tqb-no-stats">No stats available</span>-->
+			<span class="tqb-subscribers-number bot"><#= item.get('social_shares')? item.get('social_shares'):0 #> <?php echo __( 'Social Shares', Thrive_Quiz_Builder::T ) ?></span>
+			<p class="tqb-full-report"><a href="<#= item.get_report_route() #>" ><i class="tqd-icons-graph"></i> <?php echo __( 'Full report', Thrive_Quiz_Builder::T ) ?></a><p>
+		</div>
+	</div>
+	<div class="tvd-card-action">
+		<a href="<#= item.get_edit_route() #>" class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-purple tvd-full-btn">
+			<?php echo __( 'Edit Quiz', Thrive_Quiz_Builder::T ) ?>
+		</a>
+	</div>
+</div>
+</div>

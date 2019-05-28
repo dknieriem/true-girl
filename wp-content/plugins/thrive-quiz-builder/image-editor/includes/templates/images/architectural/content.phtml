@@ -1,0 +1,32 @@
+<?php
+ob_start();
+?>
+<div class="tie-element" style="top: 67px; left: 111px; position: absolute; width: auto; right: auto; height: auto; bottom: auto;">
+	<div style="position: relative;" class="tie-editable"><p style="color: #ffffff; font-size: 89px; font-family: Raleway; line-height: 100px;"
+															 data-mce-style="color: #ffffff; font-size: 89px; font-family: Raleway; line-height: 100px;"><span
+					style="font-size: 74px;" data-mce-style="font-size: 74px;">Your Title Text</span></p></div>
+</div>
+<div class="tie-element" style="top: 187px; left: 115px; position: absolute; width: auto; right: auto; height: auto; bottom: auto;">
+	<div style="position: relative;" class="tie-editable"><p style="color: #ffffff; font-size: 58px; font-family: Raleway;"
+															 data-mce-style="color: #ffffff; font-size: 58px; font-family: Raleway;"><span style="font-size: 62px;"
+																																		   data-mce-style="font-size: 62px;">Score:&nbsp;%result%</span>
+		</p></div>
+</div>
+<div class="tie-element" style="top: 318px; left: 120px; position: absolute; width: auto; right: auto; height: auto; bottom: auto;">
+	<div style="position: relative;" class="tie-editable"><p style="color: rgb(255, 255, 255); font-family: Roboto;" data-mce-style="color: #ffffff; font-family: Roboto;"><span
+					style="font-size: 25px; font-family: Roboto;" data-mce-style="color: #ffffff; font-family: Roboto;">A short description of the quiz.</span></p>
+		<p style="color: rgb(255, 255, 255); font-family: Roboto;" data-mce-style="color: #ffffff; font-family: Roboto;"><span style="font-size: 25px; font-family: Roboto;"
+																															   data-mce-style="color: #ffffff; font-family: Roboto;">You can tell people about the skills which are tested,</span>
+		</p>
+		<p style="color: rgb(255, 255, 255); font-family: Roboto;" data-mce-style="color: #ffffff; font-family: Roboto;"><span style="font-size: 25px; font-family: Roboto;"
+																															   data-mce-style="color: #ffffff; font-family: Roboto;">or other key aspects that will convince them to give</span>
+		</p>
+		<p style="color: rgb(255, 255, 255); font-family: Roboto;" data-mce-style="color: #ffffff; font-family: Roboto;"><span style="font-size: 25px; font-family: Roboto;"
+																															   data-mce-style="color: #ffffff; font-family: Roboto;">it a try.</span>
+		</p></div>
+</div>
+<?php
+$content = ob_get_contents();
+ob_clean();
+return $content;
+?>

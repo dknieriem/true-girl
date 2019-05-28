@@ -1,0 +1,67 @@
+/*
+Dark Better Bandsintown
+*/
+
+.bit-track-artist-header {
+    display: none !important;
+}
+
+.bbit-shortcode_wrapper {
+    background-color:rgba(255,255,255,0.5);
+}
+
+.bbit-shortcode_wrapper table, 
+.bbit-shortcode_wrapper td, 
+.bbit-shortcode_wrapper th, 
+.bbit-shortcode_wrapper tbody {
+    border: none;
+}
+
+// Always the same margin bottom
+.bbit-shortcode_wrapper table {
+    margin-bottom: 0px;
+}
+.bbit-shortcode_wrapper {
+    margin-bottom: 20px;
+}
+
+.bit-events-narrow td {
+    border-top: 1px solid #222 !important;
+    border-bottom: 1px solid #222 !important;
+}
+
+.bbit-shortcode_wrapper {
+    font-weight: bold;
+}
+
+.bit-rsvp {
+    text-shadow: none;
+}
+
+.bit-events-narrow {
+    margin-top: 0px;
+}
+
+.bit-header {
+    background: rgb(0,0,0); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(117,117,117,1) 0%, rgba(79,79,79,1) 44%, rgba(51,51,51,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(0%,rgba(117,117,117,1)), color-stop(44%,rgba(79,79,79,1)), color-stop(100%,rgba(51,51,51,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(117,117,117,1) 0%,rgba(79,79,79,1) 44%,rgba(51,51,51,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(117,117,117,1) 0%,rgba(79,79,79,1) 44%,rgba(51,51,51,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(117,117,117,1) 0%,rgba(79,79,79,1) 44%,rgba(51,51,51,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(117,117,117,1) 0%,rgba(79,79,79,1) 44%,rgba(51,51,51,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
+}
+
+.bit-header {
+    border-top: 1px solid rgba(255,255,255,.09) !important;
+    border-bottom: 1px solid #222 !important;
+}
+
+.bit-track-artist-header {
+    border: none !important;
+}
+
+.bbit-shortcode_wrapper a {
+    color: #2f959f;
+}

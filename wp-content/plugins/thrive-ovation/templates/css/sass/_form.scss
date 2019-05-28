@@ -1,0 +1,224 @@
+.tvo_testimonial_form.tvo-#{$template-name}-template {
+  .tvo-form-field {
+    @include input-placeholder($input-color);
+    .tvo-form-input {
+      @include box-sizing;
+      @if ($input-has-border) {
+        border: $input-border;
+      }
+      @if ($input-has-border-radius) {
+        border-radius: $input-border-radius;
+      }
+      @if ($input-has-box-shadow) {
+        box-shadow: $input-box-shadow;
+      }
+      @if ($input-has-box-shadow == false) {
+        box-shadow: none;
+      }
+      background: $input-background;
+      color: $input-color;
+      font-size: $input-font-size;
+      font-family: $font-family;
+      font-style: $input-font-style;
+      font-weight: $input-font-weight;
+      line-height: $input-line-height;
+      height: auto;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: $input-padding !important;
+      @if ($input-transform) {
+        text-transform: $input-text-transform;
+      }
+      width: 100%;
+      &:hover {
+        @if ($input-different-hover-border) {
+          border: $input-border-hover;
+        }
+        background: $input-background-hover;
+        @if ($input-different-color-hover) {
+          color: $input-color-hover;
+        }
+      }
+      &:focus {
+        @if ($input-different-box-shdaow-focus == false) {
+          box-shadow: none;
+        }
+        @if ($input-different-box-shdaow-focus) {
+          box-shadow: $input-box-shadow-focus;
+        }
+        @if ($input-different-focus-border) {
+          border: $input-border-focus;
+        }
+        background: $input-background-focus;
+        @if ($input-different-color-focus) {
+          color: $input-color-focus;
+        }
+        outline: none;
+      }
+    }
+    .tvo-question-label {
+      font-weight: 600;
+      color: $input-color;
+      font-family: $font-family;
+      font-size: $input-font-size;
+    }
+    .tvo-form-textarea {
+      @include box-sizing;
+      @if ($textarea-has-border) {
+        border: $textarea-border;
+      }
+      @if ($textarea-has-border-radius) {
+        border-radius: $textarea-border-radius;
+      }
+      @if ($textarea-has-box-shadow) {
+        box-shadow: $textarea-box-shadow;
+      }
+      @if ($textarea-has-box-shadow == false) {
+        box-shadow: none;
+      }
+      background: $textarea-background;
+      color: $textarea-color;
+      display: block;
+      font-size: $textarea-font-size;
+      font-family: $font-family;
+      font-style: $textarea-font-style;
+      font-weight: $textarea-font-weight;
+      line-height: $textarea-line-height;
+      min-height: $textarea-min-height;
+      padding: $textarea-padding !important;
+      resize: vertical;
+      width: 100%;
+      &:hover {
+        @if ($textarea-different-hover-border) {
+          border: $textarea-border-hover;
+        }
+        box-shadow: none;
+        background: $textarea-background-hover;
+        @if ($textarea-different-color-hover) {
+          color: $textarea-color-hover;
+        }
+      }
+      &:focus {
+        @if ($textarea-different-box-shdaow-focus) {
+          box-shadow: $textarea-box-shadow-focus;
+        }
+        @if ($textarea-different-focus-border) {
+          border: $textarea-border-focus;
+        }
+        background: $textarea-background-focus;
+        @if ($textarea-different-color-focus) {
+          color: $textarea-color-focus;
+        }
+        outline: none;
+      }
+    }
+    .tvo-form-button {
+      @if ($button-has-border == false) {
+        border: 0;
+      }
+      @if ($button-has-border-radius) {
+        border-radius: $button-border-radius;
+      }
+      @if ($button-has-border-radius == false) {
+        border-radius: 0;
+      }
+      box-shadow: none;
+      color: $button-color;
+      cursor: pointer;
+      font-size: $button-font-size;
+      font-weight: $button-font-weight;
+      font-family: $font-family;
+      font-style: $button-font-style;
+      line-height: $button-line-height;
+      padding: $button-padding;
+      text-transform: $button-text-transform;
+      &:active, &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.tvo_success_state {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  p.tvo-success-message {
+    color: $success-message-color;
+    font-size: 20px;
+    font-weight: $success-message-font-weight;
+    font-family: $success-message-font-family;
+    font-style: $success-message-font-style;
+    line-height: $success-message-line-height;
+    margin-bottom: $success-message-margin-bottom;
+    margin-top: $success-message-margin-top;
+    text-align: $success-message-alignment;
+    @media (min-width: 940px) {
+      font-size: $success-message-font-size;
+    }
+  }
+}
+
+.tvo-social-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(239, 239, 239, 0.5);
+  width: 100%;
+  height: 100%;
+  display: none;
+  .tvo-google-button {
+    cursor: pointer;
+    position: relative;
+    top: 40px;
+    left: 50%;
+    margin-left: -75px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background-image: url('../images/google_btn.png');
+  }
+  .tvo-fb-button {
+    cursor: pointer;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    top: 30px;
+    left: 50%;
+    margin-left: -75px;
+    background-image: url('../images/facebook_btn.png');
+  }
+}
+
+.tvo-remove-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: $font-family;
+}
+
+.tvo-picture-wrapper {
+  width: 100%;
+  height: 200px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.tvo-form-picture {
+  position: relative;
+  min-height: 200px;
+  padding: 0 !important;
+}
+
+.tvo-inputs-col {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  padding: 0 !important;
+}

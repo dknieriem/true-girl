@@ -1,0 +1,9 @@
+<a href="javascript:void(0)" id="tvo-delivery-<#= item.connection #>" data-key="<#= item.connection #>"
+   class="tve-asset-delivery-conection tvd-modal-next-step tvo-<#= item.connection #>-api <#= item.connected ? 'tvo-api-selected' : ''#>"></a>
+<span class="tvo-connection-name">
+	<#= item.title #>
+	<# if(item.connected) { #>
+		<br/>
+		<span class="tvo-asset-connected">(connected)</span>
+	<# } #>
+</span>

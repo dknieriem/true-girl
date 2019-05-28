@@ -1,0 +1,4 @@
+[18-Aug-2017 09:59:05] PHP Fatal error:  Call to undefined function  admin_url() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/notification-manager/includes/admin/views/backbone/header.phtml on line 5
+[18-Aug-2017 09:59:05] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/notification-manager/includes/admin/views/backbone/dashboard.phtml on line 4
+[18-Aug-2017 09:59:05] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/notification-manager/includes/admin/views/backbone/new-button.phtml on line 4
+[18-Aug-2017 09:59:05] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/notification-manager/includes/admin/views/backbone/unavailable.phtml on line 2

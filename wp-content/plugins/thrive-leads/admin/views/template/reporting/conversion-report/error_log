@@ -1,0 +1,2 @@
+[18-Aug-2017 09:58:39] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/reporting/conversion-report/list.phtml on line 5
+[18-Aug-2017 09:58:39] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/reporting/conversion-report/item.phtml on line 22

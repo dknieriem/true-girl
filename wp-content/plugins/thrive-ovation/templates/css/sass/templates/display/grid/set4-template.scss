@@ -1,0 +1,54 @@
+@import "../../../grid";
+@import "../../../base/display/set4-template";
+
+.tvo-#{$template-name}-template {
+  &.tvo-testimonials-display-grid {
+    .tvo-testimonial-display-item {
+      @include full-height;
+      @include box-sizing;
+      @include display-flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      padding: $grid-item-padding;
+      h4 {
+        @include center-text;
+        color: $title-color-small;
+        font-size: $title-size-small;
+        font-weight: $title-weight-small;
+        line-height: $title-line-height-small;
+        margin-bottom: $title-small-margin-bottom;
+        margin-top: 0;
+      }
+    }
+    .tvo-testimonial-quote {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .tvo-testimonial-info {
+      margin: (-$grid-item-padding-vertical) (-$grid-item-padding-side) $info-margin-bottom;
+      &:before {
+        background: inherit;
+        border-color: inherit;
+        border-width: 0 1px 1px 0 ;
+        border-style: solid;
+        content: '';
+        display: block;
+        height: 20px;
+        margin: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -11px;
+        transform: rotate(45deg);
+        width: 20px;
+      }
+    }
+    .tvo-testimonial-content {
+      padding: 0 $grid-item-padding-vertical;
+    }
+  }
+}
+
+
+

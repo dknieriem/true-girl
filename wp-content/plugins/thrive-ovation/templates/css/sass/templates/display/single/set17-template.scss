@@ -1,0 +1,81 @@
+@import "../../../grid";
+@import "../../../base/display/set17-template";
+
+.tvo-#{$template-name}-template {
+  &.tvo-testimonials-display-single {
+    .tvo-testimonial-display-item {
+      margin-top: $grid-item-padding-side *3;
+      h4 {
+        color: $title-color-large;
+        font-size: $title-size-large;
+        font-weight: $title-weight-large;
+        line-height: $title-line-height-large;
+        margin-top: $title-small-margin-bottom;
+        margin-bottom: $title-small-margin-bottom;
+      }
+    }
+    .tvo-item-grid {
+      margin: (-$image-size*.4) 0 0;
+    }
+    .tvo-image-wrapper {
+      min-width: $image-size;
+    }
+    .tvo-testimonial-image-cover {
+      border-radius: $image-border-radius;
+      height: $image-size;
+      width: $image-size;
+    }
+    .tvo-testimonial-image {
+      height: $image-size;
+      width: $image-size;
+    }
+    .tvo-testimonial-info {
+      min-height: 30px;
+    }
+    .tvo-testimonial-content {
+      -webkit-flex: 1;
+      flex: 1;
+      padding-left: $grid-item-padding-vertical;
+    }
+    .tvo-testimonial-name {
+      color: $name-color-dark;
+      font-size: $name-size;
+      font-weight: $name-weight;
+      line-height: $name-line-height;
+    }
+    .tvo-testimonial-role {
+      font-size: $job-size;
+      font-weight: $job-weight;
+      line-height: $job-line-height;
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+    .tvo-testimonial-content {
+      padding-top: $grid-item-padding-vertical;
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .tvo-set17-template.tvo-testimonials-display-single .tvo-image-wrapper {
+    min-width: 100%;
+  }
+  .tvo-set17-template.tvo-testimonials-display-single .tvo-testimonial-image-cover {
+    margin: 0 auto;
+  }
+  .tvo-set17-template.tvo-testimonials-display-single .tvo-testimonial-content {
+    padding-left: 0;
+  }
+  .tvo-set17-template.tvo-testimonials-display-single .tvo-testimonial-name {
+    color: $name-color-light;
+  }
+  .tvo-set17-template.tvo-testimonials-display-single {
+    .tvo-image-wrapper, .tvo-testimonial-content {
+      -webkit-flex-basis: 100%;
+      flex-basis: 100%;
+    }
+  }
+}
+

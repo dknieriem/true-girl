@@ -1,0 +1,88 @@
+@import "../../mixins";
+
+@import "//fonts.googleapis.com/css?family=Roboto:300,400,700,300i,700i";
+
+$template-name: 'set18';
+
+$font-family: 'Roboto', sans-serif;
+
+$color-pallete: (
+        'black': (#2e303e, #101119),
+        'blue': (#2587b6, #074968),
+        'green': (#94a453, #4d5727),
+        'orange': (#f0a76c, #a16637),
+        'purple': (#a3445d, #652536),
+        'red': (#d1514e, #832f2d),
+        'teal': (#0294a5, #04555e),
+        'white': (#f4f3f4, #ffffff)
+);
+
+$grid-item-padding-side: 25px;
+$grid-item-padding-vertical: 30px;
+$grid-item-padding: $grid-item-padding-vertical $grid-item-padding-side;
+$grid-item-padding-small: ($grid-item-padding-vertical /2) $grid-item-padding-side ($grid-item-padding-vertical);
+
+$image-size: 300px;
+$image-border-radius: 500px;
+$image-border-size: 0;
+$image-size-small: 89px;
+$image-border-color: #d8d8d8;
+
+$title-size-large: 35px;
+$title-size-small: 16px;
+$quotes-size: 50px;
+$font-size: 14px;
+$name-size: 14px;
+$job-size: 14px;
+
+$title-line-height-large: 1.444em;
+$title-line-height-small: 1.2em;
+$quotes-line-height: 30px;
+$font-line-height: 1.643em;
+$name-line-height: 1.357em;
+$job-line-height: 1.357em;
+
+$title-weight-large: 300;
+$title-weight-small: 700;
+$quotes-weight: 700;
+$font-weight: 300;
+$name-weight: 300;
+$job-weight: 300;
+
+$title-color-large: #fff;
+$title-color-small: #fff;
+$quotes-color: #fff;
+$font-color: #fff;
+$name-color-light: #fff;
+$job-color-light: #fff;
+$name-color-dark: #3a3a3a;
+$job-color-dark: #a5b1b8;
+
+$title-small-margin-bottom: 0;
+$title-large-margin-bottom: 10px;
+$font-margin-bottom: 20px;
+$quote-margin-bottom: 20px;
+$image-margin-bottom: 25px;
+$info-margin-bottom: 30px;
+
+$different-variation: true;
+$different-variation-name: (
+        'white': (#272727, #c6c5c6)
+);
+
+$testimonial-info-bg: transparent;
+$testimonial-info-border: none;
+
+$quotes-radius: 100%;
+
+$slider-spacing: 70px;
+$navigation-icon: 'tvo-set18-t-icons';
+$navigation-icon-prev: '\e901';
+$navigation-icon-next: '\e900';
+$navigation-icon-size: 30px;
+$navigation-icon-color: rgba(#fff, .3);
+$navigation-icon-color-hover: #fff;
+$bullet-size: 8px;
+$bullet-bg: #e1dfdf;
+$bullet-bg-hover: #adaeaf;
+$bullet-border-radius: 50px;

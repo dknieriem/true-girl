@@ -1,0 +1,264 @@
+[18-Aug-2017 10:54:43 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/35_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/35_set.php on line 2
+[18-Aug-2017 10:54:43 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/36_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/36_set.php on line 2
+[18-Aug-2017 10:54:43 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/37_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/37_set.php on line 2
+[18-Aug-2017 10:54:43 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/32_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/32_set.php on line 2
+[18-Aug-2017 10:54:43 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/33_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/33_set.php on line 2
+[18-Aug-2017 10:54:43 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/34_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/34_set.php on line 2
+[18-Aug-2017 10:54:43 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/41_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/41_set.php on line 2
+[18-Aug-2017 10:54:43 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/42_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/42_set.php on line 2
+[18-Aug-2017 10:54:43 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/43_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/43_set.php on line 2
+[18-Aug-2017 10:54:43 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/38_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/38_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/31_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/31_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/40_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/40_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/39_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/39_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/21_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/21_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/20_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/20_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/22_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/22_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/24_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/24_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/29_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/29_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/23_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/23_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/25_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/25_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/30_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/30_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/28_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/28_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/27_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/27_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/26_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/26_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/one_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/one_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/six_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/six_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/four_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/four_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/five_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/five_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/two_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/two_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/three_set_v1.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/three_set_v1.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/three_set_v2.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/three_set_v2.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/seven_set_v1.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/seven_set_v1.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/seven_set_v2.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/seven_set_v2.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/eight_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/eight_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/blank_set.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/blank_set.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/47_set_vms_step1.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/47_set_vms_step1.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/47_set_vms_step2.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/47_set_vms_step2.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/48_set_vms_step1.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/48_set_vms_step1.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/44_set_vms_step2.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/44_set_vms_step2.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/46_set_vms_step2.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/46_set_vms_step2.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/44_set_vms_step1.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/44_set_vms_step1.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/45_set_vms_step1.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/45_set_vms_step1.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/46_set_vms_step1.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/46_set_vms_step1.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/52_set_vms_step2.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/52_set_vms_step2.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/45_set_vms_step2.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/45_set_vms_step2.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/52_set_vms_step1.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/52_set_vms_step1.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/51_set_vms_step1.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/51_set_vms_step1.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/51_set_vms_step2.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/51_set_vms_step2.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/48_set_vms_step2.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/48_set_vms_step2.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/50_set_vms_step2.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/50_set_vms_step2.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/49_set_vms_step1.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/49_set_vms_step1.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/50_set_vms_step1.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/50_set_vms_step1.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/49_set_vms_step2.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/49_set_vms_step2.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/nine_set_vms_step1.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/nine_set_vms_step1.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/53_set_vms_step2.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/53_set_vms_step2.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/nine_set_vms_step2.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/nine_set_vms_step2.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/53_set_vms_step1.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/53_set_vms_step1.php on line 2
+[18-Aug-2017 10:54:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/ten_set_vms_step2.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/ten_set_vms_step2.php on line 2
+[18-Aug-2017 10:54:45 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/eleven_set_vms_step1.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/eleven_set_vms_step1.php on line 2
+[18-Aug-2017 10:54:45 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/ten_set_vms_step1.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/ten_set_vms_step1.php on line 2
+[18-Aug-2017 10:54:45 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/twelve_set_vms_step2.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/twelve_set_vms_step2.php on line 2
+[18-Aug-2017 10:54:45 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/twelve_set_vms_step4.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/twelve_set_vms_step4.php on line 2
+[18-Aug-2017 10:54:45 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/eleven_set_vms_step2.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/eleven_set_vms_step2.php on line 2
+[18-Aug-2017 10:54:45 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/twelve_set_vms_step3.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/twelve_set_vms_step3.php on line 2
+[18-Aug-2017 10:54:45 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/eleven_set_vms_step3.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/eleven_set_vms_step3.php on line 2
+[18-Aug-2017 10:54:45 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_errors_config() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/twelve_set_vms_step1.php:2
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/editor-templates/post_footer/twelve_set_vms_step1.php on line 2

@@ -1,0 +1,255 @@
+.tve_flt {
+  .tqb-template-style-0 {
+    .tqb-splash-template-1 {
+      counter-reset: item;
+      h1, h2, h3, h4, h5, h6 {
+        padding: 50px 0;
+        font-family: Roboto, sans-serif;
+        font-weight: 400;
+        color: #3a3939;
+        text-transform: none;
+      }
+
+      h1 {
+        font-size: 56px;
+      }
+
+      h2 {
+        color: #0f7dbe;
+        font-size: 47px;
+      }
+
+      h3 {
+        font-size: 35px;
+      }
+
+      h4 {
+        font-size: 30px;
+      }
+
+      h5 {
+        font-size: 23px;
+      }
+
+      h6 {
+        font-size: 19px;
+      }
+
+      p {
+        font-size: 19px;
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+        margin: 0;
+      }
+
+      a {
+        text-decoration: underline;
+        color: #2594ce;
+        font-size: 18px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      ol {
+        list-style: none;
+        li {
+          counter-increment: item;
+          font-family: Roboto, sans-serif;
+          font-size: 18px;
+          font-weight: 100;
+          &:before {
+            content: counter(item) ".";
+            margin-right: 10px;
+            color: #0f7dbe;
+            display: inline-block;
+            font-weight: 600;
+          }
+        }
+      }
+
+      a {
+        text-decoration: underline;
+        color: #2594ce;
+        font-size: 18px;
+        box-shadow: none;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.tqb-template-style-0 {
+
+  .tqb-splash-template-1 {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #fff;
+    padding: 5px;
+
+    .thrv_button_shortcode {
+      margin: 0 auto;
+      .tve_btn {
+        // Guideline implementation for buttons
+        &.tve_blue {
+          background-color: #0f7dbe;
+          &:hover {
+            background-color: #1274ae;
+          }
+          &:focus, &:active {
+            background-color: #116292;
+          }
+        }
+
+        &.tve_green {
+          background-color: #0abda0;
+          &:hover {
+            background-color: #0bac92;
+          }
+          &:focus, &:active {
+            background-color: #099780;
+          }
+        }
+
+        &.tve_red {
+          background-color: #c1403d;
+          &:hover {
+            background-color: #a83735;
+          }
+          &:focus, &:active {
+            background-color: #8f2f2c;
+          }
+        }
+
+        &.tve_teal {
+          background-color: #0294a5;
+          &:hover {
+            background-color: #06808e;
+          }
+          &:focus, &:active {
+            background-color: #056c78;
+          }
+        }
+
+        &.tve_orange {
+          background-color: #f3b05a;
+          &:hover {
+            background-color: #e4a350;
+          }
+          &:focus, &:active {
+            background-color: #dd9b45;
+          }
+        }
+
+        &.tve_black {
+          background-color: #2e303e;
+          &:hover {
+            background-color: #20212b;
+          }
+          &:focus, &:active {
+            background-color: #181921;
+          }
+        }
+
+        &.tve_purple {
+          background-color: #5c4a72;
+          &:hover {
+            background-color: #4d3d61;
+          }
+          &:focus, &:active {
+            background-color: #3d2f4e;
+          }
+        }
+
+        &.tve_white {
+          background-color: #0f7dbe;
+          .tve_btnLink {
+            span {
+              color: #fff;
+            }
+          }
+          &:hover {
+            background-color: #1274ae;
+          }
+          &:focus, &:active {
+            background-color: #116292;
+          }
+        }
+
+        background-color: #0f7dbe;
+        margin: 50px 0;
+
+        &:hover {
+          background-color: #1274ae;
+        }
+        &:focus, &:active {
+          background-color: #116292;
+        }
+
+        &.tve_normalBtn {
+          min-width: 270px;
+        }
+
+        .tve_btnLink {
+          font-size: 25px;
+          font-family: Roboto;
+          color: #fff;
+          border-bottom: none;
+          &:hover {
+            color: #fff;
+          }
+        }
+
+        &.tve_btn5 {
+          &.tve_white {
+            i {
+              background-image: url('../../../../tcb/editor/css/images/btn_blue.png');
+            }
+          }
+          .tve_btn_txt {
+            padding: 0;
+          }
+        }
+
+        &.tve_btn6 {
+          &.tve_white {
+            i {
+              background-image: url('../../../../tcb/editor/css/images/btn_blue.png');
+            }
+          }
+          .tve_btn_txt {
+            padding: 0;
+          }
+        }
+
+        &.tve_btn7 {
+          margin-bottom: 0;
+        }
+
+        &.tve_btn8 {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .tve_flt {
+    .tqb-template-style-0 {
+      .tqb-splash-template-1 {
+        .tve_btn {
+          &.tve_normalBtn {
+            width: 100%;
+          }
+          .tve_btnLink {
+            padding: 20px 10px;
+          }
+        }
+      }
+    }
+  }
+}

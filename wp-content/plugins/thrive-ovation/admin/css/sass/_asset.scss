@@ -1,0 +1,31 @@
+.tvo-tiny-mce-error {
+  border: 1px solid red;
+}
+
+.tve-asset-connection-img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.tve-align-stupid-text {
+  display: block;
+  max-width: 90%;
+}
+
+.tvo-fake-label {
+  color: $main-blue;
+  font-size: .75rem;
+  position: relative;
+  top: -.2em;
+}
+
+
+@media only screen and (max-width: 1800px) {
+  .tvd-modal.tve-assed-email-modal {
+    max-width: 800px !important;
+  }
+}
+
+.tvo-preview-email-text {
+  padding: 20px;
+}

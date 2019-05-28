@@ -1,0 +1,86 @@
+@import "../../mixins";
+
+@import "//fonts.googleapis.com/css?family=Roboto:300,400,500,700";
+
+$template-name: set19;
+
+$font-family: 'Roboto', sans-serif;
+
+$color-pallete: (
+        'black': #272727,
+        'blue': #328daa,
+        'green': #42b09b,
+        'orange': #f29d4b,
+        'purple': #b58acc,
+        'red': #cd4751,
+        'teal': #028482,
+        'white': #ffffff
+);
+
+$grid-item-padding-side: 25px;
+$grid-item-padding-vertical: 30px;
+$grid-item-padding: $grid-item-padding-vertical $grid-item-padding-side;
+$grid-item-padding-small: ($grid-item-padding-vertical /2) $grid-item-padding-side ($grid-item-padding-vertical*2);
+
+$image-size: 110px;
+$image-border-radius: 100px;
+$image-border-size: 4px;
+
+$title-size-large: 25px;
+$title-size-small: 20px;
+$quotes-size: 70px;
+$font-size: 23px;
+$name-size: 19px;
+$job-size: 16px;
+
+$title-line-height-large: 1.76em;
+$title-line-height-small: 1.4em;
+$quotes-line-height: 1em;
+$font-line-height: 1.913em;
+$name-line-height: 1.368em;
+$job-line-height: 1.368em;
+
+$title-weight-large: 500;
+$title-weight-small: 600;
+$quotes-weight: 700;
+$font-weight: 300;
+$name-weight: 500;
+$job-weight: 300;
+
+$title-color-large: #333;
+$title-color-small: #fff;
+$quotes-color: #fff;
+$font-color: #666;
+$name-color-light: #fff;
+$job-color-light: #fff;
+$name-color-dark: #333333;
+$job-color-dark: #999999;
+
+$title-small-margin-bottom: 20px;
+$title-large-margin-bottom: 20px;
+$font-margin-bottom: 20px;
+$quote-margin-bottom: 35px;
+$image-margin-bottom: 25px;
+
+$different-variation: true;
+$different-variation-name: (
+        'white': #fff
+);
+
+$testimonial-info-bg: transparent;
+$testimonial-info-border: none;
+
+$quotes-radius: 100%;
+
+
+$slider-spacing: 40px;
+$navigation-icon: 'tvo-set14-t-icons';
+$navigation-icon-prev: '\e901';
+$navigation-icon-next: '\e900';
+$navigation-icon-size: 38px;
+$navigation-icon-color: #d9d9d9;
+$navigation-icon-color-hover: #c4c6c7;
+$bullet-size: 220px;
+$bullet-bg: #e1dfdf;
+$bullet-bg-hover: #adaeaf;
+$bullet-border-radius: 50px;

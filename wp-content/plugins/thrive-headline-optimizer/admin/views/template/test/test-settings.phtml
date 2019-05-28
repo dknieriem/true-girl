@@ -1,0 +1,13 @@
+<td colspan="7" class="tvd-right-align">
+	<h5>
+		<?php echo __( 'Automatic winner settings are ', THO_TRANSLATE_DOMAIN ); ?>
+		<# if(model.get('enable_automatic_winner') == '1') { #>
+			<?php echo __( 'enabled', THO_TRANSLATE_DOMAIN ); ?>
+			<# } else { #>
+				<?php echo __( 'disabled', THO_TRANSLATE_DOMAIN ); ?>
+				<# } #>.
+					<a class="tho-change-settings" href="javascript:void(0)">
+						<?php echo __( 'Change', THO_TRANSLATE_DOMAIN ); ?>
+					</a>
+	</h5>
+</td>

@@ -1,0 +1,72 @@
+@import "../../config/display/set17-template";
+
+.tvo-testimonials-display.tvo-#{$template-name}-template {
+  @include box-sizing;
+  font-family: $font-family;
+  .tvo-testimonial-display-item {
+    border-radius: $item-border-radius;
+    padding: $grid-item-padding;
+    h4, p {
+      font-family: $font-family;
+    }
+    p {
+      color: $font-color;
+      font-size: $font-size;
+      font-style: italic;
+      font-weight: $font-weight;
+      line-height: $font-line-height;
+      margin-bottom: $font-margin-bottom;
+    }
+  }
+  .tvo-testimonial-image-cover {
+    @include box-sizing;
+    border: 2px solid $image-border-color;
+  }
+  .tvo-testimonial-quote {
+    display: inline-block;
+    float: left;
+    height: 30px;
+    width: 50px;
+    &:before {
+      @include up-quotes;
+      font-size: $quotes-size;
+      font-weight: $quotes-weight;
+      line-height: $quotes-line-height;
+      position: relative;
+      top: 20px;
+    }
+  }
+  //.tvo-testimonial-content {
+  //  word-break: break-all;
+  //}
+}
+
+@each $name, $color in $color-pallete {
+  .tvo-#{$template-name}-template.tve_#{$name} {
+    .tvo-apply-background {
+      background: nth($color, 1);
+    }
+    .tvo-testimonial-role {
+      color: nth($color, 1);
+    }
+    .tvo-testimonial-quote {
+      color: nth($color, 2);
+    }
+  }
+}
+
+@each $name, $color in $different-variation-name {
+  .tvo-testimonials-display.tvo-#{$template-name}-template.tve_#{$name} {
+    .tvo-testimonial-name {
+      color: nth($color, 1);
+    }
+    .tvo-testimonial-display-item {
+      p, h4 {
+        color: nth($color, 3);
+      }
+    }
+    .tvo-testimonial-role {
+      color: nth($color, 2);
+    }
+  }
+}

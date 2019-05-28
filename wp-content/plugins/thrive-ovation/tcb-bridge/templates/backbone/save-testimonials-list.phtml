@@ -1,0 +1,56 @@
+<div class="tvo-small-container">
+	<h4 class="tvo-center-text">
+		<?php echo __( 'You have ', TVO_TRANSLATE_DOMAIN ); ?>
+		<span><#= count #></span>&nbsp;
+		<span><#= selection #></span>&nbsp;
+		<?php echo __( ' on your list', TVO_TRANSLATE_DOMAIN ); ?>
+	</h4>
+
+	<div class="tvo-row tvo-collapse">
+		<div class="tvo-col tvo-s6">
+			<div class="tvo-save-template">
+				<div class="tvo-card tvo-card-medium tvo-full tvo-pointer">
+					<div class="tvo-card-content tvo-center-text tvo-large-icon tvo-blue-text">
+						<div class="tvo-f-icon-save"></div>
+						<p>
+							<strong>
+								<?php echo __( 'Save for future use', TVO_TRANSLATE_DOMAIN ); ?>
+							</strong>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tvo-col tvo-s6">
+			<div class="tvo-display-shortcode" id="tvo-display-testimonials-shortcode-wrapper">
+				<div class="tvo-card tvo-card-medium tvo-full tvo-pointer">
+					<div class="tvo-card-content tvo-center-text tvo-large-icon tvo-text-green">
+						<div class="tvo-f-icon-check"></div>
+						<p>
+							<strong>
+								<?php echo __( 'Finish without saving', TVO_TRANSLATE_DOMAIN ); ?>
+							</strong>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="tvo-template-name" style="display: none;">
+		<div class="tvo-spacer"></div>
+		<h6>
+			<?php echo __( 'Give your template a name', TVO_TRANSLATE_DOMAIN ); ?>
+		</h6>
+		<div class="tvo-row tvo-collapse">
+			<div class="tvo-col tvo-s8">
+				<input type="text" class="tve_lightbox_input tvo-display-testimonial-shortcode-name" placeholder="<?php echo __( 'template name', TVO_TRANSLATE_DOMAIN ); ?>">
+			</div>
+			<div class="tvo-col tvo-s4">
+				<button class="tve_editor_button tve_editor_button_success tvo-save-testimonial-shortcode tve_click tvo-full">
+					<?php echo __( 'SAVE AND CLOSE', TVO_TRANSLATE_DOMAIN ); ?>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>

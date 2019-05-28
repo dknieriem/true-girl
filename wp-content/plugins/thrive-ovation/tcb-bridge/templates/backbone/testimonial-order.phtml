@@ -1,0 +1,16 @@
+<div class="tvo-row">
+	<div class="tvo-col tvo-s1">
+		<span class="tvo-f-icon-drag"></span>
+	</div>
+	<div class="tvo-col tvo-s2 tvo-center-align">
+		<div class="tvo-testimonial-image" style="background-image: url('<#= this.model.get('picture_url') #>')">
+			<img src="<#= this.model.get('picture_url') #>" height="60" width="60" style="visibility: hidden;">
+		</div>
+	</div>
+	<div class="tvo-col tvo-s3">
+		<#= this.model.get('name') #>
+	</div>
+	<div class="tvo-col tvo-s6">
+		<#= this.model.get('summary') #>
+	</div>
+</div>

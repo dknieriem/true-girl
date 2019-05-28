@@ -1,0 +1,177 @@
+<div class="tvd-row tvd-no-margin">
+	<div class="tvd-col tvd-s12">
+		<h3 class="tvd-title"><?php echo __( 'Ovation Settings', TVO_TRANSLATE_DOMAIN ); ?></h3>
+	</div>
+</div>
+<div class="tvd-row tvd-no-margin">
+	<div class="tvd-col tvd-s12">
+		<div class="tvd-card tvd-card-white">
+			<div class="tvd-card-content">
+				<h4><?php echo __( 'Customer Approval Setting', TVO_TRANSLATE_DOMAIN ); ?></h4>
+				<div class="tvd-v-spacer"></div>
+				<span>
+					<?php echo __( 'This option allows you to ask the customer for permission (via email) to use testimonials that are gathered from WordPress comments.', TVO_TRANSLATE_DOMAIN ); ?>
+				</span>
+				<div class="tvd-v-spacer vs-2"></div>
+				<div class="tvd-row tvo_email_config_area tvd-no-mb">
+					<div class="tvd-col tvd-l3 tvd-offset-l3 tvd-m5 tvd-offset-m1">
+						<div class="tvd-card tvd-white tvd-xsmall">
+							<div class="tvd-card-content">
+								<div class="tvd-v-spacer"></div>
+								<div class="tvd-row tvd-valign-wrapper tvd-no-mb">
+									<div class="tvd-col tvd-s3">
+										<div class="tvd-center-align">
+											<span
+												class="tvo-settings-step tvo_icon_email_config <#= settings.get('tvo_completed_email_config')? 'tvo-settings-step-success':'' #>">
+												<span class="tvo-settings-icon"></span>
+											</span>
+										</div>
+									</div>
+									<div class="tvd-col tvd-s9">
+										<h4>
+											<?php echo __( 'Email', TVO_TRANSLATE_DOMAIN ); ?>
+										</h4>
+										<hr class="tvo-lightgray-line tvd-margin-top-normal">
+										<a href="javascript:void(0);"
+										   class="tvo-configure-email-template tvd-btn-flat tvu-btn-flat tvu-btn-flat-blue tvo-btn-flat">
+											<# if (settings.get('tvo_completed_email_config')) {
+												#>
+												<?php echo __( 'Edit configuration', TVO_TRANSLATE_DOMAIN ); ?>
+												<# } else {
+													#>
+													<?php echo __( 'Configure Email', TVO_TRANSLATE_DOMAIN ); ?>
+													<#
+														}
+														#>
+
+										</a>
+									</div>
+								</div>
+								<div class="tvd-v-spacer"></div>
+							</div>
+						</div>
+					</div>
+					<div class="tvd-col tvd-l3 tvd-m5">
+						<div class="tvd-card tvd-white tvd-xsmall">
+							<div class="tvd-card-content">
+								<div class="tvd-v-spacer"></div>
+								<div class="tvd-row tvd-valign-wrapper tvd-no-mb">
+									<div class="tvd-col tvd-s3">
+										<div class="tvd-center-align">
+											<div
+												class="tvo-settings-step tvo_icon_landing_page <#= settings.get('tvo_completed_landing_page')? 'tvo-settings-step-success':'' #>">
+												<span class="tvo-settings-icon"></span>
+											</div>
+										</div>
+									</div>
+									<div class="tvd-col tvd-s9">
+										<h4>
+											<?php echo __( 'Landing Page', TVO_TRANSLATE_DOMAIN ); ?>
+										</h4>
+										<hr class="tvo-lightgray-line tvd-margin-top-normal">
+										<a href="javascript:void(0);"
+										   class="tvo-configure-landing-page tvd-btn-flat tvu-btn-flat tvu-btn-flat-blue tvo-btn-flat">
+											<# if (settings.get('tvo_completed_landing_page')) {
+												#>
+												<?php echo __( 'Edit configuration', TVO_TRANSLATE_DOMAIN ); ?>
+												<# } else {
+													#>
+													<?php echo __( 'Configure Landing Page', TVO_TRANSLATE_DOMAIN ); ?>
+													<#
+														}
+														#>
+
+
+										</a>
+									</div>
+								</div>
+								<div class="tvd-v-spacer"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="tvd-row tvd-no-margin">
+	<div class="tvd-col tvd-s12">
+		<div class="tvd-card tvd-card-white" id="tvo-email-connection-wrap">
+			<div class="tvd-card-content">
+				<h4><?php echo __( 'Email Delivery Integration', TVO_TRANSLATE_DOMAIN ); ?></h4>
+				<div class="tvd-v-spacer"></div>
+				<div class="tvd-row">
+					<span class="tvd-left tvd-vertical-align">
+						<?php echo __( 'You can integrate with the email delivery service of your choice', TVO_TRANSLATE_DOMAIN ); ?>
+					</span>
+					<button id="tvo-add-new-connection-upper"
+					        class="tvo-add-new-connection tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-left  tvd-margin-left"><?php echo __( 'Add New', TVO_TRANSLATE_DOMAIN ); ?></button>
+				</div>
+				<div class="tvo-tealish-box">
+					<ul id="tvo-email-api-connections" class="tvd-no-margin"></ul>
+					<div class="tvo-no-email-connection-setup">
+						<div class="tvd-row tvd-no-mb">
+							<div class="tvd-col tvd-s4">
+								<span><?php echo __( 'Integration status', TVO_TRANSLATE_DOMAIN ); ?></span>
+							</div>
+							<div class="tvd-col tvd-s4 tvd-center-align">
+							<span class="tvd-text-red">
+								<?php echo __( 'Disconnected', TVO_TRANSLATE_DOMAIN ); ?>
+							</span>
+							</div>
+							<div class="tvd-col tvd-s4 tvd-right-align">
+								<a href="javascript:void(0);"
+								   class="tvo-add-new-connection"><?php echo __( 'CONNECT NEW SERVICE', TVO_TRANSLATE_DOMAIN ); ?></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="tvd-row tvd-no-margin">
+	<div class="tvd-col tvd-s12">
+		<div class="tvd-card tvd-card-white" id="tvo-email-connection-wrap">
+			<div class="tvd-card-content">
+				<h4><?php echo __( 'Placeholder Image', TVO_TRANSLATE_DOMAIN ); ?></h4>
+				<div class="tvd-v-spacer"></div>
+				<div class="tvd-row">
+					<div class="tvd-col tvd-s12">
+						<span class="tvd-left tvd-vertical-align">
+							<?php echo __( 'Here, you can define what should be shown as a placeholder for testimonials that have no image.', TVO_TRANSLATE_DOMAIN ); ?>
+						</span>
+					</div>
+				</div>
+				<div class="tvo_clearfix">
+					<div style="background-image: url('<#= settings.get('tvo_image_placeholder')#>')" class="tvo-default-picture tvd-left"></div>
+
+					<div class="tvo-image-buttons">
+						<a href="javascript:void(0);" class="tvd-waves-effect tvo-new-image tvd-waves-light tvd-btn tvd-btn-green"><?php echo __( 'New Image', TVO_TRANSLATE_DOMAIN ); ?></a>
+						<a <#= settings.get('tvo_image_placeholder') == '<?php echo TVO_ADMIN_URL; ?>img/tvo-no-photo.png'? 'disabled':''#> data-default="<?php echo TVO_ADMIN_URL; ?>img/tvo-no-photo.png" href="javascript:void(0);" class="tvd-waves-effect tvo-default-image tvd-waves-light tvd-btn tvd-btn-gray"><?php echo __( 'Reset to default', TVO_TRANSLATE_DOMAIN ); ?></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="tvd-row">
+	<div class="tvd-col tvd-s6">
+		<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-gray" href="#testimonials">
+			<?php echo __( 'Back to Dashboard', TVO_TRANSLATE_DOMAIN ); ?>
+		</a>
+	</div>
+	<div class="tvd-col tvd-s6">
+		<a href="javascript:void(0);" class="tvd-waves-effect tvo-save-settings tvd-waves-light tvd-btn tvd-btn-green tvd-right">
+			<?php echo __( 'Save Settings', TVO_TRANSLATE_DOMAIN ); ?>
+		</a>
+	</div>
+</div>
+<script type="text/javascript">
+	if ( ! (ThriveOvation.objects.AssetConnection instanceof ThriveOvation.collections.AssetConnection) ) {
+		ThriveOvation.objects.AssetConnection = new ThriveOvation.collections.AssetConnection( ThriveOvation.apiConnections );
+	}
+	if ( ! (ThriveOvation.objects.Apis instanceof ThriveOvation.collections.AssetConnection) ) {
+		ThriveOvation.objects.Apis = new ThriveOvation.collections.AssetConnection( ThriveOvation.apis );
+	}
+</script>

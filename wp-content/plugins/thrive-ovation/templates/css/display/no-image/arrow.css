@@ -1,0 +1,1 @@
+.arrow-box{position:relative}.arrow-box:before{top:100%;left:3%;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none}.arrow-box:before{border-width:11px;margin-left:-11px}

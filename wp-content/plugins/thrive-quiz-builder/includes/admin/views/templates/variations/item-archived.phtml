@@ -1,0 +1,36 @@
+<td>
+	<span class="tqb-variation-title"><#= item.get('post_title') #></span>
+</td>
+<td>
+	<#= item.get('cache_impressions') #>
+</td>
+<td>
+	<#= item.get('cache_optins_conversions') #>
+</td>
+<td>
+	<#= item.get('cache_optin_conversion_rate') #>
+</td>
+<# if( item.get('post_type') === ThriveQuizB.data.quiz_structure_item_types.results.key ){ #>
+	<td>
+		<#= item.get('cache_social_shares') #>
+	</td>
+	<td>
+		<#= item.get('cache_social_share_conversion_rate') #>
+	</td>
+<# } #>
+<td class="table-row-actions">
+	<div class="tvd-right">
+		<a href="<#= item.get('tcb_preview_url') #>" target="_blank" title="<?php echo __( 'View Form', Thrive_Quiz_Builder::T ); ?>" class="tvd-btn-icon tvd-btn-icon-blue">
+			<span class="tvd-icon-view"></span>
+			<span class="tvd-on-large-and-down"><?php echo __( 'View Form', Thrive_Quiz_Builder::T ); ?></span>
+		</a>
+		<a href="javascript:void(0)" title="<?php echo __( 'Re-add', Thrive_Quiz_Builder::T ); ?>" class="tvd-btn-icon tvd-btn-icon-green tqb-variation-re-add">
+			<span class="tvd-icon-add2"></span>
+			<span class="tvd-on-large-and-down"><?php echo __( 'Re-add', Thrive_Quiz_Builder::T ); ?></span>
+		</a>
+		<a href="javascript:void(0)" title="<?php echo __( 'Delete', Thrive_Quiz_Builder::T ); ?>" class="tvd-btn-icon tvd-btn-icon-red tqb-variation-delete">
+			<span class="tvd-icon-trash-o"></span>
+			<span class="tvd-on-large-and-down"><?php echo __( 'Delete', Thrive_Quiz_Builder::T ); ?></span>
+		</a>
+	</div>
+</td>

@@ -1,0 +1,41 @@
+<td>
+	<strong><span style="color: <#= variation.color #>"><#= variation.variation_title #></span></strong>
+	<# if (variation.is_control == 1) { #>
+		<span class="tvd-text-grayish">
+			(<?php echo __( 'control', THO_TRANSLATE_DOMAIN ); ?>)
+		</span>
+		<# }  #>
+</td>
+<td class="tvd-center-align">
+	<#= variation.views #>
+</td>
+<td class="tvd-center-align">
+	<#= variation.engagements #>
+</td>
+<td class="tvd-center-align">
+	<#= isNaN(variation.engagement_rate)?variation.engagement_rate:variation.engagement_rate+'%' #>
+</td>
+<td>
+	<div class="candlestick-chart-holder" id="tho-candle-stick-chart-<#= variation.index #>"></div>
+</td>
+<td class="tvd-center-align">
+	<# if (variation.is_control == 1) { #>
+		<?php echo __( 'N / A', THO_TRANSLATE_DOMAIN ); ?>
+		<# } else { #>
+			<#= variation.percentage_improvement #>
+				<# }  #>
+</td>
+<td class="tvd-center-align">
+	<# if (variation.is_control == 1) { #>
+		<?php echo __( 'N / A', THO_TRANSLATE_DOMAIN ); ?>
+	<# } else { #>
+		<span class="tvd-line-height">
+			<#= variation.beat_original #>
+		</span>
+		<# if( ThriveHead.const.test_status_active ==  status ){ #>
+			<a class="tho-stop-test-variation-modal tvd-tooltipped tvd-right tvd-line-height" data-title="<#= encodeURI(variation.variation_title) #>" href="javascript:void(0);" data-tooltip="<?php echo __( 'Stop this variation', THO_TRANSLATE_DOMAIN ); ?>" data-position="top">
+				<i class="tvd-icon-stop tvd-text-red" style="font-size: 16px;"></i>
+			</a>
+		<# } #>
+	<# }  #>
+</td>

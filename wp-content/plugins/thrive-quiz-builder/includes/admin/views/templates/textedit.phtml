@@ -1,0 +1,2 @@
+<input id="tqb-edit-text" data-bind="value" type="text" value="<#= item.get('value') #>">
+<label for="tqb-edit-text" <# if ( item.get( 'required' ) ) { #> data-error="<?php echo sprintf( __( '%s is required', Thrive_Quiz_Builder::T ), "<#= item.get( 'label' ) #>" ) ?>" <# } #> class="tvd-active"><#= ( item.get('show_label') ? item.get('label') : '&nbsp;' ) #></label>

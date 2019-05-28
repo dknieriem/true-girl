@@ -1,0 +1,102 @@
+.tvo-message-box {
+  border-radius: 2px;
+  padding: 15px;
+  width: 60%;
+  .dashicons {
+    line-height: 26px;
+    margin-right: 10px;
+  }
+}
+
+.tvo_success_connection {
+  background: #ecfcec;
+  border: 1px solid #cfe7cf;
+  color: #4bb35e;
+}
+
+.tvo_fail_connection {
+  background: #edc0c0;
+  border: 1px solid #df6565;
+  color: #df6565;
+}
+
+.tvo-settings-step {
+  box-shadow: 0 2px 3px 0 rgba(#000, .25) inset;
+  border-radius: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  width: 50px;
+}
+
+.tvo-settings-icon {
+  background: $highlight-b3;
+  border-radius: 100%;
+  box-shadow: 0 2px 3px 0 rgba(#000, .25);
+  color: #fff;
+  display: block;
+  font-weight: 500;
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  .tvo-settings-step-success & {
+    background: $highlight-g;
+    font-family: 'tvo-icons';
+  }
+}
+
+.tvo_icon_email_config {
+  .tvo-settings-icon {
+    &:before {
+      content: '1';
+    }
+  }
+}
+
+.tvo_icon_landing_page {
+  .tvo-settings-icon {
+    &:before {
+      content: '2';
+    }
+  }
+}
+
+.tvo-settings-step-success {
+  .tvo-settings-icon {
+    &:before {
+      content: '\f00c';
+    }
+  }
+}
+
+.tvd-card .tvd-col {
+  .tvo-btn-flat {
+    font-size: .8rem;
+    padding: 0;
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
+
+.tvo-default-picture {
+  width: 150px;
+  height: 150px;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.tvo-image-buttons {
+  height: 150px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 20px;
+  a {
+    display: block;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,44 @@
+<!--title-->
+<td style="color:<#= item.get('color') #>">
+	<strong>
+		<#= item.get('post_title') #>
+			<#= item.get('is_control') == 1 ? '(control)' : '' #>
+	</strong>
+</td>
+<!--impressions-->
+<td><#= item.get('impressions') #></td>
+<!--conversions-->
+<td><#= item.get('optins_conversions') #></td>
+<!--conversion rate-->
+<td><#= item.getConversionRate() == 0 ? 'N/A' : item.getConversionRate() + ' %' #></td>
+<# if (item.get('show_graph')) { #>
+	<td>
+		<div class="candlestick-chart-holder" id="tve-candle-stick-chart-stopped-<#= item.get('index')#>"></div>
+	</td>
+<# } #>
+
+<# if (item.get('is_control') == 1) { #>
+		<td colspan="2" class="tvd-center-align">
+			<div class="inline-message"><?php echo __( 'This is the control', Thrive_Quiz_Builder::T ) ?></div>
+		</td>
+<# } else { #>
+	<td>
+	    <span style="color:<#= item.getPercentageImprovementColor() #>">
+			 <# if(item.get('impressions') != "N/A" && item.get('impressions') > 0) { #>
+				 <# if(item.get('percentage_improvement') != "N/A" && item.get('percentage_improvement') > 0) { #>+<# } #><#= item.get('percentage_improvement') #>
+				 <#= item.get('percentage_improvement') != "N/A" ? '%' : ''  #>
+			 <# } else { #>
+				 N/A
+			 <# } #>
+		</span>
+	</td>
+	<td><#= item.get('beat_original') #></td>
+<# } #>
+<# if (item.get('show_graph')) { #>
+	<td>
+		<a class="tvd-btn-icon tvd-btn-icon-green" target="_blank" href="<#= item.get('tcb_editor_url') #>""
+		title="<?php echo __( 'View Form', Thrive_Quiz_Builder::T ) ?>">
+		<span class="tvd-icon-view"></span><?php echo __( 'View Form', Thrive_Quiz_Builder::T ) ?>
+		</a>
+	</td>
+<# } #>

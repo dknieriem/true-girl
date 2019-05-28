@@ -1,0 +1,10 @@
+[18-Aug-2017 10:44:55 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_shortcode() in /home3/secretk1/public_html/staging/wp-content/plugins/mailchimp/mailchimp_compat.php:18
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/mailchimp/mailchimp_compat.php on line 18
+[18-Aug-2017 10:44:55 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_dir_path() in /home3/secretk1/public_html/staging/wp-content/plugins/mailchimp/mailchimp.php:1076
+Stack trace:
+#0 /home3/secretk1/public_html/staging/wp-content/plugins/mailchimp/mailchimp.php(34): mailchimpSF_where_am_i()
+#1 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/mailchimp/mailchimp.php on line 1076
+[18-Aug-2017 10:44:55 America/Chicago] PHP Fatal error:  Class 'WP_Widget' not found in /home3/secretk1/public_html/staging/wp-content/plugins/mailchimp/mailchimp_widget.php on line 473

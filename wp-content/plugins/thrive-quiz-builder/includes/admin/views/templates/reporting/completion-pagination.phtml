@@ -1,0 +1,31 @@
+<div class="tvd-col tvd-s6">
+	<div class="tve-total-new-leads">
+		<?php echo __('Showing', Thrive_Quiz_Builder::T ) ?>
+		<strong><#= (item.get('currentPage')-1)*item.get('itemsPerPage')+1 #></strong>
+		<?php echo __('to', Thrive_Quiz_Builder::T ) ?>
+		<strong><#= item.get('itemsPerPage')*item.get('currentPage')>item.get('totalItems')? item.get('totalItems'):( item.get('itemsPerPage')*item.get('currentPage')) #></strong>
+		<?php echo __('from a total of', Thrive_Quiz_Builder::T ) ?>
+		<strong><#= item.get('totalItems') #></strong>
+		<?php echo __('records', Thrive_Quiz_Builder::T ) ?>
+	</div>
+</div>
+<div class="tvd-col tvd-s6">
+	<ul class="tvd-pagination tvd-right" id="pages">
+		<# if( item.get('pageCount') > 1) { #>
+			<li class="tvd-waves-effect"><a <# if(item.get('currentPage') > 1) { #> href="#" class="page" value="1" <# } #>>&laquo; <?php echo __('First Page', Thrive_Quiz_Builder::T ); ?></a></li>
+			<li class="tvd-waves-effect"><a <# if(item.get('currentPage') > 1) { #> href="#" class="page" value="<#= item.get('currentPage') - 1 #>" <# } #>>&lsaquo;</a></li>
+
+			<# for(var i = item.get('currentPage') - item.get('pagesToDisplay'); i<= (item.get('currentPage') + item.get('pagesToDisplay')) && i<=item.get('pageCount'); i++) { #>
+			<# if(i>0) { #>
+				<# if (i == item.get('currentPage')) { #>
+					<li class="tvd-active"><b><#= i #></b></li>
+					<# } else { #>
+						<li class="tvd-waves-effect"><a href="#" class="page" value="<#= i #>"><#=i#></a></li>
+						<# } #>
+							<# } #>
+								<# } #>
+									<li class="tvd-waves-effect"><a <# if(item.get('currentPage') < item.get('pageCount')) { #> href="#" class="page" value="<#= (item.get('currentPage') + 1) #>" <# } #>>&rsaquo;</a></li>
+									<li class="tvd-waves-effect"><a <# if(item.get('currentPage') < item.get('pageCount')) { #> href="#" class="page" value="<#= item.get('pageCount') #>" <# } #>><?php echo __('Last Page', Thrive_Quiz_Builder::T ); ?> &raquo;</a></li>
+									<# } #>
+	</ul>
+</div>

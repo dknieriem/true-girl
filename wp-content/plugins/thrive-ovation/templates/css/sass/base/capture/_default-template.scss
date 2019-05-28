@@ -1,0 +1,29 @@
+@import "bourbon";
+@import "../../grid";
+@import "../../config/capture/_default-template";
+@import "../../form";
+
+@each $name, $color in $color-pallete {
+  .tvo_testimonial_form.tve_#{$name}.tvo-#{$template-name}-template {
+    .tvo-form-button {
+      @include background-image(linear-gradient(nth($color, 1), nth($color, 2)));
+      &:hover {
+        @include background-image(linear-gradient(nth($color, 3), nth($color, 4)));
+      }
+      &:active {
+        @include background-image(linear-gradient(nth($color, 2), nth($color, 1)));
+      }
+    }
+  }
+}
+
+@each $name, $color in $different-variation-name {
+  .tvo_testimonial_form.tvo-#{$template-name}-template.tve_#{$name} {
+    .tvo-form-field {
+      .tvo-form-button {
+        color: $color;
+      }
+    }
+  }
+}
+

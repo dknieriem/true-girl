@@ -1,0 +1,1 @@
+[18-Aug-2017 10:56:55 America/Chicago] PHP Fatal error:  Class 'Requests_Exception_Transport' not found in /home3/secretk1/public_html/staging/wp-includes/Requests/Exception/Transport/cURL.php on line 3

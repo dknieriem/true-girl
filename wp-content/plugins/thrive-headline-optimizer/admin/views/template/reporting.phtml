@@ -1,0 +1,125 @@
+<div id="tho-reporting">
+	<h3>
+		<?php echo __( 'Reporting', THO_TRANSLATE_DOMAIN ); ?>
+	</h3>
+	<div class="tvd-v-spacer"></div>
+	<div class="tvd-card tvd-white">
+		<div class="tvd-card-content">
+			<div class="tvd-v-spacer vs-2"></div>
+			<form>
+				<div class="tvd-row">
+					<div class="tvd-col tvd-ms5 tvd-m2">
+						<div class="tvd-input-field ">
+							<select name="report_type" id="report_type">
+								<option
+									value="<?php echo THO_ENGAGEMENT_REPORT; ?>"><?php echo __( 'Engagement report', THO_TRANSLATE_DOMAIN ); ?></option>
+								<option
+									value="<?php echo THO_ENGAGEMENT_RATE_REPORT; ?>"><?php echo __( 'Engagement rate report', THO_TRANSLATE_DOMAIN ); ?></option>
+								<option
+									value="<?php echo THO_CUMULATIVE_ENGAGEMENT_REPORT; ?>"><?php echo __( 'Cumulative engagement report', THO_TRANSLATE_DOMAIN ); ?></option>
+							</select>
+							<label
+								for="report_type"><?php echo __( 'Show report', THO_TRANSLATE_DOMAIN ); ?></label>
+						</div>
+					</div>
+				</div>
+				<div class="tvd-row">
+					<div class="tvd-col tvd-ms6 tvd-m2">
+						<div class="tvd-input-field ">
+							<select autocomplete="off" class="tho-chart-date-select" id="tho-chart-date-select">
+								<option selected
+								        value="<?php echo THO_LAST_7_DAYS; ?>"><?php echo __( 'Last 7 days', THO_TRANSLATE_DOMAIN ); ?></option>
+								<option
+									value="<?php echo THO_LAST_30_DAYS; ?>"><?php echo __( 'Last 30 days', THO_TRANSLATE_DOMAIN ); ?></option>
+								<option
+									value="<?php echo THO_THIS_MONTH; ?>"><?php echo __( 'This month', THO_TRANSLATE_DOMAIN ); ?></option>
+								<option
+									value="<?php echo THO_LAST_MONTH; ?>"><?php echo __( 'Last month', THO_TRANSLATE_DOMAIN ); ?></option>
+								<option
+									value="<?php echo THO_THIS_YEAR; ?>"><?php echo __( 'This year', THO_TRANSLATE_DOMAIN ); ?></option>
+								<option
+									value="<?php echo THO_LAST_YEAR; ?>"><?php echo __( 'Last year', THO_TRANSLATE_DOMAIN ); ?></option>
+								<option
+									value="<?php echo THO_LAST_12_MONTHS; ?>"><?php echo __( 'Last 12 months', THO_TRANSLATE_DOMAIN ); ?></option>
+								<option
+									value="<?php echo THO_CUSTOM_DATE_RANGE; ?>"><?php echo __( 'Custom date range', THO_TRANSLATE_DOMAIN ); ?></option>
+							</select>
+							<label
+								for="tho-chart-date-select"><?php echo __( 'Date interval', THO_TRANSLATE_DOMAIN ); ?></label>
+						</div>
+					</div>
+					<div class="tvd-col tvd-ms6 tvd-m4 tho-date-filter">
+						<div class="tvd-row tvd-collapse">
+							<div class="tvd-col tvd-s5">
+								<div class="tvd-input-field">
+									<input type="text" name="tho-report-start-date" id="tho-report-start-date" class=""/>
+									<label for="tho-report-start-date" class="tvd-active"><?php echo __( 'Start date', THO_TRANSLATE_DOMAIN ); ?></label>
+								</div>
+							</div>
+							<div class="tvd-col tvd-s1 tvd-center-align">
+								<span class="tvd-icon-calendar calendar-trigger-icon tvd-pointer" data-activates="#tho-report-start-date"></span>
+							</div>
+							<div class="tvd-col tvd-s5">
+								<div class="tvd-input-field">
+									<input type="text" name="tho-report-end-date" id="tho-report-end-date" class=""/>
+									<label for="tho-report-end-date" class="tvd-active"><?php echo __( 'End date', THO_TRANSLATE_DOMAIN ); ?></label>
+								</div>
+							</div>
+							<div class="tvd-col tvd-s1 tvd-center-align">
+								<span class="tvd-icon-calendar calendar-trigger-icon tvd-pointer" data-activates="#tho-report-end-date"></span>
+							</div>
+						</div>
+					</div>
+					<input type="hidden" id="tho-source-type-select" class="tho-source-type-select" name="tho-source-type">
+					<div class="tvd-col tvd-ms6 tvd-m2 tho-chart-interval">
+						<div class="tvd-input-field ">
+							<select autocomplete="off" class="tho-chart-interval-select" id="tho-chart-interval-select"
+							        name="tho-chart-interval">
+								<option selected value="day"><?php echo __( 'Daily', THO_TRANSLATE_DOMAIN ); ?></option>
+								<option value="week"><?php echo __( 'Weekly', THO_TRANSLATE_DOMAIN ); ?></option>
+								<option value="month"><?php echo __( 'Monthly', THO_TRANSLATE_DOMAIN ); ?></option>
+							</select>
+							<label
+								for="tho-chart-interval-select"><?php echo __( 'Graph interval', THO_TRANSLATE_DOMAIN ); ?></label>
+						</div>
+					</div>
+					<div class="tvd-col tvd-ms6 tvd-m2">
+						<div class="tvd-input-field ">
+							<select autocomplete="off" class="tho-engagement-type-select"
+							        id="tho-engagement-type-select" name="tho-engagement-type-select">
+								<option selected value="0"><?php echo __( 'All', THO_TRANSLATE_DOMAIN ); ?></option>
+								<option value="<?php echo THO_CLICK_ENGAGEMENT; ?>"><?php echo __( 'Click', THO_TRANSLATE_DOMAIN ); ?></option>
+								<option value="<?php echo THO_TIME_ENGAGEMENT; ?>"><?php echo __( 'Time on content', THO_TRANSLATE_DOMAIN ); ?></option>
+								<option value="<?php echo THO_SCROLL_ENGAGEMENT; ?>"><?php echo __( 'Scroll', THO_TRANSLATE_DOMAIN ); ?></option>
+							</select>
+							<label
+								for="tho-engagement-type-select"><?php echo __( 'Engagement type', THO_TRANSLATE_DOMAIN ); ?></label>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="tvd-relative tvd-row">
+				<div id="tho-report-chart" class="tvd-col tvd-s12" style="height: 600px;"></div>
+				<div id="tho-chart-overlay" style="display: none">
+					<div class="tvd-card tvd-small tvd-white tvd-valign-wrapper">
+						<div class="tvd-card-content tvd-valign tvd-center-align">
+							<h3><?php echo __( 'No report data (yet)', THO_TRANSLATE_DOMAIN ); ?></h3>
+							<p>
+								<?php echo __( 'Here you will see a graph with the report data from all of your forms. Currently there is no data to display yet.', THO_TRANSLATE_DOMAIN ); ?>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="pagination-top" class="tho-pagination">
+	</div>
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s12" id="tho-report-table"></div>
+	</div>
+	<div id="pagination-bottom" class="tho-pagination">
+	</div>
+</div>

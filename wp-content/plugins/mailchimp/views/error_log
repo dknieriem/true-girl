@@ -1,0 +1,4 @@
+[18-Aug-2017 10:48:51 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_e() in /home3/secretk1/public_html/staging/wp-content/plugins/mailchimp/views/setup_page.php:4
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/mailchimp/views/setup_page.php on line 4

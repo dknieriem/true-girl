@@ -1,0 +1,55 @@
+<div class="tvd-col tvd-s4">
+	<span class="tho-vertical-align">
+		<#= variation.variation_title #>
+			<# if (variation.is_control == 1) { #>
+			<span class="tvd-text-grayish">
+				(<?php echo __( 'control', THO_TRANSLATE_DOMAIN ); ?>)
+			</span>
+				<# }  #>
+	</span>
+</div>
+<div class="tvd-col tvd-s1 tvd-center-align">
+	<span class="tho-vertical-align">
+		<#= variation.views #>
+	</span>
+</div>
+<div class="tvd-col tvd-s1 tvd-center-align">
+	<span class="tho-vertical-align">
+		<#= variation.engagements #>
+	</span>
+</div>
+<div class="tvd-col tvd-s1 tvd-center-align">
+	<span class="tho-vertical-align">
+		<#= variation.engagement_rate #>
+	</span>
+</div>
+<div class="tvd-col tvd-s1 tvd-center-align">
+	<span class="tho-vertical-align">
+		<# if (variation.is_control == 1) { #>
+			<?php echo __( 'N / A', THO_TRANSLATE_DOMAIN ); ?>
+			<# } else { #>
+				<# if(typeof variation.percentage_improvement== "undefined") { #> &nbsp; <# } else { #> <#= variation.percentage_improvement #> <# }  #>
+			<# }  #>
+	</span>
+</div>
+<div class="tvd-col tvd-s2 tvd-center-align">
+	<span class="tho-vertical-align">
+		<# if (variation.is_control == 1) { #>
+			<?php echo __( 'N / A', THO_TRANSLATE_DOMAIN ); ?>
+			<# } else { #>
+				<# if(typeof variation.beat_original== "undefined") { #> &nbsp; <# } else { #> <#= variation.beat_original #> <# }  #>
+			<# }  #>
+	</span>
+</div>
+<div class="tvd-col tvd-s2">
+	<div class="tho-vertical-align tvd-right">
+		<a class="tvd-waves-effect tvd-waves-light tvd-btn-flat-blue tvd-btn-flat tvd-btn-small tho-choose-winner"
+		   href="javascript:void(0)" data-variation-id="<#= variation.id #>"
+		   title="<?php echo __( 'Set as winner', THO_TRANSLATE_DOMAIN ) ?>">
+			<i class="tvd-icon-trophy"></i>
+			<span class="tvd-on-large-and-down">
+				<?php echo __( 'Set as winner', THO_TRANSLATE_DOMAIN ) ?>
+			</span>
+		</a>
+	</div>
+</div>

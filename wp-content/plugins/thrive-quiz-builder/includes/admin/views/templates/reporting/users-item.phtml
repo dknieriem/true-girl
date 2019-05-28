@@ -1,0 +1,33 @@
+<td class="tqb-users-entry-nr">
+	<span class="tvd-normal">
+		<#= item.get( 'number' ) #>
+	</span>
+</td>
+<td class="tqb-users-entry-date tvd-center-align">
+	<span class="tvd-normal">
+		<#= item.get( 'date_started' ) #>
+	</span>
+</td>
+<td class="tqb-users-entry-email">
+	<span class="tvd-normal">
+		<#= item.get( 'email' ) #>
+	</span>
+</td>
+<td class="tqb-users-entry-ip">
+	<span class="tvd-normal">
+		<#= item.get( 'ip_address' ) #>
+	</span>
+</td>
+<td class="tqb-users-entry-error_message tvd-center-align">
+	<span class="tvd-normal">
+		<#= item.get( 'points' ) #>
+	</span>
+</td>
+<td class="tqb-users-entry-social-badge">
+	<span class="tvd-normal">
+		<a href="<#= item.get( 'social_badge_link' ) #>" target="_blank" ><#= item.get( 'social_badge_link' ) #></a>
+	</span>
+</td>
+<td class="tqb-users-entry-actions tvd-center-align" >
+	<a href="javascript:void(0);" class="tqb-view-users-answers"><?php echo __( 'View', Thrive_Quiz_Builder::T ) ?></a>
+</td>

@@ -1,0 +1,123 @@
+@import "../../config/display/set2-template";
+.tvo-testimonials-display.tvo-#{$template-name}-template {
+  @include box-sizing;
+  font-family: $font-family;
+  .tvo-testimonial-display-item {
+    h4, p {
+      font-family: $font-family;
+    }
+  }
+  h4 {
+    @include transform-uppercase;
+  }
+  .tvo-testimonial-image {
+    height: $image-size;
+    width: $image-size;
+  }
+  .tvo-testimonial-image-cover {
+    @include center-align;
+    border-radius: $image-border-radius;
+    height: $image-size;
+    width: $image-size;
+  }
+  .tvo-testimonial-quote {
+    color: $quotes-color;
+    &:before {
+      @include down-quotes;
+      font-size: $quotes-size;
+      font-weight: $quotes-weight;
+      line-height: $quotes-line-height;
+    }
+  }
+  //.tvo-testimonial-content {
+  //  word-break: break-all;
+  //}
+}
+
+@each $name, $color in $color-pallete {
+  .tvo-#{$template-name}-template.tve_#{$name} {
+    .custom-set2, .custom-set5, .custom-set5-grid {
+      .tvo-testimonial-quote {
+        border-color: nth($color, 1);
+        color: nth($color, 1);
+      }
+    }
+    .custom-color-set5 {
+      span:first-child {
+        color: nth($color, 1);
+      }
+    }
+    &.tvo-apply-background, .tvo-apply-background {
+      background: nth($color, 1);
+    }
+    .thrlider-nav {
+      .thrlider-navItem {
+        &.thrlider-active {
+          .thrlider-navItem-inner {
+            background: nth($color, 3);
+          }
+        }
+      }
+    }
+    .thrlider-prev, .thrlider-next {
+      color: nth($color, 2);
+      &:hover {
+        color: nth($color, 3);
+      }
+    }
+  }
+}
+@each $name, $color in $brighter-pallete {
+  .tvo-#{$template-name}-template.tve_#{$name} {
+    .custom-set5, .custom-set5-grid {
+      .tvo-testimonial-quote {
+        border-color: nth($color, 1);
+        color: nth($color, 1);
+      }
+    }
+    .custom-color-set5 {
+      span:first-child {
+        color: nth($color, 1);
+      }
+    }
+    &.tvo-apply-background, .tvo-apply-background {
+      background: nth($color, 1);
+    }
+  }
+}
+
+@each $name, $color in $different-variation-name {
+  .tvo-testimonials-display.tvo-#{$template-name}-template.tve_#{$name} {
+    .tvo-testimonial-display-item {
+      h4, p {
+        color: $color;
+      }
+    }
+    .tvo-testimonial-quote {
+      color: $color;
+    }
+    .custom-set5, .custom-set5-grid {
+      h4 {
+        color: &color;
+      }
+      .tvo-testimonial-quote {
+        border-color: #333 ;
+      }
+    }
+    .custom-set6-slider {
+      hr {
+        background-color: #3d3d3d;
+      }
+    }
+    .custom-color-set5 {
+      span:first-child {
+        color: $color;
+      }
+    }
+    &.tvo-testimonials-display-slider {
+      .tvo-testimonial-name, .tvo-testimonial-role {
+        color: $color;
+      }
+    }
+  }
+}

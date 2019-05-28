@@ -1,0 +1,31 @@
+<tr>
+	<td>&nbsp;</td>
+	<td>
+		<h5>
+			<#= totals.impressions #>
+		</h5>
+	</td>
+	<td>
+		<h5>
+			<#= totals.conversions #>
+		</h5>
+	</td>
+	<td>
+		<h5>
+			<#= (totals.conversions_rate == 0) || (totals.conversions_rate == 'NaN')  ? 'N/A' : totals.conversions_rate + ' %' #>
+		</h5>
+	</td>
+
+	<td colspan="5">
+		<# if ( test.get('status') ) { #>
+			<h5 class="tvd-right">
+				<# if (test.get('auto_win_enabled') == 1) { #>
+					<?php echo __( 'Automatic winner settings are enabled', Thrive_Quiz_Builder::T ) ?> -
+					<# } else { #>
+						<?php echo __( 'Automatic winner settings are disabled', Thrive_Quiz_Builder::T ) ?> -
+						<# } #>
+							<a class="tqb-edit-test" href="javascript:void(0)"><?php echo __( 'Change', Thrive_Quiz_Builder::T ) ?></a>
+			</h5>
+			<# } #>
+	</td>
+</tr>

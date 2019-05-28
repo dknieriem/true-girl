@@ -1,0 +1,20 @@
+<?php
+ob_start();
+?>
+<div class="tie-element" style="top: 68px; left: 138px; position: absolute; width: auto; right: auto; height: auto; bottom: auto;">
+	<div style="position: relative;" class="tie-editable"><p style="color: #000000; font-size: 89px; font-family: Cabin;" data-mce-style="color: #000000; font-size: 89px; font-family: Cabin;"><span style="font-size: 77px;" data-mce-style="font-size: 77px;">Your Title Text</span></p></div>
+</div>
+<div class="tie-element" style="top: 229px; left: 140px; position: absolute; width: auto; right: auto; height: auto; bottom: auto;">
+	<div style="position: relative;" class="tie-editable"><p style="color: rgb(255, 155, 48); line-height: 65px; font-family: Roboto;" data-mce-style="color: #ff9b30; line-height: 65px; font-family: Roboto;"><span style="font-size: 100px; font-family: Roboto;" data-mce-style="color: #ff9b30; line-height: 65px; font-family: Roboto;">%result%</span></p></div>
+</div>
+<div class="tie-element" style="top: 341px; left: 145px; position: absolute; width: auto; right: auto; height: auto; bottom: auto;">
+	<div style="position: relative;" class="tie-editable"><p style="color: #000000; font-family: Cabin;" data-mce-style="color: #000000; font-family: Cabin;"><span style="font-size: 24px;" data-mce-style="font-size: 24px;">A short description of the quiz.&nbsp;</span></p><p style="color: #000000; font-family: Cabin;" data-mce-style="color: #000000; font-family: Cabin;"><span style="font-size: 24px;" data-mce-style="font-size: 24px;">You can tell people about the skills which are tested, or other</span></p><p style="color: #000000; font-family: Cabin;" data-mce-style="color: #000000; font-family: Cabin;"><span style="font-size: 24px;" data-mce-style="font-size: 24px;">key aspects that will convince them to give it a try.</span></p></div>
+</div>
+<div class="tie-element" style="top: 502px; left: 144px; position: absolute; width: auto; right: auto; height: auto; bottom: auto;">
+	<div style="position: relative;" class="tie-editable"><p style="font-family: Cabin;" data-mce-style="font-family: Cabin;"><span style="font-size: 31px;" data-mce-style="font-size: 31px;">How much can you score?</span></p></div>
+</div>
+<?php
+$content = ob_get_contents();
+ob_clean();
+return $content;
+?>

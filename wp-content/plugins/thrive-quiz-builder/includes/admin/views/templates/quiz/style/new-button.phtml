@@ -1,0 +1,11 @@
+<div class="tvd-card-content tvd-valign tvd-center-align">
+	<i class="tqb-new-design-logo"></i>
+	<h4 class="tqb-new-button-header-text">
+		<#= item.get('label') #>
+	</h4>
+</div>
+<# 	if ( model.get_settings_step() === 'style' ) { #>
+	<div class="tvd-tooltip-visible tvd-fixed-bottom tvd-normalize tqb-wizard-tooltip">
+		<span><?php echo __( 'Step 2/4: Select a quiz style.', Thrive_Quiz_Builder::T ) ?></span>
+	</div>
+<# } #>

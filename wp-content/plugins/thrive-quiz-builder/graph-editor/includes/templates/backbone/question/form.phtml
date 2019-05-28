@@ -1,0 +1,21 @@
+<div class="tvd-row">
+	<div id="tge-qf-image-loader" class="tvd-col tvd-s2 tvd-center-align"></div>
+	<div class="tvd-col tvd-s10">
+		<div class="tvd-input-field">
+			<input id="tge-question-text" data-bind="text" type="text" class="tvd-validate" value="<#= item.get('text') #>">
+			<label for="tge-question-text" class=""><?php echo __( 'Question text', Thrive_Graph_Editor::T ) ?></label>
+		</div>
+		<div id="tge-question-description" class="tvd-input-field" style="display: none;">
+			<textarea data-bind="description" id="tge-question-description-textarea" class="tvd-materialize-textarea"><#= item.get('description')#></textarea>
+			<label for="tge-question-description-textarea"><?php echo __( 'Description', Thrive_Graph_Editor::T ) ?></label>
+			<a id="tge-gf-delete-description" href="javascript:void(0)" class="tvd-icon-trash-o tvd-pointer"></a>
+		</div>
+		<a id="tge-qf-add-description" href="javascript:void(0)"><?php echo __( 'Add description', Thrive_Graph_Editor::T ) ?></a>
+	</div>
+</div>
+
+<div id="tge-points-switcher" class="tvd-row"></div>
+
+<div id="tge-answers-wrapper"></div>
+
+<a id="tge-qf-add-answer" href="javascript:void(0)"><?php echo __( 'New Answer', Thrive_Graph_Editor::T ) ?></a>

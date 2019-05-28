@@ -1,0 +1,6 @@
+<select name="report_source" id="tqb-report-source">
+	<# sources.each(function(source) { #>
+		<option value="<#= source.get('ID') #>"><#= source.get('post_title') #></option>
+	<# }); #>
+</select>
+<label for="tqb-report-source"><?php echo __( 'Source', Thrive_Quiz_Builder::T ); ?></label>

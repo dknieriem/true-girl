@@ -1,0 +1,3 @@
+[18-Aug-2017 10:54:25 America/Chicago] PHP Fatal error:  Interface 'Requests_Transport' not found in /home3/secretk1/public_html/staging/wp-includes/Requests/Transport/cURL.php on line 15
+[18-Aug-2017 10:54:25 America/Chicago] PHP Fatal error:  Interface 'Requests_Transport' not found in /home3/secretk1/public_html/staging/wp-includes/Requests/Transport/fsockopen.php on line 15
+[25-Jul-2018 15:52:39 America/Chicago] PHP Fatal error:  Interface 'Requests_Transport' not found in /home3/secretk1/public_html/staging/wp-includes/Requests/Transport/fsockopen.php on line 15

@@ -1,0 +1,1 @@
+[18-Aug-2017 10:54:48 America/Chicago] PHP Fatal error:  Class 'Thrive_Leads_Request_Handler' not found in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/controllers/Thrive_Leads_Ajax_Controller.php on line 16

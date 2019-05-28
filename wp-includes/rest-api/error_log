@@ -1,0 +1,2 @@
+[18-Aug-2017 10:49:27 America/Chicago] PHP Fatal error:  Class 'WP_HTTP_Response' not found in /home3/secretk1/public_html/staging/wp-includes/rest-api/class-wp-rest-response.php on line 17
+[25-Jul-2018 15:52:40 America/Chicago] PHP Fatal error:  Class 'WP_HTTP_Response' not found in /home3/secretk1/public_html/staging/wp-includes/rest-api/class-wp-rest-response.php on line 17

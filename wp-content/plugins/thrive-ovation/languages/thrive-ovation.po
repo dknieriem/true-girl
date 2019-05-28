@@ -1,0 +1,831 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: thrive-ovation 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-15 14:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: admin/functions.php:20 admin/functions.php:21 admin/views/dashboard.php:8
+#: inc/classes/class-tvo-product.php:33 inc/helpers.php:368
+msgid "Thrive Ovation"
+msgstr ""
+
+#: admin/i18n.php:3
+msgid "Settings saved successfully."
+msgstr ""
+
+#: admin/i18n.php:4
+msgid "An error occurred while saving the settings."
+msgstr ""
+
+#: admin/i18n.php:5
+msgid "Field is required"
+msgstr ""
+
+#: admin/i18n.php:6
+msgid "Testimonial content is missing"
+msgstr ""
+
+#: admin/i18n.php:7
+msgid "Testimonial author name is required"
+msgstr ""
+
+#: admin/i18n.php:8
+msgid "Status saved successfully."
+msgstr ""
+
+#: admin/i18n.php:9
+msgid "An error occurred while changing the status."
+msgstr ""
+
+#: admin/i18n.php:10
+msgid "Testimonial deleted successfully."
+msgstr ""
+
+#: admin/i18n.php:11
+msgid "An error occurred while deleting the testimonial."
+msgstr ""
+
+#: admin/i18n.php:12
+msgid "Testimonial tag deleted successfully."
+msgstr ""
+
+#: admin/i18n.php:13
+msgid "An error occurred while deleting the testimonial tag."
+msgstr ""
+
+#: admin/i18n.php:14
+msgid "Testimonial tag list was updated successfully."
+msgstr ""
+
+#: admin/i18n.php:15
+msgid "An error occurred while adding the testimonial tag."
+msgstr ""
+
+#: admin/i18n.php:16
+msgid "Selected testimonials deleted successfully."
+msgstr ""
+
+#: admin/i18n.php:17
+msgid "An error occurred while deleting the selected testimonials."
+msgstr ""
+
+#: admin/i18n.php:18
+msgid "Choose an image for the testimonial author description."
+msgstr ""
+
+#: admin/i18n.php:19
+msgid "Choose default placeholder for testimonials that have no image."
+msgstr ""
+
+#: admin/i18n.php:20
+msgid "Default placeholder image was set successfully!"
+msgstr ""
+
+#: admin/i18n.php:21
+msgid "Error saving default placeholder image!"
+msgstr ""
+
+#: admin/i18n.php:22
+msgid "Select"
+msgstr ""
+
+#: admin/i18n.php:23
+msgid ""
+"There are no social media connections. Please establish one before "
+"continuing to the next step."
+msgstr ""
+
+#: admin/i18n.php:24
+msgid "Facebook App connected successfully."
+msgstr ""
+
+#: admin/i18n.php:25
+msgid "An error occurred while connecting your Facebook App."
+msgstr ""
+
+#: admin/i18n.php:26
+msgid "Twitter App connected successfully."
+msgstr ""
+
+#: admin/i18n.php:27
+msgid "An error occurred while connecting your Twitter App."
+msgstr ""
+
+#: admin/i18n.php:28
+msgid "Please enter a valid URL"
+msgstr ""
+
+#: admin/i18n.php:29
+msgid "An error occurred while fetching data"
+msgstr ""
+
+#: admin/i18n.php:30
+msgid "The testimonial was saved successfully! To view it go to dashboard."
+msgstr ""
+
+#: admin/i18n.php:31
+msgid "An error occurred saving the testimonial"
+msgstr ""
+
+#: admin/i18n.php:32
+msgid "Shortcode name"
+msgstr ""
+
+#: admin/i18n.php:33
+msgid "Untagged Testimonial"
+msgstr ""
+
+#: admin/i18n.php:34
+msgid "Currently, there are no testimonials satisfying the selected criteria"
+msgstr ""
+
+#: admin/i18n.php:35
+msgid "Copy"
+msgstr ""
+
+#: admin/i18n.php:36
+msgid "The email content is missing!"
+msgstr ""
+
+#: admin/i18n.php:37
+msgid "Test confirmation email sent!"
+msgstr ""
+
+#: admin/i18n.php:38
+msgid "Confirmation email sent!"
+msgstr ""
+
+#: admin/i18n.php:39
+msgid "Testimonial was successfully saved!"
+msgstr ""
+
+#: admin/i18n.php:40
+msgid "Type text and hit enter to add a tag!"
+msgstr ""
+
+#: admin/i18n.php:41
+msgid "Complete all the fields"
+msgstr ""
+
+#: admin/i18n.php:42
+msgid "Landing page settings were saved successfully."
+msgstr ""
+
+#: admin/i18n.php:43
+msgid "An error occurred while saving the landging page settings."
+msgstr ""
+
+#: admin/i18n.php:44
+msgid "Add"
+msgstr ""
+
+#: admin/i18n.php:45
+msgid "Update"
+msgstr ""
+
+#: admin/i18n.php:46
+msgid "Shortcode deleted successfully!"
+msgstr ""
+
+#: admin/i18n.php:47
+msgid "Edit configuration"
+msgstr ""
+
+#: admin/i18n.php:48
+msgid "The 'from' value should be smaller than the 'to' value"
+msgstr ""
+
+#: admin/i18n.php:49
+msgid "Please insert only numbers"
+msgstr ""
+
+#: admin/i18n.php:50
+msgid "Filter by tag"
+msgstr ""
+
+#: admin/views/comments/comment-column-value.php:3
+msgid "Create testimonial from comment"
+msgstr ""
+
+#: admin/views/comments/modal-comment-edit.php:3 inc/helpers.php:379
+msgid "Edit Testimonial"
+msgstr ""
+
+#: admin/views/comments/modal-comment-edit.php:16
+msgid "Upload picture"
+msgstr ""
+
+#: admin/views/comments/modal-comment-edit.php:18
+msgid "Click the picture to update"
+msgstr ""
+
+#: admin/views/comments/modal-comment-edit.php:22
+msgid "Remove picture"
+msgstr ""
+
+#: admin/views/comments/modal-comment-edit.php:34
+msgid "Please fill in the title field"
+msgstr ""
+
+#: admin/views/comments/modal-comment-edit.php:34
+msgid "Title"
+msgstr ""
+
+#: admin/views/comments/modal-comment-edit.php:45
+msgid "Please fill in the name field"
+msgstr ""
+
+#: admin/views/comments/modal-comment-edit.php:45 inc/helpers.php:466
+msgid "Full Name"
+msgstr ""
+
+#: admin/views/comments/modal-comment-edit.php:54
+msgid "Please fill in a valid email address"
+msgstr ""
+
+#: admin/views/comments/modal-comment-edit.php:54
+msgid "Email Address"
+msgstr ""
+
+#: admin/views/comments/modal-comment-edit.php:65
+msgid "Please fill in the occupation field"
+msgstr ""
+
+#: admin/views/comments/modal-comment-edit.php:65
+msgid "Role/Occupation"
+msgstr ""
+
+#: admin/views/comments/modal-comment-edit.php:74
+msgid "Please fill in a valid website URL"
+msgstr ""
+
+#: admin/views/comments/modal-comment-edit.php:74 inc/helpers.php:470
+msgid "Website URL"
+msgstr ""
+
+#: admin/views/comments/modal-comment-edit.php:81
+msgid "Tags"
+msgstr ""
+
+#: admin/views/comments/modal-comment-edit.php:106
+msgid ""
+"Would you like to ask the customer's permission to use this comment as a "
+"testimonial?"
+msgstr ""
+
+#: admin/views/comments/modal-comment-edit.php:111
+msgid "Off"
+msgstr ""
+
+#: admin/views/comments/modal-comment-edit.php:123
+msgid "On"
+msgstr ""
+
+#: admin/views/license_inactive.php:12
+msgid "You need to"
+msgstr ""
+
+#: admin/views/license_inactive.php:14
+msgid "activate your license"
+msgstr ""
+
+#: admin/views/license_inactive.php:15
+msgid "before you can use the Thrive Ovation plugin!"
+msgstr ""
+
+#: admin/views/menu.php:6
+msgid "Display Testimonials"
+msgstr ""
+
+#: admin/views/menu.php:12
+msgid "Display using Thrive Content Builder"
+msgstr ""
+
+#: admin/views/menu.php:17
+msgid "Display using Wordpress Shortcodes"
+msgstr ""
+
+#: admin/views/menu.php:22
+msgid "Display in Email Capture Form"
+msgstr ""
+
+#: admin/views/menu.php:32
+msgid "Capture Testimonials"
+msgstr ""
+
+#: admin/views/menu.php:39
+msgid "Create a Testimonial Capture Landing Page"
+msgstr ""
+
+#: admin/views/menu.php:44
+msgid "Capture using Thrive Content Builder"
+msgstr ""
+
+#: admin/views/menu.php:48
+msgid "Capture using Wordpress Shortcodes"
+msgstr ""
+
+#: admin/views/menu.php:52
+msgid "Capture using Thrive Leads"
+msgstr ""
+
+#: admin/views/menu.php:55
+msgid "Import from Social Media"
+msgstr ""
+
+#: admin/views/menu.php:62 inc/helpers.php:373
+msgid "Settings"
+msgstr ""
+
+#: inc/classes/class-tvo-product.php:28
+msgid "Thrive Ovation is a testimonial management plugin."
+msgstr ""
+
+#: inc/classes/class-tvo-product.php:42
+msgid "Support"
+msgstr ""
+
+#: inc/classes/class-tvo-product.php:49
+msgid "Tutorials"
+msgstr ""
+
+#: inc/classes/class-tvo-rest-controller.php:157
+#: inc/classes/class-tvo-rest-controller.php:179
+#: inc/classes/class-tvo-rest-controller.php:199
+#: inc/classes/class-tvo-rest-controller.php:220
+#: inc/classes/endpoints/class-tvo-rest-shortcodes-controller.php:42
+#: inc/classes/endpoints/class-tvo-rest-shortcodes-controller.php:110
+#: inc/classes/endpoints/class-tvo-rest-testimonials-controller.php:217
+#: inc/classes/endpoints/class-tvo-rest-testimonials-controller.php:235
+#: inc/classes/endpoints/class-tvo-rest-testimonials-controller.php:241
+#: inc/classes/endpoints/class-tvo-rest-testimonials-controller.php:346
+msgid "message"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-comments-controller.php:78
+msgid "Approval email successfully sent to "
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-comments-controller.php:102
+msgid "An error has occurred while trying to send email to "
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-comments-controller.php:102
+msgid "Click here for more information"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-comments-controller.php:111
+msgid "The testimonial was successfully created! Click "
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-comments-controller.php:111
+msgid "here"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-comments-controller.php:111
+msgid " to view the testimonial."
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-comments-controller.php:121
+#: inc/functions.php:259
+msgid "Saved"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-comments-controller.php:127
+msgid "ERROR: Empty testimonial"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-post-meta-controller.php:55
+msgid "Error while updating the meta data"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-settings-controller.php:273
+msgid "Error while updating the landing page settings"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-settings-controller.php:352
+msgid "Connection was made successfully"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-settings-controller.php:379
+msgid "Error while updating the email template"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-settings-controller.php:400
+msgid ""
+"The email subject and message are mandatory. Error while updating the email "
+"template"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-settings-controller.php:427
+#: inc/data.php:320 inc/data.php:420
+msgid "Error"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-settings-controller.php:446
+#: inc/classes/endpoints/class-tvo-rest-testimonials-controller.php:394
+msgid "No active connection set"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-settings-controller.php:460
+#: inc/classes/endpoints/class-tvo-rest-settings-controller.php:464
+msgid "Sending test email failed"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-shortcodes-controller.php:204
+msgid "Delete action failed"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-social-media-controller.php:69
+msgid "Please enter a valid Facebook comment or Twitter comment URL"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-social-media-controller.php:97
+#: inc/classes/endpoints/class-tvo-rest-social-media-controller.php:112
+msgid "The data was fetched successfully"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-social-media-controller.php:143
+msgid "Your Facebook connection is not active."
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-social-media-controller.php:186
+msgid "Your Twitter connection is not active."
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-tags-controller.php:144
+#: inc/classes/endpoints/class-tvo-rest-testimonials-controller.php:314
+#: inc/classes/endpoints/class-tvo-rest-testimonials-controller.php:386
+msgid "Missing ID from parameter list"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-testimonials-controller.php:92
+msgid "Please prove us that you are not a robot!!!"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-testimonials-controller.php:109
+msgid "Something went wrong while trying to send data. Please try again."
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-testimonials-controller.php:127
+msgid "Creating Testimonial failed"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-testimonials-controller.php:146
+msgid "Copy "
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-testimonials-controller.php:149
+msgid "Copy of "
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-testimonials-controller.php:164
+msgid "Copy Testimonial failed"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-testimonials-controller.php:322
+msgid "Error while updating the testimonial"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-testimonials-controller.php:371
+msgid "No testimonials selected"
+msgstr ""
+
+#: inc/classes/endpoints/class-tvo-rest-testimonials-controller.php:423
+#: inc/classes/endpoints/class-tvo-rest-testimonials-controller.php:426
+msgid "Sending approval email failed"
+msgstr ""
+
+#: inc/data.php:18 inc/data.php:115 inc/data.php:166 inc/data.php:187
+msgid "Invalid ID"
+msgstr ""
+
+#: inc/data.php:169
+msgid "Missing parameters"
+msgstr ""
+
+#: inc/data.php:183
+msgid "Success"
+msgstr ""
+
+#: inc/data.php:232 inc/data.php:273 inc/data.php:417 inc/data.php:444
+#: inc/data.php:487
+msgid "Post id is invalid"
+msgstr ""
+
+#: inc/data.php:425 inc/data.php:451
+msgid "Tag id is invalid"
+msgstr ""
+
+#: inc/data.php:510
+msgid "Testimonial added through "
+msgstr ""
+
+#: inc/data.php:514
+msgid " converted "
+msgstr ""
+
+#: inc/data.php:514
+msgid " into testimonial "
+msgstr ""
+
+#: inc/data.php:519
+msgid " added testimonial from "
+msgstr ""
+
+#: inc/data.php:523
+msgid " added this testimonial manually "
+msgstr ""
+
+#: inc/data.php:527
+msgid " added this testimonial through copy"
+msgstr ""
+
+#: inc/data.php:531
+msgid " updated "
+msgstr ""
+
+#: inc/data.php:535
+msgid " Approval email send to "
+msgstr ""
+
+#: inc/data.php:540
+msgid " changed the status of the testimonial form "
+msgstr ""
+
+#: inc/data.php:542
+msgid " Customer changed the status of the testimonial form "
+msgstr ""
+
+#: inc/data.php:548
+msgid " modified the testimonial "
+msgstr ""
+
+#: inc/data.php:663
+msgid "title"
+msgstr ""
+
+#: inc/data.php:668
+msgid "author name"
+msgstr ""
+
+#: inc/data.php:673
+msgid "testimonial text"
+msgstr ""
+
+#: inc/data.php:680
+msgid "Facebook ID"
+msgstr ""
+
+#: inc/data.php:682
+msgid "Twitter handle"
+msgstr ""
+
+#: inc/data.php:685
+msgid "email address"
+msgstr ""
+
+#: inc/data.php:691
+msgid "role/occupation"
+msgstr ""
+
+#: inc/data.php:696
+msgid "web site URL"
+msgstr ""
+
+#: inc/data.php:707
+msgid "testimonial tags"
+msgstr ""
+
+#: inc/functions.php:149 inc/functions.php:151
+msgid "Thrive Testimonials"
+msgstr ""
+
+#: inc/functions.php:150
+msgid "Thrive Testimonial"
+msgstr ""
+
+#: inc/functions.php:152
+msgid "Parent Thrive Testimonials"
+msgstr ""
+
+#: inc/functions.php:153
+msgid "All Thrive Testimonials"
+msgstr ""
+
+#: inc/functions.php:154
+msgid "View Thrive Testimonials"
+msgstr ""
+
+#: inc/functions.php:155
+msgid "Add New Thrive Testimonial"
+msgstr ""
+
+#: inc/functions.php:156
+msgid "Add New"
+msgstr ""
+
+#: inc/functions.php:157
+msgid "Edit Thrive Testimonial"
+msgstr ""
+
+#: inc/functions.php:158
+msgid "Update Thrive Testimonial"
+msgstr ""
+
+#: inc/functions.php:159
+msgid "Search Thrive Testimonial"
+msgstr ""
+
+#: inc/functions.php:160
+msgid "Not Found"
+msgstr ""
+
+#: inc/functions.php:161
+msgid "Not found in Trash"
+msgstr ""
+
+#: inc/functions.php:167
+msgid "Thrive Ovation is a  Testimonial Management Plugin"
+msgstr ""
+
+#: inc/functions.php:191
+msgid "Thrive Ovation Shortcode"
+msgstr ""
+
+#: inc/functions.php:241
+msgid "Save as Testimonial"
+msgstr ""
+
+#: inc/functions.php:273
+msgid "Email Delivery"
+msgstr ""
+
+#: inc/functions.php:368
+msgid "Please fill the required fields."
+msgstr ""
+
+#: inc/functions.php:369
+msgid "Please enter a valid email."
+msgstr ""
+
+#: inc/functions.php:370
+msgid "Please enter a valid URL."
+msgstr ""
+
+#: inc/functions.php:371 inc/helpers.php:485
+#: templates/capture/set1-template.php:43
+msgid "Submit"
+msgstr ""
+
+#: inc/functions.php:372
+msgid "Sending..."
+msgstr ""
+
+#: inc/helpers.php:179
+msgid "Ready for Display"
+msgstr ""
+
+#: inc/helpers.php:182
+msgid "Awaiting Approval"
+msgstr ""
+
+#: inc/helpers.php:185
+msgid "Awaiting Review"
+msgstr ""
+
+#: inc/helpers.php:188
+msgid "Rejected"
+msgstr ""
+
+#: inc/helpers.php:206
+msgid "via "
+msgstr ""
+
+#: inc/helpers.php:210
+msgid "Wordpress comments"
+msgstr ""
+
+#: inc/helpers.php:213
+msgid "social media"
+msgstr ""
+
+#: inc/helpers.php:216
+msgid "direct capture"
+msgstr ""
+
+#: inc/helpers.php:219
+msgid "copy"
+msgstr ""
+
+#: inc/helpers.php:223
+msgid "manually added"
+msgstr ""
+
+#: inc/helpers.php:363
+msgid "Thrive Dashboard"
+msgstr ""
+
+#: inc/helpers.php:385
+msgid "Capture shortcodes"
+msgstr ""
+
+#: inc/helpers.php:391
+msgid "Display shortcodes"
+msgstr ""
+
+#: inc/helpers.php:397
+msgid "Social Media Import"
+msgstr ""
+
+#: inc/helpers.php:467
+msgid "Testimonial Title"
+msgstr ""
+
+#: inc/helpers.php:468
+msgid "Email"
+msgstr ""
+
+#: inc/helpers.php:469
+msgid "Role"
+msgstr ""
+
+#: inc/helpers.php:481
+msgid "What was your experience with our product like?"
+msgstr ""
+
+#: inc/helpers.php:487
+msgid "Thanks for submitting your testimonial."
+msgstr ""
+
+#: inc/helpers.php:530
+msgid "Add testimonial"
+msgstr ""
+
+#: inc/helpers.php:538
+msgid "Send email to customer"
+msgstr ""
+
+#: inc/helpers.php:539
+msgid "Email preview"
+msgstr ""
+
+#: inc/helpers.php:540
+msgid "Refresh"
+msgstr ""
+
+#: inc/helpers.php:543
+msgid ""
+"We can't send an approval email because you haven't configured your email "
+"settings. "
+msgstr ""
+
+#: inc/helpers.php:543
+msgid "Click here to enable sending of email"
+msgstr ""
+
+#: inc/helpers.php:543
+msgid " and after you are done "
+msgstr ""
+
+#: inc/helpers.php:543
+msgid "  click here to refresh."
+msgstr ""
+
+#: inc/helpers.php:571
+msgid "capture form"
+msgstr ""
+
+#: init/database/class-tvo-database-manager.php:156
+#, php-format
+msgid ""
+"There was an error while updating the database tables needed by Thrive "
+"Ovation. Detailed error message: %s. If you continue seeing this message, "
+"please contact %s"
+msgstr ""
+
+#: init/database/class-tvo-database-manager.php:158
+msgid "Thrive Themes Support"
+msgstr ""
+
+#: templates/capture/default-template.php:41
+#: templates/capture/set2-template.php:41
+msgid "Submit Testimonial"
+msgstr ""
+
+#: templates/capture/picture.php:7
+msgid "Remove Picture"
+msgstr ""

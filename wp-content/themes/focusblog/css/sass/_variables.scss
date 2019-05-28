@@ -1,0 +1,65 @@
+$normalSize: 1em; /*16px;*/
+$lightGray: #e6e6e6;
+$white: #fff;
+$black: #000;
+
+$sprite: '../images/sprite-web.png';
+
+$buttonColors:
+  'blue' #3498db,
+  'dark' #2c3e50,
+  'green' #20a850,
+  'light' #FFFFFF,
+  'purple' #9b59b6,
+  'red' #e74c3c,
+  'orange' #f39c12,
+  'teal' #34DDDD;
+$data-elements:
+'blue' #3498db #2980b9,
+'green' #2cc56d #20a850,
+'dark' #34495e #2c3e50,
+'teal' #34DDDD #157b7b,
+'purple' #9b59b6 #8e44ad,
+'red' #e74c3c #c0392b,
+'orange' #f39c12 #e67e22,
+'light' #dadada #dadada;
+
+
+$contentBox:
+  'blue' #3498db #2980b9,
+  'green' #2cc56d #20a850,
+  'dark' #34495e #2c3e50,
+  'teal' #34DDDD #157b7b,
+  'purple' #9b59b6 #8e44ad,
+  'red' #e74c3c #c0392b,
+  'orange' #f39c12 #e67e22;
+$lightContentBox:
+  'note' #FFFCD5 #F1EA90,
+  'light' #F1F1F1 #DCDFDF;
+
+$widgetColors:
+  'blue' #4174dc #265DCE,
+  'dark' #34495e #2c3e50,
+  'green' #7bc143 #67A536,
+  'light' #F1F1F1 #DCDFDF,
+  'purple' #9371bd #7E55B0,
+  'red' #f2393f #CB0E14,
+  'orange' #f1913c #EE7C16,
+  'teal' #34DDDD #157b7b;
+
+$themeColors:
+  'blue' #4174dc,
+  'green' #7bc143,
+  'orange' #f1913c,
+  'purple' #9371bd,
+  'red' #f2393f;
+
+$color-pallete :
+  'blue' #3498db #2980b9 #4d7fe3,
+  'green' #2cc56d #20a850 #20a850,
+  'dark' #34495e #2c3e50 #2c3e50,
+  'teal' #34DDDD #157b7b #157b7b,
+  'purple' #9b59b6 #8e44ad #8e44ad,
+  'red' #e74c3c #c0392b #c0392b,
+  'orange' #f39c12 #e67e22 #e67e22,
+  'light' #F1F1F1 #DCDFDF #DCDFDF;

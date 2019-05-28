@@ -1,0 +1,80 @@
+/*
+Standard stuff
+*/
+
+.bandsintown-logo {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-left: 3px;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.bbit-widget-bandname {
+    margin-left: 5px;
+    margin-top: 10px;
+    float: left;
+    font-family: helvetica, sans-serif;
+    font-size: 26px;
+}
+
+.bandsintown-logo-wrapper {
+    padding: 3px 0px;
+    margin-bottom: -6px;
+}
+
+.bandsintown-logo-link {
+    width: 100%;
+}
+
+.bit-track-artist-header {
+    display: none !important;
+}
+
+.bbit-widget_wrapper table, 
+.bbit-widget_wrapper td, 
+.bbit-widget_wrapper th, 
+.bbit-widget_wrapper tbody {
+    border: none;
+}
+
+// Always the same margin bottom
+.bbit-widget_wrapper table {
+    margin-bottom: 0px;
+}
+.bbit-widget_wrapper {
+    margin-bottom: 20px;
+}
+
+.bit-events-narrow td {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.bbit-widget_wrapper {
+    font-weight: bold;
+}
+
+.bit-rsvp {
+    text-shadow: none;
+}
+
+.bit-events-narrow {
+    margin-top: 0px;
+}
+
+.bit-header-narrow {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.bit-track-artist-header {
+    border: none !important;
+}

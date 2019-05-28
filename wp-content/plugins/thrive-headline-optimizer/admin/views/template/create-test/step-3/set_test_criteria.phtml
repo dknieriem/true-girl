@@ -1,0 +1,143 @@
+<form class="" id="tho-settings-form">
+	<div class="tvd-row tvd-no-margin">
+		<div class="tvd-col tvd-s12">
+			<h3 class="tvd-title"><?php echo __( "Set Your Test Criteria", THO_TRANSLATE_DOMAIN ); ?></h3>
+			<?php
+			$cache_plugin = tve_dash_detect_cache_plugin();
+			if($cache_plugin){
+				?>
+				<div class="tvd-v-spacer"></div>
+				<div class="error notice">
+					<p class="tho_error_text"><?php echo __( "After saving these settings, the cache data from <strong>$cache_plugin</strong> plugin will be automatically cleared (this is required each time you make a change to these settings).", THO_TRANSLATE_DOMAIN ); ?></p>
+				</div>
+			<?php
+			}
+			?>
+			<div class="tvd-v-spacer"></div>
+			<div class="tvd-card tvd-card-white">
+				<div class="tvd-card-content">
+					<h4><?php echo __( "Engagement settings", THO_TRANSLATE_DOMAIN ); ?></h4>
+					<p><?php echo __( "We use certain signals to determine if a user is engaged or not. You can either use the default settings (recommended) or define your own thresholds:", THO_TRANSLATE_DOMAIN ); ?></p>
+					<div class="tvd-v-spacer vs-2"></div>
+					<div class="tvd-row tvd-collapse">
+						<div class="tvd-col tvd-m4 tvd-l2">
+							<span><?php echo __( "Use default engagement settings", THO_TRANSLATE_DOMAIN ); ?></span>
+						</div>
+						<div class="tvd-col tvd-s4">
+							<div class="tvd-switch">
+								<label for="tho_use_default_engagement_settings">
+									<?php echo __( "Off", THO_TRANSLATE_DOMAIN ); ?>
+									<input type="checkbox" class="tho-setting-checkbox" value="1"
+									       data-key="use_default_engagement_settings"
+									       data-hide="tho_use_default_engagement_settings_option"
+									       id="tho_use_default_engagement_settings"
+									<# if(settings.get('use_default_engagement_settings') == 1) {#> checked="checked"
+										<# }#> >
+											<span class="tvd-lever"></span>
+											<?php echo __( "On", THO_TRANSLATE_DOMAIN ); ?>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="tho_use_default_engagement_settings_option"
+					<# if(settings.get('use_default_engagement_settings') == 1) {#> style="display: none;"
+						<# }#>>
+							<?php include THO_PATH . 'admin/views/template/settings/content_engagement_settings.phtml'; ?>
+				</div>
+				<div class="tvd-v-spacer vs-1"></div>
+				<h4><?php echo __( "Automatic winner settings", THO_TRANSLATE_DOMAIN ); ?></h4>
+				<div class="tvd-v-spacer vs-2"></div>
+				<div class="tvd-row tvd-collapse">
+					<div class="tvd-col tvd-m4 tvd-l2">
+						<span><?php echo __( "Enable automatic winner settings", THO_TRANSLATE_DOMAIN ); ?></span>
+					</div>
+					<div class="tvd-col tvd-s4">
+						<div class="tvd-switch">
+							<label for="enable_automatic_winner">
+								<?php echo __( "Off", THO_TRANSLATE_DOMAIN ); ?>
+								<input type="checkbox" class="tho-setting-checkbox" value="1"
+								       data-hide="tho_enable_automatic_winner_option" data-key="enable_automatic_winner"
+								       id="enable_automatic_winner"
+								<# if(settings.get('enable_automatic_winner') == 1) {#> checked="checked"
+									<# }#> >
+										<span class="tvd-lever"></span>
+										<?php echo __( "On", THO_TRANSLATE_DOMAIN ); ?>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="tvd-v-spacer"></div>
+				<div class="tho_enable_automatic_winner_option"
+				<# if(settings.get('enable_automatic_winner') == 0) {#> style="display: none;"
+					<# }#>>
+						<div class="tho-gray-box">
+							<p><?php echo __( "Here you can set the conditions by which a headline will be considered the winner. When a headline is considered the winner, the post will always display the winning headline in order to maximise engagements.", THO_TRANSLATE_DOMAIN ); ?></p>
+							<div class="tvd-v-spacer vs-1"></div>
+							<div class="tvd-row tvd-collapse">
+								<div class="tvd-col tvd-m4 tvd-l2">
+									<p class="tvd-vertical-align"><?php echo __( "Minimum engagements", THO_TRANSLATE_DOMAIN ); ?></p>
+								</div>
+								<div class="tvd-col tvd-s3">
+									<div class="tvd-input-field tvd-input-field-small">
+										<input type="text" data-key="minimum_engagements"
+										       id="minimum_engagements"
+										       class="tho-setting-input tho-setting-input-number tho-setting-input-number-non-zero tvd-validate tvd-no-margin tho-frequency"
+										       value="<#= settings.get('minimum_engagements') #>" tabindex="2">
+										<label for="minimum_engagements"
+										       data-error="<?php echo __( "Invalid input", THO_TRANSLATE_DOMAIN ); ?>"
+										       data-success=""
+										       class="">&nbsp;</label>
+									</div>
+								</div>
+							</div>
+							<div class="tvd-row tvd-collapse">
+								<div class="tvd-col tvd-m4 tvd-l2">
+									<p class="tvd-vertical-align"><?php echo __( "Minimum duration", THO_TRANSLATE_DOMAIN ); ?></p>
+								</div>
+								<div class="tvd-col tvd-s3">
+									<div class="tvd-input-field tvd-input-field-small tvd-inline-block">
+										<input type="text" data-key="minimum_duration" id="minimum_duration"
+										       class="tho-setting-input tho-setting-input-number tho-setting-input-number-non-zero tvd-validate tvd-no-margin tho-frequency"
+										       value="<#= settings.get('minimum_duration') #>" tabindex="3">
+										<label for="minimum_duration"
+										       data-error="<?php echo __( "Invalid input", THO_TRANSLATE_DOMAIN ); ?>"
+										       data-success=""
+										       class="">&nbsp;</label>
+									</div>
+									<span class="tvd-inline-block"><?php echo __( "Days", THO_TRANSLATE_DOMAIN ); ?></span>
+								</div>
+							</div>
+							<div class="tvd-row tvd-collapse">
+								<div class="tvd-col tvd-m4 tvd-l2">
+									<p class="tvd-vertical-align"><?php echo __( "Chance to beat original", THO_TRANSLATE_DOMAIN ); ?></p>
+								</div>
+								<div class="tvd-col tvd-s3">
+									<div class="tvd-input-field tvd-input-field-small tvd-inline-block">
+										<input type="text" data-key="chance_to_beat_original"
+										       id="chance_to_beat_original"
+										       class="tho-setting-input tho-setting-input-number tho-setting-input-number-non-zero tvd-validate tvd-no-margin"
+										       value="<#= settings.get('chance_to_beat_original') #>" maxlength="4" tabindex="4">
+										<label for="chance_to_beat_original"
+										       data-error="<?php echo __( "Invalid input", THO_TRANSLATE_DOMAIN ); ?>"
+										       data-success=""
+										       class="">&nbsp;</label>
+									</div>
+									<span class="tvd-inline-block"><?php echo __( "%", THO_TRANSLATE_DOMAIN ); ?></span>
+								</div>
+							</div>
+						</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+	<div class="tvd-col tvd-v-spacer"></div>
+	<div class="tvd-col tvd-v-spacer"></div>
+	<div class="tvd-col tvd-s12">
+		<a href="javascript:void(0);"
+		   class="tho-add-variations-back tvd-btn-flat tvd-btn-flat-primary tvd-btn-flat-dark tvd-waves-effect">&laquo; <?php echo __( "Back to: add variations", THO_TRANSLATE_DOMAIN ); ?></a>
+		<a href="javascript:void(0);"
+		   class="tvd-waves-effect tho-start-test tvd-waves-light tvd-btn tvd-btn-green tvd-right"><?php echo __( "Start test", THO_TRANSLATE_DOMAIN ); ?></a>
+	</div>
+</form>

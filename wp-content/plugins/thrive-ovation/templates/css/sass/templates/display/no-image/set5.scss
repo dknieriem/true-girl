@@ -1,0 +1,48 @@
+@import "../../../no-image";
+@import "../../../base/display/set2-template";
+
+.tvo-#{$template-name}-template {
+  .custom-set5 {
+    padding: 30px;
+    position: relative;
+    border: none;
+    border-radius: 20px;
+    &.tvo-apply-background {
+      border: none !important;
+    }
+    h4 {
+      font-weight: 500;
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+    .tvo-testimonial-quote {
+      width: 55px;
+      height: 55px;
+      position: absolute;
+      border: 3px solid;
+      border-radius: 50%;
+      background-color: #fff;
+      right: 30px;
+      font-size: 50px;
+      bottom: -27px;
+      box-sizing: initial;
+      &:before {
+        position: absolute;
+        top: 35px;
+        left: 9px;
+        font-size: 70px;
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .tvo-testimonial-info {
+    .tvo-testimonial-name {
+      font-weight: 700;
+    }
+    padding-left: 30px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+}

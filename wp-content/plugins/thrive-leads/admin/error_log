@@ -1,0 +1,4 @@
+[18-Aug-2017 10:49:42 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_dir_url() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/start.php:3
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/start.php on line 3

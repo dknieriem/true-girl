@@ -1,0 +1,272 @@
+<?php $tvo_filters = tvo_get_option( TVO_FILTERS_OPTION, tvo_get_default_values( TVO_FILTERS_OPTION ) ); ?>
+<div class="tvd-row">
+	<div class="tvd-col tvd-s12">
+		<div class="tvd-left tvd-title tvd-margin-right">
+			<h3 class="tvd-title">
+				<?php echo __( 'Testimonials', TVO_TRANSLATE_DOMAIN ); ?>
+				<a href="//fast.wistia.net/embed/iframe/qzgxk7u9lh?popover=true" class="wistia-popover[height=450,playerColor=2bb914,width=800]"><span class="tvd-icon-play"></span></a>
+			</h3>
+		</div>
+		<a href="javascript:void(0);"
+		   class="tvo-add-new-testimonial tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-left"><?php echo __( 'Add New', TVO_TRANSLATE_DOMAIN ); ?></a>
+	</div>
+</div>
+
+<div class="tvd-v-spacer"></div>
+<div class="tvd-row tvd-no-margin">
+	<div class="tvd-col tvd-l2 tvd-m4">
+		<div class="tvo-checkbox-container">
+			<input type="checkbox" class="tvo-filter tvo-filter-status" name="tvo-filter-status"
+			       id="tvo-filter-status-<?php echo TVO_STATUS_READY_FOR_DISPLAY; ?>"
+			       value="<?php echo TVO_STATUS_READY_FOR_DISPLAY; ?>">
+			<label for="tvo-filter-status-<?php echo TVO_STATUS_READY_FOR_DISPLAY; ?>">
+				<?php echo __( 'Ready for Display', TVO_TRANSLATE_DOMAIN ); ?>
+				<span class="tvo-ready-for-display-c tvd-badge tvo-highlight-g"></span>
+			</label>
+		</div>
+	</div>
+	<div class="tvd-col tvd-l2 tvd-m4">
+		<div class="tvo-checkbox-container">
+			<input type="checkbox" class="tvo-filter tvo-filter-status" name="tvo-filter-status"
+			       id="tvo-filter-status-<?php echo TVO_STATUS_AWAITING_APPROVAL; ?>"
+			       value="<?php echo TVO_STATUS_AWAITING_APPROVAL; ?>">
+			<label for="tvo-filter-status-<?php echo TVO_STATUS_AWAITING_APPROVAL; ?>">
+				<?php echo __( 'Awaiting Approval', TVO_TRANSLATE_DOMAIN ); ?>
+				<span class="tvo-awaiting-approval-c tvd-badge tvo-highlight-o"></span>
+			</label>
+		</div>
+	</div>
+	<div class="tvd-col tvd-l2 tvd-m4">
+		<div class="tvo-checkbox-container">
+			<input type="checkbox" class="tvo-filter tvo-filter-status" name="tvo-filter-status"
+			       id="tvo-filter-status-<?php echo TVO_STATUS_AWAITING_REVIEW; ?>"
+			       value="<?php echo TVO_STATUS_AWAITING_REVIEW; ?>">
+			<label for="tvo-filter-status-<?php echo TVO_STATUS_AWAITING_REVIEW; ?>">
+				<?php echo __( 'Awaiting Review', TVO_TRANSLATE_DOMAIN ); ?>
+				<span class="tvo-awaiting-review-c tvd-badge tvo-highlight-gr"></span>
+			</label>
+		</div>
+	</div>
+	<div class="tvd-col tvd-l2 tvd-m4">
+		<div class="tvo-checkbox-container">
+			<input type="checkbox" class="tvo-filter tvo-filter-status" name="tvo-filter-status"
+			       id="tvo-filter-status-<?php echo TVO_STATUS_REJECTED; ?>"
+			       value="<?php echo TVO_STATUS_REJECTED; ?>">
+			<label for="tvo-filter-status-<?php echo TVO_STATUS_REJECTED; ?>">
+				<?php echo __( 'Rejected', TVO_STATUS_REJECTED ); ?>
+				<span class="tvo-rejected-c tvd-badge tvo-highlight-r"></span>
+			</label>
+		</div>
+	</div>
+	<div class="tvd-col tvd-l2 tvd-m4">
+		<div class="tvo-checkbox-container">
+			<input type="checkbox" class="tvo-filter tvo-filter-tag" name="tvo-filter-tag"
+			       id="tvo-filter-tag" value="1">
+			<label for="tvo-filter-tag">
+				<?php echo __( 'Untagged', TVO_TRANSLATE_DOMAIN ); ?>
+				<span class="tvo-untagged-c tvd-badge tvo-highlight-t"></span>
+			</label>
+		</div>
+	</div>
+	<div class="tvd-col tvd-l2 tvd-m4">
+		<div class="tvo-checkbox-container">
+			<input type="checkbox" class="tvo-filter tvo-filter-picture" name="tvo-filter-picture"
+			       id="tvo-filter-picture" value="1">
+			<label for="tvo-filter-picture">
+				<?php echo __( 'No Picture', TVO_TRANSLATE_DOMAIN ); ?>
+				<span class="tvo-no-picture-c tvd-badge tvo-highlight-p"></span>
+			</label>
+		</div>
+	</div>
+</div>
+<div class="tvd-v-spacer"></div>
+<div class="tvd-row">
+	<div class="tvd-col tvd-s12">
+		<div class="tvd-card tvd-white">
+			<div class="tvo-card-content">
+				<div class="tvd-row tvd-no-margin">
+					<div class="tvd-col tvd-l2 tvd-m2">
+						<div class="tvd-row tvd-collapse tvd-no-mb">
+							<div class="tvd-col tvd-l6 tvd-m12">
+								<span class="tvo-vertical-align">
+									<input type="checkbox" class="tvo-testimonials-select-all"
+									       name="tvo-testimonials-select-all" id="tvo-testimonials-select-all"
+									       value="1">
+									<label
+										for="tvo-testimonials-select-all"><?php echo __( 'Select All', TVO_TRANSLATE_DOMAIN ); ?></label>
+								</span>
+							</div>
+							<div class="tvd-col tvd-l6 tvd-m12 tvd-hide tvo-testimonials-select-all-actions">
+								<div class="tvo-new-dropdown tvd-inline-block">
+									<a href="javascript:void(0)"
+									   class="tvd-tooltipped tvo-new-dropdown-button"
+									   data-position="top"
+									   data-tooltip="<?php echo __( 'Define tags for selected testimonials', TVO_TRANSLATE_DOMAIN ); ?>">
+										<span class="tvo-icon-tags"></span>
+										<span class="tvd-icon-expanded"></span>
+										<span class="tvd-icon-collapsed"></span>
+									</a>
+									<div id="dropdown-tags"
+									     class="tvo-new-dropdown-content">
+										<div class="tvd-input-field tvd-prefix">
+											<div class="tvd-icon-search"></div>
+											<input type="text" class="tvd-no-margin tvo-multiple-tag-search"
+											       placeholder="<?php echo __( 'Search for tags', TVO_TRANSLATE_DOMAIN ); ?>">
+										</div>
+										<div class="tvo-tags-filter-container">
+											<div class="tvo-no-tags-to-display tvd-hide">
+												<?php echo __( 'No results found!', TVO_TRANSLATE_DOMAIN ); ?>
+											</div>
+											<?php $tags = tvo_get_all_tags(); ?>
+											<?php foreach ( $tags as $tag ) { ?>
+												<div class="tvo_multiple_tag_container tvo_multiple_tag_container_<?php echo $tag['id']; ?>"
+												     data-label="<?php echo strtolower( $tag['text'] ); ?>">
+													<input type="checkbox" class="tvo-add-multiple-tags-checkbox" data-id="<?php echo $tag['id']; ?>"
+													       id="add_tag_<?php echo $tag['id']; ?>">
+													<label class="tvd-truncate"
+													       for="add_tag_<?php echo $tag['id']; ?>"><?php echo __( $tag['text'], TVO_TRANSLATE_DOMAIN ); ?></label>
+												</div>
+											<?php } ?>
+										</div>
+										<div class="tvd-center-align">
+											<a href="javascript:void(0);"
+											   class="tvd-waves-effect tvd-waves-light tvd-btn-flat tvd-btn-blue tvd-btn-small tvo-add-tags-to-multiple-testimonials">
+												<span class="tvd-icon-plus tvd-icon-xsmall"></span>
+												<?php echo __( 'Apply', TVO_TRANSLATE_DOMAIN ); ?>
+											</a>
+										</div>
+									</div>
+								</div>
+								<a href="javascript:void(0);"
+								   class="tvd-tooltipped tvo-delete-multiple-testimonials-modal tvd-margin-left tvd-red-text"
+								   data-position="top"
+								   data-tooltip="<?php echo __( 'Delete selected testimonials', TVO_TRANSLATE_DOMAIN ); ?>">
+									<span class="tvd-icon-trash-o"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="tvd-col tvd-l2 tvd-m2">
+						<div class="tvd-input-field">
+							<select class="tvo-image-filter tvo-dropdown-filter">
+								<option value="select-image"><?php echo __( 'Image Filter', TVO_TRANSLATE_DOMAIN ); ?></option>
+								<option value="with-image"><?php echo __( 'With Image', TVO_TRANSLATE_DOMAIN ); ?></option>
+								<option value="without-image"><?php echo __( 'Without Image', TVO_TRANSLATE_DOMAIN ); ?></option>
+								<option value="any"><?php echo __( 'Any', TVO_TRANSLATE_DOMAIN ); ?></option>
+							</select>
+						</div>
+					</div>
+					<div class="tvd-col tvd-l2 tvd-m2">
+						<div class="tvd-input-field">
+							<select class="tvo-title-filter tvo-dropdown-filter">
+								<option value="select-title"><?php echo __( 'Title Filter', TVO_TRANSLATE_DOMAIN ); ?></option>
+								<option value="with-title"><?php echo __( 'With Title', TVO_TRANSLATE_DOMAIN ); ?></option>
+								<option value="without-title"><?php echo __( 'Without Title', TVO_TRANSLATE_DOMAIN ); ?></option>
+								<option value="any"><?php echo __( 'Any', TVO_TRANSLATE_DOMAIN ); ?></option>
+							</select>
+						</div>
+					</div>
+					<div class="tvd-col tvd-l2 tvd-m2 tvo-select2-filter-tag">
+						<select id="tvo-dashboard-filter-tags"></select>
+					</div>
+					<div class="tvd-col tvd-l2 tvd-m2">
+						<div class="tvo-new-dropdown ">
+							<a class="tvo-new-dropdown-button tvo-fake-dropdown-btn"
+							   href="javascript:void(0)"><?php echo __( 'Show / Hide', TVO_TRANSLATE_DOMAIN ); ?>
+							</a>
+							<ul id="dropdown-show-hide"
+							    class="tvo-new-dropdown-content tvo-fake-dropdown-content">
+								<li>
+									<input type="checkbox" class="tvo-show-hide tvo-show-hide-tags"
+									       id="tvo-show-hide-tags" <?php if ( $tvo_filters['show_hide_tags'] == 1 ) { ?>checked="checked"<?php } ?>>
+									<label
+										for="tvo-show-hide-tags"><?php echo __( 'Tags', TVO_TRANSLATE_DOMAIN ); ?></label>
+								</li>
+								<li>
+									<input type="checkbox" class="tvo-show-hide tvo-show-hide-type"
+									       id="tvo-show-hide-type" <?php if ( $tvo_filters['show_hide_type'] == 1 ) { ?>checked="checked"<?php } ?>>
+									<label
+										for="tvo-show-hide-type"><?php echo __( 'Type', TVO_TRANSLATE_DOMAIN ); ?></label>
+								</li>
+								<li>
+									<input type="checkbox" class="tvo-show-hide tvo-show-hide-status"
+									       id="tvo-show-hide-status" <?php if ( $tvo_filters['show_hide_status'] == 1 ) { ?>checked="checked"<?php } ?>>
+									<label
+										for="tvo-show-hide-status"><?php echo __( 'Status', TVO_TRANSLATE_DOMAIN ); ?></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tvd-col tvd-l2 tvd-m2">
+						<div class="tvd-input-field">
+							<select class="tvo-filter-content">
+								<option value="summary" <?php if ( $tvo_filters['testimonial_content'] == 'summary' ) { ?>selected<?php } ?>><?php echo __( 'Testimonial Summary', TVO_TRANSLATE_DOMAIN ); ?></option>
+								<option value="full" <?php if ( $tvo_filters['testimonial_content'] == 'full' ) { ?>selected<?php } ?>><?php echo __( 'Full Testimonial', TVO_TRANSLATE_DOMAIN ); ?></option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="tvd-v-spacer"></div>
+				<div id="tvo-testimonials-list"></div>
+				<hr>
+				<div class="tvd-row">
+					<div class="tvd-col tvd-s6 tvd-offset-s6 tvo-top-pagination"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="tvo-delete-testimonial-modal" class="tvd-modal tvd-red">
+	<div class="tvd-modal-content">
+		<a href="javascript:void(0)" class="tvd-modal-action tvd-modal-close tvd-modal-close-x">
+			<i class="tvd-icon-close2"></i>
+		</a>
+		<h3 class="tvd-modal-title tvd-center-align">
+			<?php echo __( 'Are you sure you want to remove the testimonial whose author is ', TVO_TRANSLATE_DOMAIN ); ?>
+			"<span class="tvo-delete-content-title"></span>"
+		</h3>
+	</div>
+	<div class="tvd-modal-footer">
+		<div class="tvd-row">
+			<div class="tvd-col tvd-s12 tvd-m6">
+				<a href="javascript:void(0)"
+				   class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-light tvd-waves-effect tvd-modal-close">
+					<?php echo __( 'NO, DON\'T DELETE', TVO_TRANSLATE_DOMAIN ); ?>
+				</a>
+			</div>
+			<div class="tvd-col tvd-s12 tvd-m6">
+				<a href="javascript:void(0)"
+				   class="tvd-waves-effect tvd-modal-close tvo-detele-testimonial-action tvd-btn-flat tvd-btn-flat-primary tvd-btn-flat-light tvd-right">
+					<?php echo __( 'YES, DELETE', TVO_TRANSLATE_DOMAIN ); ?>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="tvo-delete-multiple-testimonials-modal" class="tvd-modal tvd-red">
+	<div class="tvd-modal-content">
+		<a href="javascript:void(0)" class="tvd-modal-action tvd-modal-close tvd-modal-close-x">
+			<i class="tvd-icon-close2"></i>
+		</a>
+		<h3 class="tvd-modal-title tvd-center-align">
+			<?php echo __( 'Are you sure you want to remove the selected testimonials ? ', TVO_TRANSLATE_DOMAIN ); ?>
+		</h3>
+	</div>
+	<div class="tvd-modal-footer">
+		<div class="tvd-row">
+			<div class="tvd-col tvd-s12 tvd-m6">
+				<a href="javascript:void(0)"
+				   class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-light tvd-waves-effect tvd-modal-close">
+					<?php echo __( 'NO, DON\'T DELETE', TVO_TRANSLATE_DOMAIN ); ?>
+				</a>
+			</div>
+			<div class="tvd-col tvd-s12 tvd-m6">
+				<a href="javascript:void(0)"
+				   class="tvd-waves-effect tvd-modal-close tvo-detele-multiple-testimonials-action tvd-btn-flat tvd-btn-flat-primary tvd-btn-flat-light tvd-right">
+					<?php echo __( 'YES, DELETE ALL', TVO_TRANSLATE_DOMAIN ); ?>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

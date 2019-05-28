@@ -1,0 +1,185 @@
+@import "../../config/display/default-template";
+
+.tvo-testimonials-display.tvo-#{$template-name}-template {
+  @include box-sizing;
+  font-family: $font-family;
+  .thrv_wrapper & {
+    .tvo-testimonial-display-item {
+      h4 {
+        color: inherit;
+      }
+    }
+  }
+  .tvo-testimonial-display-item {
+    @include box-sizing;
+    h4, p {
+      font-family: $font-family;
+    }
+    h4 {
+      @include transform-uppercase;
+    }
+    p {
+      color: $font-color;
+      font-size: $font-size;
+      font-weight: $font-weight;
+      line-height: $font-line-height;
+      margin-bottom: $font-margin-bottom;
+    }
+  }
+  .tvo-testimonial-image {
+    @include center-align;
+  }
+  .tvo-testimonial-image-cover {
+    border-radius: $image-border-radius;
+  }
+  .tvo-testimonial-quote {
+    min-height: $title-line-height-small;
+    margin-bottom: $quote-margin-bottom;
+    position: relative;
+    padding-left: 35px;
+    &:before {
+      @include up-quotes;
+      @include center-align;
+      font-size: $quotes-size;
+      font-weight: $quotes-weight;
+      line-height: $quotes-line-height;
+      position: absolute;
+      left: 0;
+      top: 5px;
+    }
+  }
+  .tvo-testimonial-name {
+    font-size: $name-size;
+    font-weight: $name-weight;
+    line-height: $name-line-height;
+  }
+  .tvo-testimonial-role {
+    color: $job-color-dark;
+    font-size: $job-size;
+    font-weight: $job-weight;
+    line-height: $job-line-height;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+  //.tvo-testimonial-content {
+  //  word-break: break-all;
+  //}
+}
+
+@each $name, $color in $color-pallete {
+  .tvo-#{$template-name}-template.tve_#{$name} {
+    h4 {
+      font-family: Lato;
+      min-height: 45px;
+    }
+    .tvo-testimonial-quote {
+      color: $color;
+    }
+    .tvo-testimonial-name {
+      color: $color;
+    }
+    .custom-set4, .custom-set4-grid, .custom-set7, .custom-set7-slider {
+      .tvo-testimonial-name {
+        color: inherit;
+      }
+    }
+    .custom-set7, .custom-set7-slider {
+      .quotes-holder {
+        h4 {
+          color: $color;
+        }
+      }
+    }
+    .thrlider-nav {
+      .thrlider-active {
+        .thrlider-navItem-inner {
+          background: $color;
+        }
+      }
+    }
+    .tvo-apply-background, .arrow-box {
+      background: $color;
+      border: 1px solid $color;
+      &:before {
+        border-top-color: $color;
+      }
+    }
+  }
+}
+@each $name, $color in $brighter-pallete {
+  .tvo-#{$template-name}-template.tve_#{$name} {
+    .custom-set4-grid, .custom-set4 {
+      .tvo-testimonial-quote {
+        color: $color;
+      }
+      .tvo-testimonial-name {
+        color: inherit;
+      }
+      .tvo-apply-background {
+        background: $color;
+        border: 1px solid $color;
+        &:before {
+          border-top-color: $color;
+        }
+      }
+    }
+  }
+}
+
+@each $name, $color in $different-variation-name {
+  .tvo-testimonials-display.tvo-#{$template-name}-template.tve_#{$name} {
+    .tvo-testimonial-display-item {
+      h4, p {
+        color: $color;
+      }
+    }
+    .custom-set4 {
+      .arrow-box:after {
+        color: #333;
+      }
+      .arrow-box {
+        #no-title-white-quote {
+          color: #666;
+        }
+      }
+      h4, .tvo-testimonial-info span {
+        color: $color;
+      }
+      .tvo-testimonial-content {
+        p {
+          color: #666666;
+        }
+      }
+    }
+    .custom-set4-grid {
+      #no-title-white-quote {
+        color: #666;
+      }
+      .tvo-testimonial-content {
+        p {
+          color: #666666;
+        }
+      }
+    }
+  }
+}
+@each $name, $color in $white-variation-name {
+  .tvo-testimonials-display.tvo-#{$template-name}-template.tve_#{$name} {
+    .custom-set4-grid, .custom-set4 {
+      .tvo-testimonial-content {
+        .arrow-box {
+          &:after{
+            color: #333;
+          }
+        }
+      }
+    }
+    .custom-set7, .custom-set7-slider {
+      .tvo-testimonial-quote {
+        color: #666;
+      }
+    }
+  }
+}

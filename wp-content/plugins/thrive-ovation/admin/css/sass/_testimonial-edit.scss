@@ -1,0 +1,71 @@
+.tvo-log-icon {
+  border-radius: 100%;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 36px;
+  height: 36px;
+  width: 36px;
+  &.tvo-log-source-capture-form {
+    background: $highlight-b;
+  }
+  &.tvo-log-source-wordpress-comments {
+    background: $highlight-b2;
+  }
+  &.tvo-log-source-import-social-media {
+    background: $highlight-r2;
+  }
+  &.tvo-log-content-changed-by-staff {
+    background: $highlight-b3;
+  }
+  &.tvo-log-email-sent-to-author {
+    background: $highlight-o;
+  }
+  &.tvo-log-changed-status {
+    background: $highlight-p2;
+  }
+  &.tvo-log-changed-picture {
+    background: $highlight-o2;
+  }
+  &.tvo-log-email-confirmed {
+    background: $highlight-g;
+  }
+  &.tvo-log-source-tvo-ovation {
+    background: $highlight-t2;
+  }
+  &.tvo-log-copy {
+    background: $highlight-p2;
+  }
+}
+
+.tvo-testimonial-log-btn {
+  position: absolute;
+  top: 12px;
+  right: 17px;
+}
+
+.tvo-edit-testimonial-card {
+  .tvd-card-content {
+    padding: 15px;
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.tvo-disable-link {
+  pointer-events: none;
+  cursor: default;
+}
+
+.tvo-testimonial-data {
+  overflow: hidden;
+}
+
+.tvo-send-approval-email  {
+  .tvo-icon-check-square {
+    position: relative;
+    top: 2px;
+  }
+}

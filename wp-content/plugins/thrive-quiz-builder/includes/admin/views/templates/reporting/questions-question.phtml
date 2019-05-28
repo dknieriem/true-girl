@@ -1,0 +1,46 @@
+<div class="tqb-questions-report-question-box">
+	<div class="tqb-question-text">
+		<#= item.get('text') #>
+	</div>
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s4 tqb-answer-box">
+			<div class="tqb-chart-box"  id="tqb-chart-container-<#= item.get('id') #>"></div>
+		</div>
+		<div class="tvd-col tvd-s8 tqb-answer-box">
+			<ul class="tvd-collection tvd-with-header tqb-answer-table" id="">
+				<li class="tvd-collection-header">
+					<div class="tvd-row">
+						<div class="tvd-col tvd-s1">
+							<div class="tvd-truncate-on-small">
+								<h5 class="tvd-truncate-on-small-el">
+									<?php echo __( 'Color', Thrive_Quiz_Builder::T ); ?>
+								</h5>
+							</div>
+						</div>
+						<div class="tvd-col tvd-s7">
+							<div class="tvd-truncate-on-small">
+								<h5 class="tvd-truncate-on-small-el">
+									<?php echo __( 'Value', Thrive_Quiz_Builder::T ); ?>
+								</h5>
+							</div>
+						</div>
+						<div class="tvd-col tvd-s2">
+							<div class="tvd-truncate-on-small">
+								<h5 class="tvd-truncate-on-small-el">
+									<?php echo __( 'Count', Thrive_Quiz_Builder::T ); ?>
+								</h5>
+							</div>
+						</div>
+						<div class="tvd-col tvd-s2">
+							<div class="tvd-truncate-on-small">
+								<h5 class="tvd-truncate-on-small-el">
+									<?php echo __( 'Percent', Thrive_Quiz_Builder::T ); ?>
+								</h5>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

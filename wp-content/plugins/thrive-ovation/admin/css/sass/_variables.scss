@@ -1,0 +1,101 @@
+@import "_colors";
+
+@mixin tvd-z-depth-1 {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.22);
+}
+
+@mixin tvd-z-depth-1-half {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.24);
+}
+
+@mixin tvd-z-depth-2 {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+@mixin trans-prefix($value, $prefix: "") {
+  $slice: str-slice(inspect($value), 0, 9);
+  @if $slice == "transform" {
+    #{$prefix}transition: #{$prefix}#{$value};
+  } @else {
+    #{$prefix}transition: $value;
+  }
+}
+
+@mixin tve-transition($properties...) {
+  @if length($properties) > 1 {
+    $spec: ();
+    @for $i from 1 through length($properties) {
+      $spec: append($spec, nth($properties, $i), comma);
+    }
+  } @else {
+    $spec: $properties;
+  }
+  @include trans-prefix($spec, -webkit-);
+  @include trans-prefix($spec, -moz-);
+  @include trans-prefix($spec);
+}
+
+$off-black: $gray4;
+$gray-text: $gray7;
+
+/*highlight colors*/
+$highlight-colors: (
+        highlight-g: $green1,
+        highlight-o: $orange1,
+        highlight-r: $red1,
+        highlight-t: $teal2,
+        highlight-p: $purple1,
+        highlight-gr: $gray12
+);
+$highlight-g: $green1;
+$highlight-o: $orange1;
+$highlight-r: $red1;
+$highlight-t: $teal2;
+$highlight-p: $purple1;
+$highlight-gr: $gray12;
+
+$highlight-b: $blue2;
+$highlight-b2: $blue3;
+$highlight-b3: $blue4;
+$highlight-r2: $red2;
+$highlight-o2: $orange2;
+$highlight-p2: $purple2;
+$highlight-t2: $teal3;
+
+/*pagination*/
+$pagination-default: $gray1;
+$pagination-hover: $base-teal;
+
+/*forms*/
+$checkbox-box-background-normal: $gray2;
+$checkbox-box-border-normal: $gray3;
+$checkbox-box-height: 38px;
+$checkbox-line-height: 34px;
+$checbkox-box-color: #fff;
+$checkbox-box-border-normal: $gray3;
+$checkbox-box-background: #fff;
+$checbkox-box-color: #fff;
+$checkbox-box-smallbox-bg: $blue1;
+
+$input-border-color: $gray5;
+$status-select-text-color: #fff;
+
+$checkbox-particular-color: $gray1;
+
+//switch
+$lever-bg-color: $darker-teal;
+
+/*chips*/
+$chip-bg: #fff;
+$chip-close-color: $gray6;
+
+$chip-bg-dark: $gray2;
+$chip-border-dark: $gray3;
+
+$gray-box-bg: $gray10;
+$gray-box-border: $gray11;
+
+$main-blue: $blue1;
+
+$shortcode-box-bg: $gray13;
+$shortcode-box-color: $gray14;

@@ -1,0 +1,22 @@
+@import "../../../grid";
+@import "../../../base/display/set3-template";
+
+.tvo-#{$template-name}-template {
+  &.tvo-testimonials-display-single {
+    .tvo-testimonial-display-item {
+      margin-bottom: $grid-item-padding-vertical;
+      padding: $grid-item-padding-small;
+      h4 {
+        color: $title-color-large;
+        font-size: $title-size-large;
+        font-weight: $title-weight-large;
+        line-height: $title-line-height-large;
+        margin-bottom: $title-large-margin-bottom;
+        margin-top: 0;
+      }
+    }
+    .tvo-testimonial-quote {
+      margin-bottom: ($quote-margin-bottom *2);
+    }
+  }
+}

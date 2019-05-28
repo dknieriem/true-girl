@@ -1,0 +1,8 @@
+[18-Aug-2017 10:45:25 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/version.php:11
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/version.php on line 11
+[18-Aug-2017 10:45:25 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/thrive-dashboard.php:11
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/thrive-dashboard.php on line 11

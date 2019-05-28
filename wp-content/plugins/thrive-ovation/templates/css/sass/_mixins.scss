@@ -1,0 +1,70 @@
+@mixin center-align {
+  display: block;
+  margin: 0 auto;
+}
+
+@mixin center-text {
+  text-align: center;
+}
+
+@mixin full-height {
+  height: 100%;
+}
+
+@mixin down-quotes {
+  content: '\0201E';
+  font-family: Georgia;
+}
+
+@mixin up-quotes {
+  content: '\0201C';
+  font-family: Georgia;
+}
+
+@mixin up-quotes-arial {
+  content: '\0201C';
+  font-family: Arial;
+}
+
+@mixin tvo-relative {
+  position: relative;
+}
+
+@mixin box-sizing {
+  box-sizing: border-box;
+}
+
+@mixin display-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin transform-uppercase {
+  text-transform: uppercase;
+}
+
+@mixin cover-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@mixin input-placeholder($color) {
+  ::-webkit-input-placeholder {
+    color: $color;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: $color;
+  }
+
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: $color;
+  }
+
+  :-ms-input-placeholder {
+    color: $color;
+  }
+}

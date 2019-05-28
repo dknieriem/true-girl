@@ -1,0 +1,8 @@
+[18-Aug-2017 10:54:25 America/Chicago] PHP Fatal error:  Class 'WP_REST_Meta_Fields' not found in /home3/secretk1/public_html/staging/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php on line 17
+[18-Aug-2017 10:54:25 America/Chicago] PHP Fatal error:  Class 'WP_REST_Meta_Fields' not found in /home3/secretk1/public_html/staging/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php on line 17
+[18-Aug-2017 10:54:25 America/Chicago] PHP Fatal error:  Class 'WP_REST_Meta_Fields' not found in /home3/secretk1/public_html/staging/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php on line 17
+[18-Aug-2017 10:54:25 America/Chicago] PHP Fatal error:  Class 'WP_REST_Meta_Fields' not found in /home3/secretk1/public_html/staging/wp-includes/rest-api/fields/class-wp-rest-comment-meta-fields.php on line 17
+[25-Jul-2018 15:52:29 America/Chicago] PHP Fatal error:  Class 'WP_REST_Meta_Fields' not found in /home3/secretk1/public_html/staging/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php on line 17
+[25-Jul-2018 15:52:31 America/Chicago] PHP Fatal error:  Class 'WP_REST_Meta_Fields' not found in /home3/secretk1/public_html/staging/wp-includes/rest-api/fields/class-wp-rest-comment-meta-fields.php on line 17
+[25-Jul-2018 15:52:32 America/Chicago] PHP Fatal error:  Class 'WP_REST_Meta_Fields' not found in /home3/secretk1/public_html/staging/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php on line 17
+[25-Jul-2018 15:52:39 America/Chicago] PHP Fatal error:  Class 'WP_REST_Meta_Fields' not found in /home3/secretk1/public_html/staging/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php on line 17

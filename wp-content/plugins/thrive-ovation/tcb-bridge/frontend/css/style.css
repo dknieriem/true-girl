@@ -1,0 +1,17 @@
+.tvd-modal {
+    max-width: 700px !important;
+}
+
+#tvo-preview-menu {
+    border: 2px dashed fuchsia;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    left: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+.tvo-modal-close {
+    float: right;
+}

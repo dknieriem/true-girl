@@ -1,0 +1,94 @@
+//helpers
+.tvo_clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+}
+
+//header
+.tvo-header {
+  background: #FA8831;
+  margin: 0 0 0 -20px;
+  padding: 14px 20px;
+  #tvo-nav{
+    background: #FA8831;
+    .nav-wrapper i {
+      color: #fff;
+    }
+  }
+  .tvd-row {
+    margin-bottom: 0;
+  }
+  @media only screen and (max-width: 1080px) {
+    #wpbody & {
+      nav ul a {
+        padding: 0 5px;
+      }
+    }
+  }
+}
+
+.tvo-logo {
+  display: block;
+  img {
+    vertical-align: middle;
+  }
+}
+
+@each $name, $color in $highlight-colors {
+  .tvo-#{$name} {
+    background: $color;
+  }
+}
+
+.tvo-vertical-align {
+  line-height: 28px;
+}
+
+.tvo-rounded-img {
+  border-radius: 2px;
+  max-height: 100%;
+  max-width: 100%;
+  .tvd-card .tvd-card-content & {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+.tvo-gray-text {
+  color: $gray-text;
+}
+
+.tvo-teal-text {
+  color: $highlight-t2;
+}
+
+#tvo-delete-testimonial-modal .tvd-icon-close2 {
+  color: #fff;
+}
+
+#tvo-delete-multiple-testimonials-modal .tvd-icon-close2 {
+  color: #fff;
+}
+
+//blue box
+.tvo-tealish-box {
+  background: $gray-box-bg;
+  border: 1px solid $gray-box-border;
+  border-radius: 2px;
+  padding: 20px;
+}
+
+hr.tvo-lightgray-line {
+  border-bottom: 1px solid #f1f1f1;
+  border-top: 0;
+}
+
+.tvo-disabled-btn {
+  opacity: .3;
+}

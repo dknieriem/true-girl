@@ -1,0 +1,51 @@
+@import "../../base/capture/set2-template";
+
+@font-face {
+  font-family: '#{$navigation-icon}';
+  src: url('../fonts/set18-template/tvo-set18-t-icons.eot?62scwa');
+  src: url('../fonts/set18-template/tvo-set18-t-icons.eot?#iefix62scwa') format('embedded-opentype'),
+  url('../fonts/set18-template/tvo-set18-t-icons.woff?62scwa') format('woff'),
+  url('../fonts/set18-template/tvo-set18-t-icons.ttf?62scwa') format('truetype'),
+  url('../fonts/set18-template/tvo-set18-t-icons.svg?62scwa#tlp-icon-authorfocused') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tvo_testimonial_form.tvo-#{$template-name}-template {
+  .tvo-form-field {
+    .tvo-form-button {
+      background: transparent;
+      position: relative;
+      text-align: left;
+      width: 100%;
+      &:hover, &:active {
+        color: $button-color;
+      }
+    }
+  }
+  .tvo-submit-arrow {
+    font-family: $navigation-icon;
+    position: absolute;
+    right: 10px;
+    &:before {
+      content: '\e900';
+      font-size: 35px;
+    }
+  }
+  .tvo_success_state {
+    border-top: 3px solid $success-message-color;
+    border-bottom: 3px solid $success-message-color;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .tvo-set2-image {
+    text-align: center;
+    @media (min-width: 1080px) {
+      text-align: right;
+    }
+  }
+}
+
+.tvo_required_error {
+  border: 1px solid red !important;
+}

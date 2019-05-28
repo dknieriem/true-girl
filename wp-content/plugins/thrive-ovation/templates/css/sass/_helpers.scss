@@ -1,0 +1,38 @@
+.tvo-relative {
+  @include tvo-relative;
+}
+
+.tvo-testimonial-image-cover {
+  @include cover-background;
+}
+
+.tvo-align-center {
+  @include center-align;
+}
+
+.tvo-align-right {
+  text-align: right;
+}
+
+.tvo-dummy-image {
+  visibility: hidden;
+}
+
+.tvo-show-on-mobile {
+  display: none;
+}
+
+.tvo-hidden {
+  display: none;
+}
+
+.tvo-testimonial-display-item {
+  text-shadow: none;
+  p, h4 {
+    text-shadow: none;
+  }
+}
+
+[id*='thrlider'] {
+  text-shadow: none;
+}

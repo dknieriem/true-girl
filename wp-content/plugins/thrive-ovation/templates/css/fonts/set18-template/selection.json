@@ -1,0 +1,92 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M567.168 311.168c-16.683 16.683-16.683 43.648 0 60.331l97.835 97.835h-323.669c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667h323.669l-97.835 97.835c-16.683 16.683-16.683 43.648 0 60.331 8.32 8.32 19.243 12.501 30.165 12.501s21.845-4.181 30.165-12.501l200.832-200.832-200.832-200.832c-16.683-16.683-43.648-16.683-60.331 0z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"isMulticolor2": false,
+				"tags": [
+					"arrow-right"
+				],
+				"grid": 24
+			},
+			"attrs": [],
+			"properties": {
+				"id": 223,
+				"order": 66,
+				"prevSize": 24,
+				"code": 59648,
+				"name": "arrow-right"
+			},
+			"setIdx": 0,
+			"setId": 126,
+			"iconIdx": 222
+		},
+		{
+			"icon": {
+				"paths": [
+					"M725.333 469.333h-323.669l97.835-97.835c16.683-16.683 16.683-43.648 0-60.331s-43.648-16.683-60.331 0l-200.832 200.832 200.832 200.832c8.32 8.32 19.243 12.501 30.165 12.501s21.845-4.181 30.165-12.501c16.683-16.683 16.683-43.648 0-60.331l-97.835-97.835h323.669c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"isMulticolor2": false,
+				"tags": [
+					"arrow-left"
+				],
+				"grid": 24
+			},
+			"attrs": [],
+			"properties": {
+				"id": 226,
+				"order": 65,
+				"prevSize": 24,
+				"code": 59649,
+				"name": "arrow-left"
+			},
+			"setIdx": 0,
+			"setId": 126,
+			"iconIdx": 225
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "icomoon"
+	},
+	"preferences": {
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"showQuickUse2": true,
+		"showSVGs": true,
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "icomoon"
+			},
+			"metrics": {
+				"emSize": 1024,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"resetPoint": 58880,
+			"embed": false
+		},
+		"imagePref": {
+			"prefix": "icon-",
+			"png": true,
+			"useClassSelector": true,
+			"color": 4473924,
+			"bgColor": 16777215,
+			"classSelector": ".icon",
+			"height": 32,
+			"columns": 16,
+			"margin": 16
+		},
+		"historySize": 100,
+		"showCodes": true,
+		"showLiga": true
+	}
+}

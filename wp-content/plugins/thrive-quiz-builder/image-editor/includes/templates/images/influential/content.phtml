@@ -1,0 +1,25 @@
+<?php
+ob_start();
+?>
+<div class="tie-element" style="top: 75px; left: 317px; position: absolute; width: auto; right: auto; height: auto; bottom: auto;">
+    <div style="position: relative;" class="tie-editable"><p style="color: rgb(255, 255, 255); font-family: Cinzel;" data-mce-style="color: #ffffff; font-family: Cinzel;"><span
+                    style="font-size: 74px;" data-mce-style="font-size: 74px;">Your Title Text</span></p></div>
+</div>
+<div class="tie-element" style="top: 204px; left: 326px; position: absolute; width: auto; right: auto; height: auto; bottom: auto;">
+    <div style="position: relative;" class="tie-editable"><p style="font-family: Cinzel; color: rgb(255, 155, 48);" data-mce-style="font-family: Cinzel; color: #ff9b30;"><span
+                    style="font-size: 74px;" data-mce-style="font-size: 74px;">%result%</span></p></div>
+</div>
+<div class="tie-element" style="top: 335px; left: 330px; position: absolute; width: auto; right: auto; height: auto; bottom: auto;">
+    <div style="position: relative;" class="tie-editable"><p style="font-family: Raleway;" data-mce-style="font-family: Raleway;"><span style="font-size: 27px;"
+                                                                                                                                        data-mce-style="font-size: 27px;">A short description of the quiz.&nbsp;</span>
+        </p>
+        <p data-mce-style="font-family: Raleway;" style="font-family: Raleway;"><span style="font-size: 27px;" data-mce-style="font-size: 27px;">You can tell people about the skills which are tested, or </span>
+        </p>
+        <p data-mce-style="font-family: Raleway;" style="font-family: Raleway;"><span style="font-size: 27px;" data-mce-style="font-size: 27px;">other key aspects that will convince them to give it a try.</span>
+        </p></div>
+</div>
+<?php
+$content = ob_get_contents();
+ob_clean();
+return $content;
+?>

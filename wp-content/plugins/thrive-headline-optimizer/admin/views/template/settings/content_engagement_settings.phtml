@@ -1,0 +1,113 @@
+<#
+	var sufix = '';
+	if (typeof general_settings !== 'undefined') {
+		if(general_settings == true){
+			sufix = '_model';
+		}
+		console.log(general_settings);
+	}
+
+	#>
+<div class="tvd-v-spacer vs-2"></div>
+<div class="tvd-row tvd-collapse">
+	<div class="tvd-col tvd-m4 tvd-l2">
+		<span><?php echo __( "Click throughs", THO_TRANSLATE_DOMAIN ); ?></span>
+	</div>
+	<div class="tvd-col tvd-s4">
+		<div class="tvd-switch">
+			<label for="tho_click_through<#= sufix #>">
+				<?php echo __( "Off", THO_TRANSLATE_DOMAIN ); ?>
+				<input type="checkbox" class="tho-setting-checkbox<#= sufix #>" value="1" data-hide="tho_click_through_option<#= sufix #>"
+				       data-key="click_through" id="tho_click_through<#= sufix #>"
+				<# if(settings.get('click_through') == 1) {#> checked="checked"
+					<# }#> >
+				<span class="tvd-lever"></span>
+				<?php echo __( "On", THO_TRANSLATE_DOMAIN ); ?>
+			</label>
+		</div>
+	</div>
+</div>
+<div class="tho_click_through_option<#= sufix #>" <# if(settings.get('click_through') == 0) {#> style="display: none;"<# }#> >
+	<div class="tho-gray-box">
+		<p><?php echo __( "When this is enabled, we will track the number of views and clicks that this headline gets on your site. <a target='_blank' href='https://thrivethemes.com/tkb_item/how-do-we-calculate-click-throughs/'>How do we calculate this?</a>" ); ?></p>
+	</div>
+</div>
+<div class="tvd-v-spacer vs-2"></div>
+<div class="tvd-row tvd-collapse">
+	<div class="tvd-col tvd-m4 tvd-l2">
+		<span><?php echo __( "Scrolling signal", THO_TRANSLATE_DOMAIN ); ?></span>
+	</div>
+	<div class="tvd-col tvd-s4">
+		<div class="tvd-switch">
+			<label for="tho_scrolling_signal<#= sufix #>">
+				<?php echo __( "Off", THO_TRANSLATE_DOMAIN ); ?>
+				<input type="checkbox" class="tho-setting-checkbox<#= sufix #>" value="1"
+				       data-hide="tho_scrolling_signal_option<#= sufix #>" data-key="scrolling_signal"
+				       id="tho_scrolling_signal<#= sufix #>" <# if(settings.get('scrolling_signal') == 1) {#> checked="checked" <# }#> >
+				<span class="tvd-lever"></span>
+				<?php echo __( "On", THO_TRANSLATE_DOMAIN ); ?>
+			</label>
+		</div>
+	</div>
+</div>
+<div class="tho_scrolling_signal_option<#= sufix #>" <# if(settings.get('scrolling_signal') == 0) {#> style="display: none;" <# }#>>
+	<div class="tho-gray-box">
+		<p class="tvd-inline-block">
+			<?php echo __( "Count visitors as engaged when they scroll ", THO_TRANSLATE_DOMAIN ); ?>
+		</p>
+		<div class="tvd-input-field tvd-inline-block tvd-input-field-small">
+			<input class="input-display-frequency trigger-config tvd-no-margin tvd-center-align tho-frequency tho-slider tho-setting-input" data-min="0" data-max="100" data-key="scrolling_signal_value" id="scrolling_signal_input<#= sufix #>" type="text" maxlength="3" size="3" tabindex="1">
+		</div>
+		<p class="tvd-inline-block">
+			<?php echo __( "% down the page.", THO_TRANSLATE_DOMAIN ); ?>
+		</p>
+		<div class="tvd-v-spacer vs-2"></div>
+		<div class="tvd-row tvd-collapse">
+			<div class="tvd-col  <# if(sufix == '_model'){ #> tvd-l <# }else{ #> tvd-l7 <# } #>  tvd-m12">
+				<div class="tvd-slider-widget" data-connect-to="#scrolling_signal_input<#= sufix #>" data-min="0" data-max="100" data-value="<#= settings.get('scrolling_signal_value') #>"></div>
+			</div>
+		</div>
+		<div class="tvd-v-spacer vs-1"></div>
+	</div>
+</div>
+<div class="tvd-v-spacer vs-2"></div>
+<div class="tvd-row tvd-collapse">
+	<div class="tvd-col tvd-m4 tvd-l2">
+		<span><?php echo __( "Time on content signal", THO_TRANSLATE_DOMAIN ); ?></span>
+	</div>
+	<div class="tvd-col tvd-s4">
+		<div class="tvd-switch">
+			<label for="tho_time_on_content_signal<#= sufix #>">
+				<?php echo __( "Off", THO_TRANSLATE_DOMAIN ); ?>
+				<input type="checkbox" class="tho-setting-checkbox<#= sufix #>" value="1"
+				       data-hide="tho_time_on_content_signal_option<#= sufix #>" data-key="time_on_content_signal"
+				       id="tho_time_on_content_signal<#= sufix #>"	<# if(settings.get('time_on_content_signal') == 1) {#> checked="checked" <# }#> >
+				<span class="tvd-lever"></span>
+				<?php echo __( "On", THO_TRANSLATE_DOMAIN ); ?>
+			</label>
+		</div>
+	</div>
+</div>
+
+<div class="tho_time_on_content_signal_option<#= sufix #>" <# if(settings.get('time_on_content_signal') == 0) {#> style="display: none;" <# } #>>
+	<div class="tho-gray-box">
+		<p class="tvd-inline-block">
+			<?php echo __( " Count visitors as engaged when their visit duration is", THO_TRANSLATE_DOMAIN ); ?>
+		</p>
+		<div class="tvd-input-field tvd-inline-block tvd-input-field-small">
+			<input class="tho-setting-input input-display-frequency trigger-config  tho-slider tvd-no-margin tvd-center-align tho-frequency"
+			       data-key="time_on_content_signal_value" id="time_signal_input<#= sufix #>" data-min="0" data-max="180" type="text" maxlength="3" size="3" tabindex="1">
+		</div>
+		<p class="tvd-inline-block">
+			<?php echo __( "seconds or longer", THO_TRANSLATE_DOMAIN ); ?>
+		</p>
+		<div class="tvd-v-spacer vs-2"></div>
+		<div class="tvd-row tvd-collapse">
+			<div class="tvd-col <# if(sufix == '_model'){ #> tvd-l <# }else{ #> tvd-l7 <# } #>  tvd-m12">
+				<div class="tvd-slider-widget" data-connect-to="#time_signal_input<#= sufix #>" data-min="0" data-max="180" data-value="<#= settings.get('time_on_content_signal_value') #>"></div>
+			</div>
+		</div>
+		<div class="tvd-v-spacer vs-1"></div>
+	</div>
+</div>
+<div class="tvd-v-spacer vs-2"></div>
