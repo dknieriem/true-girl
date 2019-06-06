@@ -1,0 +1,99 @@
+.footer
+{
+    background-color:$rose-gray;
+    padding-top:4rem;
+    padding-bottom:1rem;
+    &__copyright
+    {
+        color:rgba(255,255,255,0.7);
+        font-size: 0.8rem;
+        margin-top:2.5rem;
+    }
+    &__link
+    {
+        color:white;
+        transition: color 0.5s ease;
+        font-size:0.8rem;
+
+    }
+    &__link:hover
+    {
+        color:white;
+    }
+    &__heading
+    {
+        font-family:$body-font;
+        font-size:1rem;
+        color:white;
+        font-weight:400;
+        font-size:0.8rem;
+        text-transform: uppercase;
+        
+    }
+    &__list
+    {
+        padding-left:0px;
+    }
+    &__list-item
+    {
+        list-style: none;
+        margin-left:0;
+        padding-left:0;
+        font-weight:300;
+        font-size:0.8rem;
+    }
+    &__social-link
+    {
+        color:rgba(255,255,255,0.7);
+        font-size: 1.5rem;
+        display: inline-block;
+        margin-right:1rem;
+        transition: color 0.5s ease;
+    }
+    &__social-link:hover
+    {
+        color:white;
+    }
+    &__email-signup-form
+    {
+        //@extend .form-inline;
+        display: flex;
+        flex-direction: row;
+        margin-bottom:1rem;
+    }
+    &__input
+    {
+        //@extend .form-control;
+        border-radius:0px;
+        flex-basis:70%;
+        border:none;
+        font-size:0.8rem;
+        padding:.75rem 1rem;
+        @extend .shadowed;
+    }
+    &__submit-button
+    {
+        flex-basis:20%;
+        background-color:$rose;
+        color:white;
+        border:none;
+        font-weight:300;
+        @extend .shadowed;  
+    }
+    &__text
+    {
+        font-size: 0.8rem;
+        line-height: 1.5;
+        color: rgba(255,255,255,0.7);
+    }
+    &__logo
+    {
+        @extend .img-fluid;
+        max-width:200px;
+        max-height:125px;
+        margin-bottom:2rem;
+        @media (max-width: 767.98px) {
+            margin-top: 3rem;
+        }
+    }
+}

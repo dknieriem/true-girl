@@ -1,0 +1,30 @@
+.button
+{
+    background-color: $pink;
+    padding: .5rem 2rem;
+    border-radius:100px;
+    color:white;
+    font-weight:300;
+    display: inline-block;
+    text-transform: uppercase;
+    &--white
+    {
+        background-color:white;
+        color:$pink;
+    }
+    &--white:hover
+    {
+        background-color:white;
+        color:$gray !important;
+    }
+    &--small
+    {
+        padding: .3rem 1.4rem;
+        font-size:0.8rem;
+    }
+}
+
+.button:hover
+{
+    color:white;
+}

@@ -1,0 +1,140 @@
+body{
+    color:$brown;
+    font-weight:300;
+}
+
+a
+{
+    text-decoration: none !important;
+}
+
+.section-subtitle
+{
+    margin: 2rem auto 3rem auto;
+    &__inner-content
+    {
+        color:$pink;
+        text-transform: uppercase;
+        border-style: dotted;
+        padding-bottom:.7rem;
+        
+        border-image-source: url('../img/dots-pink.svg');
+        border-image-slice: 33% 33%;
+        border-image-repeat: round;
+        border-width: 0 0 9px 0;
+        border-color: $pink;
+        font-size:1.5rem;
+        font-weight:300;
+        letter-spacing: .1rem;
+    }
+    &__inner-content--white
+    {
+        color:white;
+        border-image-source: url('../img/dots-white.svg');
+    }
+}
+
+
+p
+{
+    line-height:1.7rem;
+    font-weight:300;
+}
+
+.heading
+{
+    font-family:$header-font;
+    color:$brown;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    &--lg
+    {
+        font-size:3.5rem;
+        margin-top:3rem;
+        margin-bottom:3rem;
+        @media (max-width: 768px) {
+            font-size:2.91rem;
+        }
+    }
+    &__sm
+    {
+        font-size:2rem;
+    }
+
+    &--white
+    {
+        color:white;
+    }
+    &--pink
+    {
+        color:$rose;
+    }
+}
+
+h1,h2,h3,h4
+{
+    font-family: $header-font;
+}
+.page-content h1
+{
+    color:$rose;
+}
+
+h5
+{
+    text-transform: uppercase;
+    font-weight:300;
+}
+
+.entry-content ul li, .entry-content ol li
+{
+    margin-top:.5rem;
+    margin-bottom:.5rem;
+}
+
+.entry-content ol {
+    list-style: none;
+    counter-reset: list-counter;
+  }
+  ol li {
+    counter-increment: list-counter;
+    font-weight:300;
+  }
+  ol li::before {
+    content: counter(list-counter) ". ";
+    color: $rose;
+    font-weight: 600;
+    font-size:2rem;
+    font-family:$header-font;
+  }
+
+  .entry-content ul>li {
+    font-weight:600; 
+  }
+  
+
+
+.light
+{
+    color:white;
+}
+
+.text-left
+{
+    text-align: left;
+}
+
+.text-right
+{
+    text-align:right;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.all-caps
+{
+    text-transform: uppercase;
+}

@@ -1,0 +1,32 @@
+.post-preview
+{
+    @extend .col-md-4;
+    // padding-right: 0;
+    // padding-left: 0;
+    color:white;
+    @media (max-width: 767.98px) {
+        margin-top:5rem;
+        margin-left:3rem;
+        margin-right:3rem;
+    }
+    &__featured-img
+    {
+        @extend .img-fluid;
+        border: solid 10px rgba(0,0,0,0.2);
+    }
+    &__title
+    {
+        font-size:1.4rem;
+        text-align: center;
+        margin-top:1.5rem;
+        line-height: 2rem;
+        margin-bottom:1.5rem;
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+}
+
+.post-preview:hover
+{
+    color:white;
+}

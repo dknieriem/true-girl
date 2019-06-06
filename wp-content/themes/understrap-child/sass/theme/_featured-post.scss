@@ -1,0 +1,49 @@
+.featured-post
+{
+    @extend .col-md-12;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    position: relative;
+    padding-top:19rem;
+    padding-bottom:1rem;
+    border: solid 5px white;
+    color:white;
+    &__overlay
+    {
+        background-color:rgba(0,0,0,0.2);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left:0;
+        z-index: 0;
+    }
+    &__title
+    {
+        z-index:1;
+        position: relative;
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    &__subtitle
+    {
+        text-transform: uppercase;
+        position: relative;
+        z-index: 1;
+        margin-top:1rem;
+        margin-bottom:3rem;
+        text-align: center;
+        font-weight: 300;
+    }
+    &__meta
+    {
+        text-transform: uppercase;
+        position: relative;
+        z-index:1;
+        text-align: center;
+        margin-top:2rem;
+
+    }
+
+}

@@ -1,0 +1,31 @@
+.page-heading
+{
+    @extend .col-md-10;
+    @extend .offset-md-1;
+    padding-bottom:4rem;
+    color:$rose; 
+    &__title
+    {
+        font-size: 3.5rem;
+        margin-top:3rem;
+        margin-bottom:1rem;
+        // color:$brown;
+        text-align: center;
+        @media (max-width: 767.98px) {
+            font-size:2rem;
+        }
+    }
+    &__tagline
+    {
+        font-weight:300;
+        font-size:1.5rem;
+        text-align: center;
+        font-family: $header-font;
+        line-height:1.4;
+        color:#ba6487;
+    }
+    &--white
+    {
+        color:white;
+    }
+}

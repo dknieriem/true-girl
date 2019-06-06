@@ -1,0 +1,83 @@
+.page-section
+{
+    padding-top:4rem;
+    padding-bottom:4rem;
+    justify-content: center;
+    &__content-wrapper
+    {
+        @extend .container;
+    }
+    &__single-column
+    {
+        @extend .col-md-12;
+    }
+    &__single-column--narrow-center
+    {
+        @extend .col-lg-8;
+        @extend .offset-lg-2;
+        @extend .col-md-8;
+        @extend .offset-md-2;
+    }
+    &__single-column-narrow
+    {
+        @extend .col-lg-8;
+        @extend .offset-lg-2;
+        @extend .col-md-8;
+        @extend .offset-md-2;
+    }
+    &__single-column--narrow-left
+    {
+        @extend .col-md-6;
+    }
+    &__single-column--narrow-right
+    {
+        @extend .col-md-6;
+        @extend .offset-md-6;
+    }
+    &__one-half-column
+    {
+        @extend .col-md-6;
+    }
+    &__one-third-column
+    {
+        @extend .col-md-4;
+    }
+    &__two-third-column
+    {
+        @extend .col-lg-8;
+        @extend .col-md-12;
+    }
+}
+
+.page-template-no-hero-advanced-white .page-section:first-of-type, .page-template-event-schedule .page-section:first-of-type, .page-template-hero-page .page-section:first-of-type
+{
+    padding-top:0rem;
+}
+
+.page-section--dark
+{
+    color:white;
+    a
+    {
+        color:white;
+        font-weight:400;
+    }
+}
+
+
+
+.page-section--teal
+{
+    background-color:$teal;
+    color:white;
+}
+
+.page-section--white
+{
+    background-color:white;
+}
+
+.page-section--top-bg
+{
+    padding-top: 550px;
+}

@@ -1,0 +1,47 @@
+.icon-item
+{
+    @extend .col-md-3;
+    display: block;
+   &__icon
+    {
+        @extend .img-fluid;
+        display: block;
+        max-width: 96px;
+        margin:0px auto 25px auto;
+    }
+    &__title
+    {
+        font-family:$header-font;
+        text-align: center;
+        font-size:1.5rem;
+        color:$brown;
+    }
+    &__content
+    {
+        text-align: center;
+        color:$brown;
+    }
+}
+
+.icon-item:hover
+{
+    text-decoration: none;
+}
+
+
+@media (max-width: 767.98px) {
+    .icon-item
+    {
+        margin-top:2.5rem;
+        margin-bottom:2.5rem;
+    }
+    .icon-item:first-child
+    {
+        margin-top:0rem;
+    }
+    .icon-item:last-child
+    {
+        margin-bottom: 0rem;
+    }
+
+ }

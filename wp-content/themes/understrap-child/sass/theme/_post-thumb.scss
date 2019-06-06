@@ -1,0 +1,30 @@
+.post-thumb
+{
+    @extend .col-md-3;
+    
+    @media (max-width: 767.98px) {
+        margin-bottom: 4rem;
+    }
+    &__img
+    {
+        height:175px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-image:url('../img/sample-2.jpg');
+        border:solid 5px white;
+        @media (max-width: 767.98px) {
+            height: 250px;
+        }
+    }
+    &__title
+    {
+        font-family: $body-font;
+        text-transform: uppercase;
+        font-weight: 300;
+        text-align: center;
+        color:white;
+        font-size:1rem;
+        margin:.7rem 1rem;;
+    }
+}

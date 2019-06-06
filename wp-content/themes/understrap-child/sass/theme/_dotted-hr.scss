@@ -1,0 +1,38 @@
+.dotted-hr
+{
+    background-image:url('../img/dot-white.svg');
+    background-repeat: repeat-x;
+    background-position: left center;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    text-align: center;
+    min-height: 10px;
+    &__text
+    {
+        color:white;
+        text-transform: uppercase;
+        font-size:1.2rem;
+        background-color:$teal;
+        padding: .5rem 2rem;
+        font-family:$body-font;
+        display: inline-block;
+        font-weight: 300;
+        line-height: 1;
+        margin-bottom: 0;
+    }
+    &__text--rose-gray
+    {
+        background-color:$rose-gray;
+    }
+    &--gray
+    {
+        background-image:url('../img/dot-gray.svg');
+    }
+    &--pink
+    {
+        background-image:url('../img/dot-pink.svg');
+    }
+}

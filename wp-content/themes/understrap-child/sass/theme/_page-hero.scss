@@ -1,0 +1,6 @@
+.page-hero
+{
+    @extend .img-fluid;
+    @extend .shadowed;
+    border: solid 5px white; 
+}

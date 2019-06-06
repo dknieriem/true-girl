@@ -1,0 +1,24 @@
+.sidebar-cta-card
+{
+    background: rgba(255,255,255,0.7) url('../img/pink-flourish-bg.png') no-repeat center top;
+    background-size: contain;
+    padding: 4rem 1rem 2rem 1rem;
+    text-align: center;
+    margin-left:1rem;
+    &__heading
+    {
+        font-family:$header-font;
+        font-size:1.5rem;
+        color:$rose;
+        margin-top:0.5rem;
+        margin-bottom:1rem; 
+    }
+    &__text
+    {
+        
+    }
+    &__button
+    {
+        
+    }
+}

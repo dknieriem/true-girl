@@ -1,0 +1,56 @@
+.podcast-intro
+{
+    @extend .row;
+    margin-top:3rem;
+    margin-bottom:2rem;
+    &__description-wrapper
+    {
+        
+    }
+    &__description
+    {
+        color:$gray;
+        font-size:1rem;
+        margin-top:0;
+        margin-bottom:0;
+    }
+    &__author-name
+    {
+        font-weight:600;
+        display: block;
+    }
+    &__post-meta
+    {
+        @extend .col-md-6;
+        @extend .order-md-1;
+        text-align:left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__title
+    {
+        color:$pink;
+        font-size:3.5rem;
+        @media (max-width: 768px) {
+            margin-top:1rem;
+            font-size:4rem;
+        }
+    }
+    &__post-image-wrapper
+    {
+        @extend .col-md-6;
+        @extend .img-fluid;
+        @extend .order-md-12;
+        border-radius:6px;
+    }
+    &__post-image
+    {
+        border-radius:6px;
+    }
+    &__subtitle
+    {
+        text-transform: uppercase;
+        color:$gray;
+    }
+}

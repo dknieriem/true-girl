@@ -1,0 +1,131 @@
+
+@import "helpers";
+@import "typography";
+@import "testimonial";
+@import "button";
+@import "child_navbar";
+@import "hero";
+@import "icon-item";
+@import "image-item";
+@import "filter-button";
+@import "page-section";
+@import "post-preview";
+@import "post-card";
+@import "featured_post_carousel";
+@import "post-intro";
+@import "podcast-intro";
+@import "podcast-row";
+@import "post-block";
+@import "pull-quote";
+@import "featured-post";
+@import "dotted-hr";
+@import "post-thumb";
+@import "post-image";
+@import "event-summary";
+@import "page-heading";
+@import "page-hero";
+@import "search-form";
+@import "footer";
+@import "page-wrapper";
+@import "sidebar-cta-card";
+@import "home-email-signup-form";
+@import "wp-shopify";
+
+body
+{
+    font-family:$body-font;
+    padding-top:58px;
+}
+
+body.teal
+{   
+    background-color:$teal;
+    background-image: url('../img/blue-flourish-bg.png');
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center 58px;
+    padding-top:100px;
+}
+
+body.peach
+{
+    background-color:$peach;
+    background-image: url('../img/pink-flourish-section-bg.png');
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center 58px;
+    padding-top:58px;
+}
+
+body.white-flourish
+{
+    background-color:white;
+    background-image: url('../img/pink-flourish-section-bg.png');
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center 58px;
+    padding-top:58px;
+}
+
+.wrapper
+{
+    padding-top:0px;
+    padding-bottom:0px;
+}
+
+// WordPress-specific Styling
+figcaption.wp-caption-text
+{
+    color:$primary;
+    font-weight:300;
+    font-style: italic;
+    padding:.8rem 0;
+    font-size:0.8rem;
+}
+
+body.admin-bar .fixed-top
+{
+    top:32px !important;
+}
+
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+
+    iframe, object, embed { 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.entry-footer
+{
+    padding-bottom:2rem;
+    padding-top:2rem;
+}
+
+// Theme overrides
+
+.pagination
+{
+    justify-content: center;
+}
+
+.page-item.active .page-link
+{
+    background-color:$pink;
+    border-color:$pink;
+}
+.page-link
+{
+    color:$pink;
+}

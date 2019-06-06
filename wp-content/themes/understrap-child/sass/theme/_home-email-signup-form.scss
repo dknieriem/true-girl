@@ -1,0 +1,26 @@
+.home-email-signup-form
+{
+
+        display: flex;
+        flex-direction: row;
+        margin-bottom:1rem;
+    &__input
+    {
+        //@extend .form-control;
+        border-radius:0px;
+        flex-basis:80%;
+        border:none;
+        font-size:0.8rem;
+        padding:.75rem 1rem;
+        @extend .shadowed;
+    }
+    &__submit-button
+    {
+        flex-basis:20%;
+        background-color:$rose;
+        color:white;
+        border:none;
+        font-weight:300;
+        @extend .shadowed;  
+    }
+}

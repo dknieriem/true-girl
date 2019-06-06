@@ -1,0 +1,50 @@
+.image-item
+{
+    display: block;
+   &__image
+    {
+        background-position: 50% 50%;
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-color:transparent;
+        margin:0px auto 25px auto;
+        border-radius:128px;
+        padding-top:128px;
+        width: 128px;
+    }
+    &__title
+    {
+        font-family:$header-font;
+        text-align: center;
+        font-size:1.5rem;
+        color:$brown;
+    }
+    &__content
+    {
+        text-align: center;
+        color:$brown;
+    }
+}
+
+.image-item:hover
+{
+    text-decoration: none;
+}
+
+
+@media (max-width: 767.98px) {
+    .image-item
+    {
+        margin-top:2.5rem;
+        margin-bottom:2.5rem;
+    }
+    // .image-item:first-child
+    // {
+    //     margin-top:0rem;
+    // }
+    // .image-item:last-child
+    // {
+    //     margin-bottom: 0rem;
+    // }
+
+ }
