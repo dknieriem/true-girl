@@ -27,7 +27,7 @@ class WDIViewLicensing_wdi {
     <div class="wrap">
     <div class="update-nag notice wd-notice wdi_help_bar_wrap">
       <div class="wdi_hb_buy_pro">
-        <a class="wdi_update_pro_link" target="_blank" href="https://web-dorado.com/files/fromInstagramFeedWD.php">
+        <a class="wdi_update_pro_link" target="_blank" href="https://10web.io/plugins/wordpress-instagram-feed/?utm_source=instagram_feed&utm_medium=free_plugin">
           <?php _e("UPGRADE TO PREMIUM VERSION", "wd-instagram-feed"); ?>
         </a>
       </div>

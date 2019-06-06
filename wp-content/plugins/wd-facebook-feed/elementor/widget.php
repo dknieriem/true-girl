@@ -57,13 +57,21 @@ class FFWDElementorWidget extends \Elementor\Widget_Base {
         'label' => __('General', 'wd-facebook-feed'),
       ]
     );
-
+    if($this->get_id() !== null){
+      $settings = $this->get_init_settings();
+    }
+    $ffwd_edit_link = add_query_arg(array( 'page' => 'info_ffwd' ), admin_url('admin.php'));
+    $ffwd_nonce = wp_create_nonce('info_ffwd');
+    if(isset($settings) && isset($settings["ffwd_feeds"]) && intval($settings["ffwd_feeds"])>0){
+      $ffwd_id = intval($settings["ffwd_feeds"]);
+      $ffwd_edit_link = add_query_arg(array( 'page' => 'info_ffwd', 'task'=>'edit', 'current_id'=>$ffwd_id, 'ffwd_nonce'=> $ffwd_nonce), admin_url('admin.php'));
+    }
     $this->add_control(
       'ffwd_feeds',
       [
         'label' => __('Select Feed', 'wd-facebook-feed'),
         'label_block' => true,
-        'description' => '',
+        'description' => __('Select the feed to display.', 'wd-facebook-feed') . ' <a data-ffwd_nonce="'.$ffwd_nonce.'" target="_balnk" href="' . $ffwd_edit_link . '">' . __('Edit feed', 'wd-facebook-feed') . '</a>',
         'type' => \Elementor\Controls_Manager::SELECT,
         'default' => $this->default_feed,
         'options' => $this->feed_options

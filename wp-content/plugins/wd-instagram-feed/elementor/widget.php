@@ -58,6 +58,15 @@ class WDIElementorWidget extends \Elementor\Widget_Base {
       ]
     );
 
+    $wdi_feed_id = $this->default_feed;
+    if(isset($settings) && isset($settings["wdi_feeds"]) && intval($settings["wdi_feeds"])>0){
+      $wdi_feed_id = intval($settings["wdi_feeds"]);
+    }
+    if(intval($this->default_feed) !==0){
+      $wdi_edit_link  = add_query_arg(array( 'page' => 'wdi_feeds&task=edit&current_id='.$wdi_feed_id), admin_url('admin.php'));
+    }else{
+      $wdi_edit_link  = add_query_arg(array( 'page' => 'wdi_feeds'), admin_url('admin.php'));
+    }
     $this->add_control(
       'wdi_feeds',
       [
@@ -66,7 +75,8 @@ class WDIElementorWidget extends \Elementor\Widget_Base {
         'description' => __('', 'wd-instagram-feed'),
         'type' => \Elementor\Controls_Manager::SELECT,
         'default' => $this->default_feed,
-        'options' => $this->feed_options
+        'options' => $this->feed_options,
+        'description' => __('Select the feed to display.', 'wd-instagram-feed') .' <a target="_balnk" " href="' . $wdi_edit_link . '">' . __('Edit feed', 'wd-instagram-feed') . '</a>',
       ]
     );
 

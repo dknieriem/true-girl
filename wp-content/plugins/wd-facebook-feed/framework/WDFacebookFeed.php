@@ -687,7 +687,7 @@ $ffwd_info_options[$ffwd_option_db]	=((isset($_POST[$ffwd_option_db])) ? esc_htm
         update_option('ffwd_limit_notice', 1);
       }
       if($data['error']['code'] == 100){
-        self::wd_fb_massage('error', $data['error']['message'].' <a target="_blank" href="https://help.10web.io/hc/en-us/articles/360025514692-Solving-Facebook-Feed-Errors">See more</a>');
+        self::wd_fb_massage('error', $data['error']['message'].' <a target="_blank" href="https://help.10web.io/hc/en-us/articles/360025514692-Solving-Facebook-Feed-Errors?utm_source=facebook_feed&utm_medium=free_plugin">See more</a>');
       }else{
         self::wd_fb_massage('error', $data['error']['message']);
       }

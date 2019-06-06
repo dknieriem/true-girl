@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Instagram Feed by 10Web
-Plugin URI: https://10web.io/plugins/wordpress-instagram-feed/
+Plugin URI: https://10web.io/plugins/wordpress-instagram-feed/?utm_source=instagram_feed&utm_medium=free_plugin
 Description: Instagram Feed by 10Web is a user-friendly tool for displaying user or hashtag-based feeds on your website. You can create feeds with one of the available layouts. It allows displaying image metadata, open up images in lightbox, download them and even share in social networking websites.
-Version: 1.3.16
+Version: 1.3.17
 Author: 10Web
-Author URI: https://10Web.io
+Author URI: https://10Web.io/plugins/?utm_source=instagram_feed&utm_medium=free_plugin
 License: GPLv2 or later
 */
 
@@ -20,7 +20,7 @@ define("WDI_META", "_".WDI_VAR."_meta");
 //define("wdi",'wdi');
 define('WDI_FEED_TABLE','wdi_feeds');
 define('WDI_THEME_TABLE','wdi_themes');
-define('WDI_VERSION','1.3.16');
+define('WDI_VERSION','1.3.17');
 define('WD_WDI_PREFIX', 'wdi' );
 define('WDI_IS_PRO', false );
 $wdi_minify = ((isset($_GET['wdi_no_minify']) && $_GET['wdi_no_minify'] == "true") ? false : true);
@@ -100,7 +100,7 @@ function wdi_save_user_access_token(){
 }
 
 function wdi_no_business_account_notice(){
-  echo "<div class='notice notice-error'><p>Cannot find connected Instagram business page. Either you do not have Instagram business account or it is not connected to current Facebook user's page. <a href='https://help.10web.io/hc/en-us/articles/360022629872' target='_blank'>See more in documentation.</a> </p></div>";
+  echo "<div class='notice notice-error'><p>Cannot find connected Instagram business page. Either you do not have Instagram business account or it is not connected to current Facebook user's page. <a href='https://help.10web.io/hc/en-us/articles/360022629872?utm_source=instagram_feed&utm_medium=free_plugin' target='_blank'>See more in documentation.</a> </p></div>";
 }
 
 function wdi_invalid_fb_token_notice(){
@@ -628,7 +628,7 @@ function wdi_load_scripts($hook){
       "prefix" => "wdi" ,
       "deactivate_class" =>  'wdi_deactivate_link',
       "email" => $admin_data->data->user_email,
-      "plugin_wd_url" => "https://web-dorado.com/products/wordpress-instagram-feed-wd.html",
+      "plugin_wd_url" => "https://10web.io/plugins/wordpress-instagram-feed/?utm_source=instagram_feed&utm_medium=free_plugin",
     ));
   }
 
@@ -880,68 +880,68 @@ function wdi_wd_lib_init(){
       "user_guide" => array(
         0 => array(
           "main_title" => __("Installation and configuration", "wd-instagram-feed"),
-          "url" => "https://web-dorado.com/wordpress-instagram-feed-wd/installation-and-configuration/installation.html",
+          "url" => "https://help.10web.io/hc/en-us/articles/360016277532-Configuring-Instagram-Access-Token?utm_source=instagram_feed&utm_medium=free_plugin",
           "titles" => array(
             array(
               "title" => __("Getting Instagram Access Token", "wd-instagram-feed"),
-              "url" => "https://help.10web.io/hc/en-us/articles/360016277532-Configuring-Instagram-Access-Token"
+              "url" => "https://help.10web.io/hc/en-us/articles/360016277532-Configuring-Instagram-Access-Token?utm_source=instagram_feed&utm_medium=free_plugin"
             )
           )
         ),
         1 => array(
           "main_title" => __("Creating an Instagram Feed", "wd-instagram-feed"),
-          "url" => "https://help.10web.io/hc/en-us/articles/360016497251-Creating-Instagram-Feed",
+          "url" => "https://help.10web.io/hc/en-us/articles/360016497251-Creating-Instagram-Feed?utm_source=instagram_feed&utm_medium=free_plugin",
           "titles" => array(
             array(
               "title" => __("Thumbnails and Masonry Layouts", "wd-instagram-feed"),
-              "url" => "https://help.10web.io/hc/en-us/articles/360016277632",
+              "url" => "https://help.10web.io/hc/en-us/articles/360016277632?utm_source=instagram_feed&utm_medium=free_plugin",
             ),
             array(
               "title" => __("Blog Style Layout", "wd-instagram-feed"),
-              "url" => "https://help.10web.io/hc/en-us/articles/360016277632",
+              "url" => "https://help.10web.io/hc/en-us/articles/360016277632?utm_source=instagram_feed&utm_medium=free_plugin",
             ),
             array(
               "title" => __("Image Browser", "wd-instagram-feed"),
-              "url" => "https://help.10web.io/hc/en-us/articles/360016277632",
+              "url" => "https://help.10web.io/hc/en-us/articles/360016277632?utm_source=instagram_feed&utm_medium=free_plugin",
             ),
             array(
               "title" => __("Lightbox Settings", "wd-instagram-feed"),
-              "url" => "https://help.10web.io/hc/en-us/articles/360016277752",
+              "url" => "https://help.10web.io/hc/en-us/articles/360016277752?utm_source=instagram_feed&utm_medium=free_plugin",
             ),
             array(
               "title" => __("Conditional Filters", "wd-instagram-feed"),
-              "url" => "https://help.10web.io/hc/en-us/articles/360016497371",
+              "url" => "https://help.10web.io/hc/en-us/articles/360016497371?utm_source=instagram_feed&utm_medium=free_plugin",
             ),
           )
         ),
         2 => array(
           "main_title" => __("Publishing Instagram Feed", "wd-instagram-feed"),
-          "url" => "https://help.10web.io/hc/en-us/articles/360016497391",
+          "url" => "https://help.10web.io/hc/en-us/articles/360016497391?utm_source=instagram_feed&utm_medium=free_plugin",
           "titles" => array(
             array(
               "title" => __("Publishing in a Page/Post", "wd-instagram-feed"),
-              "url" => "https://help.10web.io/hc/en-us/articles/360016497391",
+              "url" => "https://help.10web.io/hc/en-us/articles/360016497391?utm_source=instagram_feed&utm_medium=free_plugin",
             ),
             array(
               "title" => __("Publishing as a Widget", "wd-instagram-feed"),
-              "url" => "https://help.10web.io/hc/en-us/articles/360016497391",
+              "url" => "https://help.10web.io/hc/en-us/articles/360016497391?utm_source=instagram_feed&utm_medium=free_plugin",
             ),
             array(
               "title" => __("Publishing by PHP function", "wd-instagram-feed"),
-              "url" => "https://help.10web.io/hc/en-us/articles/360016497391",
+              "url" => "https://help.10web.io/hc/en-us/articles/360016497391?utm_source=instagram_feed&utm_medium=free_plugin",
             ),
           )
         ),
         3 => array(
           "main_title" => __("Styling with Themes", "wd-instagram-feed"),
-          "url" => "https://help.10web.io/hc/en-us/articles/360016277832",
+          "url" => "https://help.10web.io/hc/en-us/articles/360016277832?utm_source=instagram_feed&utm_medium=free_plugin",
           "titles" => array()
         )
       ),
       "overview_welcome_image" => null,
-      "video_youtube_id" => "ijdrpkVAfEw",  // e.g. https://www.youtube.com/watch?v=ijdrpkVAfEw youtube id is the ijdrpkVAfEw
-      "plugin_wd_url" => "https://web-dorado.com/products/wordpress-instagram-feed-wd.html",
-      "plugin_wd_demo_link" => "http://wpdemo.web-dorado.com/instagram-wd/?_ga=1.208438225.212018776.1470817467",
+      "video_youtube_id" => "ijdrpkVAfEw",
+      "plugin_wd_url" => "https://10web.io/plugins/wordpress-instagram-feed/?utm_source=instagram_feed&utm_medium=free_plugin",
+      "plugin_wd_demo_link" => "https://demo.10web.io/instagram-feed/?utm_source=instagram_feed&utm_medium=free_plugin",
       "plugin_wd_addons_link" => "",
       "after_subscribe" => "admin.php?page=wdi_settings", // this can be plagin overview page or set up page
       "plugin_wizard_link" => "",
@@ -1027,7 +1027,7 @@ function wdi_privacy_policy($content){
   $text .= "<br/>";
   $text .= sprintf(__('"Instagram Feed plugin uses Instagram API on website front end.  All the data received from Instagram via API is cached in WordPress database for some short period to provide front end optimization. You may request us to delete your Instagram data if it is accidentally cached in our website database with hashtag feed data. Instagram saves some cookies in browsers of website visitors via API data. These cookies are mostly used for security purposes. They are regulated under terms of Instagram’s %s."', "wd-instagram-feed"), $pp_link);
   $text .= "<br/>";
-  $text .= __('Web-Dorado Disclaimer: The above text is for informational purposes only and is not a legal advice. You must not rely on it as an alternative to legal advice. You should contact your legal counsel to obtain advice with respect to your particular case.', "wd-instagram-feed");
+  $text .= __('10Web Disclaimer: The above text is for informational purposes only and is not a legal advice. You must not rely on it as an alternative to legal advice. You should contact your legal counsel to obtain advice with respect to your particular case.', "wd-instagram-feed");
   $pp_text = '<h3>' . $title . '</h3>' . '<p class="wp-policy-help">' . $text . '</p>';
 
   $content .= $pp_text;

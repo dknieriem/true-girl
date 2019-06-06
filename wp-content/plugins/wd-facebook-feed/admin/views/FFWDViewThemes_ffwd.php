@@ -148,7 +148,7 @@ class  FFWDViewThemes_ffwd
         <div style="font-size: 14px; font-weight: bold;">
             This section allows you to add/edit theme.
             <a style="color: blue; text-decoration: none;" target="_blank"
-               href="https://help.10web.io/hc/en-us/articles/360017960352--Facebook-Feed-WD-Themes">Read More in User Manual</a>
+               href="https://help.10web.io/hc/en-us/articles/360017960352--Facebook-Feed-WD-Themes?utm_source=facebook_feed&utm_medium=free_plugin">Read More in User Manual</a>
         </div>
         <form class="wrap" method="post" id="themes_form" action="admin.php?page=themes_ffwd" style="width:99%;">
             <?php wp_nonce_field('themes_ffwd', 'ffwd_nonce'); ?>

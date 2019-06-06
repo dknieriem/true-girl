@@ -13,6 +13,7 @@ class FFWDElementor {
   private function __construct(){
     // Register widget for Elementor builder.
     add_action('elementor/widgets/widgets_registered', array($this, 'register_elementor_widgets'));
+    add_action('elementor/editor/after_enqueue_scripts', array($this, 'enqueue_elementor_widget_scripts'));
 
     if(!defined('TWBB_VERSION')) {
       //fires after elementor editor styles and scripts are enqueued.
@@ -36,7 +37,9 @@ class FFWDElementor {
   public function enqueue_editor_styles(){
     wp_enqueue_style('twbb-editor-styles', plugin_dir_url(__FILE__) . 'styles/editor.css', array(), '1.0.0');
   }
-
+  public function enqueue_elementor_widget_scripts(){
+    wp_enqueue_script('ffwd_editor_widget_js', plugin_dir_url(__FILE__) . 'js/ffwd_elementor_widget.js', array('jquery'));
+  }
   public function register_widget_category($elements_manager){
     $elements_manager->add_category('tenweb-plugins-widgets', array(
       'title' => __('10WEB', 'tenweb-builder'),

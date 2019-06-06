@@ -4,7 +4,7 @@ Tags: custom instagram feed, feed, instagram, hashtag, Instagram feed, instagram
 Requires at least: 3.9
 Requires PHP: 5.2
 Tested up to: 5.2
-Stable tag: 1.3.16
+Stable tag: 1.3.17
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -506,8 +506,11 @@ Please make sure you don't have any important information before you proceed.
 
 == Changelog ==
 
+= 1.3.17 =
+Added: Feed edit links for Elementor widget.
+
 = 1.3.16 =
-Fixed: First time authorization.  
+Fixed: First time authorization.
 
 = 1.3.15 =
 Added: Banner to install 10Web manager.

@@ -49,14 +49,14 @@ private $model;
       <span class="wdi_help_bar_text">
         <?php _e('This section allows you to set API parameters.', "wd-instagram-feed"); ?>
         <a style="color: #5CAEBD; text-decoration: none;border-bottom: 1px dotted;" class="wdi_hb_t_link" target="_blank"
-           href="https://help.10web.io/hc/en-us/articles/360016277532-Configuring-Instagram-Access-Token"><?php _e('Read More in User Guide', "wd-instagram-feed"); ?></a>
+           href="https://help.10web.io/hc/en-us/articles/360016277532-Configuring-Instagram-Access-Token?utm_source=instagram_feed&utm_medium=free_plugin"><?php _e('Read More in User Guide', "wd-instagram-feed"); ?></a>
       </span>
       <div class="wdi_hb_buy_pro">
         <a class="wdi_support_link" href="https://wordpress.org/support/plugin/wd-instagram-feed" target="_blank">
           <img src="<?php echo WDI_URL; ?>/images/i_support.png" >
           <?php _e("Support Forum", "gmwd"); ?>
         </a>
-        <a class="wdi_update_pro_link" target="_blank" href="https://web-dorado.com/files/fromInstagramFeedWD.php">
+        <a class="wdi_update_pro_link" target="_blank" href="https://10web.io/plugins/wordpress-instagram-feed/?utm_source=instagram_feed&utm_medium=free_plugin">
           <?php _e("UPGRADE TO PREMIUM VERSION", "wd-instagram-feed"); ?>
         </a>
       </div>

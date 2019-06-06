@@ -38,7 +38,7 @@ class FFWDViewOptions_ffwd
 
                 <div style="font-size: 14px; ">
 							    <?php _e("This section allows you to change settings for different views and general options.","ffwd");?>
-                    <a style="color: #5CAEBD; text-decoration: none;border-bottom: 1px dotted;" target="_blank" href="https://help.10web.io/hc/en-us/articles/360017960312-Other-Settings"><?php _e("Read More in User Manual.","ffwd");?></a>
+                    <a style="color: #5CAEBD; text-decoration: none;border-bottom: 1px dotted;" target="_blank" href="https://help.10web.io/hc/en-us/articles/360017960312-Other-Settings?utm_source=facebook_feed&utm_medium=free_plugin"><?php _e("Read More in User Manual.","ffwd");?></a>
                 </div>
 
             </div>

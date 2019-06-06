@@ -2,11 +2,11 @@
 
 /**
  * Plugin Name: Facebook Feed by 10Web
- * Plugin URI: https://10web.io/plugins/wordpress-facebook-feed/
+ * Plugin URI: https://10web.io/plugins/wordpress-facebook-feed/?utm_source=facebook_feed&utm_medium=free_plugin
  * Description: Facebook Feed by 10Web is a completely customizable, responsive solution to help you display your Facebook feed on your WordPress website.
- * Version: 1.1.8
+ * Version: 1.1.9
  * Author: 10Web
- * Author URI: https://10web.io/plugins/
+ * Author URI: https://10web.io/plugins/?utm_source=facebook_feed&utm_medium=free_plugin
  * License: GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
 
@@ -15,7 +15,7 @@ define( 'WD_FFWD_URL', plugins_url( plugin_basename( dirname( __FILE__ ) ) ) );
 define( 'WD_FB_PREFIX', 'ffwd' );
 define( 'WD_FB_IS_FREE', TRUE );
 if (! defined( 'FFWD_VERSION' ) ){
-  define ('FFWD_VERSION',"1.1.8");
+  define ('FFWD_VERSION',"1.1.9");
 }
 
 add_action('admin_notices', 'ffwd_login_notice');
@@ -236,50 +236,50 @@ Multiple Feeds per Post/Page", "wd_ads"),
       "user_guide" => array(
         0 => array(
           "main_title" => __("Installation", "wd_ads"),
-          "url" => "https://help.10web.io/hc/en-us/articles/360017959512-Getting-Facebook-Access-Token",
+          "url" => "https://help.10web.io/hc/en-us/articles/360017959512-Getting-Facebook-Access-Token?utm_source=facebook_feed&utm_medium=free_plugin",
           "titles" => array()
         ),
         1 => array(
           "main_title" => __("Options", "wd_ads"),
-          "url" => "https://help.10web.io/hc/en-us/articles/360018233951-Configuring-Facebook-feed",
+          "url" => "https://help.10web.io/hc/en-us/articles/360018233951-Configuring-Facebook-feed?utm_source=facebook_feed&utm_medium=free_plugin",
           "titles" => array()
         ),
         2 => array(
           "main_title" => __("Creating a Facebook Feed", "wd_ads"),
-          "url" => "https://help.10web.io/hc/en-us/articles/360018233951-Configuring-Facebook-feed",
+          "url" => "https://help.10web.io/hc/en-us/articles/360018233951-Configuring-Facebook-feed?utm_source=facebook_feed&utm_medium=free_plugin",
           "titles" => array(
             array(
               "title" => __("Main Settings", "wd_ads"),
-              "url" => "https://help.10web.io/hc/en-us/articles/360018233951-Configuring-Facebook-feed",
+              "url" => "https://help.10web.io/hc/en-us/articles/360018233951-Configuring-Facebook-feed?utm_source=facebook_feed&utm_medium=free_plugin",
             ),
             array(
               "title" => __("Lightbox settings", "wd_ads"),
-              "url" => "https://help.10web.io/hc/en-us/articles/360018233951-Configuring-Facebook-feed",
+              "url" => "https://help.10web.io/hc/en-us/articles/360018233951-Configuring-Facebook-feed?utm_source=facebook_feed&utm_medium=free_plugin",
             ),
             array(
               "title" => __("Comments", "wd_ads"),
-              "url" => "https://help.10web.io/hc/en-us/articles/360018233951-Configuring-Facebook-feed",
+              "url" => "https://help.10web.io/hc/en-us/articles/360018233951-Configuring-Facebook-feed?utm_source=facebook_feed&utm_medium=free_plugin",
             ),
             array(
               "title" => __("Page plugin", "wd_ads"),
-              "url" => "https://help.10web.io/hc/en-us/articles/360018233951-Configuring-Facebook-feed",
+              "url" => "https://help.10web.io/hc/en-us/articles/360018233951-Configuring-Facebook-feed?utm_source=facebook_feed&utm_medium=free_plugin",
             )
           )
         ),
         3 => array(
           "main_title" => __("Themes", "wd_ads"),
-          "url" => "https://help.10web.io/hc/en-us/articles/360017960352--Facebook-Feed-WD-Themes",
+          "url" => "https://help.10web.io/hc/en-us/articles/360017960352--Facebook-Feed-WD-Themes?utm_source=facebook_feed&utm_medium=free_plugin",
           "titles" => array(),
         ),
         4 => array(
           "main_title" => __("Publishing Facebook Feed", "wd_ads"),
-          "url" => "https://help.10web.io/hc/en-us/articles/360017960592-Publishing-Facebook-feed",
+          "url" => "https://help.10web.io/hc/en-us/articles/360017960592-Publishing-Facebook-feed?utm_source=facebook_feed&utm_medium=free_plugin",
           "titles" => array()
         ),
       ),
-      "plugin_wd_demo_link" => "https://demo.10web.io/facebook-feed",
+      "plugin_wd_demo_link" => "https://demo.10web.io/facebook-feed?utm_source=facebook_feed&utm_medium=free_plugin",
       "plugin_wd_url" => "https://10web.io/plugins/wordpress-facebook-feed/?utm_source=facebook_feed&utm_medium=free_plugin",
-      "plugin_wd_docs_link" => "https://help.10web.io/hc/en-us/sections/360002528712-Facebook-Feed-WD",
+      "plugin_wd_docs_link" => "https://help.10web.io/hc/en-us/sections/360002528712-Facebook-Feed-WD?utm_source=facebook_feed&utm_medium=free_plugin",
       "after_subscribe" => admin_url('admin.php?page=info_ffwd'),
       "plugin_wizard_link" => NULL,
       "plugin_menu_title" => "Facebook Feed by 10Web",

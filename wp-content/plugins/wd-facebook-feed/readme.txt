@@ -4,7 +4,7 @@ Tags: customizable facebook feed, facebook, facebook feed, facebook group, faceb
 Requires at least: 3.4
 Requires PHP: 5.2
 Tested up to: 5.2
-Stable tag: 1.1.8
+Stable tag: 1.1.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,7 +22,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 [Premium Facebook Feed by 10Web](https://10web.io/plugins/wordpress-facebook-feed/)    
     
     
-[Special Offer for all Premium Plugins](https://10web.io/plugins-bundle-pricing/)    
+[Special Offer for all Premium Plugins](https://10web.io/wordpress-plugins/)    
 
 Integrating customized content to your WordPress website from Facebook can't be any easier when using 10Web Facebook Feed plugin. It provides features to display a wide range of content from any page with full control over the content length, type and styling.
 
@@ -105,8 +105,11 @@ The plugin uses Facebook API to get public data from Facebook. All the received 
 
 == Changelog ==
 
+= 1.1.9 =
+* Added: Feed edit links for Elementor widget.
+
 = 1.1.8 =
-* Fixed: Notice on creating a feed.  
+* Fixed: Notice on creating a feed.
 
 = 1.1.7 =
 * Added: Banner to install 10Web manager.  
@@ -283,11 +286,11 @@ Added: Support forum and Review links.
 == Screenshots ==
 1.  10Web Facebook Feed - Timeline        
 2.  10Web Facebook Feed - Videos         
-3.  10Web Facebook Feed - Mansory view         
-4.  10Web Facebook Feed - Event     
+3.  10Web Facebook Feed - Albums view         
+4.  10Web Facebook Feed - Mansory View     
 5.  10Web Facebook Feed - Edit Facebook Feed     
-6.  10Web Facebook Feed - Edit Options      
-7.  10Web Facebook Feed - Edit Theme    
+6.  10Web Facebook Feed - Edit Theme     
+7.  10Web Facebook Feed - Edit Options  
 
 == Installation ==
 

@@ -8,6 +8,16 @@ function rvm_delete_last_character( $str ) {
                 $output_temp = substr( $str, 0, -1 );
                 return $output_temp;
 }
+//Get rid of first character if match specific character
+function rvm_delete_first_character( $str, $chartomatch ) {
+                if( ( substr( $str, 0, 1 ) == $chartomatch ) ) {
+                    $output_temp = substr( $str, 1 );
+                }
+
+                else { $output_temp = $str; }                
+                
+                return $output_temp;
+}
 //check numeric entry values for array
 function rvm_check_is_number_in_array( $array_to_check ) //check if numeric, used e.g. for markers lat and long
                 {
@@ -73,7 +83,7 @@ function rvm_retrieve_custom_map_dir_and_url_path( $rvm_custom_maps_options ) {
                 $destination_dir_path = $destination[ 'path' ];
                 $destination_basedir_path = $destination[ 'basedir' ]; //i.e /Applications/MAMP/htdocs/wordpress4.3/wp-content/uploads
                 $destination_baseurl_path = $destination[ 'baseurl' ]; // i.e http://localhost:8888/wordpress4.3/wp-content/uploads 
-                //if we have new dynamic format year/month, so we get 1 elemnt only
+                //if we have new dynamic format year/month, so we get 1 element only
                 if ( count( $rvm_retrieve_custom_map_dir_and_url_path ) < 2 ) {
                                 $rvm_retrieve_custom_map_dir_and_url_path[ 0 ] = $destination_basedir_path . '/' . $rvm_custom_maps_options;
                                 $rvm_retrieve_custom_map_dir_and_url_path[ 1 ] = $destination_baseurl_path . '/' . $rvm_custom_maps_options;
@@ -147,7 +157,15 @@ function rvm_include_custom_map_settings( $map_id, $rvm_selected_map ) {
                                 } //$rvm_custom_maps_options as $key => $value
                 } //if ( rvm_is_custom_map( $map_id ) || rvm_retrieve_custom_maps_options() )
                 if ( !isset( $rvm_custom_maps_found_in_option ) ) {
-                                include RVM_INC_PLUGIN_DIR . '/regions/' . $rvm_selected_map . '-regions.php';
+                                if( file_exists( RVM_INC_PLUGIN_DIR . '/regions/' . $rvm_selected_map . '-regions.php') ) {
+                                    include RVM_INC_PLUGIN_DIR . '/regions/' . $rvm_selected_map . '-regions.php';
+                                    return $regions;
+                                }
+
+                                else { 
+                                    $regions = "";
+                                }
+                                
                 } //!isset($rvm_custom_maps_found_in_option)
                 return $regions;
 }
@@ -178,5 +196,67 @@ function rvm_retrieve_custom_maps_url_path( $rvm_custom_map_name ) {
                             }  //if( $rvm_custom_map_name ==  $value )                                   
                         } //$rvm_custom_maps_options as $key => $value
             } //!empty( $rvm_custom_maps_options )
+}
+//Get marker module with file extension (rvm_cimm.zip)
+function rvm_retrieve_marker_module_name( $filename ) {
+                $marker_module_name_array = explode( '/', trim( $filename ) );                
+                // end() get last item of an array
+                return trim( end( $marker_module_name_array ) );
+}
+//Retrieve marker custom icon name from path
+function rvm_retrieve_marker_icon_name( $filename ) {
+                //$filename will be sometjing like http://localhost/wordpress-4.9.4/wp-content/uploads/2018/03/favicon.png. In order to maintain the path even in other wordpress installation (i.e. moving WP to another domain) user will not loose the rlative path
+                $marker_icon_name_array = explode( '/', trim( $filename ) );
+                $marker_icon_name_array_count = count( $marker_icon_name_array );
+                if ( $marker_icon_name_array_count > 2 ) {             
+                    $marker_icon_name = $marker_icon_name_array[$marker_icon_name_array_count-3] . '/' .
+                     $marker_icon_name_array[$marker_icon_name_array_count-2] . '/' . $marker_icon_name_array[$marker_icon_name_array_count-1] ; // i.e.: 2018/03/favicon.png
+                } else { $marker_icon_name = $filename; } 
+                return trim( $marker_icon_name );
+}
+
+//Retrieve marker custom icon name from path
+function rvm_set_absolute_upload_dir_url() {
+    // Access the WP upload dir 
+    //WP_filesystem not needed. On shortcode (front-end) will not make the map displaying  
+    $upload_folder = wp_upload_dir();
+    $upload_folder_url = $upload_folder[ 'baseurl' ] . '/';// i.e : http://localhost:8888/wordpress4.3/wp-content/uploads/
+    $upload_folder_dir = $upload_folder[ 'basedir' ] . '/';//i.e /Applications/MAMP/htdocs/wordpress4.3/wp-content/uploads/
+    //$upload_folder_array[0] = is_ssl() ? substr( $upload_folder_url, 6) : substr( $upload_folder_url, 5);
+
+    $upload_folder_array[0] = $upload_folder_url;
+    //$upload_folder_array[0] = '/wordpress-4.9.4/wp-content/uploads/';
+    $upload_folder_array[1] = $upload_folder_dir;
+    return $upload_folder_array ;
+}
+//Check if user uploaded a custom marker icon
+function rvm_check_custom_marker_icon_available( $rvm_custom_marker_icon_path ) {
+    if( isset ( $rvm_custom_marker_icon_path ) && !empty( $rvm_custom_marker_icon_path ) && $rvm_custom_marker_icon_path != 'default' ) {
+        $rvm_is_custom_marker_icon_path = true;
+    }
+    else {
+        $rvm_is_custom_marker_icon_path = false;
+    }
+
+    return $rvm_is_custom_marker_icon_path ;
+}
+//Check whether marker module yet in download directory
+function rvm_is_marker_module_in_download_dir_yet( $rvm_marker_module_name ) {
+                //$rvm_marker_module_name : i.e: 2018/03/123456_rvm_cimm.php
+                //retrieve only year/month subdir              
+                $upload_yy_mm = substr($rvm_marker_module_name,0,8);//i.e. 2018/03/
+                //retrieve only module name
+                $rvm_marker_module_array = explode( '/', trim( $rvm_marker_module_name ) );
+                $rvm_marker_module_name = end( $rvm_marker_module_array );
+                $upload_folder = wp_upload_dir();
+                $upload_folder_dir = $upload_folder[ 'basedir' ];                
+                $rvm_upload_dir = scandir( $upload_folder_dir . '/' . $upload_yy_mm );
+                if ( in_array( $rvm_marker_module_name, $rvm_upload_dir ) ) {
+                                $rvm_marker_module_still_in_upload_dir = true;
+                } //in_array( $rvm_custom_marker_module_name, $rvm_upload_dir )
+                else {
+                                $rvm_marker_module_still_in_upload_dir = false;
+                }
+                return $rvm_marker_module_still_in_upload_dir;
 }
 ?>

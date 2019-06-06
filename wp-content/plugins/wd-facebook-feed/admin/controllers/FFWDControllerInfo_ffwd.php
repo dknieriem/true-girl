@@ -60,7 +60,8 @@ class FFWDControllerInfo_ffwd {
 
     require_once WD_FFWD_DIR . "/admin/views/FFWDViewInfo_ffwd.php";
     $view = new FFWDViewInfo_ffwd($model);
-    $id = ((isset($_POST['current_id']) && esc_html(stripslashes($_POST['current_id'])) != '') ? esc_html(stripslashes($_POST['current_id'])) : 0);
+    $current_id = WDW_FFWD_Library::get('current_id');
+    $id = ((isset($current_id) && esc_html(stripslashes($current_id)) != '') ? esc_html(stripslashes($current_id)) : 0);
     $view->edit($id);
   }
 

@@ -227,8 +227,8 @@ class FFWD_Notices {
         $notices['one_week_support'] = array(
             'title' => __('Hey! How\'s It Going?', $this->prefix),
             'msg' => sprintf(__('Thank you for using WordPress %s! We hope that you\'ve found everything you need, but if you have any questions:', $this->prefix), $this->plugin_name),
-            'link' => '<li><span class="dashicons dashicons-media-text"></span><a target="_blank" href="https://help.10web.io/hc/en-us/articles/360017959512-Getting-Facebook-Access-Token">' . __('Check out User Guide', $this->prefix) . '</a></li>
-                <li><span class="dashicons dashicons-sos"></span><a target="_blank" href="https://help.10web.io/hc/en-us/requests/new">' . __('Get Some Help', $this->prefix) . '</a></li>
+            'link' => '<li><span class="dashicons dashicons-media-text"></span><a target="_blank" href="https://help.10web.io/hc/en-us/articles/360017959512-Getting-Facebook-Access-Token?utm_source=facebook_feed&utm_medium=free_plugin">' . __('Check out User Guide', $this->prefix) . '</a></li>
+                <li><span class="dashicons dashicons-sos"></span><a target="_blank" href="https://help.10web.io/hc/en-us/requests/new?utm_source=facebook_feed&utm_medium=free_plugin">' . __('Get Some Help', $this->prefix) . '</a></li>
                 <li><span class="dashicons dashicons-dismiss"></span><a href="' . $one_week_support . '">' . __('Never show again', $this->prefix) . '</a></li>',
             'int' => 7
         );

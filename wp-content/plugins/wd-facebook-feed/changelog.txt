@@ -1,5 +1,8 @@
 == Changelog ==
 
+= 1.1.9 =
+* Added: Feed edit links for Elementor widget.
+
 = 1.1.8 =
 * Fixed: Notice on creating a feed.
 
