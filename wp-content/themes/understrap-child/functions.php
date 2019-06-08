@@ -39,9 +39,55 @@ $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'text
   'settings' => 'text_color',
 ) ) );
 
+
+
 //TODO: More. see https://developer.wordpress.org/themes/customize-api/customizer-objects/
 
 //Theme fonts
+
+//Typography Section
+$wp_customize->add_section( 'typography', array(
+  'title' => __( 'Typography' ),
+  'description' => __( 'Set theme fonts here' ),
+  'priority' => 50,
+  'capability' => 'edit_theme_options',
+) );
+
+//$body-font:"Open Sans";
+//$header-font:"Prata";
+$wp_customize->add_setting( 'body_font', array(
+    'default' => 'Open Sans',
+    'sanitize_callback' => 'sanitize_text_field',
+) );
+
+$wp_customize->add_control('body_font_control', array(
+    'type' => 'select',
+    'choices' => array(
+        'Open Sans' => 'Open Sans',
+        'Prata' => 'Prata',
+    ),
+    'label' => __( 'Body Font', 'understrap-child' ),
+    'section' => 'typography',
+    'settings' => 'body_font',
+) );
+
+//$body-font:"Open Sans";
+//$header-font:"Prata";
+$wp_customize->add_setting( 'header_font', array(
+    'default' => 'Prata',
+    'sanitize_callback' => 'sanitize_text_field',
+) );
+
+$wp_customize->add_control('header_font_control', array(
+    'type' => 'select',
+    'choices' => array(
+        'Open Sans' => 'Open Sans',
+        'Prata' => 'Prata',
+    ),
+    'label' => __( 'Header Font', 'understrap-child' ),
+    'section' => 'typography',
+    'settings' => 'header_font',
+) );
 
 
 //Theme logo
@@ -53,9 +99,20 @@ $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'text
 function understrap_custom_css()
 {
     ?>
-         <style type="text/css">
-            body, kbd, pre, .form-control-plaintext, .btn-primary, .btn-primary.disabled, .btn-primary:disabled, .btn-warning, .btn-warning.disabled, .btn-warning:disabled, .btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active, .show > .btn-warning.dropdown-toggle, .btn-light, .btn-light.disabled, .btn-light:disabled, .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle .btn-outline-primary:hover, .wpcf7 input:hover[type=submit], .btn-outline-primary:not(:disabled):not(.disabled):active, .wpcf7 input:not(:disabled):not(.disabled):active[type=submit], .btn-outline-primary:not(:disabled):not(.disabled).active, .wpcf7 input:not(:disabled):not(.disabled).active[type=submit], .show > .btn-outline-primary.dropdown-toggle, .wpcf7 .show > input.dropdown-toggle[type=submit], .btn-outline-warning:hover, .btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active, .show > .btn-outline-warning.dropdown-toggle, .btn-outline-light:hover, .btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active, .show > .btn-outline-light.dropdown-toggle, .dropdown-menu, .dropdown-item, .dropdown-item-text, .badge-primary,  .badge-primary[href]:hover, .badge-primary[href]:focus , .badge-warning, .badge-warning[href]:hover, .badge-warning[href]:focus, .badge-light, .badge-light[href]:hover, .badge-light[href]:focus, .list-group-item-action:active, .popover-body, .text-body, .navbar-dark .navbar-nav .dropdown-menu .nav-link { color: <?php echo get_theme_mod('text_color', '#212529'); ?>; }
-         </style>
+    <!-- text color -->
+     <style type="text/css">
+        body, kbd, pre, .form-control-plaintext, .btn-primary, .btn-primary.disabled, .btn-primary:disabled, .btn-warning, .btn-warning.disabled, .btn-warning:disabled, .btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active, .show > .btn-warning.dropdown-toggle, .btn-light, .btn-light.disabled, .btn-light:disabled, .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle .btn-outline-primary:hover, .wpcf7 input:hover[type=submit], .btn-outline-primary:not(:disabled):not(.disabled):active, .wpcf7 input:not(:disabled):not(.disabled):active[type=submit], .btn-outline-primary:not(:disabled):not(.disabled).active, .wpcf7 input:not(:disabled):not(.disabled).active[type=submit], .show > .btn-outline-primary.dropdown-toggle, .wpcf7 .show > input.dropdown-toggle[type=submit], .btn-outline-warning:hover, .btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active, .show > .btn-outline-warning.dropdown-toggle, .btn-outline-light:hover, .btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active, .show > .btn-outline-light.dropdown-toggle, .dropdown-menu, .dropdown-item, .dropdown-item-text, .badge-primary,  .badge-primary[href]:hover, .badge-primary[href]:focus , .badge-warning, .badge-warning[href]:hover, .badge-warning[href]:focus, .badge-light, .badge-light[href]:hover, .badge-light[href]:focus, .list-group-item-action:active, .popover-body, .text-body, .navbar-dark .navbar-nav .dropdown-menu .nav-link { color: <?php echo get_theme_mod('text_color', '#212529'); ?>; }
+     </style>
+     <!-- body font -->
+     <style type="text/css">
+        body, .dotted-hr__text, .event-philly__title, .footer__heading, .podcast-row__resources-header, .post-thumb__title, .testimonial__source {
+            font-family: <?php echo get_theme_mod('body_font', 'Open Sans'); ?>; }
+    </style>
+    <!-- header font -->
+    <style type="text/css">
+        .hero__header, .icon-item__title, .image-item__title, .page-heading__tagline , .podcast-row__title, .pull-quote__content, .sidebar-cta-card__heading, .testimonial, .heading, h1, h2, h3, h4, .page-content h1, {
+            font-family: <?php echo get_theme_mod('header_font', 'Prata'); ?>; }
+    </style>
     <?php
 }
 add_action( 'wp_head', 'understrap_custom_css');
