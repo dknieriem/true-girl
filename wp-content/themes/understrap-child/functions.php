@@ -1,4 +1,45 @@
 <?php
+
+// Register custom theme settings
+add_action('customize_register','understrap_custom_customizer');
+function understrap_custom_customizer( $wp_customize ) {
+
+//Theme colors
+
+$wp_customize->add_setting( 'main_color', array(
+  'default' => '#f72525',
+  'sanitize_callback' => 'sanitize_hex_color',
+) );
+
+$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_color_control', array(
+  'label' => __( 'Main Color', 'understrap-child' ),
+  'section' => 'colors',
+  'settings' => 'main_color',
+) ) );
+
+$wp_customize->add_setting( 'accent_color', array(
+  'default' => '#f72525',
+  'sanitize_callback' => 'sanitize_hex_color',
+) );
+
+$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'accent_color_control', array(
+  'label' => __( 'Accent Color', 'understrap-child' ),
+  'section' => 'colors',
+  'settings' => 'accent_color',
+) ) );
+
+//TODO: More. see https://developer.wordpress.org/themes/customize-api/customizer-objects/
+
+//Theme fonts
+
+
+//Theme logo
+
+
+}
+
+
+add_action( 'wp_enqueue_scripts', 'understrap_remove_scripts', 20 );
 function understrap_remove_scripts() {
     wp_dequeue_style( 'understrap-styles' );
     wp_deregister_style( 'understrap-styles' );
@@ -8,7 +49,6 @@ function understrap_remove_scripts() {
 
     // Removes the parent themes stylesheet and scripts from inc/enqueue.php
 }
-add_action( 'wp_enqueue_scripts', 'understrap_remove_scripts', 20 );
 
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
