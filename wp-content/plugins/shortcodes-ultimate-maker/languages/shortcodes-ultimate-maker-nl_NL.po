@@ -1,0 +1,697 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Shortcodes Ultimate: Maker addon v1.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-10 22:55+0300\n"
+"PO-Revision-Date: 2013-11-28 11:54+0100\n"
+"Last-Translator: J.L.Dokter <jldokter@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ shortcodes-ultimate-maker
+# @ sumk
+#: shortcodes-ultimate-maker.php:60
+msgid "Shortcodes Ultimate: Maker addon"
+msgstr "Shortcodes Ultimate: Maker add-on"
+
+# @ shortcodes-ultimate-maker
+# @ sumk
+#: shortcodes-ultimate-maker.php:61
+msgid "Vladimir Anokhin"
+msgstr "Vladimir Anokhin"
+
+# @ shortcodes-ultimate-maker
+# @ sumk
+#: shortcodes-ultimate-maker.php:62
+msgid "Shortcodes Ultimate add-on. Provides UI for creating custom shortcodes"
+msgstr ""
+"Shortcodes Ultimate add-on. Voorziet in een gebruikers omgeving voor het "
+"maken van eigen shortcodes."
+
+# @ shortcodes-ultimate-maker
+#: classes/sunrise.class.php:279
+msgid "Settings"
+msgstr "Instellingen"
+
+# @ sumk
+#: inc/assets.php:16
+msgid "Select icon"
+msgstr "Selecteer Icon"
+
+# @ sumk
+#: inc/assets.php:17
+msgid "Use this image"
+msgstr "Gebruik deze image"
+
+# @ shortcodes-ultimate-maker
+#: inc/check.php:9
+msgid ""
+"Please install and activate latest version of <b>Shortcodes Ultimate</b> to "
+"use it's addon <b>Shortcodes Ultimate: Maker</b>.<br />Deactivate this addon "
+"to hide message."
+msgstr ""
+"Installeer en activeer de laatste versie van <b> Shortcodes Ultimate </ b> "
+"voor de Add-On <b> Shortcodes Ultimate: Maker </ b> te gebruiken.<br /> Als "
+"de Add-On is ingeschakeld, wordt dit bericht niet meer weergegeven."
+
+# @ shortcodes-ultimate-maker
+#: inc/check.php:10
+msgid "Install Sortcodes Ultimate"
+msgstr "Installeer Shortcodes Ultimate"
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:6 inc/metabox.php:34 inc/metabox.php:115
+msgid "Short name (slug)"
+msgstr "Korte naam (slug)"
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:7
+msgid ""
+"Allowed characters: a-z, 0-9, '_' (underscore). Enter attribute name that "
+"will be used in resulting shortcode. For example: if you type 'style', you "
+"will get next shortcode [shortcode style=\"\"]."
+msgstr ""
+"Toegestane karakters: a-z, 0-9, '_' (onderliggende streep). Geef een "
+"attribuut-naam in, die zal worden gebruikt in de uiteindelijke code. Bij "
+"voorbeeld: als u typt 'style', krijgt u de volgende shortcode [shortcode "
+"style=\"\"]."
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:8 inc/metabox.php:123
+msgid "Default value"
+msgstr "Standaard waarde"
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:9
+msgid ""
+"Enter default value for attribute. This value will be used in shortcode if "
+"value not specified. Also, this value will be selected by default in "
+"shortcode generator."
+msgstr ""
+"Geef de standaard waarde voor het attribuut. Deze waarde zal in de shortcode "
+"worden gebruikt als een specifieke waarde niet is opgegeven. Ook zal deze "
+"waarde standaard worden gekozen door de shortcode-generator."
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:10 inc/metabox.php:131
+msgid "Field type"
+msgstr "Veld type"
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:11
+msgid ""
+"You can use different attribute field types to make use of the shortcode "
+"easier. Field types will be used in shortcode generator window (Insert "
+"shortcode button at post editing screen)."
+msgstr ""
+"U kunt gebruik maken van verschillende soorten attribuut velden om het "
+"gebruik van shortcodes gemakkelijker te maken. Veldtypen zullen worden "
+"gebruikt in het shortcode generator venster (voegt een shortcode bewerk-knop "
+"toe aan het bewerkingsscherm van berichten)."
+
+# @ shortcodes-ultimate-maker
+# @ sumk
+#: inc/help.php:12 inc/helpers.php:101
+msgid "Text"
+msgstr "Tekst"
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:13
+msgid ""
+"Simple text field. Specified default value will be used as plain text in "
+"this field."
+msgstr ""
+"Eenvoudig tekstveld. De aangegeven waarde wordt als pure tekst in dit veld "
+"gebruikt."
+
+# @ shortcodes-ultimate-maker
+# @ sumk
+#: inc/help.php:14 inc/helpers.php:102
+msgid "Number"
+msgstr "Aantal"
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:15
+msgid ""
+"Integer value. You can specify minimum and maximum values available in this "
+"field and step size."
+msgstr ""
+"Hele waarde. U kunt minimale en maximale waarden aan dit gebied en de "
+"stapgrootte toekennen."
+
+# @ shortcodes-ultimate-maker
+# @ sumk
+#: inc/help.php:16 inc/helpers.php:103
+msgid "Color"
+msgstr "Kleur"
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:17
+msgid ""
+"Color picker. Please set default value with # symbol in beginning. For "
+"example: #ffcc00 (yellow), #000 (black)."
+msgstr ""
+"Kleur kiezer. Kiest u een standaard waarde beginnend met een # symbool. Bij "
+"voorbeeld: #ffcc00 (geel), #000 (zwart)."
+
+# @ shortcodes-ultimate-maker
+# @ sumk
+#: inc/help.php:18 inc/helpers.php:104
+msgid "Dropdown"
+msgstr "Dropdown"
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:19
+msgid ""
+"Dropdown list. You can enter unlimited options for this list in special "
+"field \"Dropdown options\". Use next format:"
+msgstr ""
+"Dropdown lijst. U hebt een ongelimiteerd aantal mogelijkheden voor deze "
+"lijst in het speciale veld: \"Dropdown opties\". Gebruik het volgende "
+"formaat:"
+
+# @ sumk
+#: inc/help.php:20
+msgid "Red color"
+msgstr "Kleur rood"
+
+# @ sumk
+#: inc/help.php:20
+msgid "Blue color"
+msgstr "Kleur blauw"
+
+# @ sumk
+#: inc/help.php:20
+msgid "Green color"
+msgstr "Kleur groen"
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:21
+msgid ""
+"Use option value (not label) to specify default selected value. For example: "
+"'red'"
+msgstr ""
+"Gebruik de keuze waarde (niet het label) om een standaard waarde te kiezen. "
+"Voorbeel: 'red'"
+
+# @ shortcodes-ultimate-maker
+# @ sumk
+#: inc/help.php:22 inc/helpers.php:105
+msgid "Switch"
+msgstr "Schakel"
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:23
+msgid ""
+"This field works like a check box. It allows you to select the Yes or No "
+"option when creating a shortcode. As a default value, use 'yes' or 'no'."
+msgstr ""
+"Dit veld werkt als een selectievakje. Hiermee kunt u de Ja of Nee optie "
+"selecteren bij het maken van een shortcode. Als standaard waarde, gebruik u "
+"'ja' of 'nee'."
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:24
+msgid "Upload"
+msgstr "Upload"
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:25
+msgid ""
+"This field allows you to upload files from computer and use uploaded file "
+"link as value."
+msgstr ""
+"Via dit veld kunt u bestanden uploaden vanaf uw computer en wordt de "
+"bestandsnaam als waarde gebruikt. "
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:28 inc/metabox.php:67
+msgid "HTML mode"
+msgstr "HTML mode"
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:29
+msgid ""
+"In this mode, you can only use HTML code and a specific set of variables. "
+"The set of variables depends on the added attributes. For example, if you "
+"add the attribute 'color', you can use the variable {{color}} in your code. "
+"Independently of added attributes, you can use the variable {{content}}, "
+"which will be replaced by the contents of the shortcode (the text between "
+"the opening and closing shortcode tags)."
+msgstr ""
+"In deze modus kunt u alleen gebruik maken van HTML-code en een specifieke "
+"set variabelen. De reeks variabelen is afhankelijk van de toegevoegde "
+"kenmerken. Bijvoorbeeld, als u het kenmerk 'kleur' toevoegt, kunt u gebruik "
+"maken van de variabele {{color}} in de code. Onafhankelijk van de "
+"toegevoegde attributen, kunt u gebruik maken van de variabele {{content}}, "
+"die zal worden vervangen door de inhoud van de shortcode (de tekst tussen de "
+"open - en sluit shortcode-tags)."
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:30 inc/help.php:35 inc/help.php:39
+msgid "Example code"
+msgstr "Voorbeeld code"
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:32 inc/metabox.php:68
+msgid "PHP return"
+msgstr "PHP return"
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:33
+msgid ""
+"This mode is a bit complicated than the previous. Using this mode, you need "
+"to write code in PHP. The output of the code must be returned, but not "
+"displayed. To do this, use 'return' operator. In this mode you can not use "
+"functions such as print_r, echo or die. If you do not understand the "
+"difference between the return and echo in PHP, then better to use the HTML "
+"mode or PHP echo."
+msgstr ""
+"Deze modus is meer ingewikkeld dan de vorige. Met behulp van deze functie, "
+"moet u code in PHP te schrijven. Het resultaat van de code moet worden "
+"geretourneerd, maar niet weergegeven. Om dit te doen, gebruikt u de 'return' "
+"operator. In deze modus kunt u geen gebruik maken van functies zoals "
+"print_r, echo of die. Als u het verschil tussen return en echo in PHP niet "
+"kent, dan is het beter om de HTML-modus of PHP echo te gebruiken."
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:34
+msgid ""
+"All added attributes are available as variables. For example, if you add an "
+"attribute with short name 'color', then the code can use a variable named "
+"$color. Variable $content will contain actual shortcode content (the text "
+"between the opening and closing shortcode tags)."
+msgstr ""
+"Alle toegevoegde attributen zijn beschikbaar als variabelen. Bij voorbeeld, "
+"als u een attribuut toevoegt met de korte naam 'color'. zal een varaiabele "
+"met de naam $color voor de code beschikbaar zijn. De variabele $content zal "
+"de actuele inhoud van de shortcode-editor bevatten (de tekst tussen de open "
+"- en sluit tags van de shortcode zelf)."
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:37 inc/metabox.php:69
+msgid "PHP echo"
+msgstr "PHP echo"
+
+# @ shortcodes-ultimate-maker
+#: inc/help.php:38
+msgid ""
+"This mode is similar to the previous (PHP return). However, in this mode you "
+"can use any of the functions and operators that display text. It is "
+"recommended to use the echo statement to output the code. All attributes are "
+"available as variables."
+msgstr ""
+"Deze modus is vergelijkbaar met de vorige (PHP return). Echter, in deze "
+"modus kunt u een van de functies en operators gebruiken die tekst weergeven. "
+"Het is aanbevolen om het echo statement te gebruiken om de code te "
+"retourneren. Alle attributen zijn als variabelen beschikbaar."
+
+# @ sumk
+#: inc/helpers.php:106
+msgid "Media library"
+msgstr "Media bibliotheek"
+
+# @ sumk
+#: inc/helpers.php:118
+msgid "Customer support"
+msgstr "Gebruikers ondersteuning"
+
+# @ shortcodes-ultimate-maker
+#: inc/import.php:7 inc/import.php:12
+msgid "Demo shortcode #1: HTML code example"
+msgstr "Demo shortcode #1: HTML code voorbeeld"
+
+# @ shortcodes-ultimate-maker
+#: inc/import.php:14
+msgid ""
+"This shortcode written with simple HTML and allows you to change the color "
+"of selected text"
+msgstr ""
+"Deze shortcode, geschreven in simpele HTML, toont u hoe u de kleur van "
+"geschreven tekst kunt veranderen"
+
+# @ shortcodes-ultimate-maker
+#: inc/import.php:15 inc/import.php:36 inc/import.php:57 inc/metabox.php:45
+msgid "Default content"
+msgstr "Standaard inhoud"
+
+# @ shortcodes-ultimate-maker
+#: inc/import.php:18 inc/import.php:39
+msgid "Text color"
+msgstr "Kleur tekst"
+
+# @ shortcodes-ultimate-maker
+#: inc/import.php:19 inc/import.php:40
+msgid "Color of selected text"
+msgstr "Kleur van de geselecteerde tekst"
+
+# @ shortcodes-ultimate-maker
+#: inc/import.php:27 inc/import.php:32
+msgid "Demo shortcode #2: PHP return code example"
+msgstr "Demo shortcode #2: PHP return code voorbeeld"
+
+# @ shortcodes-ultimate-maker
+#: inc/import.php:34
+msgid ""
+"This shortcode does the same thing as a shortcode #1 but written in PHP and "
+"uses PHP return mode"
+msgstr ""
+"Deze shortcode doet hetzelfde als shortcode # 1, maar is geschreven in PHP "
+"en maakt gebruik van de PHP return functie"
+
+# @ shortcodes-ultimate-maker
+#: inc/import.php:48 inc/import.php:53
+msgid "Demo shortcode #3: PHP echo code example"
+msgstr "Demo shortcode #3: PHP echo code voorbeeld"
+
+# @ shortcodes-ultimate-maker
+#: inc/import.php:55
+msgid ""
+"This shortcode is more complex than shortcodes #1 and #2. This example will "
+"show you how to use PHP echo mode, as well as how to use several different "
+"types of attributes"
+msgstr ""
+"Deze shortcode is complexer dan shortcodes # ​​1 en # 2. Dit voorbeeld toont u "
+"de PHP echo-modus naast het gebruik van verschillende typen attributen"
+
+# @ shortcodes-ultimate-maker
+#: inc/import.php:60
+msgid "Style"
+msgstr "Stijl"
+
+# @ shortcodes-ultimate-maker
+#: inc/import.php:61
+msgid "Select box style"
+msgstr "Selecteer box stijl"
+
+# @ shortcodes-ultimate-maker
+#: inc/import.php:65
+msgid "Info"
+msgstr "Informatie"
+
+# @ shortcodes-ultimate-maker
+#: inc/import.php:65
+msgid "Error"
+msgstr "Fout!"
+
+# @ shortcodes-ultimate-maker
+#: inc/import.php:65
+msgid "Success"
+msgstr "Geslaagd"
+
+# @ shortcodes-ultimate-maker
+#: inc/import.php:67
+msgid "Size"
+msgstr "Grootte"
+
+# @ shortcodes-ultimate-maker
+#: inc/import.php:68
+msgid "Choose box size"
+msgstr "Kies een box-grootte"
+
+# @ shortcodes-ultimate-maker
+#: inc/import.php:96
+msgid "3 demo shortcodes added to the database"
+msgstr "3 DEMO shortcode zijn aan de database toegevoegd"
+
+# @ shortcodes-ultimate-maker
+#: inc/import.php:97
+msgid "View"
+msgstr "Bekijk"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:4
+msgid "Shortcode details"
+msgstr "Shortcode details"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:26
+msgid "Please fill all required fields. They marked with red asterisk."
+msgstr ""
+"Vult u al de verplichte velden in. Ze zijn gemerkt met een rode asterisk."
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:29
+msgid "Shortcode name"
+msgstr "Shortcode naam"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:31
+msgid "Enter shortcode name (1-2 words)"
+msgstr "Geef een shortcode naam op (1-2 woorden)"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:36
+msgid "Allowed characters: a-z, 0-9, '_' (underscore)"
+msgstr "Toegestane karakters: a-z, 0-9, '_' (onderliggende streep)"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:37
+msgid ""
+"Specify short name for this shortcode. This name will be used for resulting "
+"shortcode. For example: type 'div' and you will get shortcode [div]"
+msgstr ""
+"Geef een korte naam op voor deze shortcode. Deze naam wordt gebruikt voor de "
+"uiteindelijke shortcode. Bijvoorbeeld: typ 'div' voor shortcode [div]"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:40
+msgid "Shortcode description"
+msgstr "Shortcode omschrijving"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:42
+msgid ""
+"Enter short description for this shortcode. 3-7 words is more than enough"
+msgstr ""
+"Geef een korte omschrijving voor deze shortcode. 3-7 woorden is meer dan "
+"genoeg"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:47
+msgid ""
+"This text will be added to Content field in shortcode generator. This field "
+"is not required and used not by all shortcodes. Content of this field will "
+"be placed between open and close shortcode tags by default"
+msgstr ""
+"Deze tekst zal in het inhoud veld worden geplaatst door de shortcode "
+"generator. Dit veld is niet nodig en wordt niet gebruikt door alle "
+"shortcodes. De inhoud van dit veld zal standaard tussen de open en sluit "
+"shortcode-tags worden geplaatst."
+
+# @ shortcodes-ultimate-maker
+# @ sumk
+#: inc/metabox.php:50 inc/posttype.php:86
+msgid "Icon"
+msgstr "Icon"
+
+# @ sumk
+#: inc/metabox.php:53
+msgid "Change icon"
+msgstr "Verander Icon"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:56
+msgid ""
+"You can change shortcode icon. This icon will be used in shortcode generator "
+"window"
+msgstr ""
+"U kunt het shortcode icon veranderen. Dit icon zal in het shortcode "
+"generator venster worden gebruikt"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:59
+msgid "Attributes"
+msgstr "Attributen"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:59
+msgid "Open attributes documentation"
+msgstr "Opent documentatie \"Attributen\""
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:60
+msgid "Add attribute"
+msgstr "Voeg attribuut toe"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:60
+msgid "Drag and drop attributes to re-order"
+msgstr "Sleep en plaats attributen om te herschikken"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:64
+msgid "Code"
+msgstr "Code"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:64
+msgid "Open code editor documentation"
+msgstr "Opent documentatie \"Code Editor\""
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:77
+msgid "You can use next variables"
+msgstr "U kunt de volgende variabelen gebruiken"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:77
+msgid "They will be replaced with shortcode content and attributes values"
+msgstr ""
+"Deze worden vervangen door de inhoud van de shortcode en de waarde van de "
+"attributen"
+
+# @ sumk
+#: inc/metabox.php:82
+msgid "Update Shortcode"
+msgstr "Werkt Shortcode bij"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:108
+msgid "Delete"
+msgstr "Verwijderen"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:109
+msgid "Edit"
+msgstr "Wijzig"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:110
+msgid "Close"
+msgstr "Sluit"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:147 inc/metabox.php:152
+msgid "Attribute name"
+msgstr "Naam attribuut"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:156 inc/metabox.php:161
+msgid "Attribute description"
+msgstr "Omschrijving attribuut"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:166
+msgid "Dropdown options"
+msgstr "Dropdown opties"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:176
+msgid "Minimal value"
+msgstr "Minimale waarde"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:183
+msgid "Maximal value"
+msgstr "Maximale waarde"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:190
+msgid "Step number"
+msgstr "Stap nummer"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:197
+msgid "Add full name and description"
+msgstr "Voeg een volledige naam en een omschrijving toe"
+
+# @ shortcodes-ultimate-maker
+#: inc/metabox.php:199
+msgid "not required but recommended"
+msgstr "niet verplicht, maar aangeraden"
+
+# @ sumk
+#: inc/posttype.php:8 inc/posttype.php:14
+msgid "Custom shortcodes"
+msgstr "Aangepaste shortcodes"
+
+# @ sumk
+#: inc/posttype.php:9 inc/posttype.php:84
+msgid "Shortcode"
+msgstr "Shortcode"
+
+# @ sumk
+#: inc/posttype.php:10
+msgid "Create shortcode"
+msgstr "Maak shortcode"
+
+# @ sumk
+#: inc/posttype.php:11
+msgid "Add new Shortcode"
+msgstr "Voeg een nieuwe shortcode toe"
+
+# @ sumk
+#: inc/posttype.php:12
+msgid "Edit shortcode"
+msgstr "Wijzig shortcode"
+
+# @ sumk
+#: inc/posttype.php:13
+msgid "New shortcode"
+msgstr "Nieuwe shortcode"
+
+# @ sumk
+#: inc/posttype.php:15 inc/posttype.php:66 inc/posttype.php:105
+msgid "View shortcode"
+msgstr "Bekijk shortcode"
+
+# @ sumk
+#: inc/posttype.php:16
+msgid "Search shortcodes"
+msgstr "Zoek naar shortcodes"
+
+# @ sumk
+#: inc/posttype.php:17
+msgid "No shortcodes found"
+msgstr "Geen shortcodes gevonden"
+
+# @ sumk
+#: inc/posttype.php:18
+msgid "No shortcodes in Trash"
+msgstr "Geen shortcodes in de prullenbak"
+
+# @ sumk
+#: inc/posttype.php:20
+msgid "Shortcodes"
+msgstr "Shortcodes"
+
+# @ sumk
+#: inc/posttype.php:72
+msgid "Shortcode updated"
+msgstr "Shortcode bijgewerkt"
+
+# @ sumk
+#: inc/posttype.php:73
+msgid "Shortcode added"
+msgstr "Shortcode toegevoegd"
+
+# @ sumk
+#: inc/posttype.php:74
+msgid "Shortcode saved"
+msgstr "Shortcode opgeslagen"
+
+# @ sumk
+#: inc/posttype.php:75
+msgid "Shortcode submitted"
+msgstr "Shortcode toegevoegd"
+
+# @ sumk
+#: inc/posttype.php:76
+msgid "Shortcode draft updated"
+msgstr "Shortcode draft bijgewerkt"
+
+# @ shortcodes-ultimate-maker
+#: inc/register.php:71
+msgid "Custom"
+msgstr "Aangepast"

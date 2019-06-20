@@ -1,0 +1,429 @@
+// ==================================================================
+// Variables
+// ==================================================================
+
+color-grey                    = #888
+color-grey-light              = #ddd
+color-grey-dark               = #777
+color-button-border           = #ccc
+color-button-border-hover     = #999
+
+color-wp-border       = #e5e5e5
+color-wp-background   = #f5f5f5
+color-wp-delete       = #a00
+color-wp-delete-hover = #dc3232
+color-wp-error        = #dc3232
+color-wp-description  = #666
+color-wp-link         = #0073aa
+color-wp-icon         = #555d66
+color-wp-icon-hover   = #23282d
+shadow-wp             = 0 1px 1px rgba(0, 0, 0, .04)
+
+
+// ==================================================================
+// Admin screen tweaks
+// ==================================================================
+
+#post-body-content
+.misc-pub-section.misc-pub-visibility
+.misc-pub-section.curtime.misc-pub-curtime
+	display none
+
+#shortcodes-ultimate-maker-editor
+	> h2.hndle
+	> button.handlediv
+		display none
+	> .inside
+		margin-top 0
+
+
+// ==================================================================
+// Common classes
+// ==================================================================
+
+.sum-wp-box
+	background white
+	border 1px solid color-wp-border
+	box-shadow shadow-wp
+
+.sum-actions
+	margin 2em 0 .5em
+
+	input.button
+		margin-right 1em
+
+
+// ==================================================================
+// Validation
+// ==================================================================
+
+.sum-validation
+
+	&-failed
+	&-required
+
+		> input
+		> select
+		> textarea
+			border-color color-wp-error !important
+			box-shadow 0 0 2px rgba(190, 58, 51, .8) !important
+
+		&-message
+			display none
+			color color-wp-error !important
+			font-style italic
+
+	&-failed &-failed-message
+		display block
+
+	&-required &-required-message
+		display block
+
+
+// ==================================================================
+// Icon field
+// ==================================================================
+
+.sum-icon
+	margin-bottom 8px
+
+	&-picker
+		text-decoration none
+
+		i, img
+			display inline-block
+			width 26px
+			height 26px
+			margin 0
+			padding 0 8px
+			border-right 1px solid color-button-border
+			line-height 26px
+			font-size 20px
+			text-align center
+			background transparent
+			color color-grey
+
+		&:after
+			display inline-block
+			padding 0 10px
+			vertical-align top
+			content attr(data-label-closed)
+
+		&.button
+			padding 0 0 1px
+
+		&:hover i
+		&:hover img
+			border-right-color color-button-border-hover
+
+	&-dropdown
+		@extend .sum-wp-box
+		display none
+		margin .5em 0 0
+		padding .5em
+
+		i
+			display block
+			float left
+			width 18px
+			height 18px
+			font-size 18px
+			padding 5px
+			background white
+			color color-grey
+			text-align center
+			cursor pointer
+
+			&:hover
+				background-color color-wp-background
+				color black
+
+	&-media-link
+		display block
+		margin -.5em -.5em .5em
+		text-align right
+		border-bottom 1px solid color-wp-border
+		background-color color-wp-background
+
+		a
+			display inline-block
+			padding .8em
+			text-decoration none
+
+	// Open state
+	&.open &-picker:after
+		content attr(data-label-open)
+
+	&.open &-dropdown
+		display block
+
+
+// ==================================================================
+// Attributes field
+// ==================================================================
+
+.sum-attributes
+	@extend .sum-wp-box
+	margin-bottom 8px
+	border 1px solid color-wp-border
+
+	&-head
+		background color-wp-background
+		border-bottom 1px solid color-wp-border
+
+		> div
+			display block
+			float left
+			width 33.33%
+			padding .7em 1em
+			font-weight 600
+			box-sizing border-box
+
+	&-items:empty:after
+		display block
+		padding 0 .7em
+		height 60px
+		line-height 60px
+		color color-grey
+		font-style italic
+		content attr(data-placeholder)
+
+	&-item
+		border-bottom 1px solid color-wp-border
+
+		&:last-child
+			border-bottom none
+
+		&-restore
+			display none
+			padding 0 1em
+			height 60px
+			line-height 60px
+			font-size .9em
+			color color-grey-dark
+			background color-wp-background
+
+			a
+				text-decoration none
+
+		&.deleted &-restore
+			display block
+
+		&-head
+			border-bottom 1px solid transparent
+			background white
+
+			&-label
+			&-type
+			&-default
+				display block
+				float left
+				width 33.33%
+				padding .7em 1em
+				color color-grey-dark
+				box-sizing border-box
+				word-wrap break-word
+
+			&-label > a
+				text-decoration none
+				font-weight 600
+
+			&-label > a:empty:after
+				content attr(data-no-label)
+				font-style italic
+				color color-grey-light
+				font-weight normal
+
+			&-actions
+				margin-top 5px
+				font-size .9em
+				color color-grey-light
+				opacity 0
+
+				a
+					text-decoration none
+
+			&-toggle:after
+				content attr(data-label-open)
+
+			&-delete
+				color color-wp-delete
+
+				&:hover
+					color color-wp-delete-hover
+
+			&-default:empty:after
+				content attr(data-no-default)
+				font-style italic
+				color color-grey-light
+
+		&.ui-sortable-helper &-head
+			border-top 1px solid color-wp-border
+			border-bottom 1px solid color-wp-border
+
+		&-placeholder
+			height 61px
+			background color-wp-background
+
+		&:hover &-head-actions
+			opacity 1
+
+		&.open &-head
+			border-bottom-color color-wp-border
+
+			&-toggle:after
+				content attr(data-label-closed)
+
+		&.deleted &-head
+			display none
+
+		&-settings
+			display none
+			padding .7em 1em
+			background color-wp-background
+
+			.form-table
+				margin 0
+
+				label
+					font-weight 500
+
+				p.description
+					font-size .9em
+
+		&.open &-settings
+			display block
+
+		&.deleted &-head
+			display none
+
+		&-options-container
+		&-min-container
+		&-max-container
+		&-step-container
+			display none
+
+		&[data-type='select'] &-options-container
+			display table-row
+
+		&[data-type='number'] &-min-container
+		&[data-type='number'] &-max-container
+		&[data-type='number'] &-step-container
+			display table-row
+
+		&-actions
+			display none
+			padding 1.4em 1em
+			background color-wp-background
+
+		&.open &-actions
+			display block
+
+		&.deleted &-actions
+			display none
+
+	&-add
+		padding .7em
+		background color-wp-background
+		border-top 1px solid color-wp-border
+
+		a:before
+			vertical-align middle
+			margin 0 6px 0 -2px
+			width 18px
+			height 18px
+			font-size 18px
+			color color-grey-dark
+
+
+// ==================================================================
+// Code field
+// ==================================================================
+
+.sum-code
+
+	&-variables
+		@extend .sum-wp-box
+		padding .5em 1em
+		border-bottom none
+
+		p.description
+			margin .5em 0
+			font-size .9em
+
+		strong
+			font-style normal
+
+		&-list
+			display block
+			margin .5em 0
+			max-width 100%
+
+			li
+				display inline-block
+				margin 3px 5px 3px 0
+				color color-wp-description
+
+				&:after
+					content ','
+
+				&:last-child:after
+					content ''
+
+			a
+				text-decoration none
+				font-weight 500
+
+	&-editor
+		@extend .sum-wp-box
+		background white
+
+		&-fullscreen
+			position fixed !important
+			top 0
+			right 0
+			bottom 0
+			left 0
+			width 100%
+			height 100% !important
+			z-index 9999990
+			border none
+
+		&-toggle-fullscreen
+			position absolute
+			right -1px
+			top -1px
+			display none
+			padding 6px
+			background white
+			border 1px solid color-wp-border
+			z-index 10
+			text-decoration none
+			color color-wp-icon
+
+			&:hover
+				color color-wp-icon-hover
+
+		&-fullscreen &-toggle-fullscreen
+			display block
+			background color-wp-icon
+			border-color color-wp-icon
+			color white
+
+			&:before
+				content '\f335'
+
+	&:hover &-editor-toggle-fullscreen
+		display block
+
+
+// ==================================================================
+// Custom CSS field
+// ==================================================================
+
+.sum-custom-css
+
+	&-editor
+		@extend .sum-wp-box
+		background white
+
