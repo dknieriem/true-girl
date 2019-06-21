@@ -11,6 +11,11 @@ if (!defined('ABSPATH')) die('No direct access allowed');
 if (!defined('WPO_CACHE_DIR')) define('WPO_CACHE_DIR', untrailingslashit(WP_CONTENT_DIR).'/wpo-cache');
 
 /**
+ * Extensions directory.
+ */
+if (!defined('WPO_CACHE_EXT_DIR')) define('WPO_CACHE_EXT_DIR', dirname(__FILE__).'/extensions');
+
+/**
  * Directory that stores config and related files
  */
 if (!defined('WPO_CACHE_CONFIG_DIR')) define('WPO_CACHE_CONFIG_DIR', WPO_CACHE_DIR.'/config');
@@ -18,13 +23,20 @@ if (!defined('WPO_CACHE_CONFIG_DIR')) define('WPO_CACHE_CONFIG_DIR', WPO_CACHE_D
 /**
  * Directory that stores the cache, including gzipped files and mobile specifc cache
  */
-if (!defined('WPO_CACHE_FILES_DIR')) define('WPO_CACHE_FILES_DIR', WPO_CACHE_DIR.'/cache');
+if (!defined('WPO_CACHE_FILES_DIR')) define('WPO_CACHE_FILES_DIR', untrailingslashit(WP_CONTENT_DIR).'/cache/wpo-cache');
 
 
-if (!class_exists('WPO_Cache_Config')) require_once('class-wpo-cache-config.php');
-if (!class_exists('WPO_Cache_Rules')) require_once('class-wpo-cache-rules.php');
+if (!class_exists('WPO_Cache_Config')) require_once(dirname(__FILE__) . '/class-wpo-cache-config.php');
+if (!class_exists('WPO_Cache_Rules')) require_once(dirname(__FILE__) . '/class-wpo-cache-rules.php');
 
+if (!class_exists('Updraft_Abstract_Logger')) require_once(WPO_PLUGIN_MAIN_PATH.'/includes/class-updraft-abstract-logger.php');
 if (!class_exists('Updraft_PHP_Logger')) require_once(WPO_PLUGIN_MAIN_PATH.'/includes/class-updraft-php-logger.php');
+
+if (!class_exists('Updraft_Abstract_Logger')) require_once(WPO_PLUGIN_MAIN_PATH . '/includes/class-updraft-abstract-logger.php');
+if (!class_exists('Updraft_PHP_Logger')) require_once(WPO_PLUGIN_MAIN_PATH . '/includes/class-updraft-php-logger.php');
+
+require_once dirname(__FILE__) . '/file-based-page-cache-functions.php';
+wpo_cache_load_extensions();
 
 if (!class_exists('WPO_Page_Cache')) :
 
@@ -64,10 +76,12 @@ class WPO_Page_Cache {
 	/**
 	 * Enables page cache
 	 *
-	 * @param array $options - options for caching
 	 * @return WP_Error|bool - true on success, error otherwise
 	 */
-	public function enable($options = array()) {
+	public function enable() {
+		static $already_ran_enable = false;
+
+		if ($already_ran_enable) return true;
 
 		if (!$this->create_folders()) {
 			return new WP_Error("create_folders", "The request to the filesystem to create the cache directories failed");
@@ -78,7 +92,7 @@ class WPO_Page_Cache {
 			return new WP_Error("write_advanced_cache", "The request to write the advanced-cache.php file failed");
 		}
 
-		
+
 		if (!$this->write_wp_config(true)) {
 			return new WP_Error("write_wp_config", "Could not toggle the WP_CACHE constant in wp-config.php");
 		}
@@ -87,7 +101,7 @@ class WPO_Page_Cache {
 			return new WP_Error("verify_cache", "Could not verify if cache was enabled");
 		}
 
-		$this->config->update($options);
+		$already_ran_enable = true;
 
 		return true;
 	}
@@ -101,8 +115,8 @@ class WPO_Page_Cache {
 	public function disable() {
 		$ret = true;
 
-		if (!self::delete(untrailingslashit(WP_CONTENT_DIR) . '/advanced-cache.php')) {
-			$this->log("The request to the filesystem to delete the advanced-cache.php failed");
+		if (false === self::clean(untrailingslashit(WP_CONTENT_DIR) . '/advanced-cache.php')) {
+			$this->log("The request to the filesystem to write the advanced-cache.php file failed");
 			$ret = false;
 		}
 
@@ -110,6 +124,9 @@ class WPO_Page_Cache {
 			$this->log("Could not toggle the WP_CACHE constant in wp-config.php");
 			$ret = false;
 		}
+
+		// Delete cache to avoid stale cache on next activation
+		$this->purge();
 
 		return $ret;
 	}
@@ -162,7 +179,7 @@ class WPO_Page_Cache {
 			return false;
 		}
 
-		if (empty($this->config['enable_page_caching'])) {
+		if (!$this->config->get_option('enable_page_caching', false)) {
 			return false;
 		}
 
@@ -176,17 +193,17 @@ class WPO_Page_Cache {
 	 */
 	private function create_folders() {
 
-		if (!is_dir(WPO_CACHE_DIR) && !mkdir(WPO_CACHE_DIR)) {
+		if (!is_dir(WPO_CACHE_DIR) && !wp_mkdir_p(WPO_CACHE_DIR)) {
 			$this->log('The request to the filesystem failed, unable to create - ' . WPO_CACHE_DIR);
 			return false;
 		}
 
-		if (!is_dir(WPO_CACHE_CONFIG_DIR) && !mkdir(WPO_CACHE_CONFIG_DIR)) {
+		if (!is_dir(WPO_CACHE_CONFIG_DIR) && !wp_mkdir_p(WPO_CACHE_CONFIG_DIR)) {
 			$this->log('The request to the filesystem failed, unable to create - ' . WPO_CACHE_CONFIG_DIR);
 			return false;
 		}
-
-		if (!is_dir(WPO_CACHE_FILES_DIR) && !mkdir(WPO_CACHE_FILES_DIR)) {
+		
+		if (!is_dir(WPO_CACHE_FILES_DIR) && !wp_mkdir_p(WPO_CACHE_FILES_DIR)) {
 			$this->log('The request to the filesystem failed, unable to create - ' . WPO_CACHE_FILES_DIR);
 			return false;
 		}
@@ -204,7 +221,7 @@ class WPO_Page_Cache {
 		$file = untrailingslashit(WP_CONTENT_DIR) . '/advanced-cache.php';
 		$contents = '';
 
-		if (!empty($config['enable_page_caching'])) {
+		if (!$this->config->get_option('enable_page_caching', false)) {
 			return false;
 		}
 
@@ -213,7 +230,8 @@ class WPO_Page_Cache {
 		$cache_path = WPO_CACHE_DIR;
 		$cache_config_path = WPO_CACHE_CONFIG_DIR;
 		$cache_files_path = WPO_CACHE_FILES_DIR;
-		
+		$cache_extensions_path = WPO_CACHE_EXT_DIR;
+
 		// CS does not like heredoc
 		// @codingStandardsIgnoreStart
 		$contents = <<<EOF
@@ -225,6 +243,7 @@ if (!defined('WPO_ADVANCED_CACHE')) define('WPO_ADVANCED_CACHE', true);
 if (!defined('WPO_CACHE_DIR')) define('WPO_CACHE_DIR', '$cache_path');
 if (!defined('WPO_CACHE_CONFIG_DIR')) define('WPO_CACHE_CONFIG_DIR', '$cache_config_path');
 if (!defined('WPO_CACHE_FILES_DIR')) define('WPO_CACHE_FILES_DIR', '$cache_files_path');
+if (!defined('WPO_CACHE_EXT_DIR')) define('WPO_CACHE_EXT_DIR', '$cache_extensions_path');
 
 if (is_admin()) { return; }
 if (!@file_exists('$config_file')) { return; }
@@ -298,8 +317,7 @@ EOF;
 				unset($config_file[$key]);
 			}
 		}
-		
-		if (file_put_contents($config_path, implode("\r\n", $config_file))) {
+		if (!file_put_contents($config_path, implode("\r\n", $config_file))) {
 			return false;
 		}
 
@@ -354,6 +372,16 @@ EOF;
 	}
 
 	/**
+	 * Update cache config. Used to support 3d party plugins.
+	 */
+	public function update_cache_config() {
+		// get current cache settings.
+		$current_config = $this->config->get();
+		// and call update to change if need cookies and query variable names.
+		$this->config->update($current_config);
+	}
+
+	/**
 	 * Returns the path to wp-config
 	 *
 	 * @return string wp-config.php path.
@@ -385,28 +413,17 @@ EOF;
 	 */
 	public static function delete($src) {
 
-		if (!file_exists($src)) {
-			return true;
-		}
+		return wpo_delete_files($src);
 
-		if (is_dir($src)) {
-			$dir = opendir($src);
-			while (false !== ($file = readdir($dir))) {
-				if (('.' != $file) && ('..' != $file)) {
-					if (is_dir($src . '/' . $file)) {
-						self::delete($src . '/' . $file);
-					} else {
-						unlink($src . '/' . $file);
-					}
-				}
-			}
-			closedir($dir);
-			rmdir($src);
-		} else {
-			unlink($src);
-		}
+	}
 
-		return true;
+	/**
+	 * Make an empty file.
+	 *
+	 * @param string $src
+	 */
+	public static function clean($src) {
+		return file_put_contents($src, '');
 	}
 
 	/**

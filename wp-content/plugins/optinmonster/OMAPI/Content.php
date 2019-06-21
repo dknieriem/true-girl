@@ -201,6 +201,10 @@ class OMAPI_Content {
 			<?php endif; ?>
 		<?php endif; ?>
 
+		<?php if ( ! empty( $_GET['omwpdebug'] ) ) : ?>
+			<?php echo $object->get_setting_ui( 'api', 'omwpdebug' ); ?>
+		<?php endif; ?>
+
 		<?php
 
 	}

@@ -5,9 +5,9 @@
 
 if (!defined('ABSPATH')) die('Access denied.');
 
-if (!class_exists('Updraft_Task_Manager_1_0')) :
+if (!class_exists('Updraft_Task_Manager_1_1')) :
 
-class Updraft_Task_Manager_1_0 {
+class Updraft_Task_Manager_1_1 {
 
 	protected $loggers;
 
@@ -134,15 +134,16 @@ class Updraft_Task_Manager_1_0 {
 		return $task->complete();
 	}
 
-	/**
-	 * Process a the queue of a specifed task type
-	 *
-	 * @param string $type queue type to process
-	 */
+    /**
+     * Process a the queue of a specifed task type
+     *
+     * @param string $type queue type to process
+     * @return bool true on success, false otherwise
+     */
 	public function process_queue($type) {
 
 		$task_list = $this->get_active_tasks($type);
-		$total = count($task_list);
+		$total = is_array($task_list) ? count($task_list) : 0;
 
 		if (1 > $total) {
 			$this->log(sprintf('The queue for tasks of type "%s" is empty. Aborting!', $type));
@@ -185,8 +186,6 @@ class Updraft_Task_Manager_1_0 {
 		return true;
 	}
 
-	
-
 	/**
 	 * Cleans out all complete tasks from the DB.
 	 *
@@ -205,6 +204,50 @@ class Updraft_Task_Manager_1_0 {
 		}
 
 		return true;
+	}
+
+	/**
+	 * Delete all tasks from queue.
+	 *
+	 * @param string $type
+	 *
+	 * @return boolean|integer Number of rows deleted, or (boolean)false upon error
+	 */
+	public function delete_tasks($task_type) {
+		global $wpdb;
+
+		$sql = "DELETE t, tm FROM `{$wpdb->base_prefix}tm_tasks` t LEFT JOIN `{$wpdb->base_prefix}tm_taskmeta` tm ON t.id = tm.task_id WHERE t.type = '{$task_type}'";
+
+		return $wpdb->query($sql);
+	}
+
+	/**
+	 * Get count of completed and all tasks.
+	 *
+	 * @return array - [ ['complete_tasks' => , 'all_tasks' => ] ]
+	 */
+	public function get_status($task_type) {
+		global $wpdb;
+
+		$query = $wpdb->prepare(
+			"SELECT complete_tasks, all_tasks FROM (SELECT COUNT(*) AS complete_tasks FROM {$wpdb->base_prefix}tm_tasks WHERE `type` = %s AND `status` = %s) a, (SELECT COUNT(*) AS all_tasks FROM {$wpdb->base_prefix}tm_tasks WHERE `type` = %s) b",
+			array(
+				$task_type,
+				'complete',
+				$task_type,
+			)
+		);
+
+		$status = $wpdb->get_row($query, ARRAY_A);
+
+		if (empty($status)) {
+			$status = array(
+				'complete_tasks' => 0,
+				'all_tasks' => 0,
+			);
+		}
+
+		return $status;
 	}
 
 	/**
@@ -241,9 +284,9 @@ class Updraft_Task_Manager_1_0 {
 		$tasks = array();
 		
 		if (array_key_exists($status, Updraft_Task_1_0::get_allowed_statuses())) {
-			$sql = $wpdb->prepare("SELECT * FROM {$wpdb->prefix}tm_tasks WHERE status = %s AND type = %s", $status, $type);
+			$sql = $wpdb->prepare("SELECT * FROM {$wpdb->base_prefix}tm_tasks WHERE status = %s AND type = %s", $status, $type);
 		} else {
-			$sql = $wpdb->prepare("SELECT * FROM {$wpdb->prefix}tm_tasks WHERE type = %s", $type);
+			$sql = $wpdb->prepare("SELECT * FROM {$wpdb->base_prefix}tm_tasks WHERE type = %s", $type);
 		}
 
 		$_tasks = $wpdb->get_results($sql);
@@ -280,7 +323,7 @@ class Updraft_Task_Manager_1_0 {
 		if (!$task_id) return false;
 
 
-		$sql = $wpdb->prepare("SELECT * FROM {$wpdb->prefix}tm_tasks WHERE id = %d LIMIT 1", $task_id);
+		$sql = $wpdb->prepare("SELECT * FROM {$wpdb->base_prefix}tm_tasks WHERE id = %d LIMIT 1", $task_id);
 		$_task = $wpdb->get_row($sql);
 
 		if (!$_task)
@@ -335,15 +378,13 @@ class Updraft_Task_Manager_1_0 {
 			foreach ($this->loggers as $logger) {
 				$logger->log($message, $error_type);
 			}
-		} else {
-			error_log($message);
 		}
 	}
 
 	/**
 	 * Returns the only instance of this class
 	 *
-	 * @return Updraft_Task_Manager_1_0
+	 * @return Updraft_Task_Manager_1_1
 	 */
 	public static function instance() {
 		if (empty(self::$_instance)) {
@@ -355,12 +396,12 @@ class Updraft_Task_Manager_1_0 {
 }
 
 /**
- * Returns the singleton Updraft_Task_Manager_1_0 class
+ * Returns the singleton Updraft_Task_Manager_1_1 class
  */
-function Updraft_Task_Manager_1_0() {
-	return Updraft_Task_Manager_1_0::instance();
+function Updraft_Task_Manager_1_1() {
+	return Updraft_Task_Manager_1_1::instance();
 }
 
-$GLOBALS['updraft_task_manager'] = Updraft_Task_Manager_1_0();
+$GLOBALS['updraft_task_manager'] = Updraft_Task_Manager_1_1();
 
 endif;

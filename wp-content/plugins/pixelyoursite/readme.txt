@@ -4,7 +4,7 @@ Tags: Facebook Pixel, New Facebook Pixel, Facebook Conversion Pixel, Facebook Pi
 Requires at least: 3.0.1
 Requires PHP: 5.4
 Tested up to: 5.2
-Stable tag: 7.0.4
+Stable tag: 7.0.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -371,6 +371,11 @@ There's a strange solution: it appears that if you have the Yoast plugin install
 
 == Changelog ==
 
+= PixelYourSite 7.0.5 =
+
+* Fixing a potential problem with Pinterest PageVisit and Checkout events when the Facebook Pixel was deactivated (for the Pinterest add-on users only).
+
+
 = PixelYourSite 7.0.4 =
 
 * New Feature: Google Analytics cross-domain measurement. Tell Analytics to see sessions on two related sites (such as an ecommerce site and a separate shopping cart site) as a single session.
@@ -677,3 +682,5 @@ This is a major release, with a new design and new features:
 = 5.0 =
 
 Version 5.0 comes with full Easy Digital Downloads integrations plus the ability to give each WooCommerce and EDD event a global value.
+
+

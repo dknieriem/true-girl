@@ -1,8 +1,0 @@
-[18-Aug-2017 10:54:54 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb/event-manager/views/list.php:6
-Stack trace:
-#0 {main}
-  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb/event-manager/views/list.php on line 6
-[18-Aug-2017 10:54:55 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb/event-manager/views/form.php:9
-Stack trace:
-#0 {main}
-  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb/event-manager/views/form.php on line 9

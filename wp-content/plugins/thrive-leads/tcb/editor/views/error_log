@@ -1,4 +1,0 @@
-[18-Aug-2017 10:49:40 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb/editor/views/landing-page-cloud-templates.php:79
-Stack trace:
-#0 {main}
-  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb/editor/views/landing-page-cloud-templates.php on line 79

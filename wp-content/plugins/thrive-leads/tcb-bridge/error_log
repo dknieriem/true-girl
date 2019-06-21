@@ -1,8 +1,0 @@
-[18-Aug-2017 10:49:41 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb-bridge/init.php:14
-Stack trace:
-#0 {main}
-  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb-bridge/init.php on line 14
-[18-Aug-2017 10:49:41 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb-bridge/tcb_action_hooks.php:83
-Stack trace:
-#0 {main}
-  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb-bridge/tcb_action_hooks.php on line 83

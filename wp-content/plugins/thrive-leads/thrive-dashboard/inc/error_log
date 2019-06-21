@@ -1,4 +1,0 @@
-[18-Aug-2017 10:49:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/hooks.php:427
-Stack trace:
-#0 {main}
-  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/hooks.php on line 427

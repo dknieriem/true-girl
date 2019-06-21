@@ -6,15 +6,15 @@
         "source": {
             "type": "git",
             "url": "git@source.updraftplus.com:team-updraft/common-libs.git",
-            "reference": "bf24f35bf4a0f1f38ad4e9ce73147514f926ba34"
+            "reference": "82efc6629494a5816ce3a61d873139784d9b86c4"
         },
         "dist": {
             "type": "zip",
-            "url": "https://source.updraftplus.com/api/v4/projects/team-updraft%2Fcommon-libs/repository/archive.zip?sha=bf24f35bf4a0f1f38ad4e9ce73147514f926ba34",
-            "reference": "bf24f35bf4a0f1f38ad4e9ce73147514f926ba34",
+            "url": "https://source.updraftplus.com/api/v4/projects/team-updraft%2Fcommon-libs/repository/archive.zip?sha=82efc6629494a5816ce3a61d873139784d9b86c4",
+            "reference": "82efc6629494a5816ce3a61d873139784d9b86c4",
             "shasum": ""
         },
-        "time": "2019-04-16T21:38:36+00:00",
+        "time": "2019-06-11T10:25:25+00:00",
         "type": "project",
         "installation-source": "dist",
         "description": "These are the common libs used across all of our projects"

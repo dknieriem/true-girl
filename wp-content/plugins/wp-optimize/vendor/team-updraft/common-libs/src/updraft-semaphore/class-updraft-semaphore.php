@@ -321,8 +321,6 @@ class Updraft_Semaphore_2_0 {
 			foreach ($this->_loggers as $logger) {
 				$logger->log($message, $error_type);
 			}
-		} else {
-			error_log($message);
 		}
 	}
 } // End UpdraftPlus_Semaphore

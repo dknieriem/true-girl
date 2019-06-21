@@ -1,5 +1,0 @@
-[18-Aug-2017 09:57:13] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/trigger_settings/exit_intent.phtml on line 1
-[18-Aug-2017 09:57:13] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/trigger_settings/time.phtml on line 7
-[18-Aug-2017 09:57:13] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/trigger_settings/click.phtml on line 1
-[18-Aug-2017 09:57:13] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/trigger_settings/scroll_percent.phtml on line 6
-[18-Aug-2017 09:57:13] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/trigger_settings/scroll_element.phtml on line 1

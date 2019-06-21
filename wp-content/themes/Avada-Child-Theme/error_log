@@ -1,4 +1,0 @@
-[18-Aug-2017 10:45:14 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home3/secretk1/public_html/staging/wp-content/themes/Avada-Child-Theme/functions.php:6
-Stack trace:
-#0 {main}
-  thrown in /home3/secretk1/public_html/staging/wp-content/themes/Avada-Child-Theme/functions.php on line 6

@@ -1,4 +1,0 @@
-[18-Aug-2017 10:54:34 America/Chicago] PHP Fatal error:  Class 'WP_Widget' not found in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/inc/classes/thrive_leads_widget.php on line 3
-[18-Aug-2017 10:54:34 America/Chicago] PHP Fatal error:  Class 'Thrive_Leads_Request_Handler' not found in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/inc/classes/Thrive_Leads_Template_Manager.php on line 9
-[18-Aug-2017 10:54:34 America/Chicago] PHP Fatal error:  Class 'Thrive_Leads_Request_Handler' not found in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/inc/classes/Thrive_Leads_State_Manager.php on line 9
-[18-Aug-2017 10:54:34 America/Chicago] PHP Fatal error:  Class 'TVE_Dash_Product_Abstract' not found in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/inc/classes/Thrive_Leads_TL_Product.php on line 9

@@ -167,7 +167,7 @@ class WP_Optimize_Commands {
 	public function save_site_settings($data) {
 		return $this->options->save_wpo_sites_option($data['wpo-sites']);
 	}
-	
+
 	/**
 	 * Perform the requested optimization
 	 *
@@ -376,17 +376,6 @@ class WP_Optimize_Commands {
 	 */
 	public function enable_gzip_compression($params) {
 		return WP_Optimize()->get_gzip_compression()->enable_gzip_command_handler($params);
-	}
-
-
-	/**
-	 * Enable or disable browser cache.
-	 *
-	 * @param array $params - ['browser_cache_expire' => '1 month 15 days 2 hours' || '' - for disable cache]
-	 * @return array
-	 */
-	public function enable_browser_cache($params) {
-		return WP_Optimize()->get_browser_cache()->enable_browser_cache_command_handler($params);
 	}
 
 	/**

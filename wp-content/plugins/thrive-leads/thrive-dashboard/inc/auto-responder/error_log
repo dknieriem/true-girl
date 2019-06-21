@@ -1,9 +1,0 @@
-[18-Aug-2017 10:54:55 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/admin.php:10
-Stack trace:
-#0 {main}
-  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/admin.php on line 10
-[18-Aug-2017 10:54:55 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/admin.php:10
-Stack trace:
-#0 /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/api_log.php(9): require_once()
-#1 {main}
-  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/auto-responder/admin.php on line 10

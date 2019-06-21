@@ -1,1 +1,0 @@
-[18-Aug-2017 10:59:06 America/Chicago] PHP Fatal error:  Interface 'Thrive_Dash_Api_AWeber_Oauth_Adapter' not found in /home3/secretk1/public_html/staging/wp-content/themes/focusblog/thrive-dashboard/inc/auto-responder/lib/vendor/AWeber/Oauth/Application.php on line 23

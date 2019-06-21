@@ -3,7 +3,7 @@
 Plugin Name: WP-Optimize
 Plugin URI: https://getwpo.com
 Description: WP-Optimize is WordPress's #1 most installed optimization plugin. With it, you can clean up your database easily and safely, without manual queries.
-Version: 2.3.3
+Version: 2.3.4
 Author: David Anderson, Ruhani Rabin, Team Updraft
 Author URI: https://updraftplus.com
 Text Domain: wp-optimize
@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) die('No direct access allowed');
 
 // Check to make sure if WP_Optimize is already call and returns.
 if (!class_exists('WP_Optimize')) :
-define('WPO_VERSION', '2.3.3');
+define('WPO_VERSION', '2.3.4');
 define('WPO_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('WPO_PLUGIN_MAIN_PATH', plugin_dir_path(__FILE__));
 define('WPO_PREMIUM_NOTIFICATION', false);
@@ -69,9 +69,6 @@ class WP_Optimize {
 
 		add_action('wp_ajax_wp_optimize_ajax', array($this, 'wp_optimize_ajax_handler'));
 
-		// Initialize loggers.
-		add_action('plugins_loaded', array($this, 'setup_loggers'));
-
 		// Show update to Premium notice for non-premium multisite.
 		add_action('wpo_additional_options', array($this, 'show_multisite_update_to_premium_notice'));
 
@@ -123,6 +120,17 @@ class WP_Optimize {
 			self::$_notices_instance = new WP_Optimize_Notices();
 		}
 		return self::$_notices_instance;
+	}
+
+	/**
+	 * Returns instance if WPO_Page_Cache class.
+	 *
+	 * @return WPO_Page_Cache
+	 */
+	public function get_page_cache() {
+		if (!class_exists('WPO_Page_Cache')) include_once(WPO_PLUGIN_MAIN_PATH.'/cache/class-wpo-page-cache.php');
+
+		return WPO_Page_Cache::instance();
 	}
 
 	/**
@@ -238,7 +246,7 @@ class WP_Optimize {
 	 * @return bool
 	 */
 	public function is_apache_module_loaded($module) {
-		if (!$this->is_apache_server()) return false;
+		if (!$this->is_apache_server() || !function_exists('apache_get_modules')) return false;
 
 		$module_loaded = true;
 
@@ -284,8 +292,21 @@ class WP_Optimize {
 		// Loads the task manager
 		$this->get_task_manager();
 
+		// Initialize loggers.
+		$this->setup_loggers();
+
 		// Loads the language file.
 		load_plugin_textdomain('wp-optimize', false, dirname(plugin_basename(__FILE__)) . '/languages');
+
+		// temporary hide cache page
+		if (defined('WPO_SHOW_CACHE') && WPO_SHOW_CACHE) {
+			// Load page cache.
+			$this->get_page_cache();
+
+			// Initialize WP-Optimize page cache.
+			$this->init_page_cache();
+		}
+
 	}
 
 	/**
@@ -431,10 +452,17 @@ class WP_Optimize {
 		} else {
 			// Other commands, available for any remote method.
 			if (!class_exists('WP_Optimize_Commands')) include_once(WPO_PLUGIN_MAIN_PATH . 'includes/class-commands.php');
+			if (!class_exists('WP_Optimize_Cache_Commands')) include_once(WPO_PLUGIN_MAIN_PATH . 'cache/class-cache-commands.php');
 
 			$commands = new WP_Optimize_Commands();
+			$cache_commands = new WP_Optimize_Cache_Commands();
 
-			if (!method_exists($commands, $subaction)) {
+			// check if called command not in main commands class and exist in cache commands class then change class.
+			if (!is_callable(array($commands, $subaction)) && is_callable(array($cache_commands, $subaction))) {
+				$commands = $cache_commands;
+			}
+
+			if (!is_callable(array($commands, $subaction))) {
 				error_log("WP-Optimize: ajax_handler: no such command (".$subaction.")");
 				die('No such command');
 			} else {
@@ -494,13 +522,17 @@ class WP_Optimize {
 	public function get_tabs($page) {
 		// define tabs for pages.
 		$pages_tabs = array(
-			'wpo_database' => array('optimize' => __('Optimizations', 'wp-optimize'), 'tables' => __('Tables', 'wp-optimize')),
-			'wpo_images'  => array('smush' => __('Compress images', 'wp-optimize')),
+			'WP-Optimize' => array('optimize' => __('Optimizations', 'wp-optimize'), 'tables' => __('Tables', 'wp-optimize')),
+			'wpo_images'  => array(
+				'smush' => __('Compress images', 'wp-optimize'),
+				'unused' => __('Unused images and sizes', 'wp-optimize').'<span class="premium-only">Premium</span>',
+				'lazyload' => __('Lazy-load', 'wp-optimize').'<span class="premium-only">Premium</span>',
+			),
 			'wpo_cache' => array(
-				'gzip' => __('Gzip compression', 'wp-optimize'), // Adds a GZIP tab
+				'gzip' => __('Gzip compression', 'wp-optimize'),
 				'settings' => __('Static file caching', 'wp-optimize')  // Adds a settings tab
 			),
-			'WP-Optimize' => array(
+			'wpo_settings' => array(
 				'settings' => array(
 					'title' => __('Settings', 'wp-optimize'),
 				),
@@ -632,7 +664,7 @@ class WP_Optimize {
 		/**
 		 * SETTINGS
 		 */
-		add_action('wp_optimize_admin_page_WP-Optimize_settings', array($this, 'output_dashboard_settings_tab'), 20);
+		add_action('wp_optimize_admin_page_wpo_settings_settings', array($this, 'output_dashboard_settings_tab'), 20);
 
 		/**
 		 * Premium / other plugins
@@ -640,20 +672,16 @@ class WP_Optimize {
 		add_action('wp_optimize_admin_page_wpo_mayalso_may_also', array($this, 'output_dashboard_other_plugins_tab'), 20);
 
 		/**
-		 * DATABSE
+		 * DATABASE
 		 */
-		add_action('wp_optimize_admin_page_wpo_database_optimize', array($this, 'output_database_optimize_tab'), 20);
+		add_action('wp_optimize_admin_page_WP-Optimize_optimize', array($this, 'output_database_optimize_tab'), 20);
 
-		add_action('wp_optimize_admin_page_wpo_database_tables', array($this, 'output_database_tables_tab'), 20);
-
-		/**
-		 * CACHE
-		 */
-		add_action('wp_optimize_admin_page_wpo_cache', array($this, 'output_dashboard_cache_tab'), 20);
+		add_action('wp_optimize_admin_page_WP-Optimize_tables', array($this, 'output_database_tables_tab'), 20);
 
 		/**
 		 * CACHE
 		 */
+
 		add_action('wp_optimize_admin_page_wpo_cache_gzip', array($this, 'output_cache_gzip_tab'), 20);
 		add_action('wp_optimize_admin_page_wpo_cache_settings', array($this, 'output_cache_settings_tab'), 20);
 
@@ -663,6 +691,17 @@ class WP_Optimize {
 		add_action('wp_optimize_admin_page_wpo_support_support', array($this, 'output_dashboard_support_tab'), 20);
 		// Display Support page.
 
+		if (!self::is_premium()) {
+			/**
+			 * Add action for display Images > Unused images and sizes tab.
+			 */
+			add_action('wp_optimize_admin_page_wpo_images_unused', array($this, 'admin_page_wpo_images_unused'));
+
+			/**
+			 * Add action for display Dashboard > Lazyload tab.
+			 */
+			add_action('wp_optimize_admin_page_wpo_images_lazyload', array($this, 'admin_page_wpo_images_lazyload'));
+		}
 	}
 
 	/**
@@ -707,17 +746,38 @@ class WP_Optimize {
 	}
 
 	/**
-	 * Cache tab
+	 * Gzip tab
 	 */
 	public function output_cache_gzip_tab() {
-		WP_Optimize()->include_template('cache/gzip-compression.php');
+		$wpo_gzip_compression = $this->get_gzip_compression();
+		$wpo_gzip_compression_enabled = $wpo_gzip_compression->is_gzip_compression_enabled();
+
+		WP_Optimize()->include_template('cache/gzip-compression.php', false, array(
+			'wpo_gzip_compression_enabled' => $wpo_gzip_compression_enabled,
+			'wpo_gzip_compression_settings_added' => $wpo_gzip_compression->is_gzip_compression_section_exists(),
+			'info_link' => 'https://getwpo.com/gzip-compression-explained/',
+			'faq_link' => 'https://getwpo.com/gzip-faq-link/',
+			'class_name' => (!is_wp_error($wpo_gzip_compression_enabled) && $wpo_gzip_compression_enabled ? 'wpo-enabled' : 'wpo-disabled')
+		));
 	}
 
 	/**
 	 * Cache tab
 	 */
 	public function output_cache_settings_tab() {
-		WP_Optimize()->include_template('cache/browser-cache.php');
+
+		$wpo_browser_cache = $this->get_browser_cache();
+		$wpo_browser_cache_enabled = $wpo_browser_cache->is_cache_enabled();
+
+		WP_Optimize()->include_template('cache/browser-cache.php', false, array(
+			'wpo_browser_cache_enabled' => $wpo_browser_cache_enabled,
+			'wpo_browser_cache_settings_added' => $wpo_browser_cache->is_browser_cache_section_exists(),
+			'class_name' => (true === $wpo_browser_cache_enabled ? 'wpo-enabled' : 'wpo-disabled'),
+			'wpo_browser_cache_expire_days' => $this->get_options()->get_option('browser_cache_expire_days', '28'),
+			'wpo_browser_cache_expire_hours' => $this->get_options()->get_option('browser_cache_expire_hours', '0'),
+			'info_link' => 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching',
+			'faq_link' => 'https://www.digitalocean.com/community/tutorials/how-to-implement-browser-caching-with-nginx-s-header-module-on-ubuntu-16-04',
+		));
 	}
 
 	/**
@@ -762,10 +822,17 @@ class WP_Optimize {
 	}
 
 	/**
-	 * Cache tab
+	 * Runs upon the WP action admin_page_wpo_images_unused
 	 */
-	public function output_dashboard_cache_tab() {
-		WP_Optimize()->include_template('cache/cache.php');
+	public function admin_page_wpo_images_unused() {
+		WP_Optimize()->include_template('images/unused.php');
+	}
+
+	/**
+	 * Runs upon the WP action wp_optimize_admin_page_wpo_images_lazyload
+	 */
+	public function admin_page_wpo_images_lazyload() {
+		WP_Optimize()->include_template('images/lazyload.php');
 	}
 
 	/**
@@ -857,11 +924,17 @@ class WP_Optimize {
 	public function plugin_settings_link($links) {
 
 		$admin_page_url = $this->get_options()->admin_page_url();
+		$settings_page_url = $this->get_options()->admin_page_url('wpo_settings');
 
-		$settings_link = '<a href="' . esc_url($admin_page_url) . '">' . __('Settings', 'wp-optimize') . '</a>';
+		if (false == self::is_premium()) {
+			$premium_link = '<a href="' . esc_url($this->premium_version_link) . '" target="_blank">' . __('Premium', 'wp-optimize') . '</a>';
+			array_unshift($links, $premium_link);
+		}
+
+		$settings_link = '<a href="' . esc_url($settings_page_url) . '">' . __('Settings', 'wp-optimize') . '</a>';
 		array_unshift($links, $settings_link);
 
-		$optimize_link = '<a href="' . esc_url($admin_page_url) . '">' . __('Optimizer', 'wp-optimize') . '</a>';
+		$optimize_link = '<a href="' . esc_url($admin_page_url) . '">' . __('Optimize', 'wp-optimize') . '</a>';
 		array_unshift($links, $optimize_link);
 		return $links;
 	}
@@ -893,6 +966,15 @@ class WP_Optimize {
 		}
 
 		return $content;
+	}
+
+	/**
+	 * Initialize WP-Optimize page cache.
+	 */
+	public function init_page_cache() {
+		if ($this->get_page_cache()->config->get_option('enable_page_caching', false)) {
+			$this->get_page_cache()->enable();
+		}
 	}
 
 	/**
@@ -1034,7 +1116,7 @@ class WP_Optimize {
 			array(
 				'page_title' => __('Database', 'wp-optimize'),
 				'menu_title' => __('Database', 'wp-optimize'),
-				'menu_slug' => 'wpo_database',
+				'menu_slug' => 'WP-Optimize',
 				'function' => array($this, 'display_admin'),
 				'icon' => 'cloud',
 				'create_submenu' => true,
@@ -1057,7 +1139,7 @@ class WP_Optimize {
 			array(
 				'page_title' => __('Settings', 'wp-optimize'),
 				'menu_title' => __('Settings', 'wp-optimize'),
-				'menu_slug' => 'WP-Optimize',
+				'menu_slug' => 'wpo_settings',
 				'function' => array($this, 'display_admin'),
 				'icon' => 'admin-settings',
 				'create_submenu' => true,
@@ -1215,7 +1297,11 @@ class WP_Optimize {
 	 * Message to debug
 	 *
 	 * @param string $message Message to insert into the log.
-	 * @param array  $context Context of the log.
+	 * @param array  $context array with variables used in $message like in template,
+	 * 						  for ex.
+	 *						  $message = 'Hello {message}';
+	 * 						  $context = ['message' => 'world']
+	 * 						  'Hello world' string will be saved in log.
 	 */
 	public function log($message, $context = array()) {
 		$this->get_logger()->debug($message, $context);
@@ -1702,6 +1788,7 @@ function wpo_activation_actions() {
  */
 function wpo_deactivation_actions() {
 	WP_Optimize()->wpo_cron_deactivate();
+	WP_Optimize()->get_page_cache()->disable();
 }
 
 function wpo_cron_deactivate() {

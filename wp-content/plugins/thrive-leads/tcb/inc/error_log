@@ -1,9 +1,0 @@
-[18-Aug-2017 10:49:42 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb/inc/compat.php:9
-Stack trace:
-#0 {main}
-  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb/inc/compat.php on line 9
-[18-Aug-2017 10:49:42 America/Chicago] PHP Fatal error:  Class 'TVE_Dash_Product_Abstract' not found in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb/inc/TCB_Product.php on line 9
-[18-Aug-2017 10:49:42 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_editor_css() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb/inc/license_notice.php:7
-Stack trace:
-#0 {main}
-  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb/inc/license_notice.php on line 7

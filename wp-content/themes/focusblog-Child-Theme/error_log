@@ -1,4 +1,0 @@
-[18-Aug-2017 10:44:37 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function thrive_get_theme_options() in /home3/secretk1/public_html/staging/wp-content/themes/focusblog-Child-Theme/index.php:2
-Stack trace:
-#0 {main}
-  thrown in /home3/secretk1/public_html/staging/wp-content/themes/focusblog-Child-Theme/index.php on line 2

@@ -206,6 +206,7 @@ abstract class Updraft_Task_1_0 {
 	public function set_loggers($loggers) {
 		foreach ($loggers as $logger) {
 			$this->add_logger($logger);
+			$this->semaphore->add_logger($logger);
 		}
 	}
 
@@ -330,7 +331,7 @@ abstract class Updraft_Task_1_0 {
 	/**
 	 * Fires if the task fails, any clean up code and logging should go here
 	 *
-	 * @param String $error_code    - A code for the failure
+	 * @param String $error_code	- A code for the failure
 	 * @param String $error_message - A description for the failure
 	 */
 	public function fail($error_code = "Unknown", $error_message = "Unknown") {
@@ -415,7 +416,7 @@ abstract class Updraft_Task_1_0 {
 	 * @param  String $option the name of the option to update
 	 * @param  Mixed  $value  the value to save to the option
 	 *
-	 * @return Mixed          the status of the add operation
+	 * @return Mixed		  the status of the add operation
 	 */
 	public function add_option($option, $value) {
 		return Updraft_Task_Options::update_task_option($this->id, $option, $value);
@@ -427,7 +428,7 @@ abstract class Updraft_Task_1_0 {
 	 * @param  String $option the name of the option to update
 	 * @param  Mixed  $value  the value to save to the option
 	 *
-	 * @return Mixed          the status of the update operation
+	 * @return Mixed		  the status of the update operation
 	 */
 	public function update_option($option, $value) {
 		return Updraft_Task_Options::update_task_option($this->id, $option, $value);
@@ -438,7 +439,7 @@ abstract class Updraft_Task_1_0 {
 	 *
 	 * @param  String $option the option to delete
 	 *
-	 * @return Boolean        the result of the delete operation
+	 * @return Boolean		the result of the delete operation
 	 */
 	public function delete_option($option) {
 		return Updraft_Task_Options::delete_task_option($this->id, $option);
@@ -476,7 +477,7 @@ abstract class Updraft_Task_1_0 {
 	/**
 	 * Updates the status of the given task in the DB
 	 *
-	 * @param String $id     - the id of the task
+	 * @param String $id	 - the id of the task
 	 * @param String $status - the status of the task
 	 *
 	 * @return Boolean - the stauts of the update operation
@@ -487,7 +488,7 @@ abstract class Updraft_Task_1_0 {
 			return false;
 
 		global $wpdb;
-		$sql = $wpdb->prepare("UPDATE {$wpdb->prefix}tm_tasks SET status = %s WHERE id = %d", $status, $id);
+		$sql = $wpdb->prepare("UPDATE {$wpdb->base_prefix}tm_tasks SET status = %s WHERE id = %d", $status, $id);
 
 		return $wpdb->query($sql);
 	}
@@ -495,7 +496,7 @@ abstract class Updraft_Task_1_0 {
 	/**
 	 * Updates the number of attempts made for the given task in the DB
 	 *
-	 * @param String $id       - the id of the task
+	 * @param String $id	   - the id of the task
 	 * @param int 	 $attempts - the status of the task
 	 *
 	 * @return Boolean - the stauts of the update operation
@@ -506,7 +507,7 @@ abstract class Updraft_Task_1_0 {
 			return false;
 
 		global $wpdb;
-		$sql = $wpdb->prepare("UPDATE {$wpdb->prefix}tm_tasks SET attempts = %s WHERE id = %d", $attempts, $id);
+		$sql = $wpdb->prepare("UPDATE {$wpdb->base_prefix}tm_tasks SET attempts = %s WHERE id = %d", $attempts, $id);
 
 		return $wpdb->query($sql);
 	}
@@ -519,7 +520,7 @@ abstract class Updraft_Task_1_0 {
 	public function delete() {
 		global $wpdb;
 
-		$sql = $wpdb->prepare("DELETE FROM {$wpdb->prefix}tm_tasks WHERE id = %d", $this->id);
+		$sql = $wpdb->prepare("DELETE FROM {$wpdb->base_prefix}tm_tasks WHERE id = %d", $this->id);
 		return $wpdb->query($sql);
 	}
 
@@ -551,7 +552,7 @@ abstract class Updraft_Task_1_0 {
 	/**
 	 * Captures and logs any interesting messages
 	 *
-	 * @param String $message    - the error message
+	 * @param String $message	- the error message
 	 * @param String $error_type - the error type
 	 */
 	public function log($message, $error_type = 'info') {
@@ -560,8 +561,6 @@ abstract class Updraft_Task_1_0 {
 			foreach ($this->_loggers as $logger) {
 				$logger->log($message, $error_type);
 			}
-		} else {
-			error_log($message);
 		}
 	}
 
@@ -621,7 +620,7 @@ abstract class Updraft_Task_1_0 {
 	 *
 	 * @param String $type 		  A identifier for the task
 	 * @param String $description A description of the task
-	 * @param Mixed  $options     A list of options to initialise the task
+	 * @param Mixed  $options	 A list of options to initialise the task
 	 *
 	 * @return Updraft_Task|false Task object, false otherwise.
 	 */
@@ -634,7 +633,7 @@ abstract class Updraft_Task_1_0 {
 		if (!$user_id)
 			return false;
 
-		$sql = $wpdb->prepare("INSERT INTO {$wpdb->prefix}tm_tasks (type, user_id, description, class_identifier, status) VALUES (%s, %d, %s, %s, %s)", $type, $user_id, $description, $class_identifier, 'active');
+		$sql = $wpdb->prepare("INSERT INTO {$wpdb->base_prefix}tm_tasks (type, user_id, description, class_identifier, status) VALUES (%s, %d, %s, %s, %s)", $type, $user_id, $description, $class_identifier, 'active');
 
 		$wpdb->query($sql);
 
@@ -643,7 +642,7 @@ abstract class Updraft_Task_1_0 {
 		if (!$task_id)
 			return false;
 
-		$_task = $wpdb->get_row("SELECT * FROM {$wpdb->prefix}tm_tasks WHERE id = {$task_id} LIMIT 1");
+		$_task = $wpdb->get_row("SELECT * FROM {$wpdb->base_prefix}tm_tasks WHERE id = {$task_id} LIMIT 1");
 
 		$task = new $class_identifier($_task);
 

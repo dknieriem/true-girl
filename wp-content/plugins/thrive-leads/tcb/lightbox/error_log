@@ -1,4 +1,0 @@
-[18-Aug-2017 10:49:42 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function do_action() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb/lightbox/layout-edit.php:7
-Stack trace:
-#0 {main}
-  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/tcb/lightbox/layout-edit.php on line 7

@@ -294,8 +294,15 @@ class OMAPI_Rules {
 			$should_output = $e instanceof OMAPI_Rules_True;
 		}
 
+		$rules_debug = ! empty( $_GET['omwpdebug'] );
+
+		if ( $rules_debug ) {
+			$option = OMAPI::get_instance()->get_option();
+			$rules_debug = ! empty( $option['api']['omwpdebug'] ) || is_user_logged_in() && apply_filters( 'optin_monster_api_menu_cap', 'manage_options' );
+		}
+
 		// If query var is set and user can manage OM, output debug data.
-		if ( ! empty( $_GET['omwpdebug'] ) && is_user_logged_in() && apply_filters( 'optin_monster_api_menu_cap', 'manage_options' ) ) {
+		if ( apply_filters( 'optin_monster_api_should_output_rules_debug', $rules_debug ) ) {
 			$this->output_debug();
 		}
 

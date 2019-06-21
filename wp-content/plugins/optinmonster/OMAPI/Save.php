@@ -127,7 +127,11 @@ class OMAPI_Save {
 				$old_user   = isset( $option['api']['user'] ) ? $option['api']['user'] : false;
 				$old_key    = isset( $option['api']['key'] ) ? $option['api']['key'] : false;
 				$old_apikey = isset( $option['api']['apikey'] ) ? $option['api']['apikey'] : false;
-
+				if ( isset( $data['omwpdebug'] ) ) {
+					$option['api']['omwpdebug'] = true;
+				} else {
+					unset( $option['api']['omwpdebug'] );
+				}
 
 				// Check for new single apikey and break early with only that data check
 				if ( $apikey ) {

@@ -242,7 +242,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <?php if ( Pinterest()->enabled() ) : ?>
             <div class="row">
                 <div class="col">
-                    <?php Pinterest()->render_switcher_input( 'edd_checkout_enabled' ); ?>
+                    <?php Pinterest()->render_switcher_input( 'edd_purchase_enabled' ); ?>
                     <h4 class="switcher-label">Enable the Checkout event on Pinterest</h4>
                     <?php Pinterest()->renderAddonNotice(); ?>
                 </div>
@@ -556,7 +556,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <?php if ( Pinterest()->enabled() ) : ?>
             <div class="row">
                 <div class="col">
-                    <?php Pinterest()->render_switcher_input( 'edd_page_visit_enabled' ); ?>
+                    <?php Pinterest()->render_switcher_input( 'edd_view_content_enabled' ); ?>
                     <h4 class="switcher-label">Enable the PageVisit event on Pinterest</h4>
                     <?php Pinterest()->renderAddonNotice(); ?>
                 </div>

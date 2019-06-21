@@ -5,7 +5,7 @@
  * Description: OptinMonster API plugin to connect your WordPress site to your OptinMonster account.
  * Author:      OptinMonster Team
  * Author URI:  https://optinmonster.com
- * Version:     1.6.7
+ * Version:     1.6.9
  * Text Domain: optin-monster-api
  * Domain Path: languages
  *
@@ -60,7 +60,7 @@ class OMAPI {
 	 *
 	 * @var string
 	 */
-	public $version = '1.6.7';
+	public $version = '1.6.9';
 
 	/**
 	 * The name of the plugin.

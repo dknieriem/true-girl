@@ -48,9 +48,20 @@ abstract class Updraft_Smush_Task extends Updraft_Task_1_0 {
 		do_action('ud_task_started', $this);
 
 		$attachment_id	= $this->get_option('attachment_id');
-		$file_path = get_attached_file($attachment_id);
-		
+
+		if (is_multisite()) {
+			switch_to_blog($this->get_option('blog_id', 1));
+			$file_path = get_attached_file($attachment_id);
+			restore_current_blog();
+		} else {
+			$file_path = get_attached_file($attachment_id);
+		}
+
 		if (!$this->validate_file($file_path)) return false;
+
+		if (filesize($file_path) > 5242880) {
+			$this->update_option('request_timeout', 180);
+		}
 
 		$this->update_option('original_filesize', filesize($file_path));
 		$this->log($this->get_description());
@@ -77,7 +88,7 @@ abstract class Updraft_Smush_Task extends Updraft_Task_1_0 {
 	 * Posts the supplied data to the API url and returns a response
 	 *
 	 * @param String $api_endpoint - the url to post the form to
-	 * @param String $post_data    - the post data as specified by the server
+	 * @param String $post_data	   - the post data as specified by the server
 	 * @return mixed - the response
 	 */
 	public function post_to_remote_server($api_endpoint, $post_data) {
@@ -144,8 +155,15 @@ abstract class Updraft_Smush_Task extends Updraft_Task_1_0 {
 
 		$file = pathinfo($file_path);
 		$back_up = $file['dirname'].'/'.basename($file['filename'].$this->get_option('backup_prefix').$file['extension']);
-		
-		update_post_meta($this->get_option('attachment_id'), 'original-file', $back_up);
+
+		if (is_multisite()) {
+			switch_to_blog($this->get_option('blog_id', 1));
+			update_post_meta($this->get_option('attachment_id'), 'original-file', $back_up);
+			restore_current_blog();
+		} else {
+			update_post_meta($this->get_option('attachment_id'), 'original-file', $back_up);
+		}
+
 		$this->log("Backing up the original image - {$back_up}");
 
 		return copy($file_path, $back_up);
@@ -180,7 +198,15 @@ abstract class Updraft_Smush_Task extends Updraft_Task_1_0 {
 	public function complete() {
 
 		$attachment_id	= $this->get_option('attachment_id');
-		$file_path = get_attached_file($attachment_id);
+
+		if (is_multisite()) {
+			switch_to_blog($this->get_option('blog_id', 1));
+			$file_path = get_attached_file($attachment_id);
+			restore_current_blog();
+		} else {
+			$file_path = get_attached_file($attachment_id);
+		}
+
 		$original_size = $this->get_option('original_filesize');
 		$this->set_current_stage('completed');
 
@@ -195,9 +221,17 @@ abstract class Updraft_Smush_Task extends Updraft_Task_1_0 {
 			'savings-percent' 	=> $saved,
 		);
 
-		update_post_meta($attachment_id, 'smush-complete', true);
-		update_post_meta($attachment_id, 'smush-info', $info);
-		update_post_meta($attachment_id, 'smush-stats', $stats);
+		if (is_multisite()) {
+			switch_to_blog($this->get_option('blog_id', 1));
+			update_post_meta($attachment_id, 'smush-complete', true);
+			update_post_meta($attachment_id, 'smush-info', $info);
+			update_post_meta($attachment_id, 'smush-stats', $stats);
+			restore_current_blog();
+		} else {
+			update_post_meta($attachment_id, 'smush-complete', true);
+			update_post_meta($attachment_id, 'smush-info', $info);
+			update_post_meta($attachment_id, 'smush-stats', $stats);
+		}
 
 		$this->log("Successfully optimized the image - {$file_path}." . $info);
 		$this->set_status('complete');
@@ -208,7 +242,7 @@ abstract class Updraft_Smush_Task extends Updraft_Task_1_0 {
 	/**
 	 * Fires if the task fails, any clean up code and logging goes here
 	 *
-	 * @param String $error_code    - A code for the failure
+	 * @param String $error_code	- A code for the failure
 	 * @param String $error_message - A description for the failure
 	 */
 	public function fail($error_code = "Unknown", $error_message = "Unknown") {
@@ -217,8 +251,16 @@ abstract class Updraft_Smush_Task extends Updraft_Task_1_0 {
 
 		$info = sprintf(__("Failed with error code %s - %s", 'wp-optimize'), $error_code, $error_message);
 
-		update_post_meta($attachment_id, 'smush-info', $info);
-		update_post_meta($attachment_id, 'smush-complete', false);
+		if (is_multisite()) {
+			switch_to_blog($this->get_option('blog_id', 1));
+			update_post_meta($attachment_id, 'smush-info', $info);
+			update_post_meta($attachment_id, 'smush-complete', false);
+			restore_current_blog();
+		} else {
+			update_post_meta($attachment_id, 'smush-info', $info);
+			update_post_meta($attachment_id, 'smush-complete', false);
+		}
+
 
 		do_action('ud_smush_task_failed', $this, $error_code, $error_message);
 

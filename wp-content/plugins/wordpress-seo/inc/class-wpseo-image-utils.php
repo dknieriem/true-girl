@@ -24,6 +24,11 @@ class WPSEO_Image_Utils {
 		 */
 		$url = preg_replace( '/(.*)-\d+x\d+\.(jpg|png|gif)$/', '$1.$2', $url );
 
+		// Don't try to do this for external URLs.
+		if ( strpos( $url, get_site_url() ) !== 0 ) {
+			return 0;
+		}
+
 		if ( function_exists( 'wpcom_vip_attachment_url_to_postid' ) ) {
 			// @codeCoverageIgnoreStart -- We can't test this properly.
 			return (int) wpcom_vip_attachment_url_to_postid( $url );
@@ -382,5 +387,27 @@ class WPSEO_Image_Utils {
 		}
 
 		return $image_url;
+	}
+
+	/**
+	 * Retrieves an attachment ID for an image uploaded in the settings.
+	 *
+	 * @param string $setting The setting the image is stored in.
+	 *
+	 * @return int|bool The attachment id, or false if no id is available.
+	 */
+	public static function get_attachment_id_from_settings( $setting ) {
+		$image_id = WPSEO_Options::get( $setting . '_id', false );
+		if ( ! $image_id ) {
+			$image = WPSEO_Options::get( $setting, false );
+			if ( $image ) {
+				// There is not an option to put a URL in an image field in the settings anymore, only to upload it through the media manager.
+				// This means an attachment always exists, so doing this is only needed once.
+				$image_id = self::get_attachment_by_url( $image );
+				WPSEO_Options::set( $setting . '_id', $image_id );
+			}
+		}
+
+		return $image_id;
 	}
 }

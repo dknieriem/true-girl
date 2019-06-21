@@ -3,8 +3,8 @@ Contributors: DavidAnderson, ruhanirabin, DNutbourne, aporter, snightingale, lum
 Donate link: https://david.dw-perspective.org.uk/donate
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
 Requires at least: 3.8
-Tested up to: 5.1
-Stable tag: 2.3.3
+Tested up to: 5.2
+Stable tag: 2.3.4
 License: GPLv2+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -144,6 +144,21 @@ Please check your database for corrupted tables. That can happen, usually your w
 
 == Changelog ==
 
+= 2.3.4 - 10/Jun/2019 =
+
+* FIX: Incorrect file paths on multisites 
+* FIX: Wrong DB Schema caused image compression to fail on multisites
+* TWEAK: Improve image compression UI
+* TWEAK: Add the possibility to hide the image optimisation metabox in the media edit screen.
+* TWEAK: Fix potential PHP notice in task queue when Automatic Smush is activated
+* TWEAK: Improve JSON-reparser to cope with even more exotic junk from some setups with problems elsewhere in their stack
+* TWEAK: Remove the numerical index column from the list of tables
+* TWEAK: Prevent methods being called when create_task returns false
+* TWEAK: Prevent PHP log warnings when images are missing from server (log in WP-O internal log instead)
+* TWEAK: Changed the default settings page from 'Settings' to 'Database'
+* TWEAK: Better discoverability of Premium features
+* TWEAK: Use new task manager class Updraft_Task_Manager_1_1
+
 = 2.3.3 - 17/Apr/2019 =
 
 * FIX: Revert faulty change to the default settings page in 2.3.2, which prevented optimization buttons working
@@ -153,6 +168,7 @@ Please check your database for corrupted tables. That can happen, usually your w
 * FIX: Non-ASCII filenames could get mangled in the image optimization preview, resulting in images not shown (and WP 404 generation on the back-end).
 * FIX: Optimizing a table now runs correctly after automatic pre-optimize backup
 * TWEAK: Changed the default settings page from 'Settings' to 'Database'
+* TWEAK: Updated plugin links
 
 = 2.3.1 - 16/Apr/2019 =
 
@@ -511,4 +527,4 @@ Please check your database for corrupted tables. That can happen, usually your w
 * Fix Interface
 
 == Upgrade Notice ==
-* 2.3.3 : New feature in 2.3: image compression, plus other tweaks and fixes. 2.3.3 fixes a regression in 2.3.2. A recommended update for all.
+* 2.3.4 : Various small improvements, tweaks and fixes. A recommended update for all.

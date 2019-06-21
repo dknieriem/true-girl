@@ -1,2 +1,0 @@
-[18-Aug-2017 09:58:15] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/two-step-lightbox/item.phtml on line 19
-[18-Aug-2017 09:58:15] PHP Fatal error:  Call to undefined function  menu_page_url() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/two-step-lightbox/edit.phtml on line 5

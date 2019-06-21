@@ -5,11 +5,11 @@
 
 if (!defined('ABSPATH')) die('Access denied.');
 
-if (!class_exists('Updraft_Task_Manager_1_0')) require_once(WPO_PLUGIN_MAIN_PATH . 'vendor/team-updraft/common-libs/src/updraft-tasks/class-updraft-task-manager.php');
+if (!class_exists('Updraft_Task_Manager_1_1')) require_once(WPO_PLUGIN_MAIN_PATH . 'vendor/team-updraft/common-libs/src/updraft-tasks/class-updraft-task-manager.php');
 
 if (!class_exists('Updraft_Smush_Manager')) :
 
-class Updraft_Smush_Manager extends Updraft_Task_Manager_1_0 {
+class Updraft_Smush_Manager extends Updraft_Task_Manager_1_1 {
 
 	/**
 	 * Options used for smush jobs
@@ -72,7 +72,9 @@ class Updraft_Smush_Manager extends Updraft_Task_Manager_1_0 {
 		add_action('ud_task_failed', array($this, 'record_stats'));
 		add_action('prune_smush_logs', array($this, 'prune_smush_logs'));
 		add_action('autosmush_process_queue', array($this, 'autosmush_process_queue'));
-		add_action('add_meta_boxes_attachment', array($this, 'add_smush_metabox'), 10, 2);
+		if ('show' == $this->options->get_option('show_smush_metabox', 'show')) {
+			add_action('add_meta_boxes_attachment', array($this, 'add_smush_metabox'), 10, 2);
+		}
 	}
 
 
@@ -134,15 +136,12 @@ class Updraft_Smush_Manager extends Updraft_Task_Manager_1_0 {
 		
 		$options = array(
 			'attachment_id' => $post_id,
+			'blog_id'	   => get_current_blog_id(),
 			'image_quality' => $this->options->get_option('image_quality', 96),
 			'keep_original' => $this->options->get_option('back_up_original', true),
 			'preserve_exif' => $this->options->get_option('preserve_exif', true),
 			'lossy_compression' => $this->options->get_option('lossy_compression', false)
 		);
-
-		if (filesize(get_attached_file($image)) > 5242880) {
-			$options['request_timeout'] = 180;
-		}
 
 		$server = $this->options->get_option('compression_server', $this->webservice);
 		$task_name = $this->get_associated_task($server);
@@ -150,7 +149,7 @@ class Updraft_Smush_Manager extends Updraft_Task_Manager_1_0 {
 		$description = "$task_name with attachment ID : ".$post_id.", autocreated on : ".date("F d, Y h:i:s", time());
 		$task = call_user_func(array($task_name, 'create_task'), 'smush', $description, $options);
 		
-		$task->add_logger($this->logger);
+		if ($task) $task->add_logger($this->logger);
 		$this->log($description);
 
 		if (!wp_next_scheduled('autosmush_process_queue')) {
@@ -182,7 +181,7 @@ class Updraft_Smush_Manager extends Updraft_Task_Manager_1_0 {
 	/**
 	 * Process the compression of a single image
 	 *
-	 * @param int    $image   - ID of image
+	 * @param int	 $image   - ID of image
 	 * @param array  $options - options to use
 	 * @param string $server  - the server to process with
 	 *
@@ -260,7 +259,10 @@ class Updraft_Smush_Manager extends Updraft_Task_Manager_1_0 {
 
 		if (!empty($pending_tasks)) {
 			foreach ($pending_tasks as $task) {
-				$queued_images[] = $task->get_option('attachment_id');
+				$queued_images[] = array(
+					'attachment_id' => $task->get_option('attachment_id'),
+					'blog_id' => $task->get_option('blog_id')
+				);
 			}
 		}
 
@@ -269,21 +271,18 @@ class Updraft_Smush_Manager extends Updraft_Task_Manager_1_0 {
 			if (in_array($image, $queued_images)) continue;
 
 			$options = array(
-				'attachment_id' => $image,
+				'attachment_id' => intval($image['attachment_id']),
+				'blog_id'	   => intval($image['blog_id']),
 				'image_quality' => $this->options->get_option('image_quality', 85),
 				'keep_original' => $this->options->get_option('back_up_original', true),
 				'preserve_exif' => $this->options->get_option('preserve_exif', true),
 				'lossy_compression' => $this->options->get_option('lossy_compression', false)
 			);
 
-			if (filesize(get_attached_file($image)) > 5242880) {
-				$options['request_timeout'] = 180;
-			}
-
 			$server = $this->options->get_option('compression_server', $this->webservice);
 			$task_name = $this->get_associated_task($server);
 
-			$description = "$task_name - Attachment ID : ". $image. ", Started on : ". date("F d, Y h:i:s", time());
+			$description = "$task_name - Attachment ID : ". intval($image['attachment_id']) . ", Started on : ". date("F d, Y h:i:s", time());
 			$task = call_user_func(array($task_name, 'create_task'), 'smush', $description, $options);
 			$task->add_logger($this->logger);
 		}
@@ -362,7 +361,13 @@ class Updraft_Smush_Manager extends Updraft_Task_Manager_1_0 {
 			$completed_task_count = $total_bytes_saved = 0;
 		}
 
-		$stats = get_post_meta($attachment_id, 'smush-stats', true);
+		if (is_multisite()) {
+			switch_to_blog($task->get_option('blog_id', 1));
+			$stats = get_post_meta($attachment_id, 'smush-stats', true);
+			restore_current_blog();
+		} else {
+			$stats = get_post_meta($attachment_id, 'smush-stats', true);
+		}
 
 		$original_size = isset($stats['original-size']) ? $stats['original-size'] : 0;
 		$compressed_size = isset($stats['smushed-size']) ? $stats['smushed-size'] : 0;
@@ -435,7 +440,7 @@ class Updraft_Smush_Manager extends Updraft_Task_Manager_1_0 {
 	 */
 	public function smush_js_translations() {
 		return apply_filters('updraft_smush_js_translations', array(
-			'all_images_compressed' 		=> __('All valid images are compressed now', 'wp-optimize'),
+			'all_images_compressed' 		=> __('No uncompressed images were found.', 'wp-optimize'),
 			'error_unexpected_response' 	=> __('An unexpected response was received from the server. More information has been logged in the browser console.', 'wp-optimize'),
 			'compress_single_image_dialog'	=> __('Please wait: compressing the selected image.', 'wp-optimize'),
 			'error_try_again_later'			=> __('Please try again later.', 'wp-optimize'),
@@ -455,6 +460,10 @@ class Updraft_Smush_Manager extends Updraft_Task_Manager_1_0 {
 	public function add_smush_metabox($post) {
 		
 		if (!'image' == substr($post->post_mime_type, 0, 5)) {
+			return;
+		}
+
+		if (!file_exists(get_attached_file($post->ID))) {
 			return;
 		}
 
@@ -524,23 +533,32 @@ class Updraft_Smush_Manager extends Updraft_Task_Manager_1_0 {
 				$images = new WP_Query($args);
 
 				foreach ($images->posts as $image) {
-					$uncompressed_images[$site->blog_id][] = array(
-						'id' => $image->ID,
-						'thumb_url' => wp_get_attachment_thumb_url($image->ID),
-						'filesize'  => filesize(get_attached_file($image->ID))
-					);
+					if (file_exists(get_attached_file($image->ID))) {
+						$uncompressed_images[$site->blog_id][] = array(
+							'id' => $image->ID,
+							'thumb_url' => wp_get_attachment_thumb_url($image->ID),
+							'filesize'  => filesize(get_attached_file($image->ID))
+						);
+					} else {
+						$this->log("Could not find file for image: blog_id={$site->blog_id}, ID={$image->ID}, file=".get_attached_file($image->ID));
+					}
 				}
+
 				restore_current_blog();
 			}
 
 		} else {
 			$images = new WP_Query($args);
 			foreach ($images->posts as $image) {
-				$uncompressed_images[1][] = array(
-					'id' => $image->ID,
-					'thumb_url' => wp_get_attachment_thumb_url($image->ID),
-					'filesize'  => filesize(get_attached_file($image->ID))
-				);
+				if (file_exists(get_attached_file($image->ID))) {
+					$uncompressed_images[1][] = array(
+						'id' => $image->ID,
+						'thumb_url' => wp_get_attachment_thumb_url($image->ID),
+						'filesize'  => filesize(get_attached_file($image->ID))
+					);
+				} else {
+						$this->log("Could not find file for image: ID={$image->ID}, file=".get_attached_file($image->ID));
+				}
 			}
 		}
 
@@ -610,7 +628,13 @@ class Updraft_Smush_Manager extends Updraft_Task_Manager_1_0 {
 		$stats = array();
 
 		foreach ($images as $image) {
-			$stats[$image] = get_post_meta($image, 'smush-complete', true) ? 'success' : 'fail';
+			if (is_multisite()) {
+				switch_to_blog($image['blog_id'], 1);
+				$stats[] = get_post_meta($image['attachment_id'], 'smush-complete', true) ? 'success' : 'fail';
+				restore_current_blog();
+			} else {
+				$stats[] = get_post_meta($image['attachment_id'], 'smush-complete', true) ? 'success' : 'fail';
+			}
 		}
 
 		return array_count_values($stats);
@@ -890,7 +914,7 @@ class Updraft_Smush_Manager extends Updraft_Task_Manager_1_0 {
 	 *
 	 * @param string $key
 	 * @param mixed  $value
-	 * @param int    $blog_id
+	 * @param int	$blog_id
 	 */
 	public function save_to_cache($key, $value, $blog_id = 1) {
 		$transient_limit = 3600 * 48;
@@ -903,7 +927,7 @@ class Updraft_Smush_Manager extends Updraft_Task_Manager_1_0 {
 	 * Gets value from the cache.
 	 *
 	 * @param string $key
-	 * @param int    $blog_id
+	 * @param int	$blog_id
 	 * @return mixed
 	 */
 	public function get_from_cache($key, $blog_id = 1) {
@@ -918,7 +942,7 @@ class Updraft_Smush_Manager extends Updraft_Task_Manager_1_0 {
 	 * Deletes a value from the cache.
 	 *
 	 * @param string $key
-	 * @param int    $blog_id
+	 * @param int	$blog_id
 	 */
 	public function delete_from_cache($key, $blog_id = 1) {
 		$key = 'wpo_smush_cache_' . $blog_id . '_'. $key;

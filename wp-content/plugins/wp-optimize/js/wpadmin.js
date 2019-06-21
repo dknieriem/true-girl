@@ -546,7 +546,7 @@ var WP_Optimize = function (send_command) {
 	/**
 	 * Run single optimization click.
 	 */
-	$('#wp-optimize-nav-tab-wpo_database-optimize-contents').on('click', 'button.wp-optimize-settings-optimization-run-button', function () {
+	$('#wp-optimize-nav-tab-WP-Optimize-optimize-contents').on('click', 'button.wp-optimize-settings-optimization-run-button', function () {
 		var optimization_id = $(this).closest('.wp-optimize-settings').data('optimization_id');
 		if (!optimization_id) {
 			console.log("Optimization ID corresponding to pressed button not found");
@@ -566,7 +566,7 @@ var WP_Optimize = function (send_command) {
 	/**
 	 * Run all optimizations click.
 	 */
-	$('#wp-optimize-nav-tab-wpo_database-optimize-contents').on('click', '#wp-optimize', function (e) {
+	$('#wp-optimize-nav-tab-WP-Optimize-optimize-contents').on('click', '#wp-optimize', function (e) {
 		var run_btn = $(this);
 
 		e.preventDefault();

@@ -4,8 +4,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
 }
 
-define( 'PYS_FREE_VERSION', '7.0.4' );
-define( 'PYS_FREE_PINTEREST_MIN_VERSION', '2.0.3' );
+define( 'PYS_FREE_VERSION', '7.0.5' );
+define( 'PYS_FREE_PINTEREST_MIN_VERSION', '2.0.6' );
 define( 'PYS_FREE_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) ) );
 define( 'PYS_FREE_URL', untrailingslashit( plugin_dir_url( __FILE__ ) ) );
 

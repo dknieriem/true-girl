@@ -1,1 +1,0 @@
-[18-Aug-2017 10:59:06 America/Chicago] PHP Fatal error:  Class 'Thrive_Dash_Api_Drip_Exception' not found in /home3/secretk1/public_html/staging/wp-content/themes/focusblog/thrive-dashboard/inc/auto-responder/lib/vendor/Drip/Exception/Unsubscribed.php on line 9

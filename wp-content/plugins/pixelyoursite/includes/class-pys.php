@@ -180,13 +180,18 @@ final class PYS extends Settings implements Plugin {
             return;
         }
 
-        // disable PYS on Customizer and preview mode
+        // disable Events Manager on Customizer and preview mode
         if (is_admin() || is_customize_preview() || is_preview()) {
             return;
         }
 
-        // disable PYS on Elementor editor
+        // disable Events Manager on Elementor editor
         if (did_action('elementor/preview/init') || did_action('elementor/editor/init')) {
+            return;
+        }
+
+        // disable Events Manager on Divi Builder
+        if (function_exists('et_core_is_fb_enabled') && et_core_is_fb_enabled()) {
             return;
         }
 

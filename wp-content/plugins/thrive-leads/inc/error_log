@@ -1,4 +1,0 @@
-[18-Aug-2017 10:49:41 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function tve_leads_license_activated() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/inc/license_activation.php:43
-Stack trace:
-#0 {main}
-  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/inc/license_activation.php on line 43

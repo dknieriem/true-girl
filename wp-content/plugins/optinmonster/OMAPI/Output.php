@@ -280,12 +280,7 @@ class OMAPI_Output {
 		}
 
 		// Prepare variables.
-		$post_id = get_queried_object_id();
-		if ( ! $post_id ) {
-			if ( 'page' == get_option( 'show_on_front' ) ) {
-				$post_id = get_option( 'page_for_posts' );
-			}
-		}
+		$post_id = self::current_id();
 		$optins = $this->base->get_optins();
 
 		// If no optins are found, return early.
@@ -316,15 +311,9 @@ class OMAPI_Output {
 	public function load_optinmonster() {
 
 		// Prepare variables.
-		global $post;
-		$post_id = get_queried_object_id();
-		if ( ! $post_id ) {
-			if ( 'page' == get_option( 'show_on_front' ) ) {
-				$post_id = get_option( 'page_for_posts' );
-			}
-		}
-		$optins = $this->base->get_optins();
-		$init   = array();
+		$post_id = self::current_id();
+		$optins  = $this->base->get_optins();
+		$init    = array();
 
 		// If no optins are found, return early.
 		if ( ! $optins ) {
@@ -388,6 +377,10 @@ class OMAPI_Output {
 		// Maybe set shortcode.
 		if ( get_post_meta( $optin->ID, '_omapi_shortcode', true ) ) {
 			$this->shortcodes[] = get_post_meta( $optin->ID, '_omapi_shortcode_output', true );
+		}
+
+		if ( get_post_meta( $optin->ID, '_omapi_mailpoet', true ) ) {
+			$this->wp_helper();
 		}
 
 		return $this;
@@ -501,7 +494,7 @@ class OMAPI_Output {
 
 		$tax_terms    = array();
 		$object       = get_queried_object();
-		$object_id    = get_queried_object_id();
+		$object_id    = self::current_id();
 		$object_class = is_object( $object ) ? get_class( $object ) : '';
 		$object_type  = '';
 		$object_key   = '';
@@ -586,6 +579,24 @@ class OMAPI_Output {
 		}
 
 		return $should_output;
+	}
+
+	/**
+	 * Get the current page/post's post id.
+	 *
+	 * @since  1.6.9
+	 *
+	 * @return int
+	 */
+	public static function current_id() {
+		$post_id = get_queried_object_id();
+		if ( ! $post_id ) {
+			if ( 'page' == get_option( 'show_on_front' ) ) {
+				$post_id = get_option( 'page_for_posts' );
+			}
+		}
+
+		return $post_id;
 	}
 
 }

@@ -8,6 +8,8 @@ if (!defined('ABSPATH')) die('No direct access allowed');
 
 if (!class_exists('WPO_Cache_Config')) require_once('class-wpo-cache-config.php');
 
+require_once dirname(__FILE__) . '/file-based-page-cache-functions.php';
+
 if (!class_exists('WPO_Cache_Rules')) :
 
 class WPO_Cache_Rules {
@@ -26,9 +28,6 @@ class WPO_Cache_Rules {
 	 */
 	public static $instance;
 
-	/**
-	 * Class constructor
-	 */
 	public function __construct() {
 		$this->config = WPO_Cache_Config::instance()->get();
 		$this->setup_hooks();
@@ -108,7 +107,7 @@ class WPO_Cache_Rules {
 	 * We want the whole cache purged here as different parts
 	 * of the site could potentially change on post updates
 	 *
-	 * @param Integer $post_id WordPress post id
+	 * @param Integer $post_id - WP post id
 	 */
 	public function purge_post_on_update($post_id) {
 		$post_type = get_post_type($post_id);
@@ -119,6 +118,13 @@ class WPO_Cache_Rules {
 			return;
 		}
 
+		$this->purge_cache();
+	}
+
+	/**
+	 * Clears the cache.
+	 */
+	public function purge_cache() {
 		if (!empty($this->config['enable_page_caching'])) {
 			wpo_cache_flush();
 		}
@@ -127,7 +133,7 @@ class WPO_Cache_Rules {
 	/**
 	 * Returns an instance of the current class, creates one if it doesn't exist
 	 *
-	 * @return WPO_Cache_Rules
+	 * @return object
 	 */
 	public static function instance() {
 		if (empty(self::$instance)) {

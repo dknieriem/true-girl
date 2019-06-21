@@ -24,11 +24,11 @@ class WP_Optimize_Options {
 	 *
 	 * @return string
 	 */
-	public function admin_page_url() {
+	public function admin_page_url($page = 'WP-Optimize') {
 		if (is_multisite()) {
-			return network_admin_url('admin.php?page=WP-Optimize');
+			return network_admin_url('admin.php?page='.$page);
 		} else {
-			return admin_url('admin.php?page=WP-Optimize');
+			return admin_url('admin.php?page='.$page);
 		}
 	}
 

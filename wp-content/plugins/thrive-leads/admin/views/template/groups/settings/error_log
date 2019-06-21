@@ -1,6 +1,0 @@
-[18-Aug-2017 09:58:38] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/groups/settings/direct_url.phtml on line 10
-[18-Aug-2017 09:58:38] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/groups/settings/tags_filter.phtml on line 6
-[18-Aug-2017 09:58:38] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/groups/settings/group_settings.phtml on line 9
-[18-Aug-2017 09:58:38] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/groups/settings/posts_filter.phtml on line 4
-[18-Aug-2017 09:58:38] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/groups/settings/selected_filter.phtml on line 2
-[18-Aug-2017 09:58:38] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/groups/settings/add_direct_url_form.phtml on line 5

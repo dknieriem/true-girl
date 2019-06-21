@@ -144,7 +144,7 @@ class OMAPI_Refresh {
 
 		if ( is_wp_error( $body ) ) {
 			// If no optins available, make sure they get deleted.
-			if ( in_array( $body->get_error_code(), [ 'optins', 'no-campaigns-error' ], true ) ) {
+			if ( in_array( $body->get_error_code(), array( 'optins', 'no-campaigns-error' ), true ) ) {
 				$this->base->save->store_optins( array() );
 			}
 

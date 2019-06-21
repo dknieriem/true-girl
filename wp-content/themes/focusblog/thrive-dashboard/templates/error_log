@@ -1,2 +1,0 @@
-[18-Aug-2017 09:50:36] PHP Fatal error:  Call to undefined function  get_current_screen() in /home3/secretk1/public_html/staging/wp-content/themes/focusblog/thrive-dashboard/templates/share.phtml on line 3
-[18-Aug-2017 09:50:36] PHP Fatal error:  Call to undefined function  menu_page_url() in /home3/secretk1/public_html/staging/wp-content/themes/focusblog/thrive-dashboard/templates/header.phtml on line 5

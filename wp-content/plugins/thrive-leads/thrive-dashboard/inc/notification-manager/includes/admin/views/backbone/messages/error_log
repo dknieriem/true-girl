@@ -1,1 +1,0 @@
-[18-Aug-2017 09:59:08] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/thrive-dashboard/inc/notification-manager/includes/admin/views/backbone/messages/form.phtml on line 4

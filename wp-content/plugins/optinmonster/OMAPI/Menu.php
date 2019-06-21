@@ -471,6 +471,10 @@ class OMAPI_Menu {
 					case 'apikey' :
 						$ret = $this->get_password_field( $setting, $value, $id, __( 'API Key', 'optin-monster-api'), __( 'A single API Key found in your OptinMonster Account API area.', 'optin-monster-api'), __( 'Enter your API Key here...', 'optin-monster-api') );
 					break 2;
+
+					case 'omwpdebug' :
+						$ret = $this->get_checkbox_field( $setting, $value, $id, __( 'Debugging Rules', 'optin-monster-api' ), __( 'Allow logged-out/non-admin debugging of plugin rules with the <code>omwpdebug</code> query variable?', 'optin-monster-api' ) );
+					break 2;
 				}
 			break;
 

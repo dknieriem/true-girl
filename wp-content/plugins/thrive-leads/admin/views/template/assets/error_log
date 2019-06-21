@@ -1,3 +1,0 @@
-[18-Aug-2017 09:58:14] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/assets/file.phtml on line 32
-[18-Aug-2017 09:58:14] PHP Fatal error:  Call to undefined function  __() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/assets/item.phtml on line 8
-[18-Aug-2017 09:58:15] PHP Fatal error:  Call to undefined function  plugin_dir_url() in /home3/secretk1/public_html/staging/wp-content/plugins/thrive-leads/admin/views/template/assets/connections.phtml on line 7

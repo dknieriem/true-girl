@@ -216,7 +216,7 @@ img.addons {
 
 #save_done, .save-done {
 	color: #D94F00;
-	font-size: 250% !important;
+	font-size: 220% !important;
 }
 
 .wp-optimize-settings-optimization-info a {
@@ -263,6 +263,12 @@ img.addons {
 
 div#wpoptimize_table_list_tables_not_found + h3 {
 	margin-top: 30px;
+}
+
+/* Hide First column */
+#wpoptimize_table_list tr th:first-child,
+#wpoptimize_table_list tr td:first-child {
+	display: none;
 }
 
 #optimize_form .select2-container,
@@ -508,7 +514,6 @@ div#wpoptimize_table_list_tables_not_found + h3 {
 	border: 1px solid #CCC;
 }
 
-#wpo_browser_cache_error_message,
 #wpo_gzip_compression_error_message,
 .wpo-error {
 	color: #9B0000;
@@ -525,4 +530,8 @@ div#wpoptimize_table_list_tables_not_found + h3 {
 
 .wpo-disabled .wpo-enabled {
 	display: none;
+}
+
+.wpo-button-wrap {
+	margin-top: 10px;
 }

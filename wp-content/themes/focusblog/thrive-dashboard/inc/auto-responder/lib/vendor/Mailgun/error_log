@@ -1,1 +1,0 @@
-[18-Aug-2017 10:58:54 America/Chicago] PHP Fatal error:  Class 'Mailgun\Messages\MessageBuilder' not found in /home3/secretk1/public_html/staging/wp-content/themes/focusblog/thrive-dashboard/inc/auto-responder/lib/vendor/Mailgun/BatchMessage.php on line 16
