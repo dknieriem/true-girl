@@ -1,0 +1,19 @@
+<?php list( $selected_source, $distance_center_style, $distance_source_style, $distance_order_center, $distance_center_url_style, $post_view ) = $vars; ?>
+<select name="_wpv_settings[distance_order][source]" class="js-wpv-posts-distance-order-source" autocomplete="off"
+        style="<?php echo $distance_source_style ?>"
+>
+	<option value="fixed" <?php selected( $selected_source, 'fixed' ); ?>><?php _e('Fixed', 'toolset-maps') ?></option>
+	<option value="visitor_location" <?php selected( $selected_source, 'visitor_location' ); ?>><?php _e('Visitor location', 'toolset-maps') ?></option>
+	<?php if ( $post_view ): ?>
+	<option value="url_parameter" <?php selected( $selected_source, 'url_parameter' ); ?>><?php _e('URL parameter', 'toolset-maps') ?></option>
+	<?php endif ?>
+</select>
+<input type="text" autocomplete="off" name="_wpv_settings[distance_order][center]"
+       class="js-wpv-posts-distance-order-center js-toolset-maps-address-autocomplete"
+       style="<?php echo $distance_center_style ?>"
+       value="<?php echo esc_attr( $distance_order_center ) ?>"
+/>
+<input type="text" name="_wpv_settings[distance_order][url_parameter]"
+       class="js-wpv-posts-distance-order-center-url-parameter" value="toolset_maps_distance_center" size="30"
+       style="<?php echo $distance_center_url_style ?>"
+/>

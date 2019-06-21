@@ -1,0 +1,117 @@
+img.js-wpv-addon-maps-custom-marker-item-img {
+    vertical-align: middle;
+    padding: 5px 0;
+    max-height: 45px;
+}
+
+#wpv-map-render-marker_icon li,
+#wpv-map-render-marker_icon_hover li,
+#wpv-map-marker-marker_icon li,
+#wpv-map-marker-marker_icon_hover li {
+    display: inline-block;
+    width: 70px;
+    margin-bottom: 0;
+}
+
+#wpv-map-render-marker_icon label,
+#wpv-map-render-marker_icon_hover label,
+#wpv-map-marker-marker_icon label,
+#wpv-map-marker-marker_icon_hover label {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 82px;
+    width: 58px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#wpv-map-render-marker_icon label.selected,
+#wpv-map-render-marker_icon_hover label.selected,
+#wpv-map-marker-marker_icon label.selected,
+#wpv-map-marker-marker_icon_hover label.selected {
+    box-shadow: 0 0 3px 0 #999 inset;
+}
+
+#wpv-map-render-marker_icon .js-shortcode-gui-field,
+#wpv-map-render-marker_icon_hover .js-shortcode-gui-field,
+#wpv-map-marker-marker_icon .js-shortcode-gui-field,
+#wpv-map-marker-marker_icon_hover .js-shortcode-gui-field {
+    margin: 60px 0 0;
+}
+
+#wpv-map-render-marker_icon .wpv-icon-img,
+#wpv-map-render-marker_icon_hover .wpv-icon-img,
+#wpv-map-marker-marker_icon .wpv-icon-img,
+#wpv-map-marker-marker_icon_hover .wpv-icon-img {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    width: 48px;
+    height: 48px;
+    background: no-repeat 50%;
+    background-size: contain;
+}
+
+select#wpv-map-render-style_json {
+    display: inline-block;
+}
+
+.js-wpv-shortcode-gui-attribute-wrapper-for-style_json button {
+    float: right;
+}
+
+#js-wpv-addon-maps-render-map-preview {
+    width: 100%;
+    height: 200px;
+}
+
+#wpv-maps-stored-data-table tr.deleted {
+    background-color: #b94a48;
+}
+
+#wpv-maps-stored-data-table td {
+    vertical-align: middle;
+}
+
+#wpv-maps-stored-data-table .wpv-map-delete-stored-address {
+    background: none;
+    color: #b94a48;
+    cursor: pointer;
+    padding: 2px 4px;
+    margin: 0 10px 0 20px;
+    border-radius: 3px;
+}
+
+#wpv-maps-stored-data-table .wpv-map-delete-stored-address:hover {
+    background: #b94a48;
+    color: #eee;
+}
+
+#wpv-maps-stored-data-table .wpv-map-delete-stored-address.wpv-map-delete-stored-address-deleting,
+#wpv-maps-stored-data-table .wpv-map-delete-stored-address.wpv-map-delete-stored-address-deleting:hover {
+    background: none;
+    color: #b94a48;
+    cursor: default;
+}
+
+/* Map styles section */
+#js-wpv-addon-maps-render-map-preview {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+button.js-wpv-toolset-maps-delete-json-file {
+    display: none;
+}
+
+button#js-wpv-toolset-maps-add-map-style {
+    float: right;
+}
+
+/*Marker dialog: attributes forced inside attributes */
+/* This probably belongs to Toolset Common */
+.toolset-shortcode-gui-dialog-container .toolset-shortcode-gui-attribute-group .toolset-shortcode-gui-attribute-wrapper .toolset-shortcode-gui-attribute-wrapper {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,210 @@
+-------------------------------------------------------------------------------------------------------------------
+Toolset Maps 1.7.1
+	- Added lots of features to Map Gutenberg block.
+	- Refactored "Reload" button dialog now has nicer UI.
+
+-------------------------------------------------------------------------------------------------------------------
+Toolset Maps 1.7
+	- Added Gutenberg block for Maps.
+	- Improved SVG Compatibility for markers with Google API, and especially for IE11.
+	- Improved initializing of map preview in address editor fixes some edge cases and improves performance a bit.
+	- Fixed a regression where current user location search (which requires HTTPS) was offered even if site is loaded with HTTP.
+	- Fixed an issue where map distance filter fields were shown twice after current visitor location was determined.
+
+-------------------------------------------------------------------------------------------------------------------
+Toolset Maps 1.6
+	- Added an option to return results outside of the radius instead of inside in Distance Filter.
+	- Added a shortcode for conditional display based on visitor location.
+	- Added a shortcode to show the distance of an address field to a given point.
+	- Added heading and pitch attributes to manually adjust street view.
+	- Added ability to order custom search results by distance from location being searched.
+	- Updated translations.
+	- Improved UI: when “Use my location” is clicked, preview map is automatically updated.
+	- Fixed UI for ordering by distance - it needed a page reload to show the "As a distance" option.
+
+-------------------------------------------------------------------------------------------------------------------
+Toolset Maps 1.5.4
+	- Fixed an issue where the option to order by distance was only available after page reload.
+	- Fixed distance filtering & ordering to account for repeating address fields.
+	- Fixed some minor translation issues.
+	- Fixed an edge case with distance filter and paging.
+	- Fixed an issue when saving a non-existing address with Azure API.
+	- A number of small UI fixes, especially in combination with Azure.
+	- Updated key check for distance filter to be multi-API aware.
+	- Improved performance: optimized JS and CSS loading.
+
+-------------------------------------------------------------------------------------------------------------------
+Toolset Maps 1.5.3
+	- Improved Azure Maps API feature parity with Google Maps API:
+		- Map rendering improvements: support for scrollwheel="off", everything in "Map zoom and center" section, etc.
+		- Markers support custom icons now.
+		- Marker popups now support HTML content.
+		- Address autocomplete on distance filter frontend with Azure styling issue fixed.
+		- Elementor editor preview fixed with Azure.
+		- Full feature parity address editor implemented.
+	- Updated dependency for Toolset Types to 3.0.
+	- Removed API key entering from plugins page (because we support using 2 APIs now).
+	- Removed compatibility code for Views < 2.6. (Views 2.6 are a minimum requirement for Maps anyway.)
+	- Fixed an issue with distance ordering and "Limit and Offset" option in Views.
+	- Fixed a regression from 1.5 where map preview was not rendered on form that includes an address field.
+
+-------------------------------------------------------------------------------------------------------------------
+Toolset Maps 1.5.2
+	- Fixed an issue with the ability to insert and display markers for address fields coming from non trivial source.
+
+-------------------------------------------------------------------------------------------------------------------
+Toolset Maps 1.5.1
+	- Fixed an issue with the ability to sort a View by distance to a given point, which deactivated the View pagination.
+
+-------------------------------------------------------------------------------------------------------------------
+Toolset Maps 1.5
+	- Added support for Street Views.
+	- Added shortcode to ensure everything inside will have backend access to visitors location.
+	- Added ordering items (posts, users & taxonomy terms) by distance.
+	- Added compatibility with Toolset Types 3.0 (many-to-many relationships).
+	- Added dependency on Toolset Common library to reuse common code.
+	- Added optional 2nd Google API key to be used when users want to restrict API access in multi-domain situations.
+	- Added basic support for a different Maps API - Microsoft Azure Maps
+	- Improved address autocomplete to also return business names.
+	- Improved checking for Toolset Types and not offering Distance filter if Types are not active.
+	- Improved Elementor compatibility - editor preview renders maps properly.
+	- Updated Google Maps API version used to latest current, fixed some compatibility problems.
+	- Refactored CSS loading to be more standards compliant and cleaner.
+	- Fixed distance filter issues:
+		- Summary text which always showed km as unit.
+		- Custom search UI problems with ajax.
+		- Appearing as an option in archive views, where it doesn't work.
+		- Filter not being applied when used together with Relevanssi search.
+	- Fixed map clusters causing “Focus on Map” links to focus on the wrong location when WPML was active.
+
+-------------------------------------------------------------------------------------------------------------------
+Toolset Maps 1.4.2
+	- Added Google Maps API checks to help diagnose problems with API.
+	- Improved saving of uploaded markers to make them portable when changing domains & schemas.
+	- Improved compatibility with hidden Bootstrap accordions and tabs.
+	- Improved the compatibility with WPML when translating custom texts for the maps filters.
+	- Improved the user experience and compatibility for the distance filter.
+	- Improved UX and compatibility of distance filter.
+	- Refactored many method names to remove needles prefixes - if you have built custom functionality on top, check compatibility.
+	- Fixed handling of broken addresses.
+	- Fixed an issue with the disappearing auto-complete values when using Distance filter with two shortcodes (one for form and one for results).
+	- Fixed an issue where the location input field was losing focus on Safari.
+
+-------------------------------------------------------------------------------------------------------------------
+Toolset Maps 1.4.1
+	- Added ability to enter Google Maps API key directly on plugins page after activating.
+	- Added "Use my location" functionality to maps editor.
+	- Added Spiderfy library as an alternate way to handle overlapped markers. Can be used instead of or together with clusterer.
+	- Added setting to show Maps in Satellite or Map mode on load.
+	- Fixed typos in interface text.
+	- Fixed dialogs for focus, reload and zoom-out buttons not preventing page scroll.
+	- Fixed Google Maps API loading to use the latest stable version (3.30.x).
+
+-------------------------------------------------------------------------------------------------------------------
+Toolset Maps 1.4, AKA Split
+	- Added map geolocation - marker can show current visitor location (due to browser rules, works only on sites under SSL.)
+	- Added possibility to show HTML as map placeholder before the map is rendered.
+	- Added map styling with stylizer JSON.
+	- Added distance filter - a way to filter map markers by distance to a given point.
+	- Added extension interface translations to multiple languages:
+		- Chinese (Simplified)
+		- Chinese (Traditional)
+		- Dutch
+		- French
+		- German
+		- Italian
+		- Japanese
+		- Portuguese
+		- Russian
+		- Spanish
+		- Arabic
+		- Greek
+		- Hebrew
+		- Korean
+		- Polish
+		- Portugal Portuguese
+		- Swedish
+		- Ukrainian
+		- Vietnamese
+	- Fixed a small typo in interface text.
+	- Fixed Map & Marker ID autoincrementing.
+
+-------------------------------------------------------------------------------------------------------------------
+Toolset Maps 1.3.1
+	- Improve the description of the height attribute when displaying a map regarding the usage of percentage values.
+	- Fixed a race conditions on the helper method to check whether the Google Maps autocomplete API is available.
+	- Fixed a styling problem with address fields previews related to CSS floats and margins/paddings.
+	- Fixed a typo about an extra semicolon in a CSS style declaration.
+	- Fixed a compatibility issue about missing maps in Views served from their cached version.
+
+-------------------------------------------------------------------------------------------------------------------
+Toolset Maps 1.3.0
+	- Added compatibility with Toolset Types 2.2.7
+	- Added compatibility with Toolset Views 2.3.0
+	- Added the Google Maps items to the Fields and Views dialogs for frontend page builders.
+
+-------------------------------------------------------------------------------------------------------------------
+Toolset Maps 1.2.2
+	- Fixed a bug that rejected valid latitude and longitude values.
+	- Fixed a problem with the Great Firewall of China regarding autocomplete on address fields.
+	- Fixed a bug that broke the Google Maps API key saving when Views is not installed.
+
+-------------------------------------------------------------------------------------------------------------------
+Toolset Maps 1.2.1
+	- Fixed a bug that rejected valid latitude and longitude values.
+
+-------------------------------------------------------------------------------------------------------------------
+Toolset Maps 1.2, AKA Colombo
+	- Added settings for hiding some Google Maps controls, like the zooming buttons, the street view toggler and the map type selection.
+	- Added name attributes to each auxiliar latitude and longitude input for address fields, so they can be used on save actions.
+	- Improved the usability related to the mandatory Google Maps API key by adding hints and messages, and making the relevant setting available even without Toolset Views.
+	- Fixed a bug that rejected valid latitude and longitude values.
+
+-------------------------------------------------------------------------------------------------------------------
+Toolset Maps 1.1.1
+	- Added support for address fields in CRED forms submitted using AJAX.
+	- Fixed an issue with the cluster icons depending on external resources.
+	- Fixed an issue with the registered Google Maps API key not being used on the main frontend script.
+	- Fixed an issue where all Latitude/Longitude labels were focusing only on the first fields in page, and all fields had the same IDs.
+
+-------------------------------------------------------------------------------------------------------------------
+Toolset Maps 1.1, AKA Brussels
+	- Added full support for usermeta and termmeta address fields.
+	- Added support for ID parameters on marker shortcodes, to display addresses from specific or parent posts, users, and terms.
+	- Added ability to fine-tune an address value by setting its latitude and longitude coordinates or by dragging a marker on a map.
+	- Added ability to load a map t any place on the page and update it after Views AJAX pagination or parametric search live results update.
+	- Added ability to simulate hover and click events on markers from outside the map.
+	- Fixed an issue that kept one marker popup open when another marker popup was opened.
+	- Fixed an issue on custom marker icons being offered as options after deleting them from the native Media gallery.
+	- Improved compatibility with the Embedded versions of Toolset plugins.
+	- Added compatibility with the new Toolset menu and shared settings page.
+	- Added compatibility with the Great Firewall of China with a set of filters on the Google Maps API scripts URLs.
+
+-------------------------------------------------------------------------------------------------------------------
+Toolset Maps 1.0, AKA Athens
+	- First release.
+	- Added Types compatibility with a new Address field type.
+		- Added autocomplete for Address fields.
+		- Added finetuning by providing latitude and longitude coordinates for Address fields.
+		- Added the ability to add or edit Address fields on children posts on the Fields Table of the parent post.
+		- Added the ability to display either the address value or the latitude and longitude coordinates of the stoed address.
+	- Added CRED compatibility for Types Address fields.
+		- Added autocomplete for Address fields.
+		- Added finetuning by providing latitude and longitude coordinates for Address fields.
+	- Added Views compatibility for displaying maps and markers with different data sources.
+		- Added two new shortcodes to display a map and to add markers to a map.
+		- Added the ability to display maps with markers coming from Types address fields.
+		- Added the ability to display maps with markers coming from other custom fields.
+		- Added the ability to display maps with markers coming from a pair of latitude and longitude coordinates.
+		- Added the ability to display maps with markers coming from an arbitrary address.
+		- Added autocomplete for map IDs and marker IDs.
+		- Added a security method so unique IDs are used on maps and markers.
+		- Added several options to the map shortcode, including size, zoom and centering, marker clustering, map interaction, and styles.
+		- Added several options to the marker shortcode, including address source, title and popup window, and styles.
+		- Added a mechanism to zoom into a specific marker on a map.
+		- Added a mechanism to zoom out to the original zoom level of a map.
+		- Added a mechanism to reload a map.
+		- Added a mechanism to use a custom Google Maps API key.
+		- Added an API function to set specific clustering options to a map, such as cluster images and a calculation callback to decide which image is used.
+		- Added compatibility with Views AJAX pagination so the map is automatically reloaded and shows the right markers for each Views page.
+		- Added compatibility with Views AJAX parametric search results so the map is automatically reloaded and shows the right markers for each search results.

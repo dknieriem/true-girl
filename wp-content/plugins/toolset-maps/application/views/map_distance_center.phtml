@@ -1,0 +1,45 @@
+<li>
+	<label>
+		<input class="js-filter-center-source" type="radio" name="map_center_source"
+		       value="address" <?php checked( 'address', $vars['map_center_source'] ); ?>/>
+		<?php _e('Distance center is set using a fixed location:', 'toolset-maps') ?></label>
+</li>
+<div class="wpv-filter-maps-distance-center-container">
+	<div class="toolset-google-map-container js-toolset-google-map-container">
+		<div class="toolset-google-map-inputs-container js-toolset-google-map-inputs-container">
+			<label class="" for="js-wpv-filter-maps-address"><?php _e('Address', 'toolset-maps') ?></label>
+			<input type="text" id="js-wpv-filter-maps-address" name="map_center_address"
+			       value="<?php echo esc_attr( isset( $vars['map_distance_center'] ) ? $vars['map_distance_center'] : '' ); ?>"
+			       placeholder="<?php echo esc_attr( __('Enter address', 'toolset-maps') ) ?>"
+			       class="toolset-google-map js-toolset-google-map js-toolset-maps-address-autocomplete textfield"
+			       data-coordinates="" autocomplete="off"
+			>
+		</div>
+	</div>
+</div>
+<li>
+	<label>
+		<input class="js-filter-center-source" type="radio" name="map_center_source"
+		       value="url_param" <?php checked( 'url_param', $vars['map_center_source'] ); ?>>
+		<?php _e('Distance center is set using URL parameter:', 'toolset-maps') ?></label>
+	<input type="text"
+	       class="js-distance-center-url-param"
+	       name="map_distance_center_url_param_name"
+	       value="<?php echo esc_attr( ( $vars['map_distance_center_url_param_name'] != "" ? $vars['map_distance_center_url_param_name'] : 'mapcenter' ) ); ?>"/>
+</li>
+<li>
+	<label>
+		<input class="js-filter-center-source" type="radio" name="map_center_source"
+		       value="shortcode_attr" <?php checked( 'shortcode_attr', $vars['map_center_source'] ); ?>>
+		<?php _e('Distance center is set using shortcode attribute:', 'toolset-maps') ?></label>
+	<input type="text"
+	       class="js-distance-center-shortcode"
+	       name="map_distance_center_shortcode_attr_name"
+	       value="<?php echo esc_attr( ( $vars['map_distance_center_shortcode_attr_name'] != "" ? $vars['map_distance_center_shortcode_attr_name'] : 'mapcenter' ) ); ?>"/>
+</li>
+<li>
+	<label>
+		<input class="js-filter-center-source" type="radio" name="map_center_source"
+		       value="user_location" <?php checked( 'user_location', $vars['map_center_source'] ); ?>>
+		<?php _e('Distance center is set from user location.', 'toolset-maps') ?></label>
+</li>

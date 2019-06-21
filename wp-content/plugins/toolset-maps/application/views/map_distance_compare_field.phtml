@@ -1,0 +1,14 @@
+<?php list( $address_fields, $map_distance_compare_field ) = $vars; ?>
+<li>
+	<label for="wpv-filter-maps-compare-field"><?php _e( 'Field to compare to', 'toolset-maps' ); ?></label>
+	<select id="wpv-filter-maps-compare-field" name="map_distance_compare_field"
+	        class="js-filter-maps-compare-field">
+		<?php
+		foreach ( $address_fields['posts'] as $field ) {
+			echo '<option value="' . esc_attr( $field['slug'] ) . '" '
+			     . selected( $map_distance_compare_field, $field['slug'] ) . '>'
+			     . stripslashes( $field['name'] ) . '</option>';
+		}
+		?>
+	</select>
+</li>

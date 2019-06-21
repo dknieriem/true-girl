@@ -1,0 +1,11 @@
+<?php /** @var $this Toolset_Addon_Maps_Views */ ?>
+<form class="js-wpv-add-item-settings-form js-wp-addon-maps-json-style-form-add">
+	<label for="wpv-map-render-style-json"><?php _e( 'Default map style:', 'toolset-maps') ?></label>
+	<select id="wpv-map-render-style_json" class="js-shortcode-gui-field"><?php echo $this->render_option_html( array_flip( $this->get_style_options() ), $this->get_saved_option( 'default_map_style' ) ) ?></select>
+	<input type="text" id="js-wpv-addon-maps-json-style-newurl" class="hidden js-wpv-add-item-settings-form-newname js-wpv-addon-maps-json-style-newurl" autocomplete="off">
+	<button id="js-wpv-toolset-maps-add-map-style" class="button button-secondary js-wpv-toolset-maps-media-manager js-wpv-media-manager" data-content="js-wpv-addon-maps-json-style-newurl"><i class="icon-plus fa fa-plus"></i> <?php _e( 'Upload a different map style (JSON file)', 'toolset-maps') ?></button>
+	<br/><br/>
+	<div id="js-wpv-addon-maps-render-map-preview"></div>
+	<br/>
+	<button class="button button-secondary js-wpv-toolset-maps-delete-json-file" ><i class="icon-remove-sign fa fa-times-circle"></i> <?php _e( 'Remove the selected JSON map style', 'toolset-maps') ?></button>
+</form>

@@ -1,0 +1,14 @@
+<?php list( $map_distance, $map_distance_unit ) = $vars; ?>
+<li>
+	<label for="wpv-filter-maps-distance"><?php _e( 'Filter Radius', 'toolset-maps' ); ?></label>
+	<input type="number"
+	       class="js-wpv-filter-maps-distance wpt-form-textfield form-textfield textfield"
+	       id="wpv-filter-maps-distance" name="map_distance"
+	       value="<?php echo esc_attr( $map_distance ) ?>"
+	       autocomplete="off"/>
+	<select class="js-wpv-filter-maps-distance-unit" id="wpv-filter-maps-distance-unit"
+	        name="map_distance_unit">
+		<option value="km" <?php selected( $map_distance_unit, 'km' ); ?>>km	</option>
+		<option value="mi" <?php selected( $map_distance_unit, 'mi' ); ?>>mi	</option>
+	</select>
+</li>

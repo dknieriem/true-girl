@@ -1,0 +1,9 @@
+<?php list( $what_to_show ) = $vars; ?>
+<li>
+	<label for="wpv-filter-maps-what-to-filter"><?php _e( 'What to show', 'toolset-maps' ) ?></label>
+	<select id="wpv-filter-maps-what-to-filter" name="map_distance_what_to_show"
+	        class="js-wpv-filter-map-distance-what-to-filter">
+		<option value="outside" <?php selected( $what_to_show, 'outside' ) ?>><?php _e( 'Outside of radius', 'toolset-maps' ) ?></option>
+		<option value="inside" <?php selected( $what_to_show, 'inside' ) ?>><?php _e( 'Inside of radius', 'toolset-maps' ) ?></option>
+	</select>
+</li>

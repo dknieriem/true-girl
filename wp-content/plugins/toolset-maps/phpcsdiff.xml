@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ruleset name="Toolset-Maps-phpcsdiff">
+    <description>Maps Coding Standards for phpcs-diff</description>
+
+    <rule ref="Toolset"/>
+
+    <exclude-pattern>*/autoload_classmap.php</exclude-pattern>
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+</ruleset>
