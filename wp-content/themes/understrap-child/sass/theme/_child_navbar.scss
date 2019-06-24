@@ -21,9 +21,10 @@
 }
 
 .navbar-brand img {
-    max-height: 30px;
+    max-height: 75px;
+    width: auto;
     @media (max-width: 768px) {
-        max-width:250px; 
+        max-width:410px; 
     }
 
 }

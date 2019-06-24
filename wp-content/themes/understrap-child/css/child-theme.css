@@ -10915,7 +10915,8 @@ p {
   font-family: "Shark Random Funnyness";
   color: #00bcd6;
   margin-top: 1rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  text-transform: uppercase; }
   .heading--lg {
     font-size: 3.5rem;
     margin-top: 3rem;
@@ -10929,12 +10930,26 @@ p {
     color: white; }
   .heading--pink {
     color: #c83b94; }
+  .heading--yellow {
+    color: #fdbD10; }
+  .heading__on-pink {
+    color: #ffffff;
+    background-color: #c83b94; }
+  .heading__on-teal {
+    color: #ffffff;
+    background-color: #00bcd6; }
+  .heading__on-yellow {
+    color: #ffffff;
+    background-color: #fdbD10; }
 
-h1, h2, h3, h4 {
+h1 {
   font-family: "Shark Random Funnyness"; }
 
 .page-content h1 {
   color: #c83b94; }
+
+h2, h3, h4 {
+  font-family: "GoudySans Md BT"; }
 
 h5 {
   text-transform: uppercase;
@@ -11063,10 +11078,11 @@ ol li::before {
   margin-left: 0rem; }
 
 .navbar-brand img {
-  max-height: 30px; }
+  max-height: 75px;
+  width: auto; }
   @media (max-width: 768px) {
     .navbar-brand img {
-      max-width: 250px; } }
+      max-width: 410px; } }
 
 .navbar-light .navbar-toggler {
   border: none; }
