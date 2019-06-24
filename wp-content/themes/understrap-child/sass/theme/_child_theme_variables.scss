@@ -10,16 +10,23 @@
 // Color system
 //
 
-$primary: #bf9a89;
-$pink: #e286a9;
-$rose: #aa5779;
-$brown: #785a37;
-$light-brown: #cbb389;
-$teal: #9ad2c5;
-$gray: #3d3d3d;
-$peach: #f0e7d6;
-$rose-gray: #4d4548;
+$pink: #c83b94;
+$teal: #00bcd6;
+$yellow: #fdbD10;
+$gray: #525252;
+$white: #ffffff;
+$black: #000000;
+
+$primary: $teal;
+$alternate: $pink;
 
 
-$body-font:"Open Sans";
-$header-font:"Prata";
+$body-color: $gray;
+$feature-color: $teal;
+$header-color: $white;
+$header-bg-color: $pink;
+$button-color: $white;
+$button-bg-color: $yellow;
+
+$body-font:"GoudySans Md BT";
+$header-font:"Shark Random Funnyness";

@@ -5,10 +5,10 @@
     padding-bottom:.5rem;
     padding-left:1rem;
     padding-right:1rem;
-    background-color:$rose;
+    background-color:$pink;
     text-transform: uppercase;
     font-weight:500;
-    color:white;
+    color: $white;
     margin-right:.5rem;
     margin-left:.5rem;
     margin-top:.5rem;
@@ -17,12 +17,12 @@
     &--active
     {
         background-color:white;
-        color: $rose;
-        border: solid 1px $rose;
+        color: $pink;
+        border: solid 1px $pink;
     }
     &--active:hover
     {
-        color:$rose;
+        color:$pink;
         background-color:white;
     }
 }
@@ -30,5 +30,5 @@
 .filter-button:hover
 {
     color:white;
-    background-color: lighten( $rose, 10% )
+    background-color: lighten( $pink, 10% )
 }
