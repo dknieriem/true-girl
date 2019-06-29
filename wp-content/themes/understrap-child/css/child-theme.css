@@ -7179,7 +7179,7 @@ button.bg-dark:focus {
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
 
-.shadow, .navbar .menu-item-13260 a.nav-link {
+.shadow, .navbar a[title='get tickets!'] {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
 
@@ -11047,7 +11047,7 @@ ol li::before {
   background-image: url("../img/curly-brace-top-white.png"), url("../img/curly-brace-bottom-white.png");
   background-color: #00bcd6; }
 
-.button, .post-card__card-button, .navbar .menu-item-13260 a.nav-link {
+.button, .post-card__card-button, .navbar a[title='get tickets!'] {
   background-color: #fdbD10;
   padding: .5rem 2rem;
   border-radius: 100px;
@@ -11064,7 +11064,7 @@ ol li::before {
   .button--small, .post-card__card-button {
     padding: .3rem 1.4rem;
     font-size: 0.8rem; }
-  .button:hover, .post-card__card-button:hover, .navbar .menu-item-13260 a.nav-link:hover {
+  .button:hover, .post-card__card-button:hover, .navbar a:hover[title='get tickets!'] {
     color: white; }
 
 .navbar {
@@ -12002,16 +12002,16 @@ body.admin-bar .fixed-top {
 
 /* Custom CSS */
 /* Nav Button */
-.navbar .menu-item-13260 {
+.navbar {
   margin-left: auto; }
-  .navbar .menu-item-13260 a.nav-link {
+  .navbar a[title='get tickets!'] {
     font-weight: bold;
     font-size: 1.6rem; }
     @media (max-width: 1199px) {
-      .navbar .menu-item-13260 a.nav-link {
+      .navbar a[title='get tickets!'] {
         padding: .5rem 2rem !important; } }
   @media (max-width: 1199px) {
-    .navbar .menu-item-13260 {
+    .navbar {
       margin-left: unset; } }
 
 @font-face {

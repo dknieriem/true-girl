@@ -112,8 +112,8 @@ body.admin-bar .fixed-top
 
 
 /* Nav Button */
-.navbar .menu-item-13260 {
-    a.nav-link {
+.navbar {
+    a[title='get tickets!'] {
         @extend .button;
         @extend .shadow;
 
