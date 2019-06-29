@@ -1,14 +1,18 @@
 .navbar
 {
-    background-color:white;
-    border-bottom:solid 1px #d4d4d4;
+    background-image: url(../img/background-icons.png);
+    background-position: center top;
+    background-repeat: repeat-y;
+    background-size: 100%;
+    border-bottom:none;
 }
 
 .nav-link, .dropdown-item
 {
+    color: $white;
     font-weight:300 !important;
     text-transform: uppercase !important;
-    font-size:0.8rem; 
+    font-size:1.2rem; 
     margin-left:.5rem;
     margin-right:.5rem;
 }
@@ -103,4 +107,14 @@
 }
 
 
+}
+/* custom css */
+
+/* navbar button */
+#menu-item-13231 {
+    @extend .button;
+
+    a {
+        color: $white;
+    }
 }

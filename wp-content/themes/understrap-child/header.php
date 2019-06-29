@@ -45,7 +45,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-light fixed-top navbar-expand-xl">
+		<nav class="navbar fixed-top navbar-expand-xl">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container" >
@@ -79,13 +79,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						'theme_location'  => 'primary',
 						'container_class' => 'collapse navbar-collapse',
 						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav ml-auto',
+						'menu_class'      => 'navbar-nav',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
 						'depth'           => 2,
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
 				); ?>
+
+				<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13231" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13231 nav-item"><a title="Get Tickets!" href="#" class="nav-link">Get Tickets!</a></li>
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>

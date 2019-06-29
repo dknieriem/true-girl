@@ -34,27 +34,11 @@
 body
 {
     font-family:$body-font;
-    padding-top:58px;
-}
-
-body.teal
-{   
-    background-color:$teal;
-    background-image: url('../img/blue-flourish-bg.png');
-    background-repeat: no-repeat;
-    background-size:100%;
-    background-position: center 58px;
     padding-top:100px;
-}
-
-body.white-flourish
-{
-    background-color:white;
-    background-image: url('../img/pink-flourish-section-bg.png');
-    background-repeat: no-repeat;
+    background-image: url('../img/background-icons.png');
+    background-repeat: repeat-y;
     background-size:100%;
-    background-position: center 58px;
-    padding-top:58px;
+    background-position: center top;
 }
 
 .wrapper
@@ -78,6 +62,9 @@ body.admin-bar .fixed-top
     top:32px !important;
 }
 
+#content {
+    background-color: $white;
+}
 
 .embed-container {
     position: relative;

@@ -11040,7 +11040,7 @@ ol li::before {
   background-image: url("../img/curly-brace-top-white.png"), url("../img/curly-brace-bottom-white.png");
   background-color: #00bcd6; }
 
-.button, .post-card__card-button {
+.button, #menu-item-13231, .post-card__card-button {
   background-color: #fdbD10;
   padding: .5rem 2rem;
   border-radius: 100px;
@@ -11057,18 +11057,21 @@ ol li::before {
   .button--small, .post-card__card-button {
     padding: .3rem 1.4rem;
     font-size: 0.8rem; }
-
-.button:hover, .post-card__card-button:hover {
-  color: white; }
+  .button:hover, #menu-item-13231:hover, .post-card__card-button:hover {
+    color: white; }
 
 .navbar {
-  background-color: white;
-  border-bottom: solid 1px #d4d4d4; }
+  background-image: url(../img/background-icons.png);
+  background-position: center top;
+  background-repeat: repeat-y;
+  background-size: 100%;
+  border-bottom: none; }
 
 .nav-link, .dropdown-item {
+  color: #ffffff;
   font-weight: 300 !important;
   text-transform: uppercase !important;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   margin-left: .5rem;
   margin-right: .5rem; }
 
@@ -11130,6 +11133,11 @@ ol li::before {
   .navbar-expand-md .navbar-nav .nav-link {
     padding-left: 1rem;
     padding-right: 1rem; } }
+
+/* custom css */
+/* navbar button */
+#menu-item-13231 a {
+  color: #ffffff; }
 
 .hero {
   padding-top: 12rem;
@@ -11936,23 +11944,11 @@ ol li::before {
 }*/
 body {
   font-family: "GoudySans Md BT";
-  padding-top: 58px; }
-
-body.teal {
-  background-color: #00bcd6;
-  background-image: url("../img/blue-flourish-bg.png");
-  background-repeat: no-repeat;
+  padding-top: 100px;
+  background-image: url("../img/background-icons.png");
+  background-repeat: repeat-y;
   background-size: 100%;
-  background-position: center 58px;
-  padding-top: 100px; }
-
-body.white-flourish {
-  background-color: white;
-  background-image: url("../img/pink-flourish-section-bg.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center 58px;
-  padding-top: 58px; }
+  background-position: center top; }
 
 .wrapper {
   padding-top: 0px;
@@ -11967,6 +11963,9 @@ figcaption.wp-caption-text {
 
 body.admin-bar .fixed-top {
   top: 32px !important; }
+
+#content {
+  background-color: #ffffff; }
 
 .embed-container {
   position: relative;

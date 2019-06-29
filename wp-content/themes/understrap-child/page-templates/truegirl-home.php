@@ -30,14 +30,21 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'loop-templates/content', 'page' ); ?>
+					<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-					<?php
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-					?>
+					<div class="entry-content">
+
+						<?php the_content(); ?>
+
+					</div><!-- .entry-content -->
+
+					<footer class="entry-footer">
+
+						<?php edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
+
+					</footer><!-- .entry-footer -->
+
+				</article><!-- #post-## -->
 
 				<?php endwhile; // end of the loop. ?>
 
