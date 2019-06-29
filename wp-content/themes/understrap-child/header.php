@@ -86,8 +86,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
 				); ?>
-
-				<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13231" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13231 nav-item"><a title="Get Tickets!" href="#" class="nav-link">Get Tickets!</a></li>
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>

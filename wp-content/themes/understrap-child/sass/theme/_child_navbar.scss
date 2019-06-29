@@ -11,10 +11,10 @@
 {
     color: $white;
     font-weight:300 !important;
-    text-transform: uppercase !important;
-    font-size:1.2rem; 
-    margin-left:.5rem;
-    margin-right:.5rem;
+    //text-transform: uppercase !important;
+    font-size:1.3rem; 
+    margin-left:2rem;
+    margin-right:1rem;
 }
 
 .dropdown-item
@@ -110,11 +110,3 @@
 }
 /* custom css */
 
-/* navbar button */
-#menu-item-13231 {
-    @extend .button;
-
-    a {
-        color: $white;
-    }
-}

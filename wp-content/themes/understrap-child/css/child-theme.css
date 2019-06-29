@@ -7179,7 +7179,7 @@ button.bg-dark:focus {
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
 
-.shadow {
+.shadow, .menu-item-13260 a {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
 
@@ -10934,7 +10934,14 @@ p {
     color: #fdbD10; }
   .heading__on-pink {
     color: #ffffff;
-    background-color: #c83b94; }
+    background-color: #c83b94;
+    font-size: 1.5rem;
+    line-height: 56px;
+    padding-top: -9px;
+    margin-top: 11px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 8px; }
   .heading__on-teal {
     color: #ffffff;
     background-color: #00bcd6; }
@@ -11040,7 +11047,7 @@ ol li::before {
   background-image: url("../img/curly-brace-top-white.png"), url("../img/curly-brace-bottom-white.png");
   background-color: #00bcd6; }
 
-.button, #menu-item-13231, .post-card__card-button {
+.button, .post-card__card-button, .menu-item-13260 a {
   background-color: #fdbD10;
   padding: .5rem 2rem;
   border-radius: 100px;
@@ -11057,7 +11064,7 @@ ol li::before {
   .button--small, .post-card__card-button {
     padding: .3rem 1.4rem;
     font-size: 0.8rem; }
-  .button:hover, #menu-item-13231:hover, .post-card__card-button:hover {
+  .button:hover, .post-card__card-button:hover, .menu-item-13260 a:hover {
     color: white; }
 
 .navbar {
@@ -11070,10 +11077,9 @@ ol li::before {
 .nav-link, .dropdown-item {
   color: #ffffff;
   font-weight: 300 !important;
-  text-transform: uppercase !important;
-  font-size: 1.2rem;
-  margin-left: .5rem;
-  margin-right: .5rem; }
+  font-size: 1.3rem;
+  margin-left: 2rem;
+  margin-right: 1rem; }
 
 .dropdown-item {
   margin-top: 0.5rem;
@@ -11135,10 +11141,6 @@ ol li::before {
     padding-right: 1rem; } }
 
 /* custom css */
-/* navbar button */
-#menu-item-13231 a {
-  color: #ffffff; }
-
 .hero {
   padding-top: 12rem;
   padding-bottom: 8rem;
@@ -11997,3 +11999,18 @@ body.admin-bar .fixed-top {
 
 .page-link {
   color: #c83b94; }
+
+/* Custom CSS */
+.overflow-right {
+  position: absolute; }
+
+/* Nav Button */
+.menu-item-13260 {
+  margin-left: auto; }
+  .menu-item-13260 a {
+    font-weight: bold;
+    font-size: 1.6rem; }
+
+/* Background Video Feature */
+.background-video__container .mejs-controls {
+  display: none; }

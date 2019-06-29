@@ -56,15 +56,17 @@ $wp_customize->add_section( 'typography', array(
 //$body-font:"Open Sans";
 //$header-font:"Prata";
 $wp_customize->add_setting( 'body_font', array(
-    'default' => 'Open Sans',
+    'default' => 'GoudySans Md BT',
     'sanitize_callback' => 'sanitize_text_field',
 ) );
 
 $wp_customize->add_control('body_font_control', array(
     'type' => 'select',
     'choices' => array(
+        'GoudySans Md BT' => 'GoudySans Md BT',
         'Open Sans' => 'Open Sans',
         'Prata' => 'Prata',
+        'Shark Random Funnyness' => 'Shark Random Funnyness',
     ),
     'label' => __( 'Body Font', 'understrap-child' ),
     'section' => 'typography',
@@ -81,8 +83,10 @@ $wp_customize->add_setting( 'header_font', array(
 $wp_customize->add_control('header_font_control', array(
     'type' => 'select',
     'choices' => array(
+        'GoudySans Md BT' => 'GoudySans Md BT',
         'Open Sans' => 'Open Sans',
         'Prata' => 'Prata',
+        'Shark Random Funnyness' => 'Shark Random Funnyness',
     ),
     'label' => __( 'Header Font', 'understrap-child' ),
     'section' => 'typography',

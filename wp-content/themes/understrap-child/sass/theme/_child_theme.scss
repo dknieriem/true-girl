@@ -106,3 +106,30 @@ body.admin-bar .fixed-top
 {
     color:$pink;
 }
+
+/* Custom CSS */
+
+.overflow-right {
+    position: absolute;
+}
+
+/* Nav Button */
+.menu-item-13260 {
+    a {
+        @extend .button;
+        @extend .shadow;
+
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+
+    margin-left: auto;
+
+}
+
+/* Background Video Feature */
+.background-video__container {
+    .mejs-controls {
+        display: none;
+    }
+}
