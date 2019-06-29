@@ -7179,7 +7179,7 @@ button.bg-dark:focus {
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
 
-.shadow, .menu-item-13260 a {
+.shadow, .navbar .menu-item-13260 a.nav-link {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
 
@@ -11047,7 +11047,7 @@ ol li::before {
   background-image: url("../img/curly-brace-top-white.png"), url("../img/curly-brace-bottom-white.png");
   background-color: #00bcd6; }
 
-.button, .post-card__card-button, .menu-item-13260 a {
+.button, .post-card__card-button, .navbar .menu-item-13260 a.nav-link {
   background-color: #fdbD10;
   padding: .5rem 2rem;
   border-radius: 100px;
@@ -11064,7 +11064,7 @@ ol li::before {
   .button--small, .post-card__card-button {
     padding: .3rem 1.4rem;
     font-size: 0.8rem; }
-  .button:hover, .post-card__card-button:hover, .menu-item-13260 a:hover {
+  .button:hover, .post-card__card-button:hover, .navbar .menu-item-13260 a.nav-link:hover {
     color: white; }
 
 .navbar {
@@ -12002,11 +12002,17 @@ body.admin-bar .fixed-top {
 
 /* Custom CSS */
 /* Nav Button */
-.menu-item-13260 {
+.navbar .menu-item-13260 {
   margin-left: auto; }
-  .menu-item-13260 a {
+  .navbar .menu-item-13260 a.nav-link {
     font-weight: bold;
     font-size: 1.6rem; }
+    @media (max-width: 1199px) {
+      .navbar .menu-item-13260 a.nav-link {
+        padding: .5rem 2rem !important; } }
+  @media (max-width: 1199px) {
+    .navbar .menu-item-13260 {
+      margin-left: unset; } }
 
 @font-face {
   font-family: "Font Awesome 5 Free";
@@ -12016,14 +12022,18 @@ body.admin-bar .fixed-top {
   src: url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.svg#fontawesome) format("svg"); }
 
 .navbar-toggler-icon {
-  font-family: "Font Awesome 5 Pro";
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
+  font-size: 2rem;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  line-height: 1; }
+  line-height: 1;
+  color: #ffffff;
+  width: auto;
+  height: auto; }
   .navbar-toggler-icon:before {
     content: "\f0c9"; }
 

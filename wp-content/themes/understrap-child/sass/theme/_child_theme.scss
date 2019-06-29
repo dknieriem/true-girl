@@ -112,16 +112,25 @@ body.admin-bar .fixed-top
 
 
 /* Nav Button */
-.menu-item-13260 {
-    a {
+.navbar .menu-item-13260 {
+    a.nav-link {
         @extend .button;
         @extend .shadow;
 
         font-weight: bold;
         font-size: 1.6rem;
+
+        @media (max-width: 1199px) {
+            //@extend .button;
+            padding: .5rem 2rem !important;
+        }
     }
 
     margin-left: auto;
+
+    @media (max-width: 1199px){
+        margin-left: unset;
+    }
 
 }
 
@@ -130,16 +139,21 @@ body.admin-bar .fixed-top
     src:url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff2) format("woff2"),url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff) format("woff"),url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.ttf) format("truetype"),url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.svg#fontawesome) format("svg");
 }
 
+
 .navbar-toggler-icon {
     //@extend .fas;
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
+    font-size: 2rem;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
     line-height: 1;
+    color: $white;
+    width: auto;
+    height: auto;
 
     //@extend .fa-bars;
     &:before {
