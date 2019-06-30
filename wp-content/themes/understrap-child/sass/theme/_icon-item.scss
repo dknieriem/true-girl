@@ -2,6 +2,7 @@
 {
     @extend .col-md-3;
     display: block;
+    
    &__icon
     {
         @extend .img-fluid;
@@ -11,15 +12,16 @@
     }
     &__title
     {
-        font-family:$header-font;
-        text-align: center;
-        font-size:1.5rem;
+        //font-family:$header-font;
         color:$teal;
+        font-size:1.5rem;
+        font-weight: bold;
+        text-align: center;
     }
     &__content
     {
-        text-align: center;
         color:$teal;
+        text-align: center;
     }
 }
 

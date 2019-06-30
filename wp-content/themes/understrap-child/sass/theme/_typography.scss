@@ -1,3 +1,10 @@
+@each $font, $src in $fonts {
+    @font-face {
+        font-family:$font;
+        src:url($src);
+    }
+}
+
 body{
     color:$body-color;
     font-family: $body-font;
@@ -42,6 +49,12 @@ p
     font-weight:300;
 }
 
+@each $color, $hex in $colors {
+   .text-#{$color} {
+    color: $hex;
+   }
+}
+
 .heading
 {
     font-family:$header-font;
@@ -82,11 +95,7 @@ p
         background-color: $pink;
         font-size: 1.5rem;
         line-height: 56px;
-        padding-top: -9px;
-        margin-top: 11px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 8px;
+        padding: 8px 15px;
     }
 
     &__on-teal
@@ -162,7 +171,7 @@ h5
 
 .text-right
 {
-    text-align:right;
+    text-align: right;
 }
 
 .text-center
@@ -174,3 +183,4 @@ h5
 {
     text-transform: uppercase;
 }
+

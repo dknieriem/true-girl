@@ -18,7 +18,7 @@
 @import "post-block";
 @import "pull-quote";
 @import "featured-post";
-@import "dotted-hr";
+@import "hr";
 @import "post-thumb";
 @import "post-image";
 @import "event-summary";
@@ -172,4 +172,10 @@ body.admin-bar .fixed-top
     .mejs-controls {
         display: none;
     }
+}
+
+/* Correct <strong> boldness */
+
+strong {
+    font-weight: 900;
 }

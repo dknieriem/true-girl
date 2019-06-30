@@ -28,5 +28,31 @@ $header-bg-color: $pink;
 $button-color: $white;
 $button-bg-color: $yellow;
 
+$colors: (
+	pink: #c83b94,
+	teal: #00bcd6,
+	yellow: #fdbD10,
+	gray: #525252,
+	white: #ffffff,
+	black: #000000
+);
+
+// _functions.scss
+@function color($key) {
+	@if map-has-key($colors, $key) {
+		@return map-get($colors, $key);
+	}
+
+	@warn "Unknown `#{$key}` in $colors.";
+	@return null;
+}
+
 $body-font:"GoudySans Md BT";
+
 $header-font:"Shark Random Funnyness";
+
+$fonts: (
+	"GoudySans Md BT": "../fonts/GoudySansMediumBT.ttf",
+	"Shark Random Funnyness": "../fonts/Shark_Random_Funnyness.ttf",
+	"Impervious": "../fonts/impervious.ttf"
+);

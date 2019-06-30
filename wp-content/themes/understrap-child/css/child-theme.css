@@ -19,6 +19,12 @@
   --white: #ffffff;
   --gray: #6c757d;
   --gray-dark: #343a40;
+  --pink: #c83b94;
+  --teal: #00bcd6;
+  --yellow: #fdbD10;
+  --gray: #525252;
+  --white: #ffffff;
+  --black: #000000;
   --primary: #00bcd6;
   --secondary: #6c757d;
   --success: #28a745;
@@ -10880,6 +10886,18 @@ a.skip-link {
   -webkit-box-shadow: 0px 0px 28px -2px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 28px -2px rgba(0, 0, 0, 0.2); }
 
+@font-face {
+  font-family: "GoudySans Md BT";
+  src: url("../fonts/GoudySansMediumBT.ttf"); }
+
+@font-face {
+  font-family: "Shark Random Funnyness";
+  src: url("../fonts/Shark_Random_Funnyness.ttf"); }
+
+@font-face {
+  font-family: "Impervious";
+  src: url("../fonts/impervious.ttf"); }
+
 body {
   color: #525252;
   font-family: "GoudySans Md BT";
@@ -10911,6 +10929,63 @@ p {
   line-height: 1.7rem;
   font-weight: 300; }
 
+.text-blue {
+  color: #007bff; }
+
+.text-indigo {
+  color: #6610f2; }
+
+.text-purple {
+  color: #6f42c1; }
+
+.text-pink {
+  color: #c83b94; }
+
+.text-red {
+  color: #dc3545; }
+
+.text-orange {
+  color: #fd7e14; }
+
+.text-yellow {
+  color: #fdbD10; }
+
+.text-green {
+  color: #28a745; }
+
+.text-teal {
+  color: #00bcd6; }
+
+.text-cyan {
+  color: #17a2b8; }
+
+.text-white {
+  color: #ffffff; }
+
+.text-gray {
+  color: #6c757d; }
+
+.text-gray-dark {
+  color: #343a40; }
+
+.text-pink {
+  color: #c83b94; }
+
+.text-teal {
+  color: #00bcd6; }
+
+.text-yellow {
+  color: #fdbD10; }
+
+.text-gray {
+  color: #525252; }
+
+.text-white {
+  color: #ffffff; }
+
+.text-black {
+  color: #000000; }
+
 .heading {
   font-family: "Shark Random Funnyness";
   color: #00bcd6;
@@ -10937,11 +11012,7 @@ p {
     background-color: #c83b94;
     font-size: 1.5rem;
     line-height: 56px;
-    padding-top: -9px;
-    margin-top: 11px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 8px; }
+    padding: 8px 15px; }
   .heading__on-teal {
     color: #ffffff;
     background-color: #00bcd6; }
@@ -11212,13 +11283,13 @@ ol li::before {
     max-width: 96px;
     margin: 0px auto 25px auto; }
   .icon-item__title {
-    font-family: "Shark Random Funnyness";
-    text-align: center;
+    color: #00bcd6;
     font-size: 1.5rem;
-    color: #00bcd6; }
+    font-weight: bold;
+    text-align: center; }
   .icon-item__content {
-    text-align: center;
-    color: #00bcd6; }
+    color: #00bcd6;
+    text-align: center; }
 
 .icon-item:hover {
   text-decoration: none; }
@@ -11604,34 +11675,45 @@ ol li::before {
     text-align: center;
     margin-top: 2rem; }
 
-.dotted-hr {
-  background-image: url("../img/dot-white.svg");
-  background-repeat: repeat-x;
-  background-position: left center;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  min-height: 10px; }
-  .dotted-hr__text {
-    color: white;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    background-color: #00bcd6;
-    padding: .5rem 2rem;
-    font-family: "GoudySans Md BT";
-    display: inline-block;
-    font-weight: 300;
-    line-height: 1;
-    margin-bottom: 0; }
-  .dotted-hr__text--pink {
+.hr {
+  height: 0px;
+  margin: 1rem auto; }
+  .hr--dotted {
+    background-image: url("../img/dot-white.svg");
+    background-repeat: repeat-x;
+    background-position: left center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    min-height: 10px; }
+    .hr--dotted__text {
+      color: white;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      background-color: #00bcd6;
+      padding: .5rem 2rem;
+      font-family: "GoudySans Md BT";
+      display: inline-block;
+      font-weight: 300;
+      line-height: 1;
+      margin-bottom: 0; }
+    .hr--dotted__text--pink {
+      background-color: #c83b94; }
+    .hr--dotted--gray {
+      background-image: url("../img/dot-gray.svg"); }
+    .hr--dotted--pink {
+      background-image: url("../img/dot-pink.svg"); }
+  .hr--solid {
+    padding-top: 3px; }
+  .hr--bold {
+    padding-top: 8px; }
+  .hr--teal {
+    background-color: #00bcd6; }
+  .hr--pink {
     background-color: #c83b94; }
-  .dotted-hr--gray {
-    background-image: url("../img/dot-gray.svg"); }
-  .dotted-hr--pink {
-    background-image: url("../img/dot-pink.svg"); }
 
 @media (max-width: 767.98px) {
   .post-thumb {
@@ -12044,3 +12126,7 @@ body.admin-bar .fixed-top {
 
 .background-video__container .mejs-controls {
   display: none; }
+
+/* Correct <strong> boldness */
+strong {
+  font-weight: 900; }
