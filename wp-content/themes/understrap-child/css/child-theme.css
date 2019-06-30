@@ -11366,6 +11366,63 @@ ol li::before {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.background-blue {
+  background-color: #007bff; }
+
+.background-indigo {
+  background-color: #6610f2; }
+
+.background-purple {
+  background-color: #6f42c1; }
+
+.background-pink {
+  background-color: #c83b94; }
+
+.background-red {
+  background-color: #dc3545; }
+
+.background-orange {
+  background-color: #fd7e14; }
+
+.background-yellow {
+  background-color: #fdbD10; }
+
+.background-green {
+  background-color: #28a745; }
+
+.background-teal {
+  background-color: #00bcd6; }
+
+.background-cyan {
+  background-color: #17a2b8; }
+
+.background-white {
+  background-color: #ffffff; }
+
+.background-gray {
+  background-color: #6c757d; }
+
+.background-gray-dark {
+  background-color: #343a40; }
+
+.background-pink {
+  background-color: #c83b94; }
+
+.background-teal {
+  background-color: #00bcd6; }
+
+.background-yellow {
+  background-color: #fdbD10; }
+
+.background-gray {
+  background-color: #525252; }
+
+.background-white {
+  background-color: #ffffff; }
+
+.background-black {
+  background-color: #000000; }
+
 .page-template-no-hero-advanced-white .page-section:first-of-type, .page-template-event-schedule .page-section:first-of-type, .page-template-hero-page .page-section:first-of-type {
   padding-top: 0rem; }
 

@@ -47,6 +47,13 @@
         @extend .col-lg-8;
         @extend .col-md-12;
     }
+
+}
+
+@each $color, $hex in $colors {
+   .background-#{$color} {
+        background-color: $hex;
+   }
 }
 
 .page-template-no-hero-advanced-white .page-section:first-of-type, .page-template-event-schedule .page-section:first-of-type, .page-template-hero-page .page-section:first-of-type
