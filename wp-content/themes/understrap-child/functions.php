@@ -203,7 +203,7 @@ function remove_su_shortcodes( $shortcodes ) {
     unset( $shortcodes['tab'] );
     unset( $shortcodes['frame'] );
     unset( $shortcodes['column'] );
-    unset( $shortcodes['lightbox_content'] );
+    //unset( $shortcodes['lightbox_content'] );
     unset( $shortcodes['screenr'] );
     unset( $shortcodes['spoiler'] );
     unset( $shortcodes['accordion'] );
@@ -219,13 +219,13 @@ function remove_su_shortcodes( $shortcodes ) {
     unset( $shortcodes['dropcap'] );
     unset( $shortcodes['service'] );
     unset( $shortcodes['expand'] );
-    unset( $shortcodes['lightbox'] );
+    //unset( $shortcodes['lightbox'] );
     unset( $shortcodes['private'] );
     unset( $shortcodes['youtube'] );
     unset( $shortcodes['vimeo'] );
     unset( $shortcodes['dailymotion'] );
     unset( $shortcodes['audio'] );
-    unset( $shortcodes['video'] );
+    //unset( $shortcodes['video'] );
     unset( $shortcodes['table'] );
     unset( $shortcodes['permalink'] );
     unset( $shortcodes['members'] );
@@ -240,7 +240,7 @@ function remove_su_shortcodes( $shortcodes ) {
     unset( $shortcodes['feed'] );
     unset( $shortcodes['subpages'] );
     unset( $shortcodes['animate'] );
-    unset( $shortcodes['gmap'] );
+    //unset( $shortcodes['gmap'] );
     unset( $shortcodes['posts'] );
     unset( $shortcodes['dummy_text'] );
     unset( $shortcodes['dummy_image'] );
@@ -268,6 +268,10 @@ function setup_theme(  ) {
     
     // Filters the oEmbed process to run the responsive_embed() function
     add_filter('embed_oembed_html', 'responsive_embed', 10, 3);
+
+    // Sets the 'mute' attribute on autoplaying videos for modern browsers
+    add_filter('wp_video_shortcode', 'mute_autoplay_video', 10, 5);
+
 }
 add_action('after_setup_theme', 'setup_theme');
 /**
@@ -279,6 +283,13 @@ add_action('after_setup_theme', 'setup_theme');
  */
 function responsive_embed($html, $url, $attr) {
     return $html!=='' ? '<div class="embed-container">'.$html.'</div>' : '';
+}
+
+function mute_autoplay_video($output, $atts, $video, $post_id, $library){
+    if ( false !== strpos( $output, 'autoplay="1"' ) ) {
+        $output = str_replace( '<video', '<video muted', $output );
+    }
+    return $output;
 }
 
 function custom_query_vars_filter($vars) {
