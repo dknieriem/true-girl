@@ -163,15 +163,31 @@ body.admin-bar .fixed-top
 
 /* Background Video Feature */
 .background-video {
+
+    width: 100%;
     .overflow-right {
-        position: absolute;
-        z-index: 999;
+
+        @media (min-width: 769px){
+            position: absolute;
+            z-index: 999;
+        }
     }
 }
 .background-video__container {
+
+    .wp-video {
+        width: 100% !important;
+    }
     .mejs-controls {
         display: none;
     }
+
+}
+
+.mejs-container,
+.mejs-container .mejs-controls, .mejs-embed,
+.mejs-embed body {
+    width: 100% !important;
 }
 
 /* Correct <strong> boldness */

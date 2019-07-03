@@ -1,4 +1,44 @@
-.home-email-signup-form
+
+ .newsletter-signup
+    {
+        //@extend .form-inline;
+        display: flex;
+        flex-direction: row;
+        
+        margin-bottom:1rem;
+
+        @media(max-width: 767px){
+            flex-direction: column;
+        }
+    
+    input[type="text"], input[type="email"]
+    {
+        //@extend .form-control;
+        border-radius:0px;
+        flex-basis:70%;
+        border:none;
+        font-size:0.8rem;
+        padding:.75rem 1rem;
+        //@extend .shadowed;
+        border: 2px solid $light-gray;
+
+        &::-webkit-input-placeholder, &:-ms-input-placeholder, &::placeholder {
+            color: $light-gray;
+        }
+    }
+    
+    input.button
+    {
+        flex-basis:20%;
+        //background-color:$rose;
+        //color:white;
+        border:none;
+        font-weight:300;
+        //@extend .shadowed;  
+    }
+}
+
+/*.home-email-signup-form
 {
 
         display: flex;
@@ -24,3 +64,4 @@
         //@extend .shadowed;  
     }
 }
+*/
