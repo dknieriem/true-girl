@@ -12,6 +12,7 @@
 @import "post-preview";
 @import "post-card";
 @import "featured_post_carousel";
+@import "featured_product";
 @import "post-intro";
 @import "podcast-intro";
 @import "podcast-row";
@@ -165,23 +166,29 @@ body.admin-bar .fixed-top
 .background-video {
 
     width: 100%;
-    .overflow-right {
+    
+    &__container {
+
+        .wp-video {
+            width: 100% !important;
+        }
+        .mejs-controls {
+            display: none;
+        }
+    }
+
+    &__text {
+        z-index: 999;
+
+        @media (max-width: 768px){
+            margin-bottom: -20px;
+        }
 
         @media (min-width: 769px){
             position: absolute;
-            z-index: 999;
         }
-    }
-}
-.background-video__container {
 
-    .wp-video {
-        width: 100% !important;
     }
-    .mejs-controls {
-        display: none;
-    }
-
 }
 
 .mejs-container,
@@ -194,4 +201,68 @@ body.admin-bar .fixed-top
 
 strong {
     font-weight: 900;
+}
+
+/* Mobile Sizing */
+
+@media (max-width: 767px) {
+
+    .page-section__content-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .col, .col-sm-4, .col-sm-8, .col-md-4, .col-md-8 {
+        &:not(.mobile-full-width) {
+            padding: 0px 50px;
+        }
+    }
+
+    #content>.row>.col-12 {
+        padding: 0;
+    }
+}
+
+
+.wp-block-column {
+
+    @media (min-width: 600px){
+        
+        flex-basis: 100%;
+
+        &:nth-child(2n){
+            margin-left:inherit;
+        }
+
+    }
+}
+
+/* Mailchimp forms */
+
+.mc-page-form {
+    h2 {
+        font-size: 30pt;
+    }
+
+    .mc4wp-form {
+        width: 100%;
+
+        input {
+            margin-bottom: 10px;
+
+            @media (max-width:768px){
+                &.button {
+                    margin:auto;
+                }
+            }
+        }
+
+
+    }
+}
+
+.button--large {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
 }

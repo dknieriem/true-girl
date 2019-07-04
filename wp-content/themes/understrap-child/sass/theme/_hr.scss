@@ -1,12 +1,8 @@
-.dotted-hr
-{
-    
-}
 
 .hr {
 
-    height: 0px;
-    margin: 1rem auto;
+    width: 100%;
+    margin: 0 auto;
 
     &--dotted {
         background-image:url('../img/dot-white.svg');
@@ -46,20 +42,23 @@
         }
     }
 
-    &--solid {
-        
-        padding-top: 3px;
-    }
+    &__inner {
+        height: 0px;
+        margin: 1rem auto;
+    
+        &--solid {
+                padding-top: 3px;
+         }
+        &--bold {
+                padding-top: 8px;
+        }
 
-    &--bold {
-        padding-top: 8px;
-    }
+        &--teal {
+                background-color: $teal;
+        }
 
-    &--teal {
-        background-color: $teal;
-    }
-
-    &--pink {
-        background-color: $pink;
+        &--pink {
+                background-color: $pink;    
+        }
     }
 }

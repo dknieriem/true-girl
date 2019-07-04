@@ -11507,6 +11507,16 @@ ol li::before {
   display: -ms-flexbox;
   display: flex; }
 
+.product-feature__text__heading {
+  color: #00bcd6;
+  font-weight: bold; }
+  @media (max-width: 767.98px) {
+    .product-feature__text__heading {
+      padding-top: 2rem; } }
+
+.product-feature__text__description {
+  color: #00bcd6; }
+
 .post-intro {
   margin-top: 3rem;
   margin-bottom: 2rem; }
@@ -11733,8 +11743,8 @@ ol li::before {
     margin-top: 2rem; }
 
 .hr {
-  height: 0px;
-  margin: 1rem auto; }
+  width: 100%;
+  margin: 0 auto; }
   .hr--dotted {
     background-image: url("../img/dot-white.svg");
     background-repeat: repeat-x;
@@ -11763,14 +11773,17 @@ ol li::before {
       background-image: url("../img/dot-gray.svg"); }
     .hr--dotted--pink {
       background-image: url("../img/dot-pink.svg"); }
-  .hr--solid {
-    padding-top: 3px; }
-  .hr--bold {
-    padding-top: 8px; }
-  .hr--teal {
-    background-color: #00bcd6; }
-  .hr--pink {
-    background-color: #c83b94; }
+  .hr__inner {
+    height: 0px;
+    margin: 1rem auto; }
+    .hr__inner--solid {
+      padding-top: 3px; }
+    .hr__inner--bold {
+      padding-top: 8px; }
+    .hr__inner--teal {
+      background-color: #00bcd6; }
+    .hr__inner--pink {
+      background-color: #c83b94; }
 
 @media (max-width: 767.98px) {
   .post-thumb {
@@ -12222,16 +12235,18 @@ body.admin-bar .fixed-top {
 /* Background Video Feature */
 .background-video {
   width: 100%; }
-  @media (min-width: 769px) {
-    .background-video .overflow-right {
-      position: absolute;
-      z-index: 999; } }
-
-.background-video__container .wp-video {
-  width: 100% !important; }
-
-.background-video__container .mejs-controls {
-  display: none; }
+  .background-video__container .wp-video {
+    width: 100% !important; }
+  .background-video__container .mejs-controls {
+    display: none; }
+  .background-video__text {
+    z-index: 999; }
+    @media (max-width: 768px) {
+      .background-video__text {
+        margin-bottom: -20px; } }
+    @media (min-width: 769px) {
+      .background-video__text {
+        position: absolute; } }
 
 .mejs-container,
 .mejs-container .mejs-controls, .mejs-embed,
@@ -12241,3 +12256,37 @@ body.admin-bar .fixed-top {
 /* Correct <strong> boldness */
 strong {
   font-weight: 900; }
+
+/* Mobile Sizing */
+@media (max-width: 767px) {
+  .page-section__content-wrapper {
+    padding-left: 0;
+    padding-right: 0; }
+  .col:not(.mobile-full-width), .col-sm-4:not(.mobile-full-width), .col-sm-8:not(.mobile-full-width), .col-md-4:not(.mobile-full-width), .page-section__one-third-column:not(.mobile-full-width), .post-preview:not(.mobile-full-width), .col-md-8:not(.mobile-full-width), .page-section__single-column--narrow-center:not(.mobile-full-width), .page-section__single-column-narrow:not(.mobile-full-width) {
+    padding: 0px 50px; }
+  #content > .row > .col-12, #content > .post-card-row > .col-12, #content > .post-intro > .col-12, #content > .podcast-intro > .col-12 {
+    padding: 0; } }
+
+@media (min-width: 600px) {
+  .wp-block-column {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+    .wp-block-column:nth-child(2n) {
+      margin-left: inherit; } }
+
+/* Mailchimp forms */
+.mc-page-form h2 {
+  font-size: 30pt; }
+
+.mc-page-form .mc4wp-form {
+  width: 100%; }
+  .mc-page-form .mc4wp-form input {
+    margin-bottom: 10px; }
+    @media (max-width: 768px) {
+      .mc-page-form .mc4wp-form input.button, .mc-page-form .mc4wp-form input.post-card__card-button {
+        margin: auto; } }
+
+.button--large {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center; }
