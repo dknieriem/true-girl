@@ -24,11 +24,20 @@
     margin-left:0rem;
 }
 
+
+.navbar-brand {
+    @media (max-width: 768px){
+        margin: auto;
+    }
+}
+
 .navbar-brand img {
     max-height: 75px;
     width: auto;
     @media (max-width: 768px) {
-        max-width:410px; 
+        // max-width:410px; 
+        max-height: 180px;
+        
     }
 
 }
@@ -65,7 +74,8 @@
             font-size:1.2rem !important;
             font-weight:300 !important;
         }
-        .dropdown-item{
+        .dropdown-item
+        {
             text-align: center;
         }
         .dropdown-menu
@@ -109,4 +119,58 @@
 
 }
 /* custom css */
+
+/* Nav Button */
+.navbar {
+    a[title='get tickets!'] {
+        @extend .button;
+        @extend .shadow;
+
+        font-weight: bold;
+        font-size: 1.6rem;
+
+        @media (max-width: 1199px) {
+            //@extend .button;
+            padding: .5rem 2rem !important;
+        }
+    }
+
+    margin-left: auto;
+
+    @media (max-width: 1199px){
+        margin-left: unset;
+    }
+
+}
+
+.navbar .container {
+    position: relative;
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 0;
+}
+
+.navbar-toggler-icon {
+    //@extend .fas;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2rem;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    color: $white;
+    width: auto;
+    height: auto;
+
+    //@extend .fa-bars;
+    &:before {
+        content: "\f0c9";
+    }
+}
+
 

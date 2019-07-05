@@ -7,9 +7,21 @@
     {
         @extend .img-fluid;
         display: block;
-        max-width: 96px;
+        // max-width: 96px;
+        
         margin:0px auto 25px auto;
+
+
+        img {
+            max-width: 150px;
+
+            @media (max-width: 767.98px) {
+                max-width: 250px;
+                width: 250px;
+            }
+        }
     }
+
     &__title
     {
         //font-family:$header-font;
@@ -22,6 +34,7 @@
     {
         color:$teal;
         text-align: center;
+        font-size: 1.2rem;
     }
 }
 

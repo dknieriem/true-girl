@@ -10898,6 +10898,13 @@ a.skip-link {
   font-family: "Impervious";
   src: url("../fonts/impervious.ttf"); }
 
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.eot);
+  src: url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.svg#fontawesome) format("svg"); }
+
 body {
   color: #525252;
   font-family: "GoudySans Md BT";
@@ -11118,7 +11125,7 @@ ol li::before {
   background-image: url("../img/curly-brace-top-white.png"), url("../img/curly-brace-bottom-white.png");
   background-color: #00bcd6; }
 
-.button, .post-card__card-button, .navbar a[title='get tickets!'] {
+.button, .navbar a[title='get tickets!'], .post-card__card-button {
   background-color: #fdbD10;
   padding: .5rem 2rem;
   border-radius: 100px;
@@ -11135,7 +11142,7 @@ ol li::before {
   .button--small, .post-card__card-button {
     padding: .3rem 1.4rem;
     font-size: 0.8rem; }
-  .button:hover, .post-card__card-button:hover, .navbar a:hover[title='get tickets!'] {
+  .button:hover, .navbar a:hover[title='get tickets!'], .post-card__card-button:hover {
     color: white; }
 
 .navbar {
@@ -11157,12 +11164,16 @@ ol li::before {
   margin-bottom: 0.5rem;
   margin-left: 0rem; }
 
+@media (max-width: 768px) {
+  .navbar-brand {
+    margin: auto; } }
+
 .navbar-brand img {
   max-height: 75px;
   width: auto; }
   @media (max-width: 768px) {
     .navbar-brand img {
-      max-width: 410px; } }
+      max-height: 180px; } }
 
 .navbar-light .navbar-toggler {
   border: none; }
@@ -11212,6 +11223,42 @@ ol li::before {
     padding-right: 1rem; } }
 
 /* custom css */
+/* Nav Button */
+.navbar {
+  margin-left: auto; }
+  .navbar a[title='get tickets!'] {
+    font-weight: bold;
+    font-size: 1.6rem; }
+    @media (max-width: 1199px) {
+      .navbar a[title='get tickets!'] {
+        padding: .5rem 2rem !important; } }
+  @media (max-width: 1199px) {
+    .navbar {
+      margin-left: unset; } }
+
+.navbar .container, .navbar .page-section__content-wrapper {
+  position: relative; }
+
+.navbar-toggler {
+  position: absolute;
+  right: 0; }
+
+.navbar-toggler-icon {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2rem;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  color: #ffffff;
+  width: auto;
+  height: auto; }
+  .navbar-toggler-icon:before {
+    content: "\f0c9"; }
+
 .hero {
   padding-top: 12rem;
   padding-bottom: 8rem;
@@ -11280,8 +11327,13 @@ ol li::before {
   display: block; }
   .icon-item__icon {
     display: block;
-    max-width: 96px;
     margin: 0px auto 25px auto; }
+    .icon-item__icon img {
+      max-width: 150px; }
+      @media (max-width: 767.98px) {
+        .icon-item__icon img {
+          max-width: 250px;
+          width: 250px; } }
   .icon-item__title {
     color: #00bcd6;
     font-size: 1.5rem;
@@ -11289,7 +11341,8 @@ ol li::before {
     text-align: center; }
   .icon-item__content {
     color: #00bcd6;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.2rem; }
 
 .icon-item:hover {
   text-decoration: none; }
@@ -11361,7 +11414,7 @@ ol li::before {
 
 .page-section {
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
@@ -11436,6 +11489,9 @@ ol li::before {
   background-color: #00bcd6;
   color: white; }
 
+.page-section--light-teal {
+  background-color: #00BCD6; }
+
 .page-section--white {
   background-color: white; }
 
@@ -11452,10 +11508,10 @@ ol li::before {
   .post-preview__featured-img {
     border: solid 10px rgba(0, 0, 0, 0.2); }
   .post-preview__title {
-    font-size: 1.4rem;
+    color: #282828;
+    font-size: 1rem;
     text-align: center;
     margin-top: 1.5rem;
-    line-height: 2rem;
     margin-bottom: 1.5rem;
     padding-left: 1rem;
     padding-right: 1rem; }
@@ -11776,6 +11832,8 @@ ol li::before {
   .hr__inner {
     height: 0px;
     margin: 1rem auto; }
+    .hr__inner.hr--slim {
+      margin: 0.25rem auto; }
     .hr__inner--solid {
       padding-top: 3px; }
     .hr__inner--bold {
@@ -12196,42 +12254,6 @@ body.admin-bar .fixed-top {
   color: #c83b94; }
 
 /* Custom CSS */
-/* Nav Button */
-.navbar {
-  margin-left: auto; }
-  .navbar a[title='get tickets!'] {
-    font-weight: bold;
-    font-size: 1.6rem; }
-    @media (max-width: 1199px) {
-      .navbar a[title='get tickets!'] {
-        padding: .5rem 2rem !important; } }
-  @media (max-width: 1199px) {
-    .navbar {
-      margin-left: unset; } }
-
-@font-face {
-  font-family: "Font Awesome 5 Free";
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.eot);
-  src: url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.svg#fontawesome) format("svg"); }
-
-.navbar-toggler-icon {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 2rem;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-  color: #ffffff;
-  width: auto;
-  height: auto; }
-  .navbar-toggler-icon:before {
-    content: "\f0c9"; }
-
 /* Background Video Feature */
 .background-video {
   width: 100%; }
@@ -12247,6 +12269,11 @@ body.admin-bar .fixed-top {
     @media (min-width: 769px) {
       .background-video__text {
         position: absolute; } }
+  .background-video__button--desktop {
+    margin-top: 15px; }
+  .background-video__button--mobile {
+    margin-top: -15px;
+    font-size: 1.5rem; }
 
 .mejs-container,
 .mejs-container .mejs-controls, .mejs-embed,
@@ -12280,6 +12307,9 @@ strong {
 
 .mc-page-form .mc4wp-form {
   width: 100%; }
+  .mc-page-form .mc4wp-form .form-group .row div, .mc-page-form .mc4wp-form .wpcf7 .wpcf7-form p .row div, .wpcf7 .wpcf7-form .mc-page-form .mc4wp-form p .row div, .mc-page-form .mc4wp-form .form-group .post-card-row div, .mc-page-form .mc4wp-form .wpcf7 .wpcf7-form p .post-card-row div, .wpcf7 .wpcf7-form .mc-page-form .mc4wp-form p .post-card-row div, .mc-page-form .mc4wp-form .form-group .post-intro div, .mc-page-form .mc4wp-form .wpcf7 .wpcf7-form p .post-intro div, .wpcf7 .wpcf7-form .mc-page-form .mc4wp-form p .post-intro div, .mc-page-form .mc4wp-form .form-group .podcast-intro div, .mc-page-form .mc4wp-form .wpcf7 .wpcf7-form p .podcast-intro div, .wpcf7 .wpcf7-form .mc-page-form .mc4wp-form p .podcast-intro div {
+    margin-left: 2px;
+    margin-right: 2px; }
   .mc-page-form .mc4wp-form input {
     margin-bottom: 10px; }
     @media (max-width: 768px) {
@@ -12290,3 +12320,12 @@ strong {
   width: 100%;
   font-size: 1.5rem;
   text-align: center; }
+
+/* Text Feature */
+.text-feature {
+  font-size: 1.5rem;
+  line-height: 2.5rem; }
+
+/* Page Section Row */
+.page-section .row, .page-section .post-card-row, .page-section .post-intro, .page-section .podcast-intro {
+  padding-bottom: 1rem; }

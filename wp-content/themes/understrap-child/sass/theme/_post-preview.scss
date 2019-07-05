@@ -16,10 +16,11 @@
     }
     &__title
     {
-        font-size:1.4rem;
+        color: $dark-gray;
+        font-size:1rem;
         text-align: center;
         margin-top:1.5rem;
-        line-height: 2rem;
+        //line-height: 2rem;
         margin-bottom:1.5rem;
         padding-left:1rem;
         padding-right:1rem;
