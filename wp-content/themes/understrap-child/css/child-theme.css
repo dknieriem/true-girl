@@ -501,7 +501,7 @@ pre {
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
-.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .icon-item, .post-thumb, .col-md-4, .page-section__one-third-column, .post-preview, .col-md-5, .col-md-6, .page-section__single-column--narrow-left, .page-section__single-column--narrow-right, .page-section__one-half-column, .post-intro__post-meta, .post-intro__post-image-wrapper, .podcast-intro__post-meta, .podcast-intro__post-image-wrapper, .col-md-7, .col-md-8, .page-section__single-column--narrow-center, .page-section__single-column-narrow, .col-md-9, .col-md-10, .page-heading, .col-md-11, .col-md-12, .page-section__single-column, .page-section__two-third-column, .featured-post, .col-md,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .icon-item, .post-thumb, .newsletter-signup__control, .col-md-4, .page-section__one-third-column, .post-preview, .col-md-5, .col-md-6, .page-section__single-column--narrow-left, .page-section__single-column--narrow-right, .page-section__one-half-column, .post-intro__post-meta, .post-intro__post-image-wrapper, .podcast-intro__post-meta, .podcast-intro__post-image-wrapper, .col-md-7, .col-md-8, .page-section__single-column--narrow-center, .page-section__single-column-narrow, .col-md-9, .col-md-10, .page-heading, .col-md-11, .col-md-12, .page-section__single-column, .page-section__two-third-column, .featured-post, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
 .col-xl-auto {
@@ -889,7 +889,7 @@ pre {
         -ms-flex: 0 0 16.66667%;
             flex: 0 0 16.66667%;
     max-width: 16.66667%; }
-  .col-md-3, .icon-item, .post-thumb {
+  .col-md-3, .icon-item, .post-thumb, .newsletter-signup__control {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 25%;
             flex: 0 0 25%;
@@ -12109,23 +12109,28 @@ ol li::before {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
-  .newsletter-signup input[type="text"], .newsletter-signup input[type="email"] {
-    border-radius: 0px;
-    -ms-flex-preferred-size: 70%;
-        flex-basis: 70%;
-    border: none;
-    font-size: 0.8rem;
-    padding: .75rem 1rem;
-    border: 2px solid #c9c9c9; }
-    .newsletter-signup input[type="text"]::-webkit-input-placeholder, .newsletter-signup input[type="text"]:-ms-input-placeholder, .newsletter-signup input[type="text"]::-webkit-input-placeholder, .newsletter-signup input[type="email"]::-webkit-input-placeholder, .newsletter-signup input[type="email"]:-ms-input-placeholder, .newsletter-signup input[type="email"]::-webkit-input-placeholder {
-      color: #c9c9c9; }
-    .newsletter-signup input[type="text"]::-webkit-input-placeholder, .newsletter-signup input[type="text"]:-ms-input-placeholder, .newsletter-signup input[type="text"]::placeholder, .newsletter-signup input[type="email"]::-webkit-input-placeholder, .newsletter-signup input[type="email"]:-ms-input-placeholder, .newsletter-signup input[type="email"]::placeholder {
-      color: #c9c9c9; }
-  .newsletter-signup input.button, .newsletter-signup input.post-card__card-button {
-    -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
-    border: none;
-    font-weight: 300; }
+  .newsletter-signup__control {
+    padding-left: 5px;
+    padding-right: 5px; }
+  .newsletter-signup input {
+    width: 100%; }
+    .newsletter-signup input[type="text"], .newsletter-signup input[type="email"] {
+      border-radius: 0px;
+      -ms-flex-preferred-size: 70%;
+          flex-basis: 70%;
+      border: none;
+      font-size: 0.8rem;
+      padding: .75rem 1rem;
+      border: 2px solid #c9c9c9; }
+      .newsletter-signup input[type="text"]:placeholder-shown, .newsletter-signup input[type="text"]:-webkit-input-placeholder, .newsletter-signup input[type="text"]:-ms-input-placeholder, .newsletter-signup input[type="text"]::-webkit-input-placeholder, .newsletter-signup input[type="email"]:placeholder-shown, .newsletter-signup input[type="email"]:-webkit-input-placeholder, .newsletter-signup input[type="email"]:-ms-input-placeholder, .newsletter-signup input[type="email"]::-webkit-input-placeholder {
+        color: #c9c9c9; }
+      .newsletter-signup input[type="text"]:placeholder-shown, .newsletter-signup input[type="text"]:-webkit-input-placeholder, .newsletter-signup input[type="text"]:-ms-input-placeholder, .newsletter-signup input[type="text"]::placeholder, .newsletter-signup input[type="email"]:placeholder-shown, .newsletter-signup input[type="email"]:-webkit-input-placeholder, .newsletter-signup input[type="email"]:-ms-input-placeholder, .newsletter-signup input[type="email"]::placeholder {
+        color: #c9c9c9; }
+    .newsletter-signup input.button, .newsletter-signup input.post-card__card-button {
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%;
+      border: none;
+      font-weight: 300; }
 
 /*.home-email-signup-form
 {

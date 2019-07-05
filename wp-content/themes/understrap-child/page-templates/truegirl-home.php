@@ -22,9 +22,9 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
-		<div class="row">
+		<div class="row content__row">
 
-			<div class="col-12">
+			<div class="col-12 content__col-12">
 
 			<main class="site-main" id="main">
 

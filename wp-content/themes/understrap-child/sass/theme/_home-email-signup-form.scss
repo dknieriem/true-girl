@@ -1,40 +1,50 @@
 
  .newsletter-signup
-    {
-        //@extend .form-inline;
-        display: flex;
-        flex-direction: row;
-        
-        margin-bottom:1rem;
-
-        @media(max-width: 767px){
-            flex-direction: column;
-        }
+{
+    //@extend .form-inline;
+    display: flex;
+    flex-direction: row;
     
-    input[type="text"], input[type="email"]
-    {
-        //@extend .form-control;
-        border-radius:0px;
-        flex-basis:70%;
-        border:none;
-        font-size:0.8rem;
-        padding:.75rem 1rem;
-        //@extend .shadowed;
-        border: 2px solid $light-gray;
+    margin-bottom:1rem;
 
-        &::-webkit-input-placeholder, &:-ms-input-placeholder, &::placeholder {
-            color: $light-gray;
-        }
+    @media (max-width: 767px){
+        flex-direction: column;
     }
-    
-    input.button
-    {
-        flex-basis:20%;
-        //background-color:$rose;
-        //color:white;
-        border:none;
-        font-weight:300;
-        //@extend .shadowed;  
+
+    &__control {
+        @extend .col-md-3;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    input {
+        width: 100%;
+
+        &[type="text"], &[type="email"]
+        {
+            //@extend .form-control;
+            border-radius:0px;
+            flex-basis:70%;
+            border:none;
+            font-size:0.8rem;
+            padding:.75rem 1rem;
+            //@extend .shadowed;
+            border: 2px solid $light-gray;
+
+            &:placeholder-shown, &:-webkit-input-placeholder, &:-ms-input-placeholder, &::placeholder {
+                color: $light-gray;
+            }
+        }
+        
+        &.button
+        {
+            flex-basis:20%;
+            //background-color:$rose;
+            //color:white;
+            border:none;
+            font-weight:300;
+            //@extend .shadowed;  
+        }
     }
 }
 
