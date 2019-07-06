@@ -161,6 +161,18 @@ body.admin-bar .fixed-top
     width: 100% !important;
 }
 
+/* Modal Video */
+#bgVideoFeatureModal {
+
+    .wp-video {
+        width: 100% !important;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
+
 /* Correct <strong> boldness */
 
 strong {

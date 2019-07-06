@@ -12293,6 +12293,13 @@ body.admin-bar .fixed-top {
 .mejs-embed body {
   width: 100% !important; }
 
+/* Modal Video */
+#bgVideoFeatureModal .wp-video {
+  width: 100% !important; }
+
+#bgVideoFeatureModal iframe {
+  width: 100%; }
+
 /* Correct <strong> boldness */
 strong {
   font-weight: 900; }
