@@ -38,9 +38,9 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 					</div><!-- .entry-content -->
 
-					<footer class="entry-footer">
+					<!-- <footer class="entry-footer">
 
-						<?php edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
+						<?php //edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
 
 					</footer><!-- .entry-footer -->
 

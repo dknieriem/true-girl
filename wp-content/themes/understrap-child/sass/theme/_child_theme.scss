@@ -249,3 +249,38 @@ strong {
 .page-section .row {
     padding-bottom: 1rem;
 }
+
+/* Section Headers */
+
+.section-header {
+
+    @extend .col-12;
+
+    text-align: center;
+    height: 100px;
+
+    &__text {
+        color: $white;
+        font-family: "Shark Random Funnyness";
+        font-size : 60px;
+        margin-bottom: 0;
+        text-transform: uppercase;
+
+        &--large {
+            font-size: 75px;
+        }
+
+        &--small {
+            font-size: 48px;
+        }
+    }
+}
+
+/* Testimonials */
+
+.testimonial_small {
+    &__attribution {
+        color: $pink;
+        font-family: "Myriad Pro";
+    }
+}
