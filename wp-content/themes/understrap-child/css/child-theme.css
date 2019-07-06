@@ -12350,13 +12350,13 @@ strong {
   .section-header__text {
     color: #ffffff;
     font-family: "Shark Random Funnyness";
-    font-size: 60px;
+    font-size: 48px;
     margin-bottom: 0;
     text-transform: uppercase; }
     .section-header__text--large {
       font-size: 75px; }
     .section-header__text--small {
-      font-size: 48px; }
+      font-size: 36px; }
 
 /* Testimonials */
 .testimonial_small__attribution {
