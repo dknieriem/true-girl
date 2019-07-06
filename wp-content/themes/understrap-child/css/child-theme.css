@@ -12227,6 +12227,10 @@ body.admin-bar .fixed-top {
 #content {
   background-color: #ffffff; }
 
+.content__col-12 {
+  padding-left: 0;
+  padding-right: 0; }
+
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
