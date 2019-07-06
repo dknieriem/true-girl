@@ -12064,6 +12064,10 @@ ol li::before {
       .footer__logo {
         margin-top: 3rem; } }
 
+#wrapper-footer-full,
+#wrapper-static-hero {
+  background-color: #ffffff; }
+
 .page-wrapper {
   margin-top: 3rem;
   background-color: white;

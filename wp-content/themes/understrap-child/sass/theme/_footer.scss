@@ -1,6 +1,6 @@
 .footer
 {
-    background-color: $white;
+    background-color: $footer-background-color;
     padding-top:4rem;
     padding-bottom:1rem;
     &__copyright
@@ -96,4 +96,10 @@
             margin-top: 3rem;
         }
     }
+}
+
+#wrapper-footer-full,
+#wrapper-static-hero 
+{ 
+    background-color: $footer-background-color; 
 }
