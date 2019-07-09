@@ -1,0 +1,47 @@
+#mc4wp-admin .accordion-container {
+  border: 1px solid #ccc;
+  background: white; }
+
+#mc4wp-admin .accordion-heading {
+  color: #555555;
+  background-color: #fff;
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px 10px 11px 14px;
+  line-height: 21px;
+  cursor: pointer;
+  position: relative;
+  margin: 0;
+  font-size: 14px; }
+
+#mc4wp-admin .accordion.expanded .accordion-heading,
+#mc4wp-admin .accordion-heading:hover {
+  color: #23282d;
+  background: #f5f5f5; }
+
+#mc4wp-admin .accordion-heading:after {
+  content: '\f140';
+  font: normal 20px/1 'dashicons';
+  float: right;
+  right: 20px; }
+
+#mc4wp-admin .accordion.expanded .accordion-heading:after {
+  content: "\f142"; }
+
+#mc4wp-admin .accordion-content {
+  padding: 0 20px 20px;
+  border-bottom: 1px solid #eeeeee; }
+
+#mc4wp-admin .wp-picker-clear,
+#mc4wp-admin .wp-picker-holder,
+#mc4wp-admin .wp-picker-input-wrap {
+  background: white;
+  z-index: 999 !important;
+  position: absolute !important; }
+
+#mc4wp-admin .form-preview {
+  width: 100%;
+  min-height: 450px;
+  border: 1px solid #ccc; }
+
+#mc4wp-admin #form-css-settings input:invalid {
+  border-color: red; }

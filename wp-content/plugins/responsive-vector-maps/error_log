@@ -1,0 +1,4 @@
+[18-Aug-2017 10:45:19 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_basename() in /home3/secretk1/public_html/staging/wp-content/plugins/responsive-vector-maps/responsive_vector_maps.php:28
+Stack trace:
+#0 {main}
+  thrown in /home3/secretk1/public_html/staging/wp-content/plugins/responsive-vector-maps/responsive_vector_maps.php on line 28

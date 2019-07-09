@@ -1,0 +1,29 @@
+
+/* reports */
+#mc4wp-graph{
+	width:100%;
+	min-height: 300px;
+	background: white;
+}
+
+#mc4wp-graph-range-options,
+#mc4wp-graph-custom-range-options{
+	float:left;
+}
+
+#mc4wp-graph-custom-range-options span{
+	float: left;
+	margin-right: 6px;
+	height: 24px;
+	line-height: 24px;
+}
+
+.graph-line-toggles label{
+	display: inline-block;
+	width: 33%;
+	margin-bottom: 6px;
+}
+
+.column-email {
+	width: 300px;
+}
