@@ -11883,6 +11883,10 @@ ol li::before {
   margin-bottom: 2rem;
   border-radius: 6px; }
 
+.page-section__single-column.no-inner-margin .post-image, .row.no-inner-margin .post-image, .no-inner-margin.post-card-row .post-image, .no-inner-margin.post-intro .post-image, .no-inner-margin.podcast-intro .post-image {
+  margin-top: 0;
+  margin-bottom: 0; }
+
 .event-summary {
   display: -webkit-box;
   display: -ms-flexbox;

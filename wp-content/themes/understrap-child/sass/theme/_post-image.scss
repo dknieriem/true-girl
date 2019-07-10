@@ -5,3 +5,10 @@
     margin-bottom:2rem;
     border-radius:6px;
 }
+
+.page-section__single-column.no-inner-margin, .row.no-inner-margin {
+	.post-image {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
