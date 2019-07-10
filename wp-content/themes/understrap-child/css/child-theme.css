@@ -11037,12 +11037,12 @@ h1 {
 
 h2, h3, h4 {
   font-family: "GoudySans Md BT";
-  color: #ffffff; }
+  color: #00bcd6; }
 
 h5 {
   text-transform: uppercase;
   font-weight: 300;
-  color: #ffffff; }
+  color: #00bcd6; }
 
 .entry-content ul li, .entry-content ol li {
   margin-top: .5rem;
@@ -11140,12 +11140,14 @@ ol li::before {
   .button--white {
     background-color: white;
     color: #c83b94; }
+  .button--teal {
+    background-color: #00bcd6;
+    color: #ffffff; }
   .button--white:hover {
     background-color: white;
     color: #525252 !important; }
   .button--small, .post-card__card-button {
-    padding: .3rem 1.4rem;
-    font-size: 0.8rem; }
+    padding: 0.1rem 0.5rem; }
   .button--large {
     font-size: 1.5rem;
     text-align: center; }

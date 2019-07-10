@@ -12,6 +12,12 @@
         background-color:white;
         color:$pink;
     }
+
+    &--teal 
+    {
+        background-color: $teal;
+        color: $white;
+    }
     &--white:hover
     {
         background-color:white;
@@ -19,8 +25,7 @@
     }
     &--small
     {
-        padding: .3rem 1.4rem;
-        font-size:0.8rem;
+        padding: 0.1rem 0.5rem;
     }
 
     &--large {
