@@ -126,21 +126,24 @@ p
 h1
 {
     font-family: $header-font;
+    color: $white;
 }
-.page-content h1
-{
-    color:$pink;
-}
+// .page-content h1
+// {
+//     color:$pink;
+// }
 
 h2,h3,h4
 {
     font-family: $body-font;
+    color: $white;
 }
 
 h5
 {
     text-transform: uppercase;
     font-weight:300;
+    color: $white;
 }
 
 .entry-content ul li, .entry-content ol li

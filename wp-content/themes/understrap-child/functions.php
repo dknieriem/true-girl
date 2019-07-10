@@ -296,4 +296,13 @@ function custom_query_vars_filter($vars) {
     $vars[] .= 'topic';
     return $vars;
   }
-  add_filter( 'query_vars', 'custom_query_vars_filter' );
+
+add_filter( 'query_vars', 'custom_query_vars_filter' );
+
+function understrap_child_mime_types($mimes) {
+ $mimes['svg'] = 'image/svg+xml';
+ $mimes['js'] = 'application/javascript';
+ return $mimes;
+}
+
+add_filter('upload_mimes', 'understrap_child_mime_types');

@@ -11032,17 +11032,17 @@ p {
     background-color: #fdbD10; }
 
 h1 {
-  font-family: "Shark Random Funnyness"; }
-
-.page-content h1 {
-  color: #c83b94; }
+  font-family: "Shark Random Funnyness";
+  color: #ffffff; }
 
 h2, h3, h4 {
-  font-family: "GoudySans Md BT"; }
+  font-family: "GoudySans Md BT";
+  color: #ffffff; }
 
 h5 {
   text-transform: uppercase;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #ffffff; }
 
 .entry-content ul li, .entry-content ol li {
   margin-top: .5rem;
