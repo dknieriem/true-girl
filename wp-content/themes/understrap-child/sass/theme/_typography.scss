@@ -121,7 +121,21 @@ p
         color: $white;
         background-color: $yellow;
     }
+
+    &__on-white
+    {
+        background-color: $white;
+    }
+
+    &.background-circle
+    {
+        border-radius: 50%;
+        width: 3rem;
+        margin: 1rem auto;
+    }
 }
+
+
 
 h1
 {

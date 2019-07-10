@@ -11030,6 +11030,12 @@ p {
   .heading__on-yellow {
     color: #ffffff;
     background-color: #fdbD10; }
+  .heading__on-white {
+    background-color: #ffffff; }
+  .heading.background-circle {
+    border-radius: 50%;
+    width: 3rem;
+    margin: 1rem auto; }
 
 h1 {
   font-family: "Shark Random Funnyness";
