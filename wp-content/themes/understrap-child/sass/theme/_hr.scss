@@ -51,18 +51,22 @@
         }
     
         &--solid {
-                padding-top: 3px;
+            padding-top: 3px;
          }
         &--bold {
-                padding-top: 8px;
+            padding-top: 8px;
         }
 
         &--teal {
-                background-color: $teal;
+            background-color: $teal;
         }
 
         &--pink {
-                background-color: $pink;    
+            background-color: $pink;    
+        }
+
+        &--white {
+            background-color: $white;
         }
     }
 }

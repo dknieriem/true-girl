@@ -243,12 +243,6 @@ strong {
     }
 }
 
-.button--large {
-    width: 100%;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
 /* Text Feature */
 
 .text-feature {
@@ -266,18 +260,35 @@ strong {
 
 .section-header {
 
-    @extend .col-12;
+    //@extend .col-12;
 
+    display: table;
     text-align: center;
-    height: 100px;
+    height: 120px;
+
+    &__10 {
+        @extend .col-md-10;
+        @extend .offset-md-1;
+    }
+
+    &__8 {
+        @extend .col-md-8;
+        @extend .offset-md-2;
+    }
+
+    &__6 {
+        @extend .col-md-6;
+        @extend .offset-md-3;
+    }
 
     &__text {
         color: $white;
+        display: table-cell;
         font-family: "Shark Random Funnyness";
         font-size : 48px;
         margin-bottom: 0;
         text-transform: uppercase;
-
+        vertical-align: middle;
         &--large {
             font-size: 75px;
         }
@@ -285,6 +296,7 @@ strong {
         &--small {
             font-size: 36px;
         }
+
     }
 }
 
@@ -295,4 +307,13 @@ strong {
         color: $pink;
         font-family: "Myriad Pro";
     }
+}
+
+/* Map Section */
+
+
+
+.map-container {
+    display: table-cell;
+    margin: auto;
 }

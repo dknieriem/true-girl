@@ -84,7 +84,7 @@ p
 
     &--white
     {
-        color:white;
+        color:$white;
     }
     &--pink
     {
@@ -100,6 +100,13 @@ p
         background-color: $pink;
         font-size: 1.5rem;
         line-height: 56px;
+        padding: 8px 15px;
+    }
+
+    &--white-on-pink
+    {
+        color: $white;
+        background-color: $pink;
         padding: 8px 15px;
     }
 

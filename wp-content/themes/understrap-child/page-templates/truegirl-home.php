@@ -1,6 +1,6 @@
 <?php
 /**
- * /* Template Name: True Girl Home Page 
+ * /* Template Name: True Girl Page
  * 
  * The home page template file
  *

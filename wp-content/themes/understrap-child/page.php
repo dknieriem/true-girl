@@ -30,7 +30,7 @@ $featuredImage = wp_get_attachment_url(get_post_thumbnail_id($post->ID, 'large')
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="page-wrapper page-content">
+							<div class="page-wrapper">
 								<?php while ( have_posts() ) : the_post(); ?>
 									<?php the_content(); ?>
 								<?php endwhile; // end of the loop. ?>
