@@ -12411,3 +12411,19 @@ strong {
 .map-container {
   display: table-cell;
   margin: auto; }
+
+/* Layout Helpers */
+.mt-n1 {
+  margin-top: -.25rem; }
+
+.mt-n2 {
+  margin-top: -.5rem; }
+
+.mt-n3 {
+  margin-top: -1rem; }
+
+.mt-n4 {
+  margin-top: -1.5rem; }
+
+.mt-n5 {
+  margin-top: -4rem; }
