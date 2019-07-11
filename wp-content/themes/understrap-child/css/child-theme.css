@@ -11006,8 +11006,8 @@ p {
     @media (max-width: 768px) {
       .heading--lg {
         font-size: 2.91rem; } }
-  .heading__sm {
-    font-size: 2rem; }
+  .heading--sm {
+    font-size: 1.5rem; }
   .heading--white {
     color: #ffffff; }
   .heading--pink {
@@ -11039,7 +11039,8 @@ p {
 
 h1 {
   font-family: "Shark Random Funnyness";
-  color: #ffffff; }
+  color: #ffffff;
+  font-weight: 300; }
 
 h2, h3, h4 {
   font-family: "GoudySans Md BT";
@@ -11072,6 +11073,7 @@ ol li::before {
 .entry-content ul > li {
   font-weight: 600; }
 
+/* Generic modifier classes */
 .light {
   color: white; }
 
@@ -12229,11 +12231,14 @@ ol li::before {
 }*/
 body {
   font-family: "GoudySans Md BT";
-  padding-top: 100px;
+  padding-top: 160px;
   background-image: url("../img/background-icons.png");
   background-repeat: repeat-y;
   background-size: 100%;
   background-position: center top; }
+  @media (min-width: 769px) {
+    body {
+      padding-top: 100px; } }
 
 .wrapper {
   padding-top: 0px;
@@ -12378,11 +12383,15 @@ strong {
     font-size: 48px;
     margin-bottom: 0;
     text-transform: uppercase;
-    vertical-align: middle; }
+    vertical-align: middle;
+    padding: 2rem 5rem; }
     .section-header__text--large {
       font-size: 75px; }
     .section-header__text--small {
       font-size: 36px; }
+    .section-header__text small {
+      font-family: "GoudySans Md BT";
+      font-size: 24px; }
 
 /* Testimonials */
 .testimonial_small__attribution {

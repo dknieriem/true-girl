@@ -77,9 +77,9 @@ p
             font-size:2.91rem;
         }
     }
-    &__sm
+    &--sm
     {
-        font-size:2rem;
+        font-size:1.5rem;
     }
 
     &--white
@@ -135,17 +135,12 @@ p
     }
 }
 
-
-
 h1
 {
     font-family: $header-font;
     color: $white;
+    font-weight: 300;
 }
-// .page-content h1
-// {
-//     color:$pink;
-// }
 
 h2,h3,h4
 {
@@ -186,6 +181,7 @@ h5
     font-weight:600; 
   }
   
+/* Generic modifier classes */
 
 
 .light

@@ -35,11 +35,16 @@
 body
 {
     font-family:$body-font;
-    padding-top:100px;
+    padding-top:160px;
     background-image: url('../img/background-icons.png');
     background-repeat: repeat-y;
     background-size:100%;
     background-position: center top;
+
+    @media (min-width: 769px)
+    {
+        padding-top:100px;
+    }
 }
 
 .wrapper
@@ -282,19 +287,26 @@ strong {
     }
 
     &__text {
-        color: $white;
+        color: color(white);
         display: table-cell;
-        font-family: "Shark Random Funnyness";
+        font-family: font(shark);
         font-size : 48px;
         margin-bottom: 0;
         text-transform: uppercase;
         vertical-align: middle;
+        padding: 2rem 5rem;
         &--large {
             font-size: 75px;
         }
 
         &--small {
             font-size: 36px;
+        }
+
+        //<small> inside of section header shortcode
+        small {
+            font-family: font(goudysans);
+            font-size: 24px;
         }
 
     }

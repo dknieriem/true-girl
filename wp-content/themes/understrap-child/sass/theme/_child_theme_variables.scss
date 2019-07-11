@@ -60,3 +60,18 @@ $fonts: (
 	"Shark Random Funnyness": "../fonts/Shark_Random_Funnyness.ttf",
 	"Impervious": "../fonts/impervious.ttf"
 );
+
+$fontnames: (
+	goudysans:	"GoudySans Md BT",
+	shark:		"Shark Random Funnyness",
+	impervious: "Impervious"
+);
+
+@function font($key) {
+	@if map-has-key($fontnames, $key) {
+		@return map-get($fontnames, $key);
+	}
+
+	@warn "Unknown `#{$key}` in $fontnames.";
+	@return null;
+}
