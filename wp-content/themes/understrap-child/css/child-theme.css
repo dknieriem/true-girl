@@ -10905,6 +10905,15 @@ a.skip-link {
   src: url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.eot);
   src: url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.svg#fontawesome) format("svg"); }
 
+.font-goudysans, .text-goudysans {
+  font-family: "GoudySans Md BT" !important; }
+
+.font-shark, .text-shark {
+  font-family: "Shark Random Funnyness" !important; }
+
+.font-impervious, .text-impervious {
+  font-family: "Impervious" !important; }
+
 body {
   color: #525252;
   font-family: "GoudySans Md BT";
