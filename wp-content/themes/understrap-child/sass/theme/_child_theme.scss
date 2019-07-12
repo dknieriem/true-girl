@@ -30,8 +30,8 @@
 @import "page-wrapper";
 @import "sidebar-cta-card";
 @import "home-email-signup-form";
-@import "wp-shopify";
-
+//@import "wp-shopify";
+@import "../assets/slick";
 body
 {
     font-family:$body-font;
