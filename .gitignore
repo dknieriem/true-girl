@@ -1,5 +1,5 @@
 .DS_Store
-.htaccess
+#.htaccess
 *.log
 node_modules/
 wp-config.php

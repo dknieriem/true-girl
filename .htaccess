@@ -1,0 +1,47 @@
+
+# HTTPS forced by SG-Optimizer
+<IfModule mod_rewrite.c>
+RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+</IfModule>
+# END HTTPS
+# BEGIN WordPress
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresByType image/jpg "access plus 1 year"
+	ExpiresByType image/jpeg "access plus 1 year"
+	ExpiresByType image/gif "access plus 1 year"
+	ExpiresByType image/png "access plus 1 year"
+	ExpiresByType text/css "access plus 1 month"
+	ExpiresByType application/pdf "access plus 1 month"
+	ExpiresByType text/javascript "access plus 1 month"
+	ExpiresByType text/html "access plus 5 minutes"
+	ExpiresByType image/x-icon "access plus 1 year"
+	ExpiresDefault "access plus 6 hours"
+</IfModule>
+<ifModule mod_headers.c>
+Header set X-Endurance-Cache-Level "0"
+</ifModule>
+Options -Indexes 
+
+				<IfModule mod_rewrite.c>
+					RewriteEngine On
+					RewriteBase /
+					RewriteRule ^/wp-content/endurance-page-cache/ - [L]
+					RewriteCond %{REQUEST_METHOD} !POST
+					RewriteCond %{QUERY_STRING} !.*=.*
+					RewriteCond %{HTTP_COOKIE} !(wordpress_test_cookie|comment_author|wp\-postpass|wordpress_logged_in|wptouch_switch_toggle|wp_woocommerce_session_) [NC]
+					RewriteCond %{DOCUMENT_ROOT}/wp-content/endurance-page-cache/$1/_index.html -f
+					RewriteRule ^(.*)$ /wp-content/endurance-page-cache/$1/_index.html [L]
+				</IfModule>
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
