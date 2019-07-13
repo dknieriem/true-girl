@@ -4,10 +4,10 @@
 
     border: none;
 
-    grid-column: 1/span 3;
+    //grid-column: 1/span 3;
 
     @include media-breakpoint-up(md) {
-        grid-column: unset;
+        //grid-column: unset;
     }
 
     &__heading {
@@ -52,7 +52,7 @@
 .post-card-row
 {
 
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     
     justify-content: center;
     // flex-wrap: wrap;

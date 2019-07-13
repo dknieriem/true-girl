@@ -8,6 +8,8 @@
 
 		margin-bottom: 10px;
 
+		grid-column: 1/span 2;
+
 		@include media-breakpoint-up(md) {
 			grid-column: 3;
 			grid-row: 3/span 2;
@@ -77,9 +79,7 @@
 			text-align: center;
 
 			input {
-
 				
-
 				&[type='text'], &[type='email'] {
 					background-color: color(form-background);
 					border: none;

@@ -11322,6 +11322,7 @@ ol li::before {
 
 .blog__sidebar {
   margin-bottom: 10px;
+  grid-column: 1/span 2;
   /* Search form */
   /* social icons */
   /* signup form */ }
@@ -11798,11 +11799,7 @@ ol li::before {
   color: white; }
 
 .post-card {
-  border: none;
-  grid-column: 1/span 3; }
-  @media (min-width: 768px) {
-    .post-card {
-      grid-column: unset; } }
+  border: none; }
   .post-card__body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11826,7 +11823,7 @@ ol li::before {
     display: inline-block; }
 
 .post-card-row {
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
