@@ -133,9 +133,18 @@ $container   = get_theme_mod( 'understrap_container_type' );
 		
 
 	</div><!-- .row -->
-	<div class="row prefooter">
-		<?php do_shortcode('[mc4wp_form id="7805"]'); ?>
-	</div><!-- .row.prefooter -->
+	<section class="page-section text-left background-pink responsive-background- " style="background-image: url('http://localhost:8888/wp-content/uploads/2019/07/EmailSignupPinkBkgd.png'); background-repeat: no-repeat; background-size:cover; background-position: center center;"><div class="page-section__content-wrapper">
+		
+<div class="row prefooter full-width--no mc-page-form col-sm-10 offset-sm-1 text-center justify-content-center">
+	
+<h2 class="text-white">Truth, delivered to your inbox</h2>
+<?php echo do_shortcode('[mc4wp_form id="7805"]'); ?>
+
+</div>
+
+	</div>
+</section>
+		
 </div><!-- Container end -->
 
 </div><!-- Wrapper end -->
