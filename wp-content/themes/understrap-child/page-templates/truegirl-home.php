@@ -7,7 +7,7 @@
  * Cloned from the default understrap page template,
  * this template removes the global hero and page header sections.
  * That's it. Really! 
- * All other homepage styling is done via the block editor.
+ * All other styling is done via the block editor.
  *
  * @package understrap
  */

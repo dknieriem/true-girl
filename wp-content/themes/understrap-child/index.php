@@ -84,17 +84,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 					wp_reset_postdata();
 				} 
 			?>
-		
-		<div class="row mt-5">
-			<div class="col-md-12">
-				<div class="dotted-hr">
-					<h2 class="dotted-hr__text">Recent posts</h2>
-				</div>
-			</div>
-		</div>
-	
 			
-
 			<?php if ( have_posts() ) : ?>
 
 				<?php /* Start the Loop */ ?>

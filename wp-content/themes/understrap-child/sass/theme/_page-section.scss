@@ -54,6 +54,10 @@
         padding-bottom: 1rem;
     }
 
+    &__overlay-image {
+        position: absolute;
+    }
+
 }
 
 @each $color, $hex in $colors {

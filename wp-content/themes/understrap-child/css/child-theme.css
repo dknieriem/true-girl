@@ -501,7 +501,7 @@ pre {
     padding-left: 0; }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
-.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .post-card, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .icon-item, .post-thumb, .newsletter-signup__control, .col-md-4, .page-section__one-third-column, .post-preview, .col-md-5, .col-md-6, .page-section__single-column--narrow-left, .page-section__single-column--narrow-right, .page-section__one-half-column, .post-intro__post-meta, .post-intro__post-image-wrapper, .podcast-intro__post-meta, .podcast-intro__post-image-wrapper, .section-header__6, .col-md-7, .col-md-8, .page-section__single-column--narrow-center, .page-section__single-column-narrow, .section-header__8, .col-md-9, .col-md-10, .page-heading, .section-header__10, .col-md-11, .col-md-12, .page-section__single-column, .page-section__two-third-column, .featured-post, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
@@ -746,7 +746,7 @@ pre {
         -ms-flex: 0 0 41.66667%;
             flex: 0 0 41.66667%;
     max-width: 41.66667%; }
-  .col-sm-6 {
+  .col-sm-6, .post-card {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
@@ -895,7 +895,7 @@ pre {
         -ms-flex: 0 0 25%;
             flex: 0 0 25%;
     max-width: 25%; }
-  .col-md-4, .page-section__one-third-column, .post-preview {
+  .col-md-4, .page-section__one-third-column, .post-preview, .post-card {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 33.33333%;
             flex: 0 0 33.33333%;
@@ -8387,7 +8387,7 @@ button.bg-dark:focus {
 .text-right {
   text-align: right !important; }
 
-.text-center {
+.text-center, .post-card__title {
   text-align: center !important; }
 
 @media (min-width: 576px) {
@@ -11056,7 +11056,7 @@ a.skip-link {
   src: url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.eot);
   src: url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.svg#fontawesome) format("svg"); }
 
-.font-goudysans, .text-goudysans {
+.font-goudysans, .post-card__title, .post-card__text, .text-goudysans {
   font-family: "GoudySans Md BT" !important; }
 
 .font-shark, .text-shark {
@@ -11246,7 +11246,7 @@ ol li::before {
 .text-right {
   text-align: right; }
 
-.text-center {
+.text-center, .post-card__title {
   text-align: center; }
 
 .all-caps {
@@ -11607,6 +11607,8 @@ ol li::before {
   position: relative; }
   .page-section .row, .page-section .post-card-row, .page-section .post-intro, .page-section .podcast-intro {
     padding-bottom: 1rem; }
+  .page-section__overlay-image {
+    position: absolute; }
 
 .background-blue {
   background-color: #007bff; }
@@ -11712,17 +11714,19 @@ ol li::before {
   color: white; }
 
 .post-card {
-  border: solid 5px white;
-  -webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.2);
-  margin: 15px;
-  width: 335px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 0px; }
-  .post-card__heading {
-    height: 200px; }
+  border: none;
+  /*border: solid 5px white;
+    -webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.2);*/
+  /*margin: 15px;*/
+  /*width: 335px;*/
+  /* display: flex;
+    border-radius:0px;*/
+  /*&__heading
+    {
+        height:200px;
+    }*/ }
   .post-card__body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11733,7 +11737,7 @@ ol li::before {
             flex-direction: column; }
   .post-card__title {
     font-size: 1.3rem;
-    color: #00bcd6; }
+    color: #000000; }
   .post-card__text {
     font-size: 0.8rem;
     line-height: 1.6;
@@ -11741,7 +11745,7 @@ ol li::before {
         -ms-flex-positive: 1;
             flex-grow: 1; }
   .post-card__link {
-    color: #00bcd6; }
+    color: #000000; }
   .post-card__card-button {
     display: inline-block; }
 
@@ -12593,7 +12597,7 @@ strong {
   .page-section__content-wrapper {
     padding-left: 0;
     padding-right: 0; }
-  .col:not(.mobile-full-width), .col-sm-4:not(.mobile-full-width), .col-sm-8:not(.mobile-full-width), .col-md-4:not(.mobile-full-width), .page-section__one-third-column:not(.mobile-full-width), .post-preview:not(.mobile-full-width), .col-md-8:not(.mobile-full-width), .page-section__single-column--narrow-center:not(.mobile-full-width), .page-section__single-column-narrow:not(.mobile-full-width), .section-header__8:not(.mobile-full-width) {
+  .col:not(.mobile-full-width), .col-sm-4:not(.mobile-full-width), .col-sm-8:not(.mobile-full-width), .col-md-4:not(.mobile-full-width), .page-section__one-third-column:not(.mobile-full-width), .post-preview:not(.mobile-full-width), .post-card:not(.mobile-full-width), .col-md-8:not(.mobile-full-width), .page-section__single-column--narrow-center:not(.mobile-full-width), .page-section__single-column-narrow:not(.mobile-full-width), .section-header__8:not(.mobile-full-width) {
     padding: 0px 50px; }
   #content > .row > .col-12, #content > .post-card-row > .col-12, #content > .post-intro > .col-12, #content > .podcast-intro > .col-12 {
     padding: 0; } }
@@ -12658,45 +12662,6 @@ strong {
   margin: auto; }
 
 /* Layout Helpers */
-/*.mt-n1 {
-    margin-top: -.25rem;
-}
-
-.mt-n2 {
-    margin-top: -.5rem;
-}
-
-.mt-n3 {
-    margin-top: -1rem;
-}
-
-.mt-n4 {
-    margin-top: -1.5rem;
-}
-
-.mt-n5 {
-    margin-top: -4rem;
-}
-
-.ml-n1 {
-    margin-left: -.25rem;
-}
-
-.ml-n2 {
-    margin-left: -.5rem;
-}
-
-.ml-n3 {
-    margin-left: -1rem;
-}
-
-.ml-n4 {
-    margin-left: -1.5rem;
-}
-
-.ml-n5 {
-    margin-left: -4rem;
-}*/
 .m-n0 {
   margin: 0 !important; }
 

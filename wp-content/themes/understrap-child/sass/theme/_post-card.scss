@@ -1,19 +1,22 @@
 .post-card
 {
     @extend .card;
-    border: solid 5px white;
+    @extend .col-md-4;
+    @extend .col-sm-6;
+    border: none;
+    /*border: solid 5px white;
     -webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.2);
-    margin: 15px;
-    width: 335px;
-    display: flex;
-    border-radius:0px;
+    box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.2);*/
+    /*margin: 15px;*/
+    /*width: 335px;*/
+   /* display: flex;
+    border-radius:0px;*/
 
-    &__heading
+    /*&__heading
     {
         height:200px;
-    }
+    }*/
     &__body
     {
         @extend .card-body;
@@ -23,19 +26,23 @@
     &__title
     {
         @extend .card-title;
+        @extend .font-goudysans;
+        @extend .text-center;
         font-size:1.3rem;
-        color:$teal;
+        color:$black;
+
     }
     &__text
     {
         @extend .card-text;
+        @extend .font-goudysans;
         font-size:0.8rem;
         line-height:1.6;
         flex-grow:1;
     }
     &__link
     {
-        color:$teal;
+        color:$black;
     }
     &__card-button
     {
