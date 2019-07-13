@@ -26,8 +26,8 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 		<!-- Page header -->
 		<div class="row">
-			<div class="col-md-12">
-				<h1 class="heading heading--white-on-pink text-center">True Girl Blog | Online Resources For Moms</h1>
+			<div class="col-md-12 text-center">
+				<h1 class="heading heading--white-on-pink d-inline-block">True Girl Blog | Online Resources For Moms</h1>
 			</div>
 		</div>
 		<!-- End page header -->
