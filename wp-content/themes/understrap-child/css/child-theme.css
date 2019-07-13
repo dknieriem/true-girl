@@ -11608,7 +11608,8 @@ ol li::before {
   .page-section .row, .page-section .post-card-row, .page-section .post-intro, .page-section .podcast-intro {
     padding-bottom: 1rem; }
   .page-section__overlay-image {
-    position: absolute; }
+    position: absolute;
+    top: 0; }
 
 .background-blue {
   background-color: #007bff; }
