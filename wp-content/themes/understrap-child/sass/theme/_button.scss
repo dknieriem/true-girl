@@ -18,6 +18,10 @@
         background-color: $teal;
         color: $white;
     }
+    &--gray
+    {
+        background-color: $form-gray;
+    }
     &--white:hover
     {
         background-color:white;

@@ -1,0 +1,96 @@
+//Blog homepage styles
+
+
+//body class
+.blog {
+	
+	&__sidebar {
+		grid-column: 3;
+		grid-row: 3/span 2;
+
+		.custom-html-widget {
+			@extend .text-center;
+			margin-bottom: 25px;
+		}
+
+		/* Search form */
+		.search-form {
+
+			margin: 0 0 25px 0;
+			@extend .text-center;
+
+
+			&__input-wrapper {
+
+			}
+
+			&__search-input {
+				border-radius: 0;
+				padding: 0.2rem 0.5rem;
+				font-size: 1rem;
+				font-weight: 300;
+
+				background-color: color(form-background);
+				border: none;
+				color: color(form-gray);
+				line-height: 2;
+				margin-bottom: 10px;
+				text-align: center;
+				width: 100%;
+			}
+
+			&__search-button {
+				@extend .button;
+				@extend .button--small;
+				//@extend .button--yellow;
+			}
+		}
+
+		/* social icons */
+		.social-icons {
+
+		    display: grid;
+		    grid-template-columns: 1fr 1fr 1fr 1fr;
+		    grid-gap: 5px;
+		    margin-bottom: 25px;
+
+		    &>a, &>img {
+
+		    }
+
+			img {
+				max-width: 48px;
+			}
+		}
+
+		/* signup form */
+		.form-icon {
+			width: 75px;
+		}
+
+		.mc4wp-form {
+			text-align: center;
+
+			input {
+
+				
+
+				&[type='text'], &[type='email'] {
+					background-color: color(form-background);
+					border: none;
+					color: color(form-gray);
+					line-height: 2;
+					margin-bottom: 10px;
+					text-align: center;
+					width: 100%;
+				}
+
+				&[type='submit']{
+					@extend .button;
+					@extend .button--small;
+					@extend .button--gray;
+				}
+			}
+		}
+	}
+}

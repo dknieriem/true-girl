@@ -2,6 +2,7 @@
 @import "helpers";
 @import "typography";
 @import "testimonial";
+@import "blog";
 @import "button";
 @import "child_navbar";
 @import "hero";
@@ -34,6 +35,7 @@
 @import "background-video";
 //@import "wp-shopify";
 @import "../assets/slick";
+@import "../assets/font-awesome";
 body
 {
     font-family:$body-font;
@@ -72,6 +74,7 @@ body.admin-bar .fixed-top
 
 #content {
     background-color: $white;
+    padding-bottom: 25px;
 }
 
 .content__col-12 {

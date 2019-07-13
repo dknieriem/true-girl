@@ -1,16 +1,15 @@
 .search-form
 {
-    margin-top:3rem;
-    margin-bottom:3rem;
+    
     &__search-input
     {
-        @extend .shadowed;
+        
         border-radius:0;
-        padding:1rem 2rem;
-        border: solid 1px #d2d2d2;
+        //padding:1rem 2rem;
+        //border: solid 1px #d2d2d2;
         width:100%;
-        font-size:1.5rem;
-        font-weight:300;
+        //font-size:1.5rem;
+        //font-weight:300;
         
     }
     &__search-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -35,18 +34,18 @@
       }
     &__input-wrapper
     {
-        position: relative;
+        //position: relative;
     }
     &__search-button
     {
-        position: absolute;
+        /*position: absolute;
         right:10px;
         top: 50%;
         transform: translateY(-50%);
         background-color:transparent;
         border:none;
         font-size:1.5rem;
-        color:$gray;
+        color:$gray;*/
     }
     
 

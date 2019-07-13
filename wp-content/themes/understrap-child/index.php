@@ -102,7 +102,23 @@ $container   = get_theme_mod( 'understrap_container_type' );
 					?>
 
 				<?php endwhile; ?>
-				</div>
+				<div class="blog__sidebar">
+					<?php get_template_part( 'sidebar-templates/sidebar', 'blog-sidebar' ); ?>
+<?php 	
+	/*NOT YET (post launch)
+	No lazy loading (use pagination just like dannahgresh.com)
+	No search
+	No filtering at the top
+	No “Much More Help to Explore” section
+	No Sidebar on main blog page.
+	Keep
+	Sidebar on single blog article
+	Social Icons
+	Newsletter Signup
+	Bio Feature (on the single post page)*/
+?>
+				</div><!-- ./blog__sidebar -->
+				</div><!-- ./post-card-row -->
 			<?php else : ?>
 
 				<?php get_template_part( 'loop-templates/content', 'none' ); ?>

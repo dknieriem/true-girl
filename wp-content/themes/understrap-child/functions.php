@@ -313,6 +313,9 @@ function get_excerpt( $count ) {
     $excerpt = strip_tags($excerpt);
     $excerpt = substr($excerpt, 0, $count);
     $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
-    $excerpt = '<p>'.$excerpt.'...';
+    $excerpt = $excerpt.'...';
 return $excerpt;
 }
+
+//set up new widgets
+require get_stylesheet_directory() . '/inc/widgets.php';
