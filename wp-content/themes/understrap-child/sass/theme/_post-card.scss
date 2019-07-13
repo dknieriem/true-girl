@@ -1,23 +1,19 @@
 .post-card
 {
     @extend .card;
-    //@extend .col-md-4;
-    //@extend .col-sm-6;
-    border: none;
-    /*border: solid 5px white;
-    -webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.2);*/
-    /*margin: 15px;*/
-    /*width: 335px;*/
-   /* display: flex;
-    border-radius:0px;*/
 
-    /*&__heading
-    {
-        height:200px;
-        background-color: #3d3d3d;
-    }*/
+    border: none;
+
+    grid-column: 1/span 3;
+
+    @include media-breakpoint-up(md) {
+        grid-column: unset;
+    }
+
+    &__heading {
+        @extend .text-center;
+    }
+    
     &__body
     {
         @extend .card-body;

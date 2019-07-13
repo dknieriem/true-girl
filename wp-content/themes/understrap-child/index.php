@@ -133,7 +133,9 @@ $container   = get_theme_mod( 'understrap_container_type' );
 		
 
 	</div><!-- .row -->
-
+	<div class="row prefooter">
+		<?php do_shortcode('[mc4wp_form id="7805"]'); ?>
+	</div><!-- .row.prefooter -->
 </div><!-- Container end -->
 
 </div><!-- Wrapper end -->

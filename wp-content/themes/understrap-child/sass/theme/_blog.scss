@@ -5,9 +5,14 @@
 .blog {
 	
 	&__sidebar {
-		grid-column: 3;
-		grid-row: 3/span 2;
 
+		margin-bottom: 10px;
+
+		@include media-breakpoint-up(md) {
+			grid-column: 3;
+			grid-row: 3/span 2;
+			margin-bottom: 0;
+		}
 		.custom-html-widget {
 			@extend .text-center;
 			margin-bottom: 25px;
