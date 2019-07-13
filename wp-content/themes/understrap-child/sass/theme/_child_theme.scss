@@ -31,6 +31,7 @@
 @import "page-wrapper";
 @import "sidebar-cta-card";
 @import "home-email-signup-form";
+@import "background-video";
 //@import "wp-shopify";
 @import "../assets/slick";
 body
@@ -254,12 +255,6 @@ strong {
 .text-feature {
     font-size: 1.5rem;
     line-height: 2.5rem;
-}
-
-/* Page Section Row */
-
-.page-section .row {
-    padding-bottom: 1rem;
 }
 
 /* Section Headers */

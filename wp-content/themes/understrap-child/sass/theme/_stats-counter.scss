@@ -15,11 +15,12 @@
 
 	//number container
 	.wpsm_number {
-		//display: inline-block;
+		
 		font-family: font(goudysans);
 		font-weight: 900;
 		font-size: 24px;
-
+		text-align: left;
+		
 		span.counter:before {
 		    content: "x";
 		}

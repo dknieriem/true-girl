@@ -11447,7 +11447,10 @@ ol li::before {
   padding-bottom: 2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  position: relative; }
+  .page-section .row, .page-section .post-card-row, .page-section .post-intro, .page-section .podcast-intro {
+    padding-bottom: 1rem; }
 
 .background-blue {
   background-color: #007bff; }
@@ -12040,7 +12043,8 @@ ol li::before {
   #wpsm_counter_b_row_13551.wpsm_counter_b_row .wpsm_counterbox .wpsm_number {
     font-family: "GoudySans Md BT";
     font-weight: 900;
-    font-size: 24px; }
+    font-size: 24px;
+    text-align: left; }
     #wpsm_counter_b_row_13551.wpsm_counter_b_row .wpsm_counterbox .wpsm_number span.counter:before {
       content: "x"; }
   #wpsm_counter_b_row_13551.wpsm_counter_b_row .wpsm_counterbox .wpsm_count-title {
@@ -12238,6 +12242,23 @@ ol li::before {
     }
 }
 */
+.page-section__background-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; }
+  .page-section__background-video .wp-video {
+    width: 100% !important;
+    height: 100% !important; }
+  .page-section__background-video .mejs-container {
+    width: 100% !important;
+    height: 100% !important; }
+  .page-section__background-video .mejs-overlay, .page-section__background-video .mejs-controls {
+    display: none; }
+  .page-section__background-video iframe {
+    width: 100%;
+    height: 100%; }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -12447,10 +12468,6 @@ strong {
 .text-feature {
   font-size: 1.5rem;
   line-height: 2.5rem; }
-
-/* Page Section Row */
-.page-section .row, .page-section .post-card-row, .page-section .post-intro, .page-section .podcast-intro {
-  padding-bottom: 1rem; }
 
 /* Section Headers */
 .section-header {

@@ -3,6 +3,7 @@
     padding-top:2rem; //was 4rem
     padding-bottom:2rem; //was 4rem
     justify-content: center;
+    position: relative;
     &__content-wrapper
     {
         @extend .container;
@@ -48,6 +49,11 @@
         @extend .col-md-12;
     }
 
+    // Page Section Row
+    .row {
+        padding-bottom: 1rem;
+    }
+
 }
 
 @each $color, $hex in $colors {
@@ -61,6 +67,8 @@
     padding-top:0rem;
 }
 
+//color variants
+
 .page-section--dark
 {
     color:white;
@@ -70,8 +78,6 @@
         font-weight:400;
     }
 }
-
-
 
 .page-section--teal
 {

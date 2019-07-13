@@ -1,0 +1,29 @@
+//Background Video
+
+.page-section__background-video {
+	
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+
+	.wp-video {
+		width: 100% !important;
+		height: 100% !important;
+	}
+
+	.mejs-container {
+		width: 100% !important;
+		height: 100% !important;
+	}
+
+	.mejs-overlay, .mejs-controls {
+		display: none;
+	}
+
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
+
+}
