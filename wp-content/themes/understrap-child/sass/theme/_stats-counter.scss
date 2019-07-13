@@ -1,0 +1,76 @@
+// Stats Counter
+
+//counter container
+#wpsm_counter_b_row_13551.wpsm_counter_b_row .wpsm_counterbox {
+
+	//counterbox grid setup
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+	//icon container
+	.wpsm_count-icon {
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	//number container
+	.wpsm_number {
+		//display: inline-block;
+		font-family: font(goudysans);
+		font-weight: 900;
+		font-size: 24px;
+
+		span.counter:before {
+		    content: "x";
+		}
+	}
+
+	//text container
+	.wpsm_count-title {
+		grid-column: 1 / span 2;
+		font-family: font(goudysans);
+	}
+}
+
+//main container row
+.wpsm_row {
+
+	//icons
+	.fa {
+
+		width: 64px;
+		height: 64px;
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		&:before {
+			content: "";
+		}
+
+		&.fa-child {
+			background-image: url(/wp-content/uploads/2019/07/01_MotherDaughter.png);
+		}	
+
+		&.fa-plus {
+			background-image: url(/wp-content/uploads/2019/07/01_cross.png);
+		}
+
+		&.fa-volume-up {
+			background-image: url(/wp-content/uploads/2019/07/01_Radio.png);
+		}
+
+		&.fa-book {
+			background-image: url(/wp-content/uploads/2019/07/01_Books.png);
+		}
+
+		&.fa-bus {
+			background-image: url(/wp-content/uploads/2019/07/01_Bus.png);
+		}
+
+		&.fa-calendar {
+			background-image: url(/wp-content/uploads/2019/07/01_Calendar.png);
+		}
+
+	}
+ 
+}

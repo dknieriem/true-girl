@@ -21,6 +21,7 @@
   --gray-dark: #343a40;
   --pink: #c83b94;
   --teal: #00bcd6;
+  --light-teal: #E5F5F8;
   --yellow: #fdbD10;
   --gray: #525252;
   --white: #ffffff;
@@ -10990,6 +10991,9 @@ p {
 .text-teal {
   color: #00bcd6; }
 
+.text-light-teal {
+  color: #E5F5F8; }
+
 .text-yellow {
   color: #fdbD10; }
 
@@ -11490,6 +11494,9 @@ ol li::before {
 .background-teal {
   background-color: #00bcd6; }
 
+.background-light-teal {
+  background-color: #E5F5F8; }
+
 .background-yellow {
   background-color: #fdbD10; }
 
@@ -11516,7 +11523,7 @@ ol li::before {
   color: white; }
 
 .page-section--light-teal {
-  background-color: #e1f6fa; }
+  background-color: #E5F5F8; }
 
 .page-section--white {
   background-color: white; }
@@ -12023,6 +12030,42 @@ ol li::before {
     border: none;
     font-size: 1.5rem;
     color: #525252; }
+
+#wpsm_counter_b_row_13551.wpsm_counter_b_row .wpsm_counterbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  #wpsm_counter_b_row_13551.wpsm_counter_b_row .wpsm_counterbox .wpsm_count-icon {
+    display: inline-block;
+    margin-right: 10px; }
+  #wpsm_counter_b_row_13551.wpsm_counter_b_row .wpsm_counterbox .wpsm_number {
+    font-family: "GoudySans Md BT";
+    font-weight: 900;
+    font-size: 24px; }
+    #wpsm_counter_b_row_13551.wpsm_counter_b_row .wpsm_counterbox .wpsm_number span.counter:before {
+      content: "x"; }
+  #wpsm_counter_b_row_13551.wpsm_counter_b_row .wpsm_counterbox .wpsm_count-title {
+    grid-column: 1 / span 2;
+    font-family: "GoudySans Md BT"; }
+
+.wpsm_row .fa {
+  width: 64px;
+  height: 64px;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  .wpsm_row .fa:before {
+    content: ""; }
+  .wpsm_row .fa.fa-child {
+    background-image: url(/wp-content/uploads/2019/07/01_MotherDaughter.png); }
+  .wpsm_row .fa.fa-plus {
+    background-image: url(/wp-content/uploads/2019/07/01_cross.png); }
+  .wpsm_row .fa.fa-volume-up {
+    background-image: url(/wp-content/uploads/2019/07/01_Radio.png); }
+  .wpsm_row .fa.fa-book {
+    background-image: url(/wp-content/uploads/2019/07/01_Books.png); }
+  .wpsm_row .fa.fa-bus {
+    background-image: url(/wp-content/uploads/2019/07/01_Bus.png); }
+  .wpsm_row .fa.fa-calendar {
+    background-image: url(/wp-content/uploads/2019/07/01_Calendar.png); }
 
 .footer {
   background-color: #ffffff;
