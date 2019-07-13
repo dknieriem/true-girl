@@ -1,6 +1,5 @@
 .DS_Store
-#.htaccess
+.htaccess
 *.log
 node_modules/
-wp-config.php
-/design/
+/wp-content/endurance-page-cache/events
