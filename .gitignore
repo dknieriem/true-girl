@@ -2,3 +2,4 @@
 .htaccess
 *.log
 node_modules/
+/wp-content/endurance-page-cache/events
