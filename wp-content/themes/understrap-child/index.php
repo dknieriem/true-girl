@@ -27,7 +27,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 		<!-- Page header -->
 		<div class="row">
 			<div class="col-md-12">
-				<h1 class="heading heading--lg heading--white text-center">Dannah&rsquo;s Blog</h1>
+				<h1 class="heading heading--white-on-pink text-center">True Girl Blog | Online Resources For Moms</h1>
 			</div>
 		</div>
 		<!-- End page header -->
@@ -56,32 +56,35 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 		
 		<!-- End featured post section -->
-
-		<!-- Recent post section -->
-		<div class="row mt-5">
-			<div class="col-md-12">
-				<div class="dotted-hr">
-					<h2 class="dotted-hr__text">Dannah's Must-Reads</h2>
-				</div>
-			</div>
-		</div>
-		<div class="row">
+		
 			<?php 
 				$query = new WP_Query( array( 'category_name' => 'must-read', 'posts_per_page' => 4 ) );
 				if ( $query->have_posts() ) {
-					while ( $query->have_posts() ) { ?>
+			?> 
+			<!-- Recent post section -->
+			<div class="row mt-5">
+				<div class="col-md-12">
+					<div class="dotted-hr">
+						<h2 class="dotted-hr__text">Dannah's Must-Reads</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<?php while ( $query->have_posts() ) { ?>
 						<?php $query->the_post(); ?>
 						<?php $featuredImage = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), "medium");?>
 						<a class="post-thumb" href="<?php echo esc_url(get_permalink());?>">
 							<div style="background-image:url('<?php echo $featuredImage[0];?>');'" class="post-thumb__img"></div>
 							<h2 class="post-thumb__title"><?php the_title(); ?></h2>
 						</a>
-					<?php }
+					<?php } ?>
+					</div>
+					<?php
 					/* Restore original Post Data */
 					wp_reset_postdata();
 				} 
 			?>
-		</div>
+		
 		<div class="row mt-5">
 			<div class="col-md-12">
 				<div class="dotted-hr">

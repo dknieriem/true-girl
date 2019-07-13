@@ -109,6 +109,17 @@
     }
 }
 
+//fix missing menu expansion
+.collapse {
+  &:not(.show) {
+    display: initial;
+  }
+
+  &:not(.in) {
+    display: none;
+  }
+}
+
 @media (min-width: 1199px) { //was 768px
 .navbar-expand-md .navbar-nav .nav-link
 {
