@@ -8402,7 +8402,7 @@ button.bg-dark:focus {
 .text-right {
   text-align: right !important; }
 
-.text-center, .blog__sidebar .custom-html-widget, .blog__sidebar .search-form, .post-card__heading, .post-card__title {
+.text-center, .blog__sidebar .custom-html-widget, .blog__sidebar .search-form, .post-card__heading, .post-card__title, .accordion-category {
   text-align: center !important; }
 
 @media (min-width: 576px) {
@@ -11145,7 +11145,7 @@ a.skip-link {
   src: url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.svg#fontawesome) format("svg"); }
 
 .font-goudysans, .post-card__title, .post-card__text, .text-goudysans, .post-intro__title, .post-block h1, .post-block h2, .post-block h3, .post-block h4, .post-block h5,
-.post-block .h1, .post-block .h2, .post-block .h3, .post-block .h4, .post-block .h5, .faq-item__button, .faq-item__body--a {
+.post-block .h1, .post-block .h2, .post-block .h3, .post-block .h4, .post-block .h5, .accordion-category, .faq-item__button, .faq-item__body--a {
   font-family: "GoudySans Md BT" !important; }
 
 .font-shark, .text-shark {
@@ -11209,7 +11209,7 @@ p {
 .text-green {
   color: #28a745; }
 
-.text-teal, .faq-item__body--a {
+.text-teal, .accordion-category, .faq-item__body--a {
   color: #00bcd6; }
 
 .text-cyan {
@@ -11230,7 +11230,7 @@ p {
 .text-dark-pink {
   color: #b94691; }
 
-.text-teal, .faq-item__body--a {
+.text-teal, .accordion-category, .faq-item__body--a {
   color: #00bcd6; }
 
 .text-light-teal {
@@ -11391,7 +11391,7 @@ ol > li {
 .text-right {
   text-align: right; }
 
-.text-center, .blog__sidebar .custom-html-widget, .blog__sidebar .search-form, .post-card__heading, .post-card__title {
+.text-center, .blog__sidebar .custom-html-widget, .blog__sidebar .search-form, .post-card__heading, .post-card__title, .accordion-category {
   text-align: center; }
 
 .all-caps {
@@ -12673,6 +12673,9 @@ li.slick-active button {
     height: 100%; }
 
 /* Frequently Asked Questions */
+.accordion-category {
+  text-decoration: underline; }
+
 .faq-item {
   background-color: transparent; }
   .faq-item__button {

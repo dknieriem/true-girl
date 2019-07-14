@@ -1,5 +1,14 @@
 /* Frequently Asked Questions */
 
+.accordion-category {
+	@extend .text-teal;
+	@extend .text-goudysans;
+	@extend .text-center;
+
+	text-decoration: underline;
+
+}
+
 .faq {
 	
 }
