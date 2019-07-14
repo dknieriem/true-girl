@@ -2878,21 +2878,21 @@ fieldset:disabled a.hero__button {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
 
-.btn-link {
+.btn-link, .faq-item__button {
   font-weight: 400;
   color: #00bcd6;
   background-color: transparent; }
-  .btn-link:hover {
+  .btn-link:hover, .faq-item__button:hover {
     color: #00798a;
     text-decoration: underline;
     background-color: transparent;
     border-color: transparent; }
-  .btn-link:focus, .btn-link.focus {
+  .btn-link:focus, .faq-item__button:focus, .btn-link.focus, .focus.faq-item__button {
     text-decoration: underline;
     border-color: transparent;
     -webkit-box-shadow: none;
             box-shadow: none; }
-  .btn-link:disabled, .btn-link.disabled {
+  .btn-link:disabled, .faq-item__button:disabled, .btn-link.disabled, .disabled.faq-item__button {
     color: #6c757d;
     pointer-events: none; }
 
@@ -4737,7 +4737,7 @@ input[type="button"].btn-block {
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
       color: #ffffff; }
 
-.card, .post-card {
+.card, .post-card, .faq-item {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4752,17 +4752,17 @@ input[type="button"].btn-block {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem; }
-  .card > hr, .post-card > hr {
+  .card > hr, .post-card > hr, .faq-item > hr {
     margin-right: 0;
     margin-left: 0; }
-  .card > .list-group:first-child .list-group-item:first-child, .post-card > .list-group:first-child .list-group-item:first-child {
+  .card > .list-group:first-child .list-group-item:first-child, .post-card > .list-group:first-child .list-group-item:first-child, .faq-item > .list-group:first-child .list-group-item:first-child {
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem; }
-  .card > .list-group:last-child .list-group-item:last-child, .post-card > .list-group:last-child .list-group-item:last-child {
+  .card > .list-group:last-child .list-group-item:last-child, .post-card > .list-group:last-child .list-group-item:last-child, .faq-item > .list-group:last-child .list-group-item:last-child {
     border-bottom-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem; }
 
-.card-body, .post-card__body {
+.card-body, .post-card__body, .faq-item__body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -4841,7 +4841,7 @@ input[type="button"].btn-block {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .card-deck .card, .card-deck .post-card {
+  .card-deck .card, .card-deck .post-card, .card-deck .faq-item {
     margin-bottom: 15px; }
   @media (min-width: 576px) {
     .card-deck {
@@ -4851,7 +4851,7 @@ input[type="button"].btn-block {
               flex-flow: row wrap;
       margin-right: -15px;
       margin-left: -15px; }
-      .card-deck .card, .card-deck .post-card {
+      .card-deck .card, .card-deck .post-card, .card-deck .faq-item {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -4874,7 +4874,7 @@ input[type="button"].btn-block {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .card-group > .card, .card-group > .post-card {
+  .card-group > .card, .card-group > .post-card, .card-group > .faq-item {
     margin-bottom: 15px; }
   @media (min-width: 576px) {
     .card-group {
@@ -4882,60 +4882,69 @@ input[type="button"].btn-block {
       -webkit-box-direction: normal;
           -ms-flex-flow: row wrap;
               flex-flow: row wrap; }
-      .card-group > .card, .card-group > .post-card {
+      .card-group > .card, .card-group > .post-card, .card-group > .faq-item {
         -webkit-box-flex: 1;
             -ms-flex: 1 0 0%;
                 flex: 1 0 0%;
         margin-bottom: 0; }
-        .card-group > .card + .card, .card-group > .post-card + .card, .card-group > .card + .post-card, .card-group > .post-card + .post-card {
+        .card-group > .card + .card, .card-group > .post-card + .card, .card-group > .faq-item + .card, .card-group > .card + .post-card, .card-group > .post-card + .post-card, .card-group > .faq-item + .post-card, .card-group > .card + .faq-item, .card-group > .post-card + .faq-item, .card-group > .faq-item + .faq-item {
           margin-left: 0;
           border-left: 0; }
-        .card-group > .card:first-child, .card-group > .post-card:first-child {
+        .card-group > .card:first-child, .card-group > .post-card:first-child, .card-group > .faq-item:first-child {
           border-top-right-radius: 0;
           border-bottom-right-radius: 0; }
-          .card-group > .card:first-child .card-img-top, .card-group > .post-card:first-child .card-img-top,
+          .card-group > .card:first-child .card-img-top, .card-group > .post-card:first-child .card-img-top, .card-group > .faq-item:first-child .card-img-top,
           .card-group > .card:first-child .card-header,
-          .card-group > .post-card:first-child .card-header {
+          .card-group > .post-card:first-child .card-header,
+          .card-group > .faq-item:first-child .card-header {
             border-top-right-radius: 0; }
-          .card-group > .card:first-child .card-img-bottom, .card-group > .post-card:first-child .card-img-bottom,
+          .card-group > .card:first-child .card-img-bottom, .card-group > .post-card:first-child .card-img-bottom, .card-group > .faq-item:first-child .card-img-bottom,
           .card-group > .card:first-child .card-footer,
-          .card-group > .post-card:first-child .card-footer {
+          .card-group > .post-card:first-child .card-footer,
+          .card-group > .faq-item:first-child .card-footer {
             border-bottom-right-radius: 0; }
-        .card-group > .card:last-child, .card-group > .post-card:last-child {
+        .card-group > .card:last-child, .card-group > .post-card:last-child, .card-group > .faq-item:last-child {
           border-top-left-radius: 0;
           border-bottom-left-radius: 0; }
-          .card-group > .card:last-child .card-img-top, .card-group > .post-card:last-child .card-img-top,
+          .card-group > .card:last-child .card-img-top, .card-group > .post-card:last-child .card-img-top, .card-group > .faq-item:last-child .card-img-top,
           .card-group > .card:last-child .card-header,
-          .card-group > .post-card:last-child .card-header {
+          .card-group > .post-card:last-child .card-header,
+          .card-group > .faq-item:last-child .card-header {
             border-top-left-radius: 0; }
-          .card-group > .card:last-child .card-img-bottom, .card-group > .post-card:last-child .card-img-bottom,
+          .card-group > .card:last-child .card-img-bottom, .card-group > .post-card:last-child .card-img-bottom, .card-group > .faq-item:last-child .card-img-bottom,
           .card-group > .card:last-child .card-footer,
-          .card-group > .post-card:last-child .card-footer {
+          .card-group > .post-card:last-child .card-footer,
+          .card-group > .faq-item:last-child .card-footer {
             border-bottom-left-radius: 0; }
-        .card-group > .card:only-child, .card-group > .post-card:only-child {
+        .card-group > .card:only-child, .card-group > .post-card:only-child, .card-group > .faq-item:only-child {
           border-radius: 0.25rem; }
-          .card-group > .card:only-child .card-img-top, .card-group > .post-card:only-child .card-img-top,
+          .card-group > .card:only-child .card-img-top, .card-group > .post-card:only-child .card-img-top, .card-group > .faq-item:only-child .card-img-top,
           .card-group > .card:only-child .card-header,
-          .card-group > .post-card:only-child .card-header {
+          .card-group > .post-card:only-child .card-header,
+          .card-group > .faq-item:only-child .card-header {
             border-top-left-radius: 0.25rem;
             border-top-right-radius: 0.25rem; }
-          .card-group > .card:only-child .card-img-bottom, .card-group > .post-card:only-child .card-img-bottom,
+          .card-group > .card:only-child .card-img-bottom, .card-group > .post-card:only-child .card-img-bottom, .card-group > .faq-item:only-child .card-img-bottom,
           .card-group > .card:only-child .card-footer,
-          .card-group > .post-card:only-child .card-footer {
+          .card-group > .post-card:only-child .card-footer,
+          .card-group > .faq-item:only-child .card-footer {
             border-bottom-right-radius: 0.25rem;
             border-bottom-left-radius: 0.25rem; }
-        .card-group > .card:not(:first-child):not(:last-child):not(:only-child), .card-group > .post-card:not(:first-child):not(:last-child):not(:only-child) {
+        .card-group > .card:not(:first-child):not(:last-child):not(:only-child), .card-group > .post-card:not(:first-child):not(:last-child):not(:only-child), .card-group > .faq-item:not(:first-child):not(:last-child):not(:only-child) {
           border-radius: 0; }
-          .card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-img-top, .card-group > .post-card:not(:first-child):not(:last-child):not(:only-child) .card-img-top,
+          .card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-img-top, .card-group > .post-card:not(:first-child):not(:last-child):not(:only-child) .card-img-top, .card-group > .faq-item:not(:first-child):not(:last-child):not(:only-child) .card-img-top,
           .card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-img-bottom,
           .card-group > .post-card:not(:first-child):not(:last-child):not(:only-child) .card-img-bottom,
+          .card-group > .faq-item:not(:first-child):not(:last-child):not(:only-child) .card-img-bottom,
           .card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-header,
           .card-group > .post-card:not(:first-child):not(:last-child):not(:only-child) .card-header,
+          .card-group > .faq-item:not(:first-child):not(:last-child):not(:only-child) .card-header,
           .card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-footer,
-          .card-group > .post-card:not(:first-child):not(:last-child):not(:only-child) .card-footer {
+          .card-group > .post-card:not(:first-child):not(:last-child):not(:only-child) .card-footer,
+          .card-group > .faq-item:not(:first-child):not(:last-child):not(:only-child) .card-footer {
             border-radius: 0; } }
 
-.card-columns .card, .card-columns .post-card {
+.card-columns .card, .card-columns .post-card, .card-columns .faq-item {
   margin-bottom: 0.75rem; }
 
 @media (min-width: 576px) {
@@ -4948,23 +4957,23 @@ input[type="button"].btn-block {
             column-gap: 1.25rem;
     orphans: 1;
     widows: 1; }
-    .card-columns .card, .card-columns .post-card {
+    .card-columns .card, .card-columns .post-card, .card-columns .faq-item {
       display: inline-block;
       width: 100%; } }
 
-.accordion .card:not(:first-of-type):not(:last-of-type), .accordion .post-card:not(:first-of-type):not(:last-of-type) {
+.accordion .card:not(:first-of-type):not(:last-of-type), .accordion .post-card:not(:first-of-type):not(:last-of-type), .accordion .faq-item:not(:first-of-type):not(:last-of-type) {
   border-bottom: 0;
   border-radius: 0; }
 
-.accordion .card:not(:first-of-type) .card-header:first-child, .accordion .post-card:not(:first-of-type) .card-header:first-child {
+.accordion .card:not(:first-of-type) .card-header:first-child, .accordion .post-card:not(:first-of-type) .card-header:first-child, .accordion .faq-item:not(:first-of-type) .card-header:first-child {
   border-radius: 0; }
 
-.accordion .card:first-of-type, .accordion .post-card:first-of-type {
+.accordion .card:first-of-type, .accordion .post-card:first-of-type, .accordion .faq-item:first-of-type {
   border-bottom: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
 
-.accordion .card:last-of-type, .accordion .post-card:last-of-type {
+.accordion .card:last-of-type, .accordion .post-card:last-of-type, .accordion .faq-item:last-of-type {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
 
@@ -6183,7 +6192,7 @@ button.bg-dark:focus {
 .border-left {
   border-left: 1px solid #dee2e6 !important; }
 
-.border-0 {
+.border-0, .faq-item {
   border: 0 !important; }
 
 .border-top-0 {
@@ -9585,7 +9594,7 @@ a.skip-link {
 .fa-h-square:before {
   content: ""; }
 
-.fa-plus-square:before {
+.fa-plus-square:before, .faq-item__button.collapsed .faq-item__icon:before {
   content: ""; }
 
 .fa-angle-double-left:before {
@@ -9786,7 +9795,7 @@ a.skip-link {
 .fa-ticket:before {
   content: ""; }
 
-.fa-minus-square:before {
+.fa-minus-square:before, .faq-item__icon:before {
   content: ""; }
 
 .fa-minus-square-o:before {
@@ -11133,7 +11142,7 @@ a.skip-link {
   src: url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.svg#fontawesome) format("svg"); }
 
 .font-goudysans, .post-card__title, .post-card__text, .text-goudysans, .post-intro__title, .post-block h1, .post-block h2, .post-block h3, .post-block h4, .post-block h5,
-.post-block .h1, .post-block .h2, .post-block .h3, .post-block .h4, .post-block .h5 {
+.post-block .h1, .post-block .h2, .post-block .h3, .post-block .h4, .post-block .h5, .faq-item__button, .faq-item__body--a {
   font-family: "GoudySans Md BT" !important; }
 
 .font-shark, .text-shark {
@@ -11182,7 +11191,7 @@ p {
 .text-purple {
   color: #6f42c1; }
 
-.text-pink {
+.text-pink, .faq-item__button {
   color: #c83b94; }
 
 .text-red {
@@ -11197,7 +11206,7 @@ p {
 .text-green {
   color: #28a745; }
 
-.text-teal {
+.text-teal, .faq-item__body--a {
   color: #00bcd6; }
 
 .text-cyan {
@@ -11212,13 +11221,13 @@ p {
 .text-gray-dark {
   color: #343a40; }
 
-.text-pink {
+.text-pink, .faq-item__button {
   color: #c83b94; }
 
 .text-dark-pink {
   color: #b94691; }
 
-.text-teal {
+.text-teal, .faq-item__body--a {
   color: #00bcd6; }
 
 .text-light-teal {
@@ -12660,6 +12669,46 @@ li.slick-active button {
     width: 100%;
     height: 100%; }
 
+/* Frequently Asked Questions */
+.faq-item__button {
+  font-size: 1.5rem;
+  border-color: transparent; }
+  .faq-item__button:hover, .faq-item__button:focus {
+    color: #B94691;
+    text-decoration: none; }
+
+.faq-item__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .faq-item__body--a {
+    font-size: 1.5rem;
+    margin-left: 1rem; }
+  .faq-item__body--answer {
+    padding: 0 0.75rem; }
+
+/*
+
+<div class="faq-item">
+    <div class="faq-item__header" id="heading-[wpv-post-slug]">
+      <h2 class="mb-0">
+        <button class="faq-item__button collapsed" type="button" data-toggle="collapse" href="#collapse-[wpv-post-slug]" aria-expanded="false" aria-controls="collapse-[wpv-post-slug]">
+          [wpv-post-title]
+        </button>
+      </h2>
+    </div>
+    <div id="collapse-[wpv-post-slug]" class="collapse" aria-labelledby="heading-[wpv-post-slug]" data-parent="#accordionGeneral">
+      <div class="faq-item__body">
+        [wpv-post-body view_template="None"]
+      </div>
+    </div>
+  </div>
+
+ */
 /* Slider */
 .slick-slider {
   position: relative;
@@ -13613,7 +13662,7 @@ li.slick-active button {
 .fa-h-square:before {
   content: ""; }
 
-.fa-plus-square:before {
+.fa-plus-square:before, .faq-item__button.collapsed .faq-item__icon:before {
   content: ""; }
 
 .fa-angle-double-left:before {
@@ -13814,7 +13863,7 @@ li.slick-active button {
 .fa-ticket:before {
   content: ""; }
 
-.fa-minus-square:before {
+.fa-minus-square:before, .faq-item__icon:before {
   content: ""; }
 
 .fa-minus-square-o:before {

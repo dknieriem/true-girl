@@ -1,0 +1,75 @@
+/* Frequently Asked Questions */
+
+.faq {
+	
+}
+
+.faq-item {
+	@extend .card;
+	@extend .border-0;
+	&__header {
+		//@extend .card-header;
+	}
+
+	&__button {
+		//@extend .btn;
+		@extend .btn-link;
+		@extend .text-goudysans;
+		@extend .text-pink;
+		font-size: 1.5rem;
+		border-color: transparent;
+		&:hover, &:focus {
+			color: $dark-pink;
+			text-decoration: none;
+		}
+	}
+
+	&__icon {
+
+		@extend .fa-minus-square;
+	}
+
+	&__body {
+		@extend .card-body;
+
+		display: flex;
+		flex-direction: row;
+
+		&--a {
+			@extend .text-goudysans;
+			@extend .text-teal;
+			font-size: 1.5rem;
+			margin-left: 1rem;
+		}
+
+		&--answer {
+			padding: 0 0.75rem;
+
+		}
+	}
+}
+
+.faq-item__button.collapsed {
+	.faq-item__icon {
+		@extend .fa-plus-square;
+	}
+}
+
+/*
+
+<div class="faq-item">
+    <div class="faq-item__header" id="heading-[wpv-post-slug]">
+      <h2 class="mb-0">
+        <button class="faq-item__button collapsed" type="button" data-toggle="collapse" href="#collapse-[wpv-post-slug]" aria-expanded="false" aria-controls="collapse-[wpv-post-slug]">
+          [wpv-post-title]
+        </button>
+      </h2>
+    </div>
+    <div id="collapse-[wpv-post-slug]" class="collapse" aria-labelledby="heading-[wpv-post-slug]" data-parent="#accordionGeneral">
+      <div class="faq-item__body">
+        [wpv-post-body view_template="None"]
+      </div>
+    </div>
+  </div>
+
+ */
