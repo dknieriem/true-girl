@@ -72,7 +72,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 			<div class="row">
 				<?php while ( $query->have_posts() ) { ?>
 						<?php $query->the_post(); ?>
-						<?php $featuredImage = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), "medium");?>
+						<?php $featuredImage = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), "large");?>
 						<a class="post-thumb" href="<?php echo esc_url(get_permalink());?>">
 							<div style="background-image:url('<?php echo $featuredImage[0];?>');'" class="post-thumb__img"></div>
 							<h2 class="post-thumb__title"><?php the_title(); ?></h2>

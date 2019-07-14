@@ -1,5 +1,4 @@
-<?php $featuredImage = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), "medium"); ?>
-
+<?php $featuredImage = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), "large"); ?>
 
     <div class="post-card">
         <a href="<?php echo esc_url( get_permalink()); ?>"><div class="post-card__heading">
