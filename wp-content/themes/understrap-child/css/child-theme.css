@@ -12029,6 +12029,9 @@ body.single {
     margin-bottom: 1rem; }
   .post-block p {
     margin-top: 1rem; }
+  .post-block a {
+    font-weight: bold;
+    text-decoration: underline !important; }
   .post-block h1, .post-block h2, .post-block h3, .post-block h4, .post-block h5,
   .post-block .h1, .post-block .h2, .post-block .h3, .post-block .h4, .post-block .h5 {
     color: #000000; }

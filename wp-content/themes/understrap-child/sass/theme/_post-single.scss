@@ -20,6 +20,11 @@ body.single {
     	margin-top: 1rem;
     }
 
+    a {
+    	font-weight: bold;
+    	text-decoration: underline !important;
+    }
+
     h1,h2,h3,h4,h5,
     .h1, .h2, .h3, .h4, .h5 {
     	@extend .text-goudysans;
