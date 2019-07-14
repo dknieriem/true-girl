@@ -11112,6 +11112,9 @@ a.skip-link {
 .mb-xl {
   margin-bottom: 7rem !important; }
 
+.z-100 {
+  z-index: 100 !important; }
+
 @font-face {
   font-family: "GoudySans Md BT";
   src: url("../fonts/GoudySansMediumBT.ttf"); }
@@ -12670,45 +12673,28 @@ li.slick-active button {
     height: 100%; }
 
 /* Frequently Asked Questions */
-.faq-item__button {
-  font-size: 1.5rem;
-  border-color: transparent; }
-  .faq-item__button:hover, .faq-item__button:focus {
-    color: #B94691;
-    text-decoration: none; }
-
-.faq-item__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-  .faq-item__body--a {
+.faq-item {
+  background-color: transparent; }
+  .faq-item__button {
     font-size: 1.5rem;
-    margin-left: 1rem; }
-  .faq-item__body--answer {
-    padding: 0 0.75rem; }
+    border-color: transparent; }
+    .faq-item__button:hover, .faq-item__button:focus {
+      color: #B94691;
+      text-decoration: none; }
+  .faq-item__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .faq-item__body--a {
+      font-size: 1.5rem;
+      margin-left: 1rem; }
+    .faq-item__body--answer {
+      padding: 0 0.75rem; }
 
-/*
-
-<div class="faq-item">
-    <div class="faq-item__header" id="heading-[wpv-post-slug]">
-      <h2 class="mb-0">
-        <button class="faq-item__button collapsed" type="button" data-toggle="collapse" href="#collapse-[wpv-post-slug]" aria-expanded="false" aria-controls="collapse-[wpv-post-slug]">
-          [wpv-post-title]
-        </button>
-      </h2>
-    </div>
-    <div id="collapse-[wpv-post-slug]" class="collapse" aria-labelledby="heading-[wpv-post-slug]" data-parent="#accordionGeneral">
-      <div class="faq-item__body">
-        [wpv-post-body view_template="None"]
-      </div>
-    </div>
-  </div>
-
- */
 /* Slider */
 .slick-slider {
   position: relative;
