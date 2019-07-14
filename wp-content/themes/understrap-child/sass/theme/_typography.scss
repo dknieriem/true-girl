@@ -117,6 +117,13 @@ p
         padding: 8px 15px;
     }
 
+    &--white-on-dark-pink
+    {
+        color: $white;
+        background-color: $dark-pink;
+        padding: 8px 15px;
+    }
+
     &__on-teal
     {
         color: $white;

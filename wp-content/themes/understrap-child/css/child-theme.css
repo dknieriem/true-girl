@@ -20,6 +20,7 @@
   --gray: #6c757d;
   --gray-dark: #343a40;
   --pink: #c83b94;
+  --dark-pink: #b94691;
   --teal: #00bcd6;
   --light-teal: #E5F5F8;
   --yellow: #fdbD10;
@@ -11144,6 +11145,9 @@ p {
 .text-pink {
   color: #c83b94; }
 
+.text-dark-pink {
+  color: #b94691; }
+
 .text-teal {
   color: #00bcd6; }
 
@@ -11207,6 +11211,10 @@ p {
   .heading--white-on-pink {
     color: #ffffff;
     background-color: #c83b94;
+    padding: 8px 15px; }
+  .heading--white-on-dark-pink {
+    color: #ffffff;
+    background-color: #B94691;
     padding: 8px 15px; }
   .heading__on-teal {
     color: #ffffff;
@@ -11754,6 +11762,9 @@ ol > li {
 
 .background-pink {
   background-color: #c83b94; }
+
+.background-dark-pink {
+  background-color: #b94691; }
 
 .background-teal {
   background-color: #00bcd6; }
