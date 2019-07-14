@@ -17,7 +17,7 @@
 @import "post-intro";
 @import "podcast-intro";
 @import "podcast-row";
-@import "post-block";
+@import "post-single";
 @import "pull-quote";
 @import "featured-post";
 @import "hr";
@@ -36,6 +36,8 @@
 //@import "wp-shopify";
 @import "../assets/slick";
 @import "../assets/font-awesome";
+
+/* Main Styles */
 body
 {
     font-family:$body-font;

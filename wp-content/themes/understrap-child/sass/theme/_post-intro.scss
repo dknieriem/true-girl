@@ -1,6 +1,6 @@
 .post-intro
 {
-    @extend .row;
+    //@extend .row;
     margin-top:3rem;
     margin-bottom:2rem;
     &__author-wrapper
@@ -8,17 +8,6 @@
         display: flex;
         justify-content: start;
         align-items: center;
-    }
-    &__author-photo
-    {
-        border-radius:100px;
-        height:3rem;
-        width:3rem;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size:cover;
-        flex-basis: 3rem;
-        margin-right:1rem;
     }
     &__byline
     {
@@ -36,31 +25,34 @@
     }
     &__post-meta
     {
-        @extend .col-md-6;
+        @extend .col-md-8;
         @extend .order-md-1;
         text-align:left;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+    }
+    &__breadcrumb 
+    {
+        @extend .col-12;
+        @extend .mb-2;
     }
     &__title
     {
-        color:$pink;
-        font-size:3.5rem;
+        @extend .text-goudysans;
+        color:$black;
+        font-size:2rem;
+
     }
     &__post-image-wrapper
     {
-        @extend .col-md-6;
+        /*@extend .col-md-6;
         @extend .img-fluid;
         @extend .order-md-12;
-        border-radius:6px;
+        border-radius:6px;*/
     }
     &__post-image
     {
-        border-radius:6px;
-    }
-    &__publish-date
-    {
-        text-transform: uppercase;
+        width: 100%;
     }
 }

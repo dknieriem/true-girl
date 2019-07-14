@@ -1,0 +1,61 @@
+// All styles for post-single
+
+
+body.single {
+    background-image: none;
+}
+
+.post-block
+{
+    margin-top:3rem;
+    margin-bottom:2rem;
+    &__lead-text
+    {
+        font-size:1.7rem;
+        font-weight:300;
+        margin-bottom:1rem;
+    }
+
+    p {
+    	margin-top: 1rem;
+    }
+
+    h1,h2,h3,h4,h5,
+    .h1, .h2, .h3, .h4, .h5 {
+    	@extend .text-goudysans;
+    	color: $black;
+    }
+
+}
+
+.author-info {
+	background-color: $author-background;
+	padding: 1rem 2rem;
+
+	&__photo {
+        border-radius:50%;
+        height:6rem;
+        width:6rem;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        flex-basis: 3rem;
+        margin-bottom:1rem;
+    }
+
+	&__bio {
+	
+	h4 {
+		color: $black;
+		font-size: 1.25rem;
+	}
+
+	p {
+		line-height: 1.5;
+	}
+}
+
+}
+
+
+
