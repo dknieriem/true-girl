@@ -1,4 +1,4 @@
-/*.wps-products-img
+.wps-products-img
 {
     max-height:250px;
 }
@@ -27,12 +27,12 @@
 
 .wps-btn-secondary, .wps-btn.wps-btn-secondary.wps-is-disabled:hover
 {
-    background-color: $rose;
+    background-color: $pink;
 }
 
 .wps-btn-secondary:hover
 {
-    background-color: lighten($rose,10%);
+    background-color: lighten($pink,10%);
 }
 
 // Hack!
@@ -40,4 +40,4 @@
 .page-id-6287 .wps-products-heading, .page-template-no-hero-advanced-white .wps-products-heading, .page-template-no-hero-advanced .wps-products-heading, .page-template-no-hero .wps-products-heading
 {
     display: none !important;
-}*/
+}
