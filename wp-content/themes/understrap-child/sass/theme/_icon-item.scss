@@ -14,10 +14,11 @@
 
         img {
             max-width: 150px;
-
+            max-height: 80px;
             @media (max-width: 767.98px) {
                 max-width: 250px;
-                width: 250px;
+                // width: 250px;
+                margin-top:5rem;
             }
         }
     }

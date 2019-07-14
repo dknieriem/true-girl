@@ -128,10 +128,38 @@ body.admin-bar .fixed-top
 
 /* Custom CSS */
 
+// Basic Table Styles - DON: We should pull out into a _table.scss file and BEMify to the extent possible
+table.table-borderless {
+    td {
+        color:$teal;
+        padding:1rem;
+    }
+}
+
+.video-mobile-bg {
+    background-image:url('https://staging4.mytruegirl.com/wp-content/uploads/2019/07/LiveEventsBkgd.jpg') !important;
+    // DON: Very ugly hack here! We should clean up the shortcode for background videos
+}
+
+.about-page-heading
+{
+    //Extreme hack to move that pink heading for this specific page
+    @media (min-width: 769px) {
+        margin-left: -5rem !important;
+        margin-top: -4.5rem !important;
+    }
+    @media (min-width: 993px) {
+        margin-left: -4rem !important;
+        margin-top: -4.5rem !important;
+    }
+}
+
 /* Background Video Feature */
+// DON: We should probably move this into a _background-video.scss file
 .background-video {
 
     width: 100%;
+    position: relative;
     
     &__container {
 
@@ -152,6 +180,14 @@ body.admin-bar .fixed-top
 
         @media (min-width: 769px){
             position: absolute;
+            top:80px;
+            left:80px;
+            .heading__on-pink 
+            {
+                font-size:2rem;
+                line-height:60px;
+                letter-spacing: 3px;
+            }
         }
     }
 
@@ -164,6 +200,27 @@ body.admin-bar .fixed-top
             margin-top: -15px;
             font-size: 1.5rem;
         }
+    }
+}
+
+// DON: We should move this into a _video-feature.scss file
+.video_feature {
+    margin-left:50px;
+    margin-right:50px;
+    @media (max-width:993px){
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    &__video {
+        margin-bottom:1.5rem;
+    }
+    &__description {
+        margin-top:1rem;
+        margin-bottom:.5rem;
+    }
+    div.hr__inner {
+        margin: .25rem auto .25rem 0 !important;
+        // DON: This nexted selector/!important makes me feel icky :) I also added a --left-aligned modifier to the .hr__inner element, but using that right now would require shortcode changes, which I'm loathe to make at this point.
     }
 }
 
@@ -260,6 +317,13 @@ strong {
 .text-feature {
     font-size: 1.5rem;
     line-height: 2.5rem;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    &__inner
+    {
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
 }
 
 /* Section Headers */
@@ -271,7 +335,6 @@ strong {
     display: table;
     text-align: center;
     height: 120px;
-
     &__10 {
         @extend .col-md-10;
         @extend .offset-md-1;
@@ -296,8 +359,16 @@ strong {
         text-transform: uppercase;
         vertical-align: middle;
         padding: 2rem 5rem;
+        letter-spacing: 6px; 
+        // DON: I don't like hardcoding letter-spacing as part of the theme, but it's pretty necessary when using that Shark font to align with the comps. Maybe we pull into a setting?
         &--large {
             font-size: 75px;
+            @media (max-width: 1200px ) {
+                font-size:56px;
+            }
+            @media (max-width: 993px ) {
+                font-size:48px;
+            }
         }
 
         &--small {
@@ -316,9 +387,14 @@ strong {
 /* Testimonials */
 
 .testimonial_small {
+    margin-left:40px;
+    margin-right:40px;
+    @media (max-width:993px){
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     &__attribution {
         color: $pink;
-        font-family: "Myriad Pro";
     }
 }
 

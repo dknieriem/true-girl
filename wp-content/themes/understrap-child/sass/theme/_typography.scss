@@ -5,6 +5,15 @@
     }
 }
 
+// Added this hardcoded @font-face rule because I wanted any text with the font-family "GoudySans Md BT" to use the bold font at font-weight 900, rather than needing to specify a different font-family. 
+// DON: maybe a smarter way to do this with your newly implemented settings-based font specifications?
+@font-face {
+    font-family: "GoudySans Md BT";
+    src: url('../fonts/GoudySansBoldBT.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
 @font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:900;
     src:url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.eot);
     src:url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff2) format("woff2"),url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff) format("woff"),url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.ttf) format("truetype"),url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.svg#fontawesome) format("svg");
@@ -16,8 +25,7 @@
     }
 }
 
-body
-{
+body{
     color:$body-color;
     font-family: $body-font;
     font-weight:300;
@@ -106,8 +114,13 @@ p
         color: $white;
         background-color: $pink;
         font-size: 1.5rem;
-        line-height: 56px;
-        padding: 8px 15px;
+        line-height: 48px;
+        padding: 8px 0px;
+        box-shadow: 10px 0 0 $pink, -10px 0 0 $pink;
+    }
+    &__on-pink-inner {
+        // position: relative; 
+        // left: 0.5em;
     }
 
     &--white-on-pink
@@ -208,9 +221,9 @@ ol>li {
     }
 }
 
-  .entry-content ul>li {
+.entry-content ul>li {
     font-weight:600; 
-  }
+}
   
 /* Generic modifier classes */
 

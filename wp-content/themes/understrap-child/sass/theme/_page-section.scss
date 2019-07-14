@@ -57,6 +57,9 @@
     &__overlay-image {
         position: absolute;
         top: 0;
+        @media (max-width:993px) {
+            display: none;
+        }
     }
 
 }

@@ -1,4 +1,5 @@
 //Background Video
+// DON: We should move this into the _page-section.scss file
 
 .page-section__background-video {
 	
@@ -6,7 +7,12 @@
 	height: 100%;
 	position: absolute;
 	top: 0;
+	padding-top: 56.25%;
+	@media (max-width:993px) {
+		display: none;
+	}
 
+	
 	.wp-video {
 		width: 100% !important;
 		height: 100% !important;
