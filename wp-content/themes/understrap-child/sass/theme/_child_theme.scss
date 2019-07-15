@@ -115,15 +115,25 @@ body.admin-bar .fixed-top
     justify-content: center;
 }
 
+.blog ul.pagination {
+	padding-bottom: 20px;
+}
+
 .page-item.active .page-link
 {
     background-color:$pink;
     border-color:$pink;
 }
 
+li.page-item {
+	font-size: 1.25em;
+}
+
 .page-link
 {
     color:$pink;
+    border: none;
+    padding:.5em 1em;
 }
 
 /* Custom CSS */
