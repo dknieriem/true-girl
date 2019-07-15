@@ -31,11 +31,11 @@
 @import "footer";
 @import "page-wrapper";
 @import "sidebar-cta-card";
-@import "slick";
 @import "home-email-signup-form";
 @import "background-video";
 @import "faq";
-//@import "wp-shopify";
+@import "wp-shopify";
+@import "slick";
 @import "../assets/slick";
 @import "../assets/font-awesome";
 
@@ -116,15 +116,25 @@ body.admin-bar .fixed-top
     justify-content: center;
 }
 
+.blog ul.pagination {
+	padding-bottom: 20px;
+}
+
 .page-item.active .page-link
 {
     background-color:$pink;
     border-color:$pink;
 }
 
+li.page-item {
+	font-size: 1.25em;
+}
+
 .page-link
 {
     color:$pink;
+    border: none;
+    padding:.5em 1em;
 }
 
 /* Custom CSS */
@@ -156,7 +166,6 @@ table.table-borderless {
 }
 
 /* Background Video Feature */
-// DON: We should probably move this into a _background-video.scss file
 .background-video {
 
     width: 100%;
@@ -224,6 +233,7 @@ table.table-borderless {
         // DON: This nexted selector/!important makes me feel icky :) I also added a --left-aligned modifier to the .hr__inner element, but using that right now would require shortcode changes, which I'm loathe to make at this point.
     }
 }
+
 
 .mejs-container,
 .mejs-container .mejs-controls, .mejs-embed,
@@ -336,6 +346,7 @@ strong {
     display: table;
     text-align: center;
     height: 120px;
+
     &__10 {
         @extend .col-md-10;
         @extend .offset-md-1;
@@ -396,6 +407,7 @@ strong {
     }
     &__attribution {
         color: $pink;
+        font-family: "Myriad Pro";
     }
 }
 

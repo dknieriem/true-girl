@@ -11447,6 +11447,8 @@ ol > li {
 
 .blog__sidebar {
   margin-bottom: 10px;
+  padding: 4%;
+  /* Blog Hack - Tim */
   grid-column: 1/span 2;
   /* Search form */
   /* social icons */
@@ -11454,10 +11456,11 @@ ol > li {
   @media (min-width: 768px) {
     .blog__sidebar {
       grid-column: 3;
-      grid-row: 3/span 2;
+      grid-row: 2/span 3;
       margin-bottom: 0; } }
   .blog__sidebar .custom-html-widget {
-    margin-bottom: 25px; }
+    margin-bottom: 60px;
+    /* Blog Hack - Tim */ }
   .blog__sidebar .search-form {
     margin: 0 0 25px 0; }
     .blog__sidebar .search-form__search-input {
@@ -11480,7 +11483,9 @@ ol > li {
     .blog__sidebar .social-icons img {
       max-width: 48px; }
   .blog__sidebar .form-icon {
-    width: 75px; }
+    width: 75px;
+    margin-bottom: 15px;
+    /* Blog Hack - Tim */ }
   .blog__sidebar .mc4wp-form {
     text-align: center; }
     .blog__sidebar .mc4wp-form input[type='text'], .blog__sidebar .mc4wp-form input[type='email'] {
@@ -11490,7 +11495,32 @@ ol > li {
       line-height: 2;
       margin-bottom: 10px;
       text-align: center;
-      width: 100%; }
+      width: 100%;
+      height: 46px;
+      /* Blog Hack - Tim */ }
+    .blog__sidebar .mc4wp-form input[type='submit'] {
+      margin-top: 8px;
+      /* Blog Hack - Tim */ }
+
+/* hacks to get the blog up to spec (by tim) */
+.blog .heading--white-on-pink {
+  margin: 32px 0 23px 0;
+  padding: 10px 24px; }
+
+.sidebar-promo {
+  margin-bottom: 28px; }
+
+p.sidebar-promo-copy {
+  padding: 0 15px;
+  line-height: 1.3em;
+  margin-bottom: 10px; }
+
+a.sidebar-promo-link {
+  text-transform: uppercase;
+  font-weight: bolder; }
+
+.sidebar-form {
+  margin-bottom: 15px; }
 
 .button, .blog__sidebar .search-form__search-button, .blog__sidebar .mc4wp-form input[type='submit'], .navbar a[title='get tickets!'], .post-card__card-button {
   background-color: #fdbD10;
@@ -11507,11 +11537,11 @@ ol > li {
     background-color: #00bcd6;
     color: #ffffff; }
   .button--gray, .blog__sidebar .mc4wp-form input[type='submit'] {
-    background-color: #939495; }
+    background-color: #6F6F6F; }
   .button--white:hover {
     background-color: white;
     color: #525252 !important; }
-  .button--small, .blog__sidebar .search-form__search-button, .blog__sidebar .mc4wp-form input[type='submit'], .post-card__card-button {
+  .button--small, .blog__sidebar .search-form__search-button, .post-card__card-button {
     padding: 0.1rem 0.5rem; }
   .button--large {
     font-size: 1.5rem;
@@ -11960,10 +11990,32 @@ ol > li {
       -ms-flex-pack: center;
           justify-content: center;
   display: grid;
-  grid-gap: 10px; }
+  grid-gap: 25px;
+  /* blog style hack - by tim */
+  margin: 20px;
+  /* blog style hack - by tim */ }
   @media (min-width: 768px) {
     .post-card-row {
       grid-template-columns: 1fr 1fr 1fr; } }
+
+/* blog style hacks - by tim */
+.blog .post-card__heading {
+  width: 100%;
+  padding-top: 75%; }
+
+.fill {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center; }
+
+.post-card__title {
+  text-transform: uppercase;
+  line-height: 1.0em; }
+
+.post-card__text {
+  text-align: center;
+  padding: 0 2.5%;
+  line-height: 1.15em; }
 
 .product-feature {
   padding-left: 2rem;
@@ -12554,38 +12606,6 @@ body.single {
         
     }
 }*/
-.testimonial__slide--text {
-  font-family: inherit;
-  color: white;
-  font-size: 2em; }
-  .testimonial__slide--text p {
-    line-height: 1.1em;
-    margin-bottom: 5px; }
-
-.testimonial__slide--name {
-  color: white; }
-
-.slick-dots {
-  display: block;
-  list-style: none;
-  padding: 0;
-  margin-top: 10px; }
-  .slick-dots button {
-    background: transparent;
-    overflow: hidden;
-    text-indent: -999px;
-    border-radius: 100%;
-    border-color: #fff;
-    height: 16px; }
-    .slick-dots button:hover {
-      cursor: pointer; }
-  .slick-dots li {
-    display: inline-block;
-    padding: 0 5px; }
-
-li.slick-active button {
-  background: white; }
-
 .newsletter-signup {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12697,6 +12717,81 @@ li.slick-active button {
       margin-left: 1rem; }
     .faq-item__body--answer {
       padding: 0 0.75rem; }
+
+/*.wps-products-img
+{
+    max-height:250px;
+}
+
+.wps-collection-item, .wps-product-item
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.wps-box
+{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wps-product-item .wps-product-link
+{
+    flex-shrink: 0;
+    flex-basis: auto;
+    flex-grow: 1;
+}
+
+.wps-btn-secondary, .wps-btn.wps-btn-secondary.wps-is-disabled:hover
+{
+    background-color: $rose;
+}
+
+.wps-btn-secondary:hover
+{
+    background-color: lighten($rose,10%);
+}
+
+// Hack!
+
+.page-id-6287 .wps-products-heading, .page-template-no-hero-advanced-white .wps-products-heading, .page-template-no-hero-advanced .wps-products-heading, .page-template-no-hero .wps-products-heading
+{
+    display: none !important;
+}*/
+.testimonial__slide--text {
+  font-family: inherit;
+  color: white;
+  font-size: 2em; }
+  .testimonial__slide--text p {
+    line-height: 1.1em;
+    margin-bottom: 5px; }
+
+.testimonial__slide--name {
+  color: white; }
+
+.slick-dots {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px; }
+  .slick-dots button {
+    background: transparent;
+    overflow: hidden;
+    text-indent: -999px;
+    border-radius: 100%;
+    border-color: #fff;
+    height: 16px; }
+    .slick-dots button:hover {
+      cursor: pointer; }
+  .slick-dots li {
+    display: inline-block;
+    padding: 0 5px; }
+
+li.slick-active button {
+  background: white; }
 
 /* Slider */
 .slick-slider {
@@ -15134,12 +15229,20 @@ body.admin-bar .fixed-top {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.blog ul.pagination {
+  padding-bottom: 20px; }
+
 .page-item.active .page-link {
   background-color: #c83b94;
   border-color: #c83b94; }
 
+li.page-item {
+  font-size: 1.25em; }
+
 .page-link {
-  color: #c83b94; }
+  color: #c83b94;
+  border: none;
+  padding: .5em 1em; }
 
 /* Custom CSS */
 table.table-borderless td {
@@ -15298,7 +15401,8 @@ strong {
       margin-left: 20px;
       margin-right: 20px; } }
   .testimonial_small__attribution {
-    color: #c83b94; }
+    color: #c83b94;
+    font-family: "Myriad Pro"; }
 
 /* Map Section */
 .map-container {

@@ -60,9 +60,35 @@
     // @extend .row;
     
     display: grid;
-    grid-gap: 10px;
-
+    grid-gap: 25px; /* blog style hack - by tim */
+    margin: 20px; /* blog style hack - by tim */
+	
     @include media-breakpoint-up(md) {
         grid-template-columns: 1fr 1fr 1fr;
     }
+}
+
+/* blog style hacks - by tim */
+
+.blog .post-card__heading {
+	width: 100%;
+	padding-top: 75%;
+}
+
+.fill {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.post-card__title {
+	text-transform: uppercase;
+	line-height: 1.0em;
+}
+
+.post-card__text {
+	text-align: center;
+	padding: 0 2.5%;
+	line-height: 1.15em;	
 }

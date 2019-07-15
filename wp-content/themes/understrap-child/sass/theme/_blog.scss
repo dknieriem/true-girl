@@ -7,17 +7,19 @@
 	&__sidebar {
 
 		margin-bottom: 10px;
-
+		
+		padding: 4%; /* Blog Hack - Tim */
+		
 		grid-column: 1/span 2;
 
 		@include media-breakpoint-up(md) {
 			grid-column: 3;
-			grid-row: 3/span 2;
+			grid-row: 2/span 3;
 			margin-bottom: 0;
 		}
 		.custom-html-widget {
 			@extend .text-center;
-			margin-bottom: 25px;
+			margin-bottom: 60px; /* Blog Hack - Tim */
 		}
 
 		/* Search form */
@@ -73,6 +75,7 @@
 		/* signup form */
 		.form-icon {
 			width: 75px;
+			margin-bottom: 15px; /* Blog Hack - Tim */
 		}
 
 		.mc4wp-form {
@@ -88,14 +91,42 @@
 					margin-bottom: 10px;
 					text-align: center;
 					width: 100%;
+					height: 46px; /* Blog Hack - Tim */
 				}
 
 				&[type='submit']{
 					@extend .button;
-					@extend .button--small;
 					@extend .button--gray;
+					margin-top: 8px; /* Blog Hack - Tim */
 				}
 			}
 		}
 	}
+}
+
+
+/* hacks to get the blog up to spec (by tim) */
+
+.blog .heading--white-on-pink {
+   margin: 32px 0 23px 0;
+   padding: 10px 24px; 
+}
+
+.sidebar-promo {
+	margin-bottom: 28px;
+}
+
+p.sidebar-promo-copy {
+	padding: 0 15px;
+    line-height: 1.3em;
+    margin-bottom: 10px;
+}
+
+a.sidebar-promo-link {
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+.sidebar-form {
+	margin-bottom: 15px;
 }
