@@ -11559,6 +11559,8 @@ a.sidebar-promo-link {
   margin-bottom: 2rem;
   padding: 0;
   max-width: 100%; }
+  .navbar-nav {
+    margin-bottom: 2rem; }
 
 .nav-link, .dropdown-item {
   color: #ffffff;
@@ -12870,7 +12872,8 @@ body.single {
     text-indent: -999px;
     border-radius: 100%;
     border-color: #fff;
-    height: 16px; }
+    height: 16px;
+    width: 16px; }
     .slick-dots button:hover {
       cursor: pointer; }
   .slick-dots li {
