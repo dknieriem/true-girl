@@ -319,7 +319,13 @@ strong {
             }
         }
 
+        .mc4wp-response, 
+        .mc4wp-alert 
+        .mc4wp-notice {
+            color: $white;
+            font-size: 1.25rem;
 
+        }
     }
 }
 

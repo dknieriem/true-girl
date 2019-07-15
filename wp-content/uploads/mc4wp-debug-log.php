@@ -5889,3 +5889,4 @@ Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentatio
 [2019-05-27 15:20:03] WARNING: Form 7805 > paol****@ho*****.com is already subscribed to the selected list(s)
 [2019-05-27 15:21:31] WARNING: Form 7805 > rain******@gm***.com is already subscribed to the selected list(s)
 [2019-05-27 17:14:02] WARNING: Form 7805 > rbpe********@gm***.com is already subscribed to the selected list(s)
+[2019-07-14 20:06:29] WARNING: Form 7805 > dona***********@gm***.com is already subscribed to the selected list(s)

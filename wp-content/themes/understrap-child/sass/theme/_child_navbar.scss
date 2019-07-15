@@ -109,6 +109,22 @@
     }
 }
 
+#main-menu {
+    width: 100%; // Don's nav hack
+            
+    @media(min-width: 980px){ 
+        
+        li:last-child {
+            flex-grow: 1;
+
+            a {
+                float: right;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
 //fix missing menu expansion
 .collapse {
   &:not(.show) {
