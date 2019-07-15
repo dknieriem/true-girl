@@ -11547,14 +11547,16 @@ a.sidebar-promo-link {
     font-size: 1.5rem;
     text-align: center; }
   .button:hover, .blog__sidebar .search-form__search-button:hover, .blog__sidebar .mc4wp-form input:hover[type='submit'], .navbar a:hover[title='get tickets!'], .post-card__card-button:hover {
-    color: white; }
+    color: white;
+    cursor: pointer; }
 
 .navbar {
   background-image: url(../img/background-icons.png);
   background-position: center top;
   background-repeat: repeat-y;
   background-size: 100%;
-  border-bottom: none; }
+  border-bottom: none;
+  padding: 0; }
 
 .nav-link, .dropdown-item {
   color: #ffffff;
@@ -15315,6 +15317,12 @@ table.table-borderless td {
     margin-bottom: .5rem; }
   .video_feature div.hr__inner {
     margin: .25rem auto .25rem 0 !important; }
+
+.mejs-container, video_feature__video:hover {
+  cursor: pointer; }
+
+.page-section__background-video .mejs-container:hover {
+  cursor: initial; }
 
 .mejs-container,
 .mejs-container .mejs-controls, .mejs-embed,

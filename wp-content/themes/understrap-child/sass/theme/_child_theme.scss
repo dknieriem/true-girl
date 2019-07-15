@@ -235,6 +235,18 @@ table.table-borderless {
 }
 
 
+.mejs-container, video_feature__video:hover {
+    cursor: pointer;
+}
+
+.page-section__background-video {
+
+    .mejs-container:hover {
+        cursor: initial;
+    }
+}
+
+
 .mejs-container,
 .mejs-container .mejs-controls, .mejs-embed,
 .mejs-embed body {
