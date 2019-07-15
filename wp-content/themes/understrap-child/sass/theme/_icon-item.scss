@@ -9,7 +9,7 @@
         display: block;
         // max-width: 96px;
         
-        margin:0px auto 25px auto;
+        margin:0px auto 15px auto;
 
 
         img {
@@ -61,3 +61,9 @@
     }
 
  }
+
+
+ //group spacing hack
+.home-featured-links {
+    padding: 0 12%;
+}

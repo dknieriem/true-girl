@@ -5,7 +5,10 @@
     background-repeat: repeat-y;
     background-size: 100%;
     border-bottom:none;
+    margin-bottom: 2rem;
     padding: 0;
+    max-width: 100%;
+
 }
 
 .nav-link, .dropdown-item
@@ -14,8 +17,11 @@
     font-weight:300 !important;
     //text-transform: uppercase !important;
     font-size:1.3rem; 
-    margin-left:2rem;
-    margin-right:1rem;
+
+    @include media-breakpoint-up(md){
+        margin-left:2rem;
+        margin-right:1rem;
+}
 }
 
 .dropdown-item
@@ -36,7 +42,7 @@
     max-height: 75px;
     width: auto;
     @media (max-width: 768px) {
-        // max-width:410px; 
+        max-width:300px; 
         max-height: 180px;
         
     }
@@ -93,7 +99,7 @@
 
         .dropdown-menu .nav-link
         {
-            margin-left:1.5rem;
+           //margin-left:1.5rem;
             color:rgba(255,255,255,0.7) !important; 
         }
         #main-menu
@@ -127,7 +133,7 @@
 }
 
 //fix missing menu expansion
-.collapse {
+/*.collapse {
   &:not(.show) {
     display: initial;
   }
@@ -135,7 +141,7 @@
   &:not(.in) {
     display: none;
   }
-}
+}*/
 
 @media (min-width: 1199px) { //was 768px
 .navbar-expand-md .navbar-nav .nav-link

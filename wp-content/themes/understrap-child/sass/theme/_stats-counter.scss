@@ -1,5 +1,101 @@
 // Stats Counter
 
+.statistics {
+
+
+    .statistics-inner {
+
+	    position: relative;
+	    width: 100%;
+	    overflow: hidden;
+	    text-align: center;
+	    display: inline-flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+
+    	.stat {
+    		@extend .col-md-4;
+    		@extend .col-sm-6;
+
+			display: inline-grid;
+		    grid-template-columns: 1fr 1fr;
+		    grid-template-rows: auto 1fr;
+		    text-align: center;
+
+		    margin: 50px 0;
+	     //    margin-top: 50px;
+		    // margin-bottom: 50px;
+
+		    .fa {
+		    	display: inline-block;
+		    	margin-left: auto;
+		    	margin-right: 10px;
+
+		    	width: 64px;
+				height: 64px;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: right center;
+				&:before {
+					content: "";
+				}
+
+				&.fa-child {
+					background-image: url(/wp-content/uploads/2019/07/01_MotherDaughter.png);
+				}	
+
+				&.fa-plus, &.fa-plus-square {
+					background-image: url(/wp-content/uploads/2019/07/01_cross.png);
+				}
+
+				&.fa-volume-up {
+					background-image: url(/wp-content/uploads/2019/07/01_Radio.png);
+				}
+
+				&.fa-book {
+					background-image: url(/wp-content/uploads/2019/07/01_Books.png);
+				}
+
+				&.fa-bus {
+					background-image: url(/wp-content/uploads/2019/07/01_Bus.png);
+				}
+
+				&.fa-calendar {
+					background-image: url(/wp-content/uploads/2019/07/01_Calendar.png);
+				}
+		    }
+
+		    .number {
+		    	color: color(teal);
+				font-family: font(goudysans);
+				font-weight: 900;
+				font-size: 1rem; //24px;
+				text-align: left;
+				margin: auto;
+
+				&:before {
+					content: "x";
+				}
+		    }
+
+		    .count-title {
+		    	color: color(teal);
+				grid-column: 1 / span 2;
+				font-family: font(goudysans);
+			    letter-spacing: 2px;
+			    font-weight: 400;
+			    margin-top: 20px;
+			    padding-top: 0px;
+			    padding-bottom: 0px;
+			    margin-bottom: 0px;
+			    line-height: 1.3em;
+			}
+
+    	}
+
+    }
+}
+
 //counter container
 #wpsm_counter_b_row_13551.wpsm_counter_b_row .wpsm_counterbox {
 
@@ -52,7 +148,7 @@
 			background-image: url(/wp-content/uploads/2019/07/01_MotherDaughter.png);
 		}	
 
-		&.fa-plus {
+		&.fa-plus, &.fa-plus-square {
 			background-image: url(/wp-content/uploads/2019/07/01_cross.png);
 		}
 
