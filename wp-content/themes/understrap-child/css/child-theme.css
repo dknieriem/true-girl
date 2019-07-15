@@ -11562,6 +11562,12 @@ a.sidebar-promo-link {
   .navbar-nav {
     margin-bottom: 2rem; }
 
+body.admin-bar .fixed-top {
+  top: 46px !important; }
+  @media (min-width: 768px) {
+    body.admin-bar .fixed-top {
+      top: 32px !important; } }
+
 .nav-link, .dropdown-item {
   color: #ffffff;
   font-weight: 300 !important;
@@ -11576,9 +11582,12 @@ a.sidebar-promo-link {
   margin-bottom: 0.5rem;
   margin-left: 0rem; }
 
-@media (max-width: 768px) {
-  .navbar-brand {
-    margin: auto; } }
+.navbar-brand {
+  padding-top: .3125rem;
+  padding-bottom: .3125rem; }
+  @media (max-width: 768px) {
+    .navbar-brand {
+      margin: auto; } }
 
 .navbar-brand img {
   max-height: 75px;
@@ -11630,7 +11639,8 @@ a.sidebar-promo-link {
       padding-top: 45px; } }
 
 #main-menu {
-  width: 100%; }
+  width: 100%;
+  margin-top: 2rem; }
   @media (min-width: 980px) {
     #main-menu li:last-child {
       -webkit-box-flex: 1;
@@ -15285,9 +15295,6 @@ figcaption.wp-caption-text {
   font-style: italic;
   padding: .8rem 0;
   font-size: 0.8rem; }
-
-body.admin-bar .fixed-top {
-  top: 32px !important; }
 
 #content {
   background-color: #ffffff; }
