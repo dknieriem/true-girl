@@ -155,7 +155,7 @@ table.table-borderless {
 .about-page-heading
 {
     //Extreme hack to move that pink heading for this specific page
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
         margin-left: -5rem !important;
         margin-top: -4.5rem !important;
     }
@@ -184,11 +184,12 @@ table.table-borderless {
     &__text {
         z-index: 999;
 
-        @media (max-width: 768px){
+        @media (max-width: 767px){
             margin-bottom: -20px;
+            padding: 0 0 0 50px;
         }
 
-        @media (min-width: 769px){
+        @media (min-width: 768px){
             position: absolute;
             top:80px;
             left:80px;
@@ -253,6 +254,12 @@ table.table-borderless {
     width: 100% !important;
 }
 
+.mejs-iframe-overlay {
+    iframe {
+        width: 100%;
+    }
+}
+
 /* Modal Video */
 #bgVideoFeatureModal {
 
@@ -275,10 +282,10 @@ strong {
 
 @media (max-width: 767px) {
 
-    .page-section__content-wrapper {
-        padding-left: 0;
-        padding-right: 0;
-    }
+    // .page-section__content-wrapper {
+    //     padding-left: 0;
+    //     padding-right: 0;
+    // }
 
     .col, .col-sm-4, .col-sm-8, .col-md-4, .col-md-8 {
         &:not(.mobile-full-width) {
@@ -398,6 +405,7 @@ strong {
             }
             @media (max-width: 993px ) {
                 font-size:48px;
+                padding: 2rem 1rem;
             }
         }
 

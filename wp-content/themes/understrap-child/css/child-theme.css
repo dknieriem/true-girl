@@ -12657,7 +12657,7 @@ body.single {
     max-width: 200px;
     max-height: 125px;
     margin-bottom: 2rem; }
-    @media (max-width: 767.98px) {
+    @media (max-width: 768px) {
       .footer__logo {
         margin-top: 3rem; } }
 
@@ -12873,7 +12873,8 @@ body.single {
     border-radius: 100%;
     border-color: #fff;
     height: 16px;
-    width: 16px; }
+    width: 16px;
+    line-height: 0px; }
     .slick-dots button:hover {
       cursor: pointer; }
   .slick-dots li {
@@ -15342,7 +15343,7 @@ table.table-borderless td {
 .video-mobile-bg {
   background-image: url("https://staging4.mytruegirl.com/wp-content/uploads/2019/07/LiveEventsBkgd.jpg") !important; }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .about-page-heading {
     margin-left: -5rem !important;
     margin-top: -4.5rem !important; } }
@@ -15362,10 +15363,11 @@ table.table-borderless td {
     display: none; }
   .background-video__text {
     z-index: 999; }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       .background-video__text {
-        margin-bottom: -20px; } }
-    @media (min-width: 769px) {
+        margin-bottom: -20px;
+        padding: 0 0 0 50px; } }
+    @media (min-width: 768px) {
       .background-video__text {
         position: absolute;
         top: 80px;
@@ -15406,6 +15408,9 @@ table.table-borderless td {
 .mejs-embed body {
   width: 100% !important; }
 
+.mejs-iframe-overlay iframe {
+  width: 100%; }
+
 /* Modal Video */
 #bgVideoFeatureModal .wp-video {
   width: 100% !important; }
@@ -15419,9 +15424,6 @@ strong {
 
 /* Mobile Sizing */
 @media (max-width: 767px) {
-  .page-section__content-wrapper {
-    padding-left: 0;
-    padding-right: 0; }
   .col:not(.mobile-full-width), .col-sm-4:not(.mobile-full-width), .col-sm-8:not(.mobile-full-width), .col-md-4:not(.mobile-full-width), .page-section__one-third-column:not(.mobile-full-width), .post-preview:not(.mobile-full-width), .statistics .statistics-inner .stat:not(.mobile-full-width), .col-md-8:not(.mobile-full-width), .page-section__single-column--narrow-center:not(.mobile-full-width), .page-section__single-column-narrow:not(.mobile-full-width), .post-intro__post-meta:not(.mobile-full-width), .section-header__8:not(.mobile-full-width) {
     padding: 0px 50px; }
   #content > .row > .col-12, #content > .podcast-intro > .col-12, #content > .row > .post-intro__breadcrumb, #content > .podcast-intro > .post-intro__breadcrumb {
@@ -15485,7 +15487,8 @@ strong {
           font-size: 56px; } }
       @media (max-width: 993px) {
         .section-header__text--large {
-          font-size: 48px; } }
+          font-size: 48px;
+          padding: 2rem 1rem; } }
     .section-header__text--small {
       font-size: 36px; }
     .section-header__text small {
