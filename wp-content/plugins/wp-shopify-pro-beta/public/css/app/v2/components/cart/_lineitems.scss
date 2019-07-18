@@ -1,0 +1,25 @@
+.wps-cart-lineitem-quantity-container {
+   .wps-row {
+      overflow: visible;
+      padding-bottom: 4px;
+   }
+}
+
+.wps-cart-lineitem-price {
+   right: 4px;
+}
+
+.wps-cart-lineitem-price-total {
+   margin: 0;
+   padding-left: 0;
+}
+
+.wps-cart-lineitem-price-total-wrapper {
+   flex: 1;
+   text-align: right;
+   padding-right: 12px;
+}
+
+.wps-cart-lineitem-price {
+   font-size: 15px;
+}

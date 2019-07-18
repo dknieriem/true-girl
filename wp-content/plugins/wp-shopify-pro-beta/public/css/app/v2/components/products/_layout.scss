@@ -1,0 +1,35 @@
+.wps-breadcrumbs + .wps-product-single {
+   margin-top: 0;
+}
+
+.wps-product-single {
+   margin-bottom: 4em;
+
+   .wps-product-image {
+      width: 100%;
+   }
+}
+
+.wps-product-single-content .wps-component-products-title {
+   margin-top: 0;
+}
+
+.wps-products-description + .wps-buy-button-wrapper {
+   margin-top: 1em;
+}
+
+@media screen and (max-width: 500px) {
+   .wps-items .wps-item {
+      flex: 100%;
+      max-width: 100%;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin-bottom: 2em !important;
+   }
+
+   .wps-product-single {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 6em;
+   }
+}

@@ -1,0 +1,21 @@
+.wps-btn-cart {
+   &[data-wps-is-ready='0'] {
+      display: none;
+   }
+}
+
+[data-wps-client-component-type='cart'] {
+   .wps-loading-placeholder {
+      display: none;
+   }
+}
+
+.wps-client-component + .wps-client-component {
+   margin-top: 2em;
+}
+
+.wps-loading-placeholder {
+   width: 100%;
+   display: block;
+   text-align: center;
+}

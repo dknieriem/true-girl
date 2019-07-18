@@ -1,0 +1,51 @@
+.wps-notice,
+.post-content .entry-content .wps-notice {
+   margin: 10px 0 0 0;
+   width: 100%;
+   padding: 10px 20px;
+   text-align: center;
+   z-index: 999;
+   border-radius: 3px;
+   box-sizing: border-box;
+
+   a {
+      display: inline-block;
+      text-decoration: underline;
+   }
+
+   p {
+      text-align: center;
+      margin: 0;
+   }
+}
+
+.wps-cart-lineitem-content .wps-notice,
+.wps-notice-small {
+   font-size: 14px;
+}
+
+.wps-notice-inline {
+   text-align: center;
+   padding: 0.8em;
+   width: calc(100% - 1.6em);
+   margin-top: 1em;
+   max-width: 600px;
+   margin: 1em auto 0 auto;
+   position: relative;
+   display: inline-block;
+}
+
+.wps-notice-warning {
+   background: #ffebb9;
+   border: 1px solid #ecd7a4;
+}
+
+.wps-notice-info {
+   background: #b9eaff;
+   border: 1px solid #a1d1e6;
+}
+
+.wps-notice-error {
+   background: #ffb9b9;
+   border: 1px solid #e89f9f;
+}

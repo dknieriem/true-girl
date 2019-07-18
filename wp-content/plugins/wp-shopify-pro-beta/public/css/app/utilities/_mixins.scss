@@ -1,0 +1,95 @@
+// Breakpoints
+@mixin respond-to($breakpoint, $size) {
+   @if map-has-key($breakpoints, $breakpoint) {
+      @if ($size == 'max') {
+         @media (max-width: #{map-get($breakpoints, $breakpoint)}) {
+            @content;
+         }
+      } @else {
+         @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+            @content;
+         }
+      }
+   } @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+   }
+}
+
+@mixin rowMachine($cols) {
+   $colWidth: calc(100% / #{$cols});
+   $gutterWidth: calc((#{$space-m} / 2) * 2);
+   $gutterWidthRemainder: calc(#{$gutterWidth} + (#{$gutterWidth} / (#{$cols} - 1)));
+
+   @if ($cols == 1) {
+      flex: 0 0 auto;
+      max-width: 100%;
+      width: 100%;
+      margin-right: 0;
+   } @else {
+      // Grow, Shrink, Basis
+      flex: 0 0 calc(#{$colWidth} - #{$gutterWidth});
+      max-width: calc(#{$colWidth} - #{$gutterWidth});
+      width: calc(#{$colWidth} - #{$gutterWidth});
+
+      margin-right: $gutterWidthRemainder;
+      margin-bottom: $gutterWidthRemainder;
+
+      &:nth-child(1n + 1),
+      &:nth-child(2n + 2),
+      &:nth-child(3n + 3),
+      &:nth-child(4n + 4),
+      &:nth-child(5n + 5),
+      &:nth-child(6n + 6),
+      &:nth-child(7n + 7),
+      &:nth-child(8n + 8),
+      &:nth-child(9n + 9),
+      &:nth-child(10n + 10),
+      &:nth-child(11n + 12),
+      &:nth-child(12n + 12) {
+         margin-right: $gutterWidthRemainder;
+      }
+
+      &:nth-child(#{$cols}n + #{$cols}) {
+         margin-right: 0;
+      }
+   }
+}
+
+@mixin siteMaxWidth() {
+   @include respond-to(1600, 'min') {
+      max-width: $siteMaxWidth;
+   }
+}
+
+@mixin contentLoader() {
+   transition: background 0.6s ease !important;
+   color: transparent !important;
+   animation-duration: 1s !important;
+   animation-fill-mode: forwards !important;
+   animation-iteration-count: infinite !important;
+   animation-name: shimmer !important;
+   animation-timing-function: linear !important;
+   background: linear-gradient(to right, #ececec 8%, #f4f4f4 38%, #ececec 54%) !important;
+   background-size: 1000px 640px !important;
+   border-radius: 5px !important;
+   position: relative !important;
+   margin: 5px 0 !important;
+   border: none !important;
+
+   span,
+   p,
+   li {
+      color: transparent !important;
+   }
+
+   &:hover {
+      cursor: default !important;
+   }
+
+   input,
+   select,
+   button {
+      display: none;
+   }
+}

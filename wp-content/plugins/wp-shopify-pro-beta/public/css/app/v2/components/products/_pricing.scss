@@ -1,0 +1,13 @@
+.wps-product-pricing {
+   margin: 10px 0 15px 0;
+   padding-top: 0;
+}
+
+.wps-product-from-price {
+   margin-right: 5px;
+   color: color(grey);
+}
+
+[data-wps-is-ready='0'] .wps-product-from-price {
+   color: transparent;
+}

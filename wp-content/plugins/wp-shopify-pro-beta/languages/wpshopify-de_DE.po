@@ -1,0 +1,2253 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: WP Shopify Pro\n"
+"POT-Creation-Date: 2019-06-05 13:10-0500\n"
+"PO-Revision-Date: 2019-06-05 13:40-0500\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wp-shopify.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: de\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+"X-Poedit-SearchPathExcluded-2: node_modules\n"
+
+#: admin/partials/settings/cart/settings-cart-checkout-button-color.php:13
+msgid "Checkout button"
+msgstr "Kasse Button"
+
+#: admin/partials/settings/cart/settings-cart-checkout-button-color.php:14
+msgid ""
+"Changes the background color of all add to cart buttons. Note, changing this "
+"value may potentially override any custom CSS from your theme."
+msgstr ""
+"Ändert die Hintergrundfarbe aller, die zu den Warenkorb-Buttons hinzufügen. "
+"Beachten Sie, dass die Änderung dieses Wertes möglicherweise alle "
+"benutzerdefinierten CSS von Ihrem Thema überschreiben kann."
+
+#: admin/partials/settings/cart/settings-cart-counter-color.php:13
+msgid "Cart inline counter"
+msgstr "Cart Inline-Zähler"
+
+#: admin/partials/settings/cart/settings-cart-counter-color.php:14
+msgid ""
+"Changes the background color of the cart icon counter. Note, changing this "
+"value may potentially override any custom CSS from your theme."
+msgstr ""
+"Ändert die Hintergrundfarbe des Karren-Sycon-Zählers. Beachten Sie, dass die "
+"Änderung dieses Wertes möglicherweise alle benutzerdefinierten CSS von Ihrem "
+"Thema überschreiben kann."
+
+#: admin/partials/settings/cart/settings-cart-counter-fixed-color.php:13
+msgid "Cart fixed counter"
+msgstr "Warenkorb"
+
+#: admin/partials/settings/cart/settings-cart-counter-fixed-color.php:14
+msgid ""
+"Changes the background color of the fixed cart icon counter. Note, changing "
+"this value may potentially override any custom CSS from your theme."
+msgstr ""
+"Ändert die Hintergrundfarbe des Fixkart-Symbym-Zählers. Beachten Sie, dass "
+"die Änderung dieses Wertes möglicherweise alle benutzerdefinierten CSS von "
+"Ihrem Thema überschreiben kann."
+
+#: admin/partials/settings/cart/settings-cart-enable-notes.php:14
+msgid "Cart notes"
+msgstr "Warenkorb"
+
+#: admin/partials/settings/cart/settings-cart-enable-notes.php:15
+msgid ""
+"When enabled, will show an input box inside the cart that users can use to "
+"attach custom notes to an order."
+msgstr ""
+"Wenn aktiviert, wird eine Eingabebox im Warenkorb angezeigt, die Benutzer "
+"verwenden können, um individuelle Notizen an eine Bestellung anzuhängen."
+
+#: admin/partials/settings/cart/settings-cart-enable-terms.php:14
+msgid "Cart terms"
+msgstr "Warenkorb"
+
+#: admin/partials/settings/cart/settings-cart-enable-terms.php:15
+msgid ""
+"When enabled, generates a mandatory checkbox within the cart that must be "
+"checked before checking out."
+msgstr ""
+"Wenn Sie aktiviert sind, erzeugt ein obligatorisches Kästchen im Warenkorb, "
+"das vor dem Check-out aktiviert werden muss."
+
+#: admin/partials/settings/cart/settings-cart-fixed-background-color.php:13
+msgid "Cart fixed background"
+msgstr "Warenhintergrund"
+
+#: admin/partials/settings/cart/settings-cart-fixed-background-color.php:14
+msgid ""
+"Changes the background color of the fixed cart. Note, changing this value "
+"may potentially override any custom CSS from your theme."
+msgstr ""
+"Ändert die Hintergrundfarbe des Festkartens. Beachten Sie, dass die Änderung "
+"dieses Wertes möglicherweise alle benutzerdefinierten CSS von Ihrem Thema "
+"überschreiben kann."
+
+#: admin/partials/settings/cart/settings-cart-icon-color.php:13
+msgid "Cart inline icon"
+msgstr "Warenkorb inline Ikone"
+
+#: admin/partials/settings/cart/settings-cart-icon-color.php:14
+msgid ""
+"Changes the color of the cart icon. Note, changing this value may "
+"potentially override any custom CSS from your theme."
+msgstr ""
+"Ändert die Farbe des Warenkorb-Symbols. Beachten Sie, dass die Änderung "
+"dieses Wertes möglicherweise alle benutzerdefinierten CSS von Ihrem Thema "
+"überschreiben kann."
+
+#: admin/partials/settings/cart/settings-cart-icon-fixed-color.php:13
+msgid "Cart fixed icon"
+msgstr "Warenkorb fixes Symbol"
+
+#: admin/partials/settings/cart/settings-cart-icon-fixed-color.php:14
+msgid ""
+"Changes the color of the fixed cart icon. Note, changing this value may "
+"potentially override any custom CSS from your theme."
+msgstr ""
+"Ändert die Farbe des Fixkart-Symbols. Beachten Sie, dass die Änderung dieses "
+"Wertes möglicherweise alle benutzerdefinierten CSS von Ihrem Thema "
+"überschreiben kann."
+
+#: admin/partials/settings/cart/settings-cart-load-cart.php:14
+msgid "Load cart"
+msgstr "Ladewagen"
+
+#: admin/partials/settings/cart/settings-cart-load-cart.php:15
+msgid ""
+"When this is turned off, the plugins default cart experience will not load."
+msgstr ""
+"Wenn dies ausgeschaltet ist, wird das Standard-Warenkorb-Erlebnis nicht "
+"geladen."
+
+#: admin/partials/settings/cart/settings-cart-notes-placeholder.php:14
+msgid "Cart notes placeholder"
+msgstr "Warenkorb stellt Platzhalter fest"
+
+#: admin/partials/settings/cart/settings-cart-show-fixed-cart-tab.php:14
+msgid "Show fixed cart icon"
+msgstr "Fixed Cart-Symbol anzeigen"
+
+#: admin/partials/settings/cart/settings-cart-show-fixed-cart-tab.php:15
+msgid ""
+"When this is turned on, a fixed cart icon will display on the side of every "
+"page"
+msgstr ""
+"Wenn dies aktiviert ist, wird auf jeder Seite ein festes Warenkorbsymbol "
+"angezeigt"
+
+#: admin/partials/settings/cart/settings-cart-terms-content.php:14
+msgid "Cart terms text"
+msgstr "Artikel Text"
+
+#: admin/partials/settings/cart/settings-cart-terms-content.php:15
+msgid ""
+"This is the text that will show next to the terms checkbox. HTML tags <a>, "
+"<b>, <i>, <em>, and <strong> are allowed."
+msgstr ""
+"Dies ist der Text, der neben den Begriffen angezeigt wird. HTML-Tags <a>, "
+"<b>, <i>, <em> und <strong> sind erlaubt."
+
+#: admin/partials/settings/checkout/settings-checkout-button-target.php:14
+msgid "Checkout button target"
+msgstr "Check-Button-Ziel"
+
+#: admin/partials/settings/checkout/settings-checkout-button-target.php:15
+msgid ""
+"Determins whether the checkout button will open a new tab or not. Defaults "
+"to current tab."
+msgstr ""
+"Legt fest, ob der Kasse-Button einen neuen Tab öffnet oder nicht. "
+"Standardwerte auf dem aktuellen Tab."
+
+#: admin/partials/settings/checkout/settings-checkout-enable-custom-checkout-domain.php:14
+msgid "Enable custom domain"
+msgstr "Aktivieren Sie benutzerdefinierte Domain"
+
+#: admin/partials/settings/checkout/settings-checkout-enable-custom-checkout-domain.php:15
+msgid ""
+"When enabled, will use your custom primary domain (e.g., yourstore.com) for "
+"checkout page instead of the default yourstore.myshopify.com."
+msgstr ""
+"Wenn Sie aktiviert sind, verwenden Sie Ihre eigene primäre Domain (z.B. "
+"yourstore.com) für die Kasse-Seite statt für die Standard-yourstore."
+"myshopify.com."
+
+#: admin/partials/settings/collections/settings-collections-heading-toggle.php:13
+#: admin/partials/settings/products/settings-products-heading-toggle.php:13
+#: admin/partials/settings/related-products/settings-related-products-heading-toggle.php:13
+msgid "Show heading"
+msgstr "Anzeige"
+
+#: admin/partials/settings/collections/settings-collections-heading-toggle.php:14
+msgid "Hide / show the heading found on the main Collections page."
+msgstr "Verstecken/zeigen Sie die Überschrift auf der Hauptkollektionsseite."
+
+#: admin/partials/settings/collections/settings-collections-heading.php:13
+#: admin/partials/settings/products/settings-products-heading.php:13
+#: admin/partials/settings/related-products/settings-related-products-heading.php:13
+msgid "Heading"
+msgstr "Überschrift"
+
+#: admin/partials/settings/collections/settings-collections-heading.php:14
+msgid "Changes the heading found on the main Collections page"
+msgstr ""
+"Ändert die Überschrift, die auf der Seite Hauptsammlungen gefunden wird"
+
+#: admin/partials/settings/collections/settings-collections-images-sizing-crop.php:13
+#: admin/partials/settings/products/settings-products-images-sizing-crop.php:13
+#: admin/partials/settings/related-products/settings-related-products-images-sizing-crop.php:13
+msgid "Crop position"
+msgstr "Ernteposition"
+
+#: admin/partials/settings/collections/settings-collections-images-sizing-crop.php:14
+#: admin/partials/settings/products/settings-products-images-sizing-crop.php:14
+#: admin/partials/settings/related-products/settings-related-products-images-sizing-crop.php:14
+msgid ""
+"Specify a crop parameter to make sure that the resulting image's dimensions "
+"match the requested dimensions. If the entire image won't fit in your "
+"requested dimensions, the crop parameter specifies what part of the image to "
+"show."
+msgstr ""
+"Geben Sie einen Ernteterparameter an, um sicherzustellen, dass die "
+"Abmessungen des resultierenden Bildes mit den gewünschten Abmessungen "
+"übereinstimmen. Wenn das gesamte Bild nicht in die gewünschten Dimensionen "
+"passt, gibt der Erntemameter an, welchen Teil des Bildes angezeigt werden "
+"soll."
+
+#: admin/partials/settings/collections/settings-collections-images-sizing-height.php:13
+#: admin/partials/settings/products/settings-products-images-sizing-height.php:13
+#: admin/partials/settings/related-products/settings-related-products-images-sizing-height.php:13
+msgid "Image height"
+msgstr "Bildhöhe"
+
+#: admin/partials/settings/collections/settings-collections-images-sizing-height.php:14
+msgid ""
+"Sets a custom height for all collection images. Maximum size of 5760 x 5760. "
+"Both the height and height values will maintain the image aspect ratio. "
+"Therefore, if you want to force all images to the same dimensions make sure "
+"to specify the crop option below as well. If you want to size by one "
+"dimension only, keep the other dimension blank."
+msgstr ""
+"Setzt für alle Sammlungsbilder eine eigene Höhe. Maximale Größe von 5760 x "
+"5760. Sowohl die Höhen-als auch die Höhenwerte werden das "
+"Bildaspektenverhältnis beibehalten. Wenn Sie also alle Bilder in die "
+"gleichen Maße zwingen wollen, stellen Sie sicher, dass Sie auch die "
+"Ernteoption unten angeben. Wenn Sie nur eine Dimension vergrößern wollen, "
+"halten Sie die andere Dimension leer."
+
+#: admin/partials/settings/collections/settings-collections-images-sizing-scale.php:13
+#: admin/partials/settings/products/settings-products-images-sizing-scale.php:13
+#: admin/partials/settings/related-products/settings-related-products-images-sizing-scale.php:13
+msgid "Scale"
+msgstr "Skalieren"
+
+#: admin/partials/settings/collections/settings-collections-images-sizing-scale.php:14
+msgid ""
+"Sets a custom scale for all collection images. The number here will be "
+"multiplied by the dimensions set above. For example, an image originally "
+"450x450 will return an image 900x900 pixels. Will only scale up if the "
+"original image is large enough. If original image is too small, the closest "
+"image in size will be returned."
+msgstr ""
+"Setzt eine eigene Skala für alle Abholbilder. Die Zahl wird hier mit den "
+"oben genannten Dimensionen multipliziert. Zum Beispiel wird ein Bild "
+"ursprünglich 450x450 ein Bild von 900x900 Pixel zurückgeben. Wird nur dann "
+"skaliert, wenn das Originalbild groß genug ist. Wenn das Originalbild zu "
+"klein ist, wird das nächstgelegene Bild in der Größe zurückgegeben."
+
+#: admin/partials/settings/collections/settings-collections-images-sizing-toggle.php:13
+#: admin/partials/settings/products/settings-products-images-sizing-toggle.php:13
+#: admin/partials/settings/related-products/settings-related-products-images-sizing-toggle.php:13
+msgid "Custom sizing"
+msgstr "Kundenspezifische Größe"
+
+#: admin/partials/settings/collections/settings-collections-images-sizing-toggle.php:14
+msgid "Enable to change the size of all collection images"
+msgstr "Aktivieren Sie die Größe aller Abholbilder"
+
+#: admin/partials/settings/collections/settings-collections-images-sizing-width.php:13
+#: admin/partials/settings/products/settings-products-images-sizing-width.php:13
+#: admin/partials/settings/related-products/settings-related-products-images-sizing-width.php:13
+msgid "Image width"
+msgstr "Bildbreite"
+
+#: admin/partials/settings/collections/settings-collections-images-sizing-width.php:14
+msgid ""
+"Sets a custom width for all collection images. Maximum size of 5760 x 5760. "
+"Both the width and height values will maintain the image aspect ratio. "
+"Therefore, if you want to force all images to the same dimensions make sure "
+"to specify the crop option below as well. If you want to size by one "
+"dimension only, keep the other dimension blank."
+msgstr ""
+"Setzt eine eigene Breite für alle Abholbilder. Maximale Größe von 5760 x "
+"5760. Sowohl die Breite als auch die Höhenwerte werden das Bildaspekt-"
+"Verhältnis beibehalten. Wenn Sie also alle Bilder in die gleichen Maße "
+"zwingen wollen, stellen Sie sicher, dass Sie auch die Ernteoption unten "
+"angeben. Wenn Sie nur eine Dimension vergrößern wollen, halten Sie die "
+"andere Dimension leer."
+
+#: admin/partials/settings/general/settings-general-collections-urls.php:14
+msgid "Collections URL"
+msgstr "Sammlungen URL"
+
+#: admin/partials/settings/general/settings-general-collections-urls.php:15
+#: admin/partials/settings/general/settings-general-product-urls.php:14
+msgid ""
+"Your permalinks must be set to \"Post name\" for this URL to work. You can "
+"set this by going to Settings -> Permalinks."
+msgstr ""
+"Ihre Permalinks müssen auf \"Postname\" gesetzt werden, damit diese URL "
+"funktioniert. Sie können dies einstellen, indem Sie zu Einstellungen-> "
+"Permalinks gehen."
+
+#: admin/partials/settings/general/settings-general-collections-urls.php:19
+msgid "collections"
+msgstr "Sammlungen"
+
+#: admin/partials/settings/general/settings-general-disable-default-pages.php:7
+msgid "Disable default pages"
+msgstr "Standard-Seiten ausschalten"
+
+#: admin/partials/settings/general/settings-general-link-products-to-shopify.php:14
+msgid "Products link to Shopify"
+msgstr "Link zu Shopify"
+
+#: admin/partials/settings/general/settings-general-link-products-to-shopify.php:15
+msgid ""
+"When this is enabled, products will not link to WP Shopify product single "
+"pages. Instead they'll link back to the product detail page on Shopify. "
+"Note: this setting is irrelevant if using Shopify Lite plan. Important: "
+"toggling this on/off will require you to clear the WP Shopify cache "
+"aftwards. You can do this from within Tools - Clear Transients"
+msgstr ""
+"Wenn dies aktiviert ist, werden die Produkte nicht auf die einzelnen Seiten "
+"von WP Shopify verweisen. Stattdessen werden sie zurück auf die "
+"Produktdetailseite auf Shopify verweisen. Hinweis: Diese Einstellung ist "
+"unerheblich, wenn Sie den Shopify Lite-Plan verwenden. Wichtig: Wenn Sie "
+"dies ändern, müssen Sie den WP-Shopify-Cache nach außen entfernen. Sie "
+"können dies innerhalb von Tools-Clear Transients tun"
+
+#: admin/partials/settings/general/settings-general-product-urls.php:13
+msgid "Products URL"
+msgstr "URL der Produkte"
+
+#: admin/partials/settings/general/settings-general-product-urls.php:18
+msgid "products"
+msgstr "Produkte"
+
+#: admin/partials/settings/general/settings-general-products-per-page.php:19
+msgid "Products per page"
+msgstr "Produkte pro Seite"
+
+#: admin/partials/settings/general/settings-general-products-per-page.php:20
+msgid ""
+"Defaults to the standard WordPress post count set within Settings - Reading. "
+"Can be overwritten here."
+msgstr ""
+"Standardwerte für die Standard-WordPress-Postanzahl in den Einstellungen-"
+"Lesen. Kann hier überschrieben werden."
+
+#: admin/partials/settings/layout/settings-layout-hide-pagination.php:14
+msgid "Hide all pagination"
+msgstr "Alle Heiden verstecken"
+
+#: admin/partials/settings/layout/settings-layout-hide-pagination.php:15
+msgid ""
+"Checking this will hide all pagination for products and collections. Will "
+"also override any shortcode pagination settings. If you want to keep "
+"pagination but hide it for a specific shortcode, use the \"pagination\" "
+"shortcode attribute instead."
+msgstr ""
+"Wenn Sie dies prüfen, verbirgt sich die Vorgabe für Produkte und "
+"Kollektionen. Wird auch alle Shortcode-Paginationseinstellungen "
+"überschreiben. Wenn Sie die Paginierung behalten wollen, sie aber für einen "
+"bestimmten Shortcode ausblenden wollen, verwenden Sie stattdessen das "
+"Shortcode-Attribut \"pagination\"."
+
+#: admin/partials/settings/layout/settings-layout-show-breadcrumbs.php:14
+msgid "Show breadcrumbs"
+msgstr "Breadcrumbs anzeigen"
+
+#: admin/partials/settings/layout/settings-layout-show-breadcrumbs.php:15
+msgid "Shows breadcrumbs"
+msgstr "Shows Brotkrumen"
+
+#: admin/partials/settings/plugin/settings-plugin-beta-enable.php:14
+msgid "Enable Beta Updates"
+msgstr "Aktiviere Beta Updates"
+
+#: admin/partials/settings/plugin/settings-plugin-beta-enable.php:20
+msgid "Enable"
+msgstr "Aktivieren"
+
+#: admin/partials/settings/plugin/settings-plugin-load-styles.php:13
+msgid "Load styles"
+msgstr "Belaster Stil"
+
+#: admin/partials/settings/plugin/settings-plugin-load-styles.php:14
+msgid ""
+"Allows you to specify what WP Shopify stylesheets are loaded on the front-"
+"end. Useful for users looking to customize."
+msgstr ""
+"Erlaubt es Ihnen, anzugeben, welche WP-Shopify-Stylesheets auf der "
+"Vorderseite geladen werden. Nützlich für Benutzer, die anpassen möchten."
+
+#: admin/partials/settings/plugin/settings-plugin-load-styles.php:25
+msgid "All styles"
+msgstr "Alle Stile"
+
+#: admin/partials/settings/plugin/settings-plugin-load-styles.php:36
+msgid "Core styles <small>(cart, hide/show classes, etc)</small>"
+msgstr "Kernstile <small> (Warenkorb, Hide/-Show-Klassen, etc.) </small>"
+
+#: admin/partials/settings/plugin/settings-plugin-load-styles.php:47
+msgid "Grid styles"
+msgstr "Gitterstile"
+
+#: admin/partials/settings/pricing/settings-pricing-compare-at.php:13
+msgid "Show compare at pricing"
+msgstr "Vergleich zur Preisgestaltung anzeigen"
+
+#: admin/partials/settings/pricing/settings-pricing-compare-at.php:14
+msgid ""
+"When enabled, all products will show the \"compare at\" pricing if available."
+msgstr ""
+"Wenn diese aktiviert sind, werden alle Produkte die \"compare at\"-Preise "
+"anzeigen, wenn sie verfügbar sind."
+
+#: admin/partials/settings/pricing/settings-pricing-local-currency-toggle.php:13
+msgid "Enable local currency"
+msgstr "Landeswährung aktivieren"
+
+#: admin/partials/settings/pricing/settings-pricing-local-currency-toggle.php:14
+msgid ""
+"When enabled, shows prices in customer's local currency instead of Shopify's "
+"base currency. HTTPs is required."
+msgstr ""
+"Wenn aktiviert, zeigt die Preise in der lokalen Währung des Kunden statt in "
+"der Basiswährung von Shopify. HTTPs sind erforderlich."
+
+#: admin/partials/settings/pricing/settings-pricing-local-currency-with-base.php:13
+msgid "Show with base"
+msgstr "Show mit Basis"
+
+#: admin/partials/settings/pricing/settings-pricing-local-currency-with-base.php:14
+msgid ""
+"When enabled, prices in both the local currency and base currency will show."
+msgstr ""
+"Wenn diese Option aktiviert ist, werden die Preise sowohl in der lokalen "
+"Währung als auch in der Basiswährung angezeigt."
+
+#: admin/partials/settings/pricing/settings-pricing-pricing.php:13
+msgid "Currency display style"
+msgstr "Währung Display Style"
+
+#: admin/partials/settings/pricing/settings-pricing-pricing.php:14
+msgid ""
+"Determines the currency display style. For example, setting to \"symbol\" "
+"will display 19.99 as $19.99. Setting to \"code\" will display 19.99 as USD "
+"19.99. Setting to \"name\" will display 19.99 as 19.99 US dollars"
+msgstr ""
+"Bestimmt den Stand der Währung. Zum Beispiel wird die Einstellung auf "
+"\"Symbol\" 19,99 $ als 19,99 $ anzeigen. Die Einstellung auf \"Code\" wird "
+"19,99 als USD 19,99 angezeigt. Einstellung zu \"Name\" wird 19,99 als 19,99 "
+"US-Dollar angezeigt"
+
+#: admin/partials/settings/pricing/settings-pricing-show-price-range.php:13
+msgid "Show price ranges"
+msgstr "Preisklassen anzeigen"
+
+#: admin/partials/settings/pricing/settings-pricing-show-price-range.php:14
+msgid ""
+"When enabled, shows a products range of variant prices. E.g., From $1.00 - "
+"$5.00"
+msgstr ""
+"Wenn aktiviert, zeigt eine Produktpalette von Variantenpreisen. Z.B. von "
+"$1.00-$5.00"
+
+#: admin/partials/settings/products/settings-products-add-to-cart-button-color.php:13
+msgid "Add to cart buttons"
+msgstr "In den Warenkorb Schaltflächen"
+
+#: admin/partials/settings/products/settings-products-add-to-cart-button-color.php:14
+msgid ""
+"Changes the background color of the add to cart button. Note, changing this "
+"value may potentially override any custom CSS from your theme."
+msgstr ""
+"Ändert die Hintergrundfarbe des Hinzufügens in den Warenkorb-Knopf. Beachten "
+"Sie, dass die Änderung dieses Wertes möglicherweise alle benutzerdefinierten "
+"CSS von Ihrem Thema überschreiben kann."
+
+#: admin/partials/settings/products/settings-products-heading-toggle.php:14
+msgid "Hide / show the heading found on the main Products page."
+msgstr ""
+"Verstecken/zeigen Sie die Überschrift auf der Hauptprodukte-Seite gefunden."
+
+#: admin/partials/settings/products/settings-products-heading.php:14
+msgid "Changes the heading found on the main Products page."
+msgstr "Ändert die Überschrift, die auf der Hauptprodukte-Seite zu finden ist."
+
+#: admin/partials/settings/products/settings-products-images-show-zoom.php:9
+#: admin/partials/settings/products/settings-products-images-show-zoom.php:10
+msgid "Show image zoom"
+msgstr "Bild vergrößern"
+
+#: admin/partials/settings/products/settings-products-images-sizing-height.php:14
+msgid ""
+"Sets a custom height for all product images. Maximum size of 5760 x 5760. "
+"Both the height and height values will maintain the image aspect ratio. "
+"Therefore, if you want to force all images to the same dimensions make sure "
+"to specify the crop option below as well. If you want to size by one "
+"dimension only, keep the other dimension blank."
+msgstr ""
+"Setzt für alle Produktbilder eine eigene Höhe. Maximale Größe von 5760 x "
+"5760. Sowohl die Höhen-als auch die Höhenwerte werden das "
+"Bildaspektenverhältnis beibehalten. Wenn Sie also alle Bilder in die "
+"gleichen Maße zwingen wollen, stellen Sie sicher, dass Sie auch die "
+"Ernteoption unten angeben. Wenn Sie nur eine Dimension vergrößern wollen, "
+"halten Sie die andere Dimension leer."
+
+#: admin/partials/settings/products/settings-products-images-sizing-scale.php:14
+msgid ""
+"Sets a custom scale for all product images. The number here will be "
+"multiplied by the dimensions set above. For example, an image originally "
+"450x450 will return an image 900x900 pixels. Will only scale up if the "
+"original image is large enough. If original image is too small, the closest "
+"image in size will be returned."
+msgstr ""
+"Setzt eine eigene Skala für alle Produktbilder. Die Zahl wird hier mit den "
+"oben genannten Dimensionen multipliziert. Zum Beispiel wird ein Bild "
+"ursprünglich 450x450 ein Bild von 900x900 Pixel zurückgeben. Wird nur dann "
+"skaliert, wenn das Originalbild groß genug ist. Wenn das Originalbild zu "
+"klein ist, wird das nächstgelegene Bild in der Größe zurückgegeben."
+
+#: admin/partials/settings/products/settings-products-images-sizing-toggle.php:14
+msgid "Enable to change the size of all products images"
+msgstr "Aktivieren Sie die Größe aller Produktbilder"
+
+#: admin/partials/settings/products/settings-products-images-sizing-width.php:14
+msgid ""
+"Sets a custom width for all product images. Maximum size of 5760 x 5760. "
+"Both the width and height values will maintain the image aspect ratio. "
+"Therefore, if you want to force all images to the same dimensions make sure "
+"to specify the crop option below as well. If you want to size by one "
+"dimension only, keep the other dimension blank."
+msgstr ""
+"Setzt für alle Produktbilder eine individuelle Breite. Maximale Größe von "
+"5760 x 5760. Sowohl die Breite als auch die Höhenwerte werden das Bildaspekt-"
+"Verhältnis beibehalten. Wenn Sie also alle Bilder in die gleichen Maße "
+"zwingen wollen, stellen Sie sicher, dass Sie auch die Ernteoption unten "
+"angeben. Wenn Sie nur eine Dimension vergrößern wollen, halten Sie die "
+"andere Dimension leer."
+
+#: admin/partials/settings/products/settings-products-variant-button-color.php:13
+msgid "Variant buttons"
+msgstr "Variantenknöpfe"
+
+#: admin/partials/settings/products/settings-products-variant-button-color.php:14
+msgid ""
+"Changes the background color of all product variant dropdowns. Note, "
+"changing this value may potentially override any custom CSS from your theme."
+msgstr ""
+"Ändert die Hintergrundfarbe aller Produktvarianten. Beachten Sie, dass die "
+"Änderung dieses Wertes möglicherweise alle benutzerdefinierten CSS von Ihrem "
+"Thema überschreiben kann."
+
+#: admin/partials/settings/related-products/settings-related-products-amount.php:16
+msgid "Related products to show"
+msgstr "Verwandte Produkte zu zeigen"
+
+#: admin/partials/settings/related-products/settings-related-products-heading-toggle.php:14
+msgid "Hide / show the heading within the related products section."
+msgstr ""
+"Verstecken/zeigen Sie die Überschrift in den entsprechenden Produktbereich."
+
+#: admin/partials/settings/related-products/settings-related-products-heading.php:14
+msgid "Changes the heading within the related products section"
+msgstr "Ändert die Rubrik innerhalb des entsprechenden Produktbereichs"
+
+#: admin/partials/settings/related-products/settings-related-products-images-sizing-height.php:14
+msgid ""
+"Sets a custom height for all related product images. Maximum size of 5760 x "
+"5760. Both the height and height values will maintain the image aspect "
+"ratio. Therefore, if you want to force all images to the same dimensions "
+"make sure to specify the crop option below as well. If you want to size by "
+"one dimension only, keep the other dimension blank."
+msgstr ""
+"Setzt eine eigene Höhe für alle damit verbundenen Produktbilder. Maximale "
+"Größe von 5760 x 5760. Sowohl die Höhen-als auch die Höhenwerte werden das "
+"Bildaspektenverhältnis beibehalten. Wenn Sie also alle Bilder in die "
+"gleichen Maße zwingen wollen, stellen Sie sicher, dass Sie auch die "
+"Ernteoption unten angeben. Wenn Sie nur eine Dimension vergrößern wollen, "
+"halten Sie die andere Dimension leer."
+
+#: admin/partials/settings/related-products/settings-related-products-images-sizing-scale.php:14
+msgid ""
+"Sets a custom scale for all related product images. The number here will be "
+"multiplied by the dimensions set above. For example, an image originally "
+"450x450 will return an image 900x900 pixels. Will only scale up if the "
+"original image is large enough. If original image is too small, the closest "
+"image in size will be returned."
+msgstr ""
+"Setzt eine eigene Skala für alle damit verbundenen Produktbilder. Die Zahl "
+"wird hier mit den oben genannten Dimensionen multipliziert. Zum Beispiel "
+"wird ein Bild ursprünglich 450x450 ein Bild von 900x900 Pixel zurückgeben. "
+"Wird nur dann skaliert, wenn das Originalbild groß genug ist. Wenn das "
+"Originalbild zu klein ist, wird das nächstgelegene Bild in der Größe "
+"zurückgegeben."
+
+#: admin/partials/settings/related-products/settings-related-products-images-sizing-toggle.php:14
+msgid "Enable to change the size of all related products images"
+msgstr "Aktivieren Sie die Größe aller verwandten Produktbilder"
+
+#: admin/partials/settings/related-products/settings-related-products-images-sizing-width.php:14
+msgid ""
+"Sets a custom width for all related product images. Maximum size of 5760 x "
+"5760. Both the width and height values will maintain the image aspect ratio. "
+"Therefore, if you want to force all images to the same dimensions make sure "
+"to specify the crop option below as well. If you want to size by one "
+"dimension only, keep the other dimension blank."
+msgstr ""
+"Setzt eine benutzerdefinierte Breite für alle damit verbundenen "
+"Produktbilder. Maximale Größe von 5760 x 5760. Sowohl die Breite als auch "
+"die Höhenwerte werden das Bildaspekt-Verhältnis beibehalten. Wenn Sie also "
+"alle Bilder in die gleichen Maße zwingen wollen, stellen Sie sicher, dass "
+"Sie auch die Ernteoption unten angeben. Wenn Sie nur eine Dimension "
+"vergrößern wollen, halten Sie die andere Dimension leer."
+
+#: admin/partials/settings/related-products/settings-related-products-show.php:16
+msgid "Show related products"
+msgstr "Zeige ähnliche Produkte"
+
+#: admin/partials/settings/related-products/settings-related-products-show.php:17
+msgid ""
+"When enabled, will show related products on the bottom of each product "
+"single page."
+msgstr ""
+"Wenn aktiviert, wird verwandte Produkte auf der Unterseite jeder Produkt-"
+"Singpage angezeigt."
+
+#: admin/partials/settings/related-products/settings-related-products-sort.php:18
+msgid "Filter by"
+msgstr "Filtern nach"
+
+#: admin/partials/settings/related-products/settings-related-products-sort.php:20
+msgid ""
+"Performs a fuzzy search based on the below selection. For example, when "
+"filtering by Tags WP Shopify will locate all products which share at least "
+"one tag as the product in question. By default, related products are "
+"filtered and ordered randomly. Shortcode filtering will override this "
+"setting. "
+msgstr ""
+"Führt eine Fuzzy-Suche basierend auf der folgenden Auswahl durch. Wenn Sie "
+"beispielsweise nach Tags filtern, findet WP Shopify alle Produkte, die "
+"mindestens ein Tag als das betreffende Produkt haben. Standardmäßig werden "
+"verwandte Produkte nach dem Zufallsprinzip gefiltert und sortiert. Die "
+"Shortcode-Filterung überschreibt diese Einstellung "
+
+#: admin/partials/settings/related-products/settings-related-products-sort.php:31
+msgid "Random"
+msgstr "Zufällig"
+
+#: admin/partials/settings/related-products/settings-related-products-sort.php:42
+#: admin/partials/wps-tab-content-settings.php:40
+#: classes/class-admin-menus.php:46 classes/class-backend.php:355
+#: classes/class-cpt.php:193 classes/class-cpt.php:202
+msgid "Collections"
+msgstr "Sammlungen"
+
+#: admin/partials/settings/related-products/settings-related-products-sort.php:53
+#: classes/class-admin-menus.php:56
+msgid "Tags"
+msgstr "Schlagwörter"
+
+#: admin/partials/settings/related-products/settings-related-products-sort.php:64
+msgid "Vendors"
+msgstr "Verkäufer"
+
+#: admin/partials/settings/related-products/settings-related-products-sort.php:75
+msgid "Types"
+msgstr "Typen"
+
+#: admin/partials/settings/search/settings-search-by.php:8
+msgid "Search by"
+msgstr "Suchen nach"
+
+#: admin/partials/settings/search/settings-search-by.php:9
+msgid ""
+"Determines the criteria by which the search term is used to find a match. "
+"Possible values are: Product title, Product tag, Product vendor, Product "
+"type, or Product variants title."
+msgstr ""
+"Bestimmt die Kriterien, nach denen der Suchbegriff verwendet wird, um ein "
+"Match zu finden. Mögliche Werte sind: Produkt-Titel, Produkt-Tag, Produkt-"
+"Hersteller, Produkttyp oder Produktvarianten Titel."
+
+#: admin/partials/settings/search/settings-search-exact-match.php:8
+msgid "Search exact match"
+msgstr "Suche genau mit"
+
+#: admin/partials/settings/search/settings-search-exact-match.php:9
+msgid ""
+"Determines whether to match exactly what the user types or not. For example "
+"when turned off, if the user types \"Shoe\", products with the title \"Shoe"
+"\" and \"Shoes\" will be returned."
+msgstr ""
+"Legt fest, ob genau das, was der Benutzer angibt oder nicht, übereinstimmen "
+"soll. Zum Beispiel, wenn der Benutzer \"Schuh\" tippt, werden Produkte mit "
+"den Titeln \"Schuh\" und \"Schuhe\" zurückgegeben."
+
+#: admin/partials/settings/syncing/settings-syncing-by-collection.php:8
+msgid "Sync products by collection"
+msgstr "Sync-Produkte nach Kollektion"
+
+#: admin/partials/settings/syncing/settings-syncing-is-lite-sync.php:10
+msgid "Lite Sync"
+msgstr "Lite Sync"
+
+#: admin/partials/settings/syncing/settings-syncing-is-lite-sync.php:11
+msgid ""
+"When enabled, will only sync product ids for use in client-side rendering."
+msgstr ""
+"Wenn aktiviert, werden nur Produktidealdaten synchronisiert, die für die "
+"Client-seitige Darstellung verwendet werden."
+
+#: admin/partials/settings/syncing/settings-syncing-is-syncing-posts.php:10
+msgid "Sync posts?"
+msgstr "Beiträge synchronisieren?"
+
+#: admin/partials/settings/syncing/settings-syncing-is-syncing-posts.php:12
+msgid "When enabled, will create posts from your products and collections."
+msgstr ""
+"Wenn aktiviert, erstellen Sie Beiträge aus Ihren Produkten und Sammlungen."
+
+#: admin/partials/settings/syncing/settings-syncing-items-per-request.php:8
+msgid "Items per request"
+msgstr "Artikel pro Anfrage"
+
+#: admin/partials/settings/syncing/settings-syncing-items-per-request.php:9
+msgid ""
+"This number represents the amount of individual products that are transfered "
+"during the syncing process. You can reduce this number if you're running "
+"into timeout issues."
+msgstr ""
+"Diese Zahl stellt die Anzahl der einzelnen Produkte dar, die während des "
+"Synchronisierungsprozesses übertragen werden. Sie können diese Zahl "
+"reduzieren, wenn Sie in Timeout-Probleme laufen."
+
+#: admin/partials/settings/syncing/settings-syncing-save-connection-only.php:10
+msgid "Save connection only"
+msgstr "Nur Verbindung speichern"
+
+#: admin/partials/settings/syncing/settings-syncing-save-connection-only.php:11
+msgid ""
+"When enabled, only the connection to Shopify will be saved during the "
+"syncing process. Useful if you want to skip syncing webhooks, or if you want "
+"to sync by collections without having to sync everything first."
+msgstr ""
+"Wenn die Aktivierung erfolgt, wird während des Synchronisationsprozesses nur "
+"die Verbindung zu Shopify gespeichert. Nützlich, wenn Sie das Synchron von "
+"Webhooks überspringen wollen, oder wenn Sie durch Sammlungen synchronisieren "
+"wollen, ohne alles zuerst synchronisieren zu müssen."
+
+#: admin/partials/settings/syncing/settings-syncing-selective-sync.php:13
+msgid "Sync by data type"
+msgstr "Synchronisation nach Datentyp"
+
+#: admin/partials/settings/syncing/settings-syncing-synchronous.php:10
+msgid "Synchronous requests"
+msgstr "Synchrone Forderungen"
+
+#: admin/partials/settings/syncing/settings-syncing-synchronous.php:11
+msgid ""
+"When enabled, will use an alternative syncing method which is slower but "
+"sometimes more stable."
+msgstr ""
+"Wenn aktiviert, wird eine alternative Synchronisationsmethode, die "
+"langsamer, aber manchmal stabiler ist."
+
+#: admin/partials/settings/syncing/settings-syncing-webhooks-urls.php:14
+msgid "Webhooks callback URL"
+msgstr "Webhooks Callback URL"
+
+#: admin/partials/settings/syncing/settings-syncing-webhooks-urls.php:15
+msgid ""
+"This will be the location where Shopify sends its updates. For example, "
+"after changing the Product title within Shopify, data containing the new "
+"title will be sent here. You'll most likely want this to be the same domain "
+"as the WordPress site. This needs to be publicly accesible. Change to a "
+"proxy URL during local development using something like ngrok. Also if you "
+"have WordPress installed in a subdirectory be sure to include that in the "
+"url."
+msgstr ""
+"Dies wird der Ort sein, an dem Shopify seine Updates sendet. Zum Beispiel, "
+"nach der Änderung des Produktitels innerhalb von Shopify, werden hier Daten "
+"mit dem neuen Titel gesendet. Sie werden höchstwahrscheinlich wollen, dass "
+"dies die gleiche Domain wie die WordPress-Website. Das muss öffentlich "
+"zugänglich sein. Ändern Sie während der lokalen Entwicklung eine Proxy-URL, "
+"indem Sie so etwas wie ngrok verwenden. Auch wenn Sie WordPress in einem "
+"Unterverzeichnis installiert haben, stellen Sie sicher, dass in der URL."
+
+#: admin/partials/wps-tab-content-connect.php:11
+msgid "Connect and Sync "
+msgstr "Verbinden und synchronisieren "
+
+#: admin/partials/wps-tab-content-connect.php:17
+msgid "Connected"
+msgstr "Verbunden"
+
+#: admin/partials/wps-tab-content-connect.php:21
+msgid "Disconnected"
+msgstr "Getrennt"
+
+#: admin/partials/wps-tab-content-connect.php:30
+#, php-format
+msgid ""
+"Enter your Shopify private app API keys below. Need help finding these? "
+"Watch our <a href=\"%s\" target=\"_blank\"> video tutorial</a>."
+msgstr ""
+"Geben Sie unten Ihre Shopify Private App-API-Schlüssel ein. Benötigen Sie "
+"Hilfe bei der Suche? Sehen Sie sich unser <a href=“%s” target=“_blank”> "
+"Video-Tutorial </a> an."
+
+#: admin/partials/wps-tab-content-connect.php:48
+msgid "API Key"
+msgstr "API-Schlüssel"
+
+#: admin/partials/wps-tab-content-connect.php:52
+msgid ""
+"To generate an API key you must create a \"Private App\" within your Shopify "
+"account."
+msgstr ""
+"Um einen API-Schlüssel zu generieren, müssen Sie eine \"Private App\" in "
+"Ihrem Shopify-Konto erstellen."
+
+#: admin/partials/wps-tab-content-connect.php:64
+msgid "API Password"
+msgstr "API Passwort"
+
+#: admin/partials/wps-tab-content-connect.php:66
+msgid ""
+"To generate an API Password you must create a \"Private App\" within your "
+"Shopify account."
+msgstr ""
+"Um ein API-Passwort zu generieren, müssen Sie eine \"Private App\" in Ihrem "
+"Shopify-Konto erstellen."
+
+#: admin/partials/wps-tab-content-connect.php:78
+msgid "Shared Secret"
+msgstr "Shared Secret"
+
+#: admin/partials/wps-tab-content-connect.php:80
+msgid ""
+"To generate a Shared Secret you must create a \"Private App\" within your "
+"Shopify account. The Shared Secret is used to validate webhook requests and "
+"provide security for WP Shopify."
+msgstr ""
+"Um ein Shared Secret zu generieren, müssen Sie eine \"Private App\" in Ihrem "
+"Shopify-Konto erstellen. Das Shared Secret wird verwendet, um Webhook-"
+"Anfragen zu validieren und die Sicherheit für WP Shopify zu gewährleisten."
+
+#: admin/partials/wps-tab-content-connect.php:92
+msgid "Storefront Access Token"
+msgstr "Schaufenster Zugangsmarke"
+
+#: admin/partials/wps-tab-content-connect.php:94
+msgid ""
+"To generate a Storefront Access Token you must create a \"Private App\" "
+"within your Shopify account. The Storefront Access Token is used to create "
+"the front-end cart experience."
+msgstr ""
+"Um eine Schaufenster-Zugangsmarke zu generieren, müssen Sie eine \"Private "
+"App\" in Ihrem Shopify-Konto erstellen. Mit dem Schaufenster-Zugangsgeschost "
+"wird das Front-End-Cart-Erlebnis erstellt."
+
+#: admin/partials/wps-tab-content-connect.php:105
+msgid "Domain"
+msgstr "Domain"
+
+#: admin/partials/wps-tab-content-connect.php:106
+msgid "shop.myshopify.com"
+msgstr "shop.myshopify.com"
+
+#: admin/partials/wps-tab-content-connect.php:106
+msgid "example: yourshop.myshopify.com"
+msgstr "Beispiel: yourshop.myshopify.com"
+
+#: admin/partials/wps-tab-content-connect.php:119
+msgid "Disconnect your Shopify store"
+msgstr "Trennen Sie Ihren Shopify-Speicher"
+
+#: admin/partials/wps-tab-content-connect.php:122
+msgid "Connect your Shopify store"
+msgstr "Schließen Sie Ihren Shopify-Store an"
+
+#: admin/partials/wps-tab-content-help.php:17
+msgid "Help"
+msgstr "Hilfe"
+
+#: admin/partials/wps-tab-content-help.php:19
+#, php-format
+msgid ""
+"Need help finding your Shopify API keys? Watch our <a href=\"%s\" target="
+"\"_blank\"> video tutorial</a>."
+msgstr ""
+"Brauchen Sie Hilfe bei der Suche nach Ihren Shopify API-Tasten? Sehen Sie "
+"sich unsere <a href = \" %s\" target = \"_ blank\" > Video-Tutorial </a> an."
+
+#: admin/partials/wps-tab-content-help.php:21
+#, php-format
+msgid ""
+"If you're running into problems, please review our exhaustive <a href=\"%1$s"
+"\" target=\"_blank\">documentation</a>. If you're not able to find the "
+"solution you can also send us an email to <a href=\"%2$s\">hello@wpshop.io</"
+"a> with the problem you're having. The more detailed you are the better we "
+"can help! Also if you've purchased a <a href=\"%3$s\" target=\"_blank\">WP "
+"Shopify Pro</a> license you can join our private Slack channel to receive "
+"dedicated live support. "
+msgstr ""
+"Wenn Sie auf Probleme stoßen, lesen Sie unsere ausführliche <a href=“%1$s” "
+"target=“_blank”> Dokumentation </a>. Wenn Sie die Lösung nicht finden "
+"können, können Sie uns auch eine E-Mail an <a href=“%2$s”> hello@wpshop.io </"
+"a> senden, um Ihr Problem zu beheben. Je detaillierter Sie sind, desto "
+"besser können wir Ihnen helfen! Wenn Sie eine <a href=“%3$s” "
+"target=“_blank”> WP Shopify Pro </a> -Lizenz erworben haben, können Sie "
+"unserem privaten Slack-Kanal beitreten, um dedizierten Live-Support zu "
+"erhalten "
+
+#: admin/partials/wps-tab-content-help.php:22
+#, php-format
+msgid ""
+"WP Shopify documentation can be found here: <a href=\"%1$s\" target=\"_blank"
+"\">%2$s</a>"
+msgstr ""
+"WP Shopify dokumentation finden Sie hier: <a href=\"%1$s\" target=\"_blank\">"
+"%2$s </a>"
+
+#: admin/partials/wps-tab-content-license.php:10 admin/partials/wps-tabs.php:16
+msgid "License"
+msgstr "Lizenz"
+
+#: admin/partials/wps-tab-content-misc.php:14 admin/partials/wps-tabs.php:24
+msgid "Misc"
+msgstr "Verschiedenes"
+
+#: admin/partials/wps-tab-content-misc.php:18
+msgid "Migrate WP Shopify Database Tables"
+msgstr "Migrieren Sie WP-Shopify-Database-Tabellen"
+
+#: admin/partials/wps-tab-content-misc.php:20
+msgid ""
+"If you just upgraded from a version below 1.2.2, then you need to perform a "
+"simple database upgrade. Please make sure that you've made a backup of your "
+"database before proceeding. Data loss could occur!"
+msgstr ""
+"Wenn Sie nur von einer Version unter 1.2.2 aktualisiert haben, müssen Sie "
+"ein einfaches Datenbank-Upgrade durchführen. Bitte vergewissern Sie sich, "
+"dass Sie eine Sicherung Ihrer Datenbank vorgenommen haben, bevor Sie "
+"fortfahren. Datenverlust kann auftreten!"
+
+#: admin/partials/wps-tab-content-misc.php:36
+msgid "Upgrade Database Tables"
+msgstr "Upgrade-Database Tische"
+
+#: admin/partials/wps-tab-content-settings.php:14
+#: admin/partials/wps-tab-content-settings.php:154
+msgid "General"
+msgstr "Allgemein"
+
+#: admin/partials/wps-tab-content-settings.php:19
+msgid "Syncing"
+msgstr "Synchronisierung"
+
+#: admin/partials/wps-tab-content-settings.php:24
+msgid "Pricing"
+msgstr "Preise"
+
+#: admin/partials/wps-tab-content-settings.php:29
+msgid "Layout"
+msgstr "Layout"
+
+#: admin/partials/wps-tab-content-settings.php:34 classes/class-backend.php:352
+#: classes/class-cpt.php:126 classes/class-cpt.php:135
+#: public/templates/components/collections/single/products-heading.php:22
+msgid "Products"
+msgstr "Produkte"
+
+#: admin/partials/wps-tab-content-settings.php:46
+msgid "Related Products"
+msgstr "Ähnliche Produkte"
+
+#: admin/partials/wps-tab-content-settings.php:51
+#: classes/class-admin-menus.php:167
+msgid "Cart"
+msgstr "Warenkorb"
+
+#: admin/partials/wps-tab-content-settings.php:56
+#: admin/partials/wps-tab-content-settings.php:446
+msgid "Search"
+msgstr "Suche"
+
+#: admin/partials/wps-tab-content-settings.php:61
+#: public/templates/components/cart/cart-button-checkout.php:28
+msgid "Checkout"
+msgstr "Kasse"
+
+#: admin/partials/wps-tab-content-settings.php:66
+msgid "Plugin"
+msgstr "Plugin"
+
+#: admin/partials/wps-tab-content-settings.php:84
+msgid "General "
+msgstr "Allgemeine Einstellungen "
+
+#: admin/partials/wps-tab-content-settings.php:114
+msgid "Syncing "
+msgstr "Synchronisierung "
+
+#: admin/partials/wps-tab-content-settings.php:172
+msgid "Currencies"
+msgstr "Währungen"
+
+#: admin/partials/wps-tab-content-settings.php:200
+msgid "General Layout "
+msgstr "Allgemeines Layout "
+
+#: admin/partials/wps-tab-content-settings.php:226
+#: admin/partials/wps-tab-content-settings.php:414
+msgid "Colors "
+msgstr "Farben "
+
+#: admin/partials/wps-tab-content-settings.php:240
+#: admin/partials/wps-tab-content-settings.php:286
+#: admin/partials/wps-tab-content-settings.php:342
+msgid "Content "
+msgstr "Inhalt "
+
+#: admin/partials/wps-tab-content-settings.php:255
+#: admin/partials/wps-tab-content-settings.php:301
+#: admin/partials/wps-tab-content-settings.php:357
+msgid "Images "
+msgstr "Bilder "
+
+#: admin/partials/wps-tab-content-settings.php:330
+msgid "Related Products "
+msgstr "Ähnentsitzene Produkte "
+
+#: admin/partials/wps-tab-content-settings.php:384
+msgid "Cart "
+msgstr "Wagen "
+
+#: admin/partials/wps-tab-content-settings.php:398
+msgid "Functionality"
+msgstr "Funktionalität"
+
+#: admin/partials/wps-tab-content-settings.php:472
+msgid "Checkout "
+msgstr "Auschecken "
+
+#: admin/partials/wps-tab-content-settings.php:497
+msgid "Plugin "
+msgstr "Plugin "
+
+#: admin/partials/wps-tab-content-settings.php:521
+msgid "Save WP Shopify Settings"
+msgstr "WP Shopify Einstellungen speichern"
+
+#: admin/partials/wps-tab-content-tools.php:8 admin/partials/wps-tabs.php:12
+#: classes/class-backend.php:349
+msgid "Tools"
+msgstr "Werkzeuge"
+
+#: admin/partials/wps-tab-content-tools.php:12
+msgid "Resync Shopify"
+msgstr "Shopify erneut synchronisieren"
+
+#: admin/partials/wps-tab-content-tools.php:12
+msgid ""
+"Note: To fix syncing issues you may want to ensure that the 'Webhooks "
+"callback URL' located on the Settings tab is set to a publicly accessible "
+"URL. Also be aware that this does not delete the custom post types or any "
+"custom fields you\\'ve added."
+msgstr ""
+"Hinweis: Um Synchter-Probleme zu beheben, können Sie sicherstellen, dass die "
+"\"Webhooks Callback-URL\", die sich auf der Registerkarte Einstellungen "
+"befindet, auf eine öffentlich zugängliche URL gesetzt wird. Beachten Sie "
+"auch, dass dies nicht die benutzerdefinierten Posttypen oder "
+"benutzerdefinierte Felder, die Sie hinzugefügt haben, löscht."
+
+#: admin/partials/wps-tab-content-tools.php:13
+msgid "Manually resync your Shopify data."
+msgstr "Ihre Shopify-Daten manuell neu zu stellen."
+
+#: admin/partials/wps-tab-content-tools.php:34
+msgid "Resync Shopify data"
+msgstr "Daten von Resync Shopify"
+
+#: admin/partials/wps-tab-content-tools.php:45
+msgid "Clear Cache"
+msgstr "Cache leeren"
+
+#: admin/partials/wps-tab-content-tools.php:46
+msgid ""
+"If you're noticing various changes not appearing, try clearing the WP "
+"Shopify transient cache here."
+msgstr ""
+"Wenn Sie feststellen, dass verschiedene Änderungen nicht angezeigt werden, "
+"versuchen Sie hier, den WP-Shopify-Transient-Cache zu löschen."
+
+#: admin/partials/wps-tab-content-tools.php:56
+msgid "Clear WP Shopify Cache"
+msgstr "Klares WP-Shopify-Cache"
+
+#: admin/partials/wps-tab-content-tools.php:67
+msgid "Remove all synced data"
+msgstr "Alle synchronisierten Daten entfernen"
+
+#: admin/partials/wps-tab-content-tools.php:68
+msgid ""
+"This will remove all WP Shopify data from WordPress. Nothing will be changed "
+"in Shopify. Useful for removing any lingering data without reinstalling the "
+"plugin. (Note: this can take up to 60 seconds and will delete product posts "
+"and any active webhooks)."
+msgstr ""
+"Dadurch werden alle WP-Shopify-Daten von WordPress entfernt. An Shopify wird "
+"sich nichts ändern. Nützlich für das Entfernen von bleibenden Daten, ohne "
+"das Plugin neu zu installieren. (Hinweis: Das kann bis zu 60 Sekunden dauern "
+"und löscht Produktpfosten und alle aktiven Webhaken)."
+
+#: admin/partials/wps-tab-content-tools.php:78
+msgid "Remove all synced data from WordPress"
+msgstr "Entfernen Sie alle synchronisierten Daten von WordPress"
+
+#: admin/partials/wps-tab-content-tools.php:89
+#: admin/partials/wps-tab-content-tools.php:111
+msgid "Reconnect Automatic Syncing"
+msgstr "Automatische Synchronisation zurückherstellen"
+
+#: admin/partials/wps-tab-content-tools.php:90
+msgid ""
+"This will reconnect the Shopify webhooks which are responsible for the "
+"automatic sync feature. Useful if you notice your data not auto syncing "
+"correctly or if you've upgraded from the free version."
+msgstr ""
+"Dadurch werden die Shopify-Webhooks, die für die automatische "
+"Synchronisation verantwortlich sind, wieder angeschlossen. Nützlich, wenn "
+"Sie bemerken, dass Ihre Daten nicht richtig synchronisiert werden, oder wenn "
+"Sie von der kostenlosen Version aktualisiert haben."
+
+#: admin/partials/wps-tab-content-updates-license-activation.php:25
+msgid "License Key"
+msgstr "Lizenzschlüssel"
+
+#: admin/partials/wps-tab-content-updates-license-activation.php:28
+#, php-format
+msgid ""
+"You can find your license key <a href=\"%1$s\" target=\"_blank\">within your "
+"account</a> or contained inside your payment confirmation email."
+msgstr ""
+"Sie finden Ihren Lizenzschlüssel <a href=“%1$s” target=“_blank”> in Ihrem "
+"Konto </a> oder in Ihrer Zahlungsbestätigungs-E-Mail."
+
+#: admin/partials/wps-tab-content-updates-license-activation.php:42
+msgid "Deactivate License"
+msgstr "Lizenz deaktivieren"
+
+#: admin/partials/wps-tab-content-updates-license-activation.php:45
+msgid "Activate License"
+msgstr "Lizenz aktivieren"
+
+#: admin/partials/wps-tab-content-updates-license-info.php:10
+msgid "License Details"
+msgstr "Lizenzdetails"
+
+#: admin/partials/wps-tab-content-updates-license-info.php:18
+msgid "Status"
+msgstr "Status"
+
+#: admin/partials/wps-tab-content-updates-license-info.php:30
+#: admin/partials/wps-tab-content-updates-plugin-info.php:13
+msgid "Name"
+msgstr "Name"
+
+#: admin/partials/wps-tab-content-updates-license-info.php:35
+#: admin/partials/wps-tab-content-updates-license-info.php:49
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: admin/partials/wps-tab-content-updates-license-info.php:44
+msgid "Email"
+msgstr "E-Mail"
+
+#: admin/partials/wps-tab-content-updates-license-info.php:58
+msgid "Expires on"
+msgstr "Läuft ab"
+
+#: admin/partials/wps-tab-content-updates-license-info.php:72
+msgid "Never expires"
+msgstr "Läuft nie ab"
+
+#: admin/partials/wps-tab-content-updates-license-info.php:85
+msgid "Activation count"
+msgstr "Aktivierungszahl"
+
+#: admin/partials/wps-tab-content-updates-license-info.php:93
+#, php-format
+msgid "%1$d / %2$d"
+msgstr "%1$d / %2$d"
+
+#: admin/partials/wps-tab-content-updates-license-info.php:99
+msgid "(Activations on dev environments don't add to total)"
+msgstr "(Aktivierungen auf dev-Umgebungen werden nicht zu Gesamtsumme addiert)"
+
+#: admin/partials/wps-tab-content-updates-license-info.php:112
+msgid "Activations left"
+msgstr "Aktivisten blieben aus"
+
+#: admin/partials/wps-tab-content-updates-plugin-info.php:5
+msgid "Plugin Information"
+msgstr "Plugin Information"
+
+#: admin/partials/wps-tab-content-updates-plugin-info.php:27
+msgid "Tested up to WordPress"
+msgstr "Getestet bis WordPress"
+
+#: admin/partials/wps-tab-content-updates-plugin-info.php:41
+msgid "Installed version"
+msgstr "Installierte Version"
+
+#: admin/partials/wps-tab-content-updates-plugin-info.php:55
+msgid "Latest version"
+msgstr "Letzte Version"
+
+#: admin/partials/wps-tab-content-updates-pro.php:9
+msgid "Upgrade to WP Shopify Pro"
+msgstr "Aktualisieren Sie auf WP Shopify Pro"
+
+#: admin/partials/wps-tab-content-updates-pro.php:11
+msgid ""
+"WP Shopify Pro comes packed with a ton of useful features like over 80+ "
+"templates, automatic syncing, order / customer data and more! <a href="
+"\"https://wpshop.io/purchase\" target=\"_blank\">Take your store to the next "
+"level today.</a>"
+msgstr ""
+"WP Shopify Pro bietet eine Vielzahl nützlicher Funktionen wie über 80 "
+"Vorlagen, automatische Synchronisierung, Bestell- / Kundendaten und vieles "
+"mehr! <a href=“https://wpshop.io/purchase” target=“_blank”> Bringen Sie "
+"Ihren Shop noch heute auf die nächste Stufe. </a>"
+
+#: admin/partials/wps-tabs.php:4
+msgid "Connect"
+msgstr "Verbinden"
+
+#: admin/partials/wps-tabs.php:8 classes/class-backend.php:346
+#: classes/class-backend.php:379
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: admin/partials/wps-tabs.php:20
+msgid "Debug"
+msgstr "Debug"
+
+#: classes/class-cpt.php:124
+msgctxt "Post Type General Name"
+msgid "Products"
+msgstr "Produkte"
+
+#: classes/class-cpt.php:125
+msgctxt "Post Type Singular Name"
+msgid "Product"
+msgstr "Produkt"
+
+#: classes/class-cpt.php:127 classes/class-cpt.php:194
+msgid "Parent Item:"
+msgstr "Übergeordnetes Element:"
+
+#: classes/class-cpt.php:128
+msgid "Add New Product"
+msgstr "Neues Produkt hinzufügen"
+
+#: classes/class-cpt.php:129
+msgid "Edit Product"
+msgstr "Produkt bearbeiten"
+
+#: classes/class-cpt.php:130
+msgid "No Products found"
+msgstr "Keine Produkte gefunden"
+
+#: classes/class-cpt.php:131
+msgid "No Products found in trash"
+msgstr "Keine Produkte im Papierkorb gefunden"
+
+#: classes/class-cpt.php:136
+msgid "Custom Post Type for Products"
+msgstr "Individuelle Postart für Produkte"
+
+#: classes/class-cpt.php:191
+msgctxt "Post Type General Name"
+msgid "Collections"
+msgstr "Sammlungen"
+
+#: classes/class-cpt.php:192
+msgctxt "Post Type Singular Name"
+msgid "Collection"
+msgstr "Sammlung"
+
+#: classes/class-cpt.php:195
+msgid "Add New Collection"
+msgstr "Neue Sammlung erstellen"
+
+#: classes/class-cpt.php:196
+msgid "Edit Collection"
+msgstr "Sammlung bearbeiten"
+
+#: classes/class-cpt.php:197
+msgid "No Collections found"
+msgstr "Keine Sammlungen gefunden"
+
+#: classes/class-cpt.php:198
+msgid "No Collections found in trash"
+msgstr "Keine Sammlungen im Müll gefunden"
+
+#: classes/class-cpt.php:203
+msgid "Custom Post Type for Collections"
+msgstr "Maßgeschneiderter Posttyp für Sammlungen"
+
+#: classes/class-messages.php:215
+msgid ""
+"WP Shopify Warning: Any custom changes made to the post title or post "
+"content could potentially be erased as a result of resyncing. Consider "
+"making changes to these fields within Shopify instead. Custom fields added "
+"either natively by WordPress or through plugins like ACF will NOT be erased "
+"upon re-sync."
+msgstr ""
+"WP Shopify Warnung: Alle benutzerdefinierten Änderungen am Post-Titel oder "
+"dem Post-Inhalt könnten möglicherweise als Folge eines Resynchings gelöscht "
+"werden. Erwägen Sie stattdessen, diese Felder innerhalb von Shopify zu "
+"ändern. Kundenspezifische Felder, die entweder nativ von WordPress oder "
+"durch Plugins wie ACF hinzugefügt werden, werden NICHT gelöscht, wenn re-"
+"sync."
+
+#: classes/class-messages.php:217
+msgid ""
+"WP Shopify Warning: It looks like your Shopify private app has been deleted! "
+"WP Shopify won't continue to work until you create a new one. Disconnect "
+"your current store from the Connect tab to clear the old connection and then "
+"enter your new credentials."
+msgstr ""
+"WP Shopify Warnung: Es sieht so aus, als ob Ihre Shopify-Privatapp gelöscht "
+"wurde! WP Shopify wird nicht weiter funktionieren, bis Sie ein neues "
+"erstellen. Trennen Sie Ihren aktuellen Speicher von der Registerkarte "
+"Connect, um die alte Verbindung zu löschen und dann Ihre neuen "
+"Berechtigungen einzugeben."
+
+#: classes/class-messages.php:219
+msgid ""
+"WP Shopify Warning: You need to migrate your database tables to the new "
+"version of WP Shopify. It's important that you do this before using the "
+"plugin or you will encounter errors. <a href=\""
+msgstr ""
+"WP Shopify Warnung: Sie müssen Ihre Datenbanktabellen in die neue Version "
+"von WP Shopify migrieren. Es ist wichtig, dass Sie dies tun, bevor Sie das "
+"Plugin verwenden, oder Sie werden auf Fehler stoßen. <a href = \""
+
+#: classes/class-messages.php:227
+msgid ""
+"Sorry, a secure connection could not be established with the store. Please "
+"try clearing your browser cache and reloading the page."
+msgstr ""
+"Eine sichere Verbindung mit dem Laden konnte leider nicht hergestellt "
+"werden. Bitte versuchen Sie, Ihren Browser-Cache zu löschen und die Seite "
+"neu zu laden."
+
+#: classes/class-messages.php:235
+msgid "WP Shopify Warning: Unable to cache checkout."
+msgstr "WP Shopify Warnung: Nicht in der Lage, den Checkout zu speichern."
+
+#: classes/class-messages.php:236
+msgid "WP Shopify Warning: Can't find checkout id to cache."
+msgstr "WP Shopify Warnung: Kann nicht finden, Checkout ID zum Cache."
+
+#: classes/class-messages.php:237
+msgid "WP Shopify Warning: Unable to delete single product cache."
+msgstr "WP Shopify Warnung: Nicht in der Lage, einzelne Produkte zu löschen."
+
+#: classes/class-messages.php:238
+msgid "WP Shopify Warning: Unable to delete single product images cache."
+msgstr ""
+"WP Shopify Warnung: Nicht in der Lage, einzelne Produktbilder zu löschen."
+
+#: classes/class-messages.php:239
+msgid "WP Shopify Warning: Unable to delete single product tags cache."
+msgstr ""
+"WP Shopify Warnung: Nicht in der Lage, einzelne Produkttags zu löschen."
+
+#: classes/class-messages.php:240
+msgid "WP Shopify Warning: Unable to delete single product variants cache."
+msgstr ""
+"WP Shopify Warnung: Nicht in der Lage, einzelne Produktvarianten zu löschen."
+
+#: classes/class-messages.php:241
+msgid "WP Shopify Warning: Unable to delete single product options cache."
+msgstr ""
+"WP Shopify Warnung: Nicht in der Lage, einzelne Produktoptionen zu löschen."
+
+#: classes/class-messages.php:242
+msgid "WP Shopify Warning: Unable to delete cached product prices."
+msgstr ""
+"WP Shopify Warnung: Nicht in der Lage, gespeicherte Produktpreise zu löschen."
+
+#: classes/class-messages.php:243
+msgid "WP Shopify Warning: Unable to delete cached settings."
+msgstr ""
+"WP Shopify Warnung: Nicht in der Lage, zwischengespeicherte Einstellungen zu "
+"löschen."
+
+#: classes/class-messages.php:244
+msgid "WP Shopify Warning: Unable to delete cached admin notices."
+msgstr ""
+"WP Shopify Warnung: Nicht in der Lage, zwischengespeicherte Admin-Hinweise "
+"zu löschen."
+
+#: classes/class-messages.php:245
+msgid "WP Shopify Warning: Unable to delete cached connection."
+msgstr ""
+"WP Shopify Warnung: Nicht in der Lage, zwischengespeicherte Verbindung zu "
+"löschen."
+
+#: classes/class-messages.php:246
+msgid "WP Shopify Warning: Unable to delete cached collection queries."
+msgstr ""
+"WP Shopify Warnung: Nicht in der Lage, zwischengespeicherte Abfragen zu "
+"löschen."
+
+#: classes/class-messages.php:247
+msgid "WP Shopify Warning: Unable to delete single cached collection."
+msgstr ""
+"WP Shopify Warnung: Nicht in der Lage, einzelne zwischengespeicherte "
+"Sammlung zu löschen."
+
+#: classes/class-messages.php:248
+msgid "WP Shopify Warning: Unable to delete all cached single collections."
+msgstr ""
+"WP Shopify Warnung: Nicht in der Lage, alle zwischengespeicherten "
+"Einzelsammlungen zu löschen."
+
+#: classes/class-messages.php:249
+msgid "WP Shopify Warning: Unable to delete cached product queries."
+msgstr ""
+"WP Shopify Warnung: Nicht in der Lage, zwischengespeicherte Produktabfragen "
+"zu löschen."
+
+#: classes/class-messages.php:250
+msgid "WP Shopify Warning: Unable to delete all cache, please try again."
+msgstr ""
+"WP Shopify Warnung: Nicht in der Lage, alle Cache zu löschen, versuchen Sie "
+"es bitte erneut."
+
+#: classes/class-messages.php:251
+msgid ""
+"WP Shopify Warning: Unable to delete general plugin cache, please try again."
+msgstr ""
+"WP Shopify Warnung: Nicht in der Lage, den allgemeinen Plugin-Cache zu "
+"löschen, versuchen Sie es bitte noch einmal."
+
+#: classes/class-messages.php:252
+msgid ""
+"WP Shopify Warning: Unable to delete single product data cache. Make sure to "
+"manually clear via WP Shopify - Tools."
+msgstr ""
+"WP Shopify Warnung: Nicht in der Lage, einzelne Produktdaten-Cache zu "
+"löschen. Achten Sie darauf, manuell über WP Shopify-Tools zu löschen."
+
+#: classes/class-messages.php:253
+msgid ""
+"<b>Error:</b> Your request has been rejected for security reasons. Please "
+"clear your browser cache and try again."
+msgstr ""
+"<b>Fehler:</b> Ihr Antrag wurde aus Sicherheitsgründen abgelehnt. Bitte "
+"löschen Sie Ihren Browser-Cache und versuchen Sie es erneut."
+
+#: classes/class-messages.php:254
+msgid "<b>Error:</b> Syncing canceled early. Please refresh the page."
+msgstr ""
+"<b>Fehler:</b> Synchronisation vorzeitig abgesagt Bitte aktualisieren Sie "
+"die Seite."
+
+#: classes/class-messages.php:255
+msgid ""
+"<b>Error:</b> No connection details found. Please try reconnecting your "
+"Shopify store."
+msgstr ""
+"<b>Fehler:</b> Keine Verbindungsdetails gefunden. Bitte versuchen Sie, Ihren "
+"Shopify-Store wieder anzuschließen."
+
+#: classes/class-messages.php:256
+msgid ""
+"<b>Error:</b> Unable to save Shopify connection details. Please refresh your "
+"browser and try again."
+msgstr ""
+"<b>Fehler:</b> Nicht in der Lage, Shopify-Verbindungsdetails zu speichern. "
+"Bitte aktualisieren Sie Ihren Browser und versuchen Sie es erneut."
+
+#: classes/class-messages.php:257
+msgid ""
+"<b>Error:</b> Invalid storefront access token. Double check your credentials "
+"and try again."
+msgstr ""
+"<b>Fehler:</b> Ungültiges Schaufenster-Zugriffszeichen. Überprüfen Sie Ihre "
+"Referenzen und versuchen Sie es erneut."
+
+#: classes/class-messages.php:258
+msgid ""
+"<b>Error:</b> Unable to disconnect Shopify store. Missing or invalid access "
+"token."
+msgstr ""
+"<b>Fehler:</b> Nicht in der Lage, Shopify-Speicher zu trennen. Fehlende oder "
+"ungültige Zugangsdaten."
+
+#: classes/class-messages.php:259
+msgid "<b>Error:</b> Syncing canceled early at insert_products()."
+msgstr "<b>Fehler:</b> Synchronisation früh bei insert _ products ()."
+
+#: classes/class-messages.php:260
+msgid "<b>Error:</b> Syncing canceled early at insert_variants()."
+msgstr "<b>Fehler:</b> Synchronisation bei insert _ variants ()."
+
+#: classes/class-messages.php:261
+msgid "<b>Error:</b> Syncing canceled early at insert_options()."
+msgstr "<b>Fehler:</b> Synchronisation vorzeitig bei insert _ options ()."
+
+#: classes/class-messages.php:262
+msgid "<b>Error:</b> Syncing canceled early at insert_orders()."
+msgstr "<b>Fehler:</b> Synchronisation vorzeitig bei insert _ orders ()."
+
+#: classes/class-messages.php:263
+msgid "<b>Error:</b> Syncing canceled early at insert_images()."
+msgstr "<b>Fehler:</b> Synchronisation vorzeitig bei insert _ images ()."
+
+#: classes/class-messages.php:264
+msgid "<b>Error:</b> Syncing canceled early at insert_customers()."
+msgstr "<b>Fehler:</b> Synchronisation vorzeitig bei insert _ customers ()."
+
+#: classes/class-messages.php:266
+msgid "<b>Warning:</b> Unable to delete shop data."
+msgstr "<b>Warnung:</b> Nicht in der Lage, Shop-Daten zu löschen."
+
+#: classes/class-messages.php:267
+msgid "<b>Warning:</b> Unable to delete connection settings."
+msgstr ""
+"<b>Warnung:</b> Nicht in der Lage, Verbindungseinstellungen zu löschen."
+
+#: classes/class-messages.php:268
+msgid ""
+"<b>Warning:</b> Some products custom post types could not be deleted. Please "
+"try again."
+msgstr ""
+"<b>Warnung:</b> Einige Produkte kundenspezifische Post-Typen konnten nicht "
+"gelöscht werden. Bitte versuchen Sie es noch einmal."
+
+#: classes/class-messages.php:269
+msgid ""
+"<b>Warning:</b> Some collections custom post types could not be deleted. "
+"Please try again."
+msgstr ""
+"<b>Warnung:</b> Einige Sammlungen kundenspezifische Post-Typen konnten nicht "
+"gelöscht werden. Bitte versuchen Sie es noch einmal."
+
+#: classes/class-messages.php:270
+msgid "<b>Warning:</b> Unable to delete product images."
+msgstr "<b>Warnung:</b> Nicht in der Lage, Produktbilder zu löschen."
+
+#: classes/class-messages.php:271
+msgid "<b>Warning:</b> Unable to delete product inventory."
+msgstr "<b>Warnung:</b> Nicht in der Lage, Produktinventar zu löschen."
+
+#: classes/class-messages.php:272
+msgid "<b>Warning:</b> Unable to delete collects."
+msgstr "<b>Warnung:</b> Nicht in der Lage, Sammlungen zu löschen."
+
+#: classes/class-messages.php:273
+msgid "<b>Warning:</b> Unable to insert certain collects."
+msgstr "<b>Warnung:</b> Nicht in der Lage, bestimmte Sammlungen einzufügen."
+
+#: classes/class-messages.php:274
+msgid "<b>Warning:</b> Unable to insert certain collects, none found."
+msgstr ""
+"<b>Warnung:</b> Nicht in der Lage, bestimmte Sammlungen einzufügen, keine "
+"gefunden."
+
+#: classes/class-messages.php:275
+msgid "<b>Warning:</b> Unable to delete product tags."
+msgstr "<b>Warnung:</b> Nicht in der Lage, Produkttags zu löschen."
+
+#: classes/class-messages.php:276
+msgid "<b>Warning:</b> Unable to delete product options."
+msgstr "<b>Warnung:</b> Nicht in der Lage, Produktoptionen zu löschen."
+
+#: classes/class-messages.php:277
+msgid "<b>Warning:</b> Unable to delete product variants."
+msgstr "<b>Warnung:</b> Nicht in der Lage, Produktvarianten zu löschen."
+
+#: classes/class-messages.php:278
+msgid "<b>Warning:</b> Unable to delete products."
+msgstr "<b>Warnung:</b> Nicht in der Lage, Produkte zu löschen."
+
+#: classes/class-messages.php:279
+msgid "<b>Warning:</b> Unable to delete custom collections."
+msgstr ""
+"<b>Warnung:</b> Nicht in der Lage, kundenspezifische Sammlungen zu löschen."
+
+#: classes/class-messages.php:280
+msgid "<b>Warning:</b> Unable to insert certain custom collections."
+msgstr ""
+"<b>Warnung:</b> Nicht in der Lage, bestimmte eigene Sammlungen einzufügen."
+
+#: classes/class-messages.php:281
+msgid "<b>Warning:</b> Unable to delete smart collections."
+msgstr "<b>Warnung:</b> Nicht in der Lage, intelligente Sammlungen zu löschen."
+
+#: classes/class-messages.php:282
+msgid "<b>Warning:</b> Unable to insert certain smart collections."
+msgstr ""
+"<b>Warnung:</b> Nicht in der Lage, bestimmte intelligente Kollektionen "
+"einzufügen."
+
+#: classes/class-messages.php:283
+msgid "<b>Warning:</b> Unable to delete orders."
+msgstr "<b>Warnung:</b> Nicht in der Lage, Aufträge zu löschen."
+
+#: classes/class-messages.php:284
+msgid "<b>Warning:</b> Unable to delete customers."
+msgstr "<b>Warnung:</b> Nicht in der Lage, Kunden zu löschen."
+
+#: classes/class-messages.php:285
+msgid "<b>Error:</b> Currency format not found. Please try again."
+msgstr ""
+"<b>Fehler:</b> Währungsformat nicht gefunden. Bitte versuchen Sie es noch "
+"einmal."
+
+#: classes/class-messages.php:286
+msgid ""
+"Sorry, this product variant is out of stock. Please choose another "
+"combination."
+msgstr ""
+"Leider ist diese Produktvariante nicht mehr lieferbar. Bitte wählen Sie eine "
+"andere Kombination."
+
+#: classes/class-messages.php:287
+msgid ""
+"<b>Error:</b> Selected option(s) aren't available. Please select a different "
+"combination."
+msgstr ""
+"<b>Fehler:</b> Ausgewählte Optionen sind nicht verfügbar. Bitte wählen Sie "
+"eine andere Kombination."
+
+#: classes/class-messages.php:288
+msgid "<b>Error:</b> Unable to find selected options. Please try again."
+msgstr ""
+"<b>Fehler:</b> Nicht in der Lage, ausgewählte Optionen zu finden. Bitte "
+"versuchen Sie es noch einmal."
+
+#: classes/class-messages.php:289
+msgid ""
+"<b>Error:</b> No webhook ID set. Please try reconnecting WordPress to your "
+"Shopify site."
+msgstr ""
+"<b>Fehler:</b> Kein Webhook-ID-Set. Bitte versuchen Sie, WordPress wieder "
+"mit Ihrer Shopify-Website zu verbinden."
+
+#: classes/class-messages.php:290
+msgid "<b>Error:</b> Unable to remove webhook"
+msgstr "<b>Fehler:</b> Webhook nicht entfernen"
+
+#: classes/class-messages.php:291
+msgid "<b>Warning:</b> Unable to sync webhook: "
+msgstr "<b> Warnung:</b> Webhook kann nicht synchronisiert werden "
+
+#: classes/class-messages.php:292
+msgid ""
+"<b>Error:</b> This license key is either missing or invalid. Please verify "
+"your key by logging into your account at wpshop.io."
+msgstr ""
+"<b>Fehler:</b> Dieser Lizenzschlüssel fehlt oder ist ungültig. Bitte "
+"überprüfen Sie Ihren Schlüssel, indem Sie sich bei wpshop.io."
+
+#: classes/class-messages.php:293
+msgid ""
+"<b>Error:</b> Unable to delete license key. Please refresh your browser and "
+"try again."
+msgstr ""
+"<b>Fehler:</b> Nicht in der Lage, Lizenzschlüssel zu löschen. Bitte "
+"aktualisieren Sie Ihren Browser und versuchen Sie es erneut."
+
+#: classes/class-messages.php:294
+msgid "<b>Warning:</b> Unable to sync smart collections, none found."
+msgstr ""
+"<b>Warnung:</b> Da es nicht in der Lage ist, intelligente Kollektionen zu "
+"synchronisieren, fand man keine."
+
+#: classes/class-messages.php:315
+msgid "<b>Warning:</b> Unable to sync custom collections, none found."
+msgstr ""
+"<b>Warnung:</b> Nicht in der Lage, eigene Kollektionen zu synchronisieren, "
+"keine gefunden."
+
+#: classes/class-messages.php:316
+msgid "<b>Warning:</b> Unable to sync orders, none found."
+msgstr ""
+"<b>Warnung:</b> Da es nicht in der Lage ist, Aufträge zu synchronisieren, "
+"wurde keine gefunden."
+
+#: classes/class-messages.php:317
+msgid "<b>Warning:</b> Unable to sync customers, none found."
+msgstr ""
+"<b>Warnung:</b> Nicht in der Lage, Kunden zu synchronisieren, fand keiner."
+
+#: classes/class-messages.php:318
+msgid "<b>Warning:</b> Unable to sync products, none found."
+msgstr ""
+"<b>Warnung:</b> Da es nicht möglich ist, Produkte zu synchronisieren, fand "
+"man keine."
+
+#: classes/class-messages.php:319
+msgid "<b>Warning:</b> Unable to find products attached to any collections."
+msgstr ""
+"<b>Warnung:</b> Nicht in der Lage, Produkte zu finden, die an irgendwelche "
+"Sammlungen angehängt sind."
+
+#: classes/class-messages.php:320
+msgid "<b>Warning:</b> Unable to sync variants, none found."
+msgstr ""
+"<b>Warnung:</b> Da es nicht möglich ist, Varianten zu synchronisieren, wurde "
+"keine gefunden."
+
+#: classes/class-messages.php:321
+msgid "<b>Warning:</b> Unable to sync webhooks, none found."
+msgstr ""
+"<b>Warnung:</b> Nicht in der Lage, Webhooks zu synchronisieren, keine "
+"gefunden."
+
+#: classes/class-messages.php:322
+msgid "<b>Warning:</b> Unable to sync collects, none found."
+msgstr ""
+"<b>Warnung:</b> Nicht in der Lage, Sammlungen zu synchronisieren, keine "
+"gefunden."
+
+#: classes/class-messages.php:323
+msgid "<b>Warning:</b> Unable to sync 1 or more orders."
+msgstr ""
+"<b>Warnung:</b> Nicht in der Lage, 1 oder mehr Aufträge zu synchronisieren."
+
+#: classes/class-messages.php:331
+msgid "<b>400 Error:</b> The request was not understood by the server. "
+msgstr "<b>400 Fehler:</b> Die Anfrage wurde vom Server nicht verstanden "
+
+#: classes/class-messages.php:332
+msgid ""
+"<b>401 Error:</b> The necessary authentication credentials are not present "
+"in the request or are incorrect. "
+msgstr ""
+"<b>401 Fehler:</b> Die notwendigen Authentifizierungsdaten sind in der "
+"Anfrage nicht vorhanden oder falsch "
+
+#: classes/class-messages.php:333
+msgid "<b>402 Error:</b> The requested shop is currently frozen. "
+msgstr "<b>402 Fehler:</b> Der angeforderte Laden ist derzeit eingefroren "
+
+#: classes/class-messages.php:334
+msgid ""
+"<b>403 Error:</b> The server is refusing to respond to the request. This is "
+"generally because you have not requested the appropriate scope for this "
+"action. "
+msgstr ""
+"<b>403 Fehler:</b> Der Server weigert sich, auf die Anfrage zu reagieren. "
+"Das liegt im Allgemeinen daran, dass Sie nicht den entsprechenden Spielraum "
+"für diese Aktion gefordert haben "
+
+#: classes/class-messages.php:335
+msgid "<b>404 Error:</b> The requested resource was not found. "
+msgstr "<b>404 Fehler:</b> Die angeforderte Ressource wurde nicht gefunden "
+
+#: classes/class-messages.php:336
+msgid ""
+"<b>406 Error:</b> The requested resource contained the wrong HTTP method or "
+"an invalid URL. "
+msgstr ""
+"<b> 406 Error:</b> Die angeforderte Ressource enthielt die falsche HTTP-"
+"Methode oder eine ungültige URL "
+
+#: classes/class-messages.php:337
+msgid ""
+"<b>422 Error:</b> The request body was well-formed but contains semantical "
+"errors. "
+msgstr ""
+"<b> 422 Fehler:</b> Der Anfragekörper war gut geformt, enthält aber "
+"semantische Fehler "
+
+#: classes/class-messages.php:339
+msgid ""
+"<p class=\"wps-syncing-error-message\"><b>400 Error:</b> The request "
+"endpoint was mal-formed.</p>"
+msgstr ""
+"<p class=\"Wps-syncing-error-message\" > <b> 400 Error:</b> Der "
+"Anfrageendpunkt wurde mal-gebildet. </p>"
+
+#: classes/class-messages.php:342
+msgid ""
+"<p class=\"wps-syncing-docs-check\">🔮 Please check our documentation for <a "
+"href=\"https://wpshop.io/docs/syncing-errors\" target=\"_blank\">possible "
+"solutions to this specific error.</a></p>"
+msgstr ""
+"<p class=\"wps-syncing-docs-check\" > 🔮 Bitte prüfen Sie unsere "
+"Dokumentation für <a href = \"https://wpshop.io/docs/Syncing-errors\" target "
+"= \"_ blank\" > mögliche Lösungen für diesen speziellen Fehler. </a> </p>"
+
+#: classes/class-messages.php:345
+msgid ""
+"<p class=\"wps-syncing-error-message\"><b>413 Error:</b> The Shopify data is "
+"too large for your server to handle.</p>"
+msgstr ""
+"<p-Sclass = \"Wps-Syncing-Fehlermeldung\" > <b> 413 Fehler:</b> Die Shopify-"
+"Daten sind zu groß, als dass Ihr Server damit umgehen könnte. </p>"
+
+#: classes/class-messages.php:349
+msgid ""
+"<b>429 Error:</b> The request was not accepted because the application has "
+"exceeded the rate limit. See the API Call Limit documentation for a "
+"breakdown of Shopify's rate-limiting mechanism."
+msgstr ""
+"<b> 429 Fehler:</b> Der Antrag wurde nicht angenommen, weil der Antrag die "
+"Tarifgrenze überschritten hat. Sehen Sie sich die API Call Limit-"
+"Dokumentation an, um den Mechanismus zur Geschwindigkeitsbegrenzung von "
+"Shopify zu brechen."
+
+#: classes/class-messages.php:350
+msgid "<b>500 Error:</b> An internal error occurred at Shopify. "
+msgstr "<b> 500 Fehler:</b> Bei Shopify ist ein interner Fehler aufgetreten "
+
+#: classes/class-messages.php:351
+msgid ""
+"<b>501 Error:</b> The requested endpoint is not available on that particular "
+"shop. "
+msgstr ""
+"<b> 501 Fehler:</b> Der angeforderte Endpunkt ist in diesem Shop nicht "
+"verfügbar "
+
+#: classes/class-messages.php:352
+msgid ""
+"<b>503 Error:</b> The server is currently unavailable. Check the Shopify <a "
+"href=\"https://status.shopify.com/\" target=\"_blank\">status page</a> for "
+"reported service outages. "
+msgstr ""
+"<b> 503 Fehler:</b> Der Server ist derzeit nicht verfügbar. Überprüfen Sie "
+"den Shopify <a href = \"https://status.shopify.com/\" target = \"_ blank\" > "
+"Statusseite </a> für gemeldete Service-Ausfälle "
+
+#: classes/class-messages.php:353
+msgid "<b>504 Error:</b> The request could not complete in time. "
+msgstr ""
+"<b> 504 Fehler:</b> Der Antrag konnte nicht rechtzeitig abgeschlossen werden "
+
+#: classes/class-messages.php:354
+msgid ""
+"<b>Error:</b> An unknown Shopify API response was received during syncing. "
+"Please try disconnecting and reconnecting your store. "
+msgstr ""
+"<b> Fehler:</b> Eine unbekannte Shopify-API-Antwort wurde während der "
+"Synchronisation empfangen. Bitte versuchen Sie, Ihren Laden zu trennen und "
+"wieder anzuschließen "
+
+#: classes/class-messages.php:355
+msgid ""
+"<b>521 Error:</b> Unable to establish an active connection with the web "
+"server. "
+msgstr ""
+"<b> 521 Fehler:</b> Nicht in der Lage, eine aktive Verbindung mit dem "
+"Webserver herzustellen "
+
+#: classes/class-messages.php:356
+msgid ""
+"Failed to update sync status during the syncing process. Please clear the "
+"plugin transient cache and try again. "
+msgstr ""
+"Es ist gescheitert, den Sync-Status während des Synchronisationsprozesses zu "
+"aktualisieren. Bitte löschen Sie das Plugin Transient Cache und versuchen "
+"Sie es erneut "
+
+#: classes/class-messages.php:364
+msgid ""
+"<b>Warning:</b> Some collects were possibly missed during the syncing "
+"process. If you notice any absent content, try clearing the plugin cache and "
+"resync."
+msgstr ""
+"<b>Warnung:</b> Einige Sammlungen wurden möglicherweise während des "
+"Synchronisierungsprozesses verpasst. Wenn Sie einen abwesenden Inhalt "
+"bemerken, versuchen Sie, den Plugin-Cache und resync zu löschen."
+
+#: classes/class-messages.php:366
+msgid ""
+"<b>Warning:</b> Some products were possibly missed during the syncing "
+"process. If you notice any absent content, try clearing the plugin cache and "
+"resync."
+msgstr ""
+"<b>Warnung:</b> Einige Produkte wurden möglicherweise während des "
+"Synchronisierungsprozesses verpasst. Wenn Sie einen abwesenden Inhalt "
+"bemerken, versuchen Sie, den Plugin-Cache und resync zu löschen."
+
+#: classes/class-messages.php:368
+msgid ""
+"<b>Warning:</b> Some product ids were possibly missing during the syncing "
+"process. If you notice any absent content, try clearing the plugin cache and "
+"resync."
+msgstr ""
+"<b>Warnung:</b> Einige Produktidezünder fehlten möglicherweise während des "
+"Synchronisierungsprozesses. Wenn Sie einen abwesenden Inhalt bemerken, "
+"versuchen Sie, den Plugin-Cache und resync zu löschen."
+
+#: classes/class-messages.php:371
+msgid ""
+"<b>Warning:</b> Some general shop data was possibly missed during the "
+"syncing process. If you notice any absent content, try clearing the plugin "
+"cache and resync."
+msgstr ""
+"<b>Warnung:</b> Einige allgemeine Shop-Daten wurden möglicherweise während "
+"des Synchronisierungsprozesses verpasst. Wenn Sie einen abwesenden Inhalt "
+"bemerken, versuchen Sie, den Plugin-Cache und resync zu löschen."
+
+#: classes/class-messages.php:372
+msgid ""
+"<b>Warning:</b> Some orders were possibly missed during the syncing process. "
+"If you notice any absent content, try clearing the plugin cache and resync."
+msgstr ""
+"<b>Warnung:</b> Einige Aufträge wurden möglicherweise während des "
+"Synchronisierungsprozesses verpasst. Wenn Sie einen abwesenden Inhalt "
+"bemerken, versuchen Sie, den Plugin-Cache und resync zu löschen."
+
+#: classes/class-messages.php:373
+msgid ""
+"<b>Warning:</b> Some customers were possibly missed during the syncing "
+"process. If you notice any absent content, try clearing the plugin cache and "
+"resync."
+msgstr ""
+"<b>Warnung:</b> Einige Kunden wurden möglicherweise während des "
+"Synchronisierungsprozesses verpasst. Wenn Sie einen abwesenden Inhalt "
+"bemerken, versuchen Sie, den Plugin-Cache und resync zu löschen."
+
+#: classes/class-messages.php:374
+msgid ""
+"<b>Warning:</b> Some collections were possibly missed during the syncing "
+"process. If you notice any absent content, try clearing the plugin cache and "
+"resync."
+msgstr ""
+"<b>Warnung:</b> Einige Sammlungen wurden möglicherweise während des "
+"Synchronisierungsprozesses verpasst. Wenn Sie einen abwesenden Inhalt "
+"bemerken, versuchen Sie, den Plugin-Cache und resync zu löschen."
+
+#: classes/class-messages.php:376
+msgid ""
+"<b>Warning:</b> Some webhooks were possibly missed during the syncing "
+"process. If you notice any content not syncing automatically, try using the "
+"\"Reconnect Automatic Syncing\" tool."
+msgstr ""
+"<b>Warnung:</b> Einige Webhooks wurden möglicherweise während des "
+"Synchronisierungsprozesses verpasst. Wenn Sie bemerken, dass Inhalte nicht "
+"automatisch synchronisiert werden, versuchen Sie es mit dem Tool \"Reconnect "
+"Automatic Syncing\"."
+
+#: classes/class-messages.php:386
+msgid "Please make sure you've entered your Shopify domain."
+msgstr ""
+"Bitte stellen Sie sicher, dass Sie Ihre Shopify-Domain eingegeben haben."
+
+#: classes/class-messages.php:394
+msgid ""
+"<b>Database Error:</b> The data you're trying to sync is too large for the "
+"database to handle. Try adjusting the \"Items per request\" option within "
+"the plugin settings."
+msgstr ""
+"<b> Datenbankfehler:</b> Die Daten, die Sie synchronisieren wollen, sind zu "
+"groß, als dass die Datenbank verarbeitet werden könnte. Versuchen Sie, die "
+"Option \"Elemente pro Anfrage\" in den Plug-In-Einstellungen anzupassen."
+
+#: classes/class-messages.php:396
+msgid ""
+"<p class=\"wps-syncing-error-message\"><b>Server Error:</b> The maximum "
+"amount of server memory was exceeded.</p>"
+msgstr ""
+"<p class=“wps-syncing-error-message”><b>Serverfehler:</b> Die maximale Menge "
+"an Serverspeicher wurde überschritten.</p>"
+
+#: classes/class-messages.php:399
+msgid ""
+"<p class=\"wps-syncing-error-message\"><b>Database Error:</b> Unable to "
+"create migration table.</p>"
+msgstr ""
+"<p class=“wps-syncing-error-message”><b>Datenbankfehler: </b> Es konnte "
+"keine Migrationstabelle erstellt werden.</p>"
+
+#: classes/class-messages.php:401
+msgid ""
+"<p class=\"wps-syncing-error-message\"><b>Database Error:</b> Unable to "
+"create migration table as it already exists.</p>"
+msgstr ""
+"<p class=\"wps-syncing-error-message\"><b>Database-Fehler:</b> Nicht in der "
+"Lage, Migrationstabelle zu erstellen, wie sie bereits existiert. </p>"
+
+#: classes/class-messages.php:403
+msgid ""
+"<p class=\"wps-syncing-error-message\"><b>Database Error:</b> Unable to find "
+"charset for table:</p>"
+msgstr ""
+"<p class=\"wps-syncing-error-message\"><b> Datenbankfehler:</b> Nicht in der "
+"Lage, Charset für Tabelle zu finden: </p>"
+
+#: classes/class-messages.php:405
+msgid ""
+"<p class=\"wps-syncing-error-message\"><b>Type Error:</b> Unabled to convert "
+"data type to Object.</p>"
+msgstr ""
+"<p class=\"wps-syncing-error-message\" > <b> Typenfehler:</b> Nicht in der "
+"Lage, den Datentyp in Objekt zu konvertieren. </p>"
+
+#: classes/class-messages.php:407
+msgid ""
+"<p class=\"wps-syncing-error-message\"><b>Type Error:</b> Unabled to convert "
+"data type to Array.</p>"
+msgstr ""
+"<p class=\"wps-syncing-error-message\"><b> Typenfehler:</b> nicht in den </"
+"p> konvertiert, um den Datentyp in Array zu konvertieren"
+
+#: classes/class-messages.php:410
+msgid ""
+"<p class=\"wps-syncing-error-message\"><b>HTTP Error:</b> Request URL not "
+"found.</p>"
+msgstr ""
+"<p class=\"wps-syncing-error-message\"><b> HTTP-Fehler:</b> Request URL "
+"nicht gefunden </p>"
+
+#: classes/class-messages.php:425
+msgid "<b>Warning:</b> No Smart Collections were found during sync."
+msgstr ""
+"<b>Warnung:</b> Es wurden keine Smart Collections während der "
+"Synchronisation gefunden."
+
+#: classes/class-messages.php:427
+msgid "<b>Warning:</b> No Custom Collections were found during sync."
+msgstr ""
+"<b>Warnung:</b> Es wurden keine benutzerdefinierten Sammlungen während der "
+"Synchronisation gefunden."
+
+#: classes/class-messages.php:429
+msgid "<b>Warning:</b> No Shop data was found during sync."
+msgstr ""
+"<b>Warnung:</b> Es wurden keine Shop-Daten während der Synchronisation "
+"gefunden."
+
+#: classes/class-messages.php:431
+msgid "<b>Warning:</b> No Products were found during sync."
+msgstr ""
+"<b>Warnung:</b> Es wurden keine Produkte gefunden, die während der "
+"Synchronisation gefunden wurden."
+
+#: classes/class-messages.php:433
+msgid "<b>Warning:</b> No Collects were found during sync."
+msgstr ""
+"<b>Warnung:</b> Es wurden keine Kollekte gefunden, die während der "
+"Synchronisation gefunden wurden."
+
+#: classes/class-messages.php:435
+msgid "<b>Warning:</b> No Orders were found during sync."
+msgstr ""
+"<b>Warnung:</b> Während der Synchronisation wurden keine Bestellungen "
+"gefunden."
+
+#: classes/class-messages.php:437
+msgid "<b>Warning:</b> No Customers were found during sync."
+msgstr ""
+"<b>Warnung:</b> Es wurden keine Kunden während der Synchronisation gefunden."
+
+#: classes/class-messages.php:439
+msgid "<b>Warning:</b> Failed to assign Post ID  "
+msgstr "<b> Warnung:</b> Es ist nicht gescheitert, die Post-ID zuzuweisen "
+
+#: classes/class-messages.php:441
+msgid "<b>Warning:</b> Failed to assign Shopify ID "
+msgstr "<b> Warnung:</b> Es ist nicht gescheitert, die Shopify-ID zuzuweisen "
+
+#: classes/class-messages.php:443
+msgid "<b>Error:</b> The WordPress Cron is disabled."
+msgstr "<b>Fehler:</b> Der WordPress Cron ist deaktiviert."
+
+#: classes/class-messages.php:445
+msgid "<b>Error:</b> Failed to save batch during processing. "
+msgstr ""
+"<b>Fehler:</b> Es ist nicht möglich, Chargen während der Verarbeitung zu "
+"speichern "
+
+#: classes/class-templates.php:227
+#: classes/render/products/class-pre-render-pricing.php:57
+msgid "From: "
+msgstr "Von: "
+
+#: classes/class-updater.php:92
+#, php-format
+msgid ""
+"Make sure to <a href=\"%1$sadmin.php?page=wps-"
+"settings&tab=updates&activetab=tab-license\">activate your license key</a> "
+"to receive plugin updates."
+msgstr ""
+"Vergewissern Sie sich, dass <ein href=\"%1$sadmin.php?page=wps-Einstellungen "
+"& tab = updates & activetab = Tab-Lizenz\" > Ihren Lizenzschlüssel </a> "
+"aktivieren, um Plugin-Updates zu erhalten."
+
+#: classes/class-updater.php:96
+#, php-format
+msgid ""
+"Upgrade to WP Shopify Pro by <a href=\"%2$s\" target=\"_blank\">purchasing a "
+"license key</a>."
+msgstr ""
+"Upgrade auf WP Shopify Pro durch <ein href=\"%2$s\" target = \"_ blank\" > "
+"Kauf eines Lizenzschlüssels </a>."
+
+#: classes/processing/class-vendor-background-process.php:165
+#, php-format
+msgid ""
+"The ALTERNATE_WP_CRON constant is set to true as of %s.  This plugin cannot "
+"determine the status of your WP-Cron system."
+msgstr ""
+"Die ALTERNATE _ WP _ CRON-Konstante ist ab %s auf die Realität eingestellt.  "
+"Dieses Plugin kann den Status Ihres WP-Cron-Systems nicht bestimmen."
+
+#: classes/processing/class-vendor-background-process.php:196
+#, php-format
+msgid "Unexpected HTTP response code: %s"
+msgstr "Unerwarteter HTTP-Antwortcode: %s"
+
+#: classes/processing/class-vendor-background-process.php:728
+#, php-format
+msgid "Every %d Minutes"
+msgstr "Alle %d Minuten"
+
+#: classes/render/class-data.php:129
+msgid ""
+"Missing data. You probably have Lite sync turned on or need to resync your "
+"store"
+msgstr ""
+"Fehlende Daten. Sie haben wahrscheinlich Lite-Synchronisation eingeschaltet "
+"oder müssen Ihren Laden neu gestalten"
+
+#: public/templates/components/cart/cart.php:42
+msgid "Your cart is empty"
+msgstr "Ihr Warenkorb ist leer"
+
+#: public/templates/components/cart/cart.php:50
+msgid "Subtotal"
+msgstr "Zwischensumme"
+
+#: public/templates/components/cart/cart.php:63
+msgid "Shipping and discount codes are added at checkout."
+msgstr "Versand-und Rabattcodes werden an der Kasse hinzugefügt."
+
+#: public/templates/components/collections/single/product.php:38
+msgid " "
+msgstr ""
+
+#: public/templates/components/notices/no-description.php:22
+msgid "No description found"
+msgstr "Keine Beschreibung gefunden"
+
+#: public/templates/components/notices/no-results.php:21
+msgid "Failed to load template: <code>"
+msgstr "Schablonen: <code>"
+
+#: public/templates/components/notices/out-of-stock.php:22
+msgid "Out of stock"
+msgstr "Ausverkauft"
+
+#: public/templates/components/pagination/breadcrumbs.php:169
+msgid "Page"
+msgstr "Seite"
+
+#: public/templates/components/pagination/counter.php:21
+#, php-format
+msgid "Page %s of %s"
+msgstr "Seite %s von %s"
+
+#: public/templates/components/products/quantity/quantity.php:29
+msgid "Quantity"
+msgstr "Menge"
+
+#: public/templates/components/products/single/imgs-feat-placeholder.php:20
+#, php-format
+msgid ""
+"<div class=\"%1$s-wrapper\"><img itemprop=\"image\" src=\"%2$s\" class=\"wps-"
+"product-gallery-img %3$s\" alt=\"%4$s\"></div>"
+msgstr ""
+"<div class=“%1$s-wrapper”><img itemprop=“image” src=“%2$s” class=“wps-"
+"product-gallery-img %3$s” alt=“%4$s”></div>"
+
+#: tests/phpunit/data/themedir1/internationalized-theme/functions.php:7
+msgid "This is a dummy theme"
+msgstr "Dies ist ein Dummy-Thema"
+
+#: wp-shopify.php:26
+msgid ""
+"Sorry, WP Shopify requires PHP version 5.6 or higher. Please look through <a "
+"href=\"https://wpshop.io/docs/requirements\" target=\"_blank\">our "
+"requirements</a> page to learn more. Often times you can simply ask your "
+"webhost to upgrade for you. <br><br><a href="
+msgstr ""
+"Entschuldigung, WP Shopify benötigt PHP Version 5.6 oder höher. Weitere "
+"Informationen finden Sie auf der Seite <a href=“https://wpshop.io/docs/"
+"requirements” target=“_blank”> unserer Anforderungen </a>. Oft können Sie "
+"Ihren Webhost einfach bitten, ein Upgrade für Sie durchzuführen. <br> <br>"
+
+#: wp-shopify.php:30
+msgid ""
+"Sorry, WP Shopify requires WordPress version 4.7 or higher. Please look "
+"through <a href=\"https://wpshop.io/docs/requirements\" target=\"_blank"
+"\">our requirements</a> page to learn more. Often times you can simply ask "
+"your webhost to upgrade for you. <br><br><a href="
+msgstr ""
+"Entschuldigung, WP Shopify benötigt WordPress Version 4.7 oder höher. "
+"Weitere Informationen finden Sie auf der Seite <a href=“https://wpshop.io/"
+"docs/requirements” target=“_blank”> unserer Anforderungen </a>. Oft können "
+"Sie Ihren Webhost einfach bitten, ein Upgrade für Sie durchzuführen. <br><br>"
+
+#. Plugin Name of the plugin/theme
+msgid "WP Shopify Pro"
+msgstr "WP Shopify Pro"
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://wpshop.io"
+msgstr "https://wpshop.io"
+
+#. Description of the plugin/theme
+msgid "Sell and build custom Shopify experiences on WordPress."
+msgstr ""
+"Verkaufen und erstellen Sie benutzerdefinierte Shopify-Erlebnisse auf "
+"WordPress."
+
+#. Author of the plugin/theme
+msgid "WP Shopify"
+msgstr "WP Shopify"

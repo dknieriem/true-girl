@@ -1,0 +1,30 @@
+.wps-component-products-quantity {
+   margin: 15px 0 10px 0;
+}
+
+.wps-product-quantity-wrapper .wps-quantity-label-wrapper {
+   margin-right: 0.5em;
+}
+
+.wps-product-quantity {
+   padding: 10px 0;
+   margin: 0;
+   text-align: center;
+   max-width: 60px;
+   visibility: hidden;
+   // -webkit-appearance: none;
+   border: 1px solid #c7c7c7;
+   border-radius: 3px;
+   padding: 7px 10px;
+}
+
+[data-wps-is-ready='true'],
+[data-wps-is-ready='1'] {
+   .wps-product-quantity {
+      visibility: visible;
+   }
+}
+
+label[for='wps-product-quantity'] {
+   margin: 0;
+}

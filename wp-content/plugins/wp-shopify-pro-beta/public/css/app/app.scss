@@ -1,0 +1,26 @@
+/*!
+
+Author:         WP Shopify
+Author URI:     https://wpshop.io
+
+*/
+.wpshopify {
+   @import 'utilities/colors';
+   @import 'utilities/functions';
+   @import 'utilities/variables';
+   @import 'utilities/animations';
+   @import 'utilities/mixins';
+   @import 'base/icons';
+   @import 'components/products';
+   @import 'components/collections';
+   @import 'components/cart';
+   @import 'components/buttons';
+   @import 'v2/app';
+}
+
+[class^='wps-'] {
+   @import 'node_modules/bootstrap/scss/bootstrap-reboot';
+   @import 'node_modules/bootstrap/scss/bootstrap-grid';
+   @import 'node_modules/bootstrap/scss/badge';
+   @import 'node_modules/loaders.css/src/animations/ball-pulse.scss';
+}
