@@ -6,7 +6,9 @@
     position: relative;
     &__content-wrapper
     {
-        @extend .container;
+        //@extend .container;
+        @extend #content;
+        background-color: unset !important;
     }
     &__single-column
     {

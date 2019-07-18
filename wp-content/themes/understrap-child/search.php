@@ -13,7 +13,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="index-wrapper">
 
-<div class="container" id="content" tabindex="-1">
+<div id="content" tabindex="-1"><!--  class="container" -->
 
 	<!-- Page header -->
 	<div class="row">

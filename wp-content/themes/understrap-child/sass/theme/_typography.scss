@@ -29,6 +29,7 @@ body{
     color:$body-color;
     font-family: $body-font;
     font-weight:300;
+    line-height: 1.2;
 }
 
 a
@@ -65,7 +66,7 @@ a
 
 p
 {
-    line-height:1.7rem;
+    line-height:1.2;
     font-weight:300;
 }
 

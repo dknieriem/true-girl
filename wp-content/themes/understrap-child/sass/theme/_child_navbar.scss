@@ -15,7 +15,7 @@
     }
 
     //move nav background to container
-    .container {
+    .navbar-container {
         background-image: url(../img/background-icons.png);
         background-position: center top;
         background-repeat: repeat-y;
@@ -62,17 +62,16 @@ body.admin-bar .fixed-top
     @media (max-width: 768px){
         margin: auto;
     }
-}
 
-.navbar-brand img {
-    max-height: 75px;
-    width: auto;
-    @media (max-width: 768px) {
-        max-width:300px; 
-        max-height: 180px;
-        
+    img {
+        max-height: 75px;
+        width: auto;
+        @media (max-width: 768px) {
+            max-width:300px; 
+            max-height: 180px;
+            
+        }
     }
-
 }
 
 .navbar-light .navbar-toggler
@@ -150,6 +149,7 @@ body.admin-bar .fixed-top
         
         li:last-child {
             flex-grow: 1;
+            margin: auto;
 
             a {
                 float: right;
@@ -194,7 +194,7 @@ body.admin-bar .fixed-top
 
 }
 
-.navbar .container {
+.navbar .navbar-container {
     position: relative;
 }
 

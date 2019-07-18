@@ -12,7 +12,7 @@ $featuredImage = wp_get_attachment_url(get_post_thumbnail_id($post->ID, 'large')
 
 <div class="wrapper" id="single-wrapper">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+	<div  id="content" tabindex="-1"><!-- class="<?php echo esc_attr( $container ); ?>" -->
 
 		<div class="row post-intro">
 			<div class="post-intro__breadcrumb">

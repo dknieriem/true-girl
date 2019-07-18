@@ -47,9 +47,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 		<nav class="navbar fixed-top navbar-expand-lg">
 
-		<?php if ( 'container' == $container ) : ?>
+		<!--<?php if ( 'container' == $container ) : ?>
 			<div class="container" >
-		<?php endif; ?>
+		<?php endif; ?>-->
+			<div class="navbar-container">
 
 					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>

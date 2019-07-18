@@ -40,15 +40,12 @@
 @import "../assets/font-awesome";
 
 /* Main Styles */
+
+// body styles. See typography for default text styles
 body
 {
-    font-family:$body-font;
     padding-top:160px;
     background-color: $teal;
-    //background-image: url('../img/background-icons.png');
-    //background-repeat: repeat-y;
-    //background-size:100%;
-    //background-position: center top;
 
     @media (min-width: 769px)
     {
@@ -60,6 +57,54 @@ body
 {
     padding-top:0px;
     padding-bottom:0px;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+.navbar {
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+.navbar .navbar-container, #content {
+
+    @include media-breakpoint-down(xl){
+        //@extend .container-fluid:
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        //margin-left: 9px;
+        //margin-right: 9px;
+    }
+
+
+    @include media-breakpoint-up(dx){
+        //@extend .container:
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-left: none;
+        margin-right: none;
+        max-width: breakpoint-min(dx); //$container-max-widths('dx'); //1350px
+    } 
+}
+
+.navbar .navbar-container {
+    //@include media-breakpoint-down(xl){
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    //}
 }
 
 // WordPress-specific Styling
