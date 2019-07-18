@@ -1,9 +1,10 @@
 .navbar
 {
-    background-image: url(../img/background-icons.png);
+    //Per feedback, removed bg from full navbar and moved to child container
+    /*background-image: url(../img/background-icons.png);
     background-position: center top;
     background-repeat: repeat-y;
-    background-size: 100%;
+    background-size: 100%;*/
     border-bottom:none;
     margin-bottom: 2rem;
     padding: 0;
@@ -11,6 +12,14 @@
 
     &-nav {
         margin-bottom: 24px;
+    }
+
+    //move nav background to container
+    .container {
+        background-image: url(../img/background-icons.png);
+        background-position: center top;
+        background-repeat: repeat-y;
+        background-size: 100%;
     }
 
 }
@@ -150,17 +159,6 @@ body.admin-bar .fixed-top
     }
 }
 
-//fix missing menu expansion
-/*.collapse {
-  &:not(.show) {
-    display: initial;
-  }
-
-  &:not(.in) {
-    display: none;
-  }
-}*/
-
 @media (min-width: 1199px) { //was 768px
 .navbar-expand-md .navbar-nav .nav-link
 {
@@ -180,10 +178,11 @@ body.admin-bar .fixed-top
 
         font-weight: bold;
         font-size: 1.6rem;
+        padding: .2rem 2rem !important;
 
         @media (max-width: 1199px) {
             //@extend .button;
-            padding: .5rem 2rem !important;
+            padding: .2rem 2rem !important;
         }
     }
 
