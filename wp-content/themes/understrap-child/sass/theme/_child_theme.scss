@@ -44,10 +44,11 @@ body
 {
     font-family:$body-font;
     padding-top:160px;
-    background-image: url('../img/background-icons.png');
-    background-repeat: repeat-y;
-    background-size:100%;
-    background-position: center top;
+    background-color: $teal;
+    //background-image: url('../img/background-icons.png');
+    //background-repeat: repeat-y;
+    //background-size:100%;
+    //background-position: center top;
 
     @media (min-width: 769px)
     {
