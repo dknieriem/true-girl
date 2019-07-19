@@ -12157,7 +12157,7 @@ a.sidebar-promo-link {
     background-position: center top;
     background-repeat: repeat-y;
     background-size: 100%;
-    height: 80px; }
+    height: 96px; }
 
 body.admin-bar .fixed-top {
   top: 46px !important; }
@@ -12253,18 +12253,17 @@ body.admin-bar .fixed-top {
 
 /* custom css */
 /* Nav Button */
-.navbar {
-  margin-left: auto; }
-  .navbar a[title='get tickets!'] {
-    font-weight: bold;
-    font-size: 1.6rem;
-    padding: .2rem 2rem !important; }
-    @media (max-width: 1199px) {
-      .navbar a[title='get tickets!'] {
-        padding: .2rem 2rem !important; } }
+.navbar a[title='get tickets!'] {
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: .5rem 1.3rem .6rem !important; }
   @media (max-width: 1199px) {
-    .navbar {
-      margin-left: unset; } }
+    .navbar a[title='get tickets!'] {
+      padding: .5rem 1.3rem .6rem !important; } }
+
+@media (max-width: 1199px) {
+  .navbar {
+    margin-left: unset; } }
 
 .navbar .navbar-container {
   position: relative; }
@@ -12288,6 +12287,11 @@ body.admin-bar .fixed-top {
   height: auto; }
   .navbar-toggler-icon:before {
     content: "\f0c9"; }
+
+/* Tim's Nav Styles */
+#main-menu .nav-link {
+  display: block;
+  padding: .7rem 1rem; }
 
 .hero {
   padding-top: 12rem;
