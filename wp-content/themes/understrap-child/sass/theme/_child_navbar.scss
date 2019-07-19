@@ -22,7 +22,11 @@
         background-position: center top;
         background-repeat: repeat-y;
         background-size: 100%;
-        height: 96px; //DON set this to be a defined height
+        min-height: 96px;
+
+        @include media-breakpoint-up(lg){
+            height: 96px; //DON set this to be a defined height
+        }
     }
 
 }
@@ -59,8 +63,8 @@ body.admin-bar .fixed-top
 
 .navbar-brand {
 
-    padding-top: .3125rem;
-    padding-bottom: .3125rem;
+    padding-top: 13px;
+    padding-bottom: 13px;
     
     @media (max-width: 768px){
         margin: auto;
@@ -229,6 +233,6 @@ body.admin-bar .fixed-top
 /* Tim's Nav Styles */
 
 #main-menu .nav-link {
-    display: block;
+    //display: block;
     padding: .7rem 1rem;
 }

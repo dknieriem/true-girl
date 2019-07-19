@@ -12157,7 +12157,10 @@ a.sidebar-promo-link {
     background-position: center top;
     background-repeat: repeat-y;
     background-size: 100%;
-    height: 96px; }
+    min-height: 96px; }
+    @media (min-width: 992px) {
+      .navbar .navbar-container {
+        height: 96px; } }
 
 body.admin-bar .fixed-top {
   top: 46px !important; }
@@ -12180,8 +12183,8 @@ body.admin-bar .fixed-top {
   margin-left: 0rem; }
 
 .navbar-brand {
-  padding-top: .3125rem;
-  padding-bottom: .3125rem; }
+  padding-top: 13px;
+  padding-bottom: 13px; }
   @media (max-width: 768px) {
     .navbar-brand {
       margin: auto; } }
@@ -12290,7 +12293,6 @@ body.admin-bar .fixed-top {
 
 /* Tim's Nav Styles */
 #main-menu .nav-link {
-  display: block;
   padding: .7rem 1rem; }
 
 .hero {
