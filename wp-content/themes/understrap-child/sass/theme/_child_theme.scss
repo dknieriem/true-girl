@@ -46,10 +46,11 @@ body
 {
     padding-top:160px;
     background-color: $teal;
+    line-height: 1.2;
 
     @media (min-width: 769px)
     {
-        padding-top:100px;
+        padding-top:80px;
     }
 }
 
@@ -57,11 +58,6 @@ body
 {
     padding-top:0px;
     padding-bottom:0px;
-    margin-left: 9px;
-    margin-right: 9px;
-}
-
-.navbar {
     margin-left: 9px;
     margin-right: 9px;
 }
@@ -92,6 +88,7 @@ body
 }
 
 .navbar .navbar-container {
+    //@extend .container-fluid
     //@include media-breakpoint-down(xl){
         display: -webkit-box;
         display: -ms-flexbox;
