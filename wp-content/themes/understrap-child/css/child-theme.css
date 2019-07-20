@@ -1017,9 +1017,9 @@ pre {
     margin-left: 8.33333%; }
   .offset-md-2, .page-section__single-column--narrow-center, .page-section__single-column-narrow, .section-header__8 {
     margin-left: 16.66667%; }
-  .offset-md-3, .section-header__6 {
+  .offset-md-3, .background-video__container:not(.mobile-full-width), .section-header__6 {
     margin-left: 25%; }
-  .offset-md-4, .background-video__container:not(.mobile-full-width) {
+  .offset-md-4 {
     margin-left: 33.33333%; }
   .offset-md-5 {
     margin-left: 41.66667%; }
@@ -12452,7 +12452,9 @@ body.admin-bar .fixed-top {
   color: white;
   background-color: #d363aa; }
 
+/* [su_page_section] styles */
 .page-section {
+  /* Default Styles */
   padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 7%;
@@ -12461,7 +12463,49 @@ body.admin-bar .fixed-top {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  /* Full Width Classes | full_width="xs,sm,md,lg,xl,dx" */
   /* Tim aspect ratio vid hack. see https://css-tricks.com/aspect-ratio-boxes/ /*/ }
+  @media (max-width: 575.98px) {
+    .page-section--full-width {
+      padding-left: 0;
+      padding-right: 0; }
+      .page-section--full-width .page-section__content-wrapper {
+        padding-left: 0;
+        padding-right: 0; } }
+  @media (max-width: 767.98px) {
+    .page-section--full-width-sm {
+      padding-left: 0;
+      padding-right: 0; }
+      .page-section--full-width-sm .page-section__content-wrapper {
+        padding-left: 0;
+        padding-right: 0; } }
+  @media (max-width: 991.98px) {
+    .page-section--full-width-md {
+      padding-left: 0;
+      padding-right: 0; }
+      .page-section--full-width-md .page-section__content-wrapper {
+        padding-left: 0;
+        padding-right: 0; } }
+  @media (max-width: 1199.98px) {
+    .page-section--full-width-lg {
+      padding-left: 0;
+      padding-right: 0; }
+      .page-section--full-width-lg .page-section__content-wrapper {
+        padding-left: 0;
+        padding-right: 0; } }
+  @media (max-width: 1457.98px) {
+    .page-section--full-width-xl {
+      padding-left: 0;
+      padding-right: 0; }
+      .page-section--full-width-xl .page-section__content-wrapper {
+        padding-left: 0;
+        padding-right: 0; } }
+  .page-section--full-width-dx {
+    padding-left: 0;
+    padding-right: 0; }
+    .page-section--full-width-dx .page-section__content-wrapper {
+      padding-left: 0;
+      padding-right: 0; }
   .page-section__content-wrapper {
     background-color: unset !important; }
   .page-section .row, .page-section .podcast-intro {
@@ -13408,9 +13452,9 @@ body.single {
   position: relative; }
   .background-video__container:not(.mobile-full-width) {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 62%;
-    flex: 0 0 62%;
-    max-width: 62%;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
     position: relative;
     width: 100%;
     min-height: 1px;
@@ -13422,31 +13466,30 @@ body.single {
       display: none; }
   .background-video__text {
     z-index: 999;
-    padding: 0 0 0 50px;
     position: relative; }
-    @media (max-width: 991.98px) {
+    @media (max-width: 767.98px) {
       .background-video__text {
-        margin-bottom: -20px; } }
+        margin-bottom: -20px;
+        margin-left: 75px; } }
     @media (min-width: 768px) {
       .background-video__text {
         position: absolute;
         top: 19%; } }
-    @media (min-width: 768px) {
-      .background-video__text .heading__on-pink {
-        font-size: 1.5rem;
-        line-height: 48px;
-        letter-spacing: 2px;
-        padding: 6px 0;
-        -webkit-box-shadow: 8px 0 0 #c83b94, -8px 0 0 #c83b94;
-        box-shadow: 8px 0 0 #c83b94, -8px 0 0 #c83b94; } }
-    @media (min-width: 1200px) {
-      .background-video__text .heading__on-pink {
-        font-size: 2rem;
-        line-height: 60px;
-        letter-spacing: 3px;
-        padding: 8px 0;
-        -webkit-box-shadow: 10px 0 0 #c83b94, -10px 0 0 #c83b94;
-        box-shadow: 10px 0 0 #c83b94, -10px 0 0 #c83b94; } }
+    .background-video__text .heading__on-pink {
+      font-size: 2rem;
+      line-height: 60px;
+      letter-spacing: 3px;
+      padding: 8px 0;
+      -webkit-box-shadow: 10px 0 0 #c83b94, -10px 0 0 #c83b94;
+      box-shadow: 10px 0 0 #c83b94, -10px 0 0 #c83b94; }
+      @media (min-width: 768px) and (max-width: 1199.98px) {
+        .background-video__text .heading__on-pink {
+          font-size: 1.5rem;
+          line-height: 48px;
+          letter-spacing: 2px;
+          padding: 6px 0;
+          -webkit-box-shadow: 8px 0 0 #c83b94, -8px 0 0 #c83b94;
+          box-shadow: 8px 0 0 #c83b94, -8px 0 0 #c83b94; } }
   .background-video__button--desktop {
     margin-top: 15px; }
   .background-video__button--mobile {
@@ -15978,9 +16021,9 @@ body {
   padding-top: 96px;
   background-color: #00bcd6;
   line-height: 1.2; }
-  @media (max-width: 1199.98px) {
+  @media (max-width: 767.98px) {
     body {
-      padding-top: 96px; } }
+      padding-top: 126px; } }
 
 .wrapper {
   padding-top: 0px;

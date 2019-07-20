@@ -1,11 +1,36 @@
+/* [su_page_section] styles */
 .page-section
 {
+
+    /* Default Styles */
     padding-top:2rem; //was 4rem
     padding-bottom:2rem; //was 4rem
     padding-left: 7%;
     padding-right: 7%;
     justify-content: center;
     position: relative;
+
+    /* Full Width Classes | full_width="xs,sm,md,lg,xl,dx" */
+    @each $breakpoint in map-keys($grid-breakpoints) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        &--full-width#{$infix}
+        {
+            @include media-breakpoint-down($breakpoint){
+                padding-left: 0;
+                padding-right: 0;
+
+                .page-section__content-wrapper
+                {
+                    padding-left: 0;
+                    padding-right: 0;        
+                }
+            }
+        }
+
+    }
+
+
     &__content-wrapper
     {
         //@extend .container;
