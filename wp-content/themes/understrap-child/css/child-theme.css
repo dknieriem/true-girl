@@ -12458,7 +12458,8 @@ body.admin-bar .fixed-top {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative; }
+  position: relative;
+  /* Tim aspect ratio vid hack. see https://css-tricks.com/aspect-ratio-boxes/ /*/ }
   .page-section__content-wrapper {
     background-color: unset !important; }
   .page-section .row, .page-section .podcast-intro {
@@ -12491,6 +12492,17 @@ body.admin-bar .fixed-top {
     .page-section__background-video iframe {
       width: 100%;
       height: 100%; }
+  .page-section__full-video:before {
+    content: "";
+    width: 1px;
+    margin-left: -1px;
+    float: left;
+    height: 0;
+    padding-top: 56.25%; }
+  .page-section__full-video:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .background-blue {
   background-color: #007bff; }
