@@ -13451,6 +13451,44 @@ body.single {
     margin-top: -15px;
     font-size: 1.5rem; }
 
+/* Events Page Hacks - Tim */
+.events-hero-banner img {
+  margin-top: 2.3rem;
+  margin-bottom: 0; }
+
+.events-hero-banner .heading {
+  margin-top: .6rem;
+  margin-bottom: .6rem;
+  font-size: 2.1rem;
+  letter-spacing: 2px; }
+
+.events-hero-banner .hr__inner {
+  margin: .8rem auto; }
+
+.events-hero-header {
+  margin-top: 6%; }
+  .events-hero-header .heading {
+    font-size: 2.7rem;
+    letter-spacing: 3px;
+    line-height: 75px;
+    padding: 8px 0; }
+  .events-hero-header a {
+    padding: .6rem 1.75rem;
+    font-weight: 700;
+    font-size: 2.4rem; }
+  .events-hero-header .mt-md {
+    margin-top: 2.5rem !important; }
+
+.events-header {
+  background-size: cover !important; }
+  .events-header .section-header {
+    height: auto; }
+    .events-header .section-header__text {
+      font-size: 4.5rem;
+      padding: 0 5rem; }
+  .events-header h3 {
+    font-size: 2.5rem; }
+
 /* Frequently Asked Questions */
 .accordion-category {
   text-decoration: underline; }
@@ -15935,7 +15973,7 @@ li.slick-active button {
 
 /* Main Styles */
 body {
-  padding-top: 160px;
+  padding-top: 80px;
   background-color: #00bcd6;
   line-height: 1.2; }
   @media (max-width: 1199.98px) {
