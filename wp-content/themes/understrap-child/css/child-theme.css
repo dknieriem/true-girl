@@ -11989,6 +11989,7 @@ ol > li {
 .testimonial {
   font-family: "Shark Random Funnyness";
   font-size: 2.5rem;
+  font-spacing: 3px;
   color: #ffffff;
   line-height: 3rem;
   background-color: #c83b94;
@@ -12020,6 +12021,9 @@ ol > li {
     @media (max-width: 768px) {
       .testimonial__source {
         font-size: 1rem; } }
+  .testimonial__slide--name {
+    font-size: 1.5rem;
+    margin-top: 12px; }
   .testimonial__source-img {
     margin: 1rem auto;
     border-radius: 100px;
@@ -12163,6 +12167,9 @@ a.sidebar-promo-link {
   .button:hover, .blog__sidebar .search-form__search-button:hover, .blog__sidebar .mc4wp-form input:hover[type='submit'], .navbar a:hover[title='get tickets!'], .post-card__card-button:hover {
     color: white;
     cursor: pointer; }
+
+a.button, .blog__sidebar a.search-form__search-button, .navbar a[title='get tickets!'], a.post-card__card-button {
+  font-size: 1.75rem; }
 
 .navbar {
   /*background-image: url(../img/background-icons.png);
@@ -12533,6 +12540,9 @@ body.admin-bar .fixed-top {
       padding-right: 0; }
   .page-section__content-wrapper {
     background-color: unset !important; }
+  .page-section__testimonial {
+    padding-top: 3rem;
+    padding-bottom: 0; }
   .page-section .row, .page-section .podcast-intro {
     padding-bottom: 1rem; }
   .page-section__overlay-image {
@@ -12674,6 +12684,77 @@ body.admin-bar .fixed-top {
 
 .page-section--top-bg {
   padding-top: 550px; }
+
+/* Events Page Hacks - Tim */
+.events-hero {
+  padding-left: 0;
+  padding-right: 0; }
+
+.events-hero-banner img {
+  margin-top: 2.3rem;
+  margin-bottom: 0; }
+
+.events-hero-banner .heading {
+  margin-top: .6rem;
+  margin-bottom: .6rem;
+  font-size: 2.1rem;
+  letter-spacing: 2px; }
+
+.events-hero-banner .hr__inner {
+  margin: .8rem auto; }
+
+.events-hero-header {
+  margin-top: 6%; }
+  .events-hero-header .heading {
+    font-size: 2.7rem;
+    letter-spacing: 3px;
+    line-height: 75px;
+    padding: 8px 0; }
+  .events-hero-header a {
+    padding: .6rem 1.75rem;
+    font-weight: 700;
+    font-size: 2.4rem; }
+  .events-hero-header .mt-md {
+    margin-top: 2.5rem !important; }
+
+.events-header .section-header {
+  height: auto; }
+  .events-header .section-header__text {
+    font-size: 4.5rem;
+    padding: 0 5rem; }
+
+.events-header h3 {
+  font-size: 2.5rem; }
+
+.events-video-feature {
+  /* This font design is in a very tight window.. some added tablet - desktop responsiveness to the font size & margin helps */ }
+  .events-video-feature .video_feature {
+    margin-right: 0; }
+  .events-video-feature .wp-video {
+    margin-right: 2%;
+    width: auto !important; }
+  @media (min-width: 768px) {
+    .events-video-feature p {
+      margin-top: .5rem !important;
+      font-size: 1rem; }
+    .events-video-feature a.button, .events-video-feature .blog__sidebar a.search-form__search-button, .blog__sidebar .events-video-feature a.search-form__search-button, .events-video-feature .navbar a[title='get tickets!'], .navbar .events-video-feature a[title='get tickets!'], .events-video-feature a.post-card__card-button {
+      font-size: 1rem; } }
+  @media (min-width: 961px) {
+    .events-video-feature p {
+      margin-top: 1rem !important;
+      font-size: 1.25rem; }
+    .events-video-feature a.button, .events-video-feature .blog__sidebar a.search-form__search-button, .blog__sidebar .events-video-feature a.search-form__search-button, .events-video-feature .navbar a[title='get tickets!'], .navbar .events-video-feature a[title='get tickets!'], .events-video-feature a.post-card__card-button {
+      font-size: 1.25rem; } }
+  @media (min-width: 1201px) {
+    .events-video-feature p {
+      margin-top: 2rem !important;
+      font-size: 1.5rem; }
+    .events-video-feature a.button, .events-video-feature .blog__sidebar a.search-form__search-button, .blog__sidebar .events-video-feature a.search-form__search-button, .events-video-feature .navbar a[title='get tickets!'], .navbar .events-video-feature a[title='get tickets!'], .events-video-feature a.post-card__card-button {
+      font-size: 1.5rem; } }
+  @media (min-width: 1381px) {
+    .events-video-feature p {
+      margin-top: 3rem !important;
+      font-size: 1.75rem; } }
 
 .post-preview {
   color: white; }
@@ -13528,44 +13609,6 @@ body.single {
   .background-video__button--mobile {
     margin-top: -15px;
     font-size: 1.5rem; }
-
-/* Events Page Hacks - Tim */
-.events-hero-banner img {
-  margin-top: 2.3rem;
-  margin-bottom: 0; }
-
-.events-hero-banner .heading {
-  margin-top: .6rem;
-  margin-bottom: .6rem;
-  font-size: 2.1rem;
-  letter-spacing: 2px; }
-
-.events-hero-banner .hr__inner {
-  margin: .8rem auto; }
-
-.events-hero-header {
-  margin-top: 6%; }
-  .events-hero-header .heading {
-    font-size: 2.7rem;
-    letter-spacing: 3px;
-    line-height: 75px;
-    padding: 8px 0; }
-  .events-hero-header a {
-    padding: .6rem 1.75rem;
-    font-weight: 700;
-    font-size: 2.4rem; }
-  .events-hero-header .mt-md {
-    margin-top: 2.5rem !important; }
-
-.events-header {
-  background-size: cover !important; }
-  .events-header .section-header {
-    height: auto; }
-    .events-header .section-header__text {
-      font-size: 4.5rem;
-      padding: 0 5rem; }
-  .events-header h3 {
-    font-size: 2.5rem; }
 
 /* Frequently Asked Questions */
 .accordion-category {
@@ -16243,13 +16286,18 @@ strong {
 
 /* Text Feature */
 .text-feature {
-  font-size: 1.5rem;
-  line-height: 1.7rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 1px;
   padding-top: 2rem;
   padding-bottom: 2rem; }
   .text-feature__inner {
     margin-top: 2rem;
     margin-bottom: 2rem; }
+  .text-feature .divider-top {
+    margin-bottom: 1.75rem; }
+  .text-feature .divider-bottom {
+    margin-top: 1.75rem; }
 
 /* Section Headers */
 .section-header {

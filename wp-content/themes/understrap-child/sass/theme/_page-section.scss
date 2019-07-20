@@ -78,6 +78,11 @@
         @extend .col-md-8;
         //@extend .col-md-12;
     }
+    &__testimonial
+    {
+        padding-top: 3rem;
+        padding-bottom: 0;
+    }
 
     // Page Section Row
     .row {
@@ -190,3 +195,117 @@
 {
     padding-top: 550px;
 }
+
+/* Events Page Hacks - Tim */
+
+.events-hero {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.events-hero-banner {
+    img {
+        margin-top: 2.3rem;
+        margin-bottom: 0;
+    }
+
+    .heading {
+        margin-top: .6rem;
+        margin-bottom: .6rem;
+        font-size: 2.1rem;
+        letter-spacing: 2px;
+    }
+
+    .hr__inner {
+        margin: .8rem auto;
+    }
+}
+
+.events-hero-header {
+    margin-top: 6%;
+
+    .heading {
+        font-size: 2.7rem;
+        letter-spacing: 3px;
+        line-height: 75px;
+        padding: 8px 0;
+    }
+
+    a {
+        padding: .6rem 1.75rem;
+        font-weight: 700;
+        font-size: 2.4rem
+    }
+
+    .mt-md {
+        margin-top: 2.5rem !important;
+    }
+}
+
+.events-header {
+    
+    .section-header {
+        height: auto;
+        
+        &__text {
+            font-size: 4.5rem;
+            padding: 0 5rem;
+        }
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+}
+
+.events-video-feature {
+    .video_feature {
+        margin-right: 0;
+    }
+    .wp-video {
+        margin-right: 2%;
+        width: auto !important;
+    }
+ 
+    /* This font design is in a very tight window.. some added tablet - desktop responsiveness to the font size & margin helps */
+
+    @media (min-width:768px) {
+        p {
+            margin-top: .5rem !important;
+            font-size: 1rem;
+        }
+        a.button {
+            font-size: 1rem;
+        }
+    }
+
+    @media (min-width:961px) {
+        p {
+            margin-top: 1rem !important;
+            font-size: 1.25rem;
+        }
+        a.button {
+            font-size: 1.25rem;
+        }
+    }
+    
+    @media (min-width:1201px) {
+        p {
+            margin-top: 2rem !important;
+            font-size: 1.5rem;
+        }
+        a.button {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (min-width:1381px) {
+        p {
+            margin-top: 3rem !important;
+            font-size: 1.75rem;
+        }     
+    }
+}
+
+
+
