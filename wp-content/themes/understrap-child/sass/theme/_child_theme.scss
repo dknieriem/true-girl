@@ -48,7 +48,7 @@ body
     background-color: $teal;
     line-height: 1.2;
 
-    @include media-breakpoint-down(md)
+    @include media-breakpoint-down(lg)
     {
         padding-top:80px;
     }
