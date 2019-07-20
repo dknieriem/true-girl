@@ -4,3 +4,5 @@
 node_modules/
 wp-config.php
 /design/
+/wp-config.php
+/.htaccess

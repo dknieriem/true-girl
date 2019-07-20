@@ -12458,7 +12458,8 @@ body.admin-bar .fixed-top {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative; }
+  position: relative;
+  /* Tim aspect ratio vid hack. see https://css-tricks.com/aspect-ratio-boxes/ /*/ }
   .page-section__content-wrapper {
     background-color: unset !important; }
   .page-section .row, .page-section .podcast-intro {
@@ -12491,6 +12492,17 @@ body.admin-bar .fixed-top {
     .page-section__background-video iframe {
       width: 100%;
       height: 100%; }
+  .page-section__full-video:before {
+    content: "";
+    width: 1px;
+    margin-left: -1px;
+    float: left;
+    height: 0;
+    padding-top: 56.25%; }
+  .page-section__full-video:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .background-blue {
   background-color: #007bff; }
@@ -13438,6 +13450,44 @@ body.single {
   .background-video__button--mobile {
     margin-top: -15px;
     font-size: 1.5rem; }
+
+/* Events Page Hacks - Tim */
+.events-hero-banner img {
+  margin-top: 2.3rem;
+  margin-bottom: 0; }
+
+.events-hero-banner .heading {
+  margin-top: .6rem;
+  margin-bottom: .6rem;
+  font-size: 2.1rem;
+  letter-spacing: 2px; }
+
+.events-hero-banner .hr__inner {
+  margin: .8rem auto; }
+
+.events-hero-header {
+  margin-top: 6%; }
+  .events-hero-header .heading {
+    font-size: 2.7rem;
+    letter-spacing: 3px;
+    line-height: 75px;
+    padding: 8px 0; }
+  .events-hero-header a {
+    padding: .6rem 1.75rem;
+    font-weight: 700;
+    font-size: 2.4rem; }
+  .events-hero-header .mt-md {
+    margin-top: 2.5rem !important; }
+
+.events-header {
+  background-size: cover !important; }
+  .events-header .section-header {
+    height: auto; }
+    .events-header .section-header__text {
+      font-size: 4.5rem;
+      padding: 0 5rem; }
+  .events-header h3 {
+    font-size: 2.5rem; }
 
 /* Frequently Asked Questions */
 .accordion-category {
