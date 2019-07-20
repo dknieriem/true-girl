@@ -12756,6 +12756,34 @@ body.admin-bar .fixed-top {
       margin-top: 3rem !important;
       font-size: 1.75rem; } }
 
+.events-header-sm .heading {
+  margin-top: 0;
+  margin-bottom: 3px;
+  padding: 4px 10px 3px;
+  letter-spacing: 2px; }
+
+.events-3steps img {
+  margin-bottom: 0; }
+
+.events-3steps__title {
+  font-size: 1.75rem;
+  font-weight: 300;
+  letter-spacing: 3px; }
+
+.events-3steps .heading.background-circle {
+  width: 5rem;
+  margin: 2rem auto;
+  font-size: 4rem; }
+
+.events-3steps__steps {
+  padding-left: 1%;
+  padding-right: 1%; }
+  .events-3steps__steps h4 {
+    font-weight: 300;
+    letter-spacing: 2px; }
+  .events-3steps__steps a.button, .events-3steps__steps .blog__sidebar a.search-form__search-button, .blog__sidebar .events-3steps__steps a.search-form__search-button, .events-3steps__steps .navbar a[title='get tickets!'], .navbar .events-3steps__steps a[title='get tickets!'], .events-3steps__steps a.post-card__card-button {
+    margin-top: 2rem; }
+
 .post-preview {
   color: white; }
   @media (max-width: 767.98px) {

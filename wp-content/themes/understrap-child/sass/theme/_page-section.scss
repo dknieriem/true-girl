@@ -307,5 +307,44 @@
     }
 }
 
+.events-header-sm {
+    .heading {
+        margin-top: 0;
+        margin-bottom: 3px;
+        padding: 4px 10px 3px;
+        letter-spacing: 2px;
+    }
+}
 
+.events-3steps {
+    img {
+        margin-bottom: 0;
+    }
+
+    &__title {
+        font-size: 1.75rem;
+        font-weight: 300;
+        letter-spacing: 3px;
+    }
+
+    .heading.background-circle {
+        width: 5rem;
+        margin: 2rem auto;
+        font-size: 4rem;
+    }
+
+    &__steps {
+        padding-left: 1%;
+        padding-right: 1%;
+       
+        h4 {
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+       
+        a.button {
+            margin-top: 2rem;
+        }
+    }
+}
 
