@@ -12455,6 +12455,8 @@ body.admin-bar .fixed-top {
 .page-section {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  padding-left: 5%;
+  padding-right: 5%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
