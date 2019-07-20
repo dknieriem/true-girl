@@ -12168,9 +12168,6 @@ a.sidebar-promo-link {
     color: white;
     cursor: pointer; }
 
-a.button, .blog__sidebar a.search-form__search-button, .navbar a[title='get tickets!'], a.post-card__card-button {
-  font-size: 1.75rem; }
-
 .navbar {
   /*background-image: url(../img/background-icons.png);
     background-position: center top;
