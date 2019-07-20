@@ -16090,7 +16090,9 @@ strong {
 
 /* Mailchimp forms */
 .mc-page-form h2 {
-  font-size: 30pt; }
+  font-size: 30pt;
+  font-weight: 900;
+  line-height: 1; }
 
 .mc-page-form .mc4wp-form {
   width: 100%; }
