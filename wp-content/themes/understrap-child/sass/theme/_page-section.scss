@@ -44,11 +44,12 @@
     &__one-third-column
     {
         @extend .col-md-4;
+
     }
     &__two-third-column
     {
-        @extend .col-lg-8;
-        @extend .col-md-12;
+        @extend .col-md-8;
+        //@extend .col-md-12;
     }
 
     // Page Section Row
