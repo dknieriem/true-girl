@@ -64,6 +64,45 @@
         }
     }
 
+    &__background-video {
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding-top: 56.25%;
+    @media (max-width:993px) {
+        display: none;
+    }
+
+
+
+    
+    .wp-video {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .mejs-container {
+        width: 100% !important;
+        height: 100% !important;
+
+        &:hover {
+            cursor: initial;
+        }
+    }
+
+    .mejs-overlay, .mejs-controls {
+        display: none;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
 }
 
 @each $color, $hex in $colors {

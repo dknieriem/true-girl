@@ -48,7 +48,7 @@ body
     background-color: $teal;
     line-height: 1.2;
 
-    @media (min-width: 769px)
+    @include media-breakpoint-down(md)
     {
         padding-top:80px;
     }
@@ -203,55 +203,6 @@ table.table-borderless {
     }
 }
 
-/* Background Video Feature */
-.background-video {
-
-    width: 100%;
-    position: relative;
-    
-    &__container {
-
-        .wp-video {
-            width: 100% !important;
-        }
-        .mejs-controls {
-            display: none;
-        }
-    }
-
-    &__text {
-        z-index: 999;
-
-        @media (max-width: 767px){
-            margin-bottom: -20px;
-            padding: 0 0 0 50px;
-        }
-
-        @media (min-width: 768px){
-            position: absolute;
-            top:80px;
-            left:80px;
-            .heading__on-pink 
-            {
-                font-size:2rem;
-                line-height:60px;
-                letter-spacing: 3px;
-            }
-        }
-    }
-
-    &__button {
-        &--desktop {
-            margin-top: 15px;
-        }
-
-        &--mobile {
-            margin-top: -15px;
-            font-size: 1.5rem;
-        }
-    }
-}
-
 // DON: We should move this into a _video-feature.scss file
 .video_feature {
     margin-left:50px;
@@ -276,13 +227,6 @@ table.table-borderless {
 
 .mejs-container:hover, .video_feature__video:hover {
     cursor: pointer;
-}
-
-.page-section__background-video {
-
-    .mejs-container:hover {
-        cursor: initial;
-    }
 }
 
 
@@ -390,7 +334,7 @@ strong {
 
 .text-feature {
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 1.7rem;
     padding-top:2rem;
     padding-bottom:2rem;
     &__inner
