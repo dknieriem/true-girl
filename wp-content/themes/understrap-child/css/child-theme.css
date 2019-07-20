@@ -16175,6 +16175,7 @@ table.table-borderless td {
   .video_feature__video {
     margin-bottom: 1.5rem; }
   .video_feature__description {
+    color: #525252;
     margin-top: 1rem;
     margin-bottom: .5rem; }
   .video_feature div.hr__inner {
