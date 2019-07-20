@@ -2,6 +2,7 @@
 {
     font-family: $header-font;
     font-size:2.5rem;
+    font-spacing: 3px;
     color:$white;
     line-height: 3rem;
     background-color: $pink;
@@ -39,6 +40,11 @@
             font-size:1rem;
         }
     }
+    &__slide--name {
+        font-size:1.5rem;
+        margin-top: 12px;
+    }
+
     &__source-img
     {
         margin: 1rem auto;
