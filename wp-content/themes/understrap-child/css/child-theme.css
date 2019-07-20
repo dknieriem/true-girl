@@ -12784,6 +12784,18 @@ body.admin-bar .fixed-top {
   .events-3steps__steps a.button, .events-3steps__steps .blog__sidebar a.search-form__search-button, .blog__sidebar .events-3steps__steps a.search-form__search-button, .events-3steps__steps .navbar a[title='get tickets!'], .navbar .events-3steps__steps a[title='get tickets!'], .events-3steps__steps a.post-card__card-button {
     margin-top: 2rem; }
 
+.events-map {
+  padding: 0 5%; }
+  .events-map__header img {
+    margin-bottom: 8px; }
+  .events-map__header h2 {
+    font-size: 2.75rem;
+    font-weight: 900;
+    line-height: 1; }
+  .events-map__header p {
+    margin-top: 8px;
+    font-size: 1.5rem; }
+
 .post-preview {
   color: white; }
   @media (max-width: 767.98px) {

@@ -348,3 +348,20 @@
     }
 }
 
+.events-map {
+    padding: 0 5%;
+    &__header {
+        img {
+            margin-bottom: 8px;
+        }
+        h2 {
+            font-size: 2.75rem;
+            font-weight: 900;
+            line-height: 1;
+        }
+        p {
+            margin-top: 8px;
+            font-size: 1.5rem;
+        }
+    }
+}
