@@ -15973,12 +15973,12 @@ li.slick-active button {
 
 /* Main Styles */
 body {
-  padding-top: 80px;
+  padding-top: 96px;
   background-color: #00bcd6;
   line-height: 1.2; }
   @media (max-width: 1199.98px) {
     body {
-      padding-top: 80px; } }
+      padding-top: 96px; } }
 
 .wrapper {
   padding-top: 0px;
