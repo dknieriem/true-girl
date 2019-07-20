@@ -5,8 +5,14 @@
     border-radius:100px;
     color:white;
     font-weight:300;
+    font-size: 1.75rem;
     display: inline-block;
-    /*text-transform: uppercase;*/
+
+    @include media-breakpoint-down(sm)
+    {
+        font-size: 2.25rem;
+    }
+
     &--white
     {
         background-color:white;
@@ -30,13 +36,46 @@
     &--small
     {
         padding: 0.1rem 0.5rem;
+        font-size: 1rem;
+
+        @include media-breakpoint-down(sm)
+        {
+            font-size: 1.25rem;
+        }
     }
 
-    &--large {
-        //width: 100%;
-        font-size: 1.5rem;
-        text-align: center;
+
+    &--medium
+    {
+        font-size:1rem;
+
+        @include media-breakpoint-down(sm)
+        {
+            font-size: 1.25rem;
+        }
     }
+
+    /* Default: 1.75rem */
+
+    &--large {
+        font-size: 2.5rem;
+        text-align: center;
+
+        @include media-breakpoint-down(sm)
+        {
+            font-size: 2.5rem; //don't let default override on media query
+        }
+    }
+
+ /*   &--jumbo {
+        font-size: 1.875rem;
+        text-align: center;
+
+        @include media-breakpoint-down(sm)
+        {
+            font-size: 3.5rem;
+        }
+    }*/
 
     &:hover
     {

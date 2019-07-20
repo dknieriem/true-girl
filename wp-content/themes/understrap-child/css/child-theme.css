@@ -12117,8 +12117,21 @@ a.sidebar-promo-link {
   border-radius: 100px;
   color: white;
   font-weight: 300;
+  font-size: 1.75rem;
   display: inline-block;
-  /*text-transform: uppercase;*/ }
+  /* Default: 1.75rem */
+  /*   &--jumbo {
+        font-size: 1.875rem;
+        text-align: center;
+
+        @include media-breakpoint-down(sm)
+        {
+            font-size: 3.5rem;
+        }
+    }*/ }
+  @media (max-width: 767.98px) {
+    .button, .blog__sidebar .search-form__search-button, .blog__sidebar .mc4wp-form input[type='submit'], .navbar a[title='get tickets!'], .post-card__card-button {
+      font-size: 2.25rem; } }
   .button--white {
     background-color: white;
     color: #c83b94; }
@@ -12131,10 +12144,22 @@ a.sidebar-promo-link {
     background-color: white;
     color: #525252 !important; }
   .button--small, .blog__sidebar .search-form__search-button, .post-card__card-button {
-    padding: 0.1rem 0.5rem; }
+    padding: 0.1rem 0.5rem;
+    font-size: 1rem; }
+    @media (max-width: 767.98px) {
+      .button--small, .blog__sidebar .search-form__search-button, .post-card__card-button {
+        font-size: 1.25rem; } }
+  .button--medium {
+    font-size: 1rem; }
+    @media (max-width: 767.98px) {
+      .button--medium {
+        font-size: 1.25rem; } }
   .button--large {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-align: center; }
+    @media (max-width: 767.98px) {
+      .button--large {
+        font-size: 2.5rem; } }
   .button:hover, .blog__sidebar .search-form__search-button:hover, .blog__sidebar .mc4wp-form input:hover[type='submit'], .navbar a:hover[title='get tickets!'], .post-card__card-button:hover {
     color: white;
     cursor: pointer; }
@@ -13482,6 +13507,14 @@ body.single {
       padding: 8px 0;
       -webkit-box-shadow: 10px 0 0 #c83b94, -10px 0 0 #c83b94;
       box-shadow: 10px 0 0 #c83b94, -10px 0 0 #c83b94; }
+      @media (min-width: 576px) and (max-width: 991.98px) {
+        .background-video__text .heading__on-pink {
+          font-size: 1.2rem;
+          line-height: 36px;
+          letter-spacing: 2px;
+          padding: 6px 0;
+          -webkit-box-shadow: 8px 0 0 #c83b94, -8px 0 0 #c83b94;
+          box-shadow: 8px 0 0 #c83b94, -8px 0 0 #c83b94; } }
       @media (min-width: 768px) and (max-width: 1199.98px) {
         .background-video__text .heading__on-pink {
           font-size: 1.5rem;
@@ -16187,7 +16220,8 @@ strong {
 .mc-page-form h2 {
   font-size: 30pt;
   font-weight: 900;
-  line-height: 1; }
+  line-height: 1;
+  margin-bottom: 1.2rem; }
 
 .mc-page-form .mc4wp-form {
   width: 100%; }
@@ -16256,7 +16290,10 @@ strong {
       margin-right: 20px; } }
   .testimonial_small__attribution {
     color: #c83b94;
-    font-family: "Myriad Pro"; }
+    font-family: "Myriad Pro";
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-top: 10px; }
 
 /* Map Section */
 .map-container {

@@ -296,29 +296,37 @@ strong {
 
 /* Mailchimp forms */
 
-.mc-page-form {
-    h2 {
+.mc-page-form
+{
+    h2
+    {
         font-size: 30pt;
         font-weight: 900;
         line-height: 1;
+        margin-bottom: 1.2rem;
     }
 
-    .mc4wp-form {
+    .mc4wp-form
+    {
         width: 100%;
 
-        .form-group .row div {
+        .form-group .row div
+        {
             margin-left: 2px;
             margin-right: 2px;
         }
 
-        input {
+        input
+        {
             margin-bottom: 10px;
 
-            &.button {
+            &.button
+            {
 
                 padding: .75rem 2rem;
 
-                @media (max-width:768px){
+                @media (max-width:768px)
+                {
                     margin:auto;
                 }
             }
@@ -326,21 +334,23 @@ strong {
 
         .mc4wp-response, 
         .mc4wp-alert 
-        .mc4wp-notice {
+        .mc4wp-notice
+        {
             color: $white;
             font-size: 1.25rem;
-
         }
     }
 }
 
 /* Text Feature */
 
-.text-feature {
+.text-feature
+{
     font-size: 1.5rem;
     line-height: 1.7rem;
     padding-top:2rem;
     padding-bottom:2rem;
+
     &__inner
     {
         margin-top:2rem;
@@ -350,30 +360,32 @@ strong {
 
 /* Section Headers */
 
-.section-header {
-
-    //@extend .col-12;
-
+.section-header
+{
     display: table;
     text-align: center;
     height: 120px;
 
-    &__10 {
+    &__10
+    {
         @extend .col-md-10;
         @extend .offset-md-1;
     }
 
-    &__8 {
+    &__8
+    {
         @extend .col-md-8;
         @extend .offset-md-2;
     }
 
-    &__6 {
+    &__6
+    {
         @extend .col-md-6;
         @extend .offset-md-3;
     }
 
-    &__text {
+    &__text
+    {
         color: color(white);
         display: table-cell;
         font-family: font(shark);
@@ -384,23 +396,29 @@ strong {
         padding: 2rem 5rem;
         letter-spacing: 6px; 
         // DON: I don't like hardcoding letter-spacing as part of the theme, but it's pretty necessary when using that Shark font to align with the comps. Maybe we pull into a setting?
-        &--large {
+        
+        &--large
+        {
             font-size: 75px;
-            @media (max-width: 1200px ) {
+            @media (max-width: 1200px )
+            {
                 font-size:56px;
             }
-            @media (max-width: 993px ) {
+            @media (max-width: 993px )
+            {
                 font-size:48px;
                 padding: 2rem 1rem;
             }
         }
 
-        &--small {
+        &--small
+        {
             font-size: 36px;
         }
 
         //<small> inside of section header shortcode
-        small {
+        small
+        {
             font-family: font(goudysans);
             font-size: 24px;
         }
@@ -410,16 +428,23 @@ strong {
 
 /* Testimonials */
 
-.testimonial_small {
+.testimonial_small
+{
     margin-left:40px;
     margin-right:40px;
-    @media (max-width:993px){
+    @media (max-width:993px)
+    {
         margin-left: 20px;
         margin-right: 20px;
     }
-    &__attribution {
+
+    &__attribution
+    {
         color: $pink;
         font-family: "Myriad Pro";
+        font-weight: bold;
+        font-size: 1.25rem;
+        margin-top: 10px;
     }
 }
 
