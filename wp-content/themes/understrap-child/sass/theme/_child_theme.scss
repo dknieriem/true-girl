@@ -44,7 +44,7 @@
 // body styles. See typography for default text styles
 body
 {
-    padding-top:160px;
+    padding-top:80px;
     background-color: $teal;
     line-height: 1.2;
 
@@ -312,9 +312,11 @@ strong {
         input {
             margin-bottom: 10px;
 
+            &.button {
 
-            @media (max-width:768px){
-                &.button {
+                padding: .75rem 2rem;
+
+                @media (max-width:768px){
                     margin:auto;
                 }
             }
