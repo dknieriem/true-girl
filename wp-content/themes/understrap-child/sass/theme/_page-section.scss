@@ -545,8 +545,25 @@
     }
 }
 
-// About headings
+// General About Page Headings fixes - Tim -- MIGHT be duplicate somewhere we can change
 
+.page-section {
+    h1.section-header__text--large {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.mt-n6, .about-other {
+    .heading {
+        margin-top: 5px;
+        font-size: 2rem;
+        letter-spacing: 3px;
+        font-weight: 300;
+    }
+}
+
+// About Meet Dannah
 
 .about-dannah {
     .page-section__one-third-column {
@@ -556,13 +573,6 @@
 
     img {
         margin-top: 0;
-    }
-
-    .heading {
-        margin-top: 5px;
-        font-size: 2rem;
-        letter-spacing: 3px;
-        font-weight: 300;
     }
 
     .video_feature__description {
@@ -578,4 +588,26 @@
     }
 }
 
+.about-boys {
+    p {
+        width: 70%;
+        margin: 0 auto 1.75rem;
+        font-weight: 700;
+    }
 
+    a.button {
+        font-size: 1.5rem;
+    }
+
+    .wp-video {
+        margin-bottom: 6rem;
+    }
+}
+
+.about-faq {
+    &__button {
+        font-weight: 900;
+        margin-bottom: 3rem;
+  
+  margin-bottom: 3rem;  }
+}

@@ -14185,18 +14185,22 @@ body.admin-bar .fixed-top {
     letter-spacing: 1px !important;
     font-weight: 900 !important; }
 
+.page-section h1.section-header__text--large {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.mt-n6 .heading, .about-other .heading {
+  margin-top: 5px;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  font-weight: 300; }
+
 .about-dannah .page-section__one-third-column {
   padding-left: 0;
   padding-right: 0; }
 
 .about-dannah img {
   margin-top: 0; }
-
-.about-dannah .heading {
-  margin-top: 5px;
-  font-size: 2rem;
-  letter-spacing: 3px;
-  font-weight: 300; }
 
 .about-dannah .video_feature__description {
   max-width: 680px; }
@@ -14206,6 +14210,22 @@ body.admin-bar .fixed-top {
 
 .about-dannah a.button, .about-dannah .blog__sidebar a.search-form__search-button, .blog__sidebar .about-dannah a.search-form__search-button, .about-dannah .navbar a[title='get tickets!'], .navbar .about-dannah a[title='get tickets!'], .about-dannah a.post-preview__button, .about-dannah a.post-card__card-button {
   margin-top: 1rem; }
+
+.about-boys p {
+  width: 70%;
+  margin: 0 auto 1.75rem;
+  font-weight: 700; }
+
+.about-boys a.button, .about-boys .blog__sidebar a.search-form__search-button, .blog__sidebar .about-boys a.search-form__search-button, .about-boys .navbar a[title='get tickets!'], .navbar .about-boys a[title='get tickets!'], .about-boys a.post-preview__button, .about-boys a.post-card__card-button {
+  font-size: 1.5rem; }
+
+.about-boys .wp-video {
+  margin-bottom: 6rem; }
+
+.about-faq__button {
+  font-weight: 900;
+  margin-bottom: 3rem;
+  margin-bottom: 3rem; }
 
 .post-preview {
   /*@media (max-width: 767.98px) {
