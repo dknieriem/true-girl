@@ -13407,6 +13407,7 @@ ol > li {
 .button, .blog__sidebar .search-form__search-button, .blog__sidebar .mc4wp-form input[type='submit'], .navbar a[title='get tickets!'], .post-preview__button, .post-card__card-button {
   background-color: #fdbD10;
   padding: .5rem 2rem;
+  border: 0;
   border-radius: 100px;
   color: white;
   font-weight: 300;
