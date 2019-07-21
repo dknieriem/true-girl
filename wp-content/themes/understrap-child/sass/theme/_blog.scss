@@ -114,9 +114,11 @@
 		{
 			text-align: center;
 
-			input {
+			input
+			{
 				
-				&[type='text'], &[type='email'] {
+				&[type='text'], &[type='email']
+				{
 					background-color: color(form-background);
 					border: none;
 					color: color(form-gray);
@@ -132,10 +134,16 @@
 					}
 				}
 
-				&[type='submit']{
+				&[type='submit']
+				{
 					@extend .button;
 					@extend .button--gray;
 					margin-top: 8px; /* Blog Hack - Tim */
+
+					@include media-breakpoint-up(md)
+					{
+						font-size: 1.25rem;
+					}
 				}
 			}
 		}
@@ -145,26 +153,30 @@
 
 /* hacks to get the blog up to spec (by tim) */
 
-.blog .heading--white-on-pink {
+.blog .heading--white-on-pink
+{
    margin: 32px 0 23px 0;
    padding: 10px 24px; 
 }
 
-.sidebar-promo {
+.sidebar-promo
+{
 	margin-bottom: 28px;
-}
 
-p.sidebar-promo-copy {
-	padding: 0 15px;
-    line-height: 1.3em;
-    margin-bottom: 10px;
-    color: color(gray);
-}
+	&-copy
+	{
+		padding: 0 15px;
+	    line-height: 1.3em;
+	    margin-bottom: 10px;
+	    color: color(gray);
+	}
 
-a.sidebar-promo-link {
-	text-transform: uppercase;
-	font-weight: bolder;
-	letter-spacing: 2px;
+	&-link
+	{
+		text-transform: uppercase;
+		font-weight: bolder;
+		letter-spacing: 2px;
+	}
 }
 
 .sidebar-form {

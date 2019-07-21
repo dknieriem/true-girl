@@ -13380,6 +13380,9 @@ ol > li {
     .blog__sidebar .mc4wp-form input[type='submit'] {
       margin-top: 8px;
       /* Blog Hack - Tim */ }
+      @media (min-width: 768px) {
+        .blog__sidebar .mc4wp-form input[type='submit'] {
+          font-size: 1.25rem; } }
 
 /* hacks to get the blog up to spec (by tim) */
 .blog .heading--white-on-pink {
@@ -13388,17 +13391,15 @@ ol > li {
 
 .sidebar-promo {
   margin-bottom: 28px; }
-
-p.sidebar-promo-copy {
-  padding: 0 15px;
-  line-height: 1.3em;
-  margin-bottom: 10px;
-  color: #525252; }
-
-a.sidebar-promo-link {
-  text-transform: uppercase;
-  font-weight: bolder;
-  letter-spacing: 2px; }
+  .sidebar-promo-copy {
+    padding: 0 15px;
+    line-height: 1.3em;
+    margin-bottom: 10px;
+    color: #525252; }
+  .sidebar-promo-link {
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2px; }
 
 .sidebar-form {
   margin-bottom: 15px; }
