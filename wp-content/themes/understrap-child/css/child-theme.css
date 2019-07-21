@@ -13307,7 +13307,9 @@ ol > li {
   background-color: #00bcd6; }
 
 .blog-wrapper > #content, .blog-wrapper > .page-section__content-wrapper {
-  background: url("../img/blog-top.png") top center, url("../img/blog-bottom.png") bottom center, white; }
+  background: url("../img/blog-top.png") top center, url("../img/blog-bottom.png") bottom center, white;
+  background-repeat: no-repeat;
+  background-size: contain; }
 
 .blog__sidebar {
   margin-bottom: 10px;
@@ -13339,6 +13341,8 @@ ol > li {
       margin-bottom: 10px;
       text-align: center;
       width: 100%; }
+      .blog__sidebar .search-form__search-input:placeholder {
+        color: #939495; }
   .blog__sidebar .social-icons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -13362,6 +13366,16 @@ ol > li {
       width: 100%;
       height: 46px;
       /* Blog Hack - Tim */ }
+      .blog__sidebar .mc4wp-form input[type='text']::-webkit-input-placeholder, .blog__sidebar .mc4wp-form input[type='email']::-webkit-input-placeholder {
+        color: #939495; }
+      .blog__sidebar .mc4wp-form input[type='text']::-moz-placeholder, .blog__sidebar .mc4wp-form input[type='email']::-moz-placeholder {
+        color: #939495; }
+      .blog__sidebar .mc4wp-form input[type='text']:-ms-input-placeholder, .blog__sidebar .mc4wp-form input[type='email']:-ms-input-placeholder {
+        color: #939495; }
+      .blog__sidebar .mc4wp-form input[type='text']::-ms-input-placeholder, .blog__sidebar .mc4wp-form input[type='email']::-ms-input-placeholder {
+        color: #939495; }
+      .blog__sidebar .mc4wp-form input[type='text']::placeholder, .blog__sidebar .mc4wp-form input[type='email']::placeholder {
+        color: #939495; }
     .blog__sidebar .mc4wp-form input[type='submit'] {
       margin-top: 8px;
       /* Blog Hack - Tim */ }
@@ -14215,6 +14229,7 @@ body.admin-bar .fixed-top {
     color:white;
 }*/
 .post-card {
+  background-color: unset;
   border: none; }
   .post-card__body {
     display: -webkit-box;

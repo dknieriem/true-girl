@@ -2,19 +2,25 @@
 
 
 //body class
-.blog {
+.blog
+{
 
 	//content wrapper with custom background
-	&-wrapper {
+	&-wrapper
+	{
 
-		&>#content {
+		&>#content
+		{
 			background: url('../img/blog-top.png') top center, 
 			url('../img/blog-bottom.png') bottom center, 
 			white;
+			background-repeat: no-repeat;
+			background-size: contain;
 		}
 	}
 	
-	&__sidebar {
+	&__sidebar
+	{
 
 		margin-bottom: 10px;
 		
@@ -22,28 +28,33 @@
 		
 		grid-column: 1/span 2;
 
-		@include media-breakpoint-up(md) {
+		@include media-breakpoint-up(md)
+		{
 			grid-column: 3;
 			grid-row: 2/span 3;
 			margin-bottom: 0;
 		}
-		.custom-html-widget {
+		.custom-html-widget
+		{
 			@extend .text-center;
 			margin-bottom: 60px; /* Blog Hack - Tim */
 		}
 
 		/* Search form */
-		.search-form {
+		.search-form
+		{
 
 			margin: 0 0 25px 0;
 			@extend .text-center;
 
 
-			&__input-wrapper {
+			&__input-wrapper
+			{
 
 			}
 
-			&__search-input {
+			&__search-input
+			{
 				border-radius: 0;
 				padding: 0.2rem 0.5rem;
 				font-size: 1rem;
@@ -56,9 +67,15 @@
 				margin-bottom: 10px;
 				text-align: center;
 				width: 100%;
+
+				&:placeholder 
+				{
+					color: color(form-gray);
+				}
 			}
 
-			&__search-button {
+			&__search-button
+			{
 				@extend .button;
 				@extend .button--small;
 				//@extend .button--yellow;
@@ -66,29 +83,34 @@
 		}
 
 		/* social icons */
-		.social-icons {
+		.social-icons
+		{
 
 		    display: grid;
 		    grid-template-columns: 1fr 1fr 1fr 1fr;
 		    grid-gap: 5px;
 		    margin-bottom: 25px;
 
-		    &>a, &>img {
+		    &>a, &>img
+		    {
 
 		    }
 
-			img {
+			img
+			{
 				max-width: 48px;
 			}
 		}
 
 		/* signup form */
-		.form-icon {
+		.form-icon
+		{
 			width: 75px;
 			margin-bottom: 15px; /* Blog Hack - Tim */
 		}
 
-		.mc4wp-form {
+		.mc4wp-form
+		{
 			text-align: center;
 
 			input {
@@ -102,6 +124,11 @@
 					text-align: center;
 					width: 100%;
 					height: 46px; /* Blog Hack - Tim */
+
+					&::placeholder 
+					{
+						color: color(form-gray);
+					}
 				}
 
 				&[type='submit']{

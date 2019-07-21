@@ -1,7 +1,7 @@
 .post-card
 {
     @extend .card;
-
+    background-color: unset;
     border: none;
 
     //grid-column: 1/span 3;
