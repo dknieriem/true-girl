@@ -1,11 +1,13 @@
 /* Background Video Feature */
 
-.background-video {
+.background-video
+{
 
     width: 100%;
     position: relative;
     
-    &__container:not(.mobile-full-width) {
+    &__container:not(.mobile-full-width)
+    {
 
 		@extend .offset-md-3;
 		//@extend .col-7; - more like 7.5:;
@@ -19,15 +21,18 @@
 	    padding-right: 15px;
 	    padding-left: 15px;
 
-        .wp-video {
+        .wp-video
+        {
             width: 100% !important;
         }
-        .mejs-controls {
+        .mejs-controls
+        {
             display: none;
         }
     }
 
-    &__text {
+    &__text
+    {
         z-index: 999;
         position: relative;
 
@@ -45,8 +50,7 @@
         @include media-breakpoint-up(md)
         {
             position: absolute;
-            top: 19%; //80px;
-            //left:80px;
+            top: 25%;
         }
 
         .heading__on-pink

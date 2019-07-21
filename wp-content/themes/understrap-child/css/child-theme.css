@@ -15046,7 +15046,7 @@ body.single {
     @media (min-width: 768px) {
       .background-video__text {
         position: absolute;
-        top: 19%; } }
+        top: 25%; } }
     .background-video__text .heading__on-pink {
       font-size: 1.2rem;
       line-height: 48px;
