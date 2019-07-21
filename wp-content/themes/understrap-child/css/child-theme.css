@@ -13700,8 +13700,7 @@ body.admin-bar .fixed-top {
       max-height: 80px; }
       @media (max-width: 767.98px) {
         .icon-item__icon img {
-          max-width: 250px;
-          margin-top: 5rem; } }
+          max-width: 250px; } }
   .icon-item__title {
     color: #00bcd6;
     font-size: 1.5rem;
@@ -14877,8 +14876,7 @@ body.single {
 
 .footer {
   background-color: #ffffff;
-  padding-top: 4rem;
-  padding-bottom: 1rem; }
+  padding: 4rem 50px 1rem; }
   .footer__copyright {
     color: #525252;
     font-size: 0.8rem;
@@ -14888,8 +14886,8 @@ body.single {
     -webkit-transition: color 0.5s ease;
     transition: color 0.5s ease;
     font-size: 0.8rem; }
-  .footer__link:hover {
-    color: white; }
+    .footer__link:hover {
+      color: white; }
   .footer__heading {
     font-family: "GoudySans Md BT";
     font-size: 1rem;
@@ -14912,8 +14910,8 @@ body.single {
     margin-right: 1rem;
     -webkit-transition: color 0.5s ease;
     transition: color 0.5s ease; }
-  .footer__social-link:hover {
-    color: #525252; }
+    .footer__social-link:hover {
+      color: #525252; }
   .footer__email-signup-form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -17725,8 +17723,6 @@ strong {
 
 /* Mobile Sizing */
 @media (max-width: 767px) {
-  .col:not(.mobile-full-width), .col-sm-4:not(.mobile-full-width), .col-sm-8:not(.mobile-full-width), .col-md-4:not(.mobile-full-width), .page-section__one-third-column:not(.mobile-full-width), .statistics .statistics-inner .stat:not(.mobile-full-width), .col-md-8:not(.mobile-full-width), .page-section__single-column--narrow-center:not(.mobile-full-width), .page-section__single-column-narrow:not(.mobile-full-width), .page-section__two-third-column:not(.mobile-full-width), .post-intro__post-meta:not(.mobile-full-width), .section-header__8:not(.mobile-full-width) {
-    padding: 0px 50px; }
   #content > .row > .col-12, .page-section__content-wrapper > .row > .col-12, #content > .podcast-intro > .col-12, .page-section__content-wrapper > .podcast-intro > .col-12, #content > .row > .post-intro__breadcrumb, .page-section__content-wrapper > .row > .post-intro__breadcrumb, #content > .podcast-intro > .post-intro__breadcrumb, .page-section__content-wrapper > .podcast-intro > .post-intro__breadcrumb {
     padding: 0; } }
 
