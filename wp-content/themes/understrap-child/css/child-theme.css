@@ -12796,6 +12796,55 @@ body.admin-bar .fixed-top {
     margin-top: 8px;
     font-size: 1.5rem; }
 
+.events-tickets img {
+  width: 12%;
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+.events-tickets .heading--lg {
+  margin-bottom: 0; }
+
+.events-tickets p {
+  font-size: 1.25rem;
+  margin-top: 2.75rem;
+  margin-bottom: 2.75rem; }
+
+.events-tickets .button, .events-tickets .blog__sidebar .search-form__search-button, .blog__sidebar .events-tickets .search-form__search-button, .events-tickets .blog__sidebar .mc4wp-form input[type='submit'], .blog__sidebar .mc4wp-form .events-tickets input[type='submit'], .events-tickets .navbar a[title='get tickets!'], .navbar .events-tickets a[title='get tickets!'], .events-tickets .post-card__card-button {
+  font-size: inherit; }
+
+@media (min-width: 961px) {
+  .events-tickets td {
+    font-size: 1.25rem; } }
+
+@media (min-width: 1201px) {
+  .events-tickets td {
+    font-size: 1.5rem; } }
+
+.events-tickets td {
+  text-align: left; }
+
+.events-tickets__montage img {
+  width: 100%; }
+
+.events-faq .heading {
+  margin: 2rem 0 2.25rem;
+  letter-spacing: 5px; }
+
+.events-faq__button {
+  margin-bottom: 2rem; }
+  .events-faq__button img {
+    margin: 0 auto; }
+  .events-faq__button a {
+    margin: 5px 2% 0; }
+
+@media (max-width: 600px) {
+  .events-faq__arrow-left {
+    display: none; } }
+
+@media (max-width: 770px) {
+  .events-faq__arrow-right {
+    display: none; } }
+
 .post-preview {
   color: white; }
   @media (max-width: 767.98px) {

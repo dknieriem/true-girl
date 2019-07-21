@@ -365,3 +365,68 @@
         }
     }
 }
+
+.events-tickets {
+    img {
+        width: 12%;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    .heading--lg {
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 1.25rem;
+        margin-top: 2.75rem;
+        margin-bottom: 2.75rem;
+    }
+    .button {
+        font-size: inherit;
+    }
+    @media (min-width:961px) {
+       td {
+            font-size: 1.25rem;
+       }
+    }
+    @media (min-width:1201px) {
+        td {
+            font-size: 1.5rem;
+        }
+    }
+    td {
+        text-align: left;
+    }
+    &__montage {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.events-faq {
+    .heading {
+        margin: 2rem 0 2.25rem;
+        letter-spacing: 5px;
+    }
+    &__button {
+        margin-bottom: 2rem;
+        
+        img {
+            margin: 0 auto;
+        }
+
+        a {
+            margin: 5px 2% 0;
+        }
+    }
+    &__arrow-left {
+        @media (max-width: 600px) {
+            display: none;
+        }
+    }
+    &__arrow-right {
+        @media (max-width: 770px) {
+            display: none;
+        }
+    }
+}
