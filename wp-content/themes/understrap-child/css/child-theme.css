@@ -14167,6 +14167,46 @@ body.admin-bar .fixed-top {
     right: -60px;
     z-index: 0; }
 
+.about-mission {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.about-statistics {
+  padding-top: 0; }
+  .about-statistics .statistics, .about-statistics .statistics-inner {
+    padding-top: 0 !important; }
+  .about-statistics .stat {
+    margin-top: 0 !important;
+    margin-bottom: 35px !important; }
+  .about-statistics .count-title {
+    padding: 0 10%;
+    margin-bottom: 0 !important;
+    margin-top: 10px !important;
+    letter-spacing: 1px !important;
+    font-weight: 900 !important; }
+
+.about-dannah .page-section__one-third-column {
+  padding-left: 0;
+  padding-right: 0; }
+
+.about-dannah img {
+  margin-top: 0; }
+
+.about-dannah .heading {
+  margin-top: 5px;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  font-weight: 300; }
+
+.about-dannah .video_feature__description {
+  max-width: 680px; }
+
+.about-dannah .hr__inner {
+  width: 20% !important; }
+
+.about-dannah a.button, .about-dannah .blog__sidebar a.search-form__search-button, .blog__sidebar .about-dannah a.search-form__search-button, .about-dannah .navbar a[title='get tickets!'], .navbar .about-dannah a[title='get tickets!'], .about-dannah a.post-preview__button, .about-dannah a.post-card__card-button {
+  margin-top: 1rem; }
+
 .post-preview {
   /*@media (max-width: 767.98px) {
         margin-top:5rem;
