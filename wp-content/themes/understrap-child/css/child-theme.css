@@ -14279,6 +14279,8 @@ body.admin-bar .fixed-top {
         padding-top: 2rem; } }
   .product-feature__text__description {
     color: #00bcd6; }
+  .product-feature__text__button {
+    font-size: 1.5rem; }
 
 .post-intro {
   margin-top: 3rem;
