@@ -347,5 +347,172 @@
     }
 }
 
+.events-header-sm {
+    .heading {
+        margin-top: 0;
+        margin-bottom: 3px;
+        padding: 4px 10px 3px;
+        letter-spacing: 2px;
+    }
+}
 
+.events-3steps {
+    img {
+        margin-bottom: 0;
+    }
 
+    &__title {
+        font-size: 1.75rem;
+        font-weight: 300;
+        letter-spacing: 3px;
+    }
+
+    .heading.background-circle {
+        width: 5rem;
+        margin: 2rem auto;
+        font-size: 4rem;
+    }
+
+    &__steps {
+        padding-left: 1%;
+        padding-right: 1%;
+       
+        h4 {
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+       
+        a.button {
+            margin-top: 2rem;
+        }
+    }
+}
+
+.events-map {
+    padding: 0 5%;
+    &__header {
+        img {
+            margin-bottom: 8px;
+        }
+        h2 {
+            font-size: 2.75rem;
+            font-weight: 900;
+            line-height: 1;
+        }
+        p {
+            margin-top: 8px;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.events-tickets {
+    img {
+        width: 12%;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    .heading--lg {
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 1.25rem;
+        margin-top: 2.75rem;
+        margin-bottom: 2.75rem;
+    }
+    .button {
+        font-size: inherit;
+    }
+    @media (min-width:961px) {
+       td {
+            font-size: 1.25rem;
+       }
+    }
+    @media (min-width:1201px) {
+        td {
+            font-size: 1.5rem;
+        }
+    }
+    td {
+        text-align: left;
+    }
+    &__montage {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.events-faq {
+    .heading {
+        margin: 2rem 0 2.25rem;
+        letter-spacing: 5px;
+    }
+    &__button {
+        margin-bottom: 2rem;
+        
+        img {
+            margin: 0 auto;
+        }
+
+        a {
+            margin: 5px 2% 0;
+        }
+    }
+    &__arrow-left {
+        @media (max-width: 600px) {
+            display: none;
+        }
+    }
+    &__arrow-right {
+        @media (max-width: 770px) {
+            display: none;
+        }
+    }
+}
+
+/* About Page Styles - Tim */
+
+.about-hero {
+    padding-top: 5rem;
+    padding-bottom: 0;
+
+    &__left-flower {
+        position: absolute;
+        z-index: 999;
+        top: -35px;
+        left: -135px;
+    }
+    &__video {
+        .heading {
+
+            letter-spacing: 3px;
+            margin: 0;
+            //Extreme hack to move that pink heading for this specific page
+            @media (min-width: 768px) {
+                margin-left: -5rem !important;
+                margin-top: -4.5rem !important;
+            }
+            @media (min-width: 993px) {
+                margin-left: -3.5rem !important;
+                margin-top: -5.5rem !important;
+            }
+        }
+
+        .embed-container {
+            position: relative;
+            z-index: 5;
+            padding-top: 0;
+        }
+        .wp-video {
+            margin-right: 2%;
+            width: auto !important;
+        }
+    }
+    &__right-flower {
+        position: absolute;
+        bottom: -15px;
+        right: -60px;
+        z-index: 0;
+    }
+}

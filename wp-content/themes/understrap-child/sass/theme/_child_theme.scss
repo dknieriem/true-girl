@@ -188,13 +188,15 @@ table.table-borderless {
 
 /* Correct <strong> boldness */
 
-strong {
+strong
+{
     font-weight: 900;
 }
 
 /* Mobile Sizing */
-
-@media (max-width: 767px) {
+//TODO: might be irrelevant now;
+@media (max-width: 767px)
+{
 
     // .page-section__content-wrapper {
     //     padding-left: 0;
@@ -213,13 +215,16 @@ strong {
 }
 
 
-.wp-block-column {
+.wp-block-column
+{
 
-    @media (min-width: 600px){
+    @media (min-width: 600px)
+    {
         
         flex-basis: 100%;
 
-        &:nth-child(2n){
+        &:nth-child(2n)
+        {
             margin-left:inherit;
         }
 
