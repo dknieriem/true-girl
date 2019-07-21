@@ -7,6 +7,8 @@
     {
         @extend .img-fluid;
         display: block;
+        width: 150px;
+
         // max-width: 96px;
         
         margin:0px auto 15px auto;
@@ -30,12 +32,20 @@
         font-size:1.5rem;
         font-weight: bold;
         text-align: center;
+
+        width: 150px;
+        max-width: 100%;
+        margin: auto;
     }
     &__content
     {
         color:$teal;
         text-align: center;
         font-size: 1.2rem;
+
+        width: 150px;
+        max-width: 100%;
+        margin: auto;
     }
 }
 

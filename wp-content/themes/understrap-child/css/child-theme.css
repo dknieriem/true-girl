@@ -13692,6 +13692,7 @@ body.admin-bar .fixed-top {
   display: block; }
   .icon-item__icon {
     display: block;
+    width: 150px;
     margin: 0px auto 15px auto; }
     .icon-item__icon img {
       max-width: 150px;
@@ -13704,11 +13705,17 @@ body.admin-bar .fixed-top {
     color: #00bcd6;
     font-size: 1.5rem;
     font-weight: bold;
-    text-align: center; }
+    text-align: center;
+    width: 150px;
+    max-width: 100%;
+    margin: auto; }
   .icon-item__content {
     color: #00bcd6;
     text-align: center;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    width: 150px;
+    max-width: 100%;
+    margin: auto; }
 
 .icon-item:hover {
   text-decoration: none; }
