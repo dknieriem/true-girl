@@ -23,12 +23,30 @@
         background-repeat: repeat-y;
         background-size: 100%;
         min-height: 96px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
 
         @include media-breakpoint-up(lg){
             height: 96px; //DON set this to be a defined height
         }
     }
 
+}
+
+.navbar .navbar-container {
+    //@extend .container-fluid
+    //@include media-breakpoint-down(xl){
+
+    //}
 }
 
 body.admin-bar .fixed-top

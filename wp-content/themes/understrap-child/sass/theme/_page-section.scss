@@ -1,7 +1,6 @@
 /* [su_page_section] styles */
 .page-section
 {
-
     /* Default Styles */
     padding-top:2rem; //was 4rem
     padding-bottom:2rem; //was 4rem
@@ -10,13 +9,21 @@
     justify-content: center;
     position: relative;
 
+    @include media-breakpoint-down(sm)
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     /* Full Width Classes | full_width="xs,sm,md,lg,xl,dx" */
-    @each $breakpoint in map-keys($grid-breakpoints) {
+    @each $breakpoint in map-keys($grid-breakpoints)
+    {
         $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
         &--full-width#{$infix}
         {
-            @include media-breakpoint-down($breakpoint){
+            @include media-breakpoint-down($breakpoint)
+            {
                 padding-left: 0;
                 padding-right: 0;
 
@@ -27,9 +34,7 @@
                 }
             }
         }
-
     }
-
 
     &__content-wrapper
     {
@@ -37,10 +42,12 @@
         @extend #content;
         background-color: unset !important;
     }
+
     &__single-column
     {
         @extend .col-md-12;
     }
+
     &__single-column--narrow-center
     {
         @extend .col-lg-8;
@@ -48,6 +55,7 @@
         @extend .col-md-8;
         @extend .offset-md-2;
     }
+
     &__single-column-narrow
     {
         @extend .col-lg-8;
@@ -55,29 +63,61 @@
         @extend .col-md-8;
         @extend .offset-md-2;
     }
+
     &__single-column--narrow-left
     {
         @extend .col-md-6;
     }
+
     &__single-column--narrow-right
     {
         @extend .col-md-6;
         @extend .offset-md-6;
     }
+
     &__one-half-column
     {
         @extend .col-md-6;
+
+        //if columns are stacked, put space between them
+        &:first-child
+        {
+            @include media-breakpoint-down(sm)
+            {                
+                margin-bottom: 2rem;
+            }
+        }
     }
+
     &__one-third-column
     {
         @extend .col-md-4;
 
+        //if columns are stacked, put space between them
+        &:first-child, &:first-child+.page-section__one-third-column
+        {
+            @include media-breakpoint-down(sm)
+            {                
+                margin-bottom: 2rem;
+            }
+        }
+
     }
+
     &__two-third-column
     {
         @extend .col-md-8;
-        //@extend .col-md-12;
+        
+        //if columns are stacked, put space between them
+        &:first-child
+        {
+            @include media-breakpoint-down(sm)
+            {                
+                margin-bottom: 2rem;
+            }
+        }
     }
+
     &__testimonial
     {
         padding-top: 3rem;
@@ -89,7 +129,8 @@
         padding-bottom: 1rem;
     }
 
-    &__overlay-image {
+    &__overlay-image
+    {
         position: absolute;
         top: 0;
         @media (max-width:993px) {
@@ -97,16 +138,16 @@
         }
     }
 
-    &__background-video {
-    
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    padding-top: 56.25%;
-    @media (max-width:993px) {
-        display: none;
-    }
+    &__background-video
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        padding-top: 56.25%;
+        @media (max-width:993px) {
+            display: none;
+        }
     
         .wp-video {
             width: 100% !important;
@@ -134,7 +175,6 @@
     }
 
     /* Tim aspect ratio vid hack. see https://css-tricks.com/aspect-ratio-boxes/ /*/
-
     &__full-video:before { 
         content: "";
         width: 1px;

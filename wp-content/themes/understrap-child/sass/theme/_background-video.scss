@@ -52,17 +52,17 @@
             -webkit-box-shadow: 10px 0 0 #c83b94, -10px 0 0 #c83b94;
             box-shadow: 10px 0 0 #c83b94, -10px 0 0 #c83b94;
 
-           @include media-breakpoint-between(sm,md)
+           @include media-breakpoint-between(md,md)
             {
                 font-size: 1.2rem;
-                line-height: 36px;
+                line-height: 40px;
                 letter-spacing: 2px;
                 padding: 6px 0;
                 -webkit-box-shadow: 8px 0 0 #c83b94, -8px 0 0 #c83b94;
                 box-shadow: 8px 0 0 #c83b94, -8px 0 0 #c83b94;
             }
 
-        	@include media-breakpoint-between(md,lg)
+        	@include media-breakpoint-between(lg,lg)
             {
                 font-size: 1.5rem;
                 line-height: 48px;
@@ -83,5 +83,17 @@
             margin-top: -15px;
             font-size: 1.5rem;
         }
+    }
+}
+
+/* Modal Video */
+#bgVideoFeatureModal {
+
+    .wp-video {
+        width: 100% !important;
+    }
+
+    iframe {
+        width: 100%;
     }
 }

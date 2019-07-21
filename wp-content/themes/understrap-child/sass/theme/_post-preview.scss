@@ -1,10 +1,12 @@
 .post-preview
 {
-    @extend .col-md-4;
+    @extend .card-deck;
+
+    //@extend .col-md-4;
     // padding-right: 0;
     // padding-left: 0;
-    color:white;
-    @media (max-width: 767.98px) {
+    //color:white;
+    /*@media (max-width: 767.98px) {
         margin-top:5rem;
         margin-left:3rem;
         margin-right:3rem;
@@ -13,21 +15,62 @@
     {
         @extend .img-fluid;
         border: solid 10px rgba(0,0,0,0.2);
+    }*/
+
+    &__heading {
+        @extend .text-goudysans;
+        @extend .mb-2;
+        @extend .text-left;
+        letter-spacing: 3px;
+        font-weight: bold;
     }
+
+    &__card {
+        @extend .card;
+        @extend .border-0;
+
+
+        @include media-breakpoint-down(sm)
+        {
+            flex-direction: column;
+            flex: 1 0 100% !important;
+            margin-bottom: 3rem !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        .card-body {
+            @extend .text-left;
+        }
+    }
+
     &__title
     {
+ 
         color: $dark-gray;
         font-size:1rem;
-        text-align: center;
-        margin-top:1.5rem;
-        //line-height: 2rem;
-        margin-bottom:1.5rem;
-        padding-left:1rem;
-        padding-right:1rem;
+        text-align: left;
+        margin-top:0.5rem;
+        margin-bottom:0.5rem;
+        padding-left:0.5rem;
+        padding-right:0.5rem;
+
+        @include media-breakpoint-down(sm)
+        {
+            font-size: 1.5rem;
+        }
     }
+
+    &__button
+    {
+        @extend .button;
+        @extend .button--medium;
+        padding: .2rem 1rem;
+    }
+
 }
 
-.post-preview:hover
+/*.post-preview:hover
 {
     color:white;
-}
+}*/
