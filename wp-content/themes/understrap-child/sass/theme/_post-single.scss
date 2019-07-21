@@ -1,14 +1,34 @@
 // All styles for post-single
 
 
-body.single {
+body.single
+{
     background-image: none;
+}
+
+#single-wrapper
+{
+
+
+
+    &>#content 
+    {
+
+        padding-top: 3rem;
+
+        @include media-breakpoint-up(md)
+        {
+            padding-left: 14%;
+            padding-right: 14%;
+        }
+    }
 }
 
 .post-block
 {
     margin-top:3rem;
     margin-bottom:2rem;
+
     &__lead-text
     {
         font-size:1.7rem;
@@ -16,28 +36,33 @@ body.single {
         margin-bottom:1rem;
     }
 
-    p {
+    p
+    {
     	margin-top: 1rem;
     }
 
-    a {
+    a
+    {
     	font-weight: bold;
     	text-decoration: underline !important;
     }
 
     h1,h2,h3,h4,h5,
-    .h1, .h2, .h3, .h4, .h5 {
+    .h1, .h2, .h3, .h4, .h5
+    {
     	@extend .text-goudysans;
     	color: $black;
     }
 
 }
 
-.author-info {
+.author-info
+{
 	background-color: $author-background;
 	padding: 1rem 2rem;
 
-	&__photo {
+	&__photo
+    {
         border-radius:50%;
         height:6rem;
         width:6rem;
@@ -48,17 +73,20 @@ body.single {
         margin-bottom:1rem;
     }
 
-	&__bio {
+	&__bio 
+    {
 	
-	h4 {
-		color: $black;
-		font-size: 1.25rem;
-	}
+    	h4
+        {
+    		color: $black;
+    		font-size: 1.25rem;
+    	}
 
-	p {
-		line-height: 1.5;
-	}
-}
+    	p
+        {
+    		line-height: 1.5;
+    	}
+    }
 
 }
 

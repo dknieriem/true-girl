@@ -2,22 +2,8 @@
 {
     @extend .card-deck;
 
-    //@extend .col-md-4;
-    // padding-right: 0;
-    // padding-left: 0;
-    //color:white;
-    /*@media (max-width: 767.98px) {
-        margin-top:5rem;
-        margin-left:3rem;
-        margin-right:3rem;
-    }
-    &__featured-img
+    &__heading
     {
-        @extend .img-fluid;
-        border: solid 10px rgba(0,0,0,0.2);
-    }*/
-
-    &__heading {
         @extend .text-goudysans;
         @extend .mb-2;
         @extend .text-left;
@@ -25,7 +11,8 @@
         font-weight: bold;
     }
 
-    &__card {
+    &__card
+    {
         @extend .card;
         @extend .border-0;
 
@@ -39,7 +26,8 @@
             margin-right: 0 !important;
         }
 
-        .card-body {
+        .card-body
+        {
             @extend .text-left;
         }
     }
@@ -69,8 +57,3 @@
     }
 
 }
-
-/*.post-preview:hover
-{
-    color:white;
-}*/
