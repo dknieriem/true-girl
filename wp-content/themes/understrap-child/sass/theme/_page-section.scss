@@ -29,8 +29,18 @@
 
                 .page-section__content-wrapper
                 {
+                    margin-left: 0;
+                    margin-right: 0;
                     padding-left: 0;
-                    padding-right: 0;        
+                    padding-right: 0;
+
+                    //only the first level of rows
+                    //other nested content should appear as normal
+                    &>.row 
+                    {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }        
                 }
             }
         }
