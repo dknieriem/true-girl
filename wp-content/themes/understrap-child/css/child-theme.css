@@ -13306,6 +13306,9 @@ ol > li {
   background-image: url("../img/curly-brace-top-white.png"), url("../img/curly-brace-bottom-white.png");
   background-color: #00bcd6; }
 
+.blog-wrapper > #content, .blog-wrapper > .page-section__content-wrapper {
+  background: url("../img/blog-top.png") top center, url("../img/blog-bottom.png") bottom center, white; }
+
 .blog__sidebar {
   margin-bottom: 10px;
   padding: 4%;

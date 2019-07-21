@@ -3,6 +3,16 @@
 
 //body class
 .blog {
+
+	//content wrapper with custom background
+	&-wrapper {
+
+		&>#content {
+			background: url('../img/blog-top.png') top center, 
+			url('../img/blog-bottom.png') bottom center, 
+			white;
+		}
+	}
 	
 	&__sidebar {
 
