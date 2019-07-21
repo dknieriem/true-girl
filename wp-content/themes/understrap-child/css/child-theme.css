@@ -12847,12 +12847,13 @@ body.admin-bar .fixed-top {
 
 /* About Page Styles - Tim */
 .about-hero {
+  padding-top: 5rem;
   padding-bottom: 0; }
   .about-hero__left-flower {
     position: absolute;
     z-index: 999;
-    top: 12px;
-    left: -140px; }
+    top: -35px;
+    left: -135px; }
   .about-hero__video .heading {
     letter-spacing: 3px;
     margin: 0; }
@@ -12862,21 +12863,19 @@ body.admin-bar .fixed-top {
         margin-top: -4.5rem !important; } }
     @media (min-width: 993px) {
       .about-hero__video .heading {
-        margin-left: -4rem !important;
-        margin-top: -3.25rem !important; } }
-  .about-hero__video .video_feature {
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 4rem;
+        margin-left: -3.5rem !important;
+        margin-top: -5.5rem !important; } }
+  .about-hero__video .embed-container {
     position: relative;
-    z-index: 5; }
+    z-index: 5;
+    padding-top: 0; }
   .about-hero__video .wp-video {
     margin-right: 2%;
     width: auto !important; }
   .about-hero__right-flower {
     position: absolute;
-    bottom: -20px;
-    right: -40px;
+    bottom: -15px;
+    right: -60px;
     z-index: 0; }
 
 .post-preview {
