@@ -1,6 +1,6 @@
 /* WP Shopify */
 
-.wpshopify 
+.wpshopify /* don't see this anywhere on the new one */
 {
     .row 
     {
@@ -13,12 +13,17 @@
     }
 }
 
-/*.wps-products-img
+.store {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.wps-product-image
 {
     max-height:250px;
 }
 
-.wps-collection-item, .wps-product-item
+.wps-collection-item, .wps-product-item, .wps-item
 {
     display: flex;
     flex-direction: column;
@@ -33,21 +38,21 @@
     flex-direction: column;
 }
 
-.wps-product-item .wps-product-link
+.wps-product-item .wps-product-link, .wps-product-image-wrapper
 {
     flex-shrink: 0;
     flex-basis: auto;
     flex-grow: 1;
 }
 
-.wps-btn-secondary, .wps-btn.wps-btn-secondary.wps-is-disabled:hover
+.wps-btn-secondary, .wps-btn.wps-btn-secondary.wps-is-disabled:hover, 
 {
-    background-color: $rose;
+    background-color: $dark-pink !important;
 }
 
 .wps-btn-secondary:hover
 {
-    background-color: lighten($rose,10%);
+    background-color: lighten($dark-pink,10%) !important;
 }
 
 // Hack!
@@ -55,4 +60,4 @@
 .page-id-6287 .wps-products-heading, .page-template-no-hero-advanced-white .wps-products-heading, .page-template-no-hero-advanced .wps-products-heading, .page-template-no-hero .wps-products-heading
 {
     display: none !important;
-}*/
+}
