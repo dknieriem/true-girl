@@ -378,12 +378,14 @@ strong
 
 .testimonial_small
 {
-    margin-left:40px;
-    margin-right:40px;
+    /*margin-left:40px;
+    margin-right:40px;*/
+    max-width: 405px;
+    margin: auto;
     @media (max-width:993px)
     {
-        margin-left: 20px;
-        margin-right: 20px;
+       /* margin-left: 20px;
+        margin-right: 20px;*/
     }
 
     &__attribution

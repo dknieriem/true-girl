@@ -13143,9 +13143,9 @@ p {
     background-color: #c83b94;
     font-size: 1.5rem;
     line-height: 48px;
-    padding: 8px 0px;
-    -webkit-box-shadow: 10px 0 0 #c83b94, -10px 0 0 #c83b94;
-            box-shadow: 10px 0 0 #c83b94, -10px 0 0 #c83b94; }
+    padding: 6px 0 3px;
+    -webkit-box-shadow: 10px 0 0 #c83b94, -6px 0 0 #c83b94;
+            box-shadow: 10px 0 0 #c83b94, -6px 0 0 #c83b94; }
   .heading--white-on-pink {
     color: #ffffff;
     background-color: #c83b94;
@@ -15036,13 +15036,13 @@ body.single {
   .background-video__text {
     z-index: 999;
     position: relative; }
-    @media (max-width: 575.98px) {
-      .background-video__text {
-        margin-left: 50px; } }
     @media (max-width: 767.98px) {
       .background-video__text {
         margin-bottom: -20px;
         margin-left: 75px; } }
+    @media (max-width: 575.98px) {
+      .background-video__text {
+        margin-left: 50px; } }
     @media (min-width: 768px) {
       .background-video__text {
         position: absolute;
@@ -15096,12 +15096,14 @@ body.single {
   width: 100%; }
 
 .video_feature {
-  margin-left: 40px;
-  margin-right: 40px; }
-  @media (max-width: 993px) {
-    .video_feature {
-      margin-left: 20px;
-      margin-right: 20px; } }
+  /*   margin-left:40px;
+    margin-right:40px;*/
+  max-width: 550px;
+  margin: auto;
+  /*    @media (max-width:993px){
+        margin-left: 20px;
+        margin-right: 20px;
+    }*/ }
   .video_feature__video {
     margin-bottom: 1.5rem; }
   .video_feature__description {
@@ -17802,12 +17804,14 @@ strong {
 
 /* Testimonials */
 .testimonial_small {
-  margin-left: 40px;
-  margin-right: 40px; }
+  /*margin-left:40px;
+    margin-right:40px;*/
+  max-width: 405px;
+  margin: auto; }
   @media (max-width: 993px) {
     .testimonial_small {
-      margin-left: 20px;
-      margin-right: 20px; } }
+      /* margin-left: 20px;
+        margin-right: 20px;*/ } }
   .testimonial_small__attribution {
     color: #c83b94;
     font-family: "Myriad Pro";
