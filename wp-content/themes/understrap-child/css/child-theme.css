@@ -14329,6 +14329,9 @@ body.admin-bar .fixed-top {
     color: #00bcd6; }
   .product-feature__text__button {
     font-size: 1.5rem; }
+    @media (max-width: 767.98px) {
+      .product-feature__text__button {
+        font-size: 1.25rem; } }
 
 .post-intro {
   margin-bottom: 2rem; }
@@ -17740,6 +17743,13 @@ strong {
   font-weight: 900;
   line-height: 1;
   margin-bottom: 1.2rem; }
+  @media (max-width: 767.98px) {
+    .mc-page-form h2 {
+      font-size: 20pt; } }
+
+@media (max-width: 767.98px) {
+  .mc-page-form h3 {
+    font-size: 14pt; } }
 
 .mc-page-form .mc4wp-form {
   width: 100%; }
@@ -17797,6 +17807,11 @@ strong {
         .section-header__text--large {
           font-size: 48px;
           padding: 2rem 1rem; } }
+      @media (max-width: 767.98px) {
+        .section-header__text--large {
+          font-size: 1.7rem;
+          letter-spacing: 3px;
+          padding: 2rem 0; } }
     .section-header__text--small {
       font-size: 36px; }
     .section-header__text small {

@@ -241,6 +241,19 @@ strong
         font-weight: 900;
         line-height: 1;
         margin-bottom: 1.2rem;
+
+        @include media-breakpoint-down(sm)
+        {
+            font-size: 20pt;
+        }
+    }
+
+    h3
+    {
+        @include media-breakpoint-down(sm)
+        {
+            font-size: 14pt;
+        }
     }
 
     .mc4wp-form
@@ -343,19 +356,30 @@ strong
         vertical-align: middle;
         padding: 2rem 5rem;
         letter-spacing: 6px; 
-        // DON: I don't like hardcoding letter-spacing as part of the theme, but it's pretty necessary when using that Shark font to align with the comps. Maybe we pull into a setting?
-        
+        // DON: I don't like hardcoding letter-spacing as part of the theme, 
+        // but it's pretty necessary when using that Shark font to align with the comps. 
+        // Maybe we pull into a setting?
+
         &--large
         {
             font-size: 75px;
+
             @media (max-width: 1200px )
             {
                 font-size:56px;
             }
+
             @media (max-width: 993px )
             {
                 font-size:48px;
                 padding: 2rem 1rem;
+            }
+
+           @include media-breakpoint-down(sm)
+            {
+                font-size: 1.7rem;
+                letter-spacing: 3px;
+                padding: 2rem 0;
             }
         }
 

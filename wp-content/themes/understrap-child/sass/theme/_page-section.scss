@@ -143,7 +143,8 @@
     {
         position: absolute;
         top: 0;
-        @media (max-width:993px) {
+        @media (max-width:993px)
+        {
             display: none;
         }
     }
@@ -155,29 +156,35 @@
         position: absolute;
         top: 0;
         padding-top: 56.25%;
-        @media (max-width:993px) {
+        @media (max-width:993px)
+        {
             display: none;
         }
     
-        .wp-video {
+        .wp-video
+        {
             width: 100% !important;
             height: 100% !important;
         }
 
-        .mejs-container {
+        .mejs-container
+        {
             width: 100% !important;
             height: 100% !important;
 
-            &:hover {
+            &:hover
+            {
                 cursor: initial;
             }
         }
 
-        .mejs-overlay, .mejs-controls {
+        .mejs-overlay, .mejs-controls
+        {
             display: none;
         }
 
-        iframe {
+        iframe
+        {
             width: 100%;
             height: 100%;
         }
@@ -185,7 +192,8 @@
     }
 
     /* Tim aspect ratio vid hack. see https://css-tricks.com/aspect-ratio-boxes/ /*/
-    &__full-video:before { 
+    &__full-video:before
+    { 
         content: "";
         width: 1px;
         margin-left: -1px;
@@ -194,7 +202,8 @@
         padding-top: 56.25%;
     }
 
-    &__full-video:after { 
+    &__full-video:after
+    { 
     content: "";
     display: table;
     clear: both;
@@ -202,8 +211,10 @@
 
 }
 
-@each $color, $hex in $colors {
-   .background-#{$color} {
+@each $color, $hex in $colors
+{
+   .background-#{$color}
+   {
         background-color: $hex;
    }
 }
@@ -248,117 +259,148 @@
 
 /* Events Page Hacks - Tim */
 
-.events-hero {
+.events-hero
+{
     padding-left: 0;
     padding-right: 0;
 }
 
-.events-hero-banner {
-    img {
+.events-hero-banner
+{
+    img
+    {
         margin-top: 2.3rem;
         margin-bottom: 0;
     }
 
-    .heading {
+    .heading
+    {
         margin-top: .6rem;
         margin-bottom: .6rem;
         font-size: 2.1rem;
         letter-spacing: 2px;
     }
 
-    .hr__inner {
+    .hr__inner
+    {
         margin: .8rem auto;
     }
 }
 
-.events-hero-header {
+.events-hero-header
+{
     margin-top: 6%;
 
-    .heading {
+    .heading
+    {
         font-size: 2.7rem;
         letter-spacing: 3px;
         line-height: 75px;
         padding: 8px 0;
     }
 
-    a {
+    a
+    {
         padding: .6rem 1.75rem;
         font-weight: 700;
         font-size: 2.4rem
     }
 
-    .mt-md {
+    .mt-md
+    {
         margin-top: 2.5rem !important;
     }
 }
 
-.events-header {
-    
-    .section-header {
+.events-header
+{
+    .section-header
+    {
         height: auto;
         
-        &__text {
+        &__text
+        {
             font-size: 4.5rem;
             padding: 0 5rem;
         }
     }
 
-    h3 {
+    h3
+    {
         font-size: 2.5rem;
     }
 }
 
-.events-video-feature {
-    .video_feature {
+.events-video-feature
+{
+    .video_feature
+    {
         margin-right: 0;
     }
-    .wp-video {
+
+    .wp-video
+    {
         margin-right: 2%;
         width: auto !important;
     }
  
     /* This font design is in a very tight window.. some added tablet - desktop responsiveness to the font size & margin helps */
 
-    @media (min-width:768px) {
-        p {
+    @media (min-width:768px)
+    {
+        p
+        {
             margin-top: .5rem !important;
             font-size: 1rem;
         }
-        a.button {
+
+        a.button
+        {
             font-size: 1rem;
         }
     }
 
     @media (min-width:961px) {
-        p {
+        p
+        {
             margin-top: 1rem !important;
             font-size: 1.25rem;
         }
-        a.button {
+
+        a.button
+        {
             font-size: 1.25rem;
         }
     }
     
-    @media (min-width:1201px) {
-        p {
+    @media (min-width:1201px)
+    {
+        p
+        {
             margin-top: 2rem !important;
             font-size: 1.5rem;
         }
-        a.button {
+
+        a.button
+        {
             font-size: 1.5rem;
         }
     }
 
-    @media (min-width:1381px) {
-        p {
+    @media (min-width:1381px)
+    {
+        p
+        {
             margin-top: 3rem !important;
             font-size: 1.75rem;
         }     
     }
 }
 
-.events-header-sm {
-    .heading {
+.events-header-sm
+{
+    .heading
+    {
         margin-top: 0;
         margin-bottom: 3px;
         padding: 4px 10px 3px;
@@ -366,33 +408,40 @@
     }
 }
 
-.events-3steps {
-    img {
+.events-3steps
+{
+    img
+    {
         margin-bottom: 0;
     }
 
-    &__title {
+    &__title
+    {
         font-size: 1.75rem;
         font-weight: 300;
         letter-spacing: 3px;
     }
 
-    .heading.background-circle {
+    .heading.background-circle
+    {
         width: 5rem;
         margin: 2rem auto;
         font-size: 4rem;
     }
 
-    &__steps {
+    &__steps
+    {
         padding-left: 1%;
         padding-right: 1%;
        
-        h4 {
+        h4
+        {
             font-weight: 300;
             letter-spacing: 2px;
         }
        
-        a.button {
+        a.button
+        {
             margin-top: 2rem;
         }
     }
