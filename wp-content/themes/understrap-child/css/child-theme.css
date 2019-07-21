@@ -6506,7 +6506,7 @@ button.bg-dark:focus {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex {
+.d-flex, .music-column {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important; }
@@ -6700,7 +6700,7 @@ button.bg-dark:focus {
       -ms-flex-direction: row !important;
           flex-direction: row !important; }
 
-.flex-column {
+.flex-column, .music-column {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
@@ -6763,7 +6763,7 @@ button.bg-dark:focus {
       -ms-flex-pack: end !important;
           justify-content: flex-end !important; }
 
-.justify-content-center {
+.justify-content-center, .music-column, .music-column__text {
   -webkit-box-pack: center !important;
       -ms-flex-pack: center !important;
           justify-content: center !important; }
@@ -9227,7 +9227,7 @@ a.text-dark:hover, a.text-dark:focus {
   float: right;
   margin-left: 1.5em; }
 
-.aligncenter {
+.aligncenter, .header-narrow {
   margin: 0px auto; }
 
 .entry-footer span {
@@ -13063,7 +13063,7 @@ p {
 .text-green {
   color: #28a745; }
 
-.text-teal, .accordion-category, .faq-item__body--a {
+.text-teal, .accordion-category, .faq-item__body--a, .music-column__text {
   color: #00bcd6; }
 
 .text-cyan {
@@ -13084,7 +13084,7 @@ p {
 .text-dark-pink {
   color: #b94691; }
 
-.text-teal, .accordion-category, .faq-item__body--a {
+.text-teal, .accordion-category, .faq-item__body--a, .music-column__text {
   color: #00bcd6; }
 
 .text-light-teal {
@@ -15211,6 +15211,14 @@ body.single {
       margin-left: 1rem; }
     .faq-item__body--answer {
       padding: 0 0.75rem; }
+
+.music-column__text {
+  max-width: 375px;
+  margin: auto; }
+
+.header-narrow {
+  width: 450px;
+  max-width: 100%; }
 
 /* WP Shopify */
 @media (max-width: 500px) {
