@@ -13425,7 +13425,7 @@ ol > li {
     }*/ }
   @media (max-width: 767.98px) {
     .button, .blog__sidebar .search-form__search-button, .blog__sidebar .mc4wp-form input[type='submit'], .navbar a[title='get tickets!'], .post-preview__button, .post-card__card-button {
-      font-size: 2.25rem; } }
+      font-size: 1.1rem; } }
   .button--white {
     background-color: white;
     color: #c83b94; }
@@ -15172,6 +15172,9 @@ body.single {
     color: #525252;
     margin-top: 1rem;
     margin-bottom: .5rem; }
+  @media (max-width: 767.98px) {
+    .video_feature_button {
+      font-size: 1.1rem; } }
   .video_feature div.hr__inner {
     margin: .25rem auto .25rem 0 !important; }
 
@@ -17692,7 +17695,9 @@ body {
   line-height: 1.2; }
   @media (max-width: 767.98px) {
     body {
-      padding-top: 126px; } }
+      padding-top: 126px; }
+      body #page {
+        overflow-x: hidden; } }
 
 .wrapper {
   padding-top: 0px;
@@ -17865,6 +17870,18 @@ strong {
     vertical-align: middle;
     padding: 2rem 5rem;
     letter-spacing: 6px; }
+    @media (max-width: 1200px) {
+      .section-header__text {
+        font-size: 40px; } }
+    @media (max-width: 993px) {
+      .section-header__text {
+        font-size: 40px;
+        padding: 2rem 1rem; } }
+    @media (max-width: 767.98px) {
+      .section-header__text {
+        font-size: 1.7rem;
+        letter-spacing: 3px;
+        padding: 2rem 0; } }
     .section-header__text--large {
       font-size: 75px; }
       @media (max-width: 1200px) {

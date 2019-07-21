@@ -50,9 +50,16 @@ body
     background-color: $teal;
     line-height: 1.2;
 
+
+    
     @include media-breakpoint-down(sm)
     {
         padding-top:126px;
+        
+        #page
+        {
+            overflow-x: hidden;
+        }
     }
 }
 
@@ -360,6 +367,24 @@ strong
         // DON: I don't like hardcoding letter-spacing as part of the theme, 
         // but it's pretty necessary when using that Shark font to align with the comps. 
         // Maybe we pull into a setting?
+
+        @media (max-width: 1200px )
+        {
+            font-size:40px;
+        }
+
+        @media (max-width: 993px )
+        {
+            font-size:40px;
+            padding: 2rem 1rem;
+        }
+
+       @include media-breakpoint-down(sm)
+        {
+            font-size: 1.7rem;
+            letter-spacing: 3px;
+            padding: 2rem 0;
+        }
 
         &--large
         {
