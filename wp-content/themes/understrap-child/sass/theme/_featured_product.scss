@@ -5,6 +5,8 @@
 
 	&__image
 	{
+		@extend .col-md-5;
+
 		img
 		{
 
