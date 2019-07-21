@@ -430,3 +430,51 @@
         }
     }
 }
+
+/* About Page Styles - Tim */
+
+.about-hero {
+    
+    padding-bottom: 0;
+
+    &__left-flower {
+        position: absolute;
+        z-index: 999;
+        top: 12px;
+        left: -140px;
+    }
+    &__video {
+        .heading {
+
+            letter-spacing: 3px;
+            margin: 0;
+            //Extreme hack to move that pink heading for this specific page
+            @media (min-width: 768px) {
+                margin-left: -5rem !important;
+                margin-top: -4.5rem !important;
+            }
+            @media (min-width: 993px) {
+                margin-left: -4rem !important;
+                margin-top: -3.25rem !important;
+            }
+        }
+
+        .video_feature {
+            margin-left: 0;
+            margin-right: 0;
+            padding-top: 4rem;
+            position: relative;
+            z-index: 5;
+        }
+        .wp-video {
+            margin-right: 2%;
+            width: auto !important;
+        }
+    }
+    &__right-flower {
+        position: absolute;
+        bottom: -20px;
+        right: -40px;
+        z-index: 0;
+    }
+}

@@ -190,19 +190,6 @@ table.table-borderless {
     // DON: Very ugly hack here! We should clean up the shortcode for background videos
 }
 
-.about-page-heading
-{
-    //Extreme hack to move that pink heading for this specific page
-    @media (min-width: 768px) {
-        margin-left: -5rem !important;
-        margin-top: -4.5rem !important;
-    }
-    @media (min-width: 993px) {
-        margin-left: -4rem !important;
-        margin-top: -4.5rem !important;
-    }
-}
-
 // DON: We should move this into a _video-feature.scss file
 .video_feature {
     margin-left:50px;

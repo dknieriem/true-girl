@@ -12845,6 +12845,40 @@ body.admin-bar .fixed-top {
   .events-faq__arrow-right {
     display: none; } }
 
+/* About Page Styles - Tim */
+.about-hero {
+  padding-bottom: 0; }
+  .about-hero__left-flower {
+    position: absolute;
+    z-index: 999;
+    top: 12px;
+    left: -140px; }
+  .about-hero__video .heading {
+    letter-spacing: 3px;
+    margin: 0; }
+    @media (min-width: 768px) {
+      .about-hero__video .heading {
+        margin-left: -5rem !important;
+        margin-top: -4.5rem !important; } }
+    @media (min-width: 993px) {
+      .about-hero__video .heading {
+        margin-left: -4rem !important;
+        margin-top: -3.25rem !important; } }
+  .about-hero__video .video_feature {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 4rem;
+    position: relative;
+    z-index: 5; }
+  .about-hero__video .wp-video {
+    margin-right: 2%;
+    width: auto !important; }
+  .about-hero__right-flower {
+    position: absolute;
+    bottom: -20px;
+    right: -40px;
+    z-index: 0; }
+
 .post-preview {
   color: white; }
   @media (max-width: 767.98px) {
@@ -16286,16 +16320,6 @@ table.table-borderless td {
 
 .video-mobile-bg {
   background-image: url("https://staging4.mytruegirl.com/wp-content/uploads/2019/07/LiveEventsBkgd.jpg") !important; }
-
-@media (min-width: 768px) {
-  .about-page-heading {
-    margin-left: -5rem !important;
-    margin-top: -4.5rem !important; } }
-
-@media (min-width: 993px) {
-  .about-page-heading {
-    margin-left: -4rem !important;
-    margin-top: -4.5rem !important; } }
 
 .video_feature {
   margin-left: 50px;
