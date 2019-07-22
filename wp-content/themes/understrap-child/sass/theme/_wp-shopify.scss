@@ -39,7 +39,7 @@
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr;
 
-    @include media-breakpoint-down(md)
+    @include media-breakpoint-down(sm)
     {
         grid-template-columns: 1fr;
     }
