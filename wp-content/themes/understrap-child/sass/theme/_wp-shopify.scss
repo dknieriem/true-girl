@@ -45,6 +45,11 @@
     }
 }
 
+.wpshopify  .wps-product-pricing
+{
+    margin-bottom: auto;
+}
+
 .wpshopify .wps-w-3 
 {
 
@@ -53,6 +58,7 @@
     @media (max-width: 900px)
     {
         display: flex;
+        flex-direction: column;
         max-width: 100% !important;
     }
 }
