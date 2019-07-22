@@ -36,11 +36,18 @@
 }
 
 
-.mejs-container,
-.mejs-container .mejs-controls, .mejs-embed,
-.mejs-embed body {
-    width: 100% !important;
+.mejs-video
+{
+    &.mejs-container,
+    &.mejs-container .mejs-controls, 
+    .mejs-embed,
+    .mejs-embed body 
+    {
+        width: 100% !important;
+    }
 }
+
+
 
 .mejs-iframe-overlay {
     iframe {

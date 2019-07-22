@@ -13931,6 +13931,15 @@ body.admin-bar .fixed-top {
     content: "";
     display: table;
     clear: both; }
+  @media (max-width: 991.98px) {
+    .page-section.text-md-overlay:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.25);
+      position: absolute;
+      top: 0;
+      left: 0; } }
 
 .background-blue {
   background-color: #007bff; }
@@ -15181,9 +15190,10 @@ body.single {
 .mejs-container:hover, .video_feature__video:hover {
   cursor: pointer; }
 
-.mejs-container,
-.mejs-container .mejs-controls, .mejs-embed,
-.mejs-embed body {
+.mejs-video.mejs-container,
+.mejs-video.mejs-container .mejs-controls,
+.mejs-video .mejs-embed,
+.mejs-video .mejs-embed body {
   width: 100% !important; }
 
 .mejs-iframe-overlay iframe {
@@ -17956,3 +17966,6 @@ strong {
 .map-container {
   display: table-cell;
   margin: auto; }
+
+.mejs-audio {
+  width: 240px !important; }
