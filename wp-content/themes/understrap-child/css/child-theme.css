@@ -13142,8 +13142,9 @@ p {
     color: #ffffff;
     background-color: #c83b94;
     font-size: 1.5rem;
-    line-height: 48px;
+    line-height: 42px;
     padding: 6px 0 3px;
+    letter-spacing: 3px;
     -webkit-box-shadow: 10px 0 0 #c83b94, -6px 0 0 #c83b94;
             box-shadow: 10px 0 0 #c83b94, -6px 0 0 #c83b94; }
   .heading--white-on-pink, .faq-header {
