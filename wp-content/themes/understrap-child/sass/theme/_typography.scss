@@ -131,28 +131,30 @@ p
 
     &--white-on-pink
     {
-        color: $white;
         background-color: $pink;
+        color: $white;
+        letter-spacing: 3px;
         padding: 8px 15px;
     }
 
     &--white-on-dark-pink
     {
-        color: $white;
         background-color: $dark-pink;
+        color: $white;
+        letter-spacing: 3px;
         padding: 8px 15px;
     }
 
     &__on-teal
     {
-        color: $white;
         background-color: $teal;
+        color: $white;
     }
 
     &__on-yellow
     {
-        color: $white;
         background-color: $yellow;
+        color: $white;
     }
 
     &__on-white
@@ -163,35 +165,35 @@ p
     &.background-circle
     {
         border-radius: 50%;
-        width: 3rem;
         margin: 1rem auto;
+        width: 3rem;
     }
 }
 
 h1
 {
-    font-family: $header-font;
     color: $white;
+    font-family: $header-font;
     font-weight: 300;
 }
 
 h2,h3,h4
 {
-    font-family: $body-font;
     color: $teal;
+    font-family: $body-font;
 }
 
 h5
 {
-    text-transform: uppercase;
-    font-weight:300;
     color: $teal;
+    font-weight:300;
+    text-transform: uppercase;
 }
 
 .entry-content ul li, .entry-content ol li
 {
-    margin-top:.5rem;
     margin-bottom:.5rem;
+    margin-top:.5rem;
 }
 
 .entry-content {
