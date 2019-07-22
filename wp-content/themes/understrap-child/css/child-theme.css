@@ -15287,7 +15287,10 @@ body.single {
   margin-bottom: auto; }
 
 .wpshopify .wps-w-3 {
-  max-width: 100% !important; }
+  max-width: 100% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   @media (max-width: 900px) {
     .wpshopify .wps-w-3 {
       display: -webkit-box;
