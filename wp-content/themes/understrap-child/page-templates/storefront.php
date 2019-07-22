@@ -5,7 +5,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 $featuredImage = wp_get_attachment_url(get_post_thumbnail_id($post->ID, 'large'));
 ?>
 
-<div class="wrapper" id="page-wrapper">
+<div class="wrapper store-wrapper" id="page-wrapper">
 
     <div id="content" tabindex="-1"><!-- class="container"-->
 

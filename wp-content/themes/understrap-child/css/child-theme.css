@@ -15261,6 +15261,10 @@ body.single {
 .store {
   padding-left: 3%;
   padding-right: 3%; }
+  .store-wrapper > #content, .store-wrapper > .page-section__content-wrapper {
+    background: url("../img/blog-top.png") top center, url("../img/blog-bottom.png") bottom center, white;
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 .wps-product-image {
   max-height: 250px; }
