@@ -13,6 +13,7 @@
     }
 }
 
+//store page
 .store
 {
     padding-left: 3%;
@@ -27,10 +28,32 @@
             url('../img/blog-bottom.png') bottom center, 
             white;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain; //DON may be hack-y
         }
     }
 }
+
+//items list
+.wps-items
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @include media-breakpoint-down(md)
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+.wpshopify .wps-w-3 
+{
+    @media (max-width: 900px)
+    {
+        display: flex;
+        max-width: 100%;
+    }
+}
+
 
 .wps-product-image
 {
@@ -39,10 +62,10 @@
 
 .wps-collection-item, .wps-product-item, .wps-item
 {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     margin-bottom: 3rem;
-    margin-top: 3rem;
+    margin-top: 3rem;*/
 }
 
 .wps-box
