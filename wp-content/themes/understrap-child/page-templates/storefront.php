@@ -13,7 +13,7 @@ $featuredImage = wp_get_attachment_url(get_post_thumbnail_id($post->ID, 'large')
         <div class="row">
             <div class="col-md-12 text-center">
                 <h1 class="heading page-heading__title heading--white-on-pink d-inline-block"><?php the_title(); ?></h1>
-                <p class="page-heading__tagline"><?php //echo types_render_field( "tagline", array( ) ); ?></p>
+                <p class="page-heading__tagline"><?php echo types_render_field( "tagline", array( ) ); ?></p>
             </div>
         </div>
         <!-- End page header -->
