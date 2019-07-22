@@ -14201,7 +14201,6 @@ body.admin-bar .fixed-top {
   .events-faq__arrow-right {
     display: none; } }
 
-/* About Page Styles - Tim */
 .about-hero {
   padding-top: 5rem;
   padding-bottom: 0; }
@@ -14216,11 +14215,11 @@ body.admin-bar .fixed-top {
     @media (min-width: 768px) {
       .about-hero__video .heading, .about-hero__video .faq-header {
         margin-left: -5rem !important;
-        margin-top: -4.5rem !important; } }
+        margin-top: -5.75rem !important; } }
     @media (min-width: 993px) {
       .about-hero__video .heading, .about-hero__video .faq-header {
         margin-left: -3.5rem !important;
-        margin-top: -5.5rem !important; } }
+        margin-top: -7.25rem !important; } }
   .about-hero__video .embed-container {
     position: relative;
     z-index: 5;
