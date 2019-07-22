@@ -15284,7 +15284,7 @@ body.single {
       grid-template-columns: 1fr 1fr; } }
 
 .wpshopify .wps-product-pricing {
-  margin-bottom: auto; }
+  margin-top: auto; }
 
 .wpshopify .wps-w-3 {
   max-width: 100% !important;
