@@ -47,10 +47,13 @@
 
 .wpshopify .wps-w-3 
 {
+
+    max-width: 100% !important;
+
     @media (max-width: 900px)
     {
         display: flex;
-        max-width: 100%;
+        max-width: 100% !important;
     }
 }
 

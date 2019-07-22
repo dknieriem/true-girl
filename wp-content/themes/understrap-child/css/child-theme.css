@@ -15283,12 +15283,14 @@ body.single {
     .wps-items {
       grid-template-columns: 1fr 1fr; } }
 
-@media (max-width: 900px) {
-  .wpshopify .wps-w-3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 100%; } }
+.wpshopify .wps-w-3 {
+  max-width: 100% !important; }
+  @media (max-width: 900px) {
+    .wpshopify .wps-w-3 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      max-width: 100% !important; } }
 
 .wps-product-image {
   max-height: 250px; }
