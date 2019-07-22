@@ -15277,7 +15277,7 @@ body.single {
     background-size: contain; }
 
 .wps-items {
-  display: grid;
+  display: grid !important;
   grid-template-columns: 1fr 1fr 1fr; }
   @media (max-width: 991.98px) {
     .wps-items {
