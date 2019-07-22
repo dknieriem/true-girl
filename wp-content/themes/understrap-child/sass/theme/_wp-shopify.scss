@@ -55,6 +55,7 @@
 
     max-width: 100% !important;
     display: flex;
+    flex-direction: column;
 
     @media (max-width: 900px)
     {
