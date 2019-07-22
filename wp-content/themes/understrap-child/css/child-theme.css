@@ -317,7 +317,7 @@ template {
   display: none !important; }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1, .h2, .faq-header, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 500;
@@ -327,7 +327,7 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1 {
   font-size: 2.5rem; }
 
-h2, .h2 {
+h2, .h2, .faq-header {
   font-size: 2rem; }
 
 h3, .h3 {
@@ -6491,7 +6491,7 @@ button.bg-dark:focus {
 .d-inline {
   display: inline !important; }
 
-.d-inline-block {
+.d-inline-block, .faq-header {
   display: inline-block !important; }
 
 .d-block {
@@ -8985,7 +8985,7 @@ button.bg-dark:focus {
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.text-left, .post-preview__heading, .post-preview__card .card-body, .post-preview__card .post-card__body, .post-preview__card .faq-item__body {
+.text-left, .post-preview__heading, .post-preview__card .card-body, .post-preview__card .post-card__body, .post-preview__card .faq-item__body, .faq {
   text-align: left !important; }
 
 .text-right {
@@ -12998,10 +12998,10 @@ a.skip-link {
   src: url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.svg#fontawesome) format("svg"); }
 
 .font-goudysans, .post-card__title, .post-card__text, .text-goudysans, .post-preview__heading, .post-intro__title, .post-block h1, .post-block h2, .post-block h3, .post-block h4, .post-block h5,
-.post-block .h1, .post-block .h2, .post-block .h3, .post-block .h4, .post-block .h5, .accordion-category, .faq-item__button, .faq-item__body--a {
+.post-block .h1, .post-block .h2, .post-block .faq-header, .post-block .h3, .post-block .h4, .post-block .h5, .accordion-category__header, .faq-item__button {
   font-family: "GoudySans Md BT" !important; }
 
-.font-shark, .text-shark {
+.font-shark, .text-shark, .faq-item__button--q, .faq-item__body--a {
   font-family: "Shark Random Funnyness" !important; }
 
 .font-impervious, .text-impervious {
@@ -13048,7 +13048,7 @@ p {
 .text-purple {
   color: #6f42c1; }
 
-.text-pink, .faq-item__button {
+.text-pink, .faq-item__button, .faq-item__button--q {
   color: #c83b94; }
 
 .text-red {
@@ -13063,7 +13063,7 @@ p {
 .text-green {
   color: #28a745; }
 
-.text-teal, .accordion-category, .faq-item__body--a, .music-column__text {
+.text-teal, .accordion-category__header, .faq-item__body--a, .faq-item__body--answer p, .music-column__text {
   color: #00bcd6; }
 
 .text-cyan {
@@ -13078,13 +13078,13 @@ p {
 .text-gray-dark {
   color: #343a40; }
 
-.text-pink, .faq-item__button {
+.text-pink, .faq-item__button, .faq-item__button--q {
   color: #c83b94; }
 
 .text-dark-pink {
   color: #b94691; }
 
-.text-teal, .accordion-category, .faq-item__body--a, .music-column__text {
+.text-teal, .accordion-category__header, .faq-item__body--a, .faq-item__body--answer p, .music-column__text {
   color: #00bcd6; }
 
 .text-light-teal {
@@ -13117,7 +13117,7 @@ p {
 .text-black {
   color: #000000; }
 
-.heading {
+.heading, .faq-header {
   font-family: "Shark Random Funnyness";
   color: #00bcd6;
   margin-top: 1rem;
@@ -13146,7 +13146,7 @@ p {
     padding: 6px 0 3px;
     -webkit-box-shadow: 10px 0 0 #c83b94, -6px 0 0 #c83b94;
             box-shadow: 10px 0 0 #c83b94, -6px 0 0 #c83b94; }
-  .heading--white-on-pink {
+  .heading--white-on-pink, .faq-header {
     color: #ffffff;
     background-color: #c83b94;
     padding: 8px 15px; }
@@ -13162,7 +13162,7 @@ p {
     background-color: #fdbD10; }
   .heading__on-white {
     background-color: #ffffff; }
-  .heading.background-circle {
+  .heading.background-circle, .background-circle.faq-header {
     border-radius: 50%;
     width: 3rem;
     margin: 1rem auto; }
@@ -13239,7 +13239,7 @@ ol > li {
 .light {
   color: white; }
 
-.text-left, .post-preview__heading, .post-preview__card .card-body, .post-preview__card .post-card__body, .post-preview__card .faq-item__body {
+.text-left, .post-preview__heading, .post-preview__card .card-body, .post-preview__card .post-card__body, .post-preview__card .faq-item__body, .faq {
   text-align: left; }
 
 .text-right {
@@ -13248,7 +13248,7 @@ ol > li {
 .text-center, .blog__sidebar .custom-html-widget, .blog__sidebar .search-form, .post-card__heading, .post-card__title, .accordion-category {
   text-align: center; }
 
-.text-bold, .font-bold {
+.text-bold, .faq-item__button, .font-bold {
   font-weight: bold; }
 
 .all-caps {
@@ -13385,7 +13385,7 @@ ol > li {
           font-size: 1.25rem; } }
 
 /* hacks to get the blog up to spec (by tim) */
-.blog .heading--white-on-pink {
+.blog .heading--white-on-pink, .blog .faq-header {
   margin: 32px 0 23px 0;
   padding: 10px 24px; }
 
@@ -14041,7 +14041,7 @@ body.admin-bar .fixed-top {
   margin-top: 2.3rem;
   margin-bottom: 0; }
 
-.events-hero-banner .heading {
+.events-hero-banner .heading, .events-hero-banner .faq-header {
   margin-top: .6rem;
   margin-bottom: .6rem;
   font-size: 2.1rem;
@@ -14052,7 +14052,7 @@ body.admin-bar .fixed-top {
 
 .events-hero-header {
   margin-top: 6%; }
-  .events-hero-header .heading {
+  .events-hero-header .heading, .events-hero-header .faq-header {
     font-size: 2.7rem;
     letter-spacing: 3px;
     line-height: 75px;
@@ -14103,7 +14103,7 @@ body.admin-bar .fixed-top {
       margin-top: 3rem !important;
       font-size: 1.75rem; } }
 
-.events-header-sm .heading {
+.events-header-sm .heading, .events-header-sm .faq-header {
   margin-top: 0;
   margin-bottom: 3px;
   padding: 4px 10px 3px;
@@ -14117,7 +14117,7 @@ body.admin-bar .fixed-top {
   font-weight: 300;
   letter-spacing: 3px; }
 
-.events-3steps .heading.background-circle {
+.events-3steps .heading.background-circle, .events-3steps .background-circle.faq-header {
   width: 5rem;
   margin: 2rem auto;
   font-size: 4rem; }
@@ -14173,7 +14173,7 @@ body.admin-bar .fixed-top {
 .events-tickets__montage img {
   width: 100%; }
 
-.events-faq .heading {
+.events-faq .heading, .events-faq .faq-header {
   margin: 2rem 0 2.25rem;
   letter-spacing: 5px; }
 
@@ -14201,15 +14201,15 @@ body.admin-bar .fixed-top {
     z-index: 999;
     top: -35px;
     left: -135px; }
-  .about-hero__video .heading {
+  .about-hero__video .heading, .about-hero__video .faq-header {
     letter-spacing: 3px;
     margin: 0; }
     @media (min-width: 768px) {
-      .about-hero__video .heading {
+      .about-hero__video .heading, .about-hero__video .faq-header {
         margin-left: -5rem !important;
         margin-top: -4.5rem !important; } }
     @media (min-width: 993px) {
-      .about-hero__video .heading {
+      .about-hero__video .heading, .about-hero__video .faq-header {
         margin-left: -3.5rem !important;
         margin-top: -5.5rem !important; } }
   .about-hero__video .embed-container {
@@ -14247,7 +14247,7 @@ body.admin-bar .fixed-top {
   padding-left: 1rem;
   padding-right: 1rem; }
 
-.mt-n6 .heading, .about-other .heading {
+.mt-n6 .heading, .mt-n6 .faq-header, .about-other .heading, .about-other .faq-header {
   margin-top: 5px;
   font-size: 2rem;
   letter-spacing: 3px;
@@ -14556,7 +14556,7 @@ body.single {
     font-weight: bold;
     text-decoration: underline !important; }
   .post-block h1, .post-block h2, .post-block h3, .post-block h4, .post-block h5,
-  .post-block .h1, .post-block .h2, .post-block .h3, .post-block .h4, .post-block .h5 {
+  .post-block .h1, .post-block .h2, .post-block .faq-header, .post-block .h3, .post-block .h4, .post-block .h5 {
     color: #000000; }
 
 .author-info {
@@ -15190,17 +15190,40 @@ body.single {
   width: 100%; }
 
 /* Frequently Asked Questions */
-.accordion-category {
-  text-decoration: underline; }
+.accordion-category__header {
+  border-bottom: 3px solid #00bcd6;
+  display: inline;
+  margin: auto; }
+
+.faq-header {
+  z-index: 999;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 3px; }
+  .faq-header__image {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 66px);
+    margin: auto; }
 
 .faq-item {
   background-color: transparent; }
   .faq-item__button {
-    font-size: 1.5rem;
-    border-color: transparent; }
+    font-size: 2.375rem;
+    border-color: transparent;
+    text-align: left; }
     .faq-item__button:hover, .faq-item__button:focus {
       color: #B94691;
       text-decoration: none; }
+    .faq-item__button--q {
+      font-weight: normal;
+      font-size: 3rem;
+      margin-left: 0.5rem;
+      margin-right: 0.4rem;
+      letter-spacing: 3px; }
+  .faq-item__icon {
+    vertical-align: text-top; }
   .faq-item__body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -15210,10 +15233,16 @@ body.single {
         -ms-flex-direction: row;
             flex-direction: row; }
     .faq-item__body--a {
-      font-size: 1.5rem;
-      margin-left: 1rem; }
+      font-weight: normal;
+      font-size: 3rem;
+      margin-left: 1.6rem;
+      letter-spacing: 3px; }
     .faq-item__body--answer {
-      padding: 0 0.75rem; }
+      padding: 0 1.6rem; }
+      .faq-item__body--answer p {
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.2; }
 
 .music-column__text {
   max-width: 375px;

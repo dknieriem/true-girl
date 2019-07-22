@@ -1,60 +1,136 @@
 /* Frequently Asked Questions */
 
-.accordion-category {
-	@extend .text-teal;
-	@extend .text-goudysans;
+.accordion-category
+{
+
 	@extend .text-center;
 
-	text-decoration: underline;
+	&__header
+	{
+		@extend .text-teal;
+		@extend .text-goudysans;
+		//@extend .text-center;
+
+		border-bottom: 3px solid color(teal);
+		display: inline;
+	    margin: auto;
+	}
 
 }
 
-.faq {
+.faq
+{
+
+	@extend .text-left;
+
+	&-header
+	{
+
+		@extend .d-inline-block; 
+		@extend .h2;
+		@extend .heading;
+		//@extend .heading-normal;
+		@extend .heading--white-on-pink;
+
+	    z-index: 999;
+	    position: relative;
+	    margin: auto;
+	    text-align: center;
+	    letter-spacing: 3px;
+
+
+
+		&__image 
+		{
+			position: absolute;
+			top: 0;
+			left: calc(50% - 66px);
+			margin: auto;
+		}
+	}
 	
 }
 
-.faq-item {
+.faq-item
+{
 	@extend .card;
 	@extend .border-0;
 
 	background-color: transparent;
-	&__header {
+	&__header
+	{
 		//@extend .card-header;
 	}
 
-	&__button {
+	&__button
+	{
 		//@extend .btn;
 		@extend .btn-link;
 		@extend .text-goudysans;
 		@extend .text-pink;
-		font-size: 1.5rem;
+		@extend .text-bold;
+
+		font-size: 2.375rem;
 		border-color: transparent;
-		&:hover, &:focus {
+		text-align: left;
+
+		&:hover, &:focus
+		{
 			color: $dark-pink;
 			text-decoration: none;
 		}
+
+		&--q
+		{
+			@extend .text-shark;
+			@extend .text-pink;
+			font-weight: normal;
+			font-size: 3rem;
+			margin-left: 0.5rem;
+			margin-right: 0.4rem;
+			letter-spacing: 3px;
+		}
 	}
 
-	&__icon {
+	&__icon
+	{
 
 		@extend .fa-minus-square;
+
+		vertical-align: text-top;
 	}
 
-	&__body {
+	&__body
+	{
 		@extend .card-body;
 
 		display: flex;
 		flex-direction: row;
 
-		&--a {
-			@extend .text-goudysans;
+
+
+		&--a
+		{
+			@extend .text-shark;
 			@extend .text-teal;
-			font-size: 1.5rem;
-			margin-left: 1rem;
+			font-weight: normal;
+			font-size: 3rem;
+			margin-left: 1.6rem;
+			letter-spacing: 3px;
 		}
 
-		&--answer {
-			padding: 0 0.75rem;
+		&--answer
+		{
+			padding: 0 1.6rem;
+
+			p
+			{
+				@extend .text-teal;
+
+				font-size: 1.5rem;
+				font-weight: bold;
+				line-height: 1.2;
+			}
 
 		}
 	}
