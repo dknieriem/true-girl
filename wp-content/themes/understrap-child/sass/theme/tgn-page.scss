@@ -1,0 +1,112 @@
+ul.tgn-ul {
+	/*list-style-image: url("../img/heart.svg");	*/
+	list-style-type: none;
+	padding-inline-start: 15px;
+
+	li {
+    	background: url("../img/heart.svg") no-repeat top left;
+    	background-size: 35px;
+    	padding-inline-start: 55px;
+    	padding-bottom: 1rem;
+	}
+}
+
+
+.tgn-statistics {
+    //padding-top: 0;
+    
+    h1 {
+    	font-family: font(goudysans);
+    	color: color(teal);
+    	font-size: 56px;
+    }
+
+    h3 {
+    	font-family: font(goudysans);
+    	color: color(teal);
+    	font-size: 28px;
+    }
+    .statistics, .statistics-inner {
+        padding-top: 0 !important;
+    }
+
+    .stat {
+        margin-top: 0 !important;
+        margin-bottom: 35px !important;
+    }
+
+    .count-title {
+        padding: 0 10%;
+        margin-bottom: 0 !important;
+        margin-top: 10px !important;
+        letter-spacing: 1px !important;
+        font-weight: 900 !important;
+    }
+
+    .statistics {
+
+	    .statistics-inner {
+
+	    	.stat {
+
+	    		@extend .col-sm-6;
+
+			    .fa {
+			    	display: inline-block;
+			    	margin-left: auto;
+			    	margin-right: 10px;
+
+			    	width: 128px;
+					height: 128px;
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: right center;
+					grid-row: 1/span 2;
+
+					&:before {
+						content: "";
+					}
+
+					&.fa-address-book {
+						background-image: url(../img/tgn-01-icon-zambia.png);
+					}	
+
+					&.fa-address-book-o {
+						background-image: url(../img/tgn-02-icon-truegirl.png);
+					}
+
+					&.fa-address-card {
+						background-image: url(../img/tgn-03-icon-free.png);
+					}
+
+					&.fa-address-card-o {
+						background-image: url(../img/tgn-04-icon-dannah.png);
+					}
+
+					&.fa-bandcamp {
+						background-image: url(../img/tgn-05-icon-outreach.png);
+					}
+
+					&.fa-bath {
+						background-image: url(../img/tgn-06-icon-dr.png);
+					}
+			    }
+
+			    .number {
+			    	padding-left: 10%;
+
+					&:before {
+						content: "";
+					}
+			    }
+
+
+
+			    .count-title {
+					grid-column: 2;
+					text-align: left;
+				}
+			}
+		}
+	}
+}

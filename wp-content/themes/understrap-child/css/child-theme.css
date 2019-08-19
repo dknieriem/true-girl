@@ -511,7 +511,7 @@ pre {
     padding-left: 0; }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .post-intro__breadcrumb, .col,
-.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .statistics .statistics-inner .stat, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .statistics .statistics-inner .stat, .tgn-statistics .statistics .statistics-inner .stat, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .icon-item, .post-thumb, .newsletter-signup__control, .col-md-4, .page-section__one-third-column, .col-md-5, .product-feature__image, .col-md-6, .page-section__single-column--narrow-left, .page-section__single-column--narrow-right, .page-section__one-half-column, .podcast-intro__post-meta, .podcast-intro__post-image-wrapper, .section-header__6, .col-md-7, .col-md-8, .page-section__single-column--narrow-center, .page-section__single-column-narrow, .page-section__two-third-column, .post-intro__post-meta, .section-header__8, .col-md-9, .col-md-10, .page-heading, .section-header__10, .col-md-11, .col-md-12, .page-section__single-column, .featured-post, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
@@ -757,7 +757,7 @@ pre {
         -ms-flex: 0 0 41.66667%;
             flex: 0 0 41.66667%;
     max-width: 41.66667%; }
-  .col-sm-6, .statistics .statistics-inner .stat {
+  .col-sm-6, .statistics .statistics-inner .stat, .tgn-statistics .statistics .statistics-inner .stat {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
@@ -15263,6 +15263,76 @@ body.single {
 .header-narrow {
   width: 450px;
   max-width: 100%; }
+
+ul.tgn-ul {
+  /*list-style-image: url("../img/heart.svg");	*/
+  list-style-type: none;
+  -webkit-padding-start: 15px;
+          padding-inline-start: 15px; }
+  ul.tgn-ul li {
+    background: url("../img/heart.svg") no-repeat top left;
+    background-size: 35px;
+    -webkit-padding-start: 55px;
+            padding-inline-start: 55px;
+    padding-bottom: 1rem; }
+
+.tgn-statistics h1 {
+  font-family: "GoudySans Md BT";
+  color: #00bcd6;
+  font-size: 56px; }
+
+.tgn-statistics h3 {
+  font-family: "GoudySans Md BT";
+  color: #00bcd6;
+  font-size: 28px; }
+
+.tgn-statistics .statistics, .tgn-statistics .statistics-inner {
+  padding-top: 0 !important; }
+
+.tgn-statistics .stat {
+  margin-top: 0 !important;
+  margin-bottom: 35px !important; }
+
+.tgn-statistics .count-title {
+  padding: 0 10%;
+  margin-bottom: 0 !important;
+  margin-top: 10px !important;
+  letter-spacing: 1px !important;
+  font-weight: 900 !important; }
+
+.tgn-statistics .statistics .statistics-inner .stat .fa {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 10px;
+  width: 128px;
+  height: 128px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  grid-row: 1/span 2; }
+  .tgn-statistics .statistics .statistics-inner .stat .fa:before {
+    content: ""; }
+  .tgn-statistics .statistics .statistics-inner .stat .fa.fa-address-book {
+    background-image: url(../img/tgn-01-icon-zambia.png); }
+  .tgn-statistics .statistics .statistics-inner .stat .fa.fa-address-book-o {
+    background-image: url(../img/tgn-02-icon-truegirl.png); }
+  .tgn-statistics .statistics .statistics-inner .stat .fa.fa-address-card {
+    background-image: url(../img/tgn-03-icon-free.png); }
+  .tgn-statistics .statistics .statistics-inner .stat .fa.fa-address-card-o {
+    background-image: url(../img/tgn-04-icon-dannah.png); }
+  .tgn-statistics .statistics .statistics-inner .stat .fa.fa-bandcamp {
+    background-image: url(../img/tgn-05-icon-outreach.png); }
+  .tgn-statistics .statistics .statistics-inner .stat .fa.fa-bath {
+    background-image: url(../img/tgn-06-icon-dr.png); }
+
+.tgn-statistics .statistics .statistics-inner .stat .number {
+  padding-left: 10%; }
+  .tgn-statistics .statistics .statistics-inner .stat .number:before {
+    content: ""; }
+
+.tgn-statistics .statistics .statistics-inner .stat .count-title {
+  grid-column: 2;
+  text-align: left; }
 
 /* WP Shopify */
 @media (max-width: 500px) {
