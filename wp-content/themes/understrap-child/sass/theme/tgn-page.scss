@@ -26,9 +26,9 @@ ul.tgn-ul {
     	color: color(teal);
     	font-size: 28px;
     }
-    .statistics, .statistics-inner {
+/*    .statistics, .statistics-inner {
         padding-top: 0 !important;
-    }
+    }*/
 
     .stat {
         margin-top: 0 !important;
@@ -45,11 +45,14 @@ ul.tgn-ul {
 
     .statistics {
 
+    	padding-top: 2rem;
+
 	    .statistics-inner {
 
 	    	.stat {
 
-	    		@extend .col-sm-6;
+	    		@extend .col-sm-12;
+	    		@extend .col-md-6;
 
 			    .fa {
 			    	display: inline-block;
@@ -57,7 +60,7 @@ ul.tgn-ul {
 			    	margin-right: 10px;
 
 			    	width: 128px;
-					height: 128px;
+					height: 100%; /*128px;*/
 					background-size: contain;
 					background-repeat: no-repeat;
 					background-position: right center;
@@ -93,18 +96,16 @@ ul.tgn-ul {
 			    }
 
 			    .number {
-			    	padding-left: 10%;
 
 					&:before {
 						content: "";
 					}
 			    }
 
-
-
 			    .count-title {
 					grid-column: 2;
 					text-align: left;
+					padding-left: 0;
 				}
 			}
 		}
