@@ -47,7 +47,7 @@ $featuredImage = types_render_field( "event-image", array( "raw" => "true"));
                                         <div class="page-section__single-column full-width--no text-center events-hero-header">
                                             <span class="heading heading__on-pink">The most fun you&#8217;ll ever have</span><br />
                                             <span class="heading heading__on-pink">digging into god&#8217;s word together</span><br />
-                                            <a href="https://purefreedom.brushfire.com/true-girl-pajama-party-tour/454375?_ga=2.256938443.1171851674.1565645108-597427503.1564516123" class="button button--yellow button--large mb-lg mt-md" >get tickets!</a> 
+                                            <a href="<?php echo types_render_field( "tickets_link", array( 'output' => 'raw') ); ?>" class="button button--yellow button--large mb-lg mt-md" >get tickets!</a> 
                                         </div> 
                                     </div> 
                                 </div>
@@ -85,7 +85,7 @@ $featuredImage = types_render_field( "event-image", array( "raw" => "true"));
                                         
                                         <div class="page-section__one-third-column ">
                                             <p class="text-teal mt-md"><strong>Grab your popcorn and a cozy onesie—</strong> we&#8217;re throwing some HUGE pajama parties across the nation <strong>this fall! And we are coming to <?php echo types_render_field( "display-city-state", array( ) ); ?> soon!!!</strong></p>
-                                            <a href="https://purefreedom.brushfire.com/true-girl-pajama-party-tour/454375?_ga=2.256938443.1171851674.1565645108-597427503.1564516123" class="button button--yellow " >get your tickets!</a> 
+                                            <a href="<?php echo types_render_field( "tickets_link", array( 'output' => 'raw') ); ?>" class="button button--yellow " >get your tickets!</a> 
                                         </div> 
                                     </div> 
                                 </div>
@@ -148,7 +148,7 @@ $featuredImage = types_render_field( "event-image", array( "raw" => "true"));
                                             <h4 class="text-shark text-white text-uppercase">FEEL YOUR FACE HURT FROM SMILING SO MUCH.</h4>
                                         </div> 
                                         <div class="page-section__single-column full-width--no text-center">
-                                            <a href="https://purefreedom.brushfire.com/true-girl-pajama-party-tour/454375?_ga=2.256938443.1171851674.1565645108-597427503.1564516123" class="button button--yellow " >Get your tickets now!</a>
+                                            <a href="<?php echo types_render_field( "tickets_link", array( 'output' => 'raw') ); ?>" class="button button--yellow " >Get your tickets now!</a>
                                         </div> 
                                     </div>
                                 </div>
