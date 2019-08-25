@@ -54,6 +54,25 @@ body.single
     	color: $black;
     }
 
+    ul
+    {
+        font-size: 1rem;
+        font-weight:100;
+    }
+
+    ol 
+    {
+        font-weight:200;
+        font-size:1.5rem;
+    }
+
+    blockquote
+    {
+        margin:2.5em;
+        font-size: 1.2em;
+        font-style: italic;
+    }
+
 }
 
 .author-info

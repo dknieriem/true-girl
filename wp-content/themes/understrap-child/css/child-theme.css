@@ -14574,6 +14574,16 @@ body.single {
   .post-block h1, .post-block h2, .post-block h3, .post-block h4, .post-block h5,
   .post-block .h1, .post-block .h2, .post-block .faq-header, .post-block .h3, .post-block .h4, .post-block .h5 {
     color: #000000; }
+  .post-block ul {
+    font-size: 1rem;
+    font-weight: 100; }
+  .post-block ol {
+    font-weight: 200;
+    font-size: 1.5rem; }
+  .post-block blockquote {
+    margin: 2.5em;
+    font-size: 1.2em;
+    font-style: italic; }
 
 .author-info {
   background-color: #e2e2e2;
