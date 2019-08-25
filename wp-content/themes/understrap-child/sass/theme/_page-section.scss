@@ -14,6 +14,11 @@
     {
         padding-left: 15px;
         padding-right: 15px;
+
+        &__background-image
+        {
+            margin-left: 0;
+        }
     }
 
     /* Full Width Classes | full_width="xs,sm,md,lg,xl,dx" */
@@ -43,6 +48,12 @@
                         margin-right: 0;
                     }        
                 }
+
+                .page-section__background-image
+                {
+                    margin-left: 0;
+                }
+
             }
         }
     }
@@ -237,11 +248,24 @@
         width: 100%;
         z-index: 0;
 
-        img
+        @include media-breakpoint-down(sm)
         {
-            width: auto;
+            margin-left: -15px;
+        }
+
+        .simpleParallax
+        {
             height: 100%;
         }
+
+        img
+        {
+            /*width: auto;
+            height: 100%;*/
+            object-fit: fill;
+        }
+
+
     }
 
 }//end .page-section
