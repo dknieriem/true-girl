@@ -12,6 +12,8 @@
 
     &__heading {
         @extend .text-center;
+        width: 100%;
+        padding-top: 75%;
     }
     
     &__body
@@ -27,15 +29,19 @@
         @extend .text-center;
         font-size:1.3rem;
         color:$black;
+        text-transform: uppercase;
+        line-height: 1.0em;
 
     }
     &__text
     {
         @extend .card-text;
         @extend .font-goudysans;
+        @extend .text-center;
         font-size:0.8rem;
-        line-height:1.6;
         flex-grow:1;
+        padding: 0 2.5%;
+        line-height: 1.15em;    
     }
     &__link
     {
@@ -70,25 +76,13 @@
 
 /* blog style hacks - by tim */
 
-.blog .post-card__heading {
+/*.blog .post-card__heading {
 	width: 100%;
 	padding-top: 75%;
-}
+}*/
 
 .fill {
     overflow: hidden;
     background-size: cover;
     background-position: center;
-}
-
-
-.post-card__title {
-	text-transform: uppercase;
-	line-height: 1.0em;
-}
-
-.post-card__text {
-	text-align: center;
-	padding: 0 2.5%;
-	line-height: 1.15em;	
 }
