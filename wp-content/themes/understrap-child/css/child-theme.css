@@ -13973,8 +13973,12 @@ body.admin-bar .fixed-top {
     margin-left: -7%;
     margin-top: -2rem;
     position: absolute;
+    bottom: 0;
     width: 100%;
     z-index: 0; }
+    .page-section__background-image img {
+      width: auto;
+      height: 100%; }
 
 .background-blue {
   background-color: #007bff; }
