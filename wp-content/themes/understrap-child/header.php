@@ -30,6 +30,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	})(window,document,'script','dataLayer','GTM-WMD656J');</script>
 	<!-- End Google Tag Manager -->
 	<meta name="google-site-verification" content="o3wdM04VVpFHvx3Ui3kE_fGpVRdWWxlwy0iNphFXWyU" />
+
 </head>
 
 <body <?php body_class(); ?>>

@@ -15,7 +15,7 @@
 			url('../img/blog-bottom.png') bottom center, 
 			white;
 			background-repeat: no-repeat;
-			background-size: contain;
+			background-size: 100%; /* fix for short pages */
 		}
 	}
 	
@@ -55,23 +55,7 @@
 
 			&__search-input
 			{
-				border-radius: 0;
-				padding: 0.2rem 0.5rem;
-				font-size: 1rem;
-				font-weight: 300;
-
-				background-color: color(form-background);
-				border: none;
-				color: color(form-gray);
-				line-height: 2;
-				margin-bottom: 10px;
-				text-align: center;
-				width: 100%;
-
-				&:placeholder 
-				{
-					color: color(form-gray);
-				}
+				@extend %__search-input;
 			}
 
 			&__search-button
@@ -181,4 +165,63 @@
 
 .sidebar-form {
 	margin-bottom: 15px;
+}
+
+
+%__search-input
+{
+	border-radius: 0;
+	padding: 0.2rem 0.5rem;
+	font-size: 1rem;
+	font-weight: 300;
+
+	background-color: color(form-background);
+	border: none;
+	color: color(form-gray);
+	line-height: 2;
+	margin-bottom: 10px;
+	text-align: center;
+	width: 100%;
+
+	&:placeholder 
+	{
+		color: color(form-gray);
+	}
+}
+
+/* Search Results */
+
+
+section.no-results
+{
+    /* Default Styles */
+    padding-top:2rem; //was 4rem
+    padding-bottom:2rem; //was 4rem
+    padding-left: 7%;
+    padding-right: 7%;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+
+    @include media-breakpoint-down(sm)
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    form
+    {
+    	max-width: 350px;
+    	margin: auto;
+
+    	input
+    	{
+	    	@extend %__search-input;	
+    	}
+
+    	button
+    	{
+    		@extend .button;
+    	}
+    }
 }

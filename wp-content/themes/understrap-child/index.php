@@ -32,6 +32,11 @@ $container   = get_theme_mod( 'understrap_container_type' );
 		</div>
 		<!-- End page header -->
 
+
+		<!-- Category Links -->
+		<?php get_template_part( 'loop-templates/blog-categories', 'none'); ?>
+		<!-- End category links -->
+		
 		<!-- Featured post section -->
 		<?php 
 			$query = new WP_Query( array( 'category_name' => 'featured', 'posts_per_page' => 1 ) );
