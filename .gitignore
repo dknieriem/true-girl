@@ -6,3 +6,4 @@ wp-config.php
 /design/
 /wp-config.php
 /.htaccess
+wp-content/uploads/
