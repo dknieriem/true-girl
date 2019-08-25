@@ -1,0 +1,28 @@
+/* Search page styles */
+
+.search-page-form
+{
+	/* Search form */
+	.search-form
+	{
+		margin: 0 0 25px 0;
+		@extend .text-center;
+
+		&__input-wrapper
+		{
+
+		}
+
+		&__search-input
+		{
+			@extend %__search-input;
+		}
+
+		&__search-button
+		{
+			@extend .button;
+			@extend .button--small;
+			//@extend .button--yellow;
+		}
+	}
+}

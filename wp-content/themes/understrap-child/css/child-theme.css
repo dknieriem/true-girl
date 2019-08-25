@@ -8991,7 +8991,7 @@ button.bg-dark:focus {
 .text-right {
   text-align: right !important; }
 
-.text-center, .blog__sidebar .custom-html-widget, .blog__sidebar .search-form, .post-card__heading, .post-card__title, .accordion-category {
+.text-center, .blog__sidebar .custom-html-widget, .blog__sidebar .search-form, .post-card__heading, .post-card__title, .accordion-category, .search-page-form .search-form {
   text-align: center !important; }
 
 @media (min-width: 576px) {
@@ -13248,7 +13248,7 @@ ol > li {
 .text-right {
   text-align: right; }
 
-.text-center, .blog__sidebar .custom-html-widget, .blog__sidebar .search-form, .post-card__heading, .post-card__title, .accordion-category {
+.text-center, .blog__sidebar .custom-html-widget, .blog__sidebar .search-form, .post-card__heading, .post-card__title, .accordion-category, .search-page-form .search-form {
   text-align: center; }
 
 .text-bold, .faq-item__button, .font-bold {
@@ -13394,7 +13394,7 @@ ol > li {
 .sidebar-form {
   margin-bottom: 15px; }
 
-.blog__sidebar .search-form__search-input, section.no-results form input {
+.blog__sidebar .search-form__search-input, section.no-results form input, .search-page-form .search-form__search-input {
   border-radius: 0;
   padding: 0.2rem 0.5rem;
   font-size: 1rem;
@@ -13406,7 +13406,7 @@ ol > li {
   margin-bottom: 10px;
   text-align: center;
   width: 100%; }
-  .blog__sidebar .search-form__search-input:placeholder, section.no-results form input:placeholder {
+  .blog__sidebar .search-form__search-input:placeholder, section.no-results form input:placeholder, .search-page-form .search-form__search-input:placeholder {
     color: #939495; }
 
 /* Search Results */
@@ -13429,7 +13429,7 @@ section.no-results {
     max-width: 350px;
     margin: auto; }
 
-.button, .blog__sidebar .search-form__search-button, .blog__sidebar .mc4wp-form input[type='submit'], section.no-results form button, .navbar a[title='get tickets!'], .post-preview__button, .post-card__card-button {
+.button, .blog__sidebar .search-form__search-button, .blog__sidebar .mc4wp-form input[type='submit'], section.no-results form button, .navbar a[title='get tickets!'], .post-preview__button, .post-card__card-button, .search-page-form .search-form__search-button {
   background-color: #fdbD10;
   padding: .5rem 2rem;
   border: 0;
@@ -13449,7 +13449,7 @@ section.no-results {
         }
     }*/ }
   @media (max-width: 767.98px) {
-    .button, .blog__sidebar .search-form__search-button, .blog__sidebar .mc4wp-form input[type='submit'], section.no-results form button, .navbar a[title='get tickets!'], .post-preview__button, .post-card__card-button {
+    .button, .blog__sidebar .search-form__search-button, .blog__sidebar .mc4wp-form input[type='submit'], section.no-results form button, .navbar a[title='get tickets!'], .post-preview__button, .post-card__card-button, .search-page-form .search-form__search-button {
       font-size: 1.1rem; } }
   .button--white {
     background-color: white;
@@ -13462,16 +13462,16 @@ section.no-results {
   .button--white:hover {
     background-color: white;
     color: #525252 !important; }
-  .button--small, .blog__sidebar .search-form__search-button, .post-card__card-button {
+  .button--small, .blog__sidebar .search-form__search-button, .post-card__card-button, .search-page-form .search-form__search-button {
     padding: 0.1rem 0.5rem;
     font-size: 1rem; }
     @media (max-width: 767.98px) {
-      .button--small, .blog__sidebar .search-form__search-button, .post-card__card-button {
+      .button--small, .blog__sidebar .search-form__search-button, .post-card__card-button, .search-page-form .search-form__search-button {
         font-size: 1.25rem; } }
-  .button--medium, .post-preview__button, .mc-page-form .mc4wp-form input.button, .mc-page-form .mc4wp-form .blog__sidebar input.search-form__search-button, .blog__sidebar .mc-page-form .mc4wp-form input.search-form__search-button, .mc-page-form .blog__sidebar .mc4wp-form input[type='submit'], .blog__sidebar .mc-page-form .mc4wp-form input[type='submit'], .mc-page-form .mc4wp-form input.post-preview__button, .mc-page-form .mc4wp-form input.post-card__card-button {
+  .button--medium, .post-preview__button, .mc-page-form .mc4wp-form input.button, .mc-page-form .mc4wp-form .blog__sidebar input.search-form__search-button, .blog__sidebar .mc-page-form .mc4wp-form input.search-form__search-button, .mc-page-form .blog__sidebar .mc4wp-form input[type='submit'], .blog__sidebar .mc-page-form .mc4wp-form input[type='submit'], .mc-page-form .mc4wp-form input.post-preview__button, .mc-page-form .mc4wp-form input.post-card__card-button, .mc-page-form .mc4wp-form .search-page-form input.search-form__search-button, .search-page-form .mc-page-form .mc4wp-form input.search-form__search-button {
     font-size: 1rem; }
     @media (max-width: 767.98px) {
-      .button--medium, .post-preview__button, .mc-page-form .mc4wp-form input.button, .mc-page-form .mc4wp-form .blog__sidebar input.search-form__search-button, .blog__sidebar .mc-page-form .mc4wp-form input.search-form__search-button, .mc-page-form .blog__sidebar .mc4wp-form input[type='submit'], .blog__sidebar .mc-page-form .mc4wp-form input[type='submit'], .mc-page-form .mc4wp-form input.post-preview__button, .mc-page-form .mc4wp-form input.post-card__card-button {
+      .button--medium, .post-preview__button, .mc-page-form .mc4wp-form input.button, .mc-page-form .mc4wp-form .blog__sidebar input.search-form__search-button, .blog__sidebar .mc-page-form .mc4wp-form input.search-form__search-button, .mc-page-form .blog__sidebar .mc4wp-form input[type='submit'], .blog__sidebar .mc-page-form .mc4wp-form input[type='submit'], .mc-page-form .mc4wp-form input.post-preview__button, .mc-page-form .mc4wp-form input.post-card__card-button, .mc-page-form .mc4wp-form .search-page-form input.search-form__search-button, .search-page-form .mc-page-form .mc4wp-form input.search-form__search-button {
         font-size: 1.25rem; } }
   .button--large {
     font-size: 2.5rem;
@@ -13479,7 +13479,7 @@ section.no-results {
     @media (max-width: 767.98px) {
       .button--large {
         font-size: 2.5rem; } }
-  .button:hover, .blog__sidebar .search-form__search-button:hover, .blog__sidebar .mc4wp-form input:hover[type='submit'], section.no-results form button:hover, .navbar a:hover[title='get tickets!'], .post-preview__button:hover, .post-card__card-button:hover {
+  .button:hover, .blog__sidebar .search-form__search-button:hover, .blog__sidebar .mc4wp-form input:hover[type='submit'], section.no-results form button:hover, .navbar a:hover[title='get tickets!'], .post-preview__button:hover, .post-card__card-button:hover, .search-page-form .search-form__search-button:hover {
     color: white;
     cursor: pointer; }
 
@@ -14153,19 +14153,19 @@ body.admin-bar .fixed-top {
     .events-video-feature p {
       margin-top: .5rem !important;
       font-size: 1rem; }
-    .events-video-feature a.button, .events-video-feature .blog__sidebar a.search-form__search-button, .blog__sidebar .events-video-feature a.search-form__search-button, .events-video-feature .navbar a[title='get tickets!'], .navbar .events-video-feature a[title='get tickets!'], .events-video-feature a.post-preview__button, .events-video-feature a.post-card__card-button {
+    .events-video-feature a.button, .events-video-feature .blog__sidebar a.search-form__search-button, .blog__sidebar .events-video-feature a.search-form__search-button, .events-video-feature .navbar a[title='get tickets!'], .navbar .events-video-feature a[title='get tickets!'], .events-video-feature a.post-preview__button, .events-video-feature a.post-card__card-button, .events-video-feature .search-page-form a.search-form__search-button, .search-page-form .events-video-feature a.search-form__search-button {
       font-size: 1rem; } }
   @media (min-width: 961px) {
     .events-video-feature p {
       margin-top: 1rem !important;
       font-size: 1.25rem; }
-    .events-video-feature a.button, .events-video-feature .blog__sidebar a.search-form__search-button, .blog__sidebar .events-video-feature a.search-form__search-button, .events-video-feature .navbar a[title='get tickets!'], .navbar .events-video-feature a[title='get tickets!'], .events-video-feature a.post-preview__button, .events-video-feature a.post-card__card-button {
+    .events-video-feature a.button, .events-video-feature .blog__sidebar a.search-form__search-button, .blog__sidebar .events-video-feature a.search-form__search-button, .events-video-feature .navbar a[title='get tickets!'], .navbar .events-video-feature a[title='get tickets!'], .events-video-feature a.post-preview__button, .events-video-feature a.post-card__card-button, .events-video-feature .search-page-form a.search-form__search-button, .search-page-form .events-video-feature a.search-form__search-button {
       font-size: 1.25rem; } }
   @media (min-width: 1201px) {
     .events-video-feature p {
       margin-top: 2rem !important;
       font-size: 1.5rem; }
-    .events-video-feature a.button, .events-video-feature .blog__sidebar a.search-form__search-button, .blog__sidebar .events-video-feature a.search-form__search-button, .events-video-feature .navbar a[title='get tickets!'], .navbar .events-video-feature a[title='get tickets!'], .events-video-feature a.post-preview__button, .events-video-feature a.post-card__card-button {
+    .events-video-feature a.button, .events-video-feature .blog__sidebar a.search-form__search-button, .blog__sidebar .events-video-feature a.search-form__search-button, .events-video-feature .navbar a[title='get tickets!'], .navbar .events-video-feature a[title='get tickets!'], .events-video-feature a.post-preview__button, .events-video-feature a.post-card__card-button, .events-video-feature .search-page-form a.search-form__search-button, .search-page-form .events-video-feature a.search-form__search-button {
       font-size: 1.5rem; } }
   @media (min-width: 1381px) {
     .events-video-feature p {
@@ -14197,7 +14197,7 @@ body.admin-bar .fixed-top {
   .events-3steps__steps h4 {
     font-weight: 300;
     letter-spacing: 2px; }
-  .events-3steps__steps a.button, .events-3steps__steps .blog__sidebar a.search-form__search-button, .blog__sidebar .events-3steps__steps a.search-form__search-button, .events-3steps__steps .navbar a[title='get tickets!'], .navbar .events-3steps__steps a[title='get tickets!'], .events-3steps__steps a.post-preview__button, .events-3steps__steps a.post-card__card-button {
+  .events-3steps__steps a.button, .events-3steps__steps .blog__sidebar a.search-form__search-button, .blog__sidebar .events-3steps__steps a.search-form__search-button, .events-3steps__steps .navbar a[title='get tickets!'], .navbar .events-3steps__steps a[title='get tickets!'], .events-3steps__steps a.post-preview__button, .events-3steps__steps a.post-card__card-button, .events-3steps__steps .search-page-form a.search-form__search-button, .search-page-form .events-3steps__steps a.search-form__search-button {
     margin-top: 2rem; }
 
 .events-map {
@@ -14225,7 +14225,7 @@ body.admin-bar .fixed-top {
   margin-top: 2.75rem;
   margin-bottom: 2.75rem; }
 
-.events-tickets .button, .events-tickets .blog__sidebar .search-form__search-button, .blog__sidebar .events-tickets .search-form__search-button, .events-tickets .blog__sidebar .mc4wp-form input[type='submit'], .blog__sidebar .mc4wp-form .events-tickets input[type='submit'], .events-tickets section.no-results form button, section.no-results form .events-tickets button, .events-tickets .navbar a[title='get tickets!'], .navbar .events-tickets a[title='get tickets!'], .events-tickets .post-preview__button, .events-tickets .post-card__card-button {
+.events-tickets .button, .events-tickets .blog__sidebar .search-form__search-button, .blog__sidebar .events-tickets .search-form__search-button, .events-tickets .blog__sidebar .mc4wp-form input[type='submit'], .blog__sidebar .mc4wp-form .events-tickets input[type='submit'], .events-tickets section.no-results form button, section.no-results form .events-tickets button, .events-tickets .navbar a[title='get tickets!'], .navbar .events-tickets a[title='get tickets!'], .events-tickets .post-preview__button, .events-tickets .post-card__card-button, .events-tickets .search-page-form .search-form__search-button, .search-page-form .events-tickets .search-form__search-button {
   font-size: inherit; }
 
 @media (min-width: 961px) {
@@ -14334,7 +14334,7 @@ body.admin-bar .fixed-top {
 .about-dannah .hr__inner {
   width: 20% !important; }
 
-.about-dannah a.button, .about-dannah .blog__sidebar a.search-form__search-button, .blog__sidebar .about-dannah a.search-form__search-button, .about-dannah .navbar a[title='get tickets!'], .navbar .about-dannah a[title='get tickets!'], .about-dannah a.post-preview__button, .about-dannah a.post-card__card-button {
+.about-dannah a.button, .about-dannah .blog__sidebar a.search-form__search-button, .blog__sidebar .about-dannah a.search-form__search-button, .about-dannah .navbar a[title='get tickets!'], .navbar .about-dannah a[title='get tickets!'], .about-dannah a.post-preview__button, .about-dannah a.post-card__card-button, .about-dannah .search-page-form a.search-form__search-button, .search-page-form .about-dannah a.search-form__search-button {
   margin-top: 1rem; }
 
 .about-boys p {
@@ -14342,7 +14342,7 @@ body.admin-bar .fixed-top {
   margin: 0 auto 1.75rem;
   font-weight: 700; }
 
-.about-boys a.button, .about-boys .blog__sidebar a.search-form__search-button, .blog__sidebar .about-boys a.search-form__search-button, .about-boys .navbar a[title='get tickets!'], .navbar .about-boys a[title='get tickets!'], .about-boys a.post-preview__button, .about-boys a.post-card__card-button {
+.about-boys a.button, .about-boys .blog__sidebar a.search-form__search-button, .blog__sidebar .about-boys a.search-form__search-button, .about-boys .navbar a[title='get tickets!'], .navbar .about-boys a[title='get tickets!'], .about-boys a.post-preview__button, .about-boys a.post-card__card-button, .about-boys .search-page-form a.search-form__search-button, .search-page-form .about-boys a.search-form__search-button {
   font-size: 1.5rem; }
 
 .about-boys .wp-video {
@@ -15154,7 +15154,7 @@ body.single {
         color: #c9c9c9; }
       .newsletter-signup input[type="text"]:placeholder-shown, .newsletter-signup input[type="text"]:-webkit-input-placeholder, .newsletter-signup input[type="text"]:-ms-input-placeholder, .newsletter-signup input[type="text"]::placeholder, .newsletter-signup input[type="email"]:placeholder-shown, .newsletter-signup input[type="email"]:-webkit-input-placeholder, .newsletter-signup input[type="email"]:-ms-input-placeholder, .newsletter-signup input[type="email"]::placeholder {
         color: #c9c9c9; }
-    .newsletter-signup input.button, .newsletter-signup .blog__sidebar input.search-form__search-button, .blog__sidebar .newsletter-signup input.search-form__search-button, .newsletter-signup .blog__sidebar .mc4wp-form input[type='submit'], .blog__sidebar .mc4wp-form .newsletter-signup input[type='submit'], .newsletter-signup input.post-preview__button, .newsletter-signup input.post-card__card-button {
+    .newsletter-signup input.button, .newsletter-signup .blog__sidebar input.search-form__search-button, .blog__sidebar .newsletter-signup input.search-form__search-button, .newsletter-signup .blog__sidebar .mc4wp-form input[type='submit'], .blog__sidebar .mc4wp-form .newsletter-signup input[type='submit'], .newsletter-signup input.post-preview__button, .newsletter-signup input.post-card__card-button, .newsletter-signup .search-page-form input.search-form__search-button, .search-page-form .newsletter-signup input.search-form__search-button {
       border: none;
       font-size: 1.1rem;
       font-weight: 300;
@@ -15483,6 +15483,12 @@ ul.tgn-ul {
 
 .page-id-6287 .wps-products-heading, .page-template-no-hero-advanced-white .wps-products-heading, .page-template-no-hero-advanced .wps-products-heading, .page-template-no-hero .wps-products-heading {
   display: none !important; }
+
+/* Search page styles */
+.search-page-form {
+  /* Search form */ }
+  .search-page-form .search-form {
+    margin: 0 0 25px 0; }
 
 .testimonial__slide--text {
   font-family: inherit;
@@ -18039,10 +18045,10 @@ strong {
     margin-right: 2px; }
   .mc-page-form .mc4wp-form input {
     margin-bottom: 10px; }
-    .mc-page-form .mc4wp-form input.button, .mc-page-form .mc4wp-form .blog__sidebar input.search-form__search-button, .blog__sidebar .mc-page-form .mc4wp-form input.search-form__search-button, .mc-page-form .blog__sidebar .mc4wp-form input[type='submit'], .blog__sidebar .mc-page-form .mc4wp-form input[type='submit'], .mc-page-form .mc4wp-form input.post-preview__button, .mc-page-form .mc4wp-form input.post-card__card-button {
+    .mc-page-form .mc4wp-form input.button, .mc-page-form .mc4wp-form .blog__sidebar input.search-form__search-button, .blog__sidebar .mc-page-form .mc4wp-form input.search-form__search-button, .mc-page-form .blog__sidebar .mc4wp-form input[type='submit'], .blog__sidebar .mc-page-form .mc4wp-form input[type='submit'], .mc-page-form .mc4wp-form input.post-preview__button, .mc-page-form .mc4wp-form input.post-card__card-button, .mc-page-form .mc4wp-form .search-page-form input.search-form__search-button, .search-page-form .mc-page-form .mc4wp-form input.search-form__search-button {
       padding: .75rem 2rem; }
       @media (max-width: 768px) {
-        .mc-page-form .mc4wp-form input.button, .mc-page-form .mc4wp-form .blog__sidebar input.search-form__search-button, .blog__sidebar .mc-page-form .mc4wp-form input.search-form__search-button, .mc-page-form .blog__sidebar .mc4wp-form input[type='submit'], .blog__sidebar .mc-page-form .mc4wp-form input[type='submit'], .mc-page-form .mc4wp-form input.post-preview__button, .mc-page-form .mc4wp-form input.post-card__card-button {
+        .mc-page-form .mc4wp-form input.button, .mc-page-form .mc4wp-form .blog__sidebar input.search-form__search-button, .blog__sidebar .mc-page-form .mc4wp-form input.search-form__search-button, .mc-page-form .blog__sidebar .mc4wp-form input[type='submit'], .blog__sidebar .mc-page-form .mc4wp-form input[type='submit'], .mc-page-form .mc4wp-form input.post-preview__button, .mc-page-form .mc4wp-form input.post-card__card-button, .mc-page-form .mc4wp-form .search-page-form input.search-form__search-button, .search-page-form .mc-page-form .mc4wp-form input.search-form__search-button {
           margin: auto; } }
   .mc-page-form .mc4wp-form .mc4wp-response,
   .mc-page-form .mc4wp-form .mc4wp-alert .mc4wp-notice {
