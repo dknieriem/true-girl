@@ -47,7 +47,7 @@ $featuredImage = types_render_field( "event-image", array( "raw" => "true"));
                                         <div class="page-section__single-column full-width--no text-center events-hero-header">
                                             <span class="heading heading__on-pink">Share the truth</span><br /> 
                                             <span class="heading heading__on-pink">she needs to know</span><br />
-                                            <span class="heading heading__on-pink">in a night she'll always remember.</span>
+                                            <span class="heading heading__on-pink">in a night she'll always remember.</span><br />
                                             <a href="<?php echo types_render_field( "tickets_link", array( 'output' => 'raw') ); ?>" class="button button--yellow button--large mb-lg mt-md" >get tickets!</a> 
                                         </div> 
                                     </div> 
