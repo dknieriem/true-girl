@@ -9,6 +9,7 @@
 @import "icon-item";
 @import "image-item";
 @import "filter-button";
+@import "maps";
 @import "page-section";
 @import "post-preview";
 @import "post-card";
@@ -34,6 +35,7 @@
 @import "home-email-signup-form";
 @import "background-video";
 @import "video-feature";
+@import "events";
 @import "faq";
 @import "landing-page";
 @import "tgn-page";
@@ -175,6 +177,11 @@ table.table-borderless {
     td {
         color:$teal;
         padding:1rem;
+
+        @include media-breakpoint-down(sm)
+        {
+            padding: 0.5rem 0.25rem;
+        }
     }
 }
 
@@ -426,37 +433,6 @@ strong
     }
 }
 
-/* Testimonials */
-
-.testimonial_small
-{
-    /*margin-left:40px;
-    margin-right:40px;*/
-    max-width: 405px;
-    margin: auto;
-    @media (max-width:993px)
-    {
-       /* margin-left: 20px;
-        margin-right: 20px;*/
-    }
-
-    &__attribution
-    {
-        color: $pink;
-        font-family: "Myriad Pro";
-        font-weight: bold;
-        font-size: 1.25rem;
-        margin-top: 10px;
-    }
-}
-
-/* Map Section */
-
-.map-container
-{
-    display: table-cell;
-    margin: auto;
-}
 
 .mejs-audio
 {
