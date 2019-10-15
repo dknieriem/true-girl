@@ -8,11 +8,12 @@
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<?php $categories = array(
-					"self-esteem",
-					"biblical guidance",
+					"dating-and-sexuality",
+					"health-and-self-image",
+					"media",
 					"relationships",
-					"honesty",
-					"health"
+					"spiritual-life",
+					"values"
 				);
 
 				foreach($categories as $index => $category_name)
