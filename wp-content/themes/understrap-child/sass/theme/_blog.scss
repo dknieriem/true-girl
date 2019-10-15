@@ -132,6 +132,13 @@
 	}
 }
 
+// blog filters
+
+@include media-breakpoint-down(xs) {
+	a.filter {
+		margin-bottom: 8px;
+	}
+}
 
 /* hacks to get the blog up to spec (by tim) */
 
@@ -164,7 +171,6 @@
 .sidebar-form {
 	margin-bottom: 15px;
 }
-
 
 %__search-input
 {

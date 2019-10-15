@@ -6,7 +6,7 @@
  */
 ?>
 		<div class="row">
-			<div class="col-md-12 text-center">
+			<div class="col-md-12 text-center filters">
 				<?php $categories = array(
 					"dating & sexuality",
 					"health & self image",
@@ -25,7 +25,7 @@
 				    $category_link = esc_url( get_category_link( $category_id ) );
 
 				    //output a link to the category archive page
-				    echo "<a class=\"button button--small\" href=\"{$category_link}\" title=\"{$category_name}\">{$category_name}</a>";
+				    echo "<a class=\"button button--small filter\" href=\"{$category_link}\" title=\"{$category_name}\">{$category_name}</a>";
 				    if( $index != count( $categories ) - 1)
 				    {
 				    	echo "&nbsp;";

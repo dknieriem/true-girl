@@ -13392,6 +13392,10 @@ ol > li {
         .blog__sidebar .mc4wp-form input[type='submit'], .search__sidebar .mc4wp-form input[type='submit'] {
           font-size: 1.25rem; } }
 
+@media (max-width: 575.98px) {
+  a.filter {
+    margin-bottom: 8px; } }
+
 /* hacks to get the blog up to spec (by tim) */
 .blog .heading--white-on-pink, .blog .faq-header {
   margin: 32px 0 23px 0;
