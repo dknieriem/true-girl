@@ -8,11 +8,11 @@
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<?php $categories = array(
-					"dating-and-sexuality",
-					"health-and-self-image",
+					"dating & sexuality",
+					"health & self image",
 					"media",
 					"relationships",
-					"spiritual-life",
+					"spiritual life",
 					"values"
 				);
 
