@@ -65,6 +65,16 @@ $featuredImage = wp_get_attachment_url(get_post_thumbnail_id($post->ID, 'large')
     </div><!-- col-md-9 author-info -->
 	</div><!-- row post-footer -->
 
+	<section class="page-section text-left background-pink responsive-background- " style="background-image: url( '/wp-content/uploads/2019/07/EmailSignupPinkBkgd.png'); background-repeat: no-repeat; background-size:cover; background-position: center center;">
+		<div class="page-section__content-wrapper">
+			<div class="col-sm-10 col-xl-8 full-width--no justify-content-center mc-page-form offset-sm-1 offset-xl-2 pb-md pt-md text-center">
+				<h2 class="text-white mb-0">Start connecting now.</h2>
+				<h3 class="text-white text-bold mb-4">Get a free mother-daughter devo in your inbox every week.</h3>
+				<?php echo do_shortcode('[mc4wp_form id="7805"]'); ?>
+			</div>
+		</div>
+	</section>
+
 </div><!-- Container end -->
 
 </div><!-- Wrapper end -->
