@@ -40,7 +40,6 @@ class WPSEO_Admin_Init {
 		add_action( 'admin_init', array( $this, 'permalink_notice' ), 15 );
 		add_action( 'admin_init', array( $this, 'page_comments_notice' ), 15 );
 		add_action( 'admin_init', array( $this, 'ga_compatibility_notice' ), 15 );
-		add_action( 'admin_init', array( $this, 'yoast_plugin_compatibility_notification' ), 15 );
 		add_action( 'admin_init', array( $this, 'yoast_plugin_suggestions_notification' ), 15 );
 		add_action( 'admin_init', array( $this, 'recalculate_notice' ), 15 );
 		add_action( 'admin_init', array( $this, 'unsupported_php_notice' ), 15 );
@@ -55,7 +54,11 @@ class WPSEO_Admin_Init {
 		$listeners   = array();
 		$listeners[] = new WPSEO_Post_Type_Archive_Notification_Handler();
 
-		/** @var WPSEO_Listener $listener */
+		/**
+		 * Listener interface classes.
+		 *
+		 * @var WPSEO_Listener $listener
+		 */
 		foreach ( $listeners as $listener ) {
 			$listener->listen();
 		}
@@ -75,6 +78,8 @@ class WPSEO_Admin_Init {
 	 */
 	public function handle_notifications() {
 		/**
+		 * Notification handlers.
+		 *
 		 * @var WPSEO_Notification_Handler[] $handlers
 		 */
 		$handlers   = array();
@@ -335,56 +340,6 @@ class WPSEO_Admin_Init {
 	}
 
 	/**
-	 * Add an alert if outdated versions of Yoast SEO plugins are running.
-	 */
-	public function yoast_plugin_compatibility_notification() {
-		$compatibility_checker = new WPSEO_Plugin_Compatibility( WPSEO_VERSION );
-		$plugins               = $compatibility_checker->get_installed_plugins_compatibility();
-
-		$notification_center = Yoast_Notification_Center::get();
-
-		foreach ( $plugins as $name => $plugin ) {
-			$type         = ( $plugin['active'] ) ? Yoast_Notification::ERROR : Yoast_Notification::WARNING;
-			$notification = $this->get_yoast_seo_compatibility_notification( $name, $plugin, $type );
-
-			if ( $plugin['active'] && $plugin['compatible'] === false ) {
-				$notification_center->add_notification( $notification );
-
-				continue;
-			}
-
-			$notification_center->remove_notification( $notification );
-		}
-	}
-
-	/**
-	 * Build Yoast SEO compatibility problem notification.
-	 *
-	 * @param string $name   The plugin name to use for the unique ID.
-	 * @param array  $plugin The plugin to retrieve the data from.
-	 * @param string $level  The severity level to use for the notification.
-	 *
-	 * @return Yoast_Notification
-	 */
-	private function get_yoast_seo_compatibility_notification( $name, $plugin, $level = Yoast_Notification::WARNING ) {
-		$info_message = sprintf(
-			/* translators: %1$s expands to Yoast SEO, %2$s expands to the plugin version, %3$s expands to the plugin name */
-			__( '%1$s detected you are using version %2$s of %3$s, please update to the latest version to prevent compatibility issues.', 'wordpress-seo' ),
-			'Yoast SEO',
-			$plugin['version'],
-			$plugin['title']
-		);
-
-		return new Yoast_Notification(
-			$info_message,
-			array(
-				'id'   => 'wpseo-outdated-yoast-seo-plugin-' . $name,
-				'type' => $level,
-			)
-		);
-	}
-
-	/**
 	 * Shows the notice for recalculating the post. the Notice will only be shown if the user hasn't dismissed it before.
 	 */
 	public function recalculate_notice() {
@@ -463,7 +418,7 @@ class WPSEO_Admin_Init {
 			$message .= sprintf(
 				/* translators: %1$s expands to Yoast SEO, %2$s expands to 5.0 */
 				__(
-					'If you’ve held off on updating to %2$s and higher because of the new Gutenberg editor, please install the Classic editor plugin. It will give you the same editing experience you have now, but also the security of newer versions of WordPress and %1$s.',
+					'If you’ve held off on updating to %2$s and higher because of the new Gutenberg editor, please install the Classic Editor plugin. It will give you the same editing experience you have now, but also the security of newer versions of WordPress and %1$s.',
 					'wordpress-seo'
 				),
 				'Yoast SEO',
@@ -673,22 +628,6 @@ class WPSEO_Admin_Init {
 
 		// WordPress hooks that have been deprecated since a Yoast SEO version.
 		$deprecated_filters = array(
-			'wpseo_metakey' => array(
-				'version'     => '6.3',
-				'alternative' => null,
-			),
-			'wpseo_metakeywords' => array(
-				'version'     => '6.3',
-				'alternative' => null,
-			),
-			'wpseo_stopwords' => array(
-				'version'     => '7.0',
-				'alternative' => null,
-			),
-			'wpseo_redirect_orphan_attachment' => array(
-				'version'     => '7.0',
-				'alternative' => null,
-			),
 			'wpseo_genesis_force_adjacent_rel_home' => array(
 				'version'     => '9.4',
 				'alternative' => null,
@@ -704,11 +643,13 @@ class WPSEO_Admin_Init {
 		// Show notice for each deprecated filter or action that has been registered.
 		foreach ( $deprecated_notices as $deprecated_filter ) {
 			$deprecation_info = $deprecated_filters[ $deprecated_filter ];
+			// phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped -- only uses the hardcoded values from above.
 			_deprecated_hook(
 				$deprecated_filter,
 				'WPSEO ' . $deprecation_info['version'],
 				$deprecation_info['alternative']
 			);
+			// phpcs:enable WordPress.Security.EscapeOutput.OutputNotEscaped.
 		}
 	}
 
@@ -728,13 +669,30 @@ class WPSEO_Admin_Init {
 		global $pagenow;
 
 		if ( $pagenow === 'options-permalink.php' ) {
-			$warning = esc_html__( 'WARNING:', 'wordpress-seo' );
-			/* translators: %1$s and %2$s expand to <i> items to emphasize the word in the middle. */
-			$message = esc_html__( 'Changing your permalinks settings can seriously impact your search engine visibility. It should almost %1$s never %2$s be done on a live website.', 'wordpress-seo' );
-			$link    = esc_html__( 'Learn about why permalinks are important for SEO.', 'wordpress-seo' );
-			$url     = WPSEO_Shortlinker::get( 'https://yoa.st/why-permalinks/' );
-
-			echo '<div class="notice notice-warning"><p><strong>' . $warning . '</strong><br>' . sprintf( $message, '<i>', '</i>' ) . '<br><a href="' . $url . '" target="_blank">' . $link . '</a></p></div>';
+			printf(
+				'<div class="notice notice-warning"><p><strong>%1$s</strong><br>%2$s<br><a href="%3$s" target="_blank">%4$s</a></p></div>',
+				esc_html__( 'WARNING:', 'wordpress-seo' ),
+				sprintf(
+					/* translators: %1$s and %2$s expand to <em> items to emphasize the word in the middle. */
+					esc_html__( 'Changing your permalinks settings can seriously impact your search engine visibility. It should almost %1$s never %2$s be done on a live website.', 'wordpress-seo' ),
+					'<em>',
+					'</em>'
+				),
+				esc_url( WPSEO_Shortlinker::get( 'https://yoa.st/why-permalinks/' ) ),
+				// The link's content.
+				esc_html__( 'Learn about why permalinks are important for SEO.', 'wordpress-seo' )
+			);
 		}
+	}
+
+	/* ********************* DEPRECATED METHODS ********************* */
+	/**
+	 * Add an alert if outdated versions of Yoast SEO plugins are running.
+	 *
+	 * @deprecated 12.3
+	 * @codeCoverageIgnore
+	 */
+	public function yoast_plugin_compatibility_notification() {
+		_deprecated_function( __METHOD__, 'WPSEO 12.3' );
 	}
 }

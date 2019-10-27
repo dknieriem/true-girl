@@ -15,18 +15,11 @@ class MC4WP_Forms_Admin
     protected $messages;
 
     /**
-     * @var MC4WP_MailChimp
-     */
-    protected $mailchimp;
-
-    /**
      * @param MC4WP_Admin_Messages $messages
-     * @param MC4WP_MailChimp $mailchimp
      */
-    public function __construct(MC4WP_Admin_Messages $messages, MC4WP_MailChimp $mailchimp)
+    public function __construct(MC4WP_Admin_Messages $messages)
     {
         $this->messages = $messages;
-        $this->mailchimp = $mailchimp;
     }
 
     /**
@@ -84,6 +77,7 @@ class MC4WP_Forms_Admin
             'close'         => __('Close', 'mailchimp-for-wp'),
             'country'       => __('Country', 'mailchimp-for-wp'),
             'dropdown'      => __('Dropdown', 'mailchimp-for-wp'),
+            'emailAddress' => __('Email address', 'mailchimp-for-wp'),
             'fieldType'     => __('Field type', 'mailchimp-for-wp'),
             'fieldLabel'    => __("Field label", 'mailchimp-for-wp'),
             'formAction'    => __('Form action', 'mailchimp-for-wp'),
@@ -400,7 +394,8 @@ class MC4WP_Forms_Admin
     public function show_edit_page()
     {
         $form_id = (! empty($_GET['form_id'])) ? (int) $_GET['form_id'] : 0;
-        $lists = $this->mailchimp->get_lists();
+        $mailchimp = new MC4WP_MailChimp();
+        $lists = $mailchimp->get_lists();
 
         try {
             $form = mc4wp_get_form($form_id);
@@ -429,7 +424,8 @@ class MC4WP_Forms_Admin
      */
     public function show_add_page()
     {
-        $lists = $this->mailchimp->get_lists();
+        $mailchimp = new MC4WP_MailChimp();
+        $lists = $mailchimp->get_lists();
         $number_of_lists = count($lists);
         require dirname(__FILE__) . '/views/add-form.php';
     }

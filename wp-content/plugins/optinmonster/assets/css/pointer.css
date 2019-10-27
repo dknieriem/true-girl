@@ -1,0 +1,36 @@
+.wp-pointer {
+    width: 415px !important;
+}
+
+.wp-pointer-content h3:before {
+    content: "\f488";
+}
+
+.om-pointer-close-link a.close {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+}
+
+/* This style is included in later versions of  */
+.wp-pointer-content h4 {
+    margin: 1.33em 20px 1em;
+    font-size: 1.15em;
+}
+
+.om-pointer-close-link a.close:before {
+    background: 0 0;
+    color: #fff;
+    content: "\f153";
+    display: block!important;
+    font: normal 16px/1 dashicons;
+    speak: none;
+    margin: 1px 0;
+    text-align: center;
+    -webkit-font-smoothing: antialiased!important;
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    left: -4px;
+    top: -15px;
+}
