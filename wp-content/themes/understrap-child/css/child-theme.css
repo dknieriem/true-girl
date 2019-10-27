@@ -18019,6 +18019,11 @@ li.page-item {
   border: none;
   padding: .5em 1em; }
 
+.aligncenter, .header-narrow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
 /* Custom CSS */
 table.table-borderless td {
   color: #00bcd6;

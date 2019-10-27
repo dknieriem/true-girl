@@ -170,6 +170,13 @@ li.page-item {
     padding:.5em 1em;
 }
 
+.aligncenter
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Custom CSS */
 
 // Basic Table Styles - DON: We should pull out into a _table.scss file and BEMify to the extent possible
