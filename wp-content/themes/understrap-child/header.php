@@ -30,6 +30,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	})(window,document,'script','dataLayer','GTM-WMD656J');</script>
 	<!-- End Google Tag Manager -->
 	<meta name="google-site-verification" content="o3wdM04VVpFHvx3Ui3kE_fGpVRdWWxlwy0iNphFXWyU" />
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -47,9 +48,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 		<nav class="navbar fixed-top navbar-expand-lg">
 
-		<?php if ( 'container' == $container ) : ?>
+		<!--<?php if ( 'container' == $container ) : ?>
 			<div class="container" >
-		<?php endif; ?>
+		<?php endif; ?>-->
+			<div class="navbar-container">
 
 					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>

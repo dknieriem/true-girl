@@ -1,0 +1,126 @@
+/* Background Video Feature */
+
+.background-video
+{
+
+    width: 100%;
+    position: relative;
+    
+    &__container:not(.mobile-full-width)
+    {
+
+		@extend .offset-md-3;
+		//@extend .col-7; - more like 7.5:;
+		-webkit-box-flex: 0;
+	    -ms-flex: 0 0 75%;
+		flex: 0 0 75%;
+	    max-width: 75%;
+	    position: relative;
+	    width: 100%;
+	    min-height: 1px;
+	    padding-right: 15px;
+	    padding-left: 15px;
+
+        .wp-video
+        {
+            width: 100% !important;
+        }
+        .mejs-controls
+        {
+            display: none;
+        }
+    }
+
+    &__text
+    {
+        z-index: 999;
+        position: relative;
+
+        @include media-breakpoint-down(sm)
+        {
+            margin-bottom: -20px;
+            margin-left: 75px;
+        }
+
+        @include media-breakpoint-down(xs)
+        {
+            margin-left: 50px;
+        }
+
+        @include media-breakpoint-up(md)
+        {
+            position: absolute;
+            top: 25%;
+        }
+
+        .heading__on-pink
+        {
+
+            font-size:1.2rem;
+            line-height:48px;
+            letter-spacing: 2px;
+            padding: 8px 0;
+            -webkit-box-shadow: 10px 0 0 #c83b94, -10px 0 0 #c83b94;
+            box-shadow: 10px 0 0 #c83b94, -10px 0 0 #c83b94;
+
+           @include media-breakpoint-between(md,md)
+            {
+                font-size: 1.2rem;
+                line-height: 40px;
+                letter-spacing: 2px;
+                padding: 6px 0;
+                -webkit-box-shadow: 8px 0 0 #c83b94, -8px 0 0 #c83b94;
+                box-shadow: 8px 0 0 #c83b94, -8px 0 0 #c83b94;
+            }
+
+        	@include media-breakpoint-between(lg,lg)
+            {
+                font-size: 1.5rem;
+                line-height: 48px;
+                letter-spacing: 2px;
+                padding: 6px 0;
+			    -webkit-box-shadow: 8px 0 0 #c83b94, -8px 0 0 #c83b94;
+			    box-shadow: 8px 0 0 #c83b94, -8px 0 0 #c83b94;
+            }
+
+            @include media-breakpoint-up(xl)
+            {
+                font-size:2rem;
+                line-height:60px;
+                letter-spacing: 3px;
+                padding: 8px 0;
+                -webkit-box-shadow: 10px 0 0 #c83b94, -10px 0 0 #c83b94;
+                box-shadow: 10px 0 0 #c83b94, -10px 0 0 #c83b94;
+            }
+        }
+    }
+
+    &__button {
+        &--desktop {
+            margin-top: 15px;
+        }
+
+        &--mobile {
+            margin-top: -15px;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.mobile-full-width
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Modal Video */
+#bgVideoFeatureModal {
+
+    .wp-video {
+        width: 100% !important;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}

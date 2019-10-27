@@ -7,7 +7,7 @@
  * Cloned from the default understrap page template,
  * this template removes the global hero and page header sections.
  * That's it. Really! 
- * All other homepage styling is done via the block editor.
+ * All other styling is done via the block editor.
  *
  * @package understrap
  */
@@ -20,7 +20,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="page-wrapper">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+	<div id="content" tabindex="-1"><!--  class="<?php echo esc_attr( $container ); ?>" -->
 
 		<div class="row content__row">
 

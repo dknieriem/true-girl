@@ -144,7 +144,10 @@ function theme_enqueue_styles() {
     wp_enqueue_script( 'popper-scripts', get_template_directory_uri() . '/js/popper.min.js', array(), false);
     wp_enqueue_script( 'typed', get_stylesheet_directory_uri() . '/js/typed.js', array(), false);
     wp_enqueue_script( 'child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), $the_theme->get( 'Version' ), true );
-    wp_enqueue_script( 'custom-scripts', get_stylesheet_directory_uri() . '/js/custom.js', array(), false);
+    
+    wp_enqueue_script( 'rellax', get_stylesheet_directory_uri() . '/js/simpleParallax.min.js', array(), false, true);
+    wp_enqueue_script( 'custom-scripts', get_stylesheet_directory_uri() . '/js/custom.js', array('rellax'), false, true);
+    
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }
@@ -306,3 +309,16 @@ function understrap_child_mime_types($mimes) {
 }
 
 add_filter('upload_mimes', 'understrap_child_mime_types');
+
+function get_excerpt( $count ) {
+    $permalink = get_permalink($post->ID);
+    $excerpt = get_the_content();
+    $excerpt = strip_tags($excerpt);
+    $excerpt = substr($excerpt, 0, $count);
+    $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+    $excerpt = $excerpt.'...';
+return $excerpt;
+}
+
+//set up new widgets
+require get_stylesheet_directory() . '/inc/widgets.php';

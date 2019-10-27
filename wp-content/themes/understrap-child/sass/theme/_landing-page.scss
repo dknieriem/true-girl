@@ -1,0 +1,39 @@
+//Landing Page styles
+
+.music-column
+{
+
+	@extend .d-flex;
+	@extend .flex-column;
+	@extend .justify-content-center;
+
+	&__text
+	{
+		@extend .justify-content-center;
+		@extend .text-teal;
+		max-width:375px;
+		margin:auto;
+	}
+
+}
+
+.header-narrow
+{
+	@extend .aligncenter;
+	width: 450px;
+	max-width: 100%;
+
+	// @include media-breakpoint-down(sm)
+	// {
+	// 	max-width: 80%;
+	// }
+}
+
+//DON hack to set width. refactor using bs breakpoints and functions
+// .w-md-50
+// {	
+// 	@include media-breakpoint-up(md)
+// 	{
+// 		width: 50% !important;
+// 	}
+// }

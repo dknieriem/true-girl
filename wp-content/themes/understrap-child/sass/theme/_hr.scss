@@ -56,6 +56,9 @@
         &--bold {
             padding-top: 8px;
         }
+        &--left-aligned {
+            margin: .25rem auto .25rem 0;
+        }
 
         &--teal {
             background-color: $teal;

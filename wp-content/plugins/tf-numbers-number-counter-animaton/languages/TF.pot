@@ -1,0 +1,655 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: TF Random Numbers\n"
+"POT-Creation-Date: 2017-11-19 11:37+0100\n"
+"PO-Revision-Date: 2017-11-19 11:36+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: tf-random_numbers.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: cmb2/includes/CMB2.php:120
+msgid "Metabox configuration is required to have an ID parameter"
+msgstr ""
+
+#: cmb2/includes/CMB2.php:326
+msgid "Click to toggle"
+msgstr ""
+
+#: cmb2/includes/CMB2_Ajax.php:40
+msgid "Please Try Again"
+msgstr ""
+
+#: cmb2/includes/CMB2_Ajax.php:135
+msgid "Remove Embed"
+msgstr ""
+
+#: cmb2/includes/CMB2_Ajax.php:139
+#, php-format
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr ""
+
+#: cmb2/includes/CMB2_Field.php:891
+msgid "Add Group"
+msgstr ""
+
+#: cmb2/includes/CMB2_Field.php:892
+msgid "Remove Group"
+msgstr ""
+
+#: cmb2/includes/CMB2_Field.php:914 cmb2/includes/CMB2_Field.php:918
+msgid "None"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:86 cmb2/includes/CMB2_JS.php:119
+msgid "Clear"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:87
+msgid "Default"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:88
+msgid "Select Color"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:89
+msgid "Current Color"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:109
+msgctxt "Valid formatDate string for jquery-ui datepicker"
+msgid "mm/dd/yy"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:110
+msgid "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:111
+msgid "Su, Mo, Tu, We, Th, Fr, Sa"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:112
+msgid "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:113
+msgid ""
+"January, February, March, April, May, June, July, August, September, "
+"October, November, December"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:114
+msgid "Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:115
+msgid "Next"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:116
+msgid "Prev"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:117
+msgid "Today"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:118 cmb2/includes/CMB2_JS.php:128
+msgid "Done"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:122
+msgid "Choose Time"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:123
+msgid "Time"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:124
+msgid "Hour"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:125
+msgid "Minute"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:126
+msgid "Second"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:127
+msgid "Now"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:129
+msgctxt ""
+"Valid formatting string, as per http://trentrichardson.com/examples/"
+"timepicker/"
+msgid "hh:mm TT"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:135
+msgid "Use this file"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:136 cmb2/includes/CMB2_Types.php:983
+msgid "Remove Image"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:137 cmb2/includes/CMB2_Types.php:356
+#: cmb2/includes/CMB2_Types.php:1002
+msgid "Remove"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:138 cmb2/includes/CMB2_Types.php:997
+msgid "File:"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:139 cmb2/includes/CMB2_Types.php:1000
+msgid "Download"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:140
+msgid "Select / Deselect All"
+msgstr ""
+
+#: cmb2/includes/CMB2_Types.php:297
+msgid "Add Row"
+msgstr ""
+
+#: cmb2/includes/CMB2_Types.php:734 cmb2/includes/CMB2_Types.php:782
+msgid "No terms"
+msgstr ""
+
+#: cmb2/includes/CMB2_Types.php:847
+msgid "Add or Upload Files"
+msgstr ""
+
+#: cmb2/includes/CMB2_Types.php:907
+msgid "Add or Upload File"
+msgstr ""
+
+#: cmb2/includes/helper-functions.php:249
+msgid "Save"
+msgstr ""
+
+#: inc/license.php:14
+msgid "Addons Licenses"
+msgstr ""
+
+#: inc/pages/addons.php:9
+msgid "ADDONS"
+msgstr ""
+
+#: inc/pages/addons.php:12
+msgid ""
+"If you want more control, you can get the premium Addons that will extend TF "
+"Numbers even more."
+msgstr ""
+
+#: inc/pages/addons.php:16
+msgid "Addons Collection"
+msgstr ""
+
+#: inc/pages/addons.php:21
+msgid "Controller Addon"
+msgstr ""
+
+#: inc/pages/addons.php:21
+msgid ""
+"gives you more controlls over TF Numbers plugin. It will alow you to change "
+"numbers counting speed, unlock 4 more layouts and let you include \",\" "
+"comma separator for better looking numbers (like 10,000, 7,800 etc.). It "
+"also gives you an option to start counting immediatelly after page is "
+"loaded. Also get Section Padding And Margin Options and choose to show, or "
+"hide Section Title."
+msgstr ""
+
+#: inc/pages/addons.php:22 inc/pages/addons.php:27 inc/pages/addons.php:32
+#: inc/pages/addons.php:37 inc/pages/addons.php:42 inc/pages/addons.php:47
+#: inc/pages/addons.php:53
+msgid "Get It"
+msgstr ""
+
+#: inc/pages/addons.php:26
+msgid "Iconizer Addon"
+msgstr ""
+
+#: inc/pages/addons.php:26
+msgid "- It makes icons more powerfull."
+msgstr ""
+
+#: inc/pages/addons.php:26
+msgid "Iconizer"
+msgstr ""
+
+#: inc/pages/addons.php:26
+msgid ""
+"will let you add your own image icons to the TF Numebrs plugin icons panel. "
+"You will be able to add your icons directly from icons panel. It also "
+"includes 2 more options your custom image icons width and height, and it "
+"unlocks search field in the icons panel so you can search through your icons "
+"and built-in font-awesome icons."
+msgstr ""
+
+#: inc/pages/addons.php:31
+msgid "Auto Incrementer Addon"
+msgstr ""
+
+#: inc/pages/addons.php:31
+msgid ""
+"gives you the option to choose the starting position of the counter. So your "
+"number can start from 100, or 1200, etc. instead from 0. You can also have "
+"the auto incrementing option so your numbers can be increment daily by some "
+"value (eq 15)."
+msgstr ""
+
+#: inc/pages/addons.php:36
+msgid "Currencies Addon"
+msgstr ""
+
+#: inc/pages/addons.php:36
+msgid "- Include currencies to your numbers."
+msgstr ""
+
+#: inc/pages/addons.php:36
+msgid "Currencies"
+msgstr ""
+
+#: inc/pages/addons.php:36
+msgid ""
+"Addon allows showing of currencies in 4 ways: before number, after number, "
+"in form of superscipt, or subscript. You can choose between 16 currencies. "
+"Full list of available currencies can be found on the addon's page (learn "
+"more by clicking the Get It button"
+msgstr ""
+
+#: inc/pages/addons.php:41
+msgid "Parallax Addon"
+msgstr ""
+
+#: inc/pages/addons.php:41
+msgid "- Add Parallax Effect To Backgound Image."
+msgstr ""
+
+#: inc/pages/addons.php:41
+msgid "Parallax"
+msgstr ""
+
+#: inc/pages/addons.php:41
+msgid ""
+"will let you add the parallax effect to the background image of your numbers "
+"section. You will have new option to enable or disable parallax image "
+"effect, and a new option to change the image's transparent overlay "
+"background color."
+msgstr ""
+
+#: inc/pages/addons.php:46
+msgid "Animator Addon"
+msgstr ""
+
+#: inc/pages/addons.php:46
+msgid "- Make your numbers more alive."
+msgstr ""
+
+#: inc/pages/addons.php:46
+msgid "Animator"
+msgstr ""
+
+#: inc/pages/addons.php:46
+msgid ""
+"Addon will extend the TF Numbers by allowing you to add powerful animations "
+"to the static numbers section. Add more dynamic to your website by choosing "
+"from 14 available animations. You can change animation duration and delay "
+"for each number. You can also apply animation to the numbers section title "
+"and entire section container itself."
+msgstr ""
+
+#: inc/pages/addons.php:50
+msgid "Save 60%"
+msgstr ""
+
+#: inc/pages/addons.php:50
+msgid "By Getting The Addons"
+msgstr ""
+
+#: inc/pages/addons.php:50
+msgid "Bundle"
+msgstr ""
+
+#: inc/pages/addons.php:52
+msgid "Addons Bundle"
+msgstr ""
+
+#: inc/pages/addons.php:52
+#, php-format
+msgid "- Save 60% by getting all 6 addons for small price."
+msgstr ""
+
+#: inc/pages/dashboard.php:9
+msgid "TF Numbers Plugin"
+msgstr ""
+
+#: inc/pages/dashboard.php:12
+msgid ""
+"TF Numbers is a random numbers counting plugin that helps you to create some "
+"kind of statistics, or show off section anywhere on your website. If you are "
+"developer, you can extend, or modify TF Numbers with available filters. You "
+"can learn more in the documentation."
+msgstr ""
+
+#: inc/pages/dashboard.php:16
+msgid "Video Preview"
+msgstr ""
+
+#: inc/pages/dashboard.php:23 inc/setup.php:537 tf-random_numbers.php:46
+msgid "Support"
+msgstr ""
+
+#: inc/pages/dashboard.php:24 inc/setup.php:538 tf-random_numbers.php:47
+msgid "Documentation"
+msgstr ""
+
+#: inc/pages/dashboard.php:25 inc/setup.php:539
+msgid "Video Tutorials"
+msgstr ""
+
+#: inc/pages/dashboard.php:26 inc/pages/dashboard.php:34 inc/setup.php:540
+#: tf-random_numbers.php:48
+msgid "Addons"
+msgstr ""
+
+#: inc/pages/dashboard.php:28
+msgid "Icons"
+msgstr ""
+
+#: inc/pages/dashboard.php:29
+msgid ""
+"Choose from over 400 available fontAwesome icons that are integrated "
+"directly with few clicks. You can choose the color and font-size of the "
+"icons you add to TF Numbers section."
+msgstr ""
+
+#: inc/pages/dashboard.php:31
+msgid "Customizable"
+msgstr ""
+
+#: inc/pages/dashboard.php:32
+msgid ""
+"You can change colors, and background of the TF Numebrs section very easily "
+"from the available options. If you are a developer t here are filters "
+"availabe so you can hook your own options that will be applied on the front-"
+"end in the form of css."
+msgstr ""
+
+#: inc/setup.php:127 inc/setup.php:129 inc/setup.php:165
+msgid "Random Numbers"
+msgstr ""
+
+#: inc/setup.php:128
+msgid "Random Number"
+msgstr ""
+
+#: inc/setup.php:130 inc/setup.php:131
+msgid "Add Numbers"
+msgstr ""
+
+#: inc/setup.php:132
+msgid "New Numbers"
+msgstr ""
+
+#: inc/setup.php:133
+msgid "Edit Numbers"
+msgstr ""
+
+#: inc/setup.php:134
+msgid "All Numbers"
+msgstr ""
+
+#: inc/setup.php:135
+msgid "No Numbers found"
+msgstr ""
+
+#: inc/setup.php:136
+msgid "No Numbers found in trash"
+msgstr ""
+
+#: inc/setup.php:172
+msgid "Add/Remove New Random Number"
+msgstr ""
+
+#: inc/setup.php:174
+msgid "Random Numbers {#}"
+msgstr ""
+
+#: inc/setup.php:175
+msgid "Add Another Random Number"
+msgstr ""
+
+#: inc/setup.php:176
+msgid "Remove Random Number"
+msgstr ""
+
+#: inc/setup.php:183
+msgid "Icon"
+msgstr ""
+
+#: inc/setup.php:190
+msgid "Number"
+msgstr ""
+
+#: inc/setup.php:192
+msgid "Enter some number."
+msgstr ""
+
+#: inc/setup.php:192
+msgid ""
+"You can boost your numbers, include comma separator, and plenty of new "
+"features"
+msgstr ""
+
+#: inc/setup.php:192
+msgid "Learn More"
+msgstr ""
+
+#: inc/setup.php:197 inc/setup.php:432
+msgid "Title"
+msgstr ""
+
+#: inc/setup.php:226
+msgid "More Options"
+msgstr ""
+
+#: inc/setup.php:237
+msgid "1"
+msgstr ""
+
+#: inc/setup.php:238
+msgid "2"
+msgstr ""
+
+#: inc/setup.php:260
+msgid "Options"
+msgstr ""
+
+#: inc/setup.php:265
+msgid "Background Image"
+msgstr ""
+
+#: inc/setup.php:271
+msgid "Background Color"
+msgstr ""
+
+#: inc/setup.php:277
+msgid "Use Transparent Background"
+msgstr ""
+
+#: inc/setup.php:283
+msgid "Section Title Color"
+msgstr ""
+
+#: inc/setup.php:289
+msgid "Section Title Vertical Margin"
+msgstr ""
+
+#: inc/setup.php:292
+msgid "Add px, em, or % with value."
+msgstr ""
+
+#: inc/setup.php:296
+msgid "Icons Color"
+msgstr ""
+
+#: inc/setup.php:302
+msgid "Numbers Color"
+msgstr ""
+
+#: inc/setup.php:308
+msgid "Numbers Title Color"
+msgstr ""
+
+#: inc/setup.php:314
+msgid "Numbers Size"
+msgstr ""
+
+#: inc/setup.php:317
+msgid ""
+"Add value that will be applied to numbers size. Value will be applied in em."
+msgstr ""
+
+#: inc/setup.php:321
+msgid "Titles Size"
+msgstr ""
+
+#: inc/setup.php:324
+msgid ""
+"Add value that will be applied to titles size. Value will be applied in em."
+msgstr ""
+
+#: inc/setup.php:328
+msgid "Icons Size"
+msgstr ""
+
+#: inc/setup.php:331
+msgid ""
+"Add value that will be applied to icons size. Value will be applied in em."
+msgstr ""
+
+#: inc/setup.php:335
+msgid "Section Border"
+msgstr ""
+
+#: inc/setup.php:338
+msgid ""
+"Add border around the numbers section. You can insert css for the border, eq "
+"1px sold #333"
+msgstr ""
+
+#: inc/setup.php:433
+msgid "Shortcode"
+msgstr ""
+
+#: inc/setup.php:459
+msgid "Save/Update Numbers"
+msgstr ""
+
+#: inc/setup.php:490
+msgid "Delete Permanently"
+msgstr ""
+
+#: inc/setup.php:492
+msgid "Move to Trash"
+msgstr ""
+
+#: inc/setup.php:502
+msgid "Save Numbers"
+msgstr ""
+
+#: inc/setup.php:503
+msgid "Save %"
+msgstr ""
+
+#: inc/setup.php:507 inc/setup.php:508
+msgid "Update "
+msgstr ""
+
+#: inc/setup.php:524
+msgid "Thank You For Using TF Numbers Plugin"
+msgstr ""
+
+#: inc/setup.php:534
+msgid "Make your numbers more beautiful"
+msgstr ""
+
+#: inc/setup.php:535
+msgid "Demo With Addons"
+msgstr ""
+
+#: inc/setup.php:577
+msgid ""
+"If you like TF Numbers you can consider to support me by buying me a cup of "
+"coffee, or sharing TF Numbers on some of the available social netwoks."
+msgstr ""
+
+#: inc/setup.php:579
+msgid "Buy Me a cup of coffee"
+msgstr ""
+
+#: inc/setup.php:597
+msgid "Share TF Numbers On Social Networks:"
+msgstr ""
+
+#: inc/update.php:155
+#, php-format
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a>."
+msgstr ""
+
+#: inc/update.php:162
+#, php-format
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a> or <a href=\"%4$s"
+"\">update now</a>."
+msgstr ""
+
+#: inc/update.php:302
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "TF Random Numbers"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"http://themeflection.com/plug/number-counter-animation-wordpress-plugin/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Random numbers plugin for WordPress"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Themeflection"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://themeflection.com"
+msgstr ""

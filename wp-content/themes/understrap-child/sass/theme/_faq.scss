@@ -1,0 +1,143 @@
+/* Frequently Asked Questions */
+
+.accordion-category
+{
+
+	@extend .text-center;
+
+	&__header
+	{
+		@extend .text-teal;
+		@extend .text-goudysans;
+		//@extend .text-center;
+
+		border-bottom: 3px solid color(teal);
+		display: inline;
+	    margin: auto;
+	}
+
+}
+
+.faq
+{
+
+	@extend .text-left;
+
+	&-header
+	{
+
+		@extend .d-inline-block; 
+		@extend .h2;
+		@extend .heading;
+		//@extend .heading-normal;
+		@extend .heading--white-on-pink;
+
+	    z-index: 999;
+	    position: relative;
+	    margin: auto;
+	    text-align: center;
+	    letter-spacing: 3px;
+
+
+
+		&__image 
+		{
+			position: absolute;
+			top: 0;
+			left: calc(50% - 66px);
+			margin: auto;
+		}
+	}
+	
+}
+
+.faq-item
+{
+	@extend .card;
+	@extend .border-0;
+
+	background-color: transparent;
+	&__header
+	{
+		//@extend .card-header;
+	}
+
+	&__button
+	{
+		//@extend .btn;
+		@extend .btn-link;
+		@extend .text-goudysans;
+		@extend .text-pink;
+		@extend .text-bold;
+
+		font-size: 2.375rem;
+		border-color: transparent;
+		text-align: left;
+
+		&:hover, &:focus
+		{
+			color: $dark-pink;
+			text-decoration: none;
+		}
+
+		&--q
+		{
+			@extend .text-shark;
+			@extend .text-pink;
+			font-weight: normal;
+			font-size: 3rem;
+			margin-left: 0.5rem;
+			margin-right: 0.4rem;
+			letter-spacing: 3px;
+		}
+	}
+
+	&__icon
+	{
+
+		@extend .fa-minus-square;
+
+		vertical-align: text-top;
+	}
+
+	&__body
+	{
+		@extend .card-body;
+
+		display: flex;
+		flex-direction: row;
+
+
+
+		&--a
+		{
+			@extend .text-shark;
+			@extend .text-teal;
+			font-weight: normal;
+			font-size: 3rem;
+			margin-left: 1.6rem;
+			letter-spacing: 3px;
+		}
+
+		&--answer
+		{
+			padding: 0 1.6rem;
+
+			p
+			{
+				@extend .text-teal;
+
+				font-size: 1.5rem;
+				font-weight: bold;
+				line-height: 1.2;
+			}
+
+		}
+	}
+}
+
+.faq-item__button.collapsed {
+	.faq-item__icon {
+		@extend .fa-plus-square;
+	}
+}

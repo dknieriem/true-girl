@@ -1,0 +1,113 @@
+// All styles for post-single
+
+
+body.single
+{
+    background-image: none;
+}
+
+#single-wrapper
+{
+
+
+
+    &>#content 
+    {
+
+        padding-top: 3rem;
+
+        @include media-breakpoint-up(md)
+        {
+            padding-left: 14%;
+            padding-right: 14%;
+        }
+    }
+}
+
+.post-block
+{
+    margin-top:3rem;
+    margin-bottom:2rem;
+
+    &__lead-text
+    {
+        font-size:1.7rem;
+        font-weight:300;
+        margin-bottom:1rem;
+    }
+
+    p
+    {
+    	margin-top: 1rem;
+    }
+
+    a
+    {
+    	font-weight: bold;
+    	text-decoration: underline !important;
+    }
+
+    h1,h2,h3,h4,h5,
+    .h1, .h2, .h3, .h4, .h5
+    {
+    	@extend .text-goudysans;
+    	color: $black;
+    }
+
+    ul
+    {
+        font-size: 1rem;
+        font-weight:100;
+    }
+
+    ol 
+    {
+        font-weight:200;
+        font-size:1.5rem;
+    }
+
+    blockquote
+    {
+        margin:2.5em;
+        font-size: 1.2em;
+        font-style: italic;
+    }
+
+}
+
+.author-info
+{
+	background-color: $author-background;
+	padding: 1rem 2rem;
+
+	&__photo
+    {
+        border-radius:50%;
+        height:6rem;
+        width:6rem;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        flex-basis: 3rem;
+        margin-bottom:1rem;
+    }
+
+	&__bio 
+    {
+	
+    	h4
+        {
+    		color: $black;
+    		font-size: 1.25rem;
+    	}
+
+    	p
+        {
+    		line-height: 1.5;
+    	}
+    }
+
+}
+
+
+

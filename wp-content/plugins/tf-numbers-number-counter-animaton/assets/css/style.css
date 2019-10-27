@@ -1,0 +1,31 @@
+
+.statistics{padding: 20px 0; text-align: center; background: rgba(0, 0, 0, 0.13); background-size: cover;position: relative;}
+.statistics .stat{display: block; margin: 35px 25px; line-height: 1.4; float: left;}
+.statistics .statistics-inner {display: inline-block;}
+.statistics .statistics-inner .stat {text-align: center;}
+.statistics h3{text-align: center;z-index: 2;position: relative;}
+.statistics .stat span{margin-bottom: 10px;}
+.stat .stat-icon, .stat .number, .stat .count-title{display: block; width: 100%; text-align: center;}
+.stat .number, .stat .count-title{font-size: 1.4em}
+.stat .number{color: olive; font-size: 25px;}
+.statistics-inner{padding: 15px 3%; text-align: center;z-index: 2;position: relative;}
+.statistics .stat .fa, .statistics .stat .count-title{color: #444;}
+.statistics .sec-title{margin-bottom: -20px;}
+.stat .fa{font-size: 36px}
+.stat .count-title {font-size: 16px}
+.statistics.n3 .stat .fa, .statistics.n4 .stat .fa{display: none;}
+.statistics.n5 .stat .count-title, .statistics.n6 .stat .count-title{display: none;}
+.statistics.n7 .stat .count-subtitle{font-size: 13px;}
+
+@media only screen and (max-width: 1080px) {
+
+    .statistics .statistics-inner {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .statistics .stat {
+        float: none;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,25 @@
+.wps-thumbnails-wrapper,
+.wps-component-products-images {
+   width: 100%;
+   margin: 15px auto 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+}
+
+.wps-component-products-images {
+   margin-top: 0;
+}
+
+.wps-thumbnails-wrapper {
+   > div:last-child {
+      margin-right: 0;
+   }
+}
+
+.wps-component-products-images-thumbnail {
+   padding: 0;
+   margin: 0 15px 15px 0;
+   width: calc(20% - 12px);
+   flex: 0 0 calc(20% - 12px);
+}

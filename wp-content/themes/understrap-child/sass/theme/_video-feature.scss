@@ -1,0 +1,56 @@
+// 
+.video_feature {
+ /*   margin-left:40px;
+    margin-right:40px;*/
+    max-width: 550px;
+    margin: auto;
+/*    @media (max-width:993px){
+        margin-left: 20px;
+        margin-right: 20px;
+    }*/
+    &__video {
+        margin-bottom:1.5rem;
+    }
+    &__description {
+        color: $gray;
+        margin-top:1rem;
+        margin-bottom:.5rem;
+    }
+    &_button
+    {
+
+        @include media-breakpoint-down(sm)
+        {
+            font-size: 1.1rem;
+        }
+    }
+    div.hr__inner {
+        margin: .25rem auto .25rem 0 !important;
+        // DON: This nexted selector/!important makes me feel icky :) I also added a --left-aligned modifier to the .hr__inner element, but using that right now would require shortcode changes, which I'm loathe to make at this point.
+    }
+}
+
+
+.mejs-container:hover, .video_feature__video:hover {
+    cursor: pointer;
+}
+
+
+.mejs-video
+{
+    &.mejs-container,
+    &.mejs-container .mejs-controls, 
+    .mejs-embed,
+    .mejs-embed body 
+    {
+        width: 100% !important;
+    }
+}
+
+
+
+.mejs-iframe-overlay {
+    iframe {
+        width: 100%;
+    }
+}

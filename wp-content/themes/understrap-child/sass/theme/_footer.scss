@@ -1,25 +1,27 @@
 .footer
 {
     background-color: $footer-background-color;
-    padding-top:4rem;
-    padding-bottom:1rem;
+    padding:4rem 50px 1rem;
+
     &__copyright
     {
         color: $gray;
         font-size: 0.8rem;
         margin-top:2.5rem;
     }
+
     &__link
     {
         color: $gray;
         transition: color 0.5s ease;
         font-size:0.8rem;
 
+        &:hover
+        {
+            color:white;
+        }
     }
-    &__link:hover
-    {
-        color:white;
-    }
+
     &__heading
     {
         font-family:$body-font;
@@ -28,12 +30,13 @@
         font-weight:400;
         font-size:0.8rem;
         text-transform: uppercase;
-        
     }
+
     &__list
     {
         padding-left:0px;
     }
+
     &__list-item
     {
         list-style: none;
@@ -42,6 +45,7 @@
         font-weight:300;
         font-size:0.8rem;
     }
+
     &__social-link
     {
         color: $gray;
@@ -49,11 +53,13 @@
         display: inline-block;
         margin-right:1rem;
         transition: color 0.5s ease;
+
+        &:hover
+        {
+            color: $gray;
+        }
     }
-    &__social-link:hover
-    {
-        color: $gray;
-    }
+    
     &__email-signup-form
     {
         //@extend .form-inline;
@@ -61,6 +67,7 @@
         flex-direction: row;
         margin-bottom:1rem;
     }
+
     &__input
     {
         //@extend .form-control;
@@ -71,6 +78,7 @@
         padding:.75rem 1rem;
         @extend .shadowed;
     }
+
     &__submit-button
     {
         flex-basis:20%;
@@ -80,19 +88,21 @@
         font-weight:300;
         @extend .shadowed;  
     }
+
     &__text
     {
         font-size: 0.8rem;
         line-height: 1.5;
         color: $gray;
     }
+    
     &__logo
     {
         @extend .img-fluid;
         max-width:200px;
         max-height:125px;
         margin-bottom:2rem;
-        @media (max-width: 767.98px) {
+        @media (max-width: 768px) {
             margin-top: 3rem;
         }
     }

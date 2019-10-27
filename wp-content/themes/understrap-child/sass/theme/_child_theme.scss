@@ -2,12 +2,14 @@
 @import "helpers";
 @import "typography";
 @import "testimonial";
+@import "blog";
 @import "button";
 @import "child_navbar";
 @import "hero";
 @import "icon-item";
 @import "image-item";
 @import "filter-button";
+@import "maps";
 @import "page-section";
 @import "post-preview";
 @import "post-card";
@@ -16,7 +18,7 @@
 @import "post-intro";
 @import "podcast-intro";
 @import "podcast-row";
-@import "post-block";
+@import "post-single";
 @import "pull-quote";
 @import "featured-post";
 @import "hr";
@@ -26,24 +28,42 @@
 @import "page-heading";
 @import "page-hero";
 @import "search-form";
+@import "stats-counter";
 @import "footer";
 @import "page-wrapper";
 @import "sidebar-cta-card";
 @import "home-email-signup-form";
+@import "background-video";
+@import "video-feature";
+@import "events";
+@import "faq";
+@import "landing-page";
+@import "tgn-page";
 @import "wp-shopify";
+@import "search-page";
+@import "slick";
+@import "../assets/slick";
+@import "../assets/font-awesome";
 
+/* Main Styles */
+
+// body styles. See typography for default text styles
 body
 {
-    font-family:$body-font;
-    padding-top:160px;
-    background-image: url('../img/background-icons.png');
-    background-repeat: repeat-y;
-    background-size:100%;
-    background-position: center top;
+    padding-top:96px;
+    background-color: $teal;
+    line-height: 1.2;
 
-    @media (min-width: 769px)
+
+    
+    @include media-breakpoint-down(sm)
     {
-        padding-top:100px;
+        padding-top:126px;
+        
+        #page
+        {
+            overflow-x: hidden;
+        }
     }
 }
 
@@ -51,6 +71,32 @@ body
 {
     padding-top:0px;
     padding-bottom:0px;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+.navbar .navbar-container, #content {
+
+    @include media-breakpoint-down(xl){
+        //@extend .container-fluid:
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        //margin-left: 9px;
+        //margin-right: 9px;
+    }
+
+    @include media-breakpoint-up(dx){
+        //@extend .container:
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-left: none;
+        margin-right: none;
+        max-width: breakpoint-min(dx); //$container-max-widths('dx'); //1350px
+    } 
 }
 
 // WordPress-specific Styling
@@ -61,11 +107,6 @@ figcaption.wp-caption-text
     font-style: italic;
     padding:.8rem 0;
     font-size:0.8rem;
-}
-
-body.admin-bar .fixed-top
-{
-    top:32px !important;
 }
 
 #content {
@@ -108,96 +149,82 @@ body.admin-bar .fixed-top
     justify-content: center;
 }
 
+.blog ul.pagination {
+	padding-bottom: 20px;
+}
+
 .page-item.active .page-link
 {
     background-color:$pink;
     border-color:$pink;
 }
 
+li.page-item {
+	font-size: 1.25em;
+}
+
 .page-link
 {
     color:$pink;
+    border: none;
+    padding:.5em 1em;
 }
 
 /* Custom CSS */
 
-/* Background Video Feature */
-.background-video {
+// Basic Table Styles - DON: We should pull out into a _table.scss file and BEMify to the extent possible
+table.table-borderless {
+    td {
+        color:$teal;
+        padding:1rem;
 
-    width: 100%;
-    
-    &__container {
-
-        .wp-video {
-            width: 100% !important;
-        }
-        .mejs-controls {
-            display: none;
-        }
-    }
-
-    &__text {
-        z-index: 999;
-
-        @media (max-width: 768px){
-            margin-bottom: -20px;
-        }
-
-        @media (min-width: 769px){
-            position: absolute;
-        }
-    }
-
-    &__button {
-        &--desktop {
-            margin-top: 15px;
-        }
-
-        &--mobile {
-            margin-top: -15px;
-            font-size: 1.5rem;
+        @include media-breakpoint-down(sm)
+        {
+            padding: 0.5rem 0.25rem;
         }
     }
 }
 
-.mejs-container,
-.mejs-container .mejs-controls, .mejs-embed,
-.mejs-embed body {
-    width: 100% !important;
+.video-mobile-bg {
+    background-image:url('https://staging4.mytruegirl.com/wp-content/uploads/2019/07/LiveEventsBkgd.jpg') !important;
+    // DON: Very ugly hack here! We should clean up the shortcode for background videos
 }
 
-/* Modal Video */
-#bgVideoFeatureModal {
-
-    .wp-video {
-        width: 100% !important;
+.about-page-heading
+{
+    //Extreme hack to move that pink heading for this specific page
+    @media (min-width: 768px) {
+        margin-left: -5rem !important;
+        margin-top: -4.5rem !important;
     }
-
-    iframe {
-        width: 100%;
+    @media (min-width: 993px) {
+        margin-left: -4rem !important;
+        margin-top: -4.5rem !important;
     }
 }
 
 /* Correct <strong> boldness */
 
-strong {
+strong
+{
     font-weight: 900;
 }
 
 /* Mobile Sizing */
+//TODO: might be irrelevant now;
+@media (max-width: 767px)
+{
 
-@media (max-width: 767px) {
+    // .page-section__content-wrapper {
+    //     padding-left: 0;
+    //     padding-right: 0;
+    // }
 
-    .page-section__content-wrapper {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .col, .col-sm-4, .col-sm-8, .col-md-4, .col-md-8 {
-        &:not(.mobile-full-width) {
-            padding: 0px 50px;
-        }
-    }
+    // .col, .col-sm-4, .col-sm-8, .col-md-4, .col-md-8 {
+    //     &:not(.mobile-full-width) {
+    //         padding: 0px 50px;
+    //     }
+    // }
 
     #content>.row>.col-12 {
         padding: 0;
@@ -205,13 +232,16 @@ strong {
 }
 
 
-.wp-block-column {
+.wp-block-column
+{
 
-    @media (min-width: 600px){
+    @media (min-width: 600px)
+    {
         
         flex-basis: 100%;
 
-        &:nth-child(2n){
+        &:nth-child(2n)
+        {
             margin-left:inherit;
         }
 
@@ -220,73 +250,120 @@ strong {
 
 /* Mailchimp forms */
 
-.mc-page-form {
-    h2 {
+.mc-page-form
+{
+    h2
+    {
         font-size: 30pt;
+        font-weight: 900;
+        line-height: 1;
+        margin-bottom: 1.2rem;
+
+        @include media-breakpoint-down(sm)
+        {
+            font-size: 20pt;
+        }
     }
 
-    .mc4wp-form {
+    h3
+    {
+        @include media-breakpoint-down(sm)
+        {
+            font-size: 14pt;
+        }
+    }
+
+    .mc4wp-form
+    {
         width: 100%;
 
-        .form-group .row div {
+        .form-group .row div
+        {
             margin-left: 2px;
             margin-right: 2px;
         }
 
-        input {
+        input
+        {
             margin-bottom: 10px;
 
+            &.button
+            {
 
-            @media (max-width:768px){
-                &.button {
+                @extend .button--medium;
+                padding: .75rem 2rem;
+
+                @media (max-width:768px)
+                {
                     margin:auto;
                 }
             }
         }
 
-
+        .mc4wp-response, 
+        .mc4wp-alert 
+        .mc4wp-notice
+        {
+            color: $white;
+            font-size: 1.25rem;
+        }
     }
 }
 
 /* Text Feature */
 
-.text-feature {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+.text-feature
+{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    padding-top:2rem;
+    padding-bottom:2rem;
+
+    &__inner
+    {
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
+    .divider-top {
+        margin-bottom: 1.75rem;
+    }
+
+    .divider-bottom {
+        margin-top: 1.75rem;
+    }
 }
 
-/* Page Section Row */
 
-.page-section .row {
-    padding-bottom: 1rem;
-}
 
 /* Section Headers */
 
-.section-header {
-
-    //@extend .col-12;
-
+.section-header
+{
     display: table;
     text-align: center;
     height: 120px;
 
-    &__10 {
+    &__10
+    {
         @extend .col-md-10;
         @extend .offset-md-1;
     }
 
-    &__8 {
+    &__8
+    {
         @extend .col-md-8;
         @extend .offset-md-2;
     }
 
-    &__6 {
+    &__6
+    {
         @extend .col-md-6;
         @extend .offset-md-3;
     }
 
-    &__text {
+    &__text
+    {
         color: color(white);
         display: table-cell;
         font-family: font(shark);
@@ -295,16 +372,60 @@ strong {
         text-transform: uppercase;
         vertical-align: middle;
         padding: 2rem 5rem;
-        &--large {
-            font-size: 75px;
+        letter-spacing: 6px; 
+        // DON: I don't like hardcoding letter-spacing as part of the theme, 
+        // but it's pretty necessary when using that Shark font to align with the comps. 
+        // Maybe we pull into a setting?
+
+        @media (max-width: 1200px )
+        {
+            font-size:40px;
         }
 
-        &--small {
+        @media (max-width: 993px )
+        {
+            font-size:40px;
+            padding: 2rem 1rem;
+        }
+
+       @include media-breakpoint-down(sm)
+        {
+            font-size: 1.7rem;
+            letter-spacing: 3px;
+            padding: 2rem 0;
+        }
+
+        &--large
+        {
+            font-size: 75px;
+
+            @media (max-width: 1200px )
+            {
+                font-size:56px;
+            }
+
+            @media (max-width: 993px )
+            {
+                font-size:48px;
+                padding: 2rem 1rem;
+            }
+
+           @include media-breakpoint-down(sm)
+            {
+                font-size: 1.7rem;
+                letter-spacing: 3px;
+                padding: 2rem 0;
+            }
+        }
+
+        &--small
+        {
             font-size: 36px;
         }
 
         //<small> inside of section header shortcode
-        small {
+        small
+        {
             font-family: font(goudysans);
             font-size: 24px;
         }
@@ -312,40 +433,8 @@ strong {
     }
 }
 
-/* Testimonials */
 
-.testimonial_small {
-    &__attribution {
-        color: $pink;
-        font-family: "Myriad Pro";
-    }
-}
-
-/* Map Section */
-
-.map-container {
-    display: table-cell;
-    margin: auto;
-}
-
-/* Layout Helpers */
-
-.mt-n1 {
-    margin-top: -.25rem;
-}
-
-.mt-n2 {
-    margin-top: -.5rem;
-}
-
-.mt-n3 {
-    margin-top: -1rem;
-}
-
-.mt-n4 {
-    margin-top: -1.5rem;
-}
-
-.mt-n5 {
-    margin-top: -4rem;
+.mejs-audio
+{
+    width: 240px !important;
 }

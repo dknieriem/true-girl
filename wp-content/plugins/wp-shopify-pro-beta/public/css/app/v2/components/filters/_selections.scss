@@ -1,0 +1,28 @@
+.wps-filter-selection-type-heading {
+   min-width: 75px;
+   text-align: right;
+   padding-right: 10px;
+   text-transform: capitalize;
+}
+
+.wps-filter-single {
+   transition: opacity 0.2s ease;
+
+   &:hover {
+      opacity: 0.8;
+   }
+
+   &[data-wps-is-selected='true']:hover {
+      opacity: 1;
+   }
+}
+
+.wps-filter-selection-value {
+   margin-right: 8px;
+
+   .wps-icon svg {
+      width: 10px;
+      height: 10px;
+      margin-left: 10px;
+   }
+}

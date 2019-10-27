@@ -7,17 +7,20 @@
     {
         @extend .img-fluid;
         display: block;
+        width: 150px;
+
         // max-width: 96px;
         
-        margin:0px auto 25px auto;
+        margin:0px auto 15px auto;
 
 
         img {
             max-width: 150px;
-
+            max-height: 80px;
             @media (max-width: 767.98px) {
                 max-width: 250px;
-                width: 250px;
+                // width: 250px;
+                //margin-top:5rem;
             }
         }
     }
@@ -29,12 +32,20 @@
         font-size:1.5rem;
         font-weight: bold;
         text-align: center;
+
+        width: 150px;
+        max-width: 100%;
+        margin: auto;
     }
     &__content
     {
         color:$teal;
         text-align: center;
         font-size: 1.2rem;
+
+        width: 150px;
+        max-width: 100%;
+        margin: auto;
     }
 }
 
@@ -60,3 +71,9 @@
     }
 
  }
+
+
+ //group spacing hack
+.home-featured-links {
+    padding: 0 12%;
+}

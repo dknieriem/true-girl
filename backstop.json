@@ -1,0 +1,92 @@
+{
+  "id": "truegirl",
+  "viewports": [
+    {
+      "label": "phone",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "label": "tablet",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "label": "desktop",
+      "width": 1400,
+      "height": 900
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "TrueGirl Homepage",
+      "url": "http://truegirl.lndo.site"
+    },
+    {
+      "label": "TrueGirl Events",
+      "url": "http://truegirl.lndo.site/events/"
+    },
+    {
+      "label": "TrueGirl About",
+      "url": "http://truegirl.lndo.site/about/"
+    },
+    {
+      "label": "TrueGirl Blog Index",
+      "url": "http://truegirl.lndo.site/blog/"
+    },
+    {
+      "label": "TrueGirl Nation",
+      "url": "http://truegirl.lndo.site/nation"
+    },
+    {
+      "label": "TrueGirl Events",
+      "url": "http://truegirl.lndo.site/events"
+    },
+    {
+      "label": "TrueGirl 8 Great Dates",
+      "url": "http://truegirl.lndo.site/8-great-dates/"
+    },   
+    {
+      "label": "TrueGirl Promoters",
+      "url": "http://truegirl.lndo.site/promo/"
+    },   
+    {
+      "label": "TrueGirl Blog Post 1",
+      "url": "http://truegirl.lndo.site/blog/purple-flurp/"
+    },
+    {
+      "label": "TrueGirl Blog Post 2",
+      "url": "http://truegirl.lndo.site/blog/danika-sweet/"
+    },   
+    {
+      "label": "TrueGirl Blog Post 3",
+      "url": "http://truegirl.lndo.site/blog/kate-crunch/"
+    },   
+    {
+      "label": "TrueGirl Blog Post 4",
+      "url": "http://truegirl.lndo.site/blog/kate-rock/"
+    },   
+    {
+      "label": "TrueGirl Blog Post 5",
+      "url": "http://truegirl.lndo.site/blog/toni-football/"
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}

@@ -1,7 +1,11 @@
+/* All testimonial styles */
+
+/* Full-column testimonial */
 .testimonial
 {
     font-family: $header-font;
     font-size:2.5rem;
+    font-spacing: 3px;
     color:$white;
     line-height: 3rem;
     background-color: $pink;
@@ -39,6 +43,11 @@
             font-size:1rem;
         }
     }
+    &__slide--name {
+        font-size:1.5rem;
+        margin-top: 12px;
+    }
+
     &__source-img
     {
         margin: 1rem auto;
@@ -56,4 +65,26 @@
     color:white;
     background-image:url('../img/curly-brace-top-white.png'), url('../img/curly-brace-bottom-white.png');
     background-color:$teal;
+}
+
+/* Small Testimonials */
+
+.testimonial_small
+{
+    max-width: 405px;
+    margin: auto;
+ /*   @media (max-width:993px)
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }*/
+
+    &__attribution
+    {
+        color: $pink;
+        font-family: "Myriad Pro";
+        font-weight: bold;
+        font-size: 1.25rem;
+        margin-top: 10px;
+    }
 }

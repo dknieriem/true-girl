@@ -1,0 +1,15 @@
+.wps-pagination-controls {
+   text-align: center;
+   // margin: 3em 0;
+
+   @include respond-to(500, 'max') {
+      // margin: 2em 0 4em 0;
+   }
+}
+
+.wps-btn-next-page {
+   // font-size: 1.4em;
+   font-weight: normal;
+   text-transform: initial;
+   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.54), 0 15px 40px rgba(166, 173, 201, 0.2);
+}

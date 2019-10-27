@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Create tf_numbers Shortcode</title>
+		<!-- Disable browser caching of dialog window -->
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="pragma" content="no-cache" />
+
+		<style type='text/css'>
+			#TT_dialog {
+				font-family: "Open Sans", sans-serif;
+				font-size: 13px;
+			}
+			.jedini-div{margin: 20px; padding: 10px;}
+			input[type="submit"]{ position: fixed; bottom: 0; width: 100%; height: auto; padding: 10px; background: #333; color:  palegoldenrod; margin: 0; left: 0; border: transparent; box-shadow: inset 0 0 3px rgba(0,0,0,0.3); font-size: 1.2em; border-top: 1px solid #aaa;}
+			input[type="submit"]:hover{cursor: pointer; background: #aaa; color: cornflowerblue;}
+			ul{padding-left: 0;}
+			.val{font-family: "Open Sans", sans-serif; font-size: 1.1em;}
+			label{ font-size: 1.06em; margin: 10px 0;display: block;}
+			/* dropdown eddect taken from Codrops article
+			 * src = http://tympanus.net/codrops/2012/10/04/custom-drop-down-list-styling/
+			 */
+			.wrapper-dropdown {
+		    /* Size and position */
+		    position: relative;
+		    width: 200px;
+		    margin: 0 auto;
+		    padding: 10px;
+
+		    /* Styles */
+		    background: #fff;
+		    border-radius: 7px;
+		    border: 1px solid rgba(0,0,0,0.15);
+		    box-shadow: 0 1px 1px rgba(50,50,50,0.1);
+		    cursor: pointer;
+		    outline: none;
+
+		    /* Font settings */
+		    font-weight: bold;
+		    color: #8AA8BD;
+		}
+
+		.wrapper-dropdown:after {
+		    content: "";
+		    width: 0;
+		    height: 0;
+		    position: absolute;
+		    right: 15px;
+		    top: 50%;
+		    margin-top: -3px;
+		    border-width: 6px 6px 0 6px;
+		    border-style: solid;
+		    border-color: #8aa8bd transparent;
+		}
+
+		.wrapper-dropdown .dropdown {
+		  /* Size & position */
+		    position: absolute;
+		    z-index: 9999;
+		    top: 100%;
+		    left: 0;
+		    right: 0;
+
+		    /* Styles */
+		    background: white;
+		    border-radius: inherit;
+		    border: 1px solid rgba(0,0,0,0.17);
+		    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+		    font-weight: normal;
+		    -webkit-transition: all 0.5s ease-in;
+		    -moz-transition: all 0.5s ease-in;
+		    -ms-transition: all 0.5s ease-in;
+		    -o-transition: all 0.5s ease-in;
+		    transition: all 0.5s ease-in;
+		    list-style: none;
+
+		    /* Hiding */
+		    opacity: 0;
+		    pointer-events: none;
+		}
+
+		.wrapper-dropdown .dropdown:after {
+		    content: "";
+		    width: 0;
+		    height: 0;
+		    position: absolute;
+		    bottom: 100%;
+		    right: 15px;
+		    border-width: 0 6px 6px 6px;
+		    border-style: solid;
+		    border-color: #fff transparent;    
+		}
+
+		.wrapper-dropdown .dropdown:before {
+		    content: "";
+		    width: 0;
+		    height: 0;
+		    position: absolute;
+		    bottom: 100%;
+		    right: 13px;
+		    border-width: 0 8px 8px 8px;
+		    border-style: solid;
+		    border-color: rgba(0,0,0,0.1) transparent;    
+		}
+
+		.wrapper-dropdown .dropdown li .group {
+		    display: block;
+		    padding: 10px;
+		    text-decoration: none;
+		    color: #8aa8bd;
+		    border-bottom: 1px solid #e6e8ea;
+		    box-shadow: inset 0 1px 0 rgba(255,255,255,1);
+		    -webkit-transition: all 0.3s ease-out;
+		    -moz-transition: all 0.3s ease-out;
+		    -ms-transition: all 0.3s ease-out;
+		    -o-transition: all 0.3s ease-out;
+		    transition: all 0.3s ease-out;
+		}
+
+		.wrapper-dropdown .dropdown li .icon {
+			font-family: 'FontAwesome';
+		    float: right;
+		    color: inherit;
+		}
+
+		.wrapper-dropdown .dropdown li:first-of-type .group {
+		    border-radius: 7px 7px 0 0;
+		}
+
+		.wrapper-dropdown .dropdown li:last-of-type .group {
+		    border: none;
+		    border-radius: 0 0 7px 7px;
+		}
+
+		/* Hover state */
+
+		.wrapper-dropdown .dropdown li:hover .group {
+		    background: #f3f8f8;
+		}
+
+		/* Active state */
+
+		.wrapper-dropdown.active .dropdown {
+		    opacity: 1;
+		    pointer-events: auto;
+		}
+
+		/* No CSS3 support */
+
+		.no-opacity       .wrapper-dropdown .dropdown,
+		.no-pointerevents .wrapper-dropdown .dropdown {
+		    display: none;
+		    opacity: 1; /* If opacity support but no pointer-events support */
+		    pointer-events: auto; /* If pointer-events support but no pointer-events support */
+		}
+
+		.no-opacity       .wrapper-dropdown.active .dropdown,
+		.no-pointerevents .wrapper-dropdown.active .dropdown {
+		    display: block;
+		}
+		#warning{display: none; font-style: italic; font-size: 1.1em; color: indianred;}
+		</style>
+	</head>
+	<body>
+		<div id='TT_dialog'>
+			<form>
+				<div class="jedini-div">
+					<label>Select Numbers Section you want to include</label>
+					<div id="dd" class="wrapper-dropdown" tabindex="1">
+						<span>Select</span>
+						<ul class="dropdown">
+
+						</ul>
+					</div>
+					<p id="warning">You have to select something first.</p>
+				</div>
+				<input type='submit' value="Insert Shortcode" />
+			</form>
+		</div>
+
+		<script type='text/javascript'>
+			(function() {
+				//	Get the args... Most of the time, we can use TinyMCE's top
+				//	but sometimes it errors out.  When it does, try parent instead.
+				try {
+					var args = top.tinymce.activeEditor.windowManager.getParams();
+				} catch (e) {
+					console.log("tf_numbers :: Error getting parameters passed to dialog with 'var args = top.tinymce.activeEditor.windowManager.getParams();'.  Trying parent instead of top.");
+					try {
+						var args = parent.tinymce.activeEditor.windowManager.getParams();
+						console.log("tf_numbers :: Successfully obtained parameters using 'var args = parent.tinymce.activeEditor.windowManager.getParams();'.");
+					}
+					catch (e) {
+						console.log("tf_numbers :: Error getting parameters passed to dialog with 'var args = parent.tinymce.activeEditor.windowManager.getParams();'.  Dialog cannot function without this data.");
+					}
+				}
+
+				//	Get jQuery
+				//	http://jtmorris.net/?p=1109 for more info
+				var $ = args['jquery'];
+
+				//	Get the context for jQuery
+				//	http://jtmorris.net/?p=1109 for more info
+				var context = document.getElementsByTagName("body")[0];
+
+				//	Get passed arguments
+				var groups = args['groups'];
+				var editor = args['editor'];
+				var select = $('#dd',context).find('.dropdown');
+				var form = $('form', context); 
+				var sel = '';
+
+				$.each( groups, function(key, value) {
+					var option = ( '<li data-value="'+ key +'"><span class="group"><span class="val">'+ value[0] +' </span></span></li>' );
+					select.append(option);
+				});
+				$('#dd ul li',context).click(function(){ 
+		 			sel = $(this).data('value');
+		 		});
+
+				//	Insert the shortcode when submitted
+				form.submit(function(event) {
+					event.preventDefault(); 
+					if( sel ){
+						var shortcode = '[tf_numbers name="'+ sel +'"]';
+						editor.selection.setContent(shortcode);
+						editor.windowManager.close();
+					} else {
+						$('#warning',context).show();
+						$('#dd',context).css('border', '1px solid red');
+					}
+				});
+
+				// helper functions
+				function DropDown(el) {
+				this.dd = el;
+				this.placeholder = this.dd.children('span',context);
+				this.opts = this.dd.find('ul.dropdown > li',context);
+				this.val = '';
+				this.index = -1;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						return false;
+					});
+
+					obj.opts.on('click',function(){
+						var opt = $(this);
+						obj.val = opt.html();
+						obj.index = opt.index();
+						obj.placeholder.html(obj.val);
+					});
+				},
+				getValue : function() {
+					return this.val;
+				},
+				getIndex : function() {
+					return this.index;
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd',context) );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown-3',context).removeClass('active');
+				});
+
+			});
+
+			}());
+		</script>
+	</body>
+</html>

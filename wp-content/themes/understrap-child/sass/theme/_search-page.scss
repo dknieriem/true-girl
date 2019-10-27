@@ -1,0 +1,65 @@
+/* Search page styles */
+
+.search-page-form
+{
+	/* Search form */
+	.search-form
+	{
+		margin: 0 0 25px 0;
+		@extend .text-center;
+
+		&__input-wrapper
+		{
+
+		}
+
+		&__search-input
+		{
+			@extend %__search-input;
+		}
+
+		&__search-button
+		{
+			@extend .button;
+			@extend .button--small;
+			//@extend .button--yellow;
+		}
+	}
+}
+
+/* Search Results */
+
+
+section.no-results
+{
+    /* Default Styles */
+    padding-top:2rem; //was 4rem
+    padding-bottom:2rem; //was 4rem
+    padding-left: 7%;
+    padding-right: 7%;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+
+    @include media-breakpoint-down(sm)
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    form
+    {
+    	max-width: 350px;
+    	margin: auto;
+
+    	input
+    	{
+	    	@extend %__search-input;	
+    	}
+
+    	button
+    	{
+    		@extend .button;
+    	}
+    }
+}

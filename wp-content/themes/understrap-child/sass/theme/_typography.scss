@@ -5,6 +5,15 @@
     }
 }
 
+// Added this hardcoded @font-face rule because I wanted any text with the font-family "GoudySans Md BT" to use the bold font at font-weight 900, rather than needing to specify a different font-family. 
+// DON: maybe a smarter way to do this with your newly implemented settings-based font specifications?
+@font-face {
+    font-family: "GoudySans Md BT";
+    src: url('../fonts/GoudySansBoldBT.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
 @font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:900;
     src:url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.eot);
     src:url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff2) format("woff2"),url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.woff) format("woff"),url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.ttf) format("truetype"),url(https://use.fontawesome.com/releases/v5.6.3/webfonts/fa-solid-900.svg#fontawesome) format("svg");
@@ -20,6 +29,7 @@ body{
     color:$body-color;
     font-family: $body-font;
     font-weight:300;
+    line-height: 1.2;
 }
 
 a
@@ -56,7 +66,7 @@ a
 
 p
 {
-    line-height:1.7rem;
+    line-height:1.2;
     font-weight:300;
 }
 
@@ -92,40 +102,59 @@ p
     {
         color:$white;
     }
+
     &--pink
     {
         color:$pink;
     }
+
     &--yellow
     {
         color: $yellow;
     }
+
     &__on-pink
     {
         color: $white;
         background-color: $pink;
         font-size: 1.5rem;
-        line-height: 56px;
-        padding: 8px 15px;
+        line-height: 42px;
+        padding: 6px 0 3px;
+        letter-spacing: 3px;
+        box-shadow: 10px 0 0 $pink, -6px 0 0 $pink;
+    }
+
+    &__on-pink-inner {
+        // position: relative; 
+        // left: 0.5em;
     }
 
     &--white-on-pink
     {
-        color: $white;
         background-color: $pink;
+        color: $white;
+        letter-spacing: 3px;
+        padding: 8px 15px;
+    }
+
+    &--white-on-dark-pink
+    {
+        background-color: $dark-pink;
+        color: $white;
+        letter-spacing: 3px;
         padding: 8px 15px;
     }
 
     &__on-teal
     {
-        color: $white;
         background-color: $teal;
+        color: $white;
     }
 
     &__on-yellow
     {
-        color: $white;
         background-color: $yellow;
+        color: $white;
     }
 
     &__on-white
@@ -136,56 +165,73 @@ p
     &.background-circle
     {
         border-radius: 50%;
-        width: 3rem;
         margin: 1rem auto;
+        width: 3rem;
     }
 }
 
 h1
 {
-    font-family: $header-font;
     color: $white;
+    font-family: $header-font;
     font-weight: 300;
 }
 
 h2,h3,h4
 {
-    font-family: $body-font;
     color: $teal;
+    font-family: $body-font;
 }
 
 h5
 {
-    text-transform: uppercase;
-    font-weight:300;
     color: $teal;
+    font-weight:300;
+    text-transform: uppercase;
 }
 
 .entry-content ul li, .entry-content ol li
 {
-    margin-top:.5rem;
     margin-bottom:.5rem;
+    margin-top:.5rem;
 }
 
-.entry-content ol {
-    list-style: none;
-    counter-reset: list-counter;
-  }
-  ol li {
+.entry-content {
+
+    ol {
+        list-style: none;
+        counter-reset: list-counter;
+        padding-inline-start: 0;
+      }
+
+    @for $i from 1 through 10 {
+        ol[start="#{$i}"] {
+            counter-reset: lis $i ;
+        }
+    }
+}
+
+ol>li {
     counter-increment: list-counter;
     font-weight:300;
-  }
-  ol li::before {
-    content: counter(list-counter) ". ";
-    color: $pink;
-    font-weight: 600;
-    font-size:2rem;
-    font-family:$header-font;
-  }
 
-  .entry-content ul>li {
+    &::before {
+        content: counter(list-counter) ". ";
+        color: $black;
+        font-weight: 600;
+        font-size:2rem;
+        //font-family:$header-font;
+      }
+
+    &>h2:first-child, &>h3:first-child, &>h4:first-child, &>h5:first-child 
+    {
+        display: inline;
+    }
+}
+
+.entry-content ul>li {
     font-weight:600; 
-  }
+}
   
 /* Generic modifier classes */
 
@@ -208,6 +254,11 @@ h5
 .text-center
 {
     text-align: center;
+}
+
+.text-bold, .font-bold 
+{
+    font-weight: bold;
 }
 
 .all-caps

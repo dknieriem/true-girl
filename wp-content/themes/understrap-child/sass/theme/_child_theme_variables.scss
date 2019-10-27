@@ -6,16 +6,42 @@
 // Just add your color code here, compile the theme.scss file to change this color everywhere
 
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  dx: 1458px//1368px
+) !default;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  dx: 1440px//1350px
+) !default;
+
 //
 // Color system
 //
 
 $pink: #c83b94;
+$dark-pink: #B94691;
 $teal: #00bcd6;
 $yellow: #fdbD10;
-$light-teal: #00BCD6;
+$light-teal: #E5F5F8;
 $white: #ffffff;
 $light-gray: #c9c9c9;
+$form-gray: #939495;
+$author-background: #e2e2e2;
+$form-background: #EFEFF0;
+$form-button: #6F6F6F;
 $gray: #525252;
 $dark-gray: #282828;
 $black: #000000;
@@ -34,9 +60,16 @@ $footer-background-color: $white;
 
 $colors: (
 	pink: #c83b94,
+	dark-pink: #b94691,
 	teal: #00bcd6,
+	light-teal: #E5F5F8,
 	yellow: #fdbD10,
 	gray: #525252,
+	light-gray: #c9c9c9,
+	form-gray: #939495,
+	form-background: #EFEFF0,
+	form-button: #6F6F6F,
+	dark-gray: #282828,
 	white: #ffffff,
 	black: #000000
 );
@@ -57,6 +90,7 @@ $header-font:"Shark Random Funnyness";
 
 $fonts: (
 	"GoudySans Md BT": "../fonts/GoudySansMediumBT.ttf",
+	"GoudySans Bold BT": "../fonts/GoudySansBoldBT.ttf",
 	"Shark Random Funnyness": "../fonts/Shark_Random_Funnyness.ttf",
 	"Impervious": "../fonts/impervious.ttf"
 );

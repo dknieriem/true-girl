@@ -1,0 +1,49 @@
+.testimonial__slide {
+
+    &--text {
+        font-family: inherit;
+        color: white;
+        font-size: 2em;
+
+        p {
+            line-height: 1.1em;
+            margin-bottom: 5px;
+        }
+    }
+
+    &--name {
+        color: white;
+    }
+}
+
+.slick-dots {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+
+    button {
+        background: transparent;
+        overflow: hidden;
+        text-indent: -999px;
+        border-radius: 100%;
+        border-color: #fff;
+        height: 16px;
+        width: 16px;
+        line-height: 0px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    li {
+        display: inline-block;
+        padding: 0 5px;
+    }
+
+}
+
+li.slick-active button {
+    background: white;
+}

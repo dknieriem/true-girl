@@ -1,0 +1,18 @@
+/* Maps */
+
+.map-container
+{
+    display: table-cell;
+    margin: auto;
+
+    svg 
+    {
+    	overflow: visible;
+    }
+
+    .jvectormap-container
+    {
+    	overflow: visible;
+    }
+}
+
