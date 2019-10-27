@@ -1,0 +1,4 @@
+name: truegirl
+recipe: wordpress
+config:
+  webroot: .

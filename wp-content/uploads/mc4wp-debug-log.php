@@ -5890,3 +5890,599 @@ Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentatio
 [2019-05-27 15:21:31] WARNING: Form 7805 > rain******@gm***.com is already subscribed to the selected list(s)
 [2019-05-27 17:14:02] WARNING: Form 7805 > rbpe********@gm***.com is already subscribed to the selected list(s)
 [2019-07-14 20:06:29] WARNING: Form 7805 > dona***********@gm***.com is already subscribed to the selected list(s)
+[2019-07-22 22:33:46] WARNING: Form 13593 > tim.******@ya***.com is already subscribed to the selected list(s)
+[2019-07-22 22:33:58] WARNING: Form 7805 > tim.******@ya***.com is already subscribed to the selected list(s)
+[2019-07-23 00:20:24] WARNING: Form 7805 > e.ri********@gm***.com is already subscribed to the selected list(s)
+[2019-07-23 07:27:26] WARNING: Form 7805 > blue************@gm***.com is already subscribed to the selected list(s)
+[2019-07-23 07:27:53] WARNING: Form 7805 > blue************@gm***.com is already subscribed to the selected list(s)
+[2019-07-23 08:11:02] WARNING: Form 7805 > madd*******@ya***.com is already subscribed to the selected list(s)
+[2019-07-23 18:43:54] WARNING: Form 7805 > craz**********@gm***.com is already subscribed to the selected list(s)
+[2019-07-24 07:19:58] WARNING: Form 13593 > seem******@gm***.com is already subscribed to the selected list(s)
+[2019-07-24 10:30:29] WARNING: Form 7805 > redr******@ya***.com is already subscribed to the selected list(s)
+[2019-07-24 19:03:22] WARNING: Form 7805 > laco******@ho*****.com is already subscribed to the selected list(s)
+[2019-07-24 21:06:41] WARNING: Form 7805 > maal******@gm***.com is already subscribed to the selected list(s)
+[2019-07-26 20:27:02] WARNING: Form 13593 > brat**********@ya***.com is already subscribed to the selected list(s)
+[2019-07-27 03:05:47] WARNING: Form 13593 > anab*****@co*****.net is already subscribed to the selected list(s)
+[2019-07-28 17:13:50] WARNING: Form 7805 > land********@ya***.com is already subscribed to the selected list(s)
+[2019-07-29 07:01:37] WARNING: Form 7805 > ksho***@ya***.com is already subscribed to the selected list(s)
+[2019-07-29 07:01:41] WARNING: Form 7805 > ksho***@ya***.com is already subscribed to the selected list(s)
+[2019-07-29 07:02:46] WARNING: Form 13593 > ksho***@ya***.com is already subscribed to the selected list(s)
+[2019-07-29 10:12:44] WARNING: Form 7805 > jend****@ic****.com is already subscribed to the selected list(s)
+[2019-07-29 10:13:42] WARNING: Form 13593 > jend****@ic****.com is already subscribed to the selected list(s)
+[2019-07-29 13:25:03] WARNING: Form 7805 > mota********@gm***.com is already subscribed to the selected list(s)
+[2019-07-29 23:52:45] WARNING: Form 13593 > joye******@gm***.com is already subscribed to the selected list(s)
+[2019-07-30 10:34:30] WARNING: Form 7805 > zeta*************@ya***.com is already subscribed to the selected list(s)
+[2019-07-30 10:35:09] WARNING: Form 7805 > zeta*************@ya***.com is already subscribed to the selected list(s)
+[2019-07-30 22:10:00] WARNING: Form 7805 > hale********@co*.net is already subscribed to the selected list(s)
+[2019-07-30 22:11:30] WARNING: Form 7805 > hale********@co*.net is already subscribed to the selected list(s)
+[2019-07-31 00:15:51] WARNING: Form 7805 > Fait*************@gm***.com is already subscribed to the selected list(s)
+[2019-07-31 01:24:32] WARNING: Form 7805 > dany*******@ya***.com is already subscribed to the selected list(s)
+[2019-07-31 07:55:48] WARNING: Form 7805 > cmoz******@ya***.com is already subscribed to the selected list(s)
+[2019-07-31 19:46:57] WARNING: Form 7805 > sbet*****@ya***.com is already subscribed to the selected list(s)
+[2019-08-03 10:04:12] WARNING: Form 7805 > acbi****@ya***.com is already subscribed to the selected list(s)
+[2019-08-03 22:29:33] WARNING: Form 7805 > jann*****@gm***.com is already subscribed to the selected list(s)
+[2019-08-03 23:52:45] WARNING: Form 7805 > plg2****@ya***.com is already subscribed to the selected list(s)
+[2019-08-03 23:52:53] WARNING: Form 7805 > plg2****@ya***.com is already subscribed to the selected list(s)
+[2019-08-04 00:26:55] WARNING: Form 7805 > sjsu****@ho*****.com is already subscribed to the selected list(s)
+[2019-08-04 13:59:54] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Member In Compliance State. Jenn************@me.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/287af26524a0db9851952ff3512c10dd - {"email_address":"jenn************@me.com","interests":{"6a13cc6f7d":true},"merge_fields":{"FNAME":"Jennifer","LNAME":"Higgins"},"status":"subscribed","email_type":"html","ip_signup":"66.191.237.38","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Member In Compliance State","status":400,"detail":"Jenn************@me.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.","instance":"af611b31-3a4a-416c-9a68-104499faa87e"}
+[2019-08-04 14:00:02] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Member In Compliance State. Jenn************@me.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/287af26524a0db9851952ff3512c10dd - {"email_address":"jenn************@me.com","interests":{"6a13cc6f7d":true},"merge_fields":{"FNAME":"Jennifer","LNAME":"Higgins"},"status":"subscribed","email_type":"html","ip_signup":"66.191.237.38","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Member In Compliance State","status":400,"detail":"Jenn************@me.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.","instance":"a8a7ef56-dde6-4fe5-bb82-efb154abe62c"}
+[2019-08-04 14:01:02] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Member In Compliance State. Jenn************@me.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/287af26524a0db9851952ff3512c10dd - {"email_address":"jenn************@me.com","interests":{"6a13cc6f7d":true},"merge_fields":{"FNAME":"Jennifer","LNAME":"Higgins"},"status":"subscribed","email_type":"html","ip_signup":"66.191.237.38","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Member In Compliance State","status":400,"detail":"Jenn************@me.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.","instance":"8aa50894-f122-4468-889c-aca5a6655c26"}
+[2019-08-04 14:01:40] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Member In Compliance State. Jenn************@me.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/287af26524a0db9851952ff3512c10dd - {"email_address":"jenn************@me.com","interests":{"6a13cc6f7d":true},"merge_fields":{"FNAME":"Jennifer","LNAME":"Higgins"},"status":"subscribed","email_type":"html","ip_signup":"66.191.237.38","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Member In Compliance State","status":400,"detail":"Jenn************@me.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.","instance":"660283b4-0ee7-422a-873d-c389920a6ceb"}
+[2019-08-04 15:09:41] WARNING: Form 7805 > winn****@nc*.ca is already subscribed to the selected list(s)
+[2019-08-04 22:02:14] WARNING: Form 7805 > pope******@ao*.com is already subscribed to the selected list(s)
+[2019-08-05 02:58:20] WARNING: Form 7805 > shik**********@gm***.com is already subscribed to the selected list(s)
+[2019-08-05 09:19:00] WARNING: Form 7805 > solo*********@gm***.com is already subscribed to the selected list(s)
+[2019-08-05 09:19:10] WARNING: Form 7805 > solo*********@gm***.com is already subscribed to the selected list(s)
+[2019-08-06 23:50:58] WARNING: Form 13593 > marl****@ya***.com is already subscribed to the selected list(s)
+[2019-08-07 05:53:56] WARNING: Form 13593 > jill*********@ya***.com is already subscribed to the selected list(s)
+[2019-08-07 07:04:02] WARNING: Form 13593 > mari*****@ya***.com is already subscribed to the selected list(s)
+[2019-08-07 07:52:13] WARNING: Form 13593 > donn*************@gm***.com is already subscribed to the selected list(s)
+[2019-08-07 09:24:47] WARNING: Form 13593 > miss*****@gm***.com is already subscribed to the selected list(s)
+[2019-08-07 09:40:41] WARNING: Form 7805 > clin*********@gm***.com is already subscribed to the selected list(s)
+[2019-08-07 09:49:52] WARNING: Form 7805 > kcli******@gm***.com is already subscribed to the selected list(s)
+[2019-08-07 09:49:57] WARNING: Form 7805 > kcli******@gm***.com is already subscribed to the selected list(s)
+[2019-08-07 10:02:32] WARNING: Form 7805 > holl*@lc********.org is already subscribed to the selected list(s)
+[2019-08-07 10:12:26] WARNING: Form 7805 > holl*@lc********.org is already subscribed to the selected list(s)
+[2019-08-07 10:26:33] WARNING: Form 13593 > psy_***@ya***.com is already subscribed to the selected list(s)
+[2019-08-07 12:01:13] WARNING: Form 13593 > s.la***********@gm***.com is already subscribed to the selected list(s)
+[2019-08-07 13:35:47] WARNING: Form 7805 > degr***********@gm***.com is already subscribed to the selected list(s)
+[2019-08-07 17:05:37] WARNING: Form 13593 > eved***@GM***.COM is already subscribed to the selected list(s)
+[2019-08-08 05:16:55] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. secr****************@do*****.su looks fake or invalid, please enter a real email address.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/3c41dc0f894422f7b1c2f518f98792fb - {"email_address":"secr****************@do*****.su","interests":{"6a13cc6f7d":true},"merge_fields":{"FNAME":"secretkeepergirl.com","LNAME":"secretkeepergirl.com"},"status":"subscribed","email_type":"html","ip_signup":"188.92.72.129","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"secr****************@do*****.su looks fake or invalid, please enter a real email address.","instance":"41812b98-af31-42d7-aec0-eb206e14f3d3"}
+[2019-08-08 08:07:43] WARNING: Form 13593 > juli*****@gm***.com is already subscribed to the selected list(s)
+[2019-08-08 19:50:17] WARNING: Form 7805 > marn********@ya***.com is already subscribed to the selected list(s)
+[2019-08-11 10:23:54] WARNING: Form 7805 > mear**********@gm***.com is already subscribed to the selected list(s)
+[2019-08-11 13:53:10] WARNING: Form 7805 > jsch********@gm***.com is already subscribed to the selected list(s)
+[2019-08-11 14:18:51] WARNING: Form 7805 > dbf5****@gm***.com is already subscribed to the selected list(s)
+[2019-08-12 17:23:06] WARNING: Form 7805 > mamy****@gm***.com is already subscribed to the selected list(s)
+[2019-08-12 17:23:14] WARNING: Form 7805 > mamy****@gm***.com is already subscribed to the selected list(s)
+[2019-08-13 11:14:54] WARNING: Form 13593 > comm**@sa**.edu is already subscribed to the selected list(s)
+[2019-08-13 11:15:46] WARNING: Form 13593 > comm**@sa**.edu is already subscribed to the selected list(s)
+[2019-08-13 11:16:20] WARNING: Form 13593 > comm**@sa**.edu is already subscribed to the selected list(s)
+[2019-08-13 11:16:33] WARNING: Form 13593 > comm**@sa**.edu is already subscribed to the selected list(s)
+[2019-08-14 09:15:52] WARNING: Form 7805 > flow**********@ya***.ca is already subscribed to the selected list(s)
+[2019-08-14 11:28:24] WARNING: Form 7805 > bobg****@gm***.com is already subscribed to the selected list(s)
+[2019-08-14 11:40:53] WARNING: Form 7805 > nikk************@ya***.com is already subscribed to the selected list(s)
+[2019-08-14 11:52:20] WARNING: Form 7805 > cadi**********@gm***.com is already subscribed to the selected list(s)
+[2019-08-14 11:53:42] WARNING: Form 7805 > cadi**********@gm***.com is already subscribed to the selected list(s)
+[2019-08-15 06:23:15] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Member In Compliance State. quat**********@ho*****.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/94f5e7b34b92b3df37107d41c48a268e - {"email_address":"Quat**********@ho*****.com","interests":{"6a13cc6f7d":true},"merge_fields":{"FNAME":"Jamie","LNAME":"Quatman"},"status":"subscribed","email_type":"html","ip_signup":"47.198.2.171","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Member In Compliance State","status":400,"detail":"quat**********@ho*****.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.","instance":"2bda7a3f-d16d-4a2f-b93b-e6b3e9a69aae"}
+[2019-08-15 09:58:44] WARNING: Form 7805 > ljth***@ya***.com is already subscribed to the selected list(s)
+[2019-08-15 09:59:28] WARNING: Form 7805 > tama*********@ho*****.com is already subscribed to the selected list(s)
+[2019-08-15 09:59:30] WARNING: Form 7805 > tama*********@ho*****.com is already subscribed to the selected list(s)
+[2019-08-15 11:33:41] WARNING: Form 7805 > kath******@ea*******.net is already subscribed to the selected list(s)
+[2019-08-15 15:24:39] WARNING: Form 7805 > FAIT***********@HO*****.COM is already subscribed to the selected list(s)
+[2019-08-15 21:57:19] WARNING: Form 7805 > ryle******@ya***.com is already subscribed to the selected list(s)
+[2019-08-15 22:40:58] WARNING: Form 7805 > Mark*****@ho*****.com is already subscribed to the selected list(s)
+[2019-08-16 16:09:10] WARNING: Form 7805 > jgtr*****@gm***.com is already subscribed to the selected list(s)
+[2019-08-16 16:09:17] WARNING: Form 7805 > jgtr*****@gm***.com is already subscribed to the selected list(s)
+[2019-08-17 00:09:24] WARNING: Form 13593 > mich*************@ya***.com is already subscribed to the selected list(s)
+[2019-08-17 00:10:06] WARNING: Form 7805 > mich*************@ya***.com is already subscribed to the selected list(s)
+[2019-08-17 17:03:34] WARNING: Form 7805 > cami******@gm***.com is already subscribed to the selected list(s)
+[2019-08-17 17:03:50] WARNING: Form 7805 > cami******@gm***.com is already subscribed to the selected list(s)
+[2019-08-19 10:02:04] WARNING: Form 7805 > anar*****@ms*.com is already subscribed to the selected list(s)
+[2019-08-20 05:49:17] WARNING: Form 7805 > kuma**********@gm***.com is already subscribed to the selected list(s)
+[2019-08-20 10:04:05] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. Please provide a valid email address.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/8f8a7414eb59f95f89e9c632668e4e98 - {"email_address":"amay********@gm***.com","interests":{"6a13cc6f7d":true},"merge_fields":{"FNAME":"Amaya","LNAME":"Bell-Savage"},"status":"subscribed","email_type":"html","ip_signup":"174.226.128.140","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"Please provide a valid email address.","instance":"8076dcd9-b268-4256-ab41-436242c32d49"}
+[2019-08-20 10:04:33] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. Please provide a valid email address.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/8f8a7414eb59f95f89e9c632668e4e98 - {"email_address":"amay********@gm***.com","interests":{"6a13cc6f7d":true},"merge_fields":{"FNAME":"Amaya","LNAME":"Bell-Savage"},"status":"subscribed","email_type":"html","ip_signup":"174.226.128.140","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"Please provide a valid email address.","instance":"aff01e21-08f6-4fc8-a631-38d94b09d6af"}
+[2019-08-20 13:40:58] WARNING: Form 7805 > cari********@gm***.com is already subscribed to the selected list(s)
+[2019-08-20 21:37:42] WARNING: Form 7805 > deme************@ya***.com is already subscribed to the selected list(s)
+[2019-08-20 23:23:39] WARNING: Form 7805 > kris********@ho*****.com is already subscribed to the selected list(s)
+[2019-08-21 22:02:27] WARNING: Form 7805 > bbot***@sb*******.net is already subscribed to the selected list(s)
+[2019-08-22 08:47:54] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. secr************@do*****.su looks fake or invalid, please enter a real email address.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/ace97130d9725e9743ee2dc5fbbee42b - {"email_address":"secr************@do*****.su","interests":{"6a13cc6f7d":true},"merge_fields":{"FNAME":"secretkeeper.org","LNAME":"secretkeeper.org"},"status":"subscribed","email_type":"html","ip_signup":"188.92.72.129","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"secr************@do*****.su looks fake or invalid, please enter a real email address.","instance":"62f5c120-d550-4ead-bf83-cf4ef93e00a9"}
+[2019-08-22 16:10:13] WARNING: Form 7805 > happ*****@li**.ca is already subscribed to the selected list(s)
+[2019-08-22 19:40:15] WARNING: Form 7805 > bhra**@ya***.com is already subscribed to the selected list(s)
+[2019-08-22 22:15:23] WARNING: Form 7805 > llcr*******@gm***.com is already subscribed to the selected list(s)
+[2019-08-23 05:53:29] WARNING: Form 7805 > bett**********@ya***.com is already subscribed to the selected list(s)
+[2019-08-23 11:11:45] WARNING: Form 13593 > debr******@ym***.com is already subscribed to the selected list(s)
+[2019-08-23 13:11:50] WARNING: Form 13593 > donn*************@gm***.com is already subscribed to the selected list(s)
+[2019-08-24 00:49:25] WARNING: Form 7805 > jasp*********@ic****.com is already subscribed to the selected list(s)
+[2019-08-24 00:49:30] WARNING: Form 7805 > jasp*********@ic****.com is already subscribed to the selected list(s)
+[2019-08-24 13:13:11] WARNING: Form 7805 > lori*************@gm***.com is already subscribed to the selected list(s)
+[2019-08-25 03:50:02] WARNING: Form 7805 > nira**@gm***.com is already subscribed to the selected list(s)
+[2019-08-25 16:45:49] WARNING: Form 7805 > legr**@gm***.com is already subscribed to the selected list(s)
+[2019-08-25 17:26:13] WARNING: Form 7805 > amni****@gm***.com is already subscribed to the selected list(s)
+[2019-08-25 21:57:39] WARNING: Form 7805 > will********@no***********.net is already subscribed to the selected list(s)
+[2019-08-26 16:25:09] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. kaye*@fe***********.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/bdbb8bbd550e81755a8f175b6bee5d32 - {"email_address":"kaye*@fe***********.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"kaye*@fe***********.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"7ce822b5-352e-43ec-9a14-2460780bc531"}
+[2019-08-27 10:23:50] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. gatc****@zo******.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/b6627b0f51b79ae26d8dfddf75e94f74 - {"email_address":"gatc****@zo******.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"gatc****@zo******.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"47bfcd21-f8ae-481a-a84d-0eb7ac2c2277"}
+[2019-08-27 11:20:44] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. tcat***@fu*******.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/d74db2e8644ec0f44a0257fae3ec6faa - {"email_address":"tcat***@fu*******.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"tcat***@fu*******.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"d6e87d27-fd43-4970-9394-f61963fc2809"}
+[2019-08-27 12:15:51] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. brow*****@gm***.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/5582644fcd43bb7b3f02c5d485439df7 - {"email_address":"brow*****@gm***.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"brow*****@gm***.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"5338af77-b3e8-455a-bef0-9b83d41b2c23"}
+[2019-08-27 13:12:00] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. aust*******@ya***.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/ba64b749ff086123f294c8662be52de7 - {"email_address":"aust*******@ya***.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"aust*******@ya***.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"5f484c6d-5aec-44c5-8693-51938d85f315"}
+[2019-08-27 14:07:08] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. tcat***@fu*******.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/d74db2e8644ec0f44a0257fae3ec6faa - {"email_address":"tcat***@fu*******.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"tcat***@fu*******.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"ee8f548c-9ccc-4e81-a416-6524384e8d66"}
+[2019-08-27 15:01:33] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. gatc****@zo******.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/b6627b0f51b79ae26d8dfddf75e94f74 - {"email_address":"gatc****@zo******.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"gatc****@zo******.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"7ce68f57-0b6f-4339-badd-c77a410e9427"}
+[2019-08-27 15:55:28] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. aust*******@ya***.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/ba64b749ff086123f294c8662be52de7 - {"email_address":"aust*******@ya***.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"aust*******@ya***.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"1373607c-8036-4fdc-a20f-881b70de76fb"}
+[2019-08-27 16:50:12] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. aust*******@ya***.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/ba64b749ff086123f294c8662be52de7 - {"email_address":"aust*******@ya***.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"aust*******@ya***.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"64002250-7f11-4aa9-bc8d-c05ae20786bc"}
+[2019-08-27 17:45:11] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. tcat***@fu*******.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/d74db2e8644ec0f44a0257fae3ec6faa - {"email_address":"tcat***@fu*******.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"tcat***@fu*******.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"0fbf51db-5752-43df-a60f-7e6eaa243dae"}
+[2019-08-27 18:37:46] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. Pros**@ci***.rr.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/06439b32ae84f8c68925477553cf148c - {"email_address":"Pros**@ci***.rr.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"Pros**@ci***.rr.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"b85a8c54-771f-40ba-bfc4-874cbb19648e"}
+[2019-08-27 19:29:54] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. rich***@di*************.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/b5dc56a4a379cb2e62d29e7e8803a242 - {"email_address":"rich***@di*************.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"rich***@di*************.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"bbf23993-7d5e-4e04-a745-5d8555bcfc19"}
+[2019-08-27 20:19:15] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. laur**************@gm***.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/71f430f8dbe9f5111c4ba30f7807d927 - {"email_address":"laur**************@gm***.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"laur**************@gm***.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"10c0a62a-15e9-42dd-b03f-d4ef56265978"}
+[2019-08-27 21:10:22] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. brow*****@gm***.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/5582644fcd43bb7b3f02c5d485439df7 - {"email_address":"brow*****@gm***.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"brow*****@gm***.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"e278ea8d-0edf-4efa-9f93-dcd3b1ea6ecf"}
+[2019-08-27 21:55:26] WARNING: Form 7805 > scon***@rc**.us is already subscribed to the selected list(s)
+[2019-08-27 22:03:03] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. gatc****@zo******.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/b6627b0f51b79ae26d8dfddf75e94f74 - {"email_address":"gatc****@zo******.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"gatc****@zo******.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"01542c84-2564-4ec9-a98c-4ffcfb4bf73e"}
+[2019-08-27 22:54:57] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. tcat***@fu*******.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/d74db2e8644ec0f44a0257fae3ec6faa - {"email_address":"tcat***@fu*******.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"tcat***@fu*******.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"9954df5d-c7c4-48f7-8daa-1381237534ac"}
+[2019-08-27 23:47:06] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. tcat***@fu*******.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/d74db2e8644ec0f44a0257fae3ec6faa - {"email_address":"tcat***@fu*******.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"tcat***@fu*******.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"ab83115b-d529-464d-96c5-93d918532ab5"}
+[2019-08-28 00:38:22] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. brow*****@gm***.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/5582644fcd43bb7b3f02c5d485439df7 - {"email_address":"brow*****@gm***.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"brow*****@gm***.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"1f79c427-743f-4c79-9e1f-db8aa2993e2a"}
+[2019-08-28 09:18:26] WARNING: Form 13593 > aleo********@gm***.com is already subscribed to the selected list(s)
+[2019-08-28 18:47:44] WARNING: Form 7805 > kell********@gm***.com is already subscribed to the selected list(s)
+[2019-08-28 21:57:01] WARNING: Form 7805 > slee**************@co*.net is already subscribed to the selected list(s)
+[2019-08-29 08:28:09] WARNING: Form 7805 > kita******@ho*****.com is already subscribed to the selected list(s)
+[2019-08-29 09:02:15] WARNING: Form 7805 > nich***********@gm***.com is already subscribed to the selected list(s)
+[2019-08-29 13:23:53] WARNING: Form 7805 > brig*******@ya***.com is already subscribed to the selected list(s)
+[2019-08-29 16:23:34] WARNING: Form 7805 > ecb1***@gm***.com is already subscribed to the selected list(s)
+[2019-08-29 18:32:09] WARNING: Form 13593 > Lean********@gm***.com is already subscribed to the selected list(s)
+[2019-08-29 18:32:19] WARNING: Form 7805 > Lean********@gm***.com is already subscribed to the selected list(s)
+[2019-08-30 14:38:00] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. kard****@ne*.rr.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/2c084632aabdc8686b4d9ad2e5795f9a - {"email_address":"kard****@ne*.rr.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"kard****@ne*.rr.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"bf391ae9-7181-48df-9497-bee41d6cff69"}
+[2019-08-31 12:12:02] WARNING: Form 7805 > roxa*****@sa**.rr.com is already subscribed to the selected list(s)
+[2019-09-02 08:23:00] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. rich***@di*************.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/b5dc56a4a379cb2e62d29e7e8803a242 - {"email_address":"rich***@di*************.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"89.47.167.252","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"rich***@di*************.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"dd85ec25-98b6-44bb-a12a-ee93735aca87"}
+[2019-09-02 09:08:34] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. aust*******@ya***.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/ba64b749ff086123f294c8662be52de7 - {"email_address":"aust*******@ya***.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"89.47.167.252","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"aust*******@ya***.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"bd383118-710a-4ac6-807a-fa2f58771555"}
+[2019-09-02 09:31:03] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. west****@sh*******.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/e68dce1dc7003253725363a51cd67c7e - {"email_address":"west****@sh*******.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"89.47.167.252","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"west****@sh*******.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"2cd4e8e4-13c8-47f7-8719-d389a9019f5c"}
+[2019-09-02 09:53:15] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. rich***@di*************.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/b5dc56a4a379cb2e62d29e7e8803a242 - {"email_address":"rich***@di*************.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"89.47.167.252","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"rich***@di*************.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"89fb76eb-6e8f-4dcc-83be-3d4ef32a2825"}
+[2019-09-02 11:00:22] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. tcat***@fu*******.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/d74db2e8644ec0f44a0257fae3ec6faa - {"email_address":"tcat***@fu*******.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"89.47.167.252","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"tcat***@fu*******.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"dbc04eec-321a-4539-aa2b-a418719f603c"}
+[2019-09-02 11:20:51] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. tdbe*****@ho*****.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/6492f796ff99699e194ea8260d7d61be - {"email_address":"tdbe*****@ho*****.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"89.47.167.252","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"tdbe*****@ho*****.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"ac809b11-c7df-4067-86a0-454b121f80c1"}
+[2019-09-02 12:45:42] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. brow*****@gm***.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/5582644fcd43bb7b3f02c5d485439df7 - {"email_address":"brow*****@gm***.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"89.47.167.252","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"brow*****@gm***.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"34719113-6560-47ae-a61e-cdddb5c4de52"}
+[2019-09-02 13:28:06] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. bdav**@wo*****.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/e3cc26bc9b1ee3419c3bef11f00a66cc - {"email_address":"bdav**@wo*****.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"89.47.167.252","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"bdav**@wo*****.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"a9e9809e-46fa-40b5-a741-472a824cdd12"}
+[2019-09-02 13:49:26] WARNING: Form 7805 > jaml***@ju**.com is already subscribed to the selected list(s)
+[2019-09-02 14:06:53] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. urqu*********@gm***.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/c1d3126ca52313f2600c03924261d5e0 - {"email_address":"urqu*********@gm***.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"89.47.167.252","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"urqu*********@gm***.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"3548367d-9291-42e3-b097-45294f06a422"}
+[2019-09-02 14:27:42] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. trin********@ya***.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/f800585fa06df3e381c9ec0405f3846e - {"email_address":"trin********@ya***.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"89.47.167.252","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"trin********@ya***.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"64d20745-0fb9-481d-b786-8b6a185a118f"}
+[2019-09-02 14:54:23] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. kaye*@fe***********.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/bdbb8bbd550e81755a8f175b6bee5d32 - {"email_address":"kaye*@fe***********.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"89.47.167.252","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"kaye*@fe***********.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"7943efe0-6f39-4fce-8fd2-edc0872b6ac5"}
+[2019-09-03 15:37:39] WARNING: Form 13593 > h3id*******@gm***.com is already subscribed to the selected list(s)
+[2019-09-03 18:56:08] WARNING: Form 13593 > pati*******@sb*******.net is already subscribed to the selected list(s)
+[2019-09-03 20:19:34] WARNING: Form 7805 > kaj_****@ho*****.com is already subscribed to the selected list(s)
+[2019-09-03 22:45:19] WARNING: Form 7805 > ange********@ya***.com is already subscribed to the selected list(s)
+[2019-09-05 00:51:31] WARNING: Form 7805 > debb*********@at*.net is already subscribed to the selected list(s)
+[2019-09-05 19:34:05] WARNING: Form 7805 > momm***********@gm***.com is already subscribed to the selected list(s)
+[2019-09-06 02:15:36] WARNING: Form 13593 > gris*******@gm***.com is already subscribed to the selected list(s)
+[2019-09-06 02:15:40] WARNING: Form 13593 > gris*******@gm***.com is already subscribed to the selected list(s)
+[2019-09-06 05:05:46] WARNING: Form 7805 > hrsp**@gm***.com is already subscribed to the selected list(s)
+[2019-09-06 22:56:15] WARNING: Form 7805 > ywar****@gm***.com is already subscribed to the selected list(s)
+[2019-09-06 22:59:46] WARNING: Form 7805 > ywar****@gm***.com is already subscribed to the selected list(s)
+[2019-09-06 23:00:02] WARNING: Form 7805 > ywar****@gm***.com is already subscribed to the selected list(s)
+[2019-09-07 10:15:57] WARNING: Form 7805 > full**********@ya***.com is already subscribed to the selected list(s)
+[2019-09-07 12:18:10] WARNING: Form 7805 > livy*****@gm***.com is already subscribed to the selected list(s)
+[2019-09-08 10:46:17] WARNING: Form 7805 > pats********@gm***.com is already subscribed to the selected list(s)
+[2019-09-08 19:20:45] WARNING: Form 7805 > jane*****@ho*****.com is already subscribed to the selected list(s)
+[2019-09-09 12:42:26] WARNING: Form 7805 > mbak******@gm***.com is already subscribed to the selected list(s)
+[2019-09-09 14:08:13] WARNING: Form 7805 > wend*******@tt*.edu is already subscribed to the selected list(s)
+[2019-09-10 01:30:38] WARNING: Form 7805 > thag*******@ho*****.com is already subscribed to the selected list(s)
+[2019-09-10 10:53:13] WARNING: Form 7805 > good*******@at*.net is already subscribed to the selected list(s)
+[2019-09-11 21:32:58] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Member In Compliance State. ashl***************@gm***.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/bf283de0808fc859c0540a26bcd67c37 - {"email_address":"ashl***************@gm***.com","interests":{"6a13cc6f7d":true},"merge_fields":{"FNAME":"Ashley","LNAME":"Steffen"},"status":"subscribed","email_type":"html","ip_signup":"67.43.247.83","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Member In Compliance State","status":400,"detail":"ashl***************@gm***.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.","instance":"b40d5cad-1154-40eb-a2c5-1979a19dc00b"}
+[2019-09-11 21:33:01] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Member In Compliance State. ashl***************@gm***.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/bf283de0808fc859c0540a26bcd67c37 - {"email_address":"ashl***************@gm***.com","interests":{"6a13cc6f7d":true},"merge_fields":{"FNAME":"Ashley","LNAME":"Steffen"},"status":"subscribed","email_type":"html","ip_signup":"67.43.247.83","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Member In Compliance State","status":400,"detail":"ashl***************@gm***.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.","instance":"21c8ee8c-5d94-46a0-953f-629058fdcc3e"}
+[2019-09-11 21:33:07] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Member In Compliance State. ashl***************@gm***.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/bf283de0808fc859c0540a26bcd67c37 - {"email_address":"ashl***************@gm***.com","interests":{"6a13cc6f7d":true},"merge_fields":{"FNAME":"Ashley","LNAME":"Steffen"},"status":"subscribed","email_type":"html","ip_signup":"67.43.247.83","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Member In Compliance State","status":400,"detail":"ashl***************@gm***.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.","instance":"1a396b0b-f956-4be7-84ef-20632ecbb914"}
+[2019-09-12 10:50:21] WARNING: Form 13593 > kspi*****@gm***.com is already subscribed to the selected list(s)
+[2019-09-12 13:26:01] WARNING: Form 7805 > herk******@me.com is already subscribed to the selected list(s)
+[2019-09-12 23:28:09] WARNING: Form 7805 > thet********@ya***.com is already subscribed to the selected list(s)
+[2019-09-13 08:47:01] WARNING: Form 7805 > keak***@ll*****.com is already subscribed to the selected list(s)
+[2019-09-13 11:29:18] WARNING: Form 7805 > bbg.******@gm***.com is already subscribed to the selected list(s)
+[2019-09-13 14:35:00] WARNING: Form 7805 > tiow********@gm***.com is already subscribed to the selected list(s)
+[2019-09-14 06:26:12] WARNING: Form 7805 > nekl*******@gm***.com is already subscribed to the selected list(s)
+[2019-09-14 09:28:01] WARNING: Form 7805 > love**************@gm***.com is already subscribed to the selected list(s)
+[2019-09-14 09:28:09] WARNING: Form 7805 > love**************@gm***.com is already subscribed to the selected list(s)
+[2019-09-14 21:57:15] WARNING: Form 7805 > jman**********@gm***.com is already subscribed to the selected list(s)
+[2019-09-15 22:15:10] WARNING: Form 7805 > bcbl**********@ya***.com is already subscribed to the selected list(s)
+[2019-09-16 11:19:42] WARNING: Form 7805 > andr***********@gm***.com is already subscribed to the selected list(s)
+[2019-09-16 13:38:19] WARNING: Form 7805 > GAUT******@YA***.COM is already subscribed to the selected list(s)
+[2019-09-16 21:46:33] WARNING: Form 7805 > ktor****@gm***.com is already subscribed to the selected list(s)
+[2019-09-16 23:17:25] WARNING: Form 7805 > joyw*****@ho*****.com is already subscribed to the selected list(s)
+[2019-09-17 06:11:45] WARNING: Form 7805 > rebe***********@gm***.com is already subscribed to the selected list(s)
+[2019-09-17 08:32:47] WARNING: Form 7805 > hbul*****@gm***.com is already subscribed to the selected list(s)
+[2019-09-17 10:14:57] WARNING: Form 7805 > lsch*****@ho*****.com is already subscribed to the selected list(s)
+[2019-09-17 12:48:22] WARNING: Form 13593 > lara*********@gm***.com is already subscribed to the selected list(s)
+[2019-09-17 13:53:35] WARNING: Form 7805 > momm*******@gm***.com is already subscribed to the selected list(s)
+[2019-09-17 18:29:12] WARNING: Form 7805 > bell****@gm***.com is already subscribed to the selected list(s)
+[2019-09-17 22:15:36] WARNING: Form 7805 > sall********@gm***.com is already subscribed to the selected list(s)
+[2019-09-17 22:36:25] WARNING: Form 7805 > mall************@gm***.com is already subscribed to the selected list(s)
+[2019-09-18 05:16:44] WARNING: Form 13593 > pete*********@ya***.com is already subscribed to the selected list(s)
+[2019-09-18 12:37:32] WARNING: Form 7805 > brit******@ho*****.com is already subscribed to the selected list(s)
+[2019-09-18 16:20:09] WARNING: Form 7805 > mari***************@gm***.com is already subscribed to the selected list(s)
+[2019-09-18 16:28:31] WARNING: Form 7805 > mind*********@gm***.com is already subscribed to the selected list(s)
+[2019-09-18 23:20:16] WARNING: Form 7805 > kimh**********@gm***.com is already subscribed to the selected list(s)
+[2019-09-19 10:27:56] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. k.sa*****@gm***.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/5433fa82a9a79078a42b0c28c7508692 - {"email_address":"k.sa*****@gm***.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"185.69.52.237","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"k.sa*****@gm***.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"62c6e194-32ec-4edd-82e0-9955d621c1a6"}
+[2019-09-19 20:48:38] WARNING: Form 7805 > laur*******@ya***.com is already subscribed to the selected list(s)
+[2019-09-19 20:49:41] WARNING: Form 7805 > laur*******@ya***.com is already subscribed to the selected list(s)
+[2019-09-20 01:38:09] WARNING: Form 7805 > just**************@ho*****.com is already subscribed to the selected list(s)
+[2019-09-20 08:15:59] WARNING: Form 7805 > lsch****@gm***.com is already subscribed to the selected list(s)
+[2019-09-20 09:16:48] WARNING: Form 7805 > smaa***@ya***.com is already subscribed to the selected list(s)
+[2019-09-20 17:23:07] WARNING: Form 7805 > oils********@ou*****.com is already subscribed to the selected list(s)
+[2019-09-20 23:53:45] WARNING: Form 7805 > obti*****@ma**.com is already subscribed to the selected list(s)
+[2019-09-21 06:19:57] WARNING: Form 7805 > Meli*************@gm***.com is already subscribed to the selected list(s)
+[2019-09-21 06:20:22] WARNING: Form 7805 > mary********@co*****.net is already subscribed to the selected list(s)
+[2019-09-21 11:41:42] WARNING: Form 7805 > jenn*******@gm***.com is already subscribed to the selected list(s)
+[2019-09-21 12:32:24] WARNING: Form 7805 > gree***********@gm***.com is already subscribed to the selected list(s)
+[2019-09-21 17:31:17] WARNING: Form 7805 > erik**************@ya***.com is already subscribed to the selected list(s)
+[2019-09-21 20:17:43] WARNING: Form 7805 > lind*********@gm***.com is already subscribed to the selected list(s)
+[2019-09-21 22:50:36] WARNING: Form 7805 > laot****@ya***.com is already subscribed to the selected list(s)
+[2019-09-21 22:50:37] WARNING: Form 7805 > laot****@ya***.com is already subscribed to the selected list(s)
+[2019-09-22 00:20:36] WARNING: Form 7805 > lljr*******@ao*.com is already subscribed to the selected list(s)
+[2019-09-22 09:36:11] WARNING: Form 7805 > dizz****@ao*.com is already subscribed to the selected list(s)
+[2019-09-22 10:56:02] WARNING: Form 7805 > mlhe****@co*****.net is already subscribed to the selected list(s)
+[2019-09-22 13:13:34] WARNING: Form 7805 > lisa*******@gm***.com is already subscribed to the selected list(s)
+[2019-09-22 21:14:09] WARNING: Form 7805 > jane**********@gm***.com is already subscribed to the selected list(s)
+[2019-09-22 23:07:09] WARNING: Form 13593 > tano***@ho*****.com is already subscribed to the selected list(s)
+[2019-09-23 12:45:12] WARNING: Form 7805 > janc*********@gm***.com is already subscribed to the selected list(s)
+[2019-09-23 14:52:08] WARNING: Form 7805 > a3ro*********@gm***.com is already subscribed to the selected list(s)
+[2019-09-23 19:11:23] WARNING: Form 7805 > bran*******@au****.rr.com is already subscribed to the selected list(s)
+[2019-09-24 12:02:14] WARNING: Form 7805 > kimb*****@ya***.com is already subscribed to the selected list(s)
+[2019-09-24 15:20:22] WARNING: Form 7805 > nico**********@gm***.com is already subscribed to the selected list(s)
+[2019-09-24 16:50:43] WARNING: Form 7805 > sass*****@gm***.com is already subscribed to the selected list(s)
+[2019-09-24 21:35:24] WARNING: Form 7805 > moni***********@gm***.com is already subscribed to the selected list(s)
+[2019-09-25 10:32:18] ERROR: Form 13593 > Mailchimp API error: 400 Bad Request. Invalid Resource. wend*********@ya***.con looks fake or invalid, please enter a real email address.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/9cb8c7167f065907bd8ddd17a1b6e8be - {"email_address":"wend*********@ya***.con","interests":{"377b0712c7":true},"merge_fields":{"FNAME":"Wendy","LNAME":"McBride"},"status":"subscribed","email_type":"html","ip_signup":"107.77.195.184","tags":["my-true-girl-lead","blog-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"wend*********@ya***.con looks fake or invalid, please enter a real email address.","instance":"5a6aab31-bcfa-4b95-929a-733a560b5c61"}
+[2019-09-25 10:32:22] ERROR: Form 13593 > Mailchimp API error: 400 Bad Request. Invalid Resource. wend*********@ya***.con looks fake or invalid, please enter a real email address.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/9cb8c7167f065907bd8ddd17a1b6e8be - {"email_address":"wend*********@ya***.con","interests":{"377b0712c7":true},"merge_fields":{"FNAME":"Wendy","LNAME":"McBride"},"status":"subscribed","email_type":"html","ip_signup":"107.77.195.184","tags":["my-true-girl-lead","blog-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"wend*********@ya***.con looks fake or invalid, please enter a real email address.","instance":"bdfa0705-514d-4356-9b92-59b373a0350e"}
+[2019-09-25 10:32:44] ERROR: Form 13593 > Mailchimp API error: 400 Bad Request. Invalid Resource. Wend*********@ya***.con looks fake or invalid, please enter a real email address.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/9cb8c7167f065907bd8ddd17a1b6e8be - {"email_address":"Wend*********@ya***.con","interests":{"377b0712c7":true},"merge_fields":{"FNAME":"Wendy","LNAME":"McBride"},"status":"subscribed","email_type":"html","ip_signup":"107.77.195.184","tags":["my-true-girl-lead","blog-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"Wend*********@ya***.con looks fake or invalid, please enter a real email address.","instance":"d9786b70-8694-4a7d-8fc2-62276ac7d4dc"}
+[2019-09-25 10:33:48] WARNING: Form 13593 > wcmj**@ao*.com is already subscribed to the selected list(s)
+[2019-09-25 10:34:43] WARNING: Form 13593 > cydc*****@ya***.com is already subscribed to the selected list(s)
+[2019-09-25 10:34:50] WARNING: Form 13593 > jesu*************@ho*****.com is already subscribed to the selected list(s)
+[2019-09-25 10:42:26] WARNING: Form 7805 > tncf***@gm***.com is already subscribed to the selected list(s)
+[2019-09-25 11:43:14] WARNING: Form 13593 > lore*********@gm***.com is already subscribed to the selected list(s)
+[2019-09-25 13:19:41] WARNING: Form 13593 > sara*@th******.net is already subscribed to the selected list(s)
+[2019-09-25 14:30:47] WARNING: Form 7805 > kish***********@gm***.com is already subscribed to the selected list(s)
+[2019-09-25 14:30:52] WARNING: Form 7805 > kish***********@gm***.com is already subscribed to the selected list(s)
+[2019-09-25 14:59:29] WARNING: Form 13593 > ryan********@ho*****.com is already subscribed to the selected list(s)
+[2019-09-25 16:33:06] WARNING: Form 13593 > Sthr*******@gm***.com is already subscribed to the selected list(s)
+[2019-09-25 18:48:46] WARNING: Form 7805 > kima******@gm***.com is already subscribed to the selected list(s)
+[2019-09-26 04:50:05] WARNING: Form 7805 > amwe*******@gm***.com is already subscribed to the selected list(s)
+[2019-09-26 18:06:30] WARNING: Form 7805 > cvar*******@gm***.com is already subscribed to the selected list(s)
+[2019-09-26 18:06:38] WARNING: Form 7805 > cvar*******@gm***.com is already subscribed to the selected list(s)
+[2019-09-26 18:15:03] WARNING: Form 7805 > butt***********@ho*****.com is already subscribed to the selected list(s)
+[2019-09-26 21:27:40] WARNING: Form 7805 > tiff***********@gm***.com is already subscribed to the selected list(s)
+[2019-09-27 02:35:30] WARNING: Form 7805 > yoli**@ic****.com is already subscribed to the selected list(s)
+[2019-09-27 03:00:16] WARNING: Form 7805 > mgjm***@ho*****.com is already subscribed to the selected list(s)
+[2019-09-27 07:35:12] WARNING: Form 7805 > daiz*******@gm***.com is already subscribed to the selected list(s)
+[2019-09-27 09:24:12] WARNING: Form 7805 > rach****@ya***.com is already subscribed to the selected list(s)
+[2019-09-27 10:18:53] WARNING: Form 13593 > tash*******@ao*.com is already subscribed to the selected list(s)
+[2019-09-27 12:13:46] WARNING: Form 7805 > hill********@gm***.com is already subscribed to the selected list(s)
+[2019-09-27 16:28:10] WARNING: Form 7805 > clai**************@gm***.com is already subscribed to the selected list(s)
+[2019-09-27 16:28:22] WARNING: Form 7805 > clai**************@gm***.com is already subscribed to the selected list(s)
+[2019-09-27 18:05:34] WARNING: Form 7805 > jmmi*********@ya***.com is already subscribed to the selected list(s)
+[2019-09-27 21:55:10] WARNING: Form 7805 > heat**********@gm***.com is already subscribed to the selected list(s)
+[2019-09-28 09:53:31] WARNING: Form 7805 > k_ti**********@ya***.com is already subscribed to the selected list(s)
+[2019-09-28 10:47:07] WARNING: Form 7805 > kath*@ab****************.com is already subscribed to the selected list(s)
+[2019-09-28 11:03:03] WARNING: Form 7805 > lsod*****@gm***.com is already subscribed to the selected list(s)
+[2019-09-28 11:08:20] WARNING: Form 7805 > ther*******@ne*.rr.com is already subscribed to the selected list(s)
+[2019-09-28 11:08:23] WARNING: Form 7805 > ther*******@ne*.rr.com is already subscribed to the selected list(s)
+[2019-09-28 14:06:16] WARNING: Form 7805 > rran***@ms*.com is already subscribed to the selected list(s)
+[2019-09-28 20:22:46] WARNING: Form 7805 > meli**************@gm***.com is already subscribed to the selected list(s)
+[2019-09-28 22:04:15] WARNING: Form 7805 > LIUR****@GM***.COM is already subscribed to the selected list(s)
+[2019-09-28 23:03:32] WARNING: Form 7805 > joll*********@gm***.com is already subscribed to the selected list(s)
+[2019-09-29 08:13:48] WARNING: Form 7805 > mkat*******@ic****.com is already subscribed to the selected list(s)
+[2019-09-29 09:58:40] WARNING: Form 7805 > adri*****@ya***.com is already subscribed to the selected list(s)
+[2019-09-29 19:04:40] WARNING: Form 7805 > Josh*****************@ho*****.com is already subscribed to the selected list(s)
+[2019-09-29 19:23:56] WARNING: Form 7805 > remk**@gm***.com is already subscribed to the selected list(s)
+[2019-09-29 19:25:45] WARNING: Form 7805 > sara*********@gm***.com is already subscribed to the selected list(s)
+[2019-09-30 00:29:47] WARNING: Form 7805 > aliy***@ya***.com is already subscribed to the selected list(s)
+[2019-09-30 08:43:20] WARNING: Form 7805 > meeg****@gm***.com is already subscribed to the selected list(s)
+[2019-09-30 11:32:30] WARNING: Form 7805 > bonn***********@gm***.com is already subscribed to the selected list(s)
+[2019-09-30 18:45:08] WARNING: Form 7805 > amy@ch***********.com is already subscribed to the selected list(s)
+[2019-09-30 18:49:59] WARNING: Form 7805 > sa1o*****@gm***.com is already subscribed to the selected list(s)
+[2019-09-30 19:20:05] WARNING: Form 7805 > holl*@lc********.org is already subscribed to the selected list(s)
+[2019-09-30 21:13:20] WARNING: Form 7805 > rodr*********@gm***.com is already subscribed to the selected list(s)
+[2019-09-30 21:24:57] WARNING: Form 7805 > laur**@li*****.net is already subscribed to the selected list(s)
+[2019-10-01 02:56:43] WARNING: Form 7805 > bpet***@ao*.com is already subscribed to the selected list(s)
+[2019-10-01 16:29:18] WARNING: Form 13593 > pick*****@co*****.net is already subscribed to the selected list(s)
+[2019-10-01 21:32:53] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. bernie-k@ms*.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/481334cbc398d4750a88369e3958314e - {"email_address":"bernie-k@ms*.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"89.47.167.252","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"bernie-k@ms*.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"b32ac33c-7f1d-4dc2-8c8e-c791be691b79"}
+[2019-10-02 16:56:41] WARNING: Form 7805 > asar****@gm***.com is already subscribed to the selected list(s)
+[2019-10-02 17:10:00] WARNING: Form 7805 > dlfm*******@ya***.com is already subscribed to the selected list(s)
+[2019-10-02 22:02:09] WARNING: Form 7805 > amyw********@gm***.com is already subscribed to the selected list(s)
+[2019-10-02 22:45:27] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. a1ai*****@gm***.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/98635a69f147d362ffc197d92cbf4941 - {"email_address":"a1ai*****@gm***.com","interests":{"6a13cc6f7d":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"89.47.167.252","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"a1ai*****@gm***.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"13b3e959-6b03-43eb-8ba8-e44efd70e06c"}
+[2019-10-03 02:31:10] WARNING: Form 7805 > mayn********@gm***.com is already subscribed to the selected list(s)
+[2019-10-03 10:37:04] WARNING: Form 7805 > cove*****@ho*****.com is already subscribed to the selected list(s)
+[2019-10-03 21:33:59] WARNING: Form 7805 > moni***********@gm***.com is already subscribed to the selected list(s)
+[2019-10-04 08:12:28] WARNING: Form 7805 > clj5**@gm***.com is already subscribed to the selected list(s)
+[2019-10-04 11:22:50] WARNING: Form 7805 > beri*********@gm***.com is already subscribed to the selected list(s)
+[2019-10-04 15:27:28] WARNING: Form 7805 > Step*************@at*.net is already subscribed to the selected list(s)
+[2019-10-04 16:15:00] WARNING: Form 7805 > bran********@gm***.com is already subscribed to the selected list(s)
+[2019-10-04 16:25:48] WARNING: Form 7805 > rice*******@li**.com is already subscribed to the selected list(s)
+[2019-10-05 00:13:29] WARNING: Form 7805 > cahu****@sb*******.net is already subscribed to the selected list(s)
+[2019-10-05 08:38:21] WARNING: Form 7805 > mjma******@gm***.com is already subscribed to the selected list(s)
+[2019-10-05 09:28:10] WARNING: Form 7805 > jenb**********@gm***.com is already subscribed to the selected list(s)
+[2019-10-05 10:29:20] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Member In Compliance State. jean**************@ic****.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/dbd541998ff540bcb0a60a4a645ddcf8 - {"email_address":"jean**************@ic****.com","interests":{"6a13cc6f7d":true},"merge_fields":{"FNAME":"Jeanine","LNAME":"Montgomery"},"status":"subscribed","email_type":"html","ip_signup":"174.193.5.113","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Member In Compliance State","status":400,"detail":"jean**************@ic****.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.","instance":"465e41f5-0618-4f9a-8bf8-f2ce9aa0bf5a"}
+[2019-10-05 10:30:05] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Member In Compliance State. jean**************@ic****.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/dbd541998ff540bcb0a60a4a645ddcf8 - {"email_address":"jean**************@ic****.com","interests":{"6a13cc6f7d":true},"merge_fields":{"FNAME":"Jeanine","LNAME":"Montgomery"},"status":"subscribed","email_type":"html","ip_signup":"174.193.5.113","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Member In Compliance State","status":400,"detail":"jean**************@ic****.com is in a compliance state due to unsubscribe, bounce, or compliance review and cannot be subscribed.","instance":"b2a1b8a3-e5ac-489b-b9ed-396c4717539e"}
+[2019-10-05 12:31:20] WARNING: Form 7805 > mimi******@gm***.com is already subscribed to the selected list(s)
+[2019-10-06 03:43:39] WARNING: Form 7805 > busb***@gm***.com is already subscribed to the selected list(s)
+[2019-10-06 16:40:28] WARNING: Form 7805 > moms*******@ic****.com is already subscribed to the selected list(s)
+[2019-10-06 19:38:24] WARNING: Form 7805 > kott*******@ho*****.com is already subscribed to the selected list(s)
+[2019-10-06 19:38:30] WARNING: Form 7805 > kott*******@ho*****.com is already subscribed to the selected list(s)
+[2019-10-06 23:23:44] WARNING: Form 7805 > dkee***@ya***.com is already subscribed to the selected list(s)
+[2019-10-06 23:35:11] WARNING: Form 7805 > Leah*****@gm***.com is already subscribed to the selected list(s)
+[2019-10-07 07:19:00] WARNING: Form 7805 > larocco-lscc@ho*****.com is already subscribed to the selected list(s)
+[2019-10-07 18:15:04] WARNING: Form 7805 > estr***************@gm***.com is already subscribed to the selected list(s)
+[2019-10-07 22:04:22] WARNING: Form 7805 > mulh**********@ya***.com is already subscribed to the selected list(s)
+[2019-10-07 22:24:00] WARNING: Form 7805 > lucy*********@ao*.com is already subscribed to the selected list(s)
+[2019-10-08 08:15:31] WARNING: Form 14491 > tim.******@ya***.com is already subscribed to the selected list(s)
+[2019-10-08 10:47:44] WARNING: Form 7805 > jjel**@ms*.com is already subscribed to the selected list(s)
+[2019-10-08 11:03:28] WARNING: Form 7805 > sury***************@gm***.com is already subscribed to the selected list(s)
+[2019-10-08 11:03:38] WARNING: Form 7805 > sury***************@gm***.com is already subscribed to the selected list(s)
+[2019-10-08 12:18:40] WARNING: Form 14491 > juli********@gm***.com is already subscribed to the selected list(s)
+[2019-10-08 19:35:21] WARNING: Form 13593 > jdus****@ro********.com is already subscribed to the selected list(s)
+[2019-10-08 19:35:33] WARNING: Form 13593 > jdus****@ro********.com is already subscribed to the selected list(s)
+[2019-10-08 21:11:46] WARNING: Form 14491 > mark*****@gm***.com is already subscribed to the selected list(s)
+[2019-10-08 21:26:58] WARNING: Form 14491 > zumm****@ic****.com is already subscribed to the selected list(s)
+[2019-10-08 21:34:06] WARNING: Form 14491 > mlar*****@gm***.com is already subscribed to the selected list(s)
+[2019-10-08 22:20:45] WARNING: Form 14491 > deeh***********@gm***.com is already subscribed to the selected list(s)
+[2019-10-09 00:03:19] WARNING: Form 7805 > kimm********@ho*****.com is already subscribed to the selected list(s)
+[2019-10-09 00:05:35] WARNING: Form 14491 > ginr***@ho*****.com is already subscribed to the selected list(s)
+[2019-10-09 00:05:43] WARNING: Form 14491 > ginr***@ho*****.com is already subscribed to the selected list(s)
+[2019-10-09 06:35:39] WARNING: Form 14491 > shar*********@gm***.com is already subscribed to the selected list(s)
+[2019-10-09 06:44:48] WARNING: Form 14491 > eryk*****@ho*****.com is already subscribed to the selected list(s)
+[2019-10-09 09:40:15] WARNING: Form 14491 > cgri*****@gm***.com is already subscribed to the selected list(s)
+[2019-10-09 11:24:01] WARNING: Form 14491 > aria**@te***.net is already subscribed to the selected list(s)
+[2019-10-09 12:31:31] WARNING: Form 14491 > mely**@ho*****.com is already subscribed to the selected list(s)
+[2019-10-09 13:36:33] WARNING: Form 7805 > agip***@gm***.com is already subscribed to the selected list(s)
+[2019-10-09 18:33:15] WARNING: Form 13593 > shee****@ou*****.com is already subscribed to the selected list(s)
+[2019-10-09 19:04:46] WARNING: Form 14491 > mcli****@gm***.com is already subscribed to the selected list(s)
+[2019-10-09 19:13:01] WARNING: Form 7805 > tkos****@gm***.com is already subscribed to the selected list(s)
+[2019-10-09 22:19:09] WARNING: Form 14491 > mjkd**@gm***.com is already subscribed to the selected list(s)
+[2019-10-10 03:40:40] WARNING: Form 7805 > jann********@ya***.com is already subscribed to the selected list(s)
+[2019-10-10 06:52:00] WARNING: Form 14491 > ssaa*@fr******.com is already subscribed to the selected list(s)
+[2019-10-10 13:13:02] WARNING: Form 7805 > carl*******@gm***.com is already subscribed to the selected list(s)
+[2019-10-10 15:00:24] WARNING: Form 7805 > jhat*******@gm***.com is already subscribed to the selected list(s)
+[2019-10-10 18:57:09] WARNING: Form 13593 > asar****@gm***.com is already subscribed to the selected list(s)
+[2019-10-10 22:25:27] WARNING: Form 14491 > lisa***********@gm***.com is already subscribed to the selected list(s)
+[2019-10-11 06:21:09] WARNING: Form 7805 > erik****@gm***.com is already subscribed to the selected list(s)
+[2019-10-11 09:24:59] WARNING: Form 7805 > bobg****@gm***.com is already subscribed to the selected list(s)
+[2019-10-11 10:15:32] WARNING: Form 7805 > mbkr***@co*.net is already subscribed to the selected list(s)
+[2019-10-11 11:38:42] WARNING: Form 7805 > rebe***********@ya***.ca is already subscribed to the selected list(s)
+[2019-10-11 11:42:45] WARNING: Form 7805 > Ange************@gm***.com is already subscribed to the selected list(s)
+[2019-10-11 15:26:52] WARNING: Form 7805 > lara*******@gm***.com is already subscribed to the selected list(s)
+[2019-10-11 19:27:32] WARNING: Form 7805 > mell********@gm***.com is already subscribed to the selected list(s)
+[2019-10-11 20:33:05] WARNING: Form 14491 > mblu*******@gm***.com is already subscribed to the selected list(s)
+[2019-10-11 22:20:46] WARNING: Form 7805 > hall*******@ya***.com is already subscribed to the selected list(s)
+[2019-10-11 23:00:21] WARNING: Form 14491 > jenn***********@gm***.com is already subscribed to the selected list(s)
+[2019-10-12 00:18:45] WARNING: Form 14491 > rm_r*****@sh**.ca is already subscribed to the selected list(s)
+[2019-10-12 00:19:02] WARNING: Form 14491 > rm_r*****@sh**.ca is already subscribed to the selected list(s)
+[2019-10-12 00:44:50] WARNING: Form 14491 > cmmo********@gm***.com is already subscribed to the selected list(s)
+[2019-10-12 02:45:09] WARNING: Form 7805 > dimp*****@gm***.com is already subscribed to the selected list(s)
+[2019-10-12 12:15:21] WARNING: Form 7805 > luvp*********@ya***.com is already subscribed to the selected list(s)
+[2019-10-12 22:58:56] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. secr************@do*****.su looks fake or invalid, please enter a real email address.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/ace97130d9725e9743ee2dc5fbbee42b - {"email_address":"secr************@do*****.su","interests":{"6a13cc6f7d":true},"merge_fields":{"FNAME":"secretkeeper.org","LNAME":"secretkeeper.org"},"status":"subscribed","email_type":"html","ip_signup":"188.92.72.129","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"secr************@do*****.su looks fake or invalid, please enter a real email address.","instance":"83ff7f4d-5687-4527-9fa2-4a0f2523e333"}
+[2019-10-13 00:16:39] WARNING: Form 7805 > bkan***@ho*****.com is already subscribed to the selected list(s)
+[2019-10-13 00:41:44] WARNING: Form 7805 > step*************@gm***.com is already subscribed to the selected list(s)
+[2019-10-13 03:21:36] WARNING: Form 7805 > cand*******@ho*****.com is already subscribed to the selected list(s)
+[2019-10-13 13:51:00] WARNING: Form 14491 > andr********@gm***.com is already subscribed to the selected list(s)
+[2019-10-13 15:52:16] WARNING: Form 7805 > gilb****@ya***.com is already subscribed to the selected list(s)
+[2019-10-13 21:19:06] WARNING: Form 14491 > step*************@at*.net is already subscribed to the selected list(s)
+[2019-10-14 08:26:29] WARNING: Form 14491 > sdon*****@at*.net is already subscribed to the selected list(s)
+[2019-10-14 08:40:19] WARNING: Form 13593 > dede******@ho*****.com is already subscribed to the selected list(s)
+[2019-10-14 08:59:12] WARNING: Form 7805 > lros***@rp***.k12.ar.us is already subscribed to the selected list(s)
+[2019-10-14 08:59:36] WARNING: Form 7805 > lros***@rp***.k12.ar.us is already subscribed to the selected list(s)
+[2019-10-14 09:00:47] WARNING: Form 7805 > lros***@rp***.k12.ar.us is already subscribed to the selected list(s)
+[2019-10-14 09:00:50] WARNING: Form 7805 > lros***@rp***.k12.ar.us is already subscribed to the selected list(s)
+[2019-10-14 09:00:51] WARNING: Form 7805 > lros***@rp***.k12.ar.us is already subscribed to the selected list(s)
+[2019-10-14 09:10:09] WARNING: Form 7805 > lros***@rp***.k12.ar.us is already subscribed to the selected list(s)
+[2019-10-14 11:00:24] WARNING: Form 7805 > sjay************@gm***.com is already subscribed to the selected list(s)
+[2019-10-14 12:00:48] WARNING: Form 7805 > inde***************@gm***.com is already subscribed to the selected list(s)
+[2019-10-14 12:00:51] WARNING: Form 7805 > inde***************@gm***.com is already subscribed to the selected list(s)
+[2019-10-14 15:40:51] WARNING: Form 7805 > rohi************@gm***.com is already subscribed to the selected list(s)
+[2019-10-14 15:40:56] WARNING: Form 7805 > rohi************@gm***.com is already subscribed to the selected list(s)
+[2019-10-14 19:39:25] WARNING: Form 7805 > mist**********@gm***.com is already subscribed to the selected list(s)
+[2019-10-15 01:50:02] WARNING: Form 7805 > raam*********@gm***.com is already subscribed to the selected list(s)
+[2019-10-15 10:36:19] WARNING: Form 7805 > daly********@gm***.com is already subscribed to the selected list(s)
+[2019-10-15 10:36:24] WARNING: Form 7805 > daly********@gm***.com is already subscribed to the selected list(s)
+[2019-10-15 14:52:26] WARNING: Form 7805 > rach**************@gm***.com is already subscribed to the selected list(s)
+[2019-10-15 16:21:05] WARNING: Form 7805 > becb*****@gm***.com is already subscribed to the selected list(s)
+[2019-10-15 17:07:16] WARNING: Form 7805 > bran*******@gm***.com is already subscribed to the selected list(s)
+[2019-10-15 18:55:44] WARNING: Form 7805 > mvin*********@gm***.com is already subscribed to the selected list(s)
+[2019-10-15 20:22:36] WARNING: Form 7805 > ivy.*******@gm***.com is already subscribed to the selected list(s)
+[2019-10-15 20:22:53] WARNING: Form 7805 > ivy.*******@gm***.com is already subscribed to the selected list(s)
+[2019-10-15 20:41:21] WARNING: Form 7805 > jbwe******@gm***.com is already subscribed to the selected list(s)
+[2019-10-16 10:09:29] WARNING: Form 13593 > lucy*********@ao*.com is already subscribed to the selected list(s)
+[2019-10-16 10:09:46] WARNING: Form 7805 > lucy*********@ao*.com is already subscribed to the selected list(s)
+[2019-10-16 12:33:16] WARNING: Form 7805 > hkor****@gm***.com is already subscribed to the selected list(s)
+[2019-10-16 15:52:32] WARNING: Form 13593 > mari**********@ya***.com is already subscribed to the selected list(s)
+[2019-10-16 15:53:01] WARNING: Form 7805 > mari**********@ya***.com is already subscribed to the selected list(s)
+[2019-10-16 20:47:10] WARNING: Form 7805 > jjn0*****@gm***.com is already subscribed to the selected list(s)
+[2019-10-17 21:19:58] WARNING: Form 14491 > shar*********@ma*.com is already subscribed to the selected list(s)
+[2019-10-17 21:20:49] ERROR: Form 14491 > Mailchimp API error: 400 Bad Request. Invalid Resource. shar*********@ya***.con looks fake or invalid, please enter a real email address.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/1004ab1a8c42b33d36d774e706bbdbd3 - {"email_address":"shar*********@ya***.con","interests":{"062b16ca5f":true},"merge_fields":{"FNAME":"Sharon","LNAME":"Schoppe"},"status":"pending","email_type":"html","ip_signup":"66.170.198.122","tags":[]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"shar*********@ya***.con looks fake or invalid, please enter a real email address.","instance":"de9682ba-998c-41b1-a699-ddeea2d9a186"}
+[2019-10-18 03:16:45] WARNING: Form 13593 > doll****************@ya***.com is already subscribed to the selected list(s)
+[2019-10-18 04:38:09] WARNING: Form 7805 > nani*******@gm***.com is already subscribed to the selected list(s)
+[2019-10-18 09:00:00] WARNING: Form 7805 > amyn**********@gm***.com is already subscribed to the selected list(s)
+[2019-10-18 16:23:43] WARNING: Form 7805 > nata*********@gm***.com is already subscribed to the selected list(s)
+[2019-10-18 16:28:18] WARNING: Form 7805 > nata*********@gm***.com is already subscribed to the selected list(s)
+[2019-10-18 16:29:42] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Forgotten Email Not Subscribed. NATA*********@GM***.COM was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/042e75d71a7036f374fc7e9a81529220 - {"email_address":"NATA*********@GM***.COM","interests":{"0bbfc760bc":true},"merge_fields":{"FNAME":"NATALIE","LNAME":"NANCE"},"status":"subscribed","email_type":"html","ip_signup":"108.4.208.204","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Forgotten Email Not Subscribed","status":400,"detail":"NATA*********@GM***.COM was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.","instance":"09ffcb1e-858e-4df5-a253-b59817a23472"}
+[2019-10-18 16:30:17] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Forgotten Email Not Subscribed. NNNA***@GM***.COM was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/0436a48bca778ed1daf311205e435bd9 - {"email_address":"NNNA***@GM***.COM","interests":{"0bbfc760bc":true},"merge_fields":{"FNAME":"NATALIE","LNAME":"NANCE"},"status":"subscribed","email_type":"html","ip_signup":"108.4.208.204","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Forgotten Email Not Subscribed","status":400,"detail":"NNNA***@GM***.COM was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.","instance":"75ce4aaa-a570-4e80-836f-1f286f6b9c15"}
+[2019-10-18 16:32:14] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Forgotten Email Not Subscribed. nata*********@gm***.com was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/042e75d71a7036f374fc7e9a81529220 - {"email_address":"nata*********@gm***.com","interests":{"0bbfc760bc":true},"merge_fields":{"FNAME":"natalie","LNAME":"nance"},"status":"subscribed","email_type":"html","ip_signup":"108.4.208.204","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Forgotten Email Not Subscribed","status":400,"detail":"nata*********@gm***.com was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.","instance":"f1c73fbb-f778-4ccf-b933-3fc170270e8b"}
+[2019-10-18 16:32:50] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Forgotten Email Not Subscribed. nata*********@gm***.com was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/042e75d71a7036f374fc7e9a81529220 - {"email_address":"nata*********@gm***.com","interests":{"0bbfc760bc":true},"merge_fields":{"FNAME":"natalie","LNAME":"nance"},"status":"subscribed","email_type":"html","ip_signup":"108.4.208.204","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Forgotten Email Not Subscribed","status":400,"detail":"nata*********@gm***.com was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.","instance":"554ebc61-d7cd-4ab0-8f72-d3bcf823fc81"}
+[2019-10-18 16:36:41] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Forgotten Email Not Subscribed. nata*********@gm***.com was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/042e75d71a7036f374fc7e9a81529220 - {"email_address":"nata*********@gm***.com","interests":{"0bbfc760bc":true},"merge_fields":{"FNAME":"natalie","LNAME":"nance"},"status":"subscribed","email_type":"html","ip_signup":"108.4.208.204","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Forgotten Email Not Subscribed","status":400,"detail":"nata*********@gm***.com was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.","instance":"4df23def-b491-4560-9fe3-f095c1de5757"}
+[2019-10-18 16:37:25] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Forgotten Email Not Subscribed. nnna***@gm***.com was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/0436a48bca778ed1daf311205e435bd9 - {"email_address":"nnna***@gm***.com","interests":{"0bbfc760bc":true},"merge_fields":{"FNAME":"Natalie","LNAME":"Nance"},"status":"subscribed","email_type":"html","ip_signup":"108.4.208.204","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Forgotten Email Not Subscribed","status":400,"detail":"nnna***@gm***.com was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.","instance":"7dadcf28-5e73-4fd4-88de-ea75ceb17882"}
+[2019-10-18 16:37:56] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Forgotten Email Not Subscribed. nnna***@gm***.com was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/0436a48bca778ed1daf311205e435bd9 - {"email_address":"nnna***@gm***.com","interests":{"0bbfc760bc":true},"merge_fields":{"FNAME":"Natalie","LNAME":"Nance"},"status":"subscribed","email_type":"html","ip_signup":"108.4.208.204","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Forgotten Email Not Subscribed","status":400,"detail":"nnna***@gm***.com was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.","instance":"8c72b5a5-162c-41e2-b5ee-cad8e29d574e"}
+[2019-10-18 16:39:45] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Forgotten Email Not Subscribed. nata*********@gm***.com was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/042e75d71a7036f374fc7e9a81529220 - {"email_address":"nata*********@gm***.com","interests":{"0bbfc760bc":true},"merge_fields":{"FNAME":"natalie","LNAME":"nance"},"status":"subscribed","email_type":"html","ip_signup":"108.4.208.204","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Forgotten Email Not Subscribed","status":400,"detail":"nata*********@gm***.com was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.","instance":"207a1f58-81e0-4fb2-a3d5-a3d0a8e905e5"}
+[2019-10-18 16:41:30] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Forgotten Email Not Subscribed. nata*********@gm***.com was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/042e75d71a7036f374fc7e9a81529220 - {"email_address":"nata*********@gm***.com","interests":{"0bbfc760bc":true},"merge_fields":{"FNAME":"Natalie","LNAME":"Nance"},"status":"subscribed","email_type":"html","ip_signup":"108.4.208.204","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Forgotten Email Not Subscribed","status":400,"detail":"nata*********@gm***.com was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.","instance":"556f2917-6053-4b4f-aed8-94f97361826c"}
+[2019-10-18 16:42:01] ERROR: Form 13593 > Mailchimp API error: 400 Bad Request. Forgotten Email Not Subscribed. nata*********@gm***.com was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/042e75d71a7036f374fc7e9a81529220 - {"email_address":"nata*********@gm***.com","interests":{"377b0712c7":true},"merge_fields":{"FNAME":"Natalie","LNAME":"Nance"},"status":"subscribed","email_type":"html","ip_signup":"108.4.208.204","tags":["my-true-girl-lead","blog-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Forgotten Email Not Subscribed","status":400,"detail":"nata*********@gm***.com was permanently deleted and cannot be re-imported. The contact must re-subscribe to get back on the list.","instance":"ad21d61f-671d-40a8-b563-304c8019cc1b"}
+[2019-10-18 20:57:44] WARNING: Form 13593 > thec****@gm***.com is already subscribed to the selected list(s)
+[2019-10-18 22:36:53] WARNING: Form 7805 > Butt************@gm***.com is already subscribed to the selected list(s)
+[2019-10-18 23:14:16] WARNING: Form 7805 > ndek*****@gm***.com is already subscribed to the selected list(s)
+[2019-10-19 11:27:08] WARNING: Form 14491 > Anne***@so**********.com is already subscribed to the selected list(s)
+[2019-10-20 14:15:50] WARNING: Form 7805 > nrei******@gm***.com is already subscribed to the selected list(s)
+[2019-10-20 19:06:53] ERROR: Form 14491 > Mailchimp API error: 405 Method Not Allowed. This list member cannot be removed.  Please contact support.
+Request: DELETE https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/cc07918a0e8e255ed1aa0b89d7bea82d
+Response: 405 Method Not Allowed - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Method Not Allowed","status":405,"detail":"This list member cannot be removed.  Please contact support.","instance":"5bdd4904-54af-475b-b796-193a45590699"}
+[2019-10-20 23:38:05] WARNING: Form 14491 > prea***********@gm***.com is already subscribed to the selected list(s)
+[2019-10-21 02:38:15] WARNING: Form 13593 > nsha****@gm***.com is already subscribed to the selected list(s)
+[2019-10-21 08:35:28] WARNING: Form 14491 > lori*************@gm***.com is already subscribed to the selected list(s)
+[2019-10-21 08:38:15] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. byje********@gm***.con looks fake or invalid, please enter a real email address.
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/1981a45afb3be573fb42d7665c081d6f - {"email_address":"byje********@gm***.con","interests":{"0bbfc760bc":true},"merge_fields":{"FNAME":"Jenni","LNAME":"Waldron"},"status":"subscribed","email_type":"html","ip_signup":"24.113.50.172","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"byje********@gm***.con looks fake or invalid, please enter a real email address.","instance":"992dc1ee-b902-41d1-aad4-da0624dd8cfa"}
+[2019-10-21 09:35:10] ERROR: Form 13593 > Mailchimp API error: 0 cURL error 28: Operation timed out after 10003 milliseconds with 0 bytes received.
+Request: GET https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/3083c4f5dc32d566572738160fbb33be
+[2019-10-21 15:46:07] WARNING: Form 7805 > gove******@gm***.com is already subscribed to the selected list(s)
+[2019-10-21 15:46:20] WARNING: Form 7805 > gove******@gm***.com is already subscribed to the selected list(s)
+[2019-10-21 15:46:28] WARNING: Form 7805 > gove******@gm***.com is already subscribed to the selected list(s)
+[2019-10-22 07:32:06] WARNING: Form 13593 > donn*************@gm***.com is already subscribed to the selected list(s)
+[2019-10-22 11:21:35] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. legi*********@in******.net has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/18b0c4e8685ec3fcd2c315255ecd1442 - {"email_address":"legi*********@in******.net","interests":{"0bbfc760bc":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"89.47.167.252","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"legi*********@in******.net has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"be7cc2fb-c885-4691-9ce6-93c8f93d4927"}
+[2019-10-22 16:18:40] WARNING: Form 13593 > kuin*******@gm***.com is already subscribed to the selected list(s)
+[2019-10-22 16:18:50] WARNING: Form 13593 > kuin*******@gm***.com is already subscribed to the selected list(s)
+[2019-10-22 16:29:59] WARNING: Form 7805 > wall******@co*****.net is already subscribed to the selected list(s)
+[2019-10-22 18:13:26] WARNING: Form 13593 > Thet****************@ya***.com is already subscribed to the selected list(s)
+[2019-10-22 18:28:37] WARNING: Form 13593 > love****@li**.com is already subscribed to the selected list(s)
+[2019-10-22 20:06:54] WARNING: Form 7805 > usth***********@gm***.com is already subscribed to the selected list(s)
+[2019-10-22 20:07:38] WARNING: Form 7805 > usth***********@gm***.com is already subscribed to the selected list(s)
+[2019-10-22 21:34:09] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. kelg*****@gm***.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/01f6e4883066d58c0f9540c67a22d5e2 - {"email_address":"kelg*****@gm***.com","interests":{"0bbfc760bc":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"89.47.167.252","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"kelg*****@gm***.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"02593c79-d80f-4663-8926-2a519f789f47"}
+[2019-10-23 01:06:20] WARNING: Form 13593 > 4who*****@co*****.net is already subscribed to the selected list(s)
+[2019-10-23 06:15:25] WARNING: Form 7805 > mazr************@gm***.com is already subscribed to the selected list(s)
+[2019-10-23 22:57:37] WARNING: Form 14491 > ebfa***@ms*.com is already subscribed to the selected list(s)
+[2019-10-23 22:58:03] WARNING: Form 14491 > ebfa***@ms*.com is already subscribed to the selected list(s)
+[2019-10-24 11:45:23] WARNING: Form 13593 > jenr********@ya***.com is already subscribed to the selected list(s)
+[2019-10-25 09:13:37] WARNING: Form 13593 > mont*******@gm***.com is already subscribed to the selected list(s)
+[2019-10-25 16:32:56] ERROR: Form 7805 > Mailchimp API error: 400 Bad Request. Invalid Resource. john****@ma**.com has signed up to a lot of lists very recently; we're not allowing more signups for now
+Request: PUT https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/fe1dad0128df2f64a8e50ba221fff1d1 - {"email_address":"john****@ma**.com","interests":{"0bbfc760bc":true},"merge_fields":{},"status":"subscribed","email_type":"html","ip_signup":"195.181.242.138","tags":["my-true-girl-lead","homepage","footer-signup"]}
+Response: 400 Bad Request - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Invalid Resource","status":400,"detail":"john****@ma**.com has signed up to a lot of lists very recently; we're not allowing more signups for now","instance":"264fd5f9-f83e-4b67-9aa3-9d5fcdf56821"}
+[2019-10-25 16:41:32] WARNING: Form 7805 > tim.******@ya***.com is already subscribed to the selected list(s)
+[2019-10-25 19:22:31] WARNING: Form 14491 > carr******@co*****.net is already subscribed to the selected list(s)
+[2019-10-25 23:28:28] WARNING: Form 7805 > audi*****@ya***.com is already subscribed to the selected list(s)
+[2019-10-25 23:58:37] WARNING: Form 7805 > cnco**@ou*****.com is already subscribed to the selected list(s)
+[2019-10-26 00:27:34] WARNING: Form 14491 > rhi.******@gm***.com is already subscribed to the selected list(s)
+[2019-10-26 01:19:19] WARNING: Form 14491 > rees*******@co*.net is already subscribed to the selected list(s)
+[2019-10-26 08:34:15] WARNING: Form 7805 > donn*************@gm***.com is already subscribed to the selected list(s)
+[2019-10-26 08:34:43] WARNING: Form 7805 > donn*************@gm***.com is already subscribed to the selected list(s)
+[2019-10-26 08:35:07] WARNING: Form 13593 > donn*************@gm***.com is already subscribed to the selected list(s)
+[2019-10-26 10:32:21] WARNING: Form 7805 > Lars***********@gm***.com is already subscribed to the selected list(s)
+[2019-10-26 11:44:32] WARNING: Form 14491 > beat**********@ho*****.com is already subscribed to the selected list(s)
+[2019-10-26 11:57:10] ERROR: Form 14491 > Mailchimp API error: 405 Method Not Allowed. This list member cannot be removed.  Please contact support.
+Request: DELETE https://us13.api.mailchimp.com/3.0/lists/d8d382e8e0/members/9eef05fb6b23e48b12891a7cf87ec480
+Response: 405 Method Not Allowed - {"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Method Not Allowed","status":405,"detail":"This list member cannot be removed.  Please contact support.","instance":"a24333af-39be-4b90-91b0-48d8567c3209"}
+[2019-10-26 17:24:14] WARNING: Form 14491 > juli********@gm***.com is already subscribed to the selected list(s)
+[2019-10-26 23:06:44] WARNING: Form 7805 > ccks***@ao*.com is already subscribed to the selected list(s)
+[2019-10-27 04:27:11] WARNING: Form 7805 > goan******@ho*****.com is already subscribed to the selected list(s)
