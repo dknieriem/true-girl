@@ -238,6 +238,10 @@ class OMAPI_Output {
 		add_action( 'pre_get_posts', array( $this, 'load_optinmonster_inline' ), 9999 );
 		add_action( 'wp_footer', array( $this, 'load_optinmonster' ) );
 
+		if ( ! empty( $_GET['om-live-preview'] ) || ! empty( $_GET['om-verify-site'] ) ) {
+			add_action( 'wp_footer', array( $this, 'load_global_optinmonster') );
+		}
+
 	}
 
 	/**
@@ -370,6 +374,28 @@ class OMAPI_Output {
 	}
 
 	/**
+	 * Loads the global OM code on this page.
+	 *
+	 * @since 1.8.0
+	 */
+	public function load_global_optinmonster() {
+		$option = $this->base->get_option();
+
+		// If we don't have the data we need, return early.
+		if ( empty( $option['userId'] ) || empty( $option['accountId'] ) ) {
+			return;
+		}
+
+		printf(
+			'<script type="text/javascript" src="%s" data-account="%s" data-user="%s" %s async></script>',
+			esc_url_raw( OPTINMONSTER_APIJS_URL ),
+			esc_attr( $option['accountId'] ),
+			esc_attr( $option['userId'] ),
+			defined( 'OPTINMONSTER_ENV' ) ? 'data-env="' . OPTINMONSTER_ENV . '"' : ''
+		);
+	}
+
+	/**
 	 * Sets the slug for possibly parsing shortcodes.
 	 *
 	 * @since 1.0.0
@@ -391,7 +417,7 @@ class OMAPI_Output {
 		}
 
 		if ( get_post_meta( $optin->ID, '_omapi_mailpoet', true ) ) {
-			$this->wp_helper();
+			$this->wp_mailpoet();
 		}
 
 		return $this;
@@ -467,21 +493,36 @@ class OMAPI_Output {
 	}
 
 	/**
-	 * Enqueues the WP helper script for storing local optins.
+	 * Enqueues the WP mailpoet script for storing local optins.
 	 *
-	 * @since 1.0.0
+	 * @since 1.8.2
 	 */
-	public function wp_helper() {
+	public function wp_mailpoet() {
 		// Only try to use the MailPoet integration if it is active.
 		if ( $this->base->is_mailpoet_active() ) {
 			wp_enqueue_script(
-				$this->base->plugin_slug . '-wp-helper',
-				plugins_url( 'assets/js/helper.js', OMAPI_FILE ),
+				$this->base->plugin_slug . '-wp-mailpoet',
+				plugins_url( 'assets/js/mailpoet.js', OMAPI_FILE ),
 				array( 'jquery'),
 				$this->base->version . ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? time() : '' ),
 				true
 			);
 		}
+	}
+
+	/**
+	 * Enqueues the WP helper script for the API.
+	 *
+	 * @since 1.0.0
+	 */
+	public function wp_helper() {
+		wp_enqueue_script(
+			$this->base->plugin_slug . '-wp-helper',
+			plugins_url( 'assets/js/helper.js', OMAPI_FILE ),
+			array(),
+			$this->base->version . ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? time() : '' ),
+			true
+		);
 	}
 
 	/**
@@ -589,7 +630,11 @@ class OMAPI_Output {
 	public function enqueue_helper_js_if_applicable( $should_output, $rules ) {
 
 		// Check to see if we need to load the WP API helper script.
-		if ( $should_output && ! $rules->field_empty( 'mailpoet' ) ) {
+		if ( $should_output ) {
+			if ( ! $rules->field_empty( 'mailpoet' ) ) {
+				$this->wp_mailpoet();
+			}
+
 			$this->wp_helper();
 		}
 
@@ -629,6 +674,11 @@ class OMAPI_Output {
 
 		// Check WooCommerce is version 3.0.0 or greater.
 		if ( ! OMAPI::woocommerce_version_compare( '3.0.0' ) ) {
+			return array();
+		}
+
+		// Bail if we don't have a cart object.
+		if ( ! isset( WC()->cart ) || '' === WC()->cart ) {
 			return array();
 		}
 

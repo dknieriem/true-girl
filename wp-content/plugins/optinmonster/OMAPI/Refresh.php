@@ -65,9 +65,6 @@ class OMAPI_Refresh {
 
 		// Set our object.
 		$this->set();
-
-		// Possibly refresh optins.
-		$this->maybe_refresh();
 	}
 
 	/**
@@ -110,23 +107,17 @@ class OMAPI_Refresh {
 	 * @since 1.0.0
 	 */
 	public function refresh() {
-
-		$creds = $this->base->get_api_credentials();
-
-		// Check if we have the new API and if so only use it
-		if ( $creds['apikey'] ) {
-			$api = new OMAPI_Api( 'optins', array( 'apikey' => $creds['apikey']), 'GET' );
-		} else {
-			$api = new OMAPI_Api( 'optins', array( 'user' => $creds['user'], 'key' => $creds['key'] ), 'GET' );
-		}
+		$api = OMAPI_Api::build( 'v1', 'optins', 'GET' );
 
 		// Set additional flags.
 		$additional_data = array(
 			'wp' => $GLOBALS['wp_version'],
 		);
+
 		if ( OMAPI::is_woocommerce_active() && version_compare( OMAPI::woocommerce_version(), '3.0.0', '>=' ) ) {
 			$additional_data['woocommerce'] = OMAPI::woocommerce_version();
 		}
+
 		$api->set_additional_data( $additional_data );
 
 		$results = array();
@@ -134,7 +125,6 @@ class OMAPI_Refresh {
 
 		// Loop through paginated requests until we have fetched all the campaigns.
 		while ( ! is_wp_error( $body ) || empty( $body ) ) {
-
 			$limit       = absint( wp_remote_retrieve_header( $api->response, 'limit' ) );
 			$page        = absint( wp_remote_retrieve_header( $api->response, 'page' ) );
 			$total       = absint( wp_remote_retrieve_header( $api->response, 'total' ) );
@@ -142,7 +132,7 @@ class OMAPI_Refresh {
 			$results     = array_merge( $results, (array) $body );
 
 			// If we've reached the end, prevent any further requests.
-			if ( $page >= $total_pages ) {
+			if ( $page >= $total_pages || $limit === 0 ) {
 				break;
 			}
 
@@ -168,11 +158,16 @@ class OMAPI_Refresh {
 		// Store the optin data.
 		$this->base->save->store_optins( $results );
 
+		// Update our sites as well
+		$sites = $this->base->sites->fetch();
+
 		// Update the option to remove stale error messages.
 		$option = $this->base->get_option();
 		$option['is_invalid']  = false;
 		$option['is_expired']  = false;
 		$option['is_disabled'] = false;
+		$option['siteIds']     = $sites;
+
 		update_option( 'optin_monster_api', $option );
 
 		// Set a message.

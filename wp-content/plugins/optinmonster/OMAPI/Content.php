@@ -137,11 +137,11 @@ class OMAPI_Content {
 	 * @since 1.0.0
 	 */
 	public function form_end() {
-
+		$hide_submit_button_class = apply_filters( 'omapi_hide_submit_buttom', false ) ? 'omapi-hidden' : '';
 		// Load different form buttons based on if credentials have been supplied or not.
 		if ( ! $this->base->get_api_credentials() && 'support' !== $this->view ) :
 		?>
-			<p class="submit">
+			<p class="submit <?php echo $hide_submit_button_class; ?>">
 				<input class="button button-primary" type="submit" name="omapi_submit" value="<?php esc_attr_e( 'Connect to OptinMonster', 'optin-monster-api' ); ?>" tabindex="749" />
 			</p>
 		</form>
@@ -185,7 +185,7 @@ class OMAPI_Content {
 		<?php
 		else :
 		?>
-			<p class="submit">
+			<p class="submit <?php echo $hide_submit_button_class; ?>">
 				<input class="button button-primary" type="submit" name="submit" value="<?php esc_attr_e( 'Save Settings', 'optin-monster-api' ); ?>" tabindex="749" />
 			</p>
 		</form>
@@ -381,7 +381,6 @@ class OMAPI_Content {
 					echo $object->get_setting_ui( 'optins', 'is_wc_product_tag' );
 					echo $object->get_setting_ui( 'toggle', 'woocommerce-end');
 				}
-
 
 				// Advanced Settings
 				echo $object->get_setting_ui( 'toggle', 'advanced-start' );

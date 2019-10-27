@@ -217,7 +217,6 @@ class OMAPI_ConstantContact {
 		<?php
 	}
 
-
 	/**
 	 * Dismiss the Constant Contact admin notice.
 	 *
@@ -248,7 +247,6 @@ class OMAPI_ConstantContact {
 	public function styles() {
 		wp_enqueue_style( $this->base->plugin_slug . '-settings', plugins_url( '/assets/css/settings.css', OMAPI_FILE ), array(), $this->base->version );
 	}
-
 
 	/**
 	 * Customizes the footer text on the OptinMonster settings page.

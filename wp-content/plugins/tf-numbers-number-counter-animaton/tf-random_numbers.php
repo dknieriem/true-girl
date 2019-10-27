@@ -2,7 +2,7 @@
 /**
   * Plugin Name: TF Random Numbers
   * Plugin URI: http://themeflection.com/plug/number-counter-animation-wordpress-plugin/
-  * Version: 1.7.2
+  * Version: 1.7.3
   * Author: Themeflection
   * Author URI: http://themeflection.com
   * Description: Random numbers plugin for WordPress

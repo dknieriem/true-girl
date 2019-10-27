@@ -90,6 +90,9 @@ TF-Numbers can be installed in two different ways:
 
 == Changelog ==
 
+= 1.7.3 =
+* fixed the way custom icons are rendered
+
 = 1.7.2 =
 * Removed the immediate count from options and moved to the js
 * Minor admin UI re-styling

@@ -51,7 +51,7 @@ abstract class MC4WP_Integration
         $this->options = $this->parse_options($options);
 
         // if checkbox name is not set, set a good custom value
-        if (empty($this->checkbox_name)) {
+        if ($this->checkbox_name === '') {
             $this->checkbox_name = '_mc4wp_subscribe_' . $this->slug;
         }
     }
@@ -323,10 +323,8 @@ abstract class MC4WP_Integration
             }
         }
 
-        // allow plugins to filter final lists value
-
         /**
-         * This filter is documented elsewhere.
+         * Allow plugins to filter final lists value. This filter is documented elsewhere.
          *
          * @since 2.0
          * @see MC4WP_Form::get_lists
@@ -510,7 +508,7 @@ abstract class MC4WP_Integration
     /**
      * Does integration have the given UI element?
      *
-     * @param $element
+     * @param string $element
      * @return bool
      */
     public function has_ui_element($element)

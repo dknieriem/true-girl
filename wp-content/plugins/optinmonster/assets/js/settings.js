@@ -30,6 +30,57 @@ jQuery(document).ready(function ($) {
 	// Run Tooltip lib on any tooltips
 	omapiFindTooltips();
 
+	// Add "Connect to OptinMonster" functionality
+	omapiHandleApiKeyConnect();
+
+	/**
+	 * Add the listeners necessary for the connect to OptinMonster button
+	 */
+	function omapiHandleApiKeyConnect() {
+		function updateForm(val, $btn) {
+			var field = document.getElementById('omapi-field-apikey');
+			field.value = val;
+
+			// Start spinner.
+			$('.om-api-key-spinner').remove();
+			$btn.after('<div class="om-api-key-spinner spinner is-active" style="float: none;margin-top: 13px;"></div>');
+
+			HTMLFormElement.prototype.submit.call(field.form)
+		}
+
+		$('#omapiAuthorizeButton').click(function (e) {
+			e.preventDefault();
+			var w = window.open(OMAPI.app_url + 'wordpress/connect/', '_blank', 'location=no,width=500,height=730,scrollbars=0');
+			w.focus();
+		});
+
+		window.addEventListener('message', function(msg) {
+			if (msg.origin.replace(/\/$/, '') !== OMAPI.app_url.replace(/\/$/, '')) {
+				return;
+			}
+
+			if ( ! msg.data || 'string' !== typeof msg.data ) {
+				console.error('Messages from "' + OMAPI.app_url + '" must contain an api key string.');
+				return;
+			}
+
+			updateForm(msg.data, $('#omapiAuthorizeButton'));
+		});
+
+		// Also initialize the "Click Here to enter an API Key" link
+		$('#omapiShowApiKey').click(function (e) {
+			e.preventDefault();
+			$('#omapi-form-api .omapi-hidden').removeClass('omapi-hidden');
+			$('#omapi-field-apikey').focus().select();
+
+		});
+
+		// Add the listener for disconnecting the API Key.
+		$('#omapiDisconnectButton').click(function (e) {
+			e.preventDefault();
+			updateForm('', $(this));
+		});
+	}
 
 	/**
 	 * Dynamic Toggle functionality
@@ -97,7 +148,6 @@ jQuery(document).ready(function ($) {
 			}
 		});
 	}
-
 
 	/**
 	 * Initializes the Select2 replacement for select fields.
@@ -251,7 +301,5 @@ jQuery(document).ready(function ($) {
 	function omapiFindTooltips() {
 		$('[data-toggle="tooltip"]').tooltip()
 	}
-
-
 
 });

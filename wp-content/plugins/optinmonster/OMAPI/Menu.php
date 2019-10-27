@@ -203,8 +203,9 @@ class OMAPI_Menu {
 		wp_enqueue_script( $this->base->plugin_slug . '-select2' );
 		wp_register_script( $this->base->plugin_slug . '-settings', plugins_url( '/assets/js/settings.js', OMAPI_FILE ), array( 'jquery', 'jquery-ui-core', 'jquery-ui-datepicker', $this->base->plugin_slug . '-select2' ), $this->base->version, true );
 		wp_localize_script( $this->base->plugin_slug . '-settings', 'OMAPI', array(
-			'posts' => $posts,
-			'tags'  => $tags
+			'posts'   => $posts,
+			'tags'    => $tags,
+			'app_url' => trailingslashit( OPTINMONSTER_APP_URL ),
 		) );
 		wp_enqueue_script( $this->base->plugin_slug . '-settings' );
 		wp_register_script( $this->base->plugin_slug . '-clipboard', plugins_url( '/assets/js/clipboard.min.js', OMAPI_FILE ), array( $this->base->plugin_slug . '-settings' ), $this->base->version, true );
@@ -334,7 +335,6 @@ class OMAPI_Menu {
 			$used_plugins .= $plugin['Name'] . ': ' . $plugin['Version'] . "\n";
 		}
 
-
 		$array = array(
 			'Server Info'        => esc_html( $_SERVER['SERVER_SOFTWARE'] ),
 			'PHP Version'        => function_exists( 'phpversion' ) ? esc_html( phpversion() ) : 'Unable to check.',
@@ -435,7 +435,7 @@ class OMAPI_Menu {
 		}
 
 		// Set default panels.
-		$panels['api']  = __( 'API Credentials', 'optin-monster-api' );
+		$panels['api']  = __( 'Authorization', 'optin-monster-api' );
 
 		// Set the WooCommerce panel.
 		if ( $creds && $woo_version_compare && $can_manage_woo ) {
@@ -484,7 +484,9 @@ class OMAPI_Menu {
 					break 2;
 
 					case 'apikey' :
-						$ret = $this->get_password_field( $setting, $value, $id, __( 'API Key', 'optin-monster-api'), __( 'A single API Key found in your OptinMonster Account API area.', 'optin-monster-api'), __( 'Enter your API Key here...', 'optin-monster-api') );
+						$ret = $this->get_api_field( $setting, $value, 'omapiAuthorizeButton', __( 'Authorize OptinMonster', 'optin-monster-api'), sprintf( __( 'Click to connect your OptinMonster Account, or %s click here to enter an API Key Manually.%s', 'optin-monster-api'), '<a href="#" id="omapiShowApiKey">', '</a>' ) );
+						$ret .= $this->get_password_field( $setting, $value, $id, __( 'API Key', 'optin-monster-api'), __( 'A single API Key found in your OptinMonster Account API area.', 'optin-monster-api'), __( 'Enter your API Key here...', 'optin-monster-api'), array(), true );
+						add_filter( 'omapi_hide_submit_buttom', '__return_true' );
 					break 2;
 
 					case 'omwpdebug' :
@@ -927,7 +929,6 @@ class OMAPI_Menu {
 
 	}
 
-
 	/**
 	 * Retrieves the UI output for a password input field setting.
 	 *
@@ -940,15 +941,19 @@ class OMAPI_Menu {
 	 * @param string $desc    The description for the input field.
 	 * @param string $place   Placeholder text for the field.
 	 * @param array $classes  Array of classes to add to the field.
+	 * @param bool $hidden    If the field should be hidden by default.
 	 * @return string $html   HTML representation of the data.
 	 */
-	public function get_password_field( $setting, $value, $id, $label, $desc = false, $place = false, $classes = array() ) {
+	public function get_password_field( $setting, $value, $id, $label, $desc = false, $place = false, $classes = array(), $hidden = false ) {
 
 		// Increment the global tabindex counter.
 		$this->tabindex++;
 
+		// if the field should be hidden, add the omapi-hidden class
+		$hidden_class = $hidden ? 'omapi-hidden' : '';
+
 		// Build the HTML.
-		$field  = '<div class="omapi-field-box omapi-password-field omapi-field-box-' . $setting . ' omapi-clear">';
+		$field  = '<div class="omapi-field-box omapi-password-field omapi-field-box-' . $setting . ' omapi-clear '. $hidden_class . '">';
 			$field .= '<p class="omapi-field-wrap"><label for="omapi-field-' . $setting . '">' . $label . '</label><br />';
 				$field .= '<input type="password" id="omapi-field-' . $setting . '" class="' . implode( ' ', (array) $classes ) . '" name="omapi[' . $id . '][' . $setting . ']" tabindex="' . $this->tabindex . '" value="' . $value . '"' . ( $place ? ' placeholder="' . $place . '"' : '' ) . ' />';
 				if ( $desc ) {
@@ -959,6 +964,43 @@ class OMAPI_Menu {
 
 		// Return the HTML.
 		return apply_filters( 'optin_monster_api_password_field', $field, $setting, $value, $id, $label );
+
+	}
+
+	/**
+	 * Retrieves the UI output for a password input field setting.
+	 *
+	 * @since 1.8.0
+	 *
+	 * @param string $setting The name of the setting to be saved to the DB.
+	 * @param mixed $value    The value of the setting.
+	 * @param string $id      The setting ID to target for name field.
+	 * @param string $label   The label of the input field.
+	 * @param string $desc    The description for the input field.
+	 * @return string $html   HTML representation of the data.
+	 */
+	public function get_api_field( $setting, $value, $id, $label, $desc = false ) {
+
+		// Increment the global tabindex counter.
+		$this->tabindex++;
+		$value = trim( $value );
+
+		// Build the HTML.
+		$field  = '<div class="omapi-field-box omapi-field-wrap omapi-api-field omapi-field-box-' . $setting . ' omapi-clear"><br/>';
+				if ( empty( $value ) ) {
+					$field .= "<input type='submit' id='{$id}' class='button button-omapi-gray button-hero' value='{$label}'>";
+					if ( $desc ) {
+						$field .= '<br /><label for="omapi-field-' . $setting . '"><span class="omapi-field-desc">' . $desc . '</span></label>';
+					}
+				} else {
+					$field .= '<p>Your account is <strong>connected.</strong></p><button id="omapiDisconnectButton" class="button button-omapi-gray button-hero">Disconnect</button>';
+				}
+
+			$field .= '</p>';
+		$field .= '</div>';
+
+		// Return the HTML.
+		return apply_filters( 'optin_monster_api_field', $field, $setting, $value, $id, $label );
 
 	}
 

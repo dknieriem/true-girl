@@ -68,6 +68,7 @@ class OMAPI_Actions {
 
 		// Add validation messages.
 		add_action( 'admin_init', array( $this, 'actions' ) );
+		add_action( 'admin_init', array( $this, 'fetch_missing_data' ) );
 		add_action( 'admin_notices', array( $this, 'notices' ) );
 
 	}
@@ -261,5 +262,50 @@ class OMAPI_Actions {
 
 	}
 
+	/**
+	 * When the plugin is first installed
+	 * Or Migrated from a pre-1.8.0 version
+	 * We need to fetch some additional data
+	 *
+	 * @since 1.8.0
+	 *
+	 * @return void
+	 */
+	public function fetch_missing_data() {
+		$creds   = $this->base->get_api_credentials();
+		$option  = $this->base->get_option();
+		$changed = false;
+
+		// If we don't have an API Key yet, we can't fetch anything else.
+		if ( ! $creds['apikey'] && ! $creds['user'] && ! $creds['key'] ) {
+			return;
+		}
+
+		// Fetch the userId and accountId, if we don't have them
+		if ( empty( $option['userId'] ) || empty( $option['accountId'] ) ) {
+			$api = OMAPI_Api::build( 'v2', 'me', 'GET' );
+			$body = $api->request();
+
+			if ( isset( $body->id, $body->accountId ) ) {
+				$option['userId']    = $body->id;
+				$option['accountId'] = $body->accountId;
+				$changed = true;
+			}
+
+		}
+
+		// Fetch the SiteIds for this site, if we don't have them
+		if ( empty( $option['siteIds'] ) ) {
+			$option['siteIds'] = $this->base->sites->fetch();
+
+			$changed = true;
+		}
+
+		// Only update the option if we've changed something
+		if ( $changed ) {
+			update_option( 'optin_monster_api', $option );
+		}
+
+	}
 
 }

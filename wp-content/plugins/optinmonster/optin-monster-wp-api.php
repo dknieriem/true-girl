@@ -5,7 +5,7 @@
  * Description: OptinMonster is the best WordPress popup plugin that helps you grow your email list and sales with email popups, exit intent popups, floating bars and more!
  * Author:      OptinMonster Team
  * Author URI:  https://optinmonster.com
- * Version:     1.7.0
+ * Version:     1.8.3
  * Text Domain: optin-monster-api
  * Domain Path: languages
  *
@@ -60,7 +60,7 @@ class OMAPI {
 	 *
 	 * @var string
 	 */
-	public $version = '1.7.0';
+	public $version = '1.8.3';
 
 	/**
 	 * The name of the plugin.
@@ -153,6 +153,13 @@ class OMAPI {
 	public $refresh;
 
 	/**
+	 * OMAPI_Sites object (loaded only in the REST API and admin)
+	 *
+	 * @var OMAPI_Sites
+	 */
+	public $sites;
+
+	/**
 	 * OMAPI_Validate object (loaded only in the admin)
 	 *
 	 * @var OMAPI_Validate
@@ -172,6 +179,13 @@ class OMAPI {
 	 * @var OMAPI_Review
 	 */
 	public $review;
+
+	/**
+	 * OMAPI_RestApi object (loaded only in the REST API)
+	 *
+	 * @var OMAPI_RestApi
+	 */
+	public $rest_api;
 
 	/**
 	 * AM_Notification object (loaded only in the admin)
@@ -244,15 +258,13 @@ class OMAPI {
 			define( 'OPTINMONSTER_APP_URL', 'https://app.optinmonster.com' );
 		}
 
-		if ( ! defined( 'OPTINMONSTER_APP_API_URL' ) ) {
-			define( 'OPTINMONSTER_APP_API_URL', 'https://app.optinmonster.com/v1/' );
-		}
-
 		// Load our global option.
 		$this->load_option();
 
 		// Load global components.
 		$this->load_global();
+
+		add_action( 'rest_api_init', array( $this, 'load_rest' ) );
 
 		// Load admin only components.
 		if ( is_admin() ) {
@@ -298,6 +310,23 @@ class OMAPI {
 	}
 
 	/**
+	 * Loads all REST API related classes into scope.
+	 *
+	 * @since 1.8.0
+	 */
+	public function load_rest() {
+
+		// Register global components.
+		$this->sites    = new OMAPI_Sites();
+		$this->rest_api = new OMAPI_RestApi();
+		$this->refresh  = new OMAPI_Refresh();
+		$this->save     = new OMAPI_Save();
+
+		// Fire a hook to say that the global classes are loaded.
+		do_action( 'optin_monster_api_rest_loaded' );
+	}
+
+	/**
 	 * Loads all admin related classes into scope.
 	 *
 	 * @since 1.0.0
@@ -317,11 +346,15 @@ class OMAPI {
 		$this->welcome       = new OMAPI_Welcome();
 		$this->review        = new OMAPI_Review();
 		$this->pointer       = new OMAPI_Pointer();
+		$this->sites         = new OMAPI_Sites();
 		$this->notifications = new AM_Notification( 'om', $this->version );
 
 		if ( $this->menu->has_trial_link() ) {
 			$this->cc = new OMAPI_ConstantContact();
 		}
+
+		$this->save->maybe_save();
+		$this->refresh->maybe_refresh();
 
 		// Fire a hook to say that the admin classes are loaded.
 		do_action( 'optin_monster_api_admin_loaded' );
@@ -422,7 +455,6 @@ class OMAPI {
 		$user   = false;
 		$apikey = false;
 
-
 		// Attempt to grab the new API Key
 		if ( empty( $option['api']['apikey'] ) ) {
 			if ( defined( 'OPTINMONSTER_REST_API_LICENSE_KEY' ) ) {
@@ -456,7 +488,6 @@ class OMAPI {
 				return false;
 			}
 		}
-
 
 		// Return the API credentials.
 		return apply_filters( 'optin_monster_api_creds',
@@ -513,7 +544,7 @@ class OMAPI {
 	 * @return bool
 	 */
 	public static function is_woocommerce_active() {
-		return class_exists( 'WooCommerce' );
+		return class_exists( 'WooCommerce', true );
 	}
 
 	/**

@@ -157,7 +157,6 @@ class OMAPI_Review {
 		add_filter( 'admin_footer_text', array( $this, 'footer' ) );
 		add_action( 'in_admin_header', array( $this->base->menu, 'output_plugin_screen_banner') );
 
-
 	}
 
 	/**
@@ -170,9 +169,7 @@ class OMAPI_Review {
 		wp_register_style( $this->base->plugin_slug . '-settings', plugins_url( '/assets/css/settings.css', OMAPI_FILE ), array(), $this->base->version );
 		wp_enqueue_style( $this->base->plugin_slug . '-settings' );
 
-
 	}
-
 
 	/**
 	 * Customizes the footer text on the OptinMonster settings page.
@@ -196,7 +193,6 @@ class OMAPI_Review {
 	 * @since 1.1.4.5
 	 */
 	public function callback_to_display_page() {
-
 
 		// Get any saved meta
 		$review_meta = get_user_meta( get_current_user_id(), 'omapi_review_data', true );
@@ -333,7 +329,6 @@ class OMAPI_Review {
 
 		// Save everything passed in to user meta as well
 		update_user_meta( $user_id, 'omapi_review_data', $data_array );
-
 
 		// Check for Name, Review, Email
 		if (  $user_name === '' || $user_review === '' || $user_email === '' ) {

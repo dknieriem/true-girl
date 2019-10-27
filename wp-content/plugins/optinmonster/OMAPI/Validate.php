@@ -21,41 +21,41 @@ if ( ! defined( 'ABSPATH' ) ) {
 class OMAPI_Validate {
 
 	/**
-     * Holds the class object.
-     *
-     * @since 1.0.0
-     *
-     * @var object
-     */
-    public static $instance;
+	 * Holds the class object.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @var object
+	 */
+	public static $instance;
 
 	/**
-     * Path to the file.
-     *
-     * @since 1.0.0
-     *
-     * @var string
-     */
-    public $file = __FILE__;
+	 * Path to the file.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @var string
+	 */
+	public $file = __FILE__;
 
-    /**
-     * Holds the base class object.
-     *
-     * @since 1.0.0
-     *
-     * @var object
-     */
-    public $base;
+	/**
+	 * Holds the base class object.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @var object
+	 */
+	public $base;
 
-    /**
-     * Primary class constructor.
-     *
-     * @since 1.0.0
-     */
-    public function __construct() {
+	/**
+	 * Primary class constructor.
+	 *
+	 * @since 1.0.0
+	 */
+	public function __construct() {
 
-	    // Set our object.
-	    $this->set();
+		// Set our object.
+		$this->set();
 
 		// Possibly validate our API credentials.
 		$this->maybe_validate();
@@ -63,64 +63,64 @@ class OMAPI_Validate {
 		// Add validation messages.
 		add_action( 'admin_notices', array( $this, 'notices' ) );
 
-    }
+	}
 
-    /**
-     * Sets our object instance and base class instance.
-     *
-     * @since 1.0.0
-     */
-    public function set() {
+	/**
+	 * Sets our object instance and base class instance.
+	 *
+	 * @since 1.0.0
+	 */
+	public function set() {
 
-        self::$instance = $this;
-        $this->base     = OMAPI::get_instance();
-        $this->view     = isset( $_GET['optin_monster_api_view'] ) ? stripslashes( $_GET['optin_monster_api_view'] ) : $this->base->get_view();
+		self::$instance = $this;
+		$this->base     = OMAPI::get_instance();
+		$this->view     = isset( $_GET['optin_monster_api_view'] ) ? stripslashes( $_GET['optin_monster_api_view'] ) : $this->base->get_view();
 
-    }
+	}
 
-    /**
-     * Maybe validate our API credentials if the transient has expired.
-     *
-     * @since 1.0.0
-     */
-    public function maybe_validate() {
+	/**
+	 * Maybe validate our API credentials if the transient has expired.
+	 *
+	 * @since 1.0.0
+	 */
+	public function maybe_validate() {
 
-	    // Check to see if welcome options have been set. If not, let's delay this check for a day.
-	    // Also set a transient so that we know the plugin has been activated.
-	    $options = $this->base->get_option();
+		// Check to see if welcome options have been set. If not, let's delay this check for a day.
+		// Also set a transient so that we know the plugin has been activated.
+		$options = $this->base->get_option();
 		if ( ! isset( $options['welcome']['status'] ) || 'welcomed' !== $options['welcome']['status'] ) {
 			set_transient( '_omapi_validate', true, DAY_IN_SECONDS );
 			return;
 		}
 
-	    // Check if the transient has expired.
-	    if ( false !== ( $transient = get_transient( '_omapi_validate' ) ) ) {
-		    return;
-	    }
+		// Check if the transient has expired.
+		if ( false !== ( $transient = get_transient( '_omapi_validate' ) ) ) {
+			return;
+		}
 
-	    // Validate API.
-	    $this->validate();
+		// Validate API.
+		$this->validate();
 
-	    // Provide action to refresh optins.
-	    do_action( 'optin_monster_api_validate_api', $this->view );
+		// Provide action to refresh optins.
+		do_action( 'optin_monster_api_validate_api', $this->view );
 
-    }
+	}
 
-    /**
-     * Validate API credentials.
-     *
-     * @since 1.0.0
-     */
-    public function validate() {
+	/**
+	 * Validate API credentials.
+	 *
+	 * @since 1.0.0
+	 */
+	public function validate() {
 
 		$creds = $this->base->get_api_credentials();
 
 		// Check for new apikey and only use the old user/key if we don't have it
 		if ( ! $creds['apikey'] ) {
-            $api   = new OMAPI_Api( 'validate', array( 'user' => $creds['user'], 'key' => $creds['key'] ) );
-        } else {
-            $api   = new OMAPI_Api( 'verify', array( 'apikey' => $creds['apikey'] ) );
-        }
+			$api   = new OMAPI_Api( 'validate/', array( 'user' => $creds['user'], 'key' => $creds['key'] ) );
+		} else {
+			$api   = new OMAPI_Api( 'verify/', array( 'apikey' => $creds['apikey'] ) );
+		}
 
 		$ret   = $api->request();
 		if ( is_wp_error( $ret ) ) {
@@ -159,42 +159,42 @@ class OMAPI_Validate {
 			set_transient( '_omapi_validate', true, DAY_IN_SECONDS );
 		}
 
-    }
+	}
 
-    /**
-     * Outputs any validation notices.
-     *
-     * @since 1.0.0
-     */
-    public function notices() {
+	/**
+	 * Outputs any validation notices.
+	 *
+	 * @since 1.0.0
+	 */
+	public function notices() {
 
 		global $pagenow;
-	    $option = $this->base->get_option();
-	    if ( isset( $option['is_invalid'] ) && $option['is_invalid'] ) {
-		    if ( ! ( isset($_GET['page'] ) && $_GET['page'] == 'optin-monster-api-settings') && ! ( isset($_GET['page'] ) && $_GET['page'] == 'optin-monster-api-welcome') ){
-			    if ( ! $this->base->menu->has_trial_link() ) {
-				    echo '<div class="error"><p>' . __( 'There was an error verifying your OptinMonster API credentials. They are either missing or they are no longer valid.', 'optin-monster-api' ) . '</p>';
-				    echo '<p><a href="' . esc_url_raw( admin_url( 'admin.php?page=optin-monster-api-settings' ) ) . '" class="button button-primary button-large omapi-new-optin" title="View API Settings">View API Settings</a></p></div>';
+		$option = $this->base->get_option();
+		if ( isset( $option['is_invalid'] ) && $option['is_invalid'] ) {
+			if ( ! ( isset($_GET['page'] ) && $_GET['page'] == 'optin-monster-api-settings') && ! ( isset($_GET['page'] ) && $_GET['page'] == 'optin-monster-api-welcome') ){
+				if ( ! $this->base->menu->has_trial_link() ) {
+					echo '<div class="error"><p>' . __( 'There was an error verifying your OptinMonster API credentials. They are either missing or they are no longer valid.', 'optin-monster-api' ) . '</p>';
+					echo '<p><a href="' . esc_url_raw( admin_url( 'admin.php?page=optin-monster-api-settings' ) ) . '" class="button button-primary button-large omapi-new-optin" title="View API Settings">View API Settings</a></p></div>';
 				}
-		    }
-	    } elseif ( isset( $option['is_disabled'] ) && $option['is_disabled'] ) {
-		    echo '<div class="error"><p>' . __( 'The subscription to this OptinMonster account has been disabled, likely due to a refund or other administrator action. Please contact OptinMonster support to resolve this issue.', 'optin-monster-api' ) . '</p>';
-		    echo '<p><a href="' . OPTINMONSTER_APP_URL . '/account/support/?utm_source=orgplugin&utm_medium=link&utm_campaign=wpdashboard" class="button button-primary button-large omapi-new-optin" title="Contact OptinMonster Support" target="_blank">Contact Support</a></p></div>';
-	    } elseif ( isset( $option['is_expired'] ) && $option['is_expired'] ) {
-		    echo '<div class="error"><p>' . __( 'The subscription to this OptinMonster account has expired. Please renew your subscription to use the OptinMonster API.', 'optin-monster-api' ) . '</p>';
-		    echo '<p><a href="' . OPTINMONSTER_APP_URL . '/account/billing/?utm_source=orgplugin&utm_medium=link&utm_campaign=wpdashboard" class="button button-primary button-large omapi-new-optin" title="Renew Subscription" target="_blank">Renew Subscription</a></p></div>';
-	    } else {
-		    // If user has dismissed before no point going through page checks
-		    if ( $this->should_user_see_connect_nag() ) {
-			    if ( ! ( isset($_GET['page'] ) && $_GET['page'] == 'optin-monster-api-settings') && ! ( isset($_GET['page'] ) && $_GET['page'] == 'optin-monster-api-welcome') && ! ( 'index.php' == $pagenow ) && ! $this->base->get_api_credentials() ){
-				    echo '<div id="omapi-please-connect-notice" class="updated notice is-dismissible"><h3 style="padding:2px;font-weight:normal;margin:.5em 0 0;">' . __( 'Get More Email Subscribers with OptinMonster', 'optin-monster-api' ) . '</h3><p>' . __( 'Please connect to or create an OptinMonster account to start using OptinMonster. This will enable you to start turning website visitors into subscribers & customers.', 'optin-monster-api' ) . '</p>';
-				    echo '<p><a href="' . esc_url_raw( $this->base->menu->get_dashboard_link() ) . '" class="button button-primary button-large omapi-new-optin" title="Connect OptinMonster">Connect OptinMonster</a></p></div>';
-			    }
-		    }
+			}
+		} elseif ( isset( $option['is_disabled'] ) && $option['is_disabled'] ) {
+			echo '<div class="error"><p>' . __( 'The subscription to this OptinMonster account has been disabled, likely due to a refund or other administrator action. Please contact OptinMonster support to resolve this issue.', 'optin-monster-api' ) . '</p>';
+			echo '<p><a href="' . OPTINMONSTER_APP_URL . '/account/support/?utm_source=orgplugin&utm_medium=link&utm_campaign=wpdashboard" class="button button-primary button-large omapi-new-optin" title="Contact OptinMonster Support" target="_blank">Contact Support</a></p></div>';
+		} elseif ( isset( $option['is_expired'] ) && $option['is_expired'] ) {
+			echo '<div class="error"><p>' . __( 'The subscription to this OptinMonster account has expired. Please renew your subscription to use the OptinMonster API.', 'optin-monster-api' ) . '</p>';
+			echo '<p><a href="' . OPTINMONSTER_APP_URL . '/account/billing/?utm_source=orgplugin&utm_medium=link&utm_campaign=wpdashboard" class="button button-primary button-large omapi-new-optin" title="Renew Subscription" target="_blank">Renew Subscription</a></p></div>';
+		} else {
+			// If user has dismissed before no point going through page checks
+			if ( $this->should_user_see_connect_nag() ) {
+				if ( ! ( isset($_GET['page'] ) && $_GET['page'] == 'optin-monster-api-settings') && ! ( isset($_GET['page'] ) && $_GET['page'] == 'optin-monster-api-welcome') && ! ( 'index.php' == $pagenow ) && ! $this->base->get_api_credentials() ){
+					echo '<div id="omapi-please-connect-notice" class="updated notice is-dismissible"><h3 style="padding:2px;font-weight:normal;margin:.5em 0 0;">' . __( 'Get More Email Subscribers with OptinMonster', 'optin-monster-api' ) . '</h3><p>' . __( 'Please connect to or create an OptinMonster account to start using OptinMonster. This will enable you to start turning website visitors into subscribers & customers.', 'optin-monster-api' ) . '</p>';
+					echo '<p><a href="' . esc_url_raw( $this->base->menu->get_dashboard_link() ) . '" class="button button-primary button-large omapi-new-optin" title="Connect OptinMonster">Connect OptinMonster</a></p></div>';
+				}
+			}
 
-	    }
+		}
 
-    }
+	}
 
 	/**
 	 * Script to hide the please connect nag
@@ -247,6 +247,5 @@ class OMAPI_Validate {
 		return false;
 
 	}
-
 
 }

@@ -91,11 +91,7 @@ class OMAPI_WooCommerce {
 		$creds = $this->get_request_api_credentials();
 
 		// Initialize the API class.
-		$api = new OMAPI_Api( 'woocommerce/shop', $creds );
-
-		// Update the `base` and `url` properties to use the `/v2` route.
-		$api->set( 'base', trailingslashit( rtrim( OPTINMONSTER_APP_API_URL, 'v1/' ) ) . 'v2/' );
-		$api->set( 'url', $api->base . $api->route );
+		$api = new OMAPI_Api( 'woocommerce/shop', $creds, 'POST', 'v2' );
 
 		return $api->request( $data );
 	}
@@ -118,11 +114,7 @@ class OMAPI_WooCommerce {
 		}
 
 		// Initialize the API class.
-		$api = new OMAPI_Api( 'woocommerce/shop/' . rawurlencode( $shop ), $creds, 'DELETE' );
-
-		// Update the `base` and `url` properties to use the `/v2` route.
-		$api->set( 'base', trailingslashit( rtrim( OPTINMONSTER_APP_API_URL, 'v1/' ) ) . 'v2/' );
-		$api->set( 'url', $api->base . $api->route );
+		$api = new OMAPI_Api( 'woocommerce/shop/' . rawurlencode( $shop ), $creds, 'DELETE', 'v2' );
 
 		return $api->request();
 	}

@@ -3,8 +3,8 @@ Contributors: Tips and Tricks HQ, Ruhul Amin, josh401, mbrsolution, alexanderfox
 Donate link: https://www.tipsandtricks-hq.com
 Tags: download, downloads, count, counter, tracker, tracking, hits, logging, monitor, manager, files, media, digital, download monitor, download manager, downloadmanager, file manager, protect downloads, password, download category, file tree, ajax, download template, grid, documents, ip address
 Requires at least: 4.1.0
-Tested up to: 5.2
-Stable tag: 3.8.0
+Tested up to: 5.3
+Stable tag: 3.8.2
 License: GPLv2 or later
 
 Easily manage downloadable files and monitor downloads of your digital files from your WordPress site.
@@ -185,6 +185,15 @@ Yes
 For screenshots please visit the [download monitor plugin page](https://www.tipsandtricks-hq.com/simple-wordpress-download-monitor-plugin)
 
 == Changelog ==
+
+= 3.8.2 =
+- Added action hooks for password protected downloads (when a download request is submitted without a password or incorrect password).
+- Added the Norwegian language translation files. Thanks to Tore Østerlie.
+- Regenerated the translation POT file.
+- Wordpress 5.3 compatibility.
+
+= 3.8.1 =
+- Added a new tab in the stats menu to list/show the download by country in a table.
 
 = 3.8.0 =
 - "Downloads by country" stats tab now requires Google Maps API Key to work properly.

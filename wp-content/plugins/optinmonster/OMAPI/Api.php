@@ -27,7 +27,7 @@ class OMAPI_Api {
 	 *
 	 * @var string
 	 */
-	public $base = OPTINMONSTER_APP_API_URL;
+	public $base = OPTINMONSTER_APP_URL;
 
 	/**
 	 * Current API route.
@@ -93,6 +93,15 @@ class OMAPI_Api {
 	public $plugin = false;
 
 	/**
+	 * The Api Version (v1 or v2) for this request.
+	 *
+	 * @since 1.8.0
+	 *
+	 * @var string
+	 */
+	public $version = 'v1';
+
+	/**
 	 * Additional data to add to request body
 	 *
 	 * @since 1.0.0
@@ -129,18 +138,40 @@ class OMAPI_Api {
 	public $response_body = null;
 
 	/**
+	 * Builds the API Object
+	 *
+	 * @since 1.8.0
+	 *
+	 * @param string $version The Api Version (v1 or v2)
+	 * @param string $endpoint The Api Endpoint
+	 * @param string $method The Request method
+	 *
+	 * @return self
+	 */
+	public static function build( $version, $route, $method = 'POST' ) {
+		$creds  = OMAPI::get_instance()->get_api_credentials();
+		// Check if we have the new API and if so only use it
+		if ( $creds['apikey'] ) {
+			return new OMAPI_Api( $route, array( 'apikey' => $creds['apikey'] ), $method, $version );
+		}
+
+		return new OMAPI_Api( $route, array( 'user' => $creds['user'], 'key' => $creds['key'] ), $method, $version);
+	}
+
+	/**
 	 * Primary class constructor.
 	 *
 	 * @since 1.0.0
 	 *
-	 * @param string $route  The API route to target.
-	 * @param array $creds   Array of API credentials.
-	 * @param string $method The API method.
+	 * @param string $route   The API route to target.
+	 * @param array $creds    Array of API credentials.
+	 * @param string $method  The API method.
+	 * @param string $version The version number of our API
 	 */
-	public function __construct( $route, $creds, $method = 'POST' ) {
+	public function __construct( $route, $creds, $method = 'POST', $version = 'v1' ) {
 		// Set class properties.
 		$this->route    = $route;
-		$this->url      = $this->base . $this->route . '/';
+		$this->version  = $version;
 		$this->method   = $method;
 		$this->user     = ! empty( $creds['user'] ) ? $creds['user'] : '';
 		$this->key      = ! empty( $creds['key'] ) ? $creds['key'] : '';
@@ -174,8 +205,8 @@ class OMAPI_Api {
 
 		$body = wp_parse_args( $args, $body );
 		$url  = in_array( $this->method, array( 'GET', 'DELETE' ), true )
-			? add_query_arg( $body, $this->url )
-			: $this->url;
+			? add_query_arg( $body, $this->getUrl() )
+			: $this->getUrl();
 		$url  = esc_url_raw( $url );
 
 		// Build the headers of the request.
@@ -184,6 +215,7 @@ class OMAPI_Api {
 			'Cache-Control'         => 'no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0',
 			'Pragma'                => 'no-cache',
 			'Expires'               => 0,
+			'Origin'                => site_url(),
 			'OMAPI-Referer'         => site_url(),
 			'OMAPI-Sender'          => 'WordPress',
 		);
@@ -232,6 +264,17 @@ class OMAPI_Api {
 
 		// Return the json decoded content.
 		return $this->response_body;
+	}
+
+	/**
+	 * The gets the URL based on our base, endpoint and version
+	 *
+	 * @since 1.8.0
+	 *
+	 * @return string The API url.
+	 */
+	public function getUrl() {
+		return $this->base . '/' . $this->version . '/' . $this->route;
 	}
 
 	/**

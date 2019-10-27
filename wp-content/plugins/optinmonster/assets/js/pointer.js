@@ -7,7 +7,6 @@ jQuery(document).ready( function($) {
         $(omapiPointer.target).pointer('close');
 	});
 
-
     function omapi_open_pointer() {
         pointer = omapiPointer;
         options = $.extend(pointer.options, {

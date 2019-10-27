@@ -65,10 +65,6 @@ class OMAPI_Save {
 
 		// Set our object.
 		$this->set();
-
-		// Possibly save settings.
-		$this->maybe_save();
-
 	}
 
 	/**
@@ -147,7 +143,7 @@ class OMAPI_Save {
 				// Check for new single apikey and break early with only that data check
 				if ( $apikey ) {
 					// Verify this new API Key works but posting to the Legacy route
-					$api = new OMAPI_Api( 'verify', array( 'apikey' => $apikey ) );
+					$api = new OMAPI_Api( 'verify/', array( 'apikey' => $apikey ) );
 					$ret = $api->request();
 
 					if ( is_wp_error( $ret ) ) {
@@ -169,6 +165,7 @@ class OMAPI_Save {
 
 						// Save the option.
 						$this->update_optin_monster_api_option( $option, $data, $this->view );
+						wp_safe_redirect( admin_url( 'admin.php?page=optin-monster-api-settings&optin_monster_api_view=optins' ) );
 					}
 					// End since we are working with the new apikey
 					break;
@@ -203,7 +200,7 @@ class OMAPI_Save {
 						$this->errors['error'] = __( 'You must provide a valid API Key to authenticate with OptinMonster.', 'optin-monster-api' );
 					}
 				} else {
-					$api = new OMAPI_Api( 'verify', array( 'user' => $user, 'key' => $key ) );
+					$api = new OMAPI_Api( 'verify/', array( 'user' => $user, 'key' => $key ) );
 					$ret = $api->request();
 					if ( is_wp_error( $ret ) ) {
 						$this->errors['error'] = $ret->get_error_message();
@@ -262,7 +259,6 @@ class OMAPI_Save {
 				// Save the data from the regular taxonomies fields into the WC specific tax field.
 				$fields['is_wc_product_category']            = isset( $data['taxonomies']['product_cat'] ) ? $data['taxonomies']['product_cat'] : array();
 				$fields['is_wc_product_tag']                 = isset( $data['taxonomies']['product_tag'] ) ? $data['taxonomies']['product_tag'] : array();
-
 
 				// Convert old test mode data and remove.
 				$test_mode = get_post_meta( $optin_id, '_omapi_test', true );
@@ -458,6 +454,8 @@ class OMAPI_Save {
 		if ( 'post' === $optin->type ) {
 			update_post_meta( $post_id, '_omapi_automatic', 1 );
 		}
+
+		update_post_meta( $post_id, '_omapi_enabled', true );
 
 		$this->update_optin_meta( $post_id, $optin );
 	}

@@ -408,6 +408,8 @@ body.omapi-welcome {
     background: #fff;
     padding: 15px 30px;
     display: inline-block;
+    /* Match the minimum height of our tabs */
+    min-height: 197px;
 }
 
 .omapi-content {
