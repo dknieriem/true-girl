@@ -44,27 +44,6 @@ $featuredImage = wp_get_attachment_url(get_post_thumbnail_id($post->ID, 'large')
 			</div>
 		<!-- Do the right sidebar check -->
 	</div><!-- .row -->
-	<div class="row post-footer">
-		<div class="col-md-9 author-info">
-				<?php 
-						$authorId = get_post_field( 'post_author', $post_id ); 
-						$authorPhotoUrl = do_shortcode('[types usermeta="author-photo" size="thumbnail" output="raw"][/types]');
-
-						if ($authorPhotoUrl): 
-					?>
-					<div class="author-info__photo" style="background-image:url('<?php echo $authorPhotoUrl; ?>');" class="post-intro__author-photo"></div>
-	<?php 				endif;
-
-		if (get_the_author_meta('user_description') ): ?>
-			<div class="author-info__bio">
-			<h4>Author Bio</h4>
-			<p class="author-info__description"><?php esc_textarea(the_author_meta('user_description')); ?></p>
-			</div>
-    <?php endif; ?>
-        
-    </div><!-- col-md-9 author-info -->
-	</div><!-- row post-footer -->
-
 </div><!-- Container end -->
 
 	<section class="page-section text-left background-pink responsive-background- " style="background-image: url( '/wp-content/uploads/2019/07/EmailSignupPinkBkgd.png'); background-repeat: no-repeat; background-size:cover; background-position: center center;">

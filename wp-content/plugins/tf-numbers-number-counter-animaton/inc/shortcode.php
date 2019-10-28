@@ -161,6 +161,9 @@ if( !class_exists( 'TF_Numbers_Shortcode' ) )
       $cs = isset($value['cr']) ? ' '.$value['cr'] : '';
       $cs .= isset($value['crp']) ? ' '.$value['crp'] : '';
       $icon = '<span class="'. (isset($value['_tf_icon']) ? esc_attr($value['_tf_icon']) : '') .'"></span>';
+      if ( isset($value['_tf_icon']) && strpos($value['_tf_icon'], '.') !== false ) {
+        $icon = '<span class="custom-icon"><img src="' . esc_attr($value['_tf_icon']) .'" alt="icon" /></span>';
+      }
       $number = '<span class="number'.esc_attr($cs).'"></span>';
       $title = '<span class="count-title">'. esc_html($value['_tf_title']) .'</span>';
       $sub = '';

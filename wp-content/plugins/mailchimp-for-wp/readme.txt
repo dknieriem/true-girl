@@ -1,15 +1,15 @@
-=== Mailchimp for WordPress ===
+=== MC4WP: Mailchimp for WordPress ===
 Contributors: Ibericode, DvanKooten, hchouhan, lapzor
 Donate link: https://mc4wp.com/#utm_source=wp-plugin-repo&utm_medium=mailchimp-for-wp&utm_campaign=donate-link
 Tags: mailchimp, mc4wp, email, marketing, newsletter, subscribe, widget, mc4wp, contact form 7, woocommerce, buddypress, ibericode, mailchimp form
 Requires at least: 4.1
 Tested up to: 5.2
-Stable tag: 4.5.2
+Stable tag: 4.6.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires PHP: 5.3
 
-Mailchimp for WordPress, the #1 Mailchimp plugin.
+Mailchimp for WordPress, the #1 unofficial Mailchimp plugin.
 
 == Description ==
 
@@ -46,7 +46,6 @@ This plugin helps you grow your Mailchimp lists and write better newsletters thr
 	- [Mailchimp for WordPress Premium](https://mc4wp.com/#utm_source=wp-plugin-repo&utm_medium=mailchimp-for-wp&utm_campaign=add-on-list)
 	- [Mailchimp Top Bar](https://wordpress.org/plugins/mailchimp-top-bar/)
 	- [Mailchimp Activity](https://wordpress.org/plugins/mc4wp-activity/)
-	- [Mailchimp User Sync](https://wordpress.org/plugins/mailchimp-sync/)
 	- [Boxzilla Pop-ups](https://wordpress.org/plugins/boxzilla/)
 	- [Google reCAPTCHA](https://www.google.com/recaptcha/)
 	- [WPBruiser anti-spam](https://wordpress.org/plugins/goodbye-captcha/)
@@ -198,11 +197,80 @@ The plugin provides various filter & action hooks that allow you to modify or ex
 == Changelog == 
 
 
+#### 4.6.2 - Oct 24, 2019
+
+**Fixes**
+
+- Address fields in forms would always be required (even if really optional).
+
+**Improvements**
+
+- Add proper SVG admin menu icon.
+- Minor overall performance and memory usage improvements.
+
+
+#### 4.6.1 - Oct 7, 2019
+
+**Fixes**
+
+- Fixed list cache usage for WPForms, Gravity Forms and Ninja Forms integrations.
+
+
+#### 4.6.0 - Oct 7, 2019
+
+**Improvements**
+
+- Improved fetch and cache mechanism for retrieving Mailchimp account details, fetching data only when it is required.
+- Updated [Mithril](https://mithril.js.org/) and [CodeMirror](https://codemirror.net/) dependencies.
+- Decreased size of `forms-api.js` from 22KB to 9KB.
+- No longer requiring jQuery anywhere.
+- Increase API HTTP request timeout to 15 seconds.
+
+Please note that installing this update requires you to also update any add-ons like [Mailchimp Top Bar](https://wordpress.org/plugins/mailchimp-top-bar/) and [Mailchimp for WordPress Premium](https://mc4wp.com/premium-features/) (if installed).
+
+
+#### 4.5.5 - Sep 12, 2019
+
+**Fixes**
+
+- Google reCAPTCHA script was still loading even if no forms have it enabled.
+
+
+#### 4.5.4 - Sep 11, 2019
+
+**Improvements**
+
+- Removed custom color from menu item for improved accessibility.
+- Take birthday field format into account when sending data to Mailchimp.
+- Print Google reCAPTCHA script in footer.
+
+**Changes**
+
+- Changed plugin name to MC4WP instead of Mailchimp for WordPress.
+
+
+#### 4.5.3 - July 23, 2019
+
+**Fixes**
+
+- Temporarily switch status of pending subscribers to "unsubscribe" versus deleting susbcriber before re-subscribing.
+- Deprecation notice for Gravity Forms version 2.4 and higher.
+
+**Improvements**
+
+- Filter out empty tags when applying tags to new subscribers.
+- Show all not installed integrations.
+- Show notice when form doesn't have a Mailchimp list selected to subscribe people to.
+- Check function existence for compatibility with WordPress 4.7
+- Don't submit form when Google reCAPTCHA is enabled but errors.
+- Update third-party JavaScript dependencies.
+
+
 #### 4.5.2 - May 8, 2019
 
 **Improvements**
 
-- Accept more truthy values in custom integration for improved compatability with third-party forms.
+- Accept more truthy values in custom integration for improved compatibility with third-party forms.
 - Update JavaScript dependencies.
 - Load Google reCaptcha script in footer (if needed). 
 

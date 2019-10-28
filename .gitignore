@@ -1,8 +1,9 @@
 .DS_Store
-#.htaccess
+.htaccess
 *.log
 
 node_modules/
+/wp-content/endurance-page-cache/events
 
 wp-config.php
 wp-config-local.php
