@@ -5,3 +5,15 @@ new simpleParallax(images, {
 /*{
 	scale: 2.0
 }*/
+
+/* Blog Sidebar Sticky */
+
+$('.blog__sidebar').hcSticky({
+  stickTo: '.post-sidebar',
+  bottom: 20,
+  responsive: {
+  	768: {
+  		disable: true
+  	}
+  }
+});

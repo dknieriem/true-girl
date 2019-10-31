@@ -24,7 +24,7 @@
 
 		margin-bottom: 10px;
 		
-		padding: 4%; /* Blog Hack - Tim */
+		//padding: 4%; /* Blog Hack - Tim */
 		
 		grid-column: 1/span 2;
 
@@ -37,6 +37,7 @@
 		.custom-html-widget
 		{
 			@extend .text-center;
+			@extend .d-inline-block;
 			margin-bottom: 60px; /* Blog Hack - Tim */
 		}
 
@@ -94,6 +95,7 @@
 
 		.mc4wp-form
 		{
+			margin-bottom: 2rem;
 			text-align: center;
 
 			input
@@ -118,14 +120,16 @@
 
 				&[type='submit']
 				{
+					
 					@extend .button;
 					@extend .button--gray;
+					
 					margin-top: 8px; /* Blog Hack - Tim */
-
-					@include media-breakpoint-up(md)
+					font-size: 1.25rem !important;
+/*					@include media-breakpoint-down(md)
 					{
 						font-size: 1.25rem;
-					}
+					}*/
 				}
 			}
 		}
