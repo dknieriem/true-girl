@@ -6491,7 +6491,7 @@ button.bg-dark:focus {
 .d-inline {
   display: inline !important; }
 
-.d-inline-block, .blog__sidebar .custom-html-widget, .search__sidebar .custom-html-widget, .faq-header {
+.d-inline-block, .faq-header {
   display: inline-block !important; }
 
 .d-block {
