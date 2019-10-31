@@ -6491,7 +6491,7 @@ button.bg-dark:focus {
 .d-inline {
   display: inline !important; }
 
-.d-inline-block, .faq-header {
+.d-inline-block, .blog__sidebar .custom-html-widget, .search__sidebar .custom-html-widget, .faq-header {
   display: inline-block !important; }
 
 .d-block {
@@ -13335,8 +13335,6 @@ ol > li {
 
 .blog__sidebar, .search__sidebar {
   margin-bottom: 10px;
-  padding: 4%;
-  /* Blog Hack - Tim */
   grid-column: 1/span 2;
   /* Search form */
   /* social icons */
@@ -13364,6 +13362,7 @@ ol > li {
     margin-bottom: 15px;
     /* Blog Hack - Tim */ }
   .blog__sidebar .mc4wp-form, .search__sidebar .mc4wp-form {
+    margin-bottom: 2rem;
     text-align: center; }
     .blog__sidebar .mc4wp-form input[type='text'], .blog__sidebar .mc4wp-form input[type='email'], .search__sidebar .mc4wp-form input[type='text'], .search__sidebar .mc4wp-form input[type='email'] {
       background-color: #EFEFF0;
@@ -13387,10 +13386,12 @@ ol > li {
         color: #939495; }
     .blog__sidebar .mc4wp-form input[type='submit'], .search__sidebar .mc4wp-form input[type='submit'] {
       margin-top: 8px;
-      /* Blog Hack - Tim */ }
-      @media (min-width: 768px) {
-        .blog__sidebar .mc4wp-form input[type='submit'], .search__sidebar .mc4wp-form input[type='submit'] {
-          font-size: 1.25rem; } }
+      /* Blog Hack - Tim */
+      font-size: 1.25rem !important;
+      /*					@include media-breakpoint-down(md)
+					{
+						font-size: 1.25rem;
+					}*/ }
 
 @media (max-width: 575.98px) {
   a.filter {
@@ -14489,6 +14490,9 @@ body.single {
     margin: 2.5em;
     font-size: 1.2em;
     font-style: italic; }
+
+.post-sidebar {
+  padding: 10px 25px; }
 
 .author-info {
   background-color: #e2e2e2;
