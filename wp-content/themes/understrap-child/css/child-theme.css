@@ -14933,7 +14933,7 @@ body.single {
     line-height: 1.5;
     color: #525252; }
   .footer__logo {
-    max-width: 200px;
+    /*max-width:200px;*/
     max-height: 125px;
     margin-bottom: 2rem; }
     @media (max-width: 768px) {

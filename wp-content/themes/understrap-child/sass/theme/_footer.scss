@@ -99,7 +99,7 @@
     &__logo
     {
         @extend .img-fluid;
-        max-width:200px;
+        /*max-width:200px;*/
         max-height:125px;
         margin-bottom:2rem;
         @media (max-width: 768px) {

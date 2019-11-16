@@ -8,7 +8,7 @@ new simpleParallax(images, {
 
 /* Blog Sidebar Sticky */
 
-$('.blog__sidebar').hcSticky({
+jQuery('.blog__sidebar').hcSticky({
   stickTo: '.post-sidebar',
   bottom: 20,
   responsive: {
