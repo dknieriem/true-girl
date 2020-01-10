@@ -27,15 +27,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-WMD656J');</script>
+	})(window,document,'script','dataLayer','GTM-MB76Q3N');</script>
 	<!-- End Google Tag Manager -->
-	<meta name="google-site-verification" content="o3wdM04VVpFHvx3Ui3kE_fGpVRdWWxlwy0iNphFXWyU" />
 
 </head>
 
 <body <?php body_class(); ?>>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMD656J"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MB76Q3N"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
