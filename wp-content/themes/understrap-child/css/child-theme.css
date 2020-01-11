@@ -15497,6 +15497,14 @@ ul.tgn-ul {
 .page-id-6287 .wps-products-heading, .page-template-no-hero-advanced-white .wps-products-heading, .page-template-no-hero-advanced .wps-products-heading, .page-template-no-hero .wps-products-heading {
   display: none !important; }
 
+.resource-category__header {
+  display: inline-block; }
+
+#resource-nav .nav-link {
+  color: #00bcd6; }
+  #resource-nav .nav-link.active {
+    color: #ffffff; }
+
 /* Search page styles */
 .search-page-form {
   /* Search form */ }

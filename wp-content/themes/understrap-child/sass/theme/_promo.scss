@@ -1,0 +1,23 @@
+
+// Promoters page
+
+.resource-category
+{
+	&__header
+	{
+		display: inline-block;
+	}
+}
+
+#resource-nav
+{
+	.nav-link
+	{
+		color: $teal;
+
+		&.active
+		{
+			color: $white;
+		}
+	}
+}
