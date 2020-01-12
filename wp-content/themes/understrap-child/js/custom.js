@@ -28,3 +28,5 @@ jQuery('#wpv-view-layout-14473, #wpv-view-layout-14634').hcSticky({
   	}
   }
 });
+
+jQuery("#spy").scrollspy({target: '#resource-nav', offset: 150});
