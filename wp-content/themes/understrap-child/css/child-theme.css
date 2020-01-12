@@ -510,7 +510,7 @@ pre {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .post-intro__breadcrumb, .col,
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .post-intro__breadcrumb, #wpv-view-layout-14475 .container .js-wpv-view-layout, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .statistics .statistics-inner .stat, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .tgn-statistics .statistics .statistics-inner .stat, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .icon-item, .post-thumb, .newsletter-signup__control, .col-md-4, .page-section__one-third-column, .col-md-5, .product-feature__image, .col-md-6, .page-section__single-column--narrow-left, .page-section__single-column--narrow-right, .page-section__one-half-column, .podcast-intro__post-meta, .podcast-intro__post-image-wrapper, .section-header__6, .col-md-7, .col-md-8, .page-section__single-column--narrow-center, .page-section__single-column-narrow, .page-section__two-third-column, .post-intro__post-meta, .section-header__8, .col-md-9, .col-md-10, .page-heading, .section-header__10, .col-md-11, .col-md-12, .page-section__single-column, .featured-post, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
@@ -604,7 +604,7 @@ pre {
           flex: 0 0 91.66667%;
   max-width: 91.66667%; }
 
-.col-12, .post-intro__breadcrumb {
+.col-12, .post-intro__breadcrumb, #wpv-view-layout-14475 .container .js-wpv-view-layout {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
@@ -18063,7 +18063,7 @@ strong {
 
 /* Mobile Sizing */
 @media (max-width: 767px) {
-  #content > .row > .col-12, .page-section__content-wrapper > .row > .col-12, #content > .podcast-intro > .col-12, .page-section__content-wrapper > .podcast-intro > .col-12, #content > .row > .post-intro__breadcrumb, .page-section__content-wrapper > .row > .post-intro__breadcrumb, #content > .podcast-intro > .post-intro__breadcrumb, .page-section__content-wrapper > .podcast-intro > .post-intro__breadcrumb {
+  #content > .row > .col-12, .page-section__content-wrapper > .row > .col-12, #content > .podcast-intro > .col-12, .page-section__content-wrapper > .podcast-intro > .col-12, #content > .row > .post-intro__breadcrumb, .page-section__content-wrapper > .row > .post-intro__breadcrumb, #content > .podcast-intro > .post-intro__breadcrumb, .page-section__content-wrapper > .podcast-intro > .post-intro__breadcrumb, #wpv-view-layout-14475 .container #content > .row > .js-wpv-view-layout, #wpv-view-layout-14475 .container .page-section__content-wrapper > .row > .js-wpv-view-layout, #wpv-view-layout-14475 .container #content > .podcast-intro > .js-wpv-view-layout, #wpv-view-layout-14475 .container .page-section__content-wrapper > .podcast-intro > .js-wpv-view-layout {
     padding: 0; } }
 
 @media (min-width: 600px) {

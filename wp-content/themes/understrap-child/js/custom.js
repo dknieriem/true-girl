@@ -28,5 +28,3 @@ jQuery('#wpv-view-layout-14473, #wpv-view-layout-14634').hcSticky({
   	}
   }
 });
-
-wpv-view-layout-14634
