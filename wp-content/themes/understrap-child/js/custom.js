@@ -19,7 +19,7 @@ jQuery('.blog__sidebar').hcSticky({
 });
 
 /* Promoters Page Sticky Nav */
-jQuery('#wpv-view-layout-14473, #wpv-view-layout-14634').hcSticky({
+jQuery('.resource-category__section .js-wpv-view-layout').hcSticky({
   stickTo: '.col-sm-3',
   top: 150,
   responsive: {
