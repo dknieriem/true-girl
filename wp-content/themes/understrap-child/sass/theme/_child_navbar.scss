@@ -35,6 +35,14 @@
         -ms-flex-pack: justify;
         justify-content: space-between;
 
+        @include media-breakpoint-up(md){
+            display: flex;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+        }
+
         @include media-breakpoint-up(lg){
             height: 96px; //DON set this to be a defined height
         }
@@ -61,13 +69,13 @@ body.admin-bar .fixed-top
 .nav-link, .dropdown-item
 {
     color: $white;
-    font-weight:300 !important;
+    font-weight:700 !important;
     //text-transform: uppercase !important;
     font-size:1.3rem; 
 
     @include media-breakpoint-up(md){
-        margin-left:2rem;
-        margin-right:1rem;
+        margin-left:.825rem;
+        margin-right:.825rem;
 }
 }
 
@@ -83,18 +91,24 @@ body.admin-bar .fixed-top
 
     padding-top: 13px;
     padding-bottom: 13px;
-    
+    max-width: 25%;
+
     @media (max-width: 768px){
         margin: auto;
+        max-width: 100%;
     }
 
     img {
-        max-height: 70px;
+        max-height: 140px;
+        margin-top: 3.75em;
         width: auto;
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             max-width:300px; 
-            max-height: 180px;
-            
+            max-height: 140px;
+            margin-top: 0;
+        }
+        @media (max-width: 768px) {
+            max-height: 96px;
         }
     }
 }
@@ -128,8 +142,8 @@ body.admin-bar .fixed-top
         .nav-link, .dropdown-menu .nav-link, .dropdown-item
         {
             padding: 1rem 0rem !important;
-            font-size:1.2rem !important;
-            font-weight:300 !important;
+            font-size:1.1rem !important;
+            font-weight:700 !important;
         }
         .dropdown-item
         {
@@ -173,27 +187,28 @@ body.admin-bar .fixed-top
             
     @media(min-width: 980px){ 
         
-        li:last-child {
-            flex-grow: 1;
-            margin: auto;
+        justify-content: flex-end;
 
+        li:last-child {
+            font-size: 1.4rem;
             a {
                 float: right;
                 margin-right: 0;
+                margin-top: .3rem;
+                font-size: 1.4rem!important;
+            }
+        }
+    }
+
+    @media(min-width: 1199px){ 
+        li:last-child {
+            a{
+                margin-top: 0;
             }
         }
     }
 }
 
-@media (min-width: 1199px) { //was 768px
-.navbar-expand-md .navbar-nav .nav-link
-{
-    padding-left:1rem;
-    padding-right:1rem;
-}
-
-
-}
 /* custom css */
 
 /* Nav Button */
@@ -250,7 +265,3 @@ body.admin-bar .fixed-top
 
 /* Tim's Nav Styles */
 
-#main-menu .nav-link {
-    //display: block;
-    padding: .7rem 1rem;
-}
