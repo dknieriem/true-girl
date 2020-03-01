@@ -15190,25 +15190,25 @@ body.single {
     width: auto !important; }
   @media (min-width: 768px) {
     .events-video-feature p {
-      margin-top: .5rem !important;
+      margin-top: .5rem;
       font-size: 1rem; }
     .events-video-feature a.button, .events-video-feature .blog__sidebar a.search-form__search-button, .blog__sidebar .events-video-feature a.search-form__search-button, .events-video-feature .search__sidebar a.search-form__search-button, .search__sidebar .events-video-feature a.search-form__search-button, .events-video-feature .navbar a[title='get tickets!'], .navbar .events-video-feature a[title='get tickets!'], .events-video-feature a.post-preview__button, .events-video-feature a.post-card__card-button, .events-video-feature .search-page-form a.search-form__search-button, .search-page-form .events-video-feature a.search-form__search-button {
       font-size: 1rem; } }
   @media (min-width: 961px) {
     .events-video-feature p {
-      margin-top: 1rem !important;
+      margin-top: 1rem;
       font-size: 1.25rem; }
     .events-video-feature a.button, .events-video-feature .blog__sidebar a.search-form__search-button, .blog__sidebar .events-video-feature a.search-form__search-button, .events-video-feature .search__sidebar a.search-form__search-button, .search__sidebar .events-video-feature a.search-form__search-button, .events-video-feature .navbar a[title='get tickets!'], .navbar .events-video-feature a[title='get tickets!'], .events-video-feature a.post-preview__button, .events-video-feature a.post-card__card-button, .events-video-feature .search-page-form a.search-form__search-button, .search-page-form .events-video-feature a.search-form__search-button {
       font-size: 1.25rem; } }
   @media (min-width: 1201px) {
     .events-video-feature p {
-      margin-top: 2rem !important;
+      margin-top: 2rem;
       font-size: 1.5rem; }
     .events-video-feature a.button, .events-video-feature .blog__sidebar a.search-form__search-button, .blog__sidebar .events-video-feature a.search-form__search-button, .events-video-feature .search__sidebar a.search-form__search-button, .search__sidebar .events-video-feature a.search-form__search-button, .events-video-feature .navbar a[title='get tickets!'], .navbar .events-video-feature a[title='get tickets!'], .events-video-feature a.post-preview__button, .events-video-feature a.post-card__card-button, .events-video-feature .search-page-form a.search-form__search-button, .search-page-form .events-video-feature a.search-form__search-button {
       font-size: 1.5rem; } }
   @media (min-width: 1381px) {
     .events-video-feature p {
-      margin-top: 3rem !important;
+      margin-top: 3rem;
       font-size: 1.75rem; } }
 
 .events-header-sm .heading, .events-header-sm .faq-header {
