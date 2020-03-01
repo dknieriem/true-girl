@@ -13002,7 +13002,8 @@ a.skip-link {
   font-family: "GoudySans Md BT" !important; }
 
 .font-shark, .text-shark, .faq-item__button--q, .faq-item__body--a {
-  font-family: "Shark Random Funnyness" !important; }
+  font-family: "Shark Random Funnyness" !important;
+  letter-spacing: 2px; }
 
 .font-impervious, .text-impervious {
   font-family: "Impervious" !important; }
@@ -13120,6 +13121,7 @@ p {
 .heading, .faq-header {
   font-family: "Shark Random Funnyness";
   color: #00bcd6;
+  letter-spacing: 3px;
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-transform: uppercase; }
@@ -13131,7 +13133,8 @@ p {
       .heading--lg {
         font-size: 2.91rem; } }
   .heading--sm {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    letter-spacing: 2px; }
   .heading--white {
     color: #ffffff; }
   .heading--pink {
@@ -15163,7 +15166,7 @@ body.single {
   .events-hero-header .heading, .events-hero-header .faq-header {
     font-size: 2.7rem;
     letter-spacing: 3px;
-    line-height: 75px;
+    line-height: 70px;
     padding: 8px 0; }
   .events-hero-header a {
     padding: .6rem 1.75rem;
@@ -15221,7 +15224,6 @@ body.single {
   margin-bottom: 0; }
 
 .events-3steps__title {
-  font-size: 1.75rem;
   font-weight: 300;
   letter-spacing: 3px; }
 

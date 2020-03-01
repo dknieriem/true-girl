@@ -22,6 +22,10 @@
 @each $name, $family in $fontnames {
     .font-#{$name}, .text-#{$name} {
         font-family: $family !important;
+
+        @if $name == shark {
+            letter-spacing: 2px;
+        }
     }
 }
 
@@ -80,6 +84,7 @@ p
 {
     font-family:$header-font;
     color:$teal;
+    letter-spacing: 3px;
     margin-top:1rem;
     margin-bottom:1rem;
     text-transform: uppercase;
@@ -96,6 +101,7 @@ p
     &--sm
     {
         font-size:1.5rem;
+        letter-spacing: 2px;
     }
 
     &--white

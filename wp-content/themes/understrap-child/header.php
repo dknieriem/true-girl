@@ -45,7 +45,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar fixed-top navbar-expand-lg">
+		<nav class="navbar fixed-top navbar-expand-md">
 
 		<!--<?php if ( 'container' == $container ) : ?>
 			<div class="container" >
