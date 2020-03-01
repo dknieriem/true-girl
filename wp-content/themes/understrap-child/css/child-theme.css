@@ -8985,7 +8985,7 @@ button.bg-dark:focus {
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.text-left, .post-preview__heading, .post-preview__card .card-body, .post-preview__card .post-card__body, .post-preview__card .faq-item__body, .faq {
+.text-left, .post-preview__heading, .faq {
   text-align: left !important; }
 
 .text-right {
@@ -13245,7 +13245,7 @@ ol > li {
 .light {
   color: white; }
 
-.text-left, .post-preview__heading, .post-preview__card .card-body, .post-preview__card .post-card__body, .post-preview__card .faq-item__body, .faq {
+.text-left, .post-preview__heading, .faq {
   text-align: left; }
 
 .text-right {
@@ -14236,6 +14236,9 @@ body.admin-bar .fixed-top {
     margin-bottom: 3rem !important;
     margin-left: 0 !important;
     margin-right: 0 !important; } }
+
+.post-preview__card .card-body, .post-preview__card .post-card__body, .post-preview__card .faq-item__body {
+  text-align: left; }
 
 .post-preview__image {
   padding-top: 56.15%;

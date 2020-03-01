@@ -28,7 +28,8 @@
 
         .card-body
         {
-            @extend .text-left;
+            //@extend .text-left;
+            text-align: left;
         }
     }
 
