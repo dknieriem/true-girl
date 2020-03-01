@@ -16054,6 +16054,10 @@ body.single {
 
 .events-hero-header {
   margin-top: 6%; }
+  @media (max-width: 767.97px) {
+    .events-hero-header .heading.heading__on-pink, .events-hero-header .heading__on-pink.faq-header {
+      font-size: 1.4rem;
+      line-height: 48px; } }
   .events-hero-header .heading, .events-hero-header .faq-header {
     font-size: 2.7rem;
     letter-spacing: 3px;
@@ -16062,7 +16066,10 @@ body.single {
   .events-hero-header a {
     padding: .6rem 1.75rem;
     font-weight: 700;
-    font-size: 2.4rem; }
+    font-size: 1.4rem; }
+    @media (min-width: 768px) {
+      .events-hero-header a {
+        font-size: 2.4rem; } }
   .events-hero-header .mt-md {
     margin-top: 2.5rem !important; }
 
