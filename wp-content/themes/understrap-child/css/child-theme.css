@@ -13566,8 +13566,6 @@ body.admin-bar .fixed-top {
     width: auto; }
     @media (max-width: 992px) {
       .navbar-brand img {
-        max-width: 300px;
-        max-height: 140px;
         margin-top: 0; } }
     @media (max-width: 768px) {
       .navbar-brand img {
