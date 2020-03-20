@@ -14360,7 +14360,8 @@ ol > li {
     color: #525252 !important; }
   .button--small, .blog__sidebar .search-form__search-button, .search__sidebar .search-form__search-button, .post-card__card-button, .search-page-form .search-form__search-button {
     padding: 0.1rem 0.5rem;
-    font-size: 1rem; }
+    font-size: 1rem;
+    line-height: 1.2; }
     @media (max-width: 767.98px) {
       .button--small, .blog__sidebar .search-form__search-button, .search__sidebar .search-form__search-button, .post-card__card-button, .search-page-form .search-form__search-button {
         font-size: 1.25rem; } }
