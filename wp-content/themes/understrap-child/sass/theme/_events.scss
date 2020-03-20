@@ -237,6 +237,11 @@
     }
     .button {
         font-size: inherit;
+
+        //ensure width matches active buttons
+        &.disabled {
+            width: 100%;
+        }
     }
     @media (min-width:961px) {
        td {
